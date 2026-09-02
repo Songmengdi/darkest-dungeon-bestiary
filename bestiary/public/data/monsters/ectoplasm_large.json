@@ -1,0 +1,631 @@
+{
+ "id": "ectoplasm_large",
+ "dir": "monsters/ectoplasm_large",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Large Ectoplasm",
+    "zh": "大型胞质体",
+    "ja": "ラージ・エクトプラズム"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "35",
+    "def": "0%",
+    "prot": "0.2",
+    "spd": "1",
+    "res": {
+     "stun": "75%",
+     "poison": "60%",
+     "bleed": "60%",
+     "debuff": "40%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "slime_lg",
+     "name": {
+      "zh": "黏液倾倒",
+      "en": "Big Slime"
+     },
+     "type": "melee",
+     "atk": "82.5%",
+     "dmg": "4-8",
+     "crit": "12%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": []
+    },
+    {
+     "id": "slime_stun",
+     "name": {
+      "zh": "黏液猛击",
+      "en": "Slimesmack"
+     },
+     "type": "melee",
+     "atk": "82.5%",
+     "dmg": "2-4",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Stun 1"
+     ]
+    },
+    {
+     "id": "summon_little_slime",
+     "name": {
+      "zh": "胶质分裂",
+      "en": "Cytokinesis"
+     },
+     "type": "melee",
+     "atk": "82.5%",
+     "dmg": "2-4",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Summon Ecto 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "ectoplasm_lg",
+    "skillDesires": [
+     {
+      "skill": "slime_lg",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "slime_stun",
+      "type": "stun_skill"
+     },
+     {
+      "skill": "summon_little_slime",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stunned_target",
+      "skill": "slime_stun"
+     },
+     {
+      "type": "marked_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_large_A"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Towering Ectoplasm",
+    "zh": "高耸胞质体",
+    "ja": "タワーリング・エクトプラズム"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "49",
+    "def": "8.75%",
+    "prot": "0.33",
+    "spd": "2",
+    "res": {
+     "stun": "95%",
+     "poison": "80%",
+     "bleed": "80%",
+     "debuff": "60%",
+     "move": "70%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "slime_lg",
+     "name": {
+      "zh": "黏液倾倒",
+      "en": "Big Slime"
+     },
+     "type": "melee",
+     "atk": "88.75%",
+     "dmg": "5-11",
+     "crit": "16%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Big Ecto Slime Debuff 3"
+     ]
+    },
+    {
+     "id": "slime_stun",
+     "name": {
+      "zh": "黏液猛击",
+      "en": "Slimesmack"
+     },
+     "type": "melee",
+     "atk": "88.75%",
+     "dmg": "3-5",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Stun 2"
+     ]
+    },
+    {
+     "id": "summon_little_slime",
+     "name": {
+      "zh": "胶质分裂",
+      "en": "Cytokinesis"
+     },
+     "type": "melee",
+     "atk": "88.75%",
+     "dmg": "3-5",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Summon Ecto 2"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "ectoplasm_lg",
+    "skillDesires": [
+     {
+      "skill": "slime_lg",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "slime_stun",
+      "type": "stun_skill"
+     },
+     {
+      "skill": "summon_little_slime",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stunned_target",
+      "skill": "slime_stun"
+     },
+     {
+      "type": "marked_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_large_B"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Giant Ectoplasm",
+    "zh": "胞质体巨怪",
+    "ja": "ジャイアント・エクトプラズム"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "68",
+    "def": "21.25%",
+    "prot": "0.33",
+    "spd": "3",
+    "res": {
+     "stun": "115%",
+     "poison": "100%",
+     "bleed": "100%",
+     "debuff": "80%",
+     "move": "90%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "slime_lg",
+     "name": {
+      "zh": "黏液倾倒",
+      "en": "Big Slime"
+     },
+     "type": "melee",
+     "atk": "102.5%",
+     "dmg": "7-15",
+     "crit": "19%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Big Ecto Slime Debuff 5"
+     ]
+    },
+    {
+     "id": "slime_stun",
+     "name": {
+      "zh": "黏液猛击",
+      "en": "Slimesmack"
+     },
+     "type": "melee",
+     "atk": "102.5%",
+     "dmg": "4-7",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Stun 3"
+     ]
+    },
+    {
+     "id": "summon_little_slime",
+     "name": {
+      "zh": "胶质分裂",
+      "en": "Cytokinesis"
+     },
+     "type": "melee",
+     "atk": "102.5%",
+     "dmg": "4-7",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Summon Ecto 3"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "ectoplasm_lg",
+    "skillDesires": [
+     {
+      "skill": "slime_lg",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "slime_stun",
+      "type": "stun_skill"
+     },
+     {
+      "skill": "summon_little_slime",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stunned_target",
+      "skill": "slime_stun"
+     },
+     {
+      "type": "marked_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_large_C"
+  }
+ ]
+}

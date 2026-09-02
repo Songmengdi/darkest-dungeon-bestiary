@@ -1,0 +1,166 @@
+{
+ "id": "shuffler",
+ "dir": "monsters/shuffler",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Shuffling Horror",
+    "zh": "\"错乱恐魔\"",
+    "ja": "シャフリング・ホラー"
+   },
+   "size": 3,
+   "stats": {
+    "hp": "162",
+    "def": "23.75%",
+    "prot": "0.33",
+    "spd": "2",
+    "res": {
+     "stun": "147.5%",
+     "poison": "107.5%",
+     "bleed": "67.5%",
+     "debuff": "87.5%",
+     "move": "98%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "shuffler_eat",
+     "name": {
+      "zh": "深深撕裂",
+      "en": "Lacerate"
+     },
+     "type": "melee",
+     "atk": "110%",
+     "dmg": "5-9",
+     "crit": "5%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Shuffler Bleed"
+     ]
+    },
+    {
+     "id": "shuffler_howl",
+     "name": {
+      "zh": "崩坏回响",
+      "en": "Echoing Dissassembly"
+     },
+     "type": "ranged",
+     "atk": "120%",
+     "dmg": "1-3",
+     "crit": "10%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Stress 2",
+      "Summon Shrouded",
+      "Darkness 3"
+     ]
+    },
+    {
+     "id": "shuffler_shuffle",
+     "name": {
+      "zh": "错乱动摇",
+      "en": "Undulations"
+     },
+     "type": "0",
+     "atk": "110%",
+     "dmg": "1-1",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Shuffler Shuffle Party"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 1,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "shuffler_D",
+    "skillDesires": [
+     {
+      "skill": "shuffler_eat",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "shuffler_shuffle",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "shuffler_howl",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "shuffler_eat"
+     }
+    ]
+   }
+  }
+ ]
+}

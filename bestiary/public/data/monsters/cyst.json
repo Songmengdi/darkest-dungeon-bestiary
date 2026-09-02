@@ -1,0 +1,167 @@
+{
+ "id": "cyst",
+ "dir": "monsters/cyst",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Mammoth Cyst",
+    "zh": "巨噬胞体",
+    "ja": "マンモス・シスト"
+   },
+   "size": 3,
+   "stats": {
+    "hp": "158",
+    "def": "23.75%",
+    "prot": "0.25",
+    "spd": "3",
+    "res": {
+     "stun": "97.5%",
+     "poison": "87.5%",
+     "bleed": "67.5%",
+     "debuff": "67.5%",
+     "move": "73%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "beholder_gaze",
+     "name": {
+      "zh": "惊悚凝视",
+      "en": "Bulging Gaze"
+     },
+     "type": "ranged",
+     "atk": "113.75%",
+     "dmg": "8-13",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Beholder Stress",
+      "Beholder Weaken"
+     ]
+    },
+    {
+     "id": "beholder_burn",
+     "name": {
+      "zh": "消化",
+      "en": "Digestion"
+     },
+     "type": "melee",
+     "atk": "113.75%",
+     "dmg": "8-17",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Beholder Blight"
+     ]
+    },
+    {
+     "id": "beholder_healself",
+     "name": {
+      "zh": "再生",
+      "en": "Revivify"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Beholder Selfbuff"
+     ]
+    },
+    {
+     "id": "beholder_summon",
+     "name": {
+      "zh": "召唤",
+      "en": "Summon"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Summon Whitecell"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "cyst",
+    "skillDesires": [
+     {
+      "skill": "beholder_summon",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "beholder_gaze",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "beholder_burn",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "beholder_healself",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   }
+  }
+ ]
+}

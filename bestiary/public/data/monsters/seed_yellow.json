@@ -1,0 +1,69 @@
+{
+ "id": "seed_yellow",
+ "dir": "dlc/735730_color_of_madness/monsters/seed_yellow",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Pestilential Aberration",
+    "zh": "瘟疫畸变",
+    "ja": "Pestilential Aberration"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "30",
+    "def": "0%",
+    "prot": "0.2",
+    "spd": "5",
+    "res": {
+     "stun": "240%",
+     "poison": "100%",
+     "bleed": "140%",
+     "debuff": "70%",
+     "move": "65%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "yellow_seed_suicide",
+     "name": {
+      "zh": "永恒之花",
+      "en": "Eternal Blossom"
+     },
+     "type": "ranged",
+     "atk": "125%",
+     "dmg": "6-10",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "kill_self_queued",
+      "yellow seed blight"
+     ]
+    }
+   ],
+   "loot": [],
+   "lifeLink": "spire"
+  }
+ ]
+}

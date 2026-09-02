@@ -1,0 +1,136 @@
+{
+ "id": "errant_flesh_bat",
+ "dir": "monsters/errant_flesh_bat",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Polyp",
+    "zh": "螅肉",
+    "ja": "ポリープ"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "25",
+    "def": "33.75%",
+    "prot": "0",
+    "spd": "12",
+    "res": {
+     "stun": "72.5%",
+     "poison": "87.5%",
+     "bleed": "67.5%",
+     "debuff": "67.5%",
+     "move": "73%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "errant_spit",
+     "name": {
+      "zh": "毒痰",
+      "en": "Venomous Phlegm"
+     },
+     "type": "ranged",
+     "atk": "103.75%",
+     "dmg": "4-9",
+     "crit": "15%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Errant Blight",
+      "Errant Mark"
+     ]
+    },
+    {
+     "id": "errant_cough",
+     "name": {
+      "zh": "剧咳",
+      "en": "Violent Hack"
+     },
+     "type": "ranged",
+     "atk": "83.75%",
+     "dmg": "1-3",
+     "crit": "0%",
+     "launch": [
+      1
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": []
+    },
+    {
+     "id": "errant_push",
+     "name": {
+      "zh": "放逐",
+      "en": "Banish"
+     },
+     "type": "melee",
+     "atk": "113.75%",
+     "dmg": "4-9",
+     "crit": "10%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Push 2F"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "errant_flesh_bat",
+    "skillDesires": [
+     {
+      "skill": "errant_spit",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "errant_cough",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "errant_push",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "errant_spit",
+      "type": "performing_turn_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_A"
+  }
+ ]
+}

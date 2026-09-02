@@ -1,0 +1,537 @@
+{
+ "id": "snake_rattler",
+ "dir": "dlc/702540_shieldbreaker/monsters/snake_rattler",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Rattler",
+    "zh": "响尾蛇",
+    "ja": "ラトラー"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "24",
+    "def": "7.5%",
+    "prot": "0.25",
+    "spd": "9",
+    "res": {
+     "stun": "25%",
+     "poison": "40%",
+     "bleed": "20%",
+     "debuff": "20%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "skills": [
+    {
+     "id": "snake_guard",
+     "name": {
+      "zh": "响尾警示",
+      "en": "Warning Rattle"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Clear Guard Performer",
+      "Clear Guard Target",
+      "Snake Guard 1",
+      "Snake Defend 1",
+      "Rattler Riposte"
+     ]
+    },
+    {
+     "id": "snake_bite",
+     "name": {
+      "zh": "蛇咬",
+      "en": "Snakebite"
+     },
+     "type": "melee",
+     "atk": "92.5%",
+     "dmg": "3-7",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3
+     ],
+     "target": [
+      1,
+      2,
+      3
+     ],
+     "effects": [
+      "Rattler Bleed 1"
+     ]
+    },
+    {
+     "id": "slither_forward",
+     "name": {
+      "zh": "蛇行",
+      "en": "Slither"
+     },
+     "type": "melee",
+     "atk": "77.5%",
+     "dmg": "1-3",
+     "crit": "0%",
+     "launch": [
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "deathClass": "corpse_A"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Irritated Rattler",
+    "zh": "恼怒响尾蛇",
+    "ja": "怒りのラトラー"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "34",
+    "def": "16.25%",
+    "prot": "0.25",
+    "spd": "10",
+    "res": {
+     "stun": "45%",
+     "poison": "60%",
+     "bleed": "40%",
+     "debuff": "40%",
+     "move": "70%"
+    }
+   },
+   "enemyType": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "skills": [
+    {
+     "id": "snake_guard",
+     "name": {
+      "zh": "响尾警示",
+      "en": "Warning Rattle"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Clear Guard Performer",
+      "Clear Guard Target",
+      "Snake Guard 1",
+      "Snake Defend 1",
+      "Rattler Riposte"
+     ]
+    },
+    {
+     "id": "snake_bite",
+     "name": {
+      "zh": "蛇咬",
+      "en": "Snakebite"
+     },
+     "type": "melee",
+     "atk": "98.75%",
+     "dmg": "5-9",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3
+     ],
+     "target": [
+      1,
+      2,
+      3
+     ],
+     "effects": [
+      "Rattler Bleed 3"
+     ]
+    },
+    {
+     "id": "slither_forward",
+     "name": {
+      "zh": "蛇行",
+      "en": "Slither"
+     },
+     "type": "melee",
+     "atk": "83.75%",
+     "dmg": "2-3",
+     "crit": "2%",
+     "launch": [
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "deathClass": "corpse_B"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Enraged Rattler",
+    "zh": "狂怒响尾蛇",
+    "ja": "激怒のラトラー"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "47",
+    "def": "28.75%",
+    "prot": "0.25",
+    "spd": "11",
+    "res": {
+     "stun": "65%",
+     "poison": "80%",
+     "bleed": "60%",
+     "debuff": "60%",
+     "move": "90%"
+    }
+   },
+   "enemyType": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "skills": [
+    {
+     "id": "snake_guard",
+     "name": {
+      "zh": "响尾警示",
+      "en": "Warning Rattle"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Clear Guard Performer",
+      "Clear Guard Target",
+      "Snake Guard 1",
+      "Snake Defend 1",
+      "Rattler Riposte"
+     ]
+    },
+    {
+     "id": "snake_bite",
+     "name": {
+      "zh": "蛇咬",
+      "en": "Snakebite"
+     },
+     "type": "melee",
+     "atk": "112.5%",
+     "dmg": "6-13",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3
+     ],
+     "target": [
+      1,
+      2,
+      3
+     ],
+     "effects": [
+      "Rattler Bleed 5"
+     ]
+    },
+    {
+     "id": "slither_forward",
+     "name": {
+      "zh": "蛇行",
+      "en": "Slither"
+     },
+     "type": "melee",
+     "atk": "97.5%",
+     "dmg": "2-5",
+     "crit": "5%",
+     "launch": [
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "deathClass": "corpse_C"
+  }
+ ]
+}

@@ -1,0 +1,240 @@
+{
+ "id": "brigand_raider",
+ "dir": "monsters/brigand_raider",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Brigand Raider",
+    "zh": "土匪洗劫者",
+    "ja": "ブリガンド・レイダー"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "25",
+    "def": "26.25%",
+    "prot": "0.25",
+    "spd": "5",
+    "res": {
+     "stun": "72.5%",
+     "poison": "67.5%",
+     "bleed": "67.5%",
+     "debuff": "62.5%",
+     "move": "73%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "double_slice",
+     "name": {
+      "zh": "割皮切肉",
+      "en": "Slice and Dice"
+     },
+     "type": "melee",
+     "atk": "93.75%",
+     "dmg": "6-11",
+     "crit": "20%",
+     "launch": [
+      1,
+      2,
+      3
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Cutthroat Slice Debuff 6"
+     ]
+    },
+    {
+     "id": "uppercut_slice",
+     "name": {
+      "zh": "上勾切击",
+      "en": "Uppercut Slice"
+     },
+     "type": "melee",
+     "atk": "93.75%",
+     "dmg": "4-9",
+     "crit": "15%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2,
+      3
+     ],
+     "effects": [
+      "Push 1E"
+     ]
+    },
+    {
+     "id": "bandit_stabby",
+     "name": {
+      "zh": "割裂",
+      "en": "Shank"
+     },
+     "type": "melee",
+     "atk": "92.5%",
+     "dmg": "7-15",
+     "crit": "11%",
+     "launch": [
+      1,
+      2,
+      3
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Minor Bleed 5",
+      "Mark Target"
+     ]
+    },
+    {
+     "id": "bandit_stabby_weak",
+     "name": {
+      "zh": "试探一戳",
+      "en": "Harmless Poke"
+     },
+     "type": "melee",
+     "atk": "62.5%",
+     "dmg": "4-9",
+     "crit": "0%",
+     "launch": [
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Cutthroat Poke Buff"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "brigand_cutthroat_D",
+    "skillDesires": [
+     {
+      "skill": "double_slice",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "uppercut_slice",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "bandit_stabby",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "bandit_stabby",
+      "type": "performing_turn_skill"
+     },
+     {
+      "skill": "bandit_stabby_weak",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "bandit_stabby"
+     }
+    ]
+   },
+   "deathClass": "corpse_D",
+   "lifeLink": "brigand_sapper"
+  }
+ ]
+}

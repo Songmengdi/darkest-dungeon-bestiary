@@ -1,0 +1,195 @@
+{
+ "id": "revenant",
+ "dir": "dlc/735730_color_of_madness/monsters/revenant",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Sleeper's Herald",
+    "zh": "沉睡使者",
+    "ja": "Sleeper's Herald"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "6",
+    "def": "0%",
+    "prot": "0.45",
+    "spd": "1",
+    "res": {
+     "stun": "100%",
+     "poison": "100%",
+     "bleed": "100%",
+     "debuff": "60%",
+     "move": "20%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "nothing_is_right",
+     "name": {
+      "zh": "扭曲现实",
+      "en": "Reality Bend"
+     },
+     "type": "ranged",
+     "atk": "92.5%",
+     "dmg": "1-2",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Heal Recd Debuff A",
+      "Revenant Acc Debuff A",
+      "Revenant Random Target 1"
+     ]
+    }
+   ],
+   "loot": [],
+   "lifeLink": "miller"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Sleeper's Herald",
+    "zh": "沉睡使者",
+    "ja": "Sleeper's Herald"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "8",
+    "def": "8.75%",
+    "prot": "0.45",
+    "spd": "2",
+    "res": {
+     "stun": "120%",
+     "poison": "120%",
+     "bleed": "120%",
+     "debuff": "80%",
+     "move": "40%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "nothing_is_right",
+     "name": {
+      "zh": "扭曲现实",
+      "en": "Reality Bend"
+     },
+     "type": "ranged",
+     "atk": "98.75%",
+     "dmg": "1-2",
+     "crit": "4%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Heal Recd Debuff B",
+      "Revenant Acc Debuff B",
+      "Revenant Random Target 3"
+     ]
+    }
+   ],
+   "loot": [],
+   "lifeLink": "miller"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Sleeper's Herald",
+    "zh": "沉睡使者",
+    "ja": "Sleeper's Herald"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "11",
+    "def": "20%",
+    "prot": "0.45",
+    "spd": "3",
+    "res": {
+     "stun": "140%",
+     "poison": "140%",
+     "bleed": "140%",
+     "debuff": "100%",
+     "move": "60%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "nothing_is_right",
+     "name": {
+      "zh": "扭曲现实",
+      "en": "Reality Bend"
+     },
+     "type": "ranged",
+     "atk": "110%",
+     "dmg": "1-3",
+     "crit": "7%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Heal Recd Debuff C",
+      "Revenant Acc Debuff C",
+      "Revenant Random Target 5"
+     ]
+    }
+   ],
+   "loot": [],
+   "lifeLink": "miller"
+  }
+ ]
+}

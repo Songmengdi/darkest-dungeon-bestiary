@@ -1,0 +1,107 @@
+{
+ "id": "cultist_warlord",
+ "dir": "monsters/cultist_warlord",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Ascended Brawler",
+    "zh": "飞升教士",
+    "ja": "アセンド・ブローラー"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "32",
+    "def": "23.75%",
+    "prot": "0",
+    "spd": "7",
+    "res": {
+     "stun": "72.5%",
+     "poison": "67.5%",
+     "bleed": "67.5%",
+     "debuff": "62.5%",
+     "move": "73%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "brawler_claw_D",
+     "name": {
+      "zh": "新神祭刺",
+      "en": "Rend for the New God"
+     },
+     "type": "melee",
+     "atk": "93.75%",
+     "dmg": "4-9",
+     "crit": "20%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Turbo Cultist Bleed",
+      "SmallDmg Marked Target",
+      "Turbo Cultist Rend Debuff"
+     ]
+    },
+    {
+     "id": "brawler_claw_weak",
+     "name": {
+      "zh": "踉跄一划",
+      "en": "Stumbling Scratch"
+     },
+     "type": "melee",
+     "atk": "63.75%",
+     "dmg": "4-9",
+     "crit": "0%",
+     "launch": [
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "cultist_brawler_D",
+    "skillDesires": [
+     {
+      "skill": "brawler_claw_D",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "brawler_claw_weak",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target",
+      "skill": "brawler_claw_D"
+     }
+    ]
+   },
+   "deathClass": "corpse_D"
+  }
+ ]
+}

@@ -1,0 +1,1110 @@
+{
+ "id": "siren",
+ "dir": "monsters/siren",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Siren",
+    "zh": "海妖塞壬",
+    "ja": "セイレーン"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "119",
+    "def": "12.5%",
+    "prot": "0",
+    "spd": "5",
+    "res": {
+     "stun": "50%",
+     "poison": "40%",
+     "bleed": "60%",
+     "debuff": "40%",
+     "move": "25%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "siren_song",
+     "name": {
+      "zh": "媚惑歌调",
+      "en": "Song of Desire"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "siren_control 1"
+     ]
+    },
+    {
+     "id": "conch_summon",
+     "name": {
+      "zh": "高潮迭起",
+      "en": "High Tide"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Summon Aquatic 1"
+     ]
+    },
+    {
+     "id": "conch_horror",
+     "name": {
+      "zh": "惊骇轰鸣",
+      "en": "Pressure Crash"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "1-1",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Stress 1"
+     ]
+    },
+    {
+     "id": "conch_celldisrupt",
+     "name": {
+      "zh": "吞噬盛宴",
+      "en": "Devour"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "1-1",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Minor Bleed 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 10,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 8,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 2,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 12,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 3,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "siren",
+    "skillDesires": [
+     {
+      "skill": "siren_song",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "siren_song",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "conch_summon",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "conch_summon",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "conch_horror",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "conch_celldisrupt",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target",
+      "skill": "conch_summon"
+     },
+     {
+      "type": "random_target",
+      "skill": "siren_song"
+     },
+     {
+      "type": "random_target",
+      "skill": "conch_horror"
+     },
+     {
+      "type": "random_target",
+      "skill": "conch_celldisrupt"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "siren_song"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "siren_song"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Alluring Siren",
+    "zh": "诱惑之海妖塞壬",
+    "ja": "魅惑のセイレーン"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "179",
+    "def": "21.25%",
+    "prot": "0",
+    "spd": "6",
+    "res": {
+     "stun": "75%",
+     "poison": "60%",
+     "bleed": "80%",
+     "debuff": "60%",
+     "move": "45%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "siren_song",
+     "name": {
+      "zh": "媚惑歌调",
+      "en": "Song of Desire"
+     },
+     "type": "ranged",
+     "atk": "108.75%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "siren_control 2"
+     ]
+    },
+    {
+     "id": "conch_summon",
+     "name": {
+      "zh": "高潮迭起",
+      "en": "High Tide"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Summon Aquatic 2"
+     ]
+    },
+    {
+     "id": "conch_horror",
+     "name": {
+      "zh": "惊骇轰鸣",
+      "en": "Pressure Crash"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "1-2",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Stress 1"
+     ]
+    },
+    {
+     "id": "conch_celldisrupt",
+     "name": {
+      "zh": "吞噬盛宴",
+      "en": "Devour"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "1-2",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Minor Bleed 3"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 10,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 8,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 2,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 12,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 3,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "siren",
+    "skillDesires": [
+     {
+      "skill": "siren_song",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "siren_song",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "conch_summon",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "conch_summon",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "conch_horror",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "conch_celldisrupt",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target",
+      "skill": "conch_summon"
+     },
+     {
+      "type": "random_target",
+      "skill": "siren_song"
+     },
+     {
+      "type": "random_target",
+      "skill": "conch_horror"
+     },
+     {
+      "type": "random_target",
+      "skill": "conch_celldisrupt"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "siren_song"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "siren_song"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Beguiling Siren",
+    "zh": "陶醉之海妖塞壬",
+    "ja": "女帝セイレーン"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "244",
+    "def": "35%",
+    "prot": "0",
+    "spd": "7",
+    "res": {
+     "stun": "100%",
+     "poison": "80%",
+     "bleed": "100%",
+     "debuff": "80%",
+     "move": "65%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "siren_song",
+     "name": {
+      "zh": "媚惑歌调",
+      "en": "Song of Desire"
+     },
+     "type": "ranged",
+     "atk": "122.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "siren_control 3"
+     ]
+    },
+    {
+     "id": "conch_summon",
+     "name": {
+      "zh": "高潮迭起",
+      "en": "High Tide"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Summon Aquatic 3"
+     ]
+    },
+    {
+     "id": "conch_horror",
+     "name": {
+      "zh": "惊骇轰鸣",
+      "en": "Pressure Crash"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "1-3",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Stress 1"
+     ]
+    },
+    {
+     "id": "conch_celldisrupt",
+     "name": {
+      "zh": "吞噬盛宴",
+      "en": "Devour"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "1-3",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Minor Bleed 5"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 10,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 8,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 2,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 12,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 3,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "siren",
+    "skillDesires": [
+     {
+      "skill": "siren_song",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "siren_song",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "conch_summon",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "conch_summon",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "conch_horror",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "conch_celldisrupt",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target",
+      "skill": "conch_summon"
+     },
+     {
+      "type": "random_target",
+      "skill": "siren_song"
+     },
+     {
+      "type": "random_target",
+      "skill": "conch_horror"
+     },
+     {
+      "type": "random_target",
+      "skill": "conch_celldisrupt"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "siren_song"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "siren_song"
+     }
+    ]
+   }
+  }
+ ]
+}

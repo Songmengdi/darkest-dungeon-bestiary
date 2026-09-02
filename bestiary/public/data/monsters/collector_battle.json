@@ -1,0 +1,303 @@
+{
+ "id": "collector_battle",
+ "dir": "monsters/collector_battle",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Collected Highwayman",
+    "zh": "被收集的强盗",
+    "ja": "コレクテッド・ハイウェイマン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "16",
+    "def": "7.5%",
+    "prot": "0",
+    "spd": "3",
+    "res": {
+     "stun": "25%",
+     "poison": "40%",
+     "bleed": "40%",
+     "debuff": "15%",
+     "move": "10%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "head_chomp",
+     "name": {
+      "zh": "狩猎藏品",
+      "en": "Headhunt"
+     },
+     "type": "melee",
+     "atk": "87.5%",
+     "dmg": "5-11",
+     "crit": "12%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Bleed 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "collector_battle",
+    "skillDesires": [
+     {
+      "skill": "head_chomp",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target",
+      "skill": "head_chomp"
+     }
+    ]
+   },
+   "lifeLink": "collector"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Collected Highwayman",
+    "zh": "被收藏的强盗",
+    "ja": "コレクテッド・ハイウェイマン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "22",
+    "def": "16.25%",
+    "prot": "0",
+    "spd": "4",
+    "res": {
+     "stun": "45%",
+     "poison": "60%",
+     "bleed": "60%",
+     "debuff": "35%",
+     "move": "30%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "head_chomp",
+     "name": {
+      "zh": "狩猎藏品",
+      "en": "Headhunt"
+     },
+     "type": "melee",
+     "atk": "93.75%",
+     "dmg": "7-15",
+     "crit": "16%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Bleed 2"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "collector_battle",
+    "skillDesires": [
+     {
+      "skill": "head_chomp",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target",
+      "skill": "head_chomp"
+     }
+    ]
+   },
+   "lifeLink": "collector"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Collected Highwayman",
+    "zh": "被珍藏的强盗",
+    "ja": "コレクテッド・ハイウェイマン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "31",
+    "def": "28.75%",
+    "prot": "0",
+    "spd": "5",
+    "res": {
+     "stun": "65%",
+     "poison": "80%",
+     "bleed": "80%",
+     "debuff": "55%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "head_chomp",
+     "name": {
+      "zh": "狩猎藏品",
+      "en": "Headhunt"
+     },
+     "type": "melee",
+     "atk": "107.5%",
+     "dmg": "10-20",
+     "crit": "19%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Bleed 3"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "collector_battle",
+    "skillDesires": [
+     {
+      "skill": "head_chomp",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target",
+      "skill": "head_chomp"
+     }
+    ]
+   },
+   "lifeLink": "collector"
+  }
+ ]
+}

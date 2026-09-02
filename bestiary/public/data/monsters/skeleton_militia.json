@@ -1,0 +1,504 @@
+{
+ "id": "skeleton_militia",
+ "dir": "monsters/skeleton_militia",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Bone Soldier",
+    "zh": "骸骨战士",
+    "ja": "ボーン・ソルジャー"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "10",
+    "def": "0%",
+    "prot": "0.15",
+    "spd": "2",
+    "res": {
+     "stun": "25%",
+     "poison": "10%",
+     "bleed": "200%",
+     "debuff": "15%",
+     "move": "20%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "sword_strike",
+     "name": {
+      "zh": "坟场挥击",
+      "en": "Graveyard Slash"
+     },
+     "type": "melee",
+     "atk": "82.5%",
+     "dmg": "3-8",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3
+     ],
+     "target": [
+      1,
+      2,
+      3
+     ],
+     "effects": []
+    },
+    {
+     "id": "sword_strike_weak",
+     "name": {
+      "zh": "坟场磕绊",
+      "en": "Graveyard Stumble"
+     },
+     "type": "melee",
+     "atk": "42.5%",
+     "dmg": "2-5",
+     "crit": "0%",
+     "launch": [
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "skeleton_soldier_A",
+    "skillDesires": [
+     {
+      "skill": "sword_strike",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "sword_strike_weak",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_A",
+   "lifeLink": "necromancer"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Bone Veteran",
+    "zh": "骸骨精兵",
+    "ja": "ボーン・ベテラン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "14",
+    "def": "8.75%",
+    "prot": "0.25",
+    "spd": "3",
+    "res": {
+     "stun": "45%",
+     "poison": "30%",
+     "bleed": "220%",
+     "debuff": "35%",
+     "move": "40%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "sword_strike",
+     "name": {
+      "zh": "坟场挥击",
+      "en": "Graveyard Slash"
+     },
+     "type": "melee",
+     "atk": "88.75%",
+     "dmg": "4-11",
+     "crit": "12%",
+     "launch": [
+      1,
+      2,
+      3
+     ],
+     "target": [
+      1,
+      2,
+      3
+     ],
+     "effects": []
+    },
+    {
+     "id": "sword_strike_weak",
+     "name": {
+      "zh": "坟场磕绊",
+      "en": "Graveyard Stumble"
+     },
+     "type": "melee",
+     "atk": "48.75%",
+     "dmg": "2-6",
+     "crit": "0%",
+     "launch": [
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "skeleton_soldier_B",
+    "skillDesires": [
+     {
+      "skill": "sword_strike",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "sword_strike_weak",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_B",
+   "lifeLink": "necromancer"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Bone Sergeant",
+    "zh": "骸骨军士",
+    "ja": "ボーン・サージャント"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "20",
+    "def": "21.25%",
+    "prot": "0.25",
+    "spd": "4",
+    "res": {
+     "stun": "65%",
+     "poison": "50%",
+     "bleed": "240%",
+     "debuff": "55%",
+     "move": "60%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "sword_strike",
+     "name": {
+      "zh": "坟场挥击",
+      "en": "Graveyard Slash"
+     },
+     "type": "melee",
+     "atk": "102.5%",
+     "dmg": "5-14",
+     "crit": "14%",
+     "launch": [
+      1,
+      2,
+      3
+     ],
+     "target": [
+      1,
+      2,
+      3
+     ],
+     "effects": []
+    },
+    {
+     "id": "sword_strike_weak",
+     "name": {
+      "zh": "坟场磕绊",
+      "en": "Graveyard Stumble"
+     },
+     "type": "melee",
+     "atk": "62.5%",
+     "dmg": "3-8",
+     "crit": "0%",
+     "launch": [
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "skeleton_soldier_C",
+    "skillDesires": [
+     {
+      "skill": "sword_strike",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "sword_strike_weak",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_C",
+   "lifeLink": "necromancer"
+  }
+ ]
+}

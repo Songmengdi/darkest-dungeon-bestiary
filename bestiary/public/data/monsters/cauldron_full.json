@@ -1,0 +1,123 @@
+{
+ "id": "cauldron_full",
+ "dir": "monsters/cauldron_full",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Cauldron (full)",
+    "zh": "大锅（满）",
+    "ja": "大釜（満杯）"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "14",
+    "def": "0%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "200%",
+     "poison": "200%",
+     "bleed": "200%",
+     "debuff": "200%",
+     "move": "200%"
+    }
+   },
+   "enemyType": {
+    "id": "cauldron",
+    "zh": "容器",
+    "en": "Crockery"
+   },
+   "skills": [],
+   "loot": [],
+   "brain": {
+    "id": "cauldron_full",
+    "skillDesires": [],
+    "targetDesires": []
+   },
+   "lifeLink": "hag"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Cauldron (full)",
+    "zh": "大锅（满）",
+    "ja": "大釜（満杯）"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "21",
+    "def": "8.75%",
+    "prot": "0",
+    "spd": "1",
+    "res": {
+     "stun": "220%",
+     "poison": "220%",
+     "bleed": "220%",
+     "debuff": "220%",
+     "move": "220%"
+    }
+   },
+   "enemyType": {
+    "id": "cauldron",
+    "zh": "容器",
+    "en": "Crockery"
+   },
+   "skills": [],
+   "loot": [],
+   "brain": {
+    "id": "cauldron_full",
+    "skillDesires": [],
+    "targetDesires": []
+   },
+   "lifeLink": "hag"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Cauldron (full)",
+    "zh": "大锅（满）",
+    "ja": "大釜（満杯）"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "29",
+    "def": "22.5%",
+    "prot": "0",
+    "spd": "2",
+    "res": {
+     "stun": "240%",
+     "poison": "240%",
+     "bleed": "240%",
+     "debuff": "240%",
+     "move": "240%"
+    }
+   },
+   "enemyType": {
+    "id": "cauldron",
+    "zh": "容器",
+    "en": "Crockery"
+   },
+   "skills": [],
+   "loot": [],
+   "brain": {
+    "id": "cauldron_full",
+    "skillDesires": [],
+    "targetDesires": []
+   },
+   "lifeLink": "hag"
+  }
+ ]
+}

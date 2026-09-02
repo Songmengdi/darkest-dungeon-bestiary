@@ -1,0 +1,40 @@
+{
+ "id": "seedling_purple",
+ "dir": "dlc/735730_color_of_madness/monsters/seedling_purple",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Unfinished Aberration",
+    "zh": "未完成的畸变",
+    "ja": "Unfinished Aberration"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "25",
+    "def": "0%",
+    "prot": "0.15",
+    "spd": "3",
+    "res": {
+     "stun": "240%",
+     "poison": "100%",
+     "bleed": "140%",
+     "debuff": "70%",
+     "move": "65%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [],
+   "loot": [],
+   "lifeLink": "spire"
+  }
+ ]
+}

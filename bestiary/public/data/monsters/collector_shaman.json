@@ -1,0 +1,540 @@
+{
+ "id": "collector_shaman",
+ "dir": "monsters/collector_shaman",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Collected Vestal",
+    "zh": "被收集的修女",
+    "ja": "コレクテッド・ヴェスタル"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "16",
+    "def": "7.5%",
+    "prot": "0",
+    "spd": "5",
+    "res": {
+     "stun": "25%",
+     "poison": "40%",
+     "bleed": "40%",
+     "debuff": "15%",
+     "move": "10%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "head_heal",
+     "name": {
+      "zh": "心思顽韧",
+      "en": "Headstrong"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": []
+    },
+    {
+     "id": "head_buff",
+     "name": {
+      "zh": "头疼欲裂",
+      "en": "Headache"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Head Buff 1"
+     ]
+    },
+    {
+     "id": "head_stress",
+     "name": {
+      "zh": "怪头飞袭",
+      "en": "Head Rush"
+     },
+     "type": "ranged",
+     "atk": "97.5%",
+     "dmg": "2-4",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "collector_shaman",
+    "skillDesires": [
+     {
+      "skill": "head_heal",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "head_buff",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "head_stress",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "ally_class_target",
+      "skill": "head_heal"
+     },
+     {
+      "type": "ally_class_target",
+      "skill": "head_buff"
+     },
+     {
+      "type": "ally_class_target",
+      "skill": "head_buff"
+     },
+     {
+      "type": "health_target",
+      "skill": "head_heal"
+     },
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "head_stress"
+     }
+    ]
+   },
+   "lifeLink": "collector"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Collected Vestal",
+    "zh": "被收藏的修女",
+    "ja": "コレクテッド・ヴェスタル"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "22",
+    "def": "16.25%",
+    "prot": "0",
+    "spd": "6",
+    "res": {
+     "stun": "45%",
+     "poison": "60%",
+     "bleed": "60%",
+     "debuff": "35%",
+     "move": "30%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "head_heal",
+     "name": {
+      "zh": "心思顽韧",
+      "en": "Headstrong"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": []
+    },
+    {
+     "id": "head_buff",
+     "name": {
+      "zh": "头疼欲裂",
+      "en": "Headache"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Head Buff 1"
+     ]
+    },
+    {
+     "id": "head_stress",
+     "name": {
+      "zh": "怪头飞袭",
+      "en": "Head Rush"
+     },
+     "type": "ranged",
+     "atk": "103.75%",
+     "dmg": "3-5",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "collector_shaman",
+    "skillDesires": [
+     {
+      "skill": "head_heal",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "head_buff",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "head_stress",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "ally_class_target",
+      "skill": "head_heal"
+     },
+     {
+      "type": "ally_class_target",
+      "skill": "head_buff"
+     },
+     {
+      "type": "ally_class_target",
+      "skill": "head_buff"
+     },
+     {
+      "type": "health_target",
+      "skill": "head_heal"
+     },
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "head_stress"
+     }
+    ]
+   },
+   "lifeLink": "collector"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Collected Vestal",
+    "zh": "被珍藏的修女",
+    "ja": "コレクテッド・ヴェスタル"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "31",
+    "def": "28.75%",
+    "prot": "0",
+    "spd": "7",
+    "res": {
+     "stun": "65%",
+     "poison": "80%",
+     "bleed": "80%",
+     "debuff": "55%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "head_heal",
+     "name": {
+      "zh": "心思顽韧",
+      "en": "Headstrong"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": []
+    },
+    {
+     "id": "head_buff",
+     "name": {
+      "zh": "头疼欲裂",
+      "en": "Headache"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Head Buff 1"
+     ]
+    },
+    {
+     "id": "head_stress",
+     "name": {
+      "zh": "怪头飞袭",
+      "en": "Head Rush"
+     },
+     "type": "ranged",
+     "atk": "117.5%",
+     "dmg": "4-7",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "collector_shaman",
+    "skillDesires": [
+     {
+      "skill": "head_heal",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "head_buff",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "head_stress",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "ally_class_target",
+      "skill": "head_heal"
+     },
+     {
+      "type": "ally_class_target",
+      "skill": "head_buff"
+     },
+     {
+      "type": "ally_class_target",
+      "skill": "head_buff"
+     },
+     {
+      "type": "health_target",
+      "skill": "head_heal"
+     },
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "head_stress"
+     }
+    ]
+   },
+   "lifeLink": "collector"
+  }
+ ]
+}

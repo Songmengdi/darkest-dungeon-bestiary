@@ -1,0 +1,318 @@
+{
+ "id": "scarecrow",
+ "dir": "dlc/735730_color_of_madness/monsters/scarecrow",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Scarecrow",
+    "zh": "稻草人",
+    "ja": "Scarecrow"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "12",
+    "def": "15%",
+    "prot": "0",
+    "spd": "6",
+    "res": {
+     "stun": "60%",
+     "poison": "25%",
+     "bleed": "200%",
+     "debuff": "40%",
+     "move": "10%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "the_wonders",
+     "name": {
+      "zh": "难忘的启示",
+      "en": "Haunting Revelation"
+     },
+     "type": "ranged",
+     "atk": "87.5%",
+     "dmg": "1-3",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Scare Horror AOE 1"
+     ]
+    },
+    {
+     "id": "insistent_grasp",
+     "name": {
+      "zh": "打谷",
+      "en": "Flail The Crops"
+     },
+     "type": "melee",
+     "atk": "87.5%",
+     "dmg": "3-7",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Blight 1"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_A",
+   "lifeLink": "miller"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Scarecrow",
+    "zh": "稻草人",
+    "ja": "Scarecrow"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "17",
+    "def": "23.75%",
+    "prot": "0",
+    "spd": "7",
+    "res": {
+     "stun": "80%",
+     "poison": "45%",
+     "bleed": "220%",
+     "debuff": "60%",
+     "move": "30%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "the_wonders",
+     "name": {
+      "zh": "难忘的启示",
+      "en": "Haunting Revelation"
+     },
+     "type": "ranged",
+     "atk": "93.75%",
+     "dmg": "2-4",
+     "crit": "12%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Scare Horror AOE 2"
+     ]
+    },
+    {
+     "id": "insistent_grasp",
+     "name": {
+      "zh": "打谷",
+      "en": "Flail The Crops"
+     },
+     "type": "melee",
+     "atk": "93.75%",
+     "dmg": "5-9",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Blight 3"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_B",
+   "lifeLink": "miller"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Scarecrow",
+    "zh": "稻草人",
+    "ja": "Scarecrow"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "22",
+    "def": "35%",
+    "prot": "0",
+    "spd": "8",
+    "res": {
+     "stun": "100%",
+     "poison": "65%",
+     "bleed": "240%",
+     "debuff": "80%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "the_wonders",
+     "name": {
+      "zh": "难忘的启示",
+      "en": "Haunting Revelation"
+     },
+     "type": "ranged",
+     "atk": "105%",
+     "dmg": "2-5",
+     "crit": "14%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Scare Horror AOE 3"
+     ]
+    },
+    {
+     "id": "insistent_grasp",
+     "name": {
+      "zh": "打谷",
+      "en": "Flail The Crops"
+     },
+     "type": "melee",
+     "atk": "105%",
+     "dmg": "6-12",
+     "crit": "8%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Blight 5"
+     ]
+    },
+    {
+     "id": "root_down",
+     "name": {
+      "zh": "根深蒂固",
+      "en": "Roots"
+     },
+     "type": "melee",
+     "atk": "100%",
+     "dmg": "4-6",
+     "crit": "7%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Scarecrow Spd Debuff C",
+      "Scarecrow Acc Debuff C"
+     ]
+    },
+    {
+     "id": "ashen_breeze",
+     "name": {
+      "zh": "生长碎片",
+      "en": "Shard of Growth"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "targetAlly": true,
+     "effects": [
+      "Scarecrow Party Regen"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_C",
+   "lifeLink": "miller"
+  }
+ ]
+}

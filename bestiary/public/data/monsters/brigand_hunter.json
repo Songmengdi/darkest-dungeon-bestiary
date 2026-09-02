@@ -1,0 +1,174 @@
+{
+ "id": "brigand_hunter",
+ "dir": "monsters/brigand_hunter",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Brigand Hunter",
+    "zh": "土匪猎杀者",
+    "ja": "ブリガンド・ハンター"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "25",
+    "def": "31.25%",
+    "prot": "0",
+    "spd": "8",
+    "res": {
+     "stun": "72.5%",
+     "poison": "67.5%",
+     "bleed": "67.5%",
+     "debuff": "62.5%",
+     "move": "73%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "blunderbuss_shot",
+     "name": {
+      "zh": "火力覆盖",
+      "en": "Blanket Fire"
+     },
+     "type": "ranged",
+     "atk": "93.75%",
+     "dmg": "2-6",
+     "crit": "7%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Fusilier Blanket Debuff 6",
+      "Blanket Fire Stress"
+     ]
+    },
+    {
+     "id": "rushed_shot",
+     "name": {
+      "zh": "匆忙射击",
+      "en": "Rushed Shot"
+     },
+     "type": "melee",
+     "atk": "83.75%",
+     "dmg": "4-9",
+     "crit": "15%",
+     "launch": [
+      1
+     ],
+     "target": [
+      1,
+      2,
+      3
+     ],
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "brigand_fusilier_D",
+    "skillDesires": [
+     {
+      "skill": "blunderbuss_shot",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "rushed_shot",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_D"
+  }
+ ]
+}

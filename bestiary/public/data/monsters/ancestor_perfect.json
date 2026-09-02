@@ -1,0 +1,125 @@
+{
+ "id": "ancestor_perfect",
+ "dir": "monsters/ancestor_perfect",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Perfect Reflection",
+    "zh": "完美复制体",
+    "ja": "完全なる分身"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "36",
+    "def": "17.75%",
+    "prot": "0",
+    "spd": "9",
+    "res": {
+     "stun": "72.5%",
+     "poison": "57.5%",
+     "bleed": "67.5%",
+     "debuff": "57.5%",
+     "move": "73%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "perfect_bloodsteal",
+     "name": {
+      "zh": "团聚",
+      "en": "Reunion"
+     },
+     "type": "ranged",
+     "atk": "113.75%",
+     "dmg": "5-5",
+     "crit": "10%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Ancestor Perfect Bleed",
+      "Ancestor Damage Marked",
+      "Ancestor Small Stress"
+     ]
+    },
+    {
+     "id": "perfect_reveal",
+     "name": {
+      "zh": "吾等同源",
+      "en": "We Are the Same"
+     },
+     "type": "ranged",
+     "atk": "113.75%",
+     "dmg": "2-2",
+     "crit": "10%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Ancestor Perfect Stress"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "ancestor_perfect_D",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "effect_key_status_skill"
+     },
+     {
+      "skill": "perfect_bloodsteal",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "perfect_reveal",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target",
+      "skill": "perfect_bloodsteal"
+     },
+     {
+      "type": "stress_target",
+      "skill": "perfect_reveal"
+     }
+    ]
+   },
+   "lifeLink": "ancestor_small"
+  }
+ ]
+}

@@ -1,0 +1,169 @@
+{
+ "id": "templar_ranged_mb",
+ "dir": "monsters/templar_ranged_mb",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Templar Warlord",
+    "zh": "圣堂军阀",
+    "ja": "テンプル・ウォーロード"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "105",
+    "def": "28.75%",
+    "prot": "0",
+    "spd": "6",
+    "res": {
+     "stun": "97.5%",
+     "poison": "97.5%",
+     "bleed": "67.5%",
+     "debuff": "67.5%",
+     "move": "98%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "templar_pinch",
+     "name": {
+      "zh": "折磨",
+      "en": "Torment"
+     },
+     "type": "melee",
+     "atk": "103.75%",
+     "dmg": "8-17",
+     "crit": "10%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "targetAoe": true,
+     "effects": []
+    },
+    {
+     "id": "templar_snipe",
+     "name": {
+      "zh": "针狙",
+      "en": "Stinger Shot"
+     },
+     "type": "ranged",
+     "atk": "113.75%",
+     "dmg": "12-17",
+     "crit": "20%",
+     "launch": [
+      3,
+      4
+     ],
+     "target": [
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Templar Snipe Blight",
+      "Templar Weaken"
+     ]
+    },
+    {
+     "id": "templar_aoe",
+     "name": {
+      "zh": "天谴",
+      "en": "Doomsday"
+     },
+     "type": "ranged",
+     "atk": "113.75%",
+     "dmg": "5-8",
+     "crit": "10%",
+     "launch": [
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Templar AOE Blight"
+     ]
+    },
+    {
+     "id": "darkest_eye",
+     "name": {
+      "zh": "启示",
+      "en": "Revelation"
+     },
+     "type": "ranged",
+     "atk": "123.75%",
+     "dmg": "16-26",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Darkest Eye"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "templar_ranged_mb",
+    "skillDesires": [
+     {
+      "skill": "templar_pinch",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "templar_snipe",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "templar_aoe",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "darkest_eye",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "random_target",
+      "skill": "darkest_eye"
+     }
+    ]
+   },
+   "deathClass": "corpse_large_A"
+  }
+ ]
+}

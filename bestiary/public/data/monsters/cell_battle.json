@@ -1,0 +1,83 @@
+{
+ "id": "cell_battle",
+ "dir": "monsters/cell_battle",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Antibody",
+    "zh": "抗体",
+    "ja": "アンチボディ"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "38",
+    "def": "28.75%",
+    "prot": "0",
+    "spd": "6",
+    "res": {
+     "stun": "97.5%",
+     "poison": "67.5%",
+     "bleed": "87.5%",
+     "debuff": "67.5%",
+     "move": "73%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "battlecell_bam",
+     "name": {
+      "zh": "麻醉泌物",
+      "en": "Stunning Secretion"
+     },
+     "type": "ranged",
+     "atk": "113.75%",
+     "dmg": "8-17",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3
+     ],
+     "effects": [
+      "Battle Cell Stun"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "cell_battle",
+    "skillDesires": [
+     {
+      "skill": "battlecell_bam",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target",
+      "skill": "battlecell_bam"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "id": "totem_attack",
+ "dir": "monsters/totem_attack",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Malignant Growth",
+    "zh": "恶性增生物",
+    "ja": "マリグナント・グロウス"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "42",
+    "def": "18.75%",
+    "prot": "0",
+    "spd": "4",
+    "res": {
+     "stun": "72.5%",
+     "poison": "77.5%",
+     "bleed": "197.5%",
+     "debuff": "47.5%",
+     "move": "148%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "totem_maul",
+     "name": {
+      "zh": "撕离血肉",
+      "en": "Maul the Flesh"
+     },
+     "type": "melee",
+     "atk": "103.75%",
+     "dmg": "8-15",
+     "crit": "12%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Totem Bleed"
+     ]
+    },
+    {
+     "id": "totem_stun",
+     "name": {
+      "zh": "迷乱心灵",
+      "en": "Daze the Mind"
+     },
+     "type": "melee",
+     "atk": "113.75%",
+     "dmg": "4-9",
+     "crit": "10%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Totem Stun"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "totem_attack",
+    "skillDesires": [
+     {
+      "skill": "totem_maul",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "totem_stun",
+      "type": "stun_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stunned_target",
+      "skill": "totem_stun"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "totem_maul"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "totem_stun"
+     },
+     {
+      "type": "marked_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_A"
+  }
+ ]
+}

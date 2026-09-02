@@ -1,0 +1,633 @@
+{
+ "id": "cultist_witch",
+ "dir": "monsters/cultist_witch",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Cultist Acolyte",
+    "zh": "邪教侍僧",
+    "ja": "カルティスト・アコライト"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "13",
+    "def": "12.5%",
+    "prot": "0",
+    "spd": "7",
+    "res": {
+     "stun": "25%",
+     "poison": "20%",
+     "bleed": "20%",
+     "debuff": "40%",
+     "move": "10%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "cultist_pull",
+     "name": {
+      "zh": "邪术拉拽",
+      "en": "Eldritch Pull"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "1-1",
+     "crit": "6%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      3,
+      4
+     ],
+     "effects": [
+      "Pull 2A"
+     ]
+    },
+    {
+     "id": "cultist_push",
+     "name": {
+      "zh": "邪术推搡",
+      "en": "Eldritch Push"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "1-1",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Push 2A"
+     ]
+    },
+    {
+     "id": "cultist_incantation",
+     "name": {
+      "zh": "摄魂密咒",
+      "en": "Stressful Incantation"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "1-1",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 2",
+      "Darkness 2"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "cultist_witch_A",
+    "skillDesires": [
+     {
+      "skill": "cultist_push",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "cultist_pull",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "cultist_incantation",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "cultist_incantation",
+      "type": "performing_turn_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "cultist_incantation"
+     }
+    ]
+   },
+   "deathClass": "corpse_A"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Cultist Enchantress",
+    "zh": "邪教魔女",
+    "ja": "カルティスト・エンチャント"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "18",
+    "def": "21.25%",
+    "prot": "0",
+    "spd": "8",
+    "res": {
+     "stun": "45%",
+     "poison": "40%",
+     "bleed": "40%",
+     "debuff": "60%",
+     "move": "30%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "cultist_pull",
+     "name": {
+      "zh": "邪术拉拽",
+      "en": "Eldritch Pull"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "1-2",
+     "crit": "12%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      3,
+      4
+     ],
+     "effects": [
+      "Pull 2C",
+      "Witch Eldritch Stress 3"
+     ]
+    },
+    {
+     "id": "cultist_push",
+     "name": {
+      "zh": "邪术推搡",
+      "en": "Eldritch Push"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "1-2",
+     "crit": "12%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Push 2C",
+      "Witch Eldritch Stress 3"
+     ]
+    },
+    {
+     "id": "cultist_incantation",
+     "name": {
+      "zh": "摄魂密咒",
+      "en": "Stressful Incantation"
+     },
+     "type": "ranged",
+     "atk": "92.5%",
+     "dmg": "1-2",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Witch Incantation Stress 3",
+      "Darkness 2",
+      "Witch Incantation Mark"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "cultist_witch_B",
+    "skillDesires": [
+     {
+      "skill": "cultist_push",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "cultist_pull",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "cultist_incantation",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "cultist_incantation",
+      "type": "performing_turn_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "cultist_incantation"
+     }
+    ]
+   },
+   "deathClass": "corpse_B"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Cultist Witch",
+    "zh": "邪教女巫",
+    "ja": "カルティスト・ウィッチ"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "25",
+    "def": "33.75%",
+    "prot": "0",
+    "spd": "9",
+    "res": {
+     "stun": "65%",
+     "poison": "60%",
+     "bleed": "60%",
+     "debuff": "80%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "cultist_pull",
+     "name": {
+      "zh": "邪术拉拽",
+      "en": "Eldritch Pull"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "1-3",
+     "crit": "14%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      3,
+      4
+     ],
+     "effects": [
+      "Pull 2E",
+      "Witch Eldritch Stress 5"
+     ]
+    },
+    {
+     "id": "cultist_push",
+     "name": {
+      "zh": "邪术推搡",
+      "en": "Eldritch Push"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "1-3",
+     "crit": "14%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Push 2E",
+      "Witch Eldritch Stress 5"
+     ]
+    },
+    {
+     "id": "cultist_incantation",
+     "name": {
+      "zh": "摄魂密咒",
+      "en": "Stressful Incantation"
+     },
+     "type": "ranged",
+     "atk": "100%",
+     "dmg": "1-3",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Witch Incantation Stress 5",
+      "Darkness 2",
+      "Witch Incantation Mark"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "cultist_witch_C",
+    "skillDesires": [
+     {
+      "skill": "cultist_push",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "cultist_pull",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "cultist_incantation",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "cultist_incantation",
+      "type": "performing_turn_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "cultist_incantation"
+     }
+    ]
+   },
+   "deathClass": "corpse_C"
+  }
+ ]
+}

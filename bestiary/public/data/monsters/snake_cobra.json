@@ -1,0 +1,453 @@
+{
+ "id": "snake_cobra",
+ "dir": "dlc/702540_shieldbreaker/monsters/snake_cobra",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Pliskin",
+    "zh": "眼睛蛇",
+    "ja": "プリスキン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "12",
+    "def": "12%",
+    "prot": "0.1",
+    "spd": "6",
+    "res": {
+     "stun": "25%",
+     "poison": "80%",
+     "bleed": "10%",
+     "debuff": "20%",
+     "move": "25%"
+    }
+   },
+   "enemyType": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "skills": [
+    {
+     "id": "cobra_spit",
+     "name": {
+      "zh": "剧毒诡计",
+      "en": "Venomous Gleek"
+     },
+     "type": "ranged",
+     "atk": "92.5%",
+     "dmg": "1-1",
+     "crit": "2%",
+     "launch": [
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Cobra Spit Blight 1"
+     ]
+    },
+    {
+     "id": "cobra_bite",
+     "name": {
+      "zh": "注入毒液",
+      "en": "Infuse"
+     },
+     "type": "melee",
+     "atk": "92.5%",
+     "dmg": "3-5",
+     "crit": "6%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Cobra Bite Blight 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "deathClass": "corpse_A"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Greater Pliskin",
+    "zh": "大眼镜蛇",
+    "ja": "グレーター・プリスキン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "17",
+    "def": "20.75%",
+    "prot": "0.1",
+    "spd": "7",
+    "res": {
+     "stun": "45%",
+     "poison": "100%",
+     "bleed": "30%",
+     "debuff": "40%",
+     "move": "45%"
+    }
+   },
+   "enemyType": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "skills": [
+    {
+     "id": "cobra_spit",
+     "name": {
+      "zh": "剧毒诡计",
+      "en": "Venomous Gleek"
+     },
+     "type": "ranged",
+     "atk": "98.75%",
+     "dmg": "2-2",
+     "crit": "8%",
+     "launch": [
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Cobra Spit Blight 3"
+     ]
+    },
+    {
+     "id": "cobra_bite",
+     "name": {
+      "zh": "注入毒液",
+      "en": "Infuse"
+     },
+     "type": "melee",
+     "atk": "98.75%",
+     "dmg": "4-7",
+     "crit": "12%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Cobra Bite Blight 3"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "deathClass": "corpse_B"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Terrible Pliskin",
+    "zh": "眼镜王蛇",
+    "ja": "猛烈のプリスキン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "23",
+    "def": "33.25%",
+    "prot": "0.1",
+    "spd": "8",
+    "res": {
+     "stun": "65%",
+     "poison": "120%",
+     "bleed": "50%",
+     "debuff": "60%",
+     "move": "65%"
+    }
+   },
+   "enemyType": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "skills": [
+    {
+     "id": "cobra_spit",
+     "name": {
+      "zh": "剧毒诡计",
+      "en": "Venomous Gleek"
+     },
+     "type": "ranged",
+     "atk": "112.5%",
+     "dmg": "2-2",
+     "crit": "10%",
+     "launch": [
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Cobra Spit Blight 5"
+     ]
+    },
+    {
+     "id": "cobra_bite",
+     "name": {
+      "zh": "注入毒液",
+      "en": "Infuse"
+     },
+     "type": "melee",
+     "atk": "112.5%",
+     "dmg": "5-10",
+     "crit": "14%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Cobra Bite Blight 5"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "deathClass": "corpse_C"
+  }
+ ]
+}

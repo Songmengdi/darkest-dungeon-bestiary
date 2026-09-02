@@ -1,0 +1,70 @@
+{
+ "id": "seed_black",
+ "dir": "dlc/735730_color_of_madness/monsters/seed_black",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Traumatic Aberration",
+    "zh": "创伤畸变",
+    "ja": "Traumatic Aberration"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "30",
+    "def": "0%",
+    "prot": "0.2",
+    "spd": "5",
+    "res": {
+     "stun": "240%",
+     "poison": "100%",
+     "bleed": "140%",
+     "debuff": "70%",
+     "move": "65%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "black_seed_suicide",
+     "name": {
+      "zh": "永恒之花",
+      "en": "Eternal Blossom"
+     },
+     "type": "ranged",
+     "atk": "115%",
+     "dmg": "3-5",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "kill_self_queued",
+      "black seed horror",
+      "black seed heal debuff"
+     ]
+    }
+   ],
+   "loot": [],
+   "lifeLink": "spire"
+  }
+ ]
+}

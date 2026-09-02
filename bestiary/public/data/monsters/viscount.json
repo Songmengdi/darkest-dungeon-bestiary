@@ -1,0 +1,247 @@
+{
+ "id": "viscount",
+ "dir": "dlc/580100_crimson_court/features/crimson_court/monsters/viscount",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Viscount",
+    "zh": "子爵",
+    "ja": "ヴァイカウント"
+   },
+   "size": 1,
+   "skills": [],
+   "loot": []
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Viscount",
+    "zh": "子爵",
+    "ja": "ヴァイカウント"
+   },
+   "size": 1,
+   "skills": [],
+   "loot": []
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Viscount",
+    "zh": "子爵",
+    "ja": "ヴァイカウント"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "127",
+    "def": "22.5%",
+    "prot": "0",
+    "spd": "5",
+    "res": {
+     "stun": "50%",
+     "poison": "90%",
+     "bleed": "65%",
+     "debuff": "65%",
+     "move": "90%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "feed_on_emaciated",
+     "name": {
+      "zh": "小嘬尝鲜",
+      "en": "Miserly Morsel"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Cure Self",
+      "Viscount Init Sub 1",
+      "Emaciated Feed Buff",
+      "Emaciated Feed Debuff",
+      "Viscount Absorb Effect"
+     ]
+    },
+    {
+     "id": "feed_on_average",
+     "name": {
+      "zh": "享用大餐",
+      "en": "Square Meal"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Cure Self",
+      "Viscount Feed Average Heal",
+      "Average Feed Buff 1",
+      "Average Feed Buff 2",
+      "Average Feed Debuff",
+      "Viscount Absorb Effect"
+     ]
+    },
+    {
+     "id": "hungry_eyes",
+     "name": {
+      "zh": "虎视眈眈",
+      "en": "Hungry Eyes"
+     },
+     "type": "ranged",
+     "atk": "97.5%",
+     "dmg": "2-5",
+     "crit": "5%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Hands Off",
+      "Viscount Acc Buff",
+      "Hungry Eyes Stress",
+      "Vis Shuffle Self"
+     ]
+    },
+    {
+     "id": "fine_pairing",
+     "name": {
+      "zh": "精制配菜",
+      "en": "Refined Pairing"
+     },
+     "type": "melee",
+     "atk": "97.5%",
+     "dmg": "5-14",
+     "crit": "19%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Viscount Bleed",
+      "Fine Pairing Stress"
+     ]
+    },
+    {
+     "id": "feed_on_bloated",
+     "name": {
+      "zh": "贪婪盛宴",
+      "en": "Ravenous Feast"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Cure Self",
+      "Viscount Feed Bloated Heal",
+      "Viscount Init Sub 2",
+      "Bloated Feed Buff",
+      "Bloated Feed Debuff 1",
+      "Bloated Feed Debuff 2",
+      "Viscount Absorb Effect"
+     ]
+    },
+    {
+     "id": "served_rare",
+     "name": {
+      "zh": "呈以珍馐",
+      "en": "Served Rare"
+     },
+     "type": "melee",
+     "atk": "102.5%",
+     "dmg": "7-12",
+     "crit": "3%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Viscount Push",
+      "Served Rare Stress"
+     ]
+    }
+   ],
+   "loot": []
+  }
+ ]
+}

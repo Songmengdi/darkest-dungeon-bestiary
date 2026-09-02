@@ -1,0 +1,273 @@
+{
+ "id": "nest",
+ "dir": "monsters/nest",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Shrieker's Nest",
+    "zh": "尖叫魔巢穴",
+    "ja": "シュリーカーの巣"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "60",
+    "def": "0%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "200%",
+     "poison": "200%",
+     "bleed": "200%",
+     "debuff": "200%",
+     "move": "20%"
+    }
+   },
+   "enemyType": {
+    "id": "thatchery",
+    "zh": "thatchery",
+    "en": "Thatchery"
+   },
+   "skills": [],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "item",
+       "chances": 1,
+       "data": {
+        "type": "gem",
+        "id": "trapezohedron",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_A",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "crow"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Shrieker's Nest",
+    "zh": "尖叫魔巢穴",
+    "ja": "シュリーカーの巣"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "90",
+    "def": "0%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "220%",
+     "poison": "220%",
+     "bleed": "220%",
+     "debuff": "220%",
+     "move": "40%"
+    }
+   },
+   "enemyType": {
+    "id": "thatchery",
+    "zh": "thatchery",
+    "en": "Thatchery"
+   },
+   "skills": [],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "item",
+       "chances": 2,
+       "data": {
+        "type": "gem",
+        "id": "trapezohedron",
+        "amount": 1
+       }
+      },
+      {
+       "type": "item",
+       "chances": 4,
+       "data": {
+        "type": "gem",
+        "id": "trapezohedron",
+        "amount": 2
+       }
+      },
+      {
+       "type": "item",
+       "chances": 4,
+       "data": {
+        "type": "gem",
+        "id": "trapezohedron",
+        "amount": 3
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_B",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "crow"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Shrieker's Nest",
+    "zh": "尖叫魔巢穴",
+    "ja": "シュリーカーの巣"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "123",
+    "def": "0%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "240%",
+     "poison": "240%",
+     "bleed": "240%",
+     "debuff": "240%",
+     "move": "60%"
+    }
+   },
+   "enemyType": {
+    "id": "thatchery",
+    "zh": "thatchery",
+    "en": "Thatchery"
+   },
+   "skills": [],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "item",
+       "chances": 4,
+       "data": {
+        "type": "gem",
+        "id": "trapezohedron",
+        "amount": 3
+       }
+      },
+      {
+       "type": "item",
+       "chances": 4,
+       "data": {
+        "type": "gem",
+        "id": "trapezohedron",
+        "amount": 4
+       }
+      },
+      {
+       "type": "item",
+       "chances": 2,
+       "data": {
+        "type": "gem",
+        "id": "trapezohedron",
+        "amount": 5
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_C",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "crow"
+  }
+ ]
+}

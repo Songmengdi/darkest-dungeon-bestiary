@@ -1,0 +1,250 @@
+{
+ "id": "corpse",
+ "dir": "monsters/corpse",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Corpse",
+    "zh": "尸骸",
+    "ja": "死骸"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "7",
+    "def": "-20%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "200%",
+     "poison": "0%",
+     "bleed": "0%",
+     "debuff": "200%",
+     "move": "200%"
+    }
+   },
+   "enemyType": {
+    "id": "corpse",
+    "zh": "尸骸",
+    "en": "Corpse"
+   },
+   "skills": [],
+   "loot": [],
+   "brain": {
+    "id": "default_A",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Corpse",
+    "zh": "尸骸",
+    "ja": "死骸"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "10",
+    "def": "-11.25%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "220%",
+     "poison": "0%",
+     "bleed": "0%",
+     "debuff": "220%",
+     "move": "220%"
+    }
+   },
+   "enemyType": {
+    "id": "corpse",
+    "zh": "尸骸",
+    "en": "Corpse"
+   },
+   "skills": [],
+   "loot": [],
+   "brain": {
+    "id": "default_B",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Corpse",
+    "zh": "尸骸",
+    "ja": "死骸"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "14",
+    "def": "1.25%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "240%",
+     "poison": "0%",
+     "bleed": "0%",
+     "debuff": "240%",
+     "move": "240%"
+    }
+   },
+   "enemyType": {
+    "id": "corpse",
+    "zh": "尸骸",
+    "en": "Corpse"
+   },
+   "skills": [],
+   "loot": [],
+   "brain": {
+    "id": "default_C",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Corpse",
+    "zh": "尸骸",
+    "ja": "死骸"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "14",
+    "def": "2.5%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "245%",
+     "poison": "0%",
+     "bleed": "0%",
+     "debuff": "245%",
+     "move": "245%"
+    }
+   },
+   "enemyType": {
+    "id": "corpse",
+    "zh": "尸骸",
+    "en": "Corpse"
+   },
+   "skills": [],
+   "loot": [],
+   "brain": {
+    "id": "default_C",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   }
+  }
+ ]
+}

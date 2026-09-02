@@ -1,0 +1,88 @@
+{
+ "id": "com_cattail",
+ "dir": "dlc/735730_color_of_madness/monsters/com_cattail",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Cattail",
+    "zh": "香蒲",
+    "ja": "キャットテール"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "205",
+    "def": "222.5%",
+    "prot": "2",
+    "spd": "0",
+    "res": {
+     "stun": "255%",
+     "poison": "240%",
+     "bleed": "240%",
+     "debuff": "240%",
+     "move": "240%"
+    }
+   },
+   "enemyType": {
+    "id": "vegetation",
+    "zh": "植物",
+    "en": "Vegetation"
+   },
+   "skills": [],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_C",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "com_crocodile"
+  }
+ ]
+}

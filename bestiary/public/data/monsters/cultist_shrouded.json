@@ -1,0 +1,117 @@
+{
+ "id": "cultist_shrouded",
+ "dir": "monsters/cultist_shrouded",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Cultist Priest",
+    "zh": "邪教祭司",
+    "ja": "カルティスト・プリースト"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "38",
+    "def": "23.75%",
+    "prot": "0",
+    "spd": "7",
+    "res": {
+     "stun": "72.5%",
+     "poison": "57.5%",
+     "bleed": "107.5%",
+     "debuff": "67.5%",
+     "move": "73%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "shrouded_melee",
+     "name": {
+      "zh": "死亡鞭挞",
+      "en": "Death Lash"
+     },
+     "type": "melee",
+     "atk": "113.75%",
+     "dmg": "4-7",
+     "crit": "10%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Shrouded AOE Stress",
+      "Shrouded Bleed Debuff"
+     ]
+    },
+    {
+     "id": "shrouded_ranged",
+     "name": {
+      "zh": "深祭一指",
+      "en": "The Finger"
+     },
+     "type": "ranged",
+     "atk": "113.75%",
+     "dmg": "7-14",
+     "crit": "20%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Shrouded Stress",
+      "Damage Marked Target Lesser",
+      "Shrouded Pierce Bleed"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "cultist_shrouded",
+    "skillDesires": [
+     {
+      "skill": "shrouded_melee",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "shrouded_ranged",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "shrouded_ranged"
+     }
+    ]
+   },
+   "deathClass": "corpse_A"
+  }
+ ]
+}

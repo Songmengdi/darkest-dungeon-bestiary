@@ -1,0 +1,285 @@
+{
+ "id": "castellan",
+ "dir": "dlc/580100_crimson_court/features/crimson_court/monsters/castellan",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Gatekeeper",
+    "zh": "守门人",
+    "ja": "庭園の使者"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "12",
+    "def": "21%",
+    "prot": "0",
+    "spd": "5",
+    "res": {
+     "stun": "50%",
+     "poison": "60%",
+     "bleed": "25%",
+     "debuff": "50%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "enraging_slight",
+     "name": {
+      "zh": "恶意怠慢",
+      "en": "Enraging Slight"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "1-3",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Castellan Pull 1",
+      "Castellan Stress 1",
+      "Mark Target"
+     ]
+    },
+    {
+     "id": "elusive_exit",
+     "name": {
+      "zh": "无声离席",
+      "en": "Elusive Exit"
+     },
+     "type": "ranged",
+     "atk": "120%",
+     "dmg": "2-2",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "C Stress AOE DoT",
+      "Syco Swap A",
+      "Castellan Exit A"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_A",
+   "lifeLink": "baron"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Gatekeeper",
+    "zh": "守门人",
+    "ja": "庭園の使者"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "17",
+    "def": "29.75%",
+    "prot": "0",
+    "spd": "6",
+    "res": {
+     "stun": "70%",
+     "poison": "80%",
+     "bleed": "45%",
+     "debuff": "70%",
+     "move": "70%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "enraging_slight",
+     "name": {
+      "zh": "恶意怠慢",
+      "en": "Enraging Slight"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "2-3",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Castellan Pull 3",
+      "Castellan Stress 3",
+      "Mark Target"
+     ]
+    },
+    {
+     "id": "elusive_exit",
+     "name": {
+      "zh": "无声离席",
+      "en": "Elusive Exit"
+     },
+     "type": "ranged",
+     "atk": "120%",
+     "dmg": "3-3",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "C Stress AOE DoT",
+      "Syco Swap B",
+      "Castellan Exit B"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_B",
+   "lifeLink": "baron"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Gatekeeper",
+    "zh": "管家",
+    "ja": "庭園の使者"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "23",
+    "def": "42.25%",
+    "prot": "0",
+    "spd": "7",
+    "res": {
+     "stun": "90%",
+     "poison": "100%",
+     "bleed": "65%",
+     "debuff": "90%",
+     "move": "90%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "enraging_slight",
+     "name": {
+      "zh": "恶意怠慢",
+      "en": "Enraging Slight"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "2-5",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Castellan Pull 5",
+      "Castellan Stress 5",
+      "Mark Target"
+     ]
+    },
+    {
+     "id": "elusive_exit",
+     "name": {
+      "zh": "无声离席",
+      "en": "Elusive Exit"
+     },
+     "type": "ranged",
+     "atk": "120%",
+     "dmg": "4-4",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "C Stress AOE DoT",
+      "Syco Swap C",
+      "Castellan Exit C"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_C",
+   "lifeLink": "baron"
+  }
+ ]
+}

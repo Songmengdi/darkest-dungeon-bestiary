@@ -1,0 +1,414 @@
+{
+ "id": "madman",
+ "dir": "monsters/madman",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Madman",
+    "zh": "疯子",
+    "ja": "マッドマン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "14",
+    "def": "20%",
+    "prot": "0",
+    "spd": "9",
+    "res": {
+     "stun": "10%",
+     "poison": "10%",
+     "bleed": "10%",
+     "debuff": "15%",
+     "move": "10%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "accusation",
+     "name": {
+      "zh": "失声控诉",
+      "en": "Accusation"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "1-1",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Madman Horror 1",
+      "MadMan Stress Debuff 1"
+     ]
+    },
+    {
+     "id": "doomsay",
+     "name": {
+      "zh": "末日悲鸣",
+      "en": "Doomsay"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Madman AOE Stress 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 5,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 1,
+       "data": {
+        "table": "T_MADMAN"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "madman_A",
+    "skillDesires": [
+     {
+      "skill": "accusation",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "doomsay",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "accusation"
+     }
+    ]
+   },
+   "deathClass": "corpse_A"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Frothing Madman",
+    "zh": "喷沫的疯子",
+    "ja": "フローシン・マッドマン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "20",
+    "def": "28.75%",
+    "prot": "0",
+    "spd": "10",
+    "res": {
+     "stun": "30%",
+     "poison": "30%",
+     "bleed": "30%",
+     "debuff": "35%",
+     "move": "30%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "accusation",
+     "name": {
+      "zh": "失声控诉",
+      "en": "Accusation"
+     },
+     "type": "ranged",
+     "atk": "108.75%",
+     "dmg": "1-2",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Madman Horror 2",
+      "MadMan Stress Debuff 3"
+     ]
+    },
+    {
+     "id": "doomsay",
+     "name": {
+      "zh": "末日悲鸣",
+      "en": "Doomsay"
+     },
+     "type": "ranged",
+     "atk": "108.75%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Madman AOE Stress 2"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 5,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 1,
+       "data": {
+        "table": "T_MADMAN"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "madman_B",
+    "skillDesires": [
+     {
+      "skill": "accusation",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "doomsay",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "accusation"
+     }
+    ]
+   },
+   "deathClass": "corpse_B"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Raving Madman",
+    "zh": "谵妄的疯子",
+    "ja": "レイビン・マッドマン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "27",
+    "def": "41.25%",
+    "prot": "0",
+    "spd": "11",
+    "res": {
+     "stun": "50%",
+     "poison": "50%",
+     "bleed": "50%",
+     "debuff": "55%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "accusation",
+     "name": {
+      "zh": "失声控诉",
+      "en": "Accusation"
+     },
+     "type": "ranged",
+     "atk": "122.5%",
+     "dmg": "1-3",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Madman Horror 2",
+      "MadMan Stress Debuff 5"
+     ]
+    },
+    {
+     "id": "doomsay",
+     "name": {
+      "zh": "末日悲鸣",
+      "en": "Doomsay"
+     },
+     "type": "ranged",
+     "atk": "122.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Madman AOE Stress 2"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 5,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 1,
+       "data": {
+        "table": "T_MADMAN"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "madman_C",
+    "skillDesires": [
+     {
+      "skill": "accusation",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "doomsay",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "accusation"
+     }
+    ]
+   },
+   "deathClass": "corpse_C"
+  }
+ ]
+}

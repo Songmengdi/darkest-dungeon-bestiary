@@ -1,0 +1,156 @@
+{
+ "id": "cultist_harpy",
+ "dir": "monsters/cultist_harpy",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Ascended Witch",
+    "zh": "飞升女巫",
+    "ja": "アセンド・ウィッチ"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "27",
+    "def": "36.25%",
+    "prot": "0",
+    "spd": "9",
+    "res": {
+     "stun": "72.5%",
+     "poison": "67.5%",
+     "bleed": "67.5%",
+     "debuff": "87.5%",
+     "move": "58%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "cultist_pull_D",
+     "name": {
+      "zh": "命运拉扯",
+      "en": "Fate's Pull"
+     },
+     "type": "ranged",
+     "atk": "103.75%",
+     "dmg": "1-3",
+     "crit": "15%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      3,
+      4
+     ],
+     "effects": [
+      "Pull 2F",
+      "Witch Eldritch Stress 5"
+     ]
+    },
+    {
+     "id": "cultist_push_D",
+     "name": {
+      "zh": "命运推搡",
+      "en": "Fate's Push"
+     },
+     "type": "ranged",
+     "atk": "103.75%",
+     "dmg": "1-3",
+     "crit": "15%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Push 2F",
+      "Witch Eldritch Stress 5"
+     ]
+    },
+    {
+     "id": "cultist_incantation_D",
+     "name": {
+      "zh": "命运示现",
+      "en": "Fate's Reveal"
+     },
+     "type": "ranged",
+     "atk": "103.75%",
+     "dmg": "1-3",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Witch Incantation Stress 5",
+      "Darkness 2",
+      "Turbo Mark"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "cultist_witch_D",
+    "skillDesires": [
+     {
+      "skill": "cultist_push_D",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "cultist_pull_D",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "cultist_incantation_D",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "cultist_incantation_D",
+      "type": "performing_turn_skill"
+     },
+     {
+      "skill": "cultist_pull_D",
+      "type": "performing_turn_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "cultist_incantation_D"
+     },
+     {
+      "type": "marked_target",
+      "skill": "cultist_pull_D"
+     }
+    ]
+   },
+   "deathClass": "corpse_D"
+  }
+ ]
+}

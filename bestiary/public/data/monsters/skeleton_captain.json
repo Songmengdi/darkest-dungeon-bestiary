@@ -1,0 +1,550 @@
+{
+ "id": "skeleton_captain",
+ "dir": "monsters/skeleton_captain",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Bone Captain",
+    "zh": "骸骨队长",
+    "ja": "ボーン・キャプテン"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "35",
+    "def": "0%",
+    "prot": "0.15",
+    "spd": "0",
+    "res": {
+     "stun": "50%",
+     "poison": "10%",
+     "bleed": "200%",
+     "debuff": "20%",
+     "move": "75%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "crushing_blow",
+     "name": {
+      "zh": "粉碎巨锤",
+      "en": "Crushing Blow"
+     },
+     "type": "melee",
+     "atk": "82.5%",
+     "dmg": "6-12",
+     "crit": "12%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    },
+    {
+     "id": "ground_pound",
+     "name": {
+      "zh": "裂地震击",
+      "en": "Ground Pound"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "2-4",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "MultiStun 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "skeleton_captain_A",
+    "skillDesires": [
+     {
+      "skill": "crushing_blow",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "ground_pound",
+      "type": "stun_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_large_A",
+   "lifeLink": "necromancer"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Bone Commander",
+    "zh": "骸骨指挥官",
+    "ja": "ボーン・コマンダー"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "49",
+    "def": "8.75%",
+    "prot": "0.33",
+    "spd": "1",
+    "res": {
+     "stun": "70%",
+     "poison": "30%",
+     "bleed": "220%",
+     "debuff": "40%",
+     "move": "95%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "crushing_blow",
+     "name": {
+      "zh": "粉碎巨锤",
+      "en": "Crushing Blow"
+     },
+     "type": "melee",
+     "atk": "88.75%",
+     "dmg": "8-16",
+     "crit": "16%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Captain Crushing Debuff 3"
+     ]
+    },
+    {
+     "id": "ground_pound",
+     "name": {
+      "zh": "裂地震击",
+      "en": "Ground Pound"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "3-5",
+     "crit": "12%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "MultiStun 3"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "skeleton_captain_B",
+    "skillDesires": [
+     {
+      "skill": "crushing_blow",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "crushing_blow",
+      "type": "performing_turn_skill"
+     },
+     {
+      "skill": "ground_pound",
+      "type": "stun_skill"
+     },
+     {
+      "skill": "ground_pound",
+      "type": "performing_turn_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "ground_pound"
+     }
+    ]
+   },
+   "deathClass": "corpse_large_B",
+   "lifeLink": "necromancer"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Bone General",
+    "zh": "骸骨将军",
+    "ja": "ボーン・ジェネラル"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "68",
+    "def": "21.25%",
+    "prot": "0.33",
+    "spd": "2",
+    "res": {
+     "stun": "90%",
+     "poison": "50%",
+     "bleed": "240%",
+     "debuff": "60%",
+     "move": "115%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "crushing_blow",
+     "name": {
+      "zh": "粉碎巨锤",
+      "en": "Crushing Blow"
+     },
+     "type": "melee",
+     "atk": "102.5%",
+     "dmg": "11-22",
+     "crit": "19%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Captain Crushing Debuff 5"
+     ]
+    },
+    {
+     "id": "ground_pound",
+     "name": {
+      "zh": "裂地震击",
+      "en": "Ground Pound"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "4-7",
+     "crit": "14%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "MultiStun 5"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "skeleton_captain_C",
+    "skillDesires": [
+     {
+      "skill": "crushing_blow",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "crushing_blow",
+      "type": "performing_turn_skill"
+     },
+     {
+      "skill": "ground_pound",
+      "type": "stun_skill"
+     },
+     {
+      "skill": "ground_pound",
+      "type": "performing_turn_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "ground_pound"
+     }
+    ]
+   },
+   "deathClass": "corpse_large_C",
+   "lifeLink": "necromancer"
+  }
+ ]
+}

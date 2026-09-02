@@ -1,0 +1,871 @@
+{
+  "source": "https://darkestdungeon.fandom.com/wiki/Enemies_(Darkest_Dungeon)",
+  "extractedAt": "2026-09-02T04:42:32.189Z",
+  "totalEntries": 142,
+  "uniqueEnemies": 122,
+  "categories": [
+    "Common",
+    "Enemies Exclusive to the Ruins",
+    "Enemies Exclusive to the Warrens",
+    "Enemies Exclusive to the Weald",
+    "Enemies Exclusive to the Cove",
+    "Event Bosses",
+    "Enemies Exclusive to the Courtyard",
+    "Enemies Exclusive to the Farmstead",
+    "Enemies Exclusive to the Darkest Dungeon"
+  ],
+  "enemies": [
+    {
+      "name": "Cultist Brawler",
+      "category": "Common",
+      "image": "images/cultist-brawler.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Cultist_Brawler"
+    },
+    {
+      "name": "Cultist Acolyte",
+      "category": "Common",
+      "image": "images/cultist-acolyte.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Cultist_Acolyte"
+    },
+    {
+      "name": "Brigand Cutthroat",
+      "category": "Common",
+      "image": "images/brigand-cutthroat.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Brigand_Cutthroat"
+    },
+    {
+      "name": "Brigand Fusilier",
+      "category": "Common",
+      "image": "images/brigand-fusilier.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Brigand_Fusilier"
+    },
+    {
+      "name": "Brigand Bloodletter",
+      "category": "Common",
+      "image": "images/brigand-bloodletter.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Brigand_Bloodletter"
+    },
+    {
+      "name": "Brigand Raider",
+      "category": "Common",
+      "image": "images/brigand-raider.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Brigand_Raider"
+    },
+    {
+      "name": "Brigand Hunter",
+      "category": "Common",
+      "image": "images/brigand-hunter.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Brigand_Hunter"
+    },
+    {
+      "name": "Madman",
+      "category": "Common",
+      "image": "images/madman.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Madman"
+    },
+    {
+      "name": "Maggot",
+      "category": "Common",
+      "image": "images/maggot.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Maggot"
+    },
+    {
+      "name": "Webber",
+      "category": "Common",
+      "image": "images/webber.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Webber"
+    },
+    {
+      "name": "Spitter",
+      "category": "Common",
+      "image": "images/spitter.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Spitter"
+    },
+    {
+      "name": "Bone Rabble",
+      "category": "Common",
+      "image": "images/bone-rabble.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Bone_Rabble"
+    },
+    {
+      "name": "Ghoul",
+      "category": "Common",
+      "image": "images/ghoul.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Ghoul"
+    },
+    {
+      "name": "Gargoyle",
+      "category": "Common",
+      "image": "images/gargoyle.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Gargoyle"
+    },
+    {
+      "name": "Supplicant",
+      "category": "Common",
+      "image": "images/supplicant.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Supplicant"
+    },
+    {
+      "name": "Sycophant",
+      "category": "Common",
+      "image": "images/sycophant.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Sycophant"
+    },
+    {
+      "name": "Gatekeeper",
+      "category": "Common",
+      "image": "images/gatekeeper.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Gatekeeper"
+    },
+    {
+      "name": "Chevalier",
+      "category": "Common",
+      "image": "images/chevalier.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Chevalier"
+    },
+    {
+      "name": "Pliskin",
+      "category": "Common",
+      "image": "images/pliskin.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Pliskin"
+    },
+    {
+      "name": "Rattler",
+      "category": "Common",
+      "image": "images/rattler.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Rattler"
+    },
+    {
+      "name": "Adder",
+      "category": "Common",
+      "image": "images/adder.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Adder"
+    },
+    {
+      "name": "Shambler",
+      "category": "Common",
+      "image": "images/shambler.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Shambler"
+    },
+    {
+      "name": "Shambler Tentacle",
+      "category": "Common",
+      "image": "images/shambler-tentacle.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Shambler_Tentacle"
+    },
+    {
+      "name": "The Collector",
+      "category": "Common",
+      "image": "images/the-collector.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/The_Collector"
+    },
+    {
+      "name": "The Collector",
+      "category": "Common",
+      "image": "images/the-collector-2.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/The_Collector"
+    },
+    {
+      "name": "The Collector",
+      "category": "Common",
+      "image": "images/the-collector-3.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/The_Collector"
+    },
+    {
+      "name": "The Collector",
+      "category": "Common",
+      "image": "images/the-collector-4.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/The_Collector"
+    },
+    {
+      "name": "The Fanatic",
+      "category": "Common",
+      "image": "images/the-fanatic.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/The_Fanatic"
+    },
+    {
+      "name": "The Fanatic",
+      "category": "Common",
+      "image": "images/the-fanatic-2.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/The_Fanatic"
+    },
+    {
+      "name": "Thing From The Stars",
+      "category": "Common",
+      "image": "images/thing-from-the-stars.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Thing_From_The_Stars"
+    },
+    {
+      "name": "Bone Soldier",
+      "category": "Enemies Exclusive to the Ruins",
+      "image": "images/bone-soldier.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Bone_Soldier"
+    },
+    {
+      "name": "Bone Courtier",
+      "category": "Enemies Exclusive to the Ruins",
+      "image": "images/bone-courtier.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Bone_Courtier"
+    },
+    {
+      "name": "Bone Arbalist",
+      "category": "Enemies Exclusive to the Ruins",
+      "image": "images/bone-arbalist.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Bone_Arbalist"
+    },
+    {
+      "name": "Bone Defender",
+      "category": "Enemies Exclusive to the Ruins",
+      "image": "images/bone-defender.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Bone_Defender"
+    },
+    {
+      "name": "Bone Spearman",
+      "category": "Enemies Exclusive to the Ruins",
+      "image": "images/bone-spearman.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Bone_Spearman"
+    },
+    {
+      "name": "Bone Captain",
+      "category": "Enemies Exclusive to the Ruins",
+      "image": "images/bone-captain.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Bone_Captain"
+    },
+    {
+      "name": "Bone Bearer",
+      "category": "Enemies Exclusive to the Ruins",
+      "image": "images/bone-bearer.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Bone_Bearer"
+    },
+    {
+      "name": "Necromancer",
+      "category": "Enemies Exclusive to the Ruins",
+      "image": "images/necromancer.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Necromancer"
+    },
+    {
+      "name": "Prophet",
+      "category": "Enemies Exclusive to the Ruins",
+      "image": "images/prophet.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Prophet"
+    },
+    {
+      "name": "Prophet",
+      "category": "Enemies Exclusive to the Ruins",
+      "image": "images/prophet-2.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Prophet"
+    },
+    {
+      "name": "Prophet",
+      "category": "Enemies Exclusive to the Ruins",
+      "image": "images/prophet-3.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Prophet"
+    },
+    {
+      "name": "Prophet",
+      "category": "Enemies Exclusive to the Ruins",
+      "image": "images/prophet-4.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Prophet"
+    },
+    {
+      "name": "Swine Chopper",
+      "category": "Enemies Exclusive to the Warrens",
+      "image": "images/swine-chopper.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Swine_Chopper"
+    },
+    {
+      "name": "Swine Slasher",
+      "category": "Enemies Exclusive to the Warrens",
+      "image": "images/swine-slasher.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Swine_Slasher"
+    },
+    {
+      "name": "Swine Wretch",
+      "category": "Enemies Exclusive to the Warrens",
+      "image": "images/swine-wretch.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Swine_Wretch"
+    },
+    {
+      "name": "Swine Drummer",
+      "category": "Enemies Exclusive to the Warrens",
+      "image": "images/swine-drummer.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Swine_Drummer"
+    },
+    {
+      "name": "Carrion Eater",
+      "category": "Enemies Exclusive to the Warrens",
+      "image": "images/carrion-eater.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Carrion_Eater"
+    },
+    {
+      "name": "Large Carrion Eater",
+      "category": "Enemies Exclusive to the Warrens",
+      "image": "images/large-carrion-eater.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Large_Carrion_Eater"
+    },
+    {
+      "name": "Swinetaur",
+      "category": "Enemies Exclusive to the Warrens",
+      "image": "images/swinetaur.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Swinetaur"
+    },
+    {
+      "name": "Swine Skiver",
+      "category": "Enemies Exclusive to the Warrens",
+      "image": "images/swine-skiver.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Swine_Skiver"
+    },
+    {
+      "name": "Swine Prince",
+      "category": "Enemies Exclusive to the Warrens",
+      "image": "images/swine-prince.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Swine_Prince"
+    },
+    {
+      "name": "Wilbur",
+      "category": "Enemies Exclusive to the Warrens",
+      "image": "images/wilbur.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Wilbur"
+    },
+    {
+      "name": "Flesh",
+      "category": "Enemies Exclusive to the Warrens",
+      "image": "images/flesh.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Flesh"
+    },
+    {
+      "name": "Ectoplasm",
+      "category": "Enemies Exclusive to the Weald",
+      "image": "images/ectoplasm.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Ectoplasm"
+    },
+    {
+      "name": "Large Ectoplasm",
+      "category": "Enemies Exclusive to the Weald",
+      "image": "images/large-ectoplasm.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Large_Ectoplasm"
+    },
+    {
+      "name": "Rabid Gnasher",
+      "category": "Enemies Exclusive to the Weald",
+      "image": "images/rabid-gnasher.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Rabid_Gnasher"
+    },
+    {
+      "name": "Fungal Scratcher",
+      "category": "Enemies Exclusive to the Weald",
+      "image": "images/fungal-scratcher.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Fungal_Scratcher"
+    },
+    {
+      "name": "Fungal Artillery",
+      "category": "Enemies Exclusive to the Weald",
+      "image": "images/fungal-artillery.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Fungal_Artillery"
+    },
+    {
+      "name": "Crone",
+      "category": "Enemies Exclusive to the Weald",
+      "image": "images/crone.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Crone"
+    },
+    {
+      "name": "Unclean Giant",
+      "category": "Enemies Exclusive to the Weald",
+      "image": "images/unclean-giant.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Unclean_Giant"
+    },
+    {
+      "name": "Hateful Virago",
+      "category": "Enemies Exclusive to the Weald",
+      "image": "images/hateful-virago.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Hateful_Virago"
+    },
+    {
+      "name": "Necrotic Fungus",
+      "category": "Enemies Exclusive to the Weald",
+      "image": "images/necrotic-fungus.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Necrotic_Fungus"
+    },
+    {
+      "name": "Hag",
+      "category": "Enemies Exclusive to the Weald",
+      "image": "images/hag.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Hag"
+    },
+    {
+      "name": "Cauldron",
+      "category": "Enemies Exclusive to the Weald",
+      "image": "images/cauldron.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Cauldron"
+    },
+    {
+      "name": "Brigand Pounder",
+      "category": "Enemies Exclusive to the Weald",
+      "image": "images/brigand-pounder.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Brigand_Pounder"
+    },
+    {
+      "name": "Brigand Matchman",
+      "category": "Enemies Exclusive to the Weald",
+      "image": "images/brigand-matchman.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Brigand_Matchman"
+    },
+    {
+      "name": "Pelagic Grouper",
+      "category": "Enemies Exclusive to the Cove",
+      "image": "images/pelagic-grouper.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Pelagic_Grouper"
+    },
+    {
+      "name": "Pelagic Shaman",
+      "category": "Enemies Exclusive to the Cove",
+      "image": "images/pelagic-shaman.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Pelagic_Shaman"
+    },
+    {
+      "name": "Pelagic Guardian",
+      "category": "Enemies Exclusive to the Cove",
+      "image": "images/pelagic-guardian.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Pelagic_Guardian"
+    },
+    {
+      "name": "Sea Maggot",
+      "category": "Enemies Exclusive to the Cove",
+      "image": "images/sea-maggot.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Sea_Maggot"
+    },
+    {
+      "name": "Deep Stinger",
+      "category": "Enemies Exclusive to the Cove",
+      "image": "images/deep-stinger.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Deep_Stinger"
+    },
+    {
+      "name": "Drowned Thrall",
+      "category": "Enemies Exclusive to the Cove",
+      "image": "images/drowned-thrall.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Drowned_Thrall"
+    },
+    {
+      "name": "Uca Major",
+      "category": "Enemies Exclusive to the Cove",
+      "image": "images/uca-major.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Uca_Major"
+    },
+    {
+      "name": "Squiffy Ghast",
+      "category": "Enemies Exclusive to the Cove",
+      "image": "images/squiffy-ghast.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Squiffy_Ghast"
+    },
+    {
+      "name": "Siren",
+      "category": "Enemies Exclusive to the Cove",
+      "image": "images/siren.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Siren"
+    },
+    {
+      "name": "Drowned Crew",
+      "category": "Enemies Exclusive to the Cove",
+      "image": "images/drowned-crew.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Drowned_Crew"
+    },
+    {
+      "name": "Drowned Anchorman",
+      "category": "Enemies Exclusive to the Cove",
+      "image": "images/drowned-anchorman.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Drowned_Anchorman"
+    },
+    {
+      "name": "Brigand Vvulf",
+      "category": "Event Bosses",
+      "image": "images/brigand-vvulf.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Brigand_Vvulf"
+    },
+    {
+      "name": "Barrel O' Bombs",
+      "category": "Event Bosses",
+      "image": "images/barrel-o-bombs.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Barrel_O%27_Bombs"
+    },
+    {
+      "name": "The Shrieker",
+      "category": "Event Bosses",
+      "image": "images/the-shrieker.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/The_Shrieker"
+    },
+    {
+      "name": "Shrieker's Nest",
+      "category": "Event Bosses",
+      "image": "images/shrieker-s-nest.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Shrieker%27s_Nest"
+    },
+    {
+      "name": "Webber",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/webber.png",
+      "wiki": null
+    },
+    {
+      "name": "Spitter",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/spitter.png",
+      "wiki": null
+    },
+    {
+      "name": "Ghoul",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/ghoul.png",
+      "wiki": null
+    },
+    {
+      "name": "Maggot",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/maggot.png",
+      "wiki": null
+    },
+    {
+      "name": "Carrion Eater",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/carrion-eater.png",
+      "wiki": null
+    },
+    {
+      "name": "Carrion Big",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/large-carrion-eater.png",
+      "wiki": null
+    },
+    {
+      "name": "Manservant",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/manservant.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Manservant"
+    },
+    {
+      "name": "Esquire",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/esquire.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Esquire"
+    },
+    {
+      "name": "Courtesan",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/courtesan.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Courtesan"
+    },
+    {
+      "name": "Crocodilian",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/crocodilian.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Crocodilian"
+    },
+    {
+      "name": "Bulrush",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/bulrush.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Crocodilian"
+    },
+    {
+      "name": "Cattail",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/cattail.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Crocodilian"
+    },
+    {
+      "name": "Baron",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/baron.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Baron"
+    },
+    {
+      "name": "Pulsating Egg",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/pulsating-egg.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Baron"
+    },
+    {
+      "name": "Viscount",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/viscount.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Viscount"
+    },
+    {
+      "name": "Emaciated Body",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/emaciated-body.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Viscount"
+    },
+    {
+      "name": "Emaciated Body",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/emaciated-body-2.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Viscount"
+    },
+    {
+      "name": "Emaciated Body",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/emaciated-body-3.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Viscount"
+    },
+    {
+      "name": "Countess",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/countess.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Countess"
+    },
+    {
+      "name": "Buff Self: +10% Stun resist, +10% Blight resist, +10% Bleed resist, +10% Debuff resist",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/buff-self-10-stun-resist-10-blight-resist-10-bleed-resist-10-debuff-resist.png",
+      "wiki": null
+    },
+    {
+      "name": "Bleed 3",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/bleed-3.png",
+      "wiki": null
+    },
+    {
+      "name": "Garden Guardian",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/garden-guardian.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Garden_Guardian"
+    },
+    {
+      "name": "Garden Guardian",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/garden-guardian-2.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Garden_Guardian"
+    },
+    {
+      "name": "Garden Guardian",
+      "category": "Enemies Exclusive to the Courtyard",
+      "image": "images/garden-guardian-3.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Garden_Guardian"
+    },
+    {
+      "name": "Farmhand",
+      "category": "Enemies Exclusive to the Farmstead",
+      "image": "images/farmhand.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Farmhand"
+    },
+    {
+      "name": "Foreman",
+      "category": "Enemies Exclusive to the Farmstead",
+      "image": "images/foreman.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Foreman"
+    },
+    {
+      "name": "Scarecrow",
+      "category": "Enemies Exclusive to the Farmstead",
+      "image": "images/scarecrow.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Scarecrow"
+    },
+    {
+      "name": "Plow Horse",
+      "category": "Enemies Exclusive to the Farmstead",
+      "image": "images/plow-horse.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Plow_Horse"
+    },
+    {
+      "name": "Crystalline Aberration",
+      "category": "Enemies Exclusive to the Farmstead",
+      "image": "images/crystalline-aberration.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Crystalline_Aberration"
+    },
+    {
+      "name": "Sleeper's Herald",
+      "category": "Enemies Exclusive to the Farmstead",
+      "image": "images/sleeper-s-herald.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Sleeper%27s_Herald"
+    },
+    {
+      "name": "Sleeper's Dream",
+      "category": "Enemies Exclusive to the Farmstead",
+      "image": "images/sleeper-s-dream.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Sleeper%27s_Dream"
+    },
+    {
+      "name": "Miller",
+      "category": "Enemies Exclusive to the Farmstead",
+      "image": "images/miller.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Miller"
+    },
+    {
+      "name": "Frozen Farmhand",
+      "category": "Enemies Exclusive to the Farmstead",
+      "image": "images/frozen-farmhand.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Frozen_Farmhand"
+    },
+    {
+      "name": "Fracture",
+      "category": "Enemies Exclusive to the Farmstead",
+      "image": "images/fracture.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Fracture"
+    },
+    {
+      "name": "Fracture",
+      "category": "Enemies Exclusive to the Farmstead",
+      "image": "images/fracture-2.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Fracture"
+    },
+    {
+      "name": "Fracture",
+      "category": "Enemies Exclusive to the Farmstead",
+      "image": "images/fracture-3.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Fracture"
+    },
+    {
+      "name": "Fracture",
+      "category": "Enemies Exclusive to the Farmstead",
+      "image": "images/fracture-4.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Fracture"
+    },
+    {
+      "name": "The Sleeper",
+      "category": "Enemies Exclusive to the Farmstead",
+      "image": "images/the-sleeper.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/The_Sleeper"
+    },
+    {
+      "name": "Ascended Brawler",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/ascended-brawler.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Ascended_Brawler"
+    },
+    {
+      "name": "Ascended Witch",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/ascended-witch.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Ascended_Witch"
+    },
+    {
+      "name": "Rapturous Cultist",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/rapturous-cultist.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Rapturous_Cultist"
+    },
+    {
+      "name": "Cultist Priest",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/cultist-priest.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Cultist_Priest"
+    },
+    {
+      "name": "Malignant Growth",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/malignant-growth.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Malignant_Growth"
+    },
+    {
+      "name": "Defensive Growth",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/defensive-growth.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Defensive_Growth"
+    },
+    {
+      "name": "Flesh Hound",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/flesh-hound.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Flesh_Hound"
+    },
+    {
+      "name": "Polyp",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/polyp.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Polyp"
+    },
+    {
+      "name": "Templar Impaler",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/templar-impaler.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Templar_Impaler"
+    },
+    {
+      "name": "Templar Warlord",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/templar-warlord.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Templar_Warlord"
+    },
+    {
+      "name": "Templar Gladiator",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/templar-gladiator.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Templar_Gladiator"
+    },
+    {
+      "name": "Templar Sniper",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/templar-sniper.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Templar_Sniper"
+    },
+    {
+      "name": "Antibody",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/antibody.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Antibody"
+    },
+    {
+      "name": "White Cell Stalk",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/white-cell-stalk.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/White_Cell_Stalk"
+    },
+    {
+      "name": "Mammoth Cyst",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/mammoth-cyst.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Mammoth_Cyst"
+    },
+    {
+      "name": "Shuffling Horror",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/shuffling-horror.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Shuffling_Horror"
+    },
+    {
+      "name": "Ancestor",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/ancestor.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Ancestor"
+    },
+    {
+      "name": "Perfect Reflection",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/perfect-reflection.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Perfect_Reflection"
+    },
+    {
+      "name": "Imperfect Reflection",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/imperfect-reflection.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Imperfect_Reflection"
+    },
+    {
+      "name": "Ancestor",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/ancestor-2.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Ancestor"
+    },
+    {
+      "name": "Absolute Nothingness",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/absolute-nothingness.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Absolute_Nothingness"
+    },
+    {
+      "name": "Gestating Heart",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/gestating-heart.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Gestating_Heart"
+    },
+    {
+      "name": "Heart of Darkness",
+      "category": "Enemies Exclusive to the Darkest Dungeon",
+      "image": "images/heart-of-darkness.png",
+      "wiki": "https://darkestdungeon.fandom.com/wiki/Heart_of_Darkness"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>暗黑地牢 · 怪物图鉴</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header id="topbar">
+  <h1>暗黑地牢 · 怪物图鉴</h1>
+  <span id="count" class="muted"></span>
+</header>
+<main id="layout">
+  <aside id="sidebar">
+    <input id="search" type="search" placeholder="搜索怪物(中文名 / 英文名 / ID / 类型)…" autocomplete="off">
+    <div class="filter-label">副本</div>
+    <div id="regionFilter" class="type-filter"></div>
+    <div class="filter-label">类型</div>
+    <div id="typeFilter" class="type-filter"></div>
+    <ul id="list"></ul>
+  </aside>
+  <section id="detail">
+    <div id="placeholder" class="placeholder">
+      <div class="ph-glyph">☠</div>
+      <p>从左侧选择一个怪物查看完整档案</p>
+      <p class="muted">数据直接解析自本机游戏文件 · 含全部难度档</p>
+    </div>
+  </section>
+</main>
+<!-- PROTOTYPE UI(用完即弃):?variant=a|b|c 时由 proto/ 接管页面;定稿后删除本行与 proto/ 目录 -->
+<script src="proto/boot.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

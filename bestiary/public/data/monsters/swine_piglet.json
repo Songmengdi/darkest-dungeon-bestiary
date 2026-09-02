@@ -1,0 +1,1013 @@
+{
+ "id": "swine_piglet",
+ "dir": "monsters/swine_piglet",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Wilbur",
+    "zh": "威尔伯",
+    "ja": "ウィルバー"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "17",
+    "def": "15%",
+    "prot": "0",
+    "spd": "20",
+    "res": {
+     "stun": "50%",
+     "poison": "0%",
+     "bleed": "0%",
+     "debuff": "0%",
+     "move": "0%"
+    }
+   },
+   "enemyType": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "skills": [
+    {
+     "id": "squeal",
+     "name": {
+      "zh": "刺耳尖叫",
+      "en": "Squeal"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "1-1",
+     "crit": "1%",
+     "launch": [
+      1
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Squeal Stun 1"
+     ]
+    },
+    {
+     "id": "wilbur_mark_1",
+     "name": {
+      "zh": "了结这个！",
+      "en": "End This One"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "1-1",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Piggie Mark"
+     ]
+    },
+    {
+     "id": "wilbur_mark_2",
+     "name": {
+      "zh": "了结这俩！",
+      "en": "End These Two"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "1-1",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Piggie Mark"
+     ]
+    },
+    {
+     "id": "squeal_single",
+     "name": {
+      "zh": "刺声尖叫",
+      "en": "Bit o' Squeal"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "1-1",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Squeal Stun 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 10,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 8,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 2,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 12,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 3,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "swine_piglet_A",
+    "skillDesires": [
+     {
+      "skill": "squeal",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "wilbur_mark_1",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "wilbur_mark_2",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Wilbur",
+    "zh": "威尔伯",
+    "ja": "ウィルバー"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "26",
+    "def": "23.75%",
+    "prot": "0",
+    "spd": "21",
+    "res": {
+     "stun": "70%",
+     "poison": "20%",
+     "bleed": "20%",
+     "debuff": "20%",
+     "move": "20%"
+    }
+   },
+   "enemyType": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "skills": [
+    {
+     "id": "squeal",
+     "name": {
+      "zh": "刺耳尖叫",
+      "en": "Squeal"
+     },
+     "type": "ranged",
+     "atk": "108.75%",
+     "dmg": "2-2",
+     "crit": "1%",
+     "launch": [
+      1
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Squeal Stun 3"
+     ]
+    },
+    {
+     "id": "wilbur_mark_1",
+     "name": {
+      "zh": "了结这个！",
+      "en": "End This One"
+     },
+     "type": "ranged",
+     "atk": "108.75%",
+     "dmg": "2-2",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Piggie Mark"
+     ]
+    },
+    {
+     "id": "wilbur_mark_2",
+     "name": {
+      "zh": "了结这俩！",
+      "en": "End These Two"
+     },
+     "type": "ranged",
+     "atk": "108.75%",
+     "dmg": "2-2",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Piggie Mark"
+     ]
+    },
+    {
+     "id": "squeal_single",
+     "name": {
+      "zh": "刺声尖叫",
+      "en": "Bit o' Squeal"
+     },
+     "type": "ranged",
+     "atk": "108.75%",
+     "dmg": "2-2",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Squeal Stun 3"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 10,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 8,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 2,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 12,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 3,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "swine_piglet_B",
+    "skillDesires": [
+     {
+      "skill": "squeal_single",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "squeal",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "wilbur_mark_1",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "wilbur_mark_2",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Wilbur",
+    "zh": "威尔伯",
+    "ja": "ウィルバー"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "35",
+    "def": "37.5%",
+    "prot": "0",
+    "spd": "22",
+    "res": {
+     "stun": "90%",
+     "poison": "40%",
+     "bleed": "40%",
+     "debuff": "40%",
+     "move": "40%"
+    }
+   },
+   "enemyType": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "skills": [
+    {
+     "id": "squeal",
+     "name": {
+      "zh": "刺耳尖叫",
+      "en": "Squeal"
+     },
+     "type": "ranged",
+     "atk": "122.5%",
+     "dmg": "2-2",
+     "crit": "1%",
+     "launch": [
+      1
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Squeal Stun 5"
+     ]
+    },
+    {
+     "id": "wilbur_mark_1",
+     "name": {
+      "zh": "了结这个！",
+      "en": "End This One"
+     },
+     "type": "ranged",
+     "atk": "122.5%",
+     "dmg": "2-2",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Piggie Mark"
+     ]
+    },
+    {
+     "id": "wilbur_mark_2",
+     "name": {
+      "zh": "了结这俩！",
+      "en": "End These Two"
+     },
+     "type": "ranged",
+     "atk": "122.5%",
+     "dmg": "2-2",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Piggie Mark"
+     ]
+    },
+    {
+     "id": "squeal_single",
+     "name": {
+      "zh": "刺声尖叫",
+      "en": "Bit o' Squeal"
+     },
+     "type": "ranged",
+     "atk": "122.5%",
+     "dmg": "2-2",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Squeal Stun 5"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 10,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 8,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 2,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 12,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 3,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "swine_piglet_C",
+    "skillDesires": [
+     {
+      "skill": "squeal_single",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "squeal",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "wilbur_mark_1",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "wilbur_mark_2",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   }
+  }
+ ]
+}

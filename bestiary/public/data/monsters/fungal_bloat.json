@@ -1,0 +1,598 @@
+{
+ "id": "fungal_bloat",
+ "dir": "monsters/fungal_bloat",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Fungal Scratcher",
+    "zh": "真菌刮擦者",
+    "ja": "ファンガス・スクラッチ"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "19",
+    "def": "0%",
+    "prot": "0.33",
+    "spd": "0",
+    "res": {
+     "stun": "25%",
+     "poison": "60%",
+     "bleed": "20%",
+     "debuff": "15%",
+     "move": "25%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "groping_swipe",
+     "name": {
+      "zh": "摸黑扑抓",
+      "en": "Groping Swipe"
+     },
+     "type": "melee",
+     "atk": "72.5%",
+     "dmg": "3-5",
+     "crit": "6%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    },
+    {
+     "id": "fierce_swipe",
+     "name": {
+      "zh": "撕扯猎物",
+      "en": "Rend the Marked"
+     },
+     "type": "melee",
+     "atk": "82.5%",
+     "dmg": "3-5",
+     "crit": "6%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Damage Marked Target Lesser"
+     ]
+    },
+    {
+     "id": "groping_swipe_weak",
+     "name": {
+      "zh": "无力扑击",
+      "en": "Harmless Swipe"
+     },
+     "type": "melee",
+     "atk": "42.5%",
+     "dmg": "2-4",
+     "crit": "0%",
+     "launch": [
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "kill_marked_target_fungal_bloat",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "effect_key_status_skill"
+     },
+     {
+      "skill": "groping_swipe",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "groping_swipe_weak",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "marked_target",
+      "skill": "fierce_swipe"
+     },
+     {
+      "type": "random_target",
+      "skill": "groping_swipe"
+     },
+     {
+      "type": "random_target",
+      "skill": "groping_swipe_weak"
+     }
+    ]
+   },
+   "deathClass": "corpse_A"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Fungal Grabber",
+    "zh": "真菌撕扯者",
+    "ja": "ファンガス・グラブ"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "27",
+    "def": "8.75%",
+    "prot": "0.5",
+    "spd": "1",
+    "res": {
+     "stun": "45%",
+     "poison": "80%",
+     "bleed": "40%",
+     "debuff": "35%",
+     "move": "45%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "groping_swipe",
+     "name": {
+      "zh": "摸黑扑抓",
+      "en": "Groping Swipe"
+     },
+     "type": "melee",
+     "atk": "78.75%",
+     "dmg": "4-7",
+     "crit": "12%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Weak Blight 3"
+     ]
+    },
+    {
+     "id": "fierce_swipe",
+     "name": {
+      "zh": "撕扯猎物",
+      "en": "Rend the Marked"
+     },
+     "type": "melee",
+     "atk": "88.75%",
+     "dmg": "4-7",
+     "crit": "12%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Damage Marked Target Lesser"
+     ]
+    },
+    {
+     "id": "groping_swipe_weak",
+     "name": {
+      "zh": "无力扑击",
+      "en": "Harmless Swipe"
+     },
+     "type": "melee",
+     "atk": "48.75%",
+     "dmg": "3-5",
+     "crit": "0%",
+     "launch": [
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "kill_marked_target_fungal_bloat",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "effect_key_status_skill"
+     },
+     {
+      "skill": "groping_swipe",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "groping_swipe_weak",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "marked_target",
+      "skill": "fierce_swipe"
+     },
+     {
+      "type": "random_target",
+      "skill": "groping_swipe"
+     },
+     {
+      "type": "random_target",
+      "skill": "groping_swipe_weak"
+     }
+    ]
+   },
+   "deathClass": "corpse_B"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Fungal Clawer",
+    "zh": "真菌爬行者",
+    "ja": "ファンガス・クロー"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "37",
+    "def": "21.25%",
+    "prot": "0.5",
+    "spd": "2",
+    "res": {
+     "stun": "65%",
+     "poison": "100%",
+     "bleed": "60%",
+     "debuff": "55%",
+     "move": "65%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "groping_swipe",
+     "name": {
+      "zh": "摸黑扑抓",
+      "en": "Groping Swipe"
+     },
+     "type": "melee",
+     "atk": "92.5%",
+     "dmg": "5-10",
+     "crit": "14%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Weak Blight 5"
+     ]
+    },
+    {
+     "id": "fierce_swipe",
+     "name": {
+      "zh": "撕扯猎物",
+      "en": "Rend the Marked"
+     },
+     "type": "melee",
+     "atk": "102.5%",
+     "dmg": "5-10",
+     "crit": "14%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Damage Marked Target Lesser"
+     ]
+    },
+    {
+     "id": "groping_swipe_weak",
+     "name": {
+      "zh": "无力扑击",
+      "en": "Harmless Swipe"
+     },
+     "type": "melee",
+     "atk": "62.5%",
+     "dmg": "4-7",
+     "crit": "0%",
+     "launch": [
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "kill_marked_target_fungal_bloat",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "effect_key_status_skill"
+     },
+     {
+      "skill": "groping_swipe",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "groping_swipe_weak",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "marked_target",
+      "skill": "fierce_swipe"
+     },
+     {
+      "type": "random_target",
+      "skill": "groping_swipe"
+     },
+     {
+      "type": "random_target",
+      "skill": "groping_swipe_weak"
+     }
+    ]
+   },
+   "deathClass": "corpse_C"
+  }
+ ]
+}

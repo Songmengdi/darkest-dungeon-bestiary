@@ -1,0 +1,68 @@
+{
+ "id": "ancestor_nebula",
+ "dir": "monsters/ancestor_nebula",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Absolute Nothingness",
+    "zh": "绝对的虚无",
+    "ja": "果てなき虚無"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "999",
+    "def": "999%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "1000%",
+     "poison": "1000%",
+     "bleed": "1000%",
+     "debuff": "1000%",
+     "move": "1000%"
+    }
+   },
+   "enemyType": {
+    "id": "cosmic",
+    "zh": "恒宇",
+    "en": "Cosmic"
+   },
+   "skills": [],
+   "loot": [],
+   "brain": {
+    "id": "default_A",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "ancestor_big"
+  }
+ ]
+}

@@ -1,0 +1,459 @@
+{
+ "id": "cocoon",
+ "dir": "dlc/735730_color_of_madness/monsters/cocoon",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Frozen Farmhand",
+    "zh": "冰封工人",
+    "ja": "Frozen Farmhand"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "18",
+    "def": "0%",
+    "prot": "0.35",
+    "spd": "1",
+    "res": {
+     "stun": "50%",
+     "poison": "0%",
+     "bleed": "50%",
+     "debuff": "50%",
+     "move": "0%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "xform_to_farmhand",
+     "name": {
+      "zh": "土壤解冻",
+      "en": "The Soil Thaws"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "xform to farmhand_A"
+     ]
+    },
+    {
+     "id": "murmurs",
+     "name": {
+      "zh": "虚伪哭丧",
+      "en": "Hollow Keening"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Horse Horror A"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "deathClass": "corpse_A",
+   "lifeLink": "miller"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Frozen Farmhand",
+    "zh": "冰封工人",
+    "ja": "Frozen Farmhand"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "25",
+    "def": "0%",
+    "prot": "0.35",
+    "spd": "2",
+    "res": {
+     "stun": "70%",
+     "poison": "20%",
+     "bleed": "70%",
+     "debuff": "70%",
+     "move": "20%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "xform_to_farmhand",
+     "name": {
+      "zh": "土壤解冻",
+      "en": "The Soil Thaws"
+     },
+     "type": "ranged",
+     "atk": "108.75%",
+     "dmg": "0-0",
+     "crit": "1%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "xform to farmhand_B"
+     ]
+    },
+    {
+     "id": "murmurs",
+     "name": {
+      "zh": "虚伪哭丧",
+      "en": "Hollow Keening"
+     },
+     "type": "ranged",
+     "atk": "92.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Horse Horror B"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "deathClass": "corpse_B",
+   "lifeLink": "miller"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Frozen Farmhand",
+    "zh": "冰封工人",
+    "ja": "Frozen Farmhand"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "35",
+    "def": "0%",
+    "prot": "0.35",
+    "spd": "3",
+    "res": {
+     "stun": "90%",
+     "poison": "40%",
+     "bleed": "90%",
+     "debuff": "40%",
+     "move": "40%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "xform_to_farmhand",
+     "name": {
+      "zh": "土壤解冻",
+      "en": "The Soil Thaws"
+     },
+     "type": "ranged",
+     "atk": "122.5%",
+     "dmg": "0-0",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "xform to farmhand_C"
+     ]
+    },
+    {
+     "id": "murmurs",
+     "name": {
+      "zh": "虚伪哭丧",
+      "en": "Hollow Keening"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Horse Horror C"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "deathClass": "corpse_C",
+   "lifeLink": "miller"
+  }
+ ]
+}

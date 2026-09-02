@@ -1,0 +1,642 @@
+{
+ "id": "shambler",
+ "dir": "monsters/shambler",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Shambler",
+    "zh": "跛行者",
+    "ja": "シャンブラー"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "77",
+    "def": "0%",
+    "prot": "0.33",
+    "spd": "0",
+    "res": {
+     "stun": "100%",
+     "poison": "40%",
+     "bleed": "40%",
+     "debuff": "40%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "shamble_fwd",
+     "name": {
+      "zh": "形体怪异的蠕进",
+      "en": "Obdurous Advancement"
+     },
+     "type": "melee",
+     "atk": "82.5%",
+     "dmg": "1-1",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "ShamblerBleed 1",
+      "SummonTentacle A"
+     ]
+    },
+    {
+     "id": "shamble_back",
+     "name": {
+      "zh": "起伏不定的撤缩",
+      "en": "Undulating Withdrawal"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "1-1",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "ShamblerBlight 1",
+      "SummonTentacle A"
+     ]
+    },
+    {
+     "id": "shambler_howl",
+     "name": {
+      "zh": "搅动黑暗的挽鸣",
+      "en": "Stentorious Lament"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "1-1",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Stress 1",
+      "Shuffle Party 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 1,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "shambler",
+    "skillDesires": [
+     {
+      "skill": "shamble_fwd",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "shamble_back",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "shambler_howl",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_large_A"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Grotesque Shambler",
+    "zh": "畸怪跛行者",
+    "ja": "グロテスク・シャンブラー"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "116",
+    "def": "8.75%",
+    "prot": "0.33",
+    "spd": "1",
+    "res": {
+     "stun": "120%",
+     "poison": "60%",
+     "bleed": "60%",
+     "debuff": "60%",
+     "move": "70%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "shamble_fwd",
+     "name": {
+      "zh": "形体怪异的蠕进",
+      "en": "Obdurous Advancement"
+     },
+     "type": "melee",
+     "atk": "88.75%",
+     "dmg": "1-2",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "ShamblerBleed 2",
+      "SummonTentacle B"
+     ]
+    },
+    {
+     "id": "shamble_back",
+     "name": {
+      "zh": "起伏不定的撤缩",
+      "en": "Undulating Withdrawal"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "1-2",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "ShamblerBlight 2",
+      "SummonTentacle B"
+     ]
+    },
+    {
+     "id": "shambler_howl",
+     "name": {
+      "zh": "搅动黑暗的挽鸣",
+      "en": "Stentorious Lament"
+     },
+     "type": "ranged",
+     "atk": "92.5%",
+     "dmg": "1-2",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Stress 1",
+      "Shuffle Party 2"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 1,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "shambler",
+    "skillDesires": [
+     {
+      "skill": "shamble_fwd",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "shamble_back",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "shambler_howl",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_large_B"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Abhorrent Shambler",
+    "zh": "惊惧跛行者",
+    "ja": "アブホレン・シャンブラー"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "158",
+    "def": "22.5%",
+    "prot": "0.33",
+    "spd": "2",
+    "res": {
+     "stun": "140%",
+     "poison": "80%",
+     "bleed": "80%",
+     "debuff": "80%",
+     "move": "90%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "shamble_fwd",
+     "name": {
+      "zh": "形体怪异的蠕进",
+      "en": "Obdurous Advancement"
+     },
+     "type": "melee",
+     "atk": "102.5%",
+     "dmg": "1-3",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "ShamblerBleed 3",
+      "SummonTentacle C"
+     ]
+    },
+    {
+     "id": "shamble_back",
+     "name": {
+      "zh": "起伏不定的撤缩",
+      "en": "Undulating Withdrawal"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "1-3",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "ShamblerBlight 3",
+      "SummonTentacle C"
+     ]
+    },
+    {
+     "id": "shambler_howl",
+     "name": {
+      "zh": "搅动黑暗的挽鸣",
+      "en": "Stentorious Lament"
+     },
+     "type": "ranged",
+     "atk": "100%",
+     "dmg": "1-3",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Stress 1",
+      "Shuffle Party 3"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 1,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "shambler",
+    "skillDesires": [
+     {
+      "skill": "shamble_fwd",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "shamble_back",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "shambler_howl",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_large_C"
+  },
+  {
+   "tier": "E",
+   "label": {
+    "zh": "档位 E",
+    "en": "Tier E"
+   },
+   "displayName": {
+    "en": "Ethereal Shambler",
+    "zh": "\"跛行之神\"",
+    "ja": "エセリアル・シャンブラー"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "174",
+    "def": "25%",
+    "prot": "0.33",
+    "spd": "3",
+    "res": {
+     "stun": "145%",
+     "poison": "85%",
+     "bleed": "85%",
+     "debuff": "85%",
+     "move": "95%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "shamble_fwd",
+     "name": {
+      "zh": "形体怪异的蠕进",
+      "en": "Obdurous Advancement"
+     },
+     "type": "melee",
+     "atk": "115%",
+     "dmg": "2-3",
+     "crit": "14%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "ShamblerBleed 4",
+      "SummonTentacle E"
+     ]
+    },
+    {
+     "id": "shamble_back",
+     "name": {
+      "zh": "起伏不定的撤缩",
+      "en": "Undulating Withdrawal"
+     },
+     "type": "ranged",
+     "atk": "115%",
+     "dmg": "2-3",
+     "crit": "14%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "ShamblerBlight 4",
+      "SummonTentacle E"
+     ]
+    },
+    {
+     "id": "shambler_howl",
+     "name": {
+      "zh": "搅动黑暗的挽鸣",
+      "en": "Stentorious Lament"
+     },
+     "type": "ranged",
+     "atk": "112.5%",
+     "dmg": "2-3",
+     "crit": "14%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Stress 1",
+      "Shuffle Party 4"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 1,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "shambler",
+    "skillDesires": [
+     {
+      "skill": "shamble_fwd",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "shamble_back",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "shambler_howl",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_large_C"
+  }
+ ]
+}

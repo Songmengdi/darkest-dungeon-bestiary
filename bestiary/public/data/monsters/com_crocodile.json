@@ -1,0 +1,177 @@
+{
+ "id": "com_crocodile",
+ "dir": "dlc/735730_color_of_madness/monsters/com_crocodile",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Crocodilian",
+    "zh": "鳄鱼",
+    "ja": "クロコディリアン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "223",
+    "def": "32.5%",
+    "prot": "0.1",
+    "spd": "9",
+    "res": {
+     "stun": "90%",
+     "poison": "120%",
+     "bleed": "90%",
+     "debuff": "115%",
+     "move": "75%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "com_angry_hive",
+     "name": {
+      "zh": "腐化虫群",
+      "en": "Swarming Corruption"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "3-10",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "COM Hive Stress 3",
+      "COM Hive ACC Debuff 3"
+     ]
+    },
+    {
+     "id": "com_teeth_rake",
+     "name": {
+      "zh": "撕扯抓咬",
+      "en": "Teeth Rake"
+     },
+     "type": "melee",
+     "atk": "112.5%",
+     "dmg": "7-15",
+     "crit": "14%",
+     "launch": [
+      1,
+      2,
+      3
+     ],
+     "target": [
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "COM CrocBleed 3",
+      "COM Croc Pull 3",
+      "COM Croc Stress 3"
+     ]
+    },
+    {
+     "id": "com_submerge",
+     "name": {
+      "zh": "潜入泥沼",
+      "en": "Submerge"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      2,
+      3
+     ],
+     "target": [],
+     "effects": [
+      "COM switch_mode_submerged_self",
+      "COM CrocHeal 3",
+      "COM Croc Submerge Dodge 5",
+      "Cure Self"
+     ]
+    },
+    {
+     "id": "com_submerge_nuke",
+     "name": {
+      "zh": "凶残猎食",
+      "en": "Apex Predator"
+     },
+     "type": "melee",
+     "atk": "119.5%",
+     "dmg": "20-24",
+     "crit": "19%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "COM switch_mode_land_self"
+     ]
+    },
+    {
+     "id": "com_move_from_right",
+     "name": {
+      "zh": "Paura nascosta",
+      "en": "Lurking Fear"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      4
+     ],
+     "target": [],
+     "effects": [
+      "COM Croc Hide Buff 3"
+     ]
+    },
+    {
+     "id": "com_move_from_left",
+     "name": {
+      "zh": "Paura nascosta",
+      "en": "Lurking Fear"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1
+     ],
+     "target": [],
+     "effects": [
+      "COM Croc Hide Buff 3"
+     ]
+    }
+   ],
+   "loot": []
+  }
+ ]
+}

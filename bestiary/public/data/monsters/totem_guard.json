@@ -1,0 +1,195 @@
+{
+ "id": "totem_guard",
+ "dir": "monsters/totem_guard",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Defensive Growth",
+    "zh": "良性增生物",
+    "ja": "ディフェンシブ・グロウス"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "42",
+    "def": "13.75%",
+    "prot": "0",
+    "spd": "10",
+    "res": {
+     "stun": "97.5%",
+     "poison": "77.5%",
+     "bleed": "197.5%",
+     "debuff": "47.5%",
+     "move": "148%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "totem_guard",
+     "name": {
+      "zh": "宏伟屏障",
+      "en": "Grand Guard"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Clear Guard Performer",
+      "Clear Guard Target",
+      "Totem Guard",
+      "Totem Defend"
+     ]
+    },
+    {
+     "id": "totem_bolster",
+     "name": {
+      "zh": "“鼓动”",
+      "en": "Bolster"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Totem Bolster"
+     ]
+    },
+    {
+     "id": "totem_heal",
+     "name": {
+      "zh": "复生仪式",
+      "en": "Ritualistic Restoration"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": []
+    },
+    {
+     "id": "totem_stressblast",
+     "name": {
+      "zh": "难耐振颤",
+      "en": "Unbearable Tremors"
+     },
+     "type": "ranged",
+     "atk": "113.75%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Totem Stress"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "totem_guard",
+    "skillDesires": [
+     {
+      "skill": "totem_guard",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "totem_bolster",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "totem_stressblast",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "totem_stressblast",
+      "type": "ally_alive_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "health_target",
+      "skill": "totem_heal"
+     },
+     {
+      "type": "ally_class_target",
+      "skill": "totem_bolster"
+     },
+     {
+      "type": "ally_class_target",
+      "skill": "totem_guard"
+     },
+     {
+      "type": "ally_class_target",
+      "skill": "totem_bolster"
+     }
+    ]
+   },
+   "deathClass": "corpse_A"
+  }
+ ]
+}

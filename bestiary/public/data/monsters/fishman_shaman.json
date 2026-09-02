@@ -1,0 +1,690 @@
+{
+ "id": "fishman_shaman",
+ "dir": "monsters/fishman_shaman",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Pelagic Shaman",
+    "zh": "深潜萨满",
+    "ja": "深海シャーマン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "12",
+    "def": "7.5%",
+    "prot": "0",
+    "spd": "10",
+    "res": {
+     "stun": "10%",
+     "poison": "10%",
+     "bleed": "50%",
+     "debuff": "20%",
+     "move": "10%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "fish_stresscast",
+     "name": {
+      "zh": "窒息波涛",
+      "en": "Stress Wave"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "1-1",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 2"
+     ]
+    },
+    {
+     "id": "call_of_the_deep",
+     "name": {
+      "zh": "深海呼唤",
+      "en": "Call of the Deep"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "1-1",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Call of the Deep 1"
+     ]
+    },
+    {
+     "id": "shaman_stab",
+     "name": {
+      "zh": "祭仪切割",
+      "en": "Ceremonial Cut"
+     },
+     "type": "melee",
+     "atk": "62.5%",
+     "dmg": "2-4",
+     "crit": "2%",
+     "launch": [
+      1
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    },
+    {
+     "id": "shaman_heal",
+     "name": {
+      "zh": "海风润泽",
+      "en": "Sea Breeze"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "fishy_shaman_A",
+    "skillDesires": [
+     {
+      "skill": "fish_stresscast",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "call_of_the_deep",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "fish_stresscast"
+     },
+     {
+      "type": "health_target",
+      "skill": "shaman_heal"
+     }
+    ]
+   },
+   "deathClass": "corpse_A",
+   "lifeLink": "siren"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Pelagic Oracle",
+    "zh": "深潜占潮师",
+    "ja": "深海オラクル"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "17",
+    "def": "16.25%",
+    "prot": "0",
+    "spd": "11",
+    "res": {
+     "stun": "30%",
+     "poison": "30%",
+     "bleed": "70%",
+     "debuff": "40%",
+     "move": "30%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "fish_stresscast",
+     "name": {
+      "zh": "窒息波涛",
+      "en": "Stress Wave"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "1-2",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 2"
+     ]
+    },
+    {
+     "id": "call_of_the_deep",
+     "name": {
+      "zh": "深海呼唤",
+      "en": "Call of the Deep"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "1-2",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Call of the Deep 3"
+     ]
+    },
+    {
+     "id": "shaman_stab",
+     "name": {
+      "zh": "祭仪切割",
+      "en": "Ceremonial Cut"
+     },
+     "type": "melee",
+     "atk": "68.75%",
+     "dmg": "3-5",
+     "crit": "6%",
+     "launch": [
+      1
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    },
+    {
+     "id": "shaman_heal",
+     "name": {
+      "zh": "海风润泽",
+      "en": "Sea Breeze"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "fishy_shaman_B",
+    "skillDesires": [
+     {
+      "skill": "fish_stresscast",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "call_of_the_deep",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "fish_stresscast"
+     },
+     {
+      "type": "health_target",
+      "skill": "shaman_heal"
+     }
+    ]
+   },
+   "deathClass": "corpse_B",
+   "lifeLink": "siren"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Pelagic Tidemaster",
+    "zh": "深潜控潮师",
+    "ja": "深海タイダルマスター"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "23",
+    "def": "28.75%",
+    "prot": "0",
+    "spd": "12",
+    "res": {
+     "stun": "50%",
+     "poison": "50%",
+     "bleed": "90%",
+     "debuff": "60%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "fish_stresscast",
+     "name": {
+      "zh": "窒息波涛",
+      "en": "Stress Wave"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "1-3",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 2"
+     ]
+    },
+    {
+     "id": "call_of_the_deep",
+     "name": {
+      "zh": "深海呼唤",
+      "en": "Call of the Deep"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "1-3",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Call of the Deep 5"
+     ]
+    },
+    {
+     "id": "shaman_stab",
+     "name": {
+      "zh": "祭仪切割",
+      "en": "Ceremonial Cut"
+     },
+     "type": "melee",
+     "atk": "82.5%",
+     "dmg": "4-7",
+     "crit": "9%",
+     "launch": [
+      1
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    },
+    {
+     "id": "shaman_heal",
+     "name": {
+      "zh": "海风润泽",
+      "en": "Sea Breeze"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "fishy_shaman_C",
+    "skillDesires": [
+     {
+      "skill": "fish_stresscast",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "call_of_the_deep",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "fish_stresscast"
+     },
+     {
+      "type": "health_target",
+      "skill": "shaman_heal"
+     }
+    ]
+   },
+   "deathClass": "corpse_C",
+   "lifeLink": "siren"
+  }
+ ]
+}

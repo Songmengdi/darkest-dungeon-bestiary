@@ -1,0 +1,407 @@
+{
+ "id": "brigand_sapper",
+ "dir": "dlc/580100_crimson_court/features/crimson_court/modes/bloodmoon/monsters/brigand_sapper",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Brigand Vvulf",
+    "zh": "匪首“头狼”",
+    "ja": "ブリガンド・ヴルフ"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "160",
+    "def": "20%",
+    "prot": "0",
+    "spd": "4",
+    "res": {
+     "stun": "100%",
+     "poison": "75%",
+     "bleed": "75%",
+     "debuff": "60%",
+     "move": "300%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "sapper_throw",
+     "name": {
+      "zh": "投弹",
+      "en": "Bombs Away"
+     },
+     "type": "ranged",
+     "atk": "112.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Rank Target Enemy 1"
+     ]
+    },
+    {
+     "id": "sapper_detonate",
+     "name": {
+      "zh": "时间到！",
+      "en": "Time's Up!"
+     },
+     "type": "ranged",
+     "atk": "222.5%",
+     "dmg": "23-45",
+     "crit": "10%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Clear Enemy Rank Target With Result"
+     ]
+    },
+    {
+     "id": "sapper_summon",
+     "name": {
+      "zh": "干掉他们！",
+      "en": "Get Them!"
+     },
+     "type": "melee",
+     "atk": "112.5%",
+     "dmg": "2-5",
+     "crit": "10%",
+     "launch": [
+      1,
+      2,
+      3
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stun 5",
+      "Sapper Summon Barrel",
+      "Sapper Summon Brigand Guaranteed",
+      "Sapper Summon Brigand Low Chance"
+     ]
+    },
+    {
+     "id": "sapper_guard",
+     "name": {
+      "zh": "壁垒盾牌",
+      "en": "Tower Shield"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Clear Guard Performer",
+      "Clear Guard Target",
+      "Sapper Guard",
+      "Sapper Summon Brigand High Chance"
+     ]
+    },
+    {
+     "id": "sapper_stress",
+     "name": {
+      "zh": "战嚎",
+      "en": "Warcry"
+     },
+     "type": "ranged",
+     "atk": "112.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Sapper Stress"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 10,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 8,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 2,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 12,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 3,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "brigand_sapper_D",
+    "skillDesires": [
+     {
+      "skill": "sapper_summon",
+      "type": "ally_dead_skill"
+     },
+     {
+      "skill": "sapper_summon",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "sapper_guard",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "sapper_stress",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "sapper_stress",
+      "type": "ally_dead_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target",
+      "skill": "sapper_summon"
+     },
+     {
+      "type": "random_target",
+      "skill": "sapper_stress"
+     },
+     {
+      "type": "ally_class_target",
+      "skill": "sapper_guard"
+     },
+     {
+      "type": "rank_target",
+      "skill": "sapper_detonate"
+     },
+     {
+      "type": "random_target",
+      "skill": "sapper_throw"
+     },
+     {
+      "type": "random_target",
+      "skill": "sapper_guard"
+     },
+     {
+      "type": "health_target",
+      "skill": "sapper_guard"
+     }
+    ]
+   }
+  }
+ ]
+}

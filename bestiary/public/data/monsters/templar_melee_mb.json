@@ -1,0 +1,172 @@
+{
+ "id": "templar_melee_mb",
+ "dir": "monsters/templar_melee_mb",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Templar Impaler",
+    "zh": "圣堂护法",
+    "ja": "テンプル・インペイラー"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "137",
+    "def": "26.25%",
+    "prot": "0",
+    "spd": "5",
+    "res": {
+     "stun": "97.5%",
+     "poison": "97.5%",
+     "bleed": "67.5%",
+     "debuff": "67.5%",
+     "move": "73%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "templar_pinch",
+     "name": {
+      "zh": "折磨",
+      "en": "Torment"
+     },
+     "type": "melee",
+     "atk": "103.75%",
+     "dmg": "8-17",
+     "crit": "10%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "targetAoe": true,
+     "effects": []
+    },
+    {
+     "id": "templar_sting",
+     "name": {
+      "zh": "蛰刺",
+      "en": "Stinger Stab"
+     },
+     "type": "melee",
+     "atk": "103.75%",
+     "dmg": "9-20",
+     "crit": "10%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2,
+      3
+     ],
+     "effects": [
+      "Templar Sting Blight"
+     ]
+    },
+    {
+     "id": "templar_slam",
+     "name": {
+      "zh": "冲撞",
+      "en": "Body Slam"
+     },
+     "type": "melee",
+     "atk": "98.75%",
+     "dmg": "8-18",
+     "crit": "16%",
+     "launch": [
+      1,
+      2,
+      3
+     ],
+     "target": [
+      1,
+      2,
+      3
+     ],
+     "effects": [
+      "Push 2F",
+      "Stun 6"
+     ]
+    },
+    {
+     "id": "darkest_eye",
+     "name": {
+      "zh": "启示",
+      "en": "Revelation"
+     },
+     "type": "ranged",
+     "atk": "123.75%",
+     "dmg": "16-26",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Darkest Eye"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "templar_melee_mb",
+    "skillDesires": [
+     {
+      "skill": "templar_pinch",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "templar_sting",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "templar_slam",
+      "type": "stun_skill"
+     },
+     {
+      "skill": "darkest_eye",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stunned_target",
+      "skill": "templar_slam"
+     },
+     {
+      "type": "random_target",
+      "skill": "darkest_eye"
+     }
+    ]
+   },
+   "deathClass": "corpse_large_A"
+  }
+ ]
+}

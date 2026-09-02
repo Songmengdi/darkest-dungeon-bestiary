@@ -1,0 +1,134 @@
+{
+ "id": "templar_melee",
+ "dir": "monsters/templar_melee",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Templar Gladiator",
+    "zh": "圣堂斗士",
+    "ja": "テンプル・グラディエーター"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "137",
+    "def": "46.25%",
+    "prot": "0",
+    "spd": "5",
+    "res": {
+     "stun": "97.5%",
+     "poison": "97.5%",
+     "bleed": "67.5%",
+     "debuff": "67.5%",
+     "move": "73%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "templar_pinch",
+     "name": {
+      "zh": "折磨",
+      "en": "Torment"
+     },
+     "type": "melee",
+     "atk": "103.75%",
+     "dmg": "8-17",
+     "crit": "10%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "targetAoe": true,
+     "effects": []
+    },
+    {
+     "id": "templar_sting",
+     "name": {
+      "zh": "蛰刺",
+      "en": "Stinger Stab"
+     },
+     "type": "melee",
+     "atk": "103.75%",
+     "dmg": "9-20",
+     "crit": "10%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2,
+      3
+     ],
+     "effects": [
+      "Templar Sting Blight"
+     ]
+    },
+    {
+     "id": "templar_slam",
+     "name": {
+      "zh": "冲撞",
+      "en": "Body Slam"
+     },
+     "type": "melee",
+     "atk": "98.75%",
+     "dmg": "8-18",
+     "crit": "16%",
+     "launch": [
+      1,
+      2,
+      3
+     ],
+     "target": [
+      1,
+      2,
+      3
+     ],
+     "effects": [
+      "Push 2F",
+      "Stun 6"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "templar_melee_D",
+    "skillDesires": [
+     {
+      "skill": "templar_pinch",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "templar_sting",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "templar_slam",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_large_A"
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "id": "sprout",
+ "dir": "dlc/735730_color_of_madness/monsters/sprout",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Focus Point",
+    "zh": "焦点怪",
+    "ja": "Focus Point"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "25",
+    "def": "0%",
+    "prot": "0.1",
+    "spd": "4",
+    "res": {
+     "stun": "240%",
+     "poison": "105%",
+     "bleed": "130%",
+     "debuff": "80%",
+     "move": "40%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [],
+   "loot": [],
+   "lifeLink": "spire"
+  }
+ ]
+}

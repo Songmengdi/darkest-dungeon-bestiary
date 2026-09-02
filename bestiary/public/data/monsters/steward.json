@@ -1,0 +1,714 @@
+{
+ "id": "steward",
+ "dir": "dlc/580100_crimson_court/features/crimson_court/monsters/steward",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Manservant",
+    "zh": "男仆",
+    "ja": "サーヴァント"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "10",
+    "def": "16%",
+    "prot": "0",
+    "spd": "9",
+    "res": {
+     "stun": "40%",
+     "poison": "40%",
+     "bleed": "15%",
+     "debuff": "30%",
+     "move": "10%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "enraging_slight",
+     "name": {
+      "zh": "恶意怠慢",
+      "en": "Enraging Slight"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "1-3",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Castellan Pull 1",
+      "Castellan Stress 1",
+      "Mark Target"
+     ]
+    },
+    {
+     "id": "the_hunger_human",
+     "name": {
+      "zh": "饥渴",
+      "en": "The Thirst"
+     },
+     "type": "melee",
+     "atk": "92.5%",
+     "dmg": "2-4",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "CC Small Feed Heal 1",
+      "switch_mode_beast_self",
+      "Crimson Curse Weak",
+      "Steward Stress Buff 1",
+      "Feed Stress Human",
+      "CC Steal Blight"
+     ]
+    },
+    {
+     "id": "infallible_servant",
+     "name": {
+      "zh": "尽心服务",
+      "en": "Infallible Servitude"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Antiq ProtectMe ClearGuardsPerformer",
+      "Antiq ProtectMe ClearGuardsTarget",
+      "Steward Human Guard",
+      "Steward Prot Buff"
+     ]
+    },
+    {
+     "id": "refined_palate",
+     "name": {
+      "zh": "精致菜式",
+      "en": "Refined Palate"
+     },
+     "type": "ranged",
+     "atk": "77.5%",
+     "dmg": "1-3",
+     "crit": "4%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 1",
+      "Stun 1"
+     ]
+    },
+    {
+     "id": "choice_cut",
+     "name": {
+      "zh": "精选切割",
+      "en": "Choice Cut"
+     },
+     "type": "melee",
+     "atk": "77.5%",
+     "dmg": "2-4",
+     "crit": "4%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      3,
+      4
+     ],
+     "effects": [
+      "CC Mob Bleed 1"
+     ]
+    },
+    {
+     "id": "gibbering_entourage",
+     "name": {
+      "zh": "服伺到家",
+      "en": "Gibbering Entourage"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Antiq ProtectMe ClearGuardsPerformer",
+      "Antiq ProtectMe ClearGuardsTarget",
+      "Castellan Guard",
+      "Gibbering Buff 1"
+     ]
+    },
+    {
+     "id": "the_hunger_beast",
+     "name": {
+      "zh": "饥渴",
+      "en": "The Thirst"
+     },
+     "type": "melee",
+     "atk": "82.5%",
+     "dmg": "2-6",
+     "crit": "5%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "CC Small Feed Heal 1",
+      "CC Mob Acc Debuff 1",
+      "Crimson Curse Weak",
+      "Feed Stress Beast",
+      "CC Steal Blight"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_A",
+   "lifeLink": "baron"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Manservant",
+    "zh": "男仆",
+    "ja": "サーヴァント"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "14",
+    "def": "24.75%",
+    "prot": "0",
+    "spd": "10",
+    "res": {
+     "stun": "60%",
+     "poison": "60%",
+     "bleed": "35%",
+     "debuff": "50%",
+     "move": "30%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "enraging_slight",
+     "name": {
+      "zh": "恶意怠慢",
+      "en": "Enraging Slight"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "2-3",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Castellan Pull 3",
+      "Castellan Stress 3",
+      "Mark Target"
+     ]
+    },
+    {
+     "id": "the_hunger_human",
+     "name": {
+      "zh": "饥渴",
+      "en": "The Thirst"
+     },
+     "type": "melee",
+     "atk": "98.75%",
+     "dmg": "3-5",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "CC Small Feed Heal 2",
+      "switch_mode_beast_self",
+      "Crimson Curse Weak",
+      "Steward Stress Buff 2",
+      "Feed Stress Human",
+      "CC Steal Blight"
+     ]
+    },
+    {
+     "id": "infallible_servant",
+     "name": {
+      "zh": "尽心服务",
+      "en": "Infallible Servitude"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Antiq ProtectMe ClearGuardsPerformer",
+      "Antiq ProtectMe ClearGuardsTarget",
+      "Steward Human Guard",
+      "Steward Prot Buff"
+     ]
+    },
+    {
+     "id": "refined_palate",
+     "name": {
+      "zh": "精致菜式",
+      "en": "Refined Palate"
+     },
+     "type": "ranged",
+     "atk": "83.75%",
+     "dmg": "2-3",
+     "crit": "8%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 1",
+      "Stun 2"
+     ]
+    },
+    {
+     "id": "choice_cut",
+     "name": {
+      "zh": "精选切割",
+      "en": "Choice Cut"
+     },
+     "type": "melee",
+     "atk": "83.75%",
+     "dmg": "2-6",
+     "crit": "8%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      3,
+      4
+     ],
+     "effects": [
+      "CC Mob Bleed 3"
+     ]
+    },
+    {
+     "id": "gibbering_entourage",
+     "name": {
+      "zh": "服伺到家",
+      "en": "Gibbering Entourage"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Antiq ProtectMe ClearGuardsPerformer",
+      "Antiq ProtectMe ClearGuardsTarget",
+      "Castellan Guard",
+      "Gibbering Buff 2"
+     ]
+    },
+    {
+     "id": "the_hunger_beast",
+     "name": {
+      "zh": "饥渴",
+      "en": "The Thirst"
+     },
+     "type": "melee",
+     "atk": "88.75%",
+     "dmg": "2-9",
+     "crit": "10%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "CC Small Feed Heal 2",
+      "CC Mob Acc Debuff 3",
+      "Crimson Curse Weak",
+      "Feed Stress Beast",
+      "CC Steal Blight"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_B",
+   "lifeLink": "baron"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Manservant",
+    "zh": "男仆",
+    "ja": "サーヴァント"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "20",
+    "def": "37.25%",
+    "prot": "0",
+    "spd": "11",
+    "res": {
+     "stun": "80%",
+     "poison": "80%",
+     "bleed": "55%",
+     "debuff": "70%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "enraging_slight",
+     "name": {
+      "zh": "恶意怠慢",
+      "en": "Enraging Slight"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "2-5",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Castellan Pull 5",
+      "Castellan Stress 5",
+      "Mark Target"
+     ]
+    },
+    {
+     "id": "the_hunger_human",
+     "name": {
+      "zh": "饥渴",
+      "en": "The Thirst"
+     },
+     "type": "melee",
+     "atk": "112.5%",
+     "dmg": "4-7",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "CC Small Feed Heal 3",
+      "switch_mode_beast_self",
+      "Crimson Curse Weak",
+      "Steward Stress Buff 3",
+      "Feed Stress Human",
+      "CC Steal Blight"
+     ]
+    },
+    {
+     "id": "infallible_servant",
+     "name": {
+      "zh": "尽心服务",
+      "en": "Infallible Servitude"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Antiq ProtectMe ClearGuardsPerformer",
+      "Antiq ProtectMe ClearGuardsTarget",
+      "Steward Human Guard",
+      "Steward Prot Buff"
+     ]
+    },
+    {
+     "id": "refined_palate",
+     "name": {
+      "zh": "精致菜式",
+      "en": "Refined Palate"
+     },
+     "type": "ranged",
+     "atk": "97.5%",
+     "dmg": "2-5",
+     "crit": "11%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 1",
+      "Stun 3"
+     ]
+    },
+    {
+     "id": "choice_cut",
+     "name": {
+      "zh": "精选切割",
+      "en": "Choice Cut"
+     },
+     "type": "melee",
+     "atk": "97.5%",
+     "dmg": "3-8",
+     "crit": "11%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      3,
+      4
+     ],
+     "effects": [
+      "CC Mob Bleed 5"
+     ]
+    },
+    {
+     "id": "gibbering_entourage",
+     "name": {
+      "zh": "服伺到家",
+      "en": "Gibbering Entourage"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Antiq ProtectMe ClearGuardsPerformer",
+      "Antiq ProtectMe ClearGuardsTarget",
+      "Castellan Guard",
+      "Gibbering Buff 3"
+     ]
+    },
+    {
+     "id": "the_hunger_beast",
+     "name": {
+      "zh": "饥渴",
+      "en": "The Thirst"
+     },
+     "type": "melee",
+     "atk": "102.5%",
+     "dmg": "3-12",
+     "crit": "13%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "CC Small Feed Heal 3",
+      "CC Mob Acc Debuff 5",
+      "Crimson Curse Weak",
+      "Feed Stress Beast",
+      "CC Steal Blight"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_C",
+   "lifeLink": "baron"
+  }
+ ]
+}

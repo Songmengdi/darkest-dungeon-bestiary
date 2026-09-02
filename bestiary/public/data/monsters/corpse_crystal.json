@@ -1,0 +1,479 @@
+{
+ "id": "corpse_crystal",
+ "dir": "dlc/735730_color_of_madness/monsters/corpse_crystal",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Crystalline Aberration",
+    "zh": "水晶畸变",
+    "ja": "Crystalline Aberration"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "5",
+    "def": "-20%",
+    "prot": "0",
+    "spd": "-4",
+    "res": {
+     "stun": "400%",
+     "poison": "0%",
+     "bleed": "100%",
+     "debuff": "200%",
+     "move": "0%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "crystal_ranged_suicide",
+     "name": {
+      "zh": "不稳定共振",
+      "en": "Unstable Resonance"
+     },
+     "type": "ranged",
+     "atk": "92.5%",
+     "dmg": "10-15",
+     "crit": "1%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "kill_self_queued",
+      "Blight 1",
+      "Horse Horror A"
+     ]
+    },
+    {
+     "id": "crystal_suicide",
+     "name": {
+      "zh": "爆炸毁灭",
+      "en": "Explosive Undoing"
+     },
+     "type": "melee",
+     "atk": "92.5%",
+     "dmg": "2-4",
+     "crit": "1%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "kill_self_queued",
+      "Crystal Horror"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "default_A",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "miller"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Crystalline Aberration",
+    "zh": "水晶畸变",
+    "ja": "Crystalline Aberration"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "6",
+    "def": "-20%",
+    "prot": "0",
+    "spd": "-4",
+    "res": {
+     "stun": "400%",
+     "poison": "0%",
+     "bleed": "100%",
+     "debuff": "200%",
+     "move": "0%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "crystal_ranged_suicide",
+     "name": {
+      "zh": "不稳定共振",
+      "en": "Unstable Resonance"
+     },
+     "type": "ranged",
+     "atk": "97.5%",
+     "dmg": "12-16",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "kill_self_queued",
+      "Blight 2",
+      "Horse Horror A"
+     ]
+    },
+    {
+     "id": "crystal_suicide",
+     "name": {
+      "zh": "爆炸毁灭",
+      "en": "Explosive Undoing"
+     },
+     "type": "melee",
+     "atk": "97.5%",
+     "dmg": "3-6",
+     "crit": "3%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "kill_self_queued",
+      "Crystal Horror"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "default_B",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "miller"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Crystalline Aberration",
+    "zh": "水晶畸变",
+    "ja": "Crystalline Aberration"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "7",
+    "def": "-20%",
+    "prot": "0",
+    "spd": "-3",
+    "res": {
+     "stun": "400%",
+     "poison": "0%",
+     "bleed": "100%",
+     "debuff": "200%",
+     "move": "0%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "crystal_ranged_suicide",
+     "name": {
+      "zh": "不稳定共振",
+      "en": "Unstable Resonance"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "20-25",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "kill_self_queued",
+      "Blight 3",
+      "Horse Horror A"
+     ]
+    },
+    {
+     "id": "crystal_suicide",
+     "name": {
+      "zh": "爆炸毁灭",
+      "en": "Explosive Undoing"
+     },
+     "type": "melee",
+     "atk": "102.5%",
+     "dmg": "5-8",
+     "crit": "5%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "kill_self_queued",
+      "Crystal Horror"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "default_C",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "miller"
+  },
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Crystalline Aberration",
+    "zh": "水晶畸变",
+    "ja": "Crystalline Aberration"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "9",
+    "def": "-20%",
+    "prot": "0",
+    "spd": "-50",
+    "res": {
+     "stun": "200%",
+     "poison": "0%",
+     "bleed": "0%",
+     "debuff": "200%",
+     "move": "0%"
+    }
+   },
+   "enemyType": {
+    "id": "corpse_crystal",
+    "zh": "corpse_crystal",
+    "en": "corpse_crystal"
+   },
+   "skills": [
+    {
+     "id": "crystal_ranged_suicide",
+     "name": {
+      "zh": "不稳定共振",
+      "en": "Unstable Resonance"
+     },
+     "type": "ranged",
+     "atk": "87.5%",
+     "dmg": "1-1",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Blight 1",
+      "Stress 1",
+      "kill_self"
+     ]
+    },
+    {
+     "id": "crystal_suicide",
+     "name": {
+      "zh": "爆炸毁灭",
+      "en": "Explosive Undoing"
+     },
+     "type": "melee",
+     "atk": "62.5%",
+     "dmg": "2-4",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "kill_self"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "default_C",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   }
+  }
+ ]
+}

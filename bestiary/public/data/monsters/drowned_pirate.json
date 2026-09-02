@@ -1,0 +1,537 @@
+{
+ "id": "drowned_pirate",
+ "dir": "monsters/drowned_pirate",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Squiffy Ghast",
+    "zh": "微醺怨鬼",
+    "ja": "ほろ酔いガスト"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "27",
+    "def": "11%",
+    "prot": "0",
+    "spd": "6",
+    "res": {
+     "stun": "70%",
+     "poison": "15%",
+     "bleed": "100%",
+     "debuff": "15%",
+     "move": "5%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "maddening_shanty",
+     "name": {
+      "zh": "摄心船曲",
+      "en": "Maddening Shanty"
+     },
+     "type": "ranged",
+     "atk": "67.5%",
+     "dmg": "1-1",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Madman Snipe Stress 1",
+      "MadMan Stress Debuff 1"
+     ]
+    },
+    {
+     "id": "offkilter_jig",
+     "name": {
+      "zh": "摇曳小曲",
+      "en": "Offkilter Jig"
+     },
+     "type": "ranged",
+     "atk": "67.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Madman AOE Stress 1",
+      "Stress AOE DoT 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "drowned_pirate",
+    "skillDesires": [
+     {
+      "skill": "maddening_shanty",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "offkilter_jig",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "ally_class_target",
+      "skill": "maddening_shanty"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Squiffy Ghast",
+    "zh": "微醺怨鬼",
+    "ja": "ほろ酔いガスト"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "38",
+    "def": "19.75%",
+    "prot": "0",
+    "spd": "7",
+    "res": {
+     "stun": "90%",
+     "poison": "35%",
+     "bleed": "120%",
+     "debuff": "35%",
+     "move": "25%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "maddening_shanty",
+     "name": {
+      "zh": "摄心船曲",
+      "en": "Maddening Shanty"
+     },
+     "type": "ranged",
+     "atk": "73.75%",
+     "dmg": "1-2",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Madman Snipe Stress 1",
+      "MadMan Stress Debuff 1"
+     ]
+    },
+    {
+     "id": "offkilter_jig",
+     "name": {
+      "zh": "摇曳小曲",
+      "en": "Offkilter Jig"
+     },
+     "type": "ranged",
+     "atk": "73.75%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Madman AOE Stress 2",
+      "Stress AOE DoT 2"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "drowned_pirate",
+    "skillDesires": [
+     {
+      "skill": "maddening_shanty",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "offkilter_jig",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "ally_class_target",
+      "skill": "maddening_shanty"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Squiffy Ghast",
+    "zh": "微醺怨鬼",
+    "ja": "ほろ酔いガスト"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "53",
+    "def": "32.25%",
+    "prot": "0",
+    "spd": "8",
+    "res": {
+     "stun": "110%",
+     "poison": "55%",
+     "bleed": "140%",
+     "debuff": "55%",
+     "move": "45%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "maddening_shanty",
+     "name": {
+      "zh": "摄心船曲",
+      "en": "Maddening Shanty"
+     },
+     "type": "ranged",
+     "atk": "87.5%",
+     "dmg": "1-3",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Madman Snipe Stress 1",
+      "MadMan Stress Debuff 1"
+     ]
+    },
+    {
+     "id": "offkilter_jig",
+     "name": {
+      "zh": "摇曳小曲",
+      "en": "Offkilter Jig"
+     },
+     "type": "ranged",
+     "atk": "87.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Madman AOE Stress 2",
+      "Stress AOE DoT 2"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "drowned_pirate",
+    "skillDesires": [
+     {
+      "skill": "maddening_shanty",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "offkilter_jig",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "ally_class_target",
+      "skill": "maddening_shanty"
+     }
+    ]
+   }
+  }
+ ]
+}

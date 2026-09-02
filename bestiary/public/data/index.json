@@ -1,0 +1,3385 @@
+{
+ "game": "D:\\software\\steam\\steamapps\\common\\DarkestDungeon",
+ "count": 153,
+ "regions": [
+  {
+   "id": "crypts",
+   "zh": "遗迹",
+   "en": "Ruins"
+  },
+  {
+   "id": "weald",
+   "zh": "荒野",
+   "en": "Weald"
+  },
+  {
+   "id": "warrens",
+   "zh": "兽窟",
+   "en": "Warrens"
+  },
+  {
+   "id": "cove",
+   "zh": "湾岸",
+   "en": "Cove"
+  },
+  {
+   "id": "farmstead",
+   "zh": "农场",
+   "en": "Farmstead"
+  },
+  {
+   "id": "courtyard",
+   "zh": "庭院",
+   "en": "Courtyard"
+  },
+  {
+   "id": "town",
+   "zh": "城镇",
+   "en": "Town"
+  },
+  {
+   "id": "darkestdungeon",
+   "zh": "黑暗地牢",
+   "en": "Darkest Dungeon"
+  },
+  {
+   "id": "_shared",
+   "zh": "通用",
+   "en": "Shared"
+  },
+  {
+   "id": "none",
+   "zh": "其他",
+   "en": "Other"
+  }
+ ],
+ "monsters": [
+  {
+   "id": "ancestor_big",
+   "name": {
+    "zh": "先祖",
+    "en": "Ancestor"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [],
+   "image": "img/ancestor_big.png"
+  },
+  {
+   "id": "ancestor_flawed",
+   "name": {
+    "zh": "瑕疵复制体",
+    "en": "Imperfect Reflection"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [],
+   "image": "img/ancestor_flawed.png"
+  },
+  {
+   "id": "ancestor_heart",
+   "name": {
+    "zh": "黑暗之心",
+    "en": "Heart of Darkness"
+   },
+   "type": {
+    "id": "cosmic",
+    "zh": "恒宇",
+    "en": "Cosmic"
+   },
+   "size": 4,
+   "tiers": [
+    "D"
+   ],
+   "regions": [],
+   "image": "img/ancestor_heart.png"
+  },
+  {
+   "id": "ancestor_nebula",
+   "name": {
+    "zh": "绝对的虚无",
+    "en": "Absolute Nothingness"
+   },
+   "type": {
+    "id": "cosmic",
+    "zh": "恒宇",
+    "en": "Cosmic"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [],
+   "image": "img/ancestor_nebula.png"
+  },
+  {
+   "id": "ancestor_perfect",
+   "name": {
+    "zh": "完美复制体",
+    "en": "Perfect Reflection"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [],
+   "image": "img/ancestor_perfect.png"
+  },
+  {
+   "id": "ancestor_pod",
+   "name": {
+    "zh": "孕育之心",
+    "en": "Gestating Heart"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 4,
+   "tiers": [
+    "D"
+   ],
+   "regions": [],
+   "image": "img/ancestor_pod.png"
+  },
+  {
+   "id": "ancestor_small",
+   "name": {
+    "zh": "先祖",
+    "en": "Ancestor"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "darkestdungeon"
+   ],
+   "image": "img/ancestor_small.png"
+  },
+  {
+   "id": "baron",
+   "name": {
+    "zh": "男爵",
+    "en": "Baron"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B"
+   ],
+   "regions": [
+    "courtyard"
+   ],
+   "image": "img/baron.png"
+  },
+  {
+   "id": "bloated_corpse",
+   "name": {
+    "zh": "溺亡行尸",
+    "en": "Drowned Thrall"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "cove"
+   ],
+   "image": "img/bloated_corpse.png"
+  },
+  {
+   "id": "body_average",
+   "name": {
+    "zh": "躯体",
+    "en": "Body"
+   },
+   "type": {
+    "id": "body",
+    "zh": "血袋",
+    "en": "Bloodbag"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "courtyard"
+   ],
+   "image": "img/body_average.png"
+  },
+  {
+   "id": "body_bloated",
+   "name": {
+    "zh": "胀血的躯体",
+    "en": "Bloodstuffed Body"
+   },
+   "type": {
+    "id": "body",
+    "zh": "血袋",
+    "en": "Bloodbag"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "courtyard"
+   ],
+   "image": "img/body_bloated.png"
+  },
+  {
+   "id": "body_emaciated",
+   "name": {
+    "zh": "瘦弱的躯体",
+    "en": "Emaciated Body"
+   },
+   "type": {
+    "id": "body",
+    "zh": "血袋",
+    "en": "Bloodbag"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "courtyard"
+   ],
+   "image": "img/body_emaciated.png"
+  },
+  {
+   "id": "brigand_barrel",
+   "name": {
+    "zh": "炸药桶",
+    "en": "Barrel 'o Bombs"
+   },
+   "type": {
+    "id": "carpentry",
+    "zh": "木头",
+    "en": "Carpentry"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "town"
+   ],
+   "image": "img/brigand_barrel.png"
+  },
+  {
+   "id": "brigand_blood",
+   "name": {
+    "zh": "土匪放血者",
+    "en": "Brigand Bloodletter"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "courtyard",
+    "town"
+   ],
+   "image": "img/brigand_blood.png"
+  },
+  {
+   "id": "brigand_cannon",
+   "name": {
+    "zh": "土匪8磅炮",
+    "en": "Brigand 8 Pounder"
+   },
+   "type": {
+    "id": "ironwork",
+    "zh": "铁制品",
+    "en": "Ironwork"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "weald"
+   ]
+  },
+  {
+   "id": "brigand_cutthroat",
+   "name": {
+    "zh": "土匪割喉者",
+    "en": "Brigand Cutthroat"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "courtyard",
+    "town"
+   ],
+   "image": "img/brigand_cutthroat.png"
+  },
+  {
+   "id": "brigand_fuseman",
+   "name": {
+    "zh": "土匪点火者",
+    "en": "Brigand Matchman"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "weald"
+   ],
+   "image": "img/brigand_fuseman.png"
+  },
+  {
+   "id": "brigand_fusilier",
+   "name": {
+    "zh": "土匪火枪手",
+    "en": "Brigand Fusilier"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "courtyard",
+    "town"
+   ],
+   "image": "img/brigand_fusilier.png"
+  },
+  {
+   "id": "brigand_hunter",
+   "name": {
+    "zh": "土匪猎杀者",
+    "en": "Brigand Hunter"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "town"
+   ],
+   "image": "img/brigand_hunter.png"
+  },
+  {
+   "id": "brigand_raider",
+   "name": {
+    "zh": "土匪洗劫者",
+    "en": "Brigand Raider"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "town"
+   ],
+   "image": "img/brigand_raider.png"
+  },
+  {
+   "id": "brigand_sapper",
+   "name": {
+    "zh": "匪首“头狼”",
+    "en": "Brigand Vvulf"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "town"
+   ],
+   "image": "img/brigand_sapper.png"
+  },
+  {
+   "id": "bulrush",
+   "name": {
+    "zh": "灯心草",
+    "en": "Bulrush"
+   },
+   "type": {
+    "id": "vegetation",
+    "zh": "植物",
+    "en": "Vegetation"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "courtyard"
+   ],
+   "image": "img/bulrush.png"
+  },
+  {
+   "id": "carrion_eater",
+   "name": {
+    "zh": "腐肉吞吃者",
+    "en": "Carrion Eater"
+   },
+   "type": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "warrens",
+    "courtyard"
+   ],
+   "image": "img/carrion_eater.png"
+  },
+  {
+   "id": "carrion_eater_big",
+   "name": {
+    "zh": "大型腐肉吞吃者",
+    "en": "Large Carrion Eater"
+   },
+   "type": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "warrens",
+    "courtyard"
+   ],
+   "image": "img/carrion_eater_big.png"
+  },
+  {
+   "id": "castellan",
+   "name": {
+    "zh": "守门人",
+    "en": "Gatekeeper"
+   },
+   "type": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "courtyard"
+   ],
+   "image": "img/castellan.png"
+  },
+  {
+   "id": "cattail",
+   "name": {
+    "zh": "香蒲",
+    "en": "Cattail"
+   },
+   "type": {
+    "id": "vegetation",
+    "zh": "植物",
+    "en": "Vegetation"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "courtyard"
+   ],
+   "image": "img/cattail.png"
+  },
+  {
+   "id": "cauldron_empty",
+   "name": {
+    "zh": "大锅（空）",
+    "en": "Cauldron (empty)"
+   },
+   "type": {
+    "id": "cauldron",
+    "zh": "容器",
+    "en": "Crockery"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "weald"
+   ],
+   "image": "img/cauldron_empty.png"
+  },
+  {
+   "id": "cauldron_full",
+   "name": {
+    "zh": "大锅（满）",
+    "en": "Cauldron (full)"
+   },
+   "type": {
+    "id": "cauldron",
+    "zh": "容器",
+    "en": "Crockery"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [],
+   "image": "img/cauldron_full.png"
+  },
+  {
+   "id": "cell_battle",
+   "name": {
+    "zh": "抗体",
+    "en": "Antibody"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "darkestdungeon"
+   ],
+   "image": "img/cell_battle.png"
+  },
+  {
+   "id": "cell_white",
+   "name": {
+    "zh": "白细胞柄",
+    "en": "White Cell Stalk"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "darkestdungeon"
+   ],
+   "image": "img/cell_white.png"
+  },
+  {
+   "id": "chevalier",
+   "name": {
+    "zh": "骑士",
+    "en": "Chevalier"
+   },
+   "type": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "courtyard"
+   ],
+   "image": "img/chevalier.png"
+  },
+  {
+   "id": "cocoon",
+   "name": {
+    "zh": "冰封工人",
+    "en": "Frozen Farmhand"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [],
+   "image": "img/cocoon.png"
+  },
+  {
+   "id": "collector",
+   "name": {
+    "zh": "收集者",
+    "en": "The Collector"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "_shared"
+   ],
+   "image": "img/collector.png"
+  },
+  {
+   "id": "collector_battle",
+   "name": {
+    "zh": "被收集的强盗",
+    "en": "Collected Highwayman"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [],
+   "image": "img/collector_battle.png"
+  },
+  {
+   "id": "collector_protect",
+   "name": {
+    "zh": "被收集的老兵",
+    "en": "Collected Man-at-Arms"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [],
+   "image": "img/collector_protect.png"
+  },
+  {
+   "id": "collector_shaman",
+   "name": {
+    "zh": "被收集的修女",
+    "en": "Collected Vestal"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [],
+   "image": "img/collector_shaman.png"
+  },
+  {
+   "id": "com_bulrush",
+   "name": {
+    "zh": "灯心草",
+    "en": "Bulrush"
+   },
+   "type": {
+    "id": "vegetation",
+    "zh": "植物",
+    "en": "Vegetation"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [],
+   "image": "img/com_bulrush.png"
+  },
+  {
+   "id": "com_cattail",
+   "name": {
+    "zh": "香蒲",
+    "en": "Cattail"
+   },
+   "type": {
+    "id": "vegetation",
+    "zh": "植物",
+    "en": "Vegetation"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [],
+   "image": "img/com_cattail.png"
+  },
+  {
+   "id": "com_crocodile",
+   "name": {
+    "zh": "鳄鱼",
+    "en": "Crocodilian"
+   },
+   "type": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [],
+   "image": "img/com_crocodile.png"
+  },
+  {
+   "id": "corpse",
+   "name": {
+    "zh": "尸骸",
+    "en": "Corpse"
+   },
+   "type": {
+    "id": "corpse",
+    "zh": "尸骸",
+    "en": "Corpse"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "regions": []
+  },
+  {
+   "id": "corpse_crystal",
+   "name": {
+    "zh": "水晶畸变",
+    "en": "Crystalline Aberration"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "regions": [],
+   "image": "img/corpse_crystal.png"
+  },
+  {
+   "id": "corpse_large",
+   "name": {
+    "zh": "大型尸骸",
+    "en": "Large Corpse"
+   },
+   "type": {
+    "id": "corpse",
+    "zh": "尸骸",
+    "en": "Corpse"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "regions": []
+  },
+  {
+   "id": "countess",
+   "name": {
+    "zh": "伯爵夫人",
+    "en": "Countess"
+   },
+   "type": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "size": 4,
+   "tiers": [
+    "D",
+    "E",
+    "F"
+   ],
+   "regions": [
+    "courtyard"
+   ],
+   "image": "img/countess.png"
+  },
+  {
+   "id": "courtesan",
+   "name": {
+    "zh": "舞女",
+    "en": "Courtesan"
+   },
+   "type": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "courtyard"
+   ],
+   "image": "img/courtesan.png"
+  },
+  {
+   "id": "crocodile",
+   "name": {
+    "zh": "鳄鱼",
+    "en": "Crocodilian"
+   },
+   "type": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "courtyard"
+   ],
+   "image": "img/crocodile.png"
+  },
+  {
+   "id": "crone",
+   "name": {
+    "zh": "巫妪",
+    "en": "Crone"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "weald",
+    "cove",
+    "courtyard"
+   ],
+   "image": "img/crone.png"
+  },
+  {
+   "id": "crow",
+   "name": {
+    "zh": "无情尖叫魔",
+    "en": "Callous Shrieker"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "regions": [
+    "weald"
+   ],
+   "image": "img/crow.png"
+  },
+  {
+   "id": "cultist_brawler",
+   "name": {
+    "zh": "邪教暴徒",
+    "en": "Cultist Brawler"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "courtyard",
+    "town"
+   ],
+   "image": "img/cultist_brawler.png"
+  },
+  {
+   "id": "cultist_harpy",
+   "name": {
+    "zh": "飞升女巫",
+    "en": "Ascended Witch"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "darkestdungeon"
+   ],
+   "image": "img/cultist_harpy.png"
+  },
+  {
+   "id": "cultist_orgiastic",
+   "name": {
+    "zh": "狂喜的教众",
+    "en": "Rapturous Cultist"
+   },
+   "type": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "darkestdungeon"
+   ],
+   "image": "img/cultist_orgiastic.png"
+  },
+  {
+   "id": "cultist_shrouded",
+   "name": {
+    "zh": "邪教祭司",
+    "en": "Cultist Priest"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "darkestdungeon"
+   ],
+   "image": "img/cultist_shrouded.png"
+  },
+  {
+   "id": "cultist_warlord",
+   "name": {
+    "zh": "飞升教士",
+    "en": "Ascended Brawler"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "darkestdungeon"
+   ],
+   "image": "img/cultist_warlord.png"
+  },
+  {
+   "id": "cultist_witch",
+   "name": {
+    "zh": "邪教侍僧",
+    "en": "Cultist Acolyte"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "courtyard",
+    "town"
+   ],
+   "image": "img/cultist_witch.png"
+  },
+  {
+   "id": "curtain",
+   "name": {
+    "zh": "未使用",
+    "en": "UNUSED"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C",
+    "E",
+    "F"
+   ],
+   "regions": [
+    "courtyard"
+   ]
+  },
+  {
+   "id": "cyst",
+   "name": {
+    "zh": "巨噬胞体",
+    "en": "Mammoth Cyst"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 3,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "darkestdungeon"
+   ],
+   "image": "img/cyst.png"
+  },
+  {
+   "id": "drowned_anchor",
+   "name": {
+    "zh": "溺亡拉绳手",
+    "en": "Drowned Puller"
+   },
+   "type": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [],
+   "image": "img/drowned_anchor.png"
+  },
+  {
+   "id": "drowned_anchored",
+   "name": {
+    "zh": "溺亡拉绳手",
+    "en": "Drowned Puller"
+   },
+   "type": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [],
+   "image": "img/drowned_anchored.png"
+  },
+  {
+   "id": "drowned_captain",
+   "name": {
+    "zh": "淹浸船员",
+    "en": "Sodden Crew"
+   },
+   "type": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "size": 3,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "cove"
+   ],
+   "image": "img/drowned_captain.png"
+  },
+  {
+   "id": "drowned_pirate",
+   "name": {
+    "zh": "微醺怨鬼",
+    "en": "Squiffy Ghast"
+   },
+   "type": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "cove"
+   ],
+   "image": "img/drowned_pirate.png"
+  },
+  {
+   "id": "ectoplasm",
+   "name": {
+    "zh": "胞质体",
+    "en": "Ectoplasm"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "weald",
+    "cove",
+    "courtyard"
+   ],
+   "image": "img/ectoplasm.png"
+  },
+  {
+   "id": "ectoplasm_large",
+   "name": {
+    "zh": "大型胞质体",
+    "en": "Large Ectoplasm"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "weald",
+    "cove",
+    "courtyard"
+   ],
+   "image": "img/ectoplasm_large.png"
+  },
+  {
+   "id": "errant_flesh_bat",
+   "name": {
+    "zh": "螅肉",
+    "en": "Polyp"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "darkestdungeon"
+   ],
+   "image": "img/errant_flesh_bat.png"
+  },
+  {
+   "id": "errant_flesh_dog",
+   "name": {
+    "zh": "血肉猎犬",
+    "en": "Flesh Hound"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "darkestdungeon"
+   ],
+   "image": "img/errant_flesh_dog.png"
+  },
+  {
+   "id": "esquire",
+   "name": {
+    "zh": "绅士",
+    "en": "Esquire"
+   },
+   "type": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "courtyard"
+   ],
+   "image": "img/esquire.png"
+  },
+  {
+   "id": "fanatic",
+   "name": {
+    "zh": "狂信者",
+    "en": "Fanatic"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove"
+   ],
+   "image": "img/fanatic.png"
+  },
+  {
+   "id": "farmer",
+   "name": {
+    "zh": "农场工人",
+    "en": "Farmhand"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "farmstead"
+   ],
+   "image": "img/farmer.png"
+  },
+  {
+   "id": "fishman_crabby",
+   "name": {
+    "zh": "巨钳潮蟹",
+    "en": "Uca Major"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "cove"
+   ],
+   "image": "img/fishman_crabby.png"
+  },
+  {
+   "id": "fishman_harpoon",
+   "name": {
+    "zh": "深潜群居者",
+    "en": "Pelagic Grouper"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "cove"
+   ],
+   "image": "img/fishman_harpoon.png"
+  },
+  {
+   "id": "fishman_shaman",
+   "name": {
+    "zh": "深潜萨满",
+    "en": "Pelagic Shaman"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "cove"
+   ],
+   "image": "img/fishman_shaman.png"
+  },
+  {
+   "id": "foreman",
+   "name": {
+    "zh": "工头",
+    "en": "Foreman"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [],
+   "image": "img/foreman.png"
+  },
+  {
+   "id": "formless_guard",
+   "name": {
+    "zh": "未成之血肉",
+    "en": "Inchoate Flesh"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "warrens"
+   ],
+   "image": "img/formless_guard.png"
+  },
+  {
+   "id": "formless_melee",
+   "name": {
+    "zh": "未成之血肉",
+    "en": "Inchoate Flesh"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "warrens"
+   ],
+   "image": "img/formless_melee.png"
+  },
+  {
+   "id": "formless_ranged",
+   "name": {
+    "zh": "未成之血肉",
+    "en": "Inchoate Flesh"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "warrens"
+   ],
+   "image": "img/formless_ranged.png"
+  },
+  {
+   "id": "formless_weak",
+   "name": {
+    "zh": "未成之血肉",
+    "en": "Inchoate Flesh"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "warrens"
+   ],
+   "image": "img/formless_weak.png"
+  },
+  {
+   "id": "fungal_artillery",
+   "name": {
+    "zh": "真菌孢子炮",
+    "en": "Fungal Artillery"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "weald",
+    "cove",
+    "courtyard"
+   ],
+   "image": "img/fungal_artillery.png"
+  },
+  {
+   "id": "fungal_bloat",
+   "name": {
+    "zh": "真菌刮擦者",
+    "en": "Fungal Scratcher"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "weald",
+    "cove",
+    "courtyard"
+   ],
+   "image": "img/fungal_bloat.png"
+  },
+  {
+   "id": "galaxy",
+   "name": {
+    "zh": "沉睡者",
+    "en": "The Sleeper"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 4,
+   "tiers": [
+    "D"
+   ],
+   "regions": [],
+   "image": "img/galaxy.png"
+  },
+  {
+   "id": "gargoyle",
+   "name": {
+    "zh": "石像鬼",
+    "en": "Gargoyle"
+   },
+   "type": {
+    "id": "stonework",
+    "zh": "石雕",
+    "en": "Stonework"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "town"
+   ],
+   "image": "img/gargoyle.png"
+  },
+  {
+   "id": "gatekeeper",
+   "name": {
+    "zh": "沉睡者之梦",
+    "en": "Sleeper's Dream"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [],
+   "image": "img/gatekeeper.png"
+  },
+  {
+   "id": "ghoul",
+   "name": {
+    "zh": "食尸鬼",
+    "en": "Ghoul"
+   },
+   "type": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "courtyard",
+    "town"
+   ],
+   "image": "img/ghoul.png"
+  },
+  {
+   "id": "hag",
+   "name": {
+    "zh": "消瘦的巫婆",
+    "en": "Wizened Hag"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "weald"
+   ],
+   "image": "img/hag.png"
+  },
+  {
+   "id": "jellyfish",
+   "name": {
+    "zh": "蛰针水母",
+    "en": "Deep Stinger"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "cove"
+   ],
+   "image": "img/jellyfish.png"
+  },
+  {
+   "id": "madman",
+   "name": {
+    "zh": "疯子",
+    "en": "Madman"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "town"
+   ],
+   "image": "img/madman.png"
+  },
+  {
+   "id": "maggot",
+   "name": {
+    "zh": "蛆虫",
+    "en": "Maggot"
+   },
+   "type": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "courtyard",
+    "town"
+   ],
+   "image": "img/maggot.png"
+  },
+  {
+   "id": "miller",
+   "name": {
+    "zh": "磨坊主",
+    "en": "Miller"
+   },
+   "type": {
+    "id": "unfortunate_soul",
+    "zh": "堕落灵魂",
+    "en": "Poor Soul"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "farmstead"
+   ],
+   "image": "img/miller.png"
+  },
+  {
+   "id": "necromancer",
+   "name": {
+    "zh": "死灵法师学徒",
+    "en": "Necromancer Apprentice"
+   },
+   "type": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "courtyard",
+    "town"
+   ],
+   "image": "img/necromancer.png"
+  },
+  {
+   "id": "nest",
+   "name": {
+    "zh": "尖叫魔巢穴",
+    "en": "Shrieker's Nest"
+   },
+   "type": {
+    "id": "thatchery",
+    "zh": "thatchery",
+    "en": "Thatchery"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "weald"
+   ],
+   "image": "img/nest.png"
+  },
+  {
+   "id": "octotank",
+   "name": {
+    "zh": "深潜守卫",
+    "en": "Pelagic Guardian"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "cove"
+   ],
+   "image": "img/octotank.png"
+  },
+  {
+   "id": "pew_large",
+   "name": {
+    "zh": "长椅路障",
+    "en": "Pew Blockade"
+   },
+   "type": {
+    "id": "carpentry",
+    "zh": "木头",
+    "en": "Carpentry"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "town"
+   ],
+   "image": "img/pew_large.png"
+  },
+  {
+   "id": "pew_medium",
+   "name": {
+    "zh": "开裂的长椅",
+    "en": "Fractured Pew"
+   },
+   "type": {
+    "id": "carpentry",
+    "zh": "木头",
+    "en": "Carpentry"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "town"
+   ],
+   "image": "img/pew_medium.png"
+  },
+  {
+   "id": "pew_small",
+   "name": {
+    "zh": "碎裂的长椅",
+    "en": "Dashed Pew"
+   },
+   "type": {
+    "id": "carpentry",
+    "zh": "木头",
+    "en": "Carpentry"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "town"
+   ],
+   "image": "img/pew_small.png"
+  },
+  {
+   "id": "plowhorse",
+   "name": {
+    "zh": "犁马",
+    "en": "Plow Horse"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "farmstead"
+   ],
+   "image": "img/plowhorse.png"
+  },
+  {
+   "id": "prophet",
+   "name": {
+    "zh": "聒噪的先知",
+    "en": "Sonorous Prophet"
+   },
+   "type": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "town"
+   ],
+   "image": "img/prophet.png"
+  },
+  {
+   "id": "pyre_empty",
+   "name": {
+    "zh": "木桩",
+    "en": "Pyre"
+   },
+   "type": {
+    "id": "pyre",
+    "zh": "不洁的木材",
+    "en": "Unholy wood"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove"
+   ],
+   "image": "img/pyre_empty.png"
+  },
+  {
+   "id": "pyre_full",
+   "name": {
+    "zh": "木桩",
+    "en": "Pyre"
+   },
+   "type": {
+    "id": "pyre",
+    "zh": "不洁的木材",
+    "en": "Unholy wood"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [],
+   "image": "img/pyre_full.png"
+  },
+  {
+   "id": "rabid_dog",
+   "name": {
+    "zh": "袭人狂狗",
+    "en": "Rabid Gnasher"
+   },
+   "type": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "weald",
+    "cove",
+    "courtyard",
+    "town"
+   ],
+   "image": "img/rabid_dog.png"
+  },
+  {
+   "id": "revenant",
+   "name": {
+    "zh": "沉睡使者",
+    "en": "Sleeper's Herald"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [],
+   "image": "img/revenant.png"
+  },
+  {
+   "id": "scarecrow",
+   "name": {
+    "zh": "稻草人",
+    "en": "Scarecrow"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [],
+   "image": "img/scarecrow.png"
+  },
+  {
+   "id": "seed_black",
+   "name": {
+    "zh": "创伤畸变",
+    "en": "Traumatic Aberration"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": []
+  },
+  {
+   "id": "seed_grey",
+   "name": {
+    "zh": "金刚石畸变",
+    "en": "Adamantite Aberration"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": []
+  },
+  {
+   "id": "seed_purple",
+   "name": {
+    "zh": "短暂畸变",
+    "en": "Temporal Aberration"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": []
+  },
+  {
+   "id": "seed_red",
+   "name": {
+    "zh": "不稳定畸变",
+    "en": "Unstable Aberration"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": []
+  },
+  {
+   "id": "seed_yellow",
+   "name": {
+    "zh": "瘟疫畸变",
+    "en": "Pestilential Aberration"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": []
+  },
+  {
+   "id": "seedling_black",
+   "name": {
+    "zh": "未完成的畸变",
+    "en": "Unfinished Aberration"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": []
+  },
+  {
+   "id": "seedling_grey",
+   "name": {
+    "zh": "未完成的畸变",
+    "en": "Unfinished Aberration"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": []
+  },
+  {
+   "id": "seedling_purple",
+   "name": {
+    "zh": "未完成的畸变",
+    "en": "Unfinished Aberration"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": []
+  },
+  {
+   "id": "seedling_red",
+   "name": {
+    "zh": "未完成的畸变",
+    "en": "Unfinished Aberration"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": []
+  },
+  {
+   "id": "seedling_yellow",
+   "name": {
+    "zh": "未完成的畸变",
+    "en": "Unfinished Aberration"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": []
+  },
+  {
+   "id": "shambler",
+   "name": {
+    "zh": "跛行者",
+    "en": "Shambler"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C",
+    "E"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "courtyard",
+    "town",
+    "darkestdungeon",
+    "_shared"
+   ],
+   "image": "img/shambler.png"
+  },
+  {
+   "id": "shambler_tentacle",
+   "name": {
+    "zh": "跛行衍生",
+    "en": "Shambler Sycophant"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C",
+    "E"
+   ],
+   "regions": [],
+   "image": "img/shambler_tentacle.png"
+  },
+  {
+   "id": "shuffler",
+   "name": {
+    "zh": "\"错乱恐魔\"",
+    "en": "Shuffling Horror"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 3,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "darkestdungeon"
+   ],
+   "image": "img/shuffler.png"
+  },
+  {
+   "id": "siren",
+   "name": {
+    "zh": "海妖塞壬",
+    "en": "Siren"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "cove"
+   ],
+   "image": "img/siren.png"
+  },
+  {
+   "id": "skeleton_arbalist",
+   "name": {
+    "zh": "骸骨弩手",
+    "en": "Bone Arbalist"
+   },
+   "type": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "town"
+   ],
+   "image": "img/skeleton_arbalist.png"
+  },
+  {
+   "id": "skeleton_bearer",
+   "name": {
+    "zh": "骸骨旗手",
+    "en": "Bone Bearer"
+   },
+   "type": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts"
+   ],
+   "image": "img/skeleton_bearer.png"
+  },
+  {
+   "id": "skeleton_captain",
+   "name": {
+    "zh": "骸骨队长",
+    "en": "Bone Captain"
+   },
+   "type": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "town"
+   ],
+   "image": "img/skeleton_captain.png"
+  },
+  {
+   "id": "skeleton_common",
+   "name": {
+    "zh": "骸骨暴民",
+    "en": "Bone Rabble"
+   },
+   "type": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "town"
+   ],
+   "image": "img/skeleton_common.png"
+  },
+  {
+   "id": "skeleton_courtier",
+   "name": {
+    "zh": "骸骨官僚",
+    "en": "Bone Courtier"
+   },
+   "type": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "town"
+   ],
+   "image": "img/skeleton_courtier.png"
+  },
+  {
+   "id": "skeleton_defender",
+   "name": {
+    "zh": "骸骨抵御者",
+    "en": "Bone Defender"
+   },
+   "type": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "town"
+   ],
+   "image": "img/skeleton_defender.png"
+  },
+  {
+   "id": "skeleton_militia",
+   "name": {
+    "zh": "骸骨战士",
+    "en": "Bone Soldier"
+   },
+   "type": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "town"
+   ],
+   "image": "img/skeleton_militia.png"
+  },
+  {
+   "id": "skeleton_spear",
+   "name": {
+    "zh": "骸骨矛手",
+    "en": "Bone Spearman"
+   },
+   "type": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "town"
+   ],
+   "image": "img/skeleton_spear.png"
+  },
+  {
+   "id": "snail_urchin",
+   "name": {
+    "zh": "深海蛆虫",
+    "en": "Sea Maggot"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "cove"
+   ],
+   "image": "img/snail_urchin.png"
+  },
+  {
+   "id": "snake_big_adder",
+   "name": {
+    "zh": "致命梦蝰",
+    "en": "Death Adder"
+   },
+   "type": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove"
+   ],
+   "image": "img/snake_big_adder.png"
+  },
+  {
+   "id": "snake_cobra",
+   "name": {
+    "zh": "眼睛蛇",
+    "en": "Pliskin"
+   },
+   "type": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove"
+   ],
+   "image": "img/snake_cobra.png"
+  },
+  {
+   "id": "snake_rattler",
+   "name": {
+    "zh": "响尾蛇",
+    "en": "Rattler"
+   },
+   "type": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove"
+   ],
+   "image": "img/snake_rattler.png"
+  },
+  {
+   "id": "spider_spitter",
+   "name": {
+    "zh": "喷毒蛛",
+    "en": "Spitter"
+   },
+   "type": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "courtyard",
+    "town"
+   ],
+   "image": "img/spider_spitter.png"
+  },
+  {
+   "id": "spider_webber",
+   "name": {
+    "zh": "结网蛛",
+    "en": "Webber"
+   },
+   "type": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "courtyard",
+    "town"
+   ],
+   "image": "img/spider_webber.png"
+  },
+  {
+   "id": "spire",
+   "name": {
+    "zh": "破裂水晶怪",
+    "en": "Fracture"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [],
+   "image": "img/spire.png"
+  },
+  {
+   "id": "sprout",
+   "name": {
+    "zh": "焦点怪",
+    "en": "Focus Point"
+   },
+   "type": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": []
+  },
+  {
+   "id": "statue_hand",
+   "name": {
+    "zh": "血泉之源",
+    "en": "Blood Fount"
+   },
+   "type": {
+    "id": "stonework",
+    "zh": "石雕",
+    "en": "Stonework"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "courtyard"
+   ],
+   "image": "img/statue_hand.png"
+  },
+  {
+   "id": "statue_head",
+   "name": {
+    "zh": "花园守卫",
+    "en": "Garden Guardian"
+   },
+   "type": {
+    "id": "stonework",
+    "zh": "石雕",
+    "en": "Stonework"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "courtyard"
+   ],
+   "image": "img/statue_head.png"
+  },
+  {
+   "id": "statue_shield",
+   "name": {
+    "zh": "石盾",
+    "en": "Stone Shield"
+   },
+   "type": {
+    "id": "stonework",
+    "zh": "石雕",
+    "en": "Stonework"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "courtyard"
+   ],
+   "image": "img/statue_shield.png"
+  },
+  {
+   "id": "steward",
+   "name": {
+    "zh": "男仆",
+    "en": "Manservant"
+   },
+   "type": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "courtyard"
+   ],
+   "image": "img/steward.png"
+  },
+  {
+   "id": "swine_drummer",
+   "name": {
+    "zh": "猪人鼓手",
+    "en": "Swine Drummer"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "warrens"
+   ],
+   "image": "img/swine_drummer.png"
+  },
+  {
+   "id": "swine_piglet",
+   "name": {
+    "zh": "威尔伯",
+    "en": "Wilbur"
+   },
+   "type": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "warrens"
+   ],
+   "image": "img/swine_piglet.png"
+  },
+  {
+   "id": "swine_prince",
+   "name": {
+    "zh": "猪人王子",
+    "en": "Swine Prince"
+   },
+   "type": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "size": 3,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "warrens"
+   ],
+   "image": "img/swine_prince.png"
+  },
+  {
+   "id": "swine_reaver",
+   "name": {
+    "zh": "猪人切割者",
+    "en": "Swine Chopper"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "warrens"
+   ],
+   "image": "img/swine_reaver.png"
+  },
+  {
+   "id": "swine_skiver",
+   "name": {
+    "zh": "迷窟追猎者",
+    "en": "Swine Skiver"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "warrens"
+   ],
+   "image": "img/swine_skiver.png"
+  },
+  {
+   "id": "swine_slasher",
+   "name": {
+    "zh": "猪人钩手",
+    "en": "Swine Slasher"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "warrens"
+   ],
+   "image": "img/swine_slasher.png"
+  },
+  {
+   "id": "swine_wretch",
+   "name": {
+    "zh": "猪人残废",
+    "en": "Swine Wretch"
+   },
+   "type": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "warrens"
+   ],
+   "image": "img/swine_wretch.png"
+  },
+  {
+   "id": "swinetaur",
+   "name": {
+    "zh": "猪人骑士",
+    "en": "Swinetaur"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "warrens"
+   ],
+   "image": "img/swinetaur.png"
+  },
+  {
+   "id": "sycophant",
+   "name": {
+    "zh": "谄媚者",
+    "en": "Sycophant"
+   },
+   "type": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "courtyard"
+   ],
+   "image": "img/sycophant.png"
+  },
+  {
+   "id": "templar_melee",
+   "name": {
+    "zh": "圣堂斗士",
+    "en": "Templar Gladiator"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 2,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "darkestdungeon"
+   ],
+   "image": "img/templar_melee.png"
+  },
+  {
+   "id": "templar_melee_mb",
+   "name": {
+    "zh": "圣堂护法",
+    "en": "Templar Impaler"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 2,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "darkestdungeon"
+   ],
+   "image": "img/templar_melee_mb.png"
+  },
+  {
+   "id": "templar_ranged",
+   "name": {
+    "zh": "圣堂狙手",
+    "en": "Templar Sniper"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 2,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "darkestdungeon"
+   ],
+   "image": "img/templar_ranged.png"
+  },
+  {
+   "id": "templar_ranged_mb",
+   "name": {
+    "zh": "圣堂军阀",
+    "en": "Templar Warlord"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 2,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "darkestdungeon"
+   ],
+   "image": "img/templar_ranged_mb.png"
+  },
+  {
+   "id": "thing",
+   "name": {
+    "zh": "星空怪",
+    "en": "Thing from the Stars"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove"
+   ],
+   "image": "img/thing.png"
+  },
+  {
+   "id": "tick_zombie",
+   "name": {
+    "zh": "乞血者",
+    "en": "Supplicant"
+   },
+   "type": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "crypts",
+    "weald",
+    "warrens",
+    "cove",
+    "courtyard"
+   ],
+   "image": "img/tick_zombie.png"
+  },
+  {
+   "id": "totem_attack",
+   "name": {
+    "zh": "恶性增生物",
+    "en": "Malignant Growth"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "darkestdungeon"
+   ],
+   "image": "img/totem_attack.png"
+  },
+  {
+   "id": "totem_guard",
+   "name": {
+    "zh": "良性增生物",
+    "en": "Defensive Growth"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "D"
+   ],
+   "regions": [
+    "darkestdungeon"
+   ],
+   "image": "img/totem_guard.png"
+  },
+  {
+   "id": "unclean_giant",
+   "name": {
+    "zh": "不洁巨人",
+    "en": "Unclean Giant"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 2,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "weald",
+    "cove",
+    "courtyard"
+   ],
+   "image": "img/unclean_giant.png"
+  },
+  {
+   "id": "virago_hateful",
+   "name": {
+    "zh": "林中恶妇",
+    "en": "Hateful Virago"
+   },
+   "type": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "weald"
+   ],
+   "image": "img/virago_hateful.png"
+  },
+  {
+   "id": "virago_shroom",
+   "name": {
+    "zh": "死疽真菌",
+    "en": "Necrotic Fungus"
+   },
+   "type": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [],
+   "image": "img/virago_shroom.png"
+  },
+  {
+   "id": "viscount",
+   "name": {
+    "zh": "子爵",
+    "en": "Viscount"
+   },
+   "size": 1,
+   "tiers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "regions": [
+    "courtyard"
+   ],
+   "image": "img/viscount.png"
+  }
+ ]
+}

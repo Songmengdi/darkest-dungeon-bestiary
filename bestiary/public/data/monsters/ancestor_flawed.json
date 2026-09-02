@@ -1,0 +1,120 @@
+{
+ "id": "ancestor_flawed",
+ "dir": "monsters/ancestor_flawed",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Imperfect Reflection",
+    "zh": "瑕疵复制体",
+    "ja": "不完全な分身"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "29",
+    "def": "16.75%",
+    "prot": "0",
+    "spd": "4",
+    "res": {
+     "stun": "72.5%",
+     "poison": "57.5%",
+     "bleed": "57.5%",
+     "debuff": "57.5%",
+     "move": "58%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "flawed_mark",
+     "name": {
+      "zh": "无名之选",
+      "en": "It Chooses"
+     },
+     "type": "melee",
+     "atk": "113.75%",
+     "dmg": "1-3",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Ancestor Mark",
+      "Flawed Stun"
+     ]
+    },
+    {
+     "id": "flawed_reveal",
+     "name": {
+      "zh": "彼此同根",
+      "en": "We Are the Same"
+     },
+     "type": "melee",
+     "atk": "113.75%",
+     "dmg": "2-2",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Ancestor Flawed Stress"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "ancestor_flawed_D",
+    "skillDesires": [
+     {
+      "skill": "flawed_reveal",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "flawed_mark",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "flawed_mark",
+      "type": "performing_turn_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "flawed_reveal"
+     }
+    ]
+   },
+   "lifeLink": "ancestor_small"
+  }
+ ]
+}

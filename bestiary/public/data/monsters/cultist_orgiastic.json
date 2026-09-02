@@ -1,0 +1,128 @@
+{
+ "id": "cultist_orgiastic",
+ "dir": "monsters/cultist_orgiastic",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Rapturous Cultist",
+    "zh": "狂喜的教众",
+    "ja": "ラプチャラス・カルティスト"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "21",
+    "def": "0%",
+    "prot": "0",
+    "spd": "9",
+    "res": {
+     "stun": "47.5%",
+     "poison": "47.5%",
+     "bleed": "47.5%",
+     "debuff": "47.5%",
+     "move": "48%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "orgiastic_heal",
+     "name": {
+      "zh": "血肉相济",
+      "en": "Flesh to Flesh"
+     },
+     "type": "melee",
+     "atk": "23.75%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": []
+    },
+    {
+     "id": "orgiastic_guard",
+     "name": {
+      "zh": "血肉之墙",
+      "en": "Flesh Wall"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Clear Guard Performer",
+      "Clear Guard Target",
+      "Orgiastic Guard"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "cultist_orgiastic",
+    "skillDesires": [
+     {
+      "skill": "orgiastic_guard",
+      "type": "ally_alive_skill"
+     },
+     {
+      "skill": "orgiastic_guard",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "orgiastic_heal",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "ally_class_target",
+      "skill": "orgiastic_heal"
+     },
+     {
+      "type": "ally_class_target",
+      "skill": "orgiastic_guard"
+     },
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "health_target",
+      "skill": "orgiastic_heal"
+     }
+    ]
+   }
+  }
+ ]
+}

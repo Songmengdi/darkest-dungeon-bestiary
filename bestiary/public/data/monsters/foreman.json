@@ -1,0 +1,369 @@
+{
+ "id": "foreman",
+ "dir": "dlc/735730_color_of_madness/monsters/foreman",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Foreman",
+    "zh": "工头",
+    "ja": "Foreman"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "26",
+    "def": "0%",
+    "prot": "0.15",
+    "spd": "3",
+    "res": {
+     "stun": "20%",
+     "poison": "50%",
+     "bleed": "20%",
+     "debuff": "20%",
+     "move": "20%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "hasten_sowing",
+     "name": {
+      "zh": "搅拌",
+      "en": "Stir The Rabble"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Blight Buff A",
+      "Foreman Blt Duration Inc",
+      "Farmer Riposte On",
+      "Buff Speed C"
+     ]
+    },
+    {
+     "id": "no_tresspassers",
+     "name": {
+      "zh": "不准擅闯",
+      "en": "No Trespassers"
+     },
+     "type": "melee",
+     "atk": "82.5%",
+     "dmg": "5-9",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Debuff Stress Res A",
+      "Bleed 1",
+      "Mark Target"
+     ]
+    },
+    {
+     "id": "many_hands",
+     "name": {
+      "zh": "多方援手",
+      "en": "Many Hands"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Buff Speed A",
+      "Many Hands Prot Buff A"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_A"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Foreman",
+    "zh": "工头",
+    "ja": "Foreman"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "36",
+    "def": "8.75%",
+    "prot": "0.15",
+    "spd": "4",
+    "res": {
+     "stun": "40%",
+     "poison": "70%",
+     "bleed": "40%",
+     "debuff": "40%",
+     "move": "40%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "hasten_sowing",
+     "name": {
+      "zh": "搅拌",
+      "en": "Stir The Rabble"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Blight Buff B",
+      "Foreman Blt Duration Inc",
+      "Farmer Riposte On",
+      "Buff Speed C"
+     ]
+    },
+    {
+     "id": "no_tresspassers",
+     "name": {
+      "zh": "不准擅闯",
+      "en": "No Trespassers"
+     },
+     "type": "melee",
+     "atk": "88.75%",
+     "dmg": "7-12",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Debuff Stress Res B",
+      "Bleed 3",
+      "Mark Target"
+     ]
+    },
+    {
+     "id": "many_hands",
+     "name": {
+      "zh": "多方援手",
+      "en": "Many Hands"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Buff Speed B",
+      "Many Hands Prot Buff B"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_B"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Foreman",
+    "zh": "工头",
+    "ja": "Foreman"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "47",
+    "def": "20%",
+    "prot": "0.15",
+    "spd": "5",
+    "res": {
+     "stun": "60%",
+     "poison": "90%",
+     "bleed": "60%",
+     "debuff": "60%",
+     "move": "60%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "hasten_sowing",
+     "name": {
+      "zh": "搅拌",
+      "en": "Stir The Rabble"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Blight Buff C",
+      "Foreman Blt Duration Inc",
+      "Farmer Riposte On",
+      "Buff Speed C"
+     ]
+    },
+    {
+     "id": "no_tresspassers",
+     "name": {
+      "zh": "不准擅闯",
+      "en": "No Trespassers"
+     },
+     "type": "melee",
+     "atk": "100%",
+     "dmg": "9-16",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Debuff Stress Res C",
+      "Bleed 5",
+      "Mark Target"
+     ]
+    },
+    {
+     "id": "many_hands",
+     "name": {
+      "zh": "多方援手",
+      "en": "Many Hands"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Buff Speed B",
+      "Many Hands Prot Buff B"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_C"
+  }
+ ]
+}

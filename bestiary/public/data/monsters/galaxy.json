@@ -1,0 +1,95 @@
+{
+ "id": "galaxy",
+ "dir": "dlc/735730_color_of_madness/monsters/galaxy",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "The Sleeper",
+    "zh": "沉睡者",
+    "ja": "The Sleeper"
+   },
+   "size": 4,
+   "stats": {
+    "hp": "225",
+    "def": "0%",
+    "prot": "0.3",
+    "spd": "6",
+    "res": {
+     "stun": "140%",
+     "poison": "70%",
+     "bleed": "140%",
+     "debuff": "100%",
+     "move": "240%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "rend_the_warp",
+     "name": {
+      "zh": "沉睡者苏醒",
+      "en": "The Sleeper Awakens"
+     },
+     "type": "ranged",
+     "atk": "120%",
+     "dmg": "14-22",
+     "crit": "3%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "galaxy stress"
+     ]
+    },
+    {
+     "id": "the_husking",
+     "name": {
+      "zh": "沉睡者晃动",
+      "en": "The Sleeper Stirs"
+     },
+     "type": "ranged",
+     "atk": "115%",
+     "dmg": "6-14",
+     "crit": "19%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "galaxy blight",
+      "galaxy horror"
+     ]
+    }
+   ],
+   "loot": []
+  }
+ ]
+}

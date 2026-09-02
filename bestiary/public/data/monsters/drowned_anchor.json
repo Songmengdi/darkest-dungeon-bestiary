@@ -1,0 +1,273 @@
+{
+ "id": "drowned_anchor",
+ "dir": "monsters/drowned_anchor",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Drowned Puller",
+    "zh": "溺亡拉绳手",
+    "ja": "溺死プラー"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "14",
+    "def": "0%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "25%",
+     "poison": "20%",
+     "bleed": "60%",
+     "debuff": "20%",
+     "move": "200%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "anchor_grapple",
+     "name": {
+      "zh": "抛锚！",
+      "en": "Heave to!"
+     },
+     "type": "melee",
+     "atk": "102.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1
+     ],
+     "target": [
+      1
+     ],
+     "effects": [
+      "CaptureBosun"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "drowned_anchor",
+    "skillDesires": [
+     {
+      "skill": "anchor_grapple",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "lifeLink": "drowned_captain"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Drowned Ropeman",
+    "zh": "溺亡钩套手",
+    "ja": "溺死ロープマン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "21",
+    "def": "8.75%",
+    "prot": "0",
+    "spd": "1",
+    "res": {
+     "stun": "45%",
+     "poison": "40%",
+     "bleed": "80%",
+     "debuff": "40%",
+     "move": "220%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "anchor_grapple",
+     "name": {
+      "zh": "抛锚！",
+      "en": "Heave to!"
+     },
+     "type": "melee",
+     "atk": "108.75%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1
+     ],
+     "target": [
+      1
+     ],
+     "effects": [
+      "CaptureBosun"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "drowned_anchor",
+    "skillDesires": [
+     {
+      "skill": "anchor_grapple",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "lifeLink": "drowned_captain"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Drowned Anchorman",
+    "zh": "溺亡定锚手",
+    "ja": "溺死アンカーマン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "29",
+    "def": "22.5%",
+    "prot": "0",
+    "spd": "2",
+    "res": {
+     "stun": "65%",
+     "poison": "60%",
+     "bleed": "100%",
+     "debuff": "60%",
+     "move": "240%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "anchor_grapple",
+     "name": {
+      "zh": "抛锚！",
+      "en": "Heave to!"
+     },
+     "type": "melee",
+     "atk": "122.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1
+     ],
+     "target": [
+      1
+     ],
+     "effects": [
+      "CaptureBosun"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "drowned_anchor",
+    "skillDesires": [
+     {
+      "skill": "anchor_grapple",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "lifeLink": "drowned_captain"
+  }
+ ]
+}

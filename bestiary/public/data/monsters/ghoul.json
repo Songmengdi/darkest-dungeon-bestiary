@@ -1,0 +1,656 @@
+{
+ "id": "ghoul",
+ "dir": "monsters/ghoul",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Ghoul",
+    "zh": "食尸鬼",
+    "ja": "グール"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "29",
+    "def": "5%",
+    "prot": "0.33",
+    "spd": "5",
+    "res": {
+     "stun": "50%",
+     "poison": "20%",
+     "bleed": "20%",
+     "debuff": "20%",
+     "move": "62%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "rend",
+     "name": {
+      "zh": "撕裂",
+      "en": "Rend"
+     },
+     "type": "melee",
+     "atk": "82.5%",
+     "dmg": "4-8",
+     "crit": "12%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Bleed 1",
+      "Ghoul Rend Debuff 1"
+     ]
+    },
+    {
+     "id": "skull_toss",
+     "name": {
+      "zh": "骸骨投掷",
+      "en": "Skull Toss"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "4-8",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 2"
+     ]
+    },
+    {
+     "id": "howl",
+     "name": {
+      "zh": "嚎叫",
+      "en": "Howl"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Ghoul Stress DOT",
+      "Darkness 2",
+      "Worry"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "ghoul_A",
+    "skillDesires": [
+     {
+      "skill": "rend",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "rend",
+      "type": "performing_turn_skill"
+     },
+     {
+      "skill": "skull_toss",
+      "type": "stun_skill"
+     },
+     {
+      "skill": "howl",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stunned_target",
+      "skill": "skull_toss"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "skull_toss"
+     }
+    ]
+   },
+   "deathClass": "corpse_large_A"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Slavering Ghoul",
+    "zh": "垂涎食尸鬼",
+    "ja": "大食いグール"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "41",
+    "def": "13.75%",
+    "prot": "0.4",
+    "spd": "6",
+    "res": {
+     "stun": "70%",
+     "poison": "40%",
+     "bleed": "40%",
+     "debuff": "40%",
+     "move": "82%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "rend",
+     "name": {
+      "zh": "撕裂",
+      "en": "Rend"
+     },
+     "type": "melee",
+     "atk": "88.75%",
+     "dmg": "5-11",
+     "crit": "16%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Bleed 3",
+      "Ghoul Rend Debuff 3"
+     ]
+    },
+    {
+     "id": "skull_toss",
+     "name": {
+      "zh": "骸骨投掷",
+      "en": "Skull Toss"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "5-11",
+     "crit": "12%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 2",
+      "Ghoul Skull Stun 3"
+     ]
+    },
+    {
+     "id": "howl",
+     "name": {
+      "zh": "嚎叫",
+      "en": "Howl"
+     },
+     "type": "ranged",
+     "atk": "92.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Ghoul Stress DOT",
+      "Darkness 2",
+      "Worry"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "ghoul_B",
+    "skillDesires": [
+     {
+      "skill": "rend",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "rend",
+      "type": "performing_turn_skill"
+     },
+     {
+      "skill": "skull_toss",
+      "type": "stun_skill"
+     },
+     {
+      "skill": "howl",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stunned_target",
+      "skill": "skull_toss"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "skull_toss"
+     }
+    ]
+   },
+   "deathClass": "corpse_large_B"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Insatiable Ghoul",
+    "zh": "贪婪食尸鬼",
+    "ja": "人喰いグール"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "57",
+    "def": "26.25%",
+    "prot": "0.4",
+    "spd": "7",
+    "res": {
+     "stun": "90%",
+     "poison": "60%",
+     "bleed": "60%",
+     "debuff": "60%",
+     "move": "102%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "rend",
+     "name": {
+      "zh": "撕裂",
+      "en": "Rend"
+     },
+     "type": "melee",
+     "atk": "102.5%",
+     "dmg": "7-15",
+     "crit": "19%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Bleed 5",
+      "Ghoul Rend Debuff 5"
+     ]
+    },
+    {
+     "id": "skull_toss",
+     "name": {
+      "zh": "骸骨投掷",
+      "en": "Skull Toss"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "7-15",
+     "crit": "14%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 2",
+      "Ghoul Skull Stun 5"
+     ]
+    },
+    {
+     "id": "howl",
+     "name": {
+      "zh": "嚎叫",
+      "en": "Howl"
+     },
+     "type": "ranged",
+     "atk": "100%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Ghoul Stress DOT",
+      "Darkness 2",
+      "Worry"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "ghoul_C",
+    "skillDesires": [
+     {
+      "skill": "rend",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "rend",
+      "type": "performing_turn_skill"
+     },
+     {
+      "skill": "skull_toss",
+      "type": "stun_skill"
+     },
+     {
+      "skill": "howl",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stunned_target",
+      "skill": "skull_toss"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "skull_toss"
+     }
+    ]
+   },
+   "deathClass": "corpse_large_C"
+  }
+ ]
+}

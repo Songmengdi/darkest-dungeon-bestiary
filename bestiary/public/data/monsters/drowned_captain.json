@@ -1,0 +1,1026 @@
+{
+ "id": "drowned_captain",
+ "dir": "monsters/drowned_captain",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Sodden Crew",
+    "zh": "淹浸船员",
+    "ja": "遭難クルー"
+   },
+   "size": 3,
+   "stats": {
+    "hp": "100",
+    "def": "0%",
+    "prot": "0",
+    "spd": "3",
+    "res": {
+     "stun": "50%",
+     "poison": "20%",
+     "bleed": "60%",
+     "debuff": "20%",
+     "move": "200%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "all_hands",
+     "name": {
+      "zh": "紧急集合！",
+      "en": "All Hands on Deck!"
+     },
+     "type": "melee",
+     "atk": "102.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Summon Anchor 1",
+      "Pull 3A"
+     ]
+    },
+    {
+     "id": "gaffer_hook",
+     "name": {
+      "zh": "钩逮上船",
+      "en": "Boarding Clutch"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "3-7",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Bleed 1"
+     ]
+    },
+    {
+     "id": "captain_shout",
+     "name": {
+      "zh": "与溺同醉",
+      "en": "Drink with the Dead"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "1-1",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 1"
+     ]
+    },
+    {
+     "id": "captain_shout_debuff",
+     "name": {
+      "zh": "哗变",
+      "en": "Mutiny"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "1-1",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Captain Curse 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 10,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 8,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 2,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 12,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 3,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "drowned_captain",
+    "skillDesires": [
+     {
+      "skill": "gaffer_hook",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "captain_shout",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "captain_shout_debuff",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "all_hands"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Sunken Crew",
+    "zh": "淹沉船员",
+    "ja": "沈没クルー"
+   },
+   "size": 3,
+   "stats": {
+    "hp": "150",
+    "def": "8.75%",
+    "prot": "0",
+    "spd": "4",
+    "res": {
+     "stun": "70%",
+     "poison": "40%",
+     "bleed": "80%",
+     "debuff": "40%",
+     "move": "220%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "all_hands",
+     "name": {
+      "zh": "紧急集合！",
+      "en": "All Hands on Deck!"
+     },
+     "type": "melee",
+     "atk": "108.75%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Summon Anchor 2",
+      "Pull 3C"
+     ]
+    },
+    {
+     "id": "gaffer_hook",
+     "name": {
+      "zh": "钩逮上船",
+      "en": "Boarding Clutch"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "5-9",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Bleed 3"
+     ]
+    },
+    {
+     "id": "captain_shout",
+     "name": {
+      "zh": "与溺同醉",
+      "en": "Drink with the Dead"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "1-2",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 1"
+     ]
+    },
+    {
+     "id": "captain_shout_debuff",
+     "name": {
+      "zh": "哗变",
+      "en": "Mutiny"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "1-2",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Captain Curse 3"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 10,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 8,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 2,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 12,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 3,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "drowned_captain",
+    "skillDesires": [
+     {
+      "skill": "gaffer_hook",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "captain_shout",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "captain_shout_debuff",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "all_hands"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Drowned Crew",
+    "zh": "溺亡船员",
+    "ja": "冥界のクルー"
+   },
+   "size": 3,
+   "stats": {
+    "hp": "205",
+    "def": "22.5%",
+    "prot": "0",
+    "spd": "5",
+    "res": {
+     "stun": "90%",
+     "poison": "60%",
+     "bleed": "100%",
+     "debuff": "60%",
+     "move": "240%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "all_hands",
+     "name": {
+      "zh": "紧急集合！",
+      "en": "All Hands on Deck!"
+     },
+     "type": "melee",
+     "atk": "122.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Summon Anchor 3",
+      "Pull 3E"
+     ]
+    },
+    {
+     "id": "gaffer_hook",
+     "name": {
+      "zh": "钩逮上船",
+      "en": "Boarding Clutch"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "6-13",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Bleed 5"
+     ]
+    },
+    {
+     "id": "captain_shout",
+     "name": {
+      "zh": "与溺同醉",
+      "en": "Drink with the Dead"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "1-3",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 1"
+     ]
+    },
+    {
+     "id": "captain_shout_debuff",
+     "name": {
+      "zh": "哗变",
+      "en": "Mutiny"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "1-3",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Captain Curse 5"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 10,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 8,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 2,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 12,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 3,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "drowned_captain",
+    "skillDesires": [
+     {
+      "skill": "gaffer_hook",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "captain_shout",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "captain_shout_debuff",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "all_hands"
+     }
+    ]
+   }
+  }
+ ]
+}

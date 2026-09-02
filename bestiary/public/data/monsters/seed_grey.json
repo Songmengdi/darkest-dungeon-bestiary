@@ -1,0 +1,40 @@
+{
+ "id": "seed_grey",
+ "dir": "dlc/735730_color_of_madness/monsters/seed_grey",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Adamantite Aberration",
+    "zh": "金刚石畸变",
+    "ja": "Adamantite Aberration"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "30",
+    "def": "0%",
+    "prot": "0.05",
+    "spd": "2",
+    "res": {
+     "stun": "85%",
+     "poison": "85%",
+     "bleed": "100%",
+     "debuff": "40%",
+     "move": "75%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [],
+   "loot": [],
+   "lifeLink": "spire"
+  }
+ ]
+}

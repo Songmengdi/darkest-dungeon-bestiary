@@ -1,0 +1,442 @@
+{
+ "id": "shambler_tentacle",
+ "dir": "monsters/shambler_tentacle",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Shambler Sycophant",
+    "zh": "跛行衍生",
+    "ja": "シャンブラー・シカファン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "8",
+    "def": "17.5%",
+    "prot": "0",
+    "spd": "10",
+    "res": {
+     "stun": "50%",
+     "poison": "40%",
+     "bleed": "40%",
+     "debuff": "40%",
+     "move": "40%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "tentacle_slap",
+     "name": {
+      "zh": "钩爪拍刺",
+      "en": "Clapperclaw"
+     },
+     "type": "melee",
+     "atk": "82.5%",
+     "dmg": "2-4",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 1",
+      "TentacleBuffSelf"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_A",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Shambler Spore",
+    "zh": "跛行孢体",
+    "ja": "シャンブラー・スポア"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "12",
+    "def": "26.25%",
+    "prot": "0",
+    "spd": "11",
+    "res": {
+     "stun": "70%",
+     "poison": "60%",
+     "bleed": "60%",
+     "debuff": "60%",
+     "move": "60%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "tentacle_slap",
+     "name": {
+      "zh": "钩爪拍刺",
+      "en": "Clapperclaw"
+     },
+     "type": "melee",
+     "atk": "88.75%",
+     "dmg": "3-5",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 1",
+      "TentacleBuffSelf"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_B",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Shambler Spawn",
+    "zh": "跛行幼体",
+    "ja": "シャンブラー・スポーン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "16",
+    "def": "40%",
+    "prot": "0",
+    "spd": "12",
+    "res": {
+     "stun": "90%",
+     "poison": "80%",
+     "bleed": "80%",
+     "debuff": "80%",
+     "move": "80%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "tentacle_slap",
+     "name": {
+      "zh": "钩爪拍刺",
+      "en": "Clapperclaw"
+     },
+     "type": "melee",
+     "atk": "102.5%",
+     "dmg": "4-7",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 1",
+      "TentacleBuffSelf"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_C",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "E",
+   "label": {
+    "zh": "档位 E",
+    "en": "Tier E"
+   },
+   "displayName": {
+    "en": "Shambler Spur",
+    "zh": "“跛行眷属”",
+    "ja": "シャンブラー・スパー"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "18",
+    "def": "42.5%",
+    "prot": "0",
+    "spd": "13",
+    "res": {
+     "stun": "95%",
+     "poison": "85%",
+     "bleed": "85%",
+     "debuff": "85%",
+     "move": "85%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "tentacle_slap",
+     "name": {
+      "zh": "钩爪拍刺",
+      "en": "Clapperclaw"
+     },
+     "type": "melee",
+     "atk": "115%",
+     "dmg": "5-9",
+     "crit": "14%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 1",
+      "TentacleBuffSelf"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_C",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   }
+  }
+ ]
+}

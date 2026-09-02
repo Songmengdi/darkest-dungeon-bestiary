@@ -1,0 +1,449 @@
+{
+ "id": "carrion_eater",
+ "dir": "monsters/carrion_eater",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Carrion Eater",
+    "zh": "腐肉吞吃者",
+    "ja": "カリオン・イーター"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "11",
+    "def": "0%",
+    "prot": "0",
+    "spd": "4",
+    "res": {
+     "stun": "50%",
+     "poison": "100%",
+     "bleed": "60%",
+     "debuff": "40%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "skills": [
+    {
+     "id": "munch",
+     "name": {
+      "zh": "吞嚼",
+      "en": "Munch"
+     },
+     "type": "melee",
+     "atk": "87.5%",
+     "dmg": "2-4",
+     "crit": "12%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3
+     ],
+     "effects": [
+      "Weak Blight 1",
+      "Damage Marked Target"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "carrion_eater_A",
+    "skillDesires": [
+     {
+      "skill": "munch",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target",
+      "skill": "munch"
+     }
+    ]
+   },
+   "deathClass": "corpse_A"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Corpse Eater",
+    "zh": "尸体噬食者",
+    "ja": "コープス・イーター"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "15",
+    "def": "8.75%",
+    "prot": "0",
+    "spd": "5",
+    "res": {
+     "stun": "70%",
+     "poison": "120%",
+     "bleed": "80%",
+     "debuff": "60%",
+     "move": "70%"
+    }
+   },
+   "enemyType": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "skills": [
+    {
+     "id": "munch",
+     "name": {
+      "zh": "吞嚼",
+      "en": "Munch"
+     },
+     "type": "melee",
+     "atk": "93.75%",
+     "dmg": "3-5",
+     "crit": "16%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3
+     ],
+     "effects": [
+      "Weak Blight 3",
+      "Damage Marked Target",
+      "Carrion Munch Disease 3"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "carrion_eater_B",
+    "skillDesires": [
+     {
+      "skill": "munch",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target",
+      "skill": "munch"
+     }
+    ]
+   },
+   "deathClass": "corpse_B"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Flesh Eater",
+    "zh": "血肉吞噬者",
+    "ja": "フレッシュ・イーター"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "21",
+    "def": "21.25%",
+    "prot": "0",
+    "spd": "6",
+    "res": {
+     "stun": "90%",
+     "poison": "140%",
+     "bleed": "100%",
+     "debuff": "80%",
+     "move": "90%"
+    }
+   },
+   "enemyType": {
+    "id": "beast",
+    "zh": "野兽",
+    "en": "Beast"
+   },
+   "skills": [
+    {
+     "id": "munch",
+     "name": {
+      "zh": "吞嚼",
+      "en": "Munch"
+     },
+     "type": "melee",
+     "atk": "107.5%",
+     "dmg": "4-7",
+     "crit": "19%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3
+     ],
+     "effects": [
+      "Weak Blight 5",
+      "Damage Marked Target",
+      "Carrion Munch Disease 5"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "carrion_eater_C",
+    "skillDesires": [
+     {
+      "skill": "munch",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target",
+      "skill": "munch"
+     }
+    ]
+   },
+   "deathClass": "corpse_C"
+  }
+ ]
+}

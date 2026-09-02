@@ -1,0 +1,252 @@
+{
+ "id": "body_emaciated",
+ "dir": "dlc/580100_crimson_court/features/crimson_court/monsters/body_emaciated",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Emaciated Body",
+    "zh": "瘦弱的躯体",
+    "ja": "やせ細った体"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "40",
+    "def": "0%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "45%",
+     "poison": "5%",
+     "bleed": "65%",
+     "debuff": "35%",
+     "move": "10%"
+    }
+   },
+   "enemyType": {
+    "id": "body",
+    "zh": "血袋",
+    "en": "Bloodbag"
+   },
+   "skills": [],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_A",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "viscount"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Emaciated Body",
+    "zh": "瘦弱的躯体",
+    "ja": "やせ細った体"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "60",
+    "def": "0%",
+    "prot": "0",
+    "spd": "1",
+    "res": {
+     "stun": "65%",
+     "poison": "25%",
+     "bleed": "85%",
+     "debuff": "55%",
+     "move": "30%"
+    }
+   },
+   "enemyType": {
+    "id": "body",
+    "zh": "血袋",
+    "en": "Bloodbag"
+   },
+   "skills": [],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_B",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "viscount"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Emaciated Body",
+    "zh": "瘦弱的躯体",
+    "ja": "やせ細った体"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "31",
+    "def": "0%",
+    "prot": "0",
+    "spd": "2",
+    "res": {
+     "stun": "85%",
+     "poison": "45%",
+     "bleed": "105%",
+     "debuff": "240%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "body",
+    "zh": "血袋",
+    "en": "Bloodbag"
+   },
+   "skills": [],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_C",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "viscount"
+  }
+ ]
+}

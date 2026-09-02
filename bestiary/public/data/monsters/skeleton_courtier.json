@@ -1,0 +1,521 @@
+{
+ "id": "skeleton_courtier",
+ "dir": "monsters/skeleton_courtier",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Bone Courtier",
+    "zh": "骸骨官僚",
+    "ja": "ボーン・クーティア"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "10",
+    "def": "12.5%",
+    "prot": "0",
+    "spd": "8",
+    "res": {
+     "stun": "10%",
+     "poison": "10%",
+     "bleed": "200%",
+     "debuff": "15%",
+     "move": "10%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "tempting_goblet",
+     "name": {
+      "zh": "诱惑酒杯",
+      "en": "Tempting Goblet"
+     },
+     "type": "ranged",
+     "atk": "92.5%",
+     "dmg": "2-4",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 2"
+     ]
+    },
+    {
+     "id": "dagger_jab",
+     "name": {
+      "zh": "暗中算计",
+      "en": "Knife in the Dark"
+     },
+     "type": "melee",
+     "atk": "62.5%",
+     "dmg": "2-4",
+     "crit": "6%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "skeleton_courtier_A",
+    "skillDesires": [
+     {
+      "skill": "tempting_goblet",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "dagger_jab",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "tempting_goblet"
+     }
+    ]
+   },
+   "deathClass": "corpse_A",
+   "lifeLink": "necromancer"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Bone Noble",
+    "zh": "骸骨贵族",
+    "ja": "ボーン・ノーブル"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "14",
+    "def": "21.25%",
+    "prot": "0",
+    "spd": "9",
+    "res": {
+     "stun": "30%",
+     "poison": "30%",
+     "bleed": "220%",
+     "debuff": "35%",
+     "move": "30%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "tempting_goblet",
+     "name": {
+      "zh": "诱惑酒杯",
+      "en": "Tempting Goblet"
+     },
+     "type": "ranged",
+     "atk": "98.75%",
+     "dmg": "3-5",
+     "crit": "4%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 2",
+      "Courtier Goblet Debuff 3"
+     ]
+    },
+    {
+     "id": "dagger_jab",
+     "name": {
+      "zh": "暗中算计",
+      "en": "Knife in the Dark"
+     },
+     "type": "melee",
+     "atk": "68.75%",
+     "dmg": "3-5",
+     "crit": "12%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "skeleton_courtier_B",
+    "skillDesires": [
+     {
+      "skill": "tempting_goblet",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "dagger_jab",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "tempting_goblet"
+     }
+    ]
+   },
+   "deathClass": "corpse_B",
+   "lifeLink": "necromancer"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Bone Royalty",
+    "zh": "骸骨皇族",
+    "ja": "ボーン・ロイヤル"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "20",
+    "def": "33.75%",
+    "prot": "0",
+    "spd": "10",
+    "res": {
+     "stun": "50%",
+     "poison": "50%",
+     "bleed": "240%",
+     "debuff": "55%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "tempting_goblet",
+     "name": {
+      "zh": "诱惑酒杯",
+      "en": "Tempting Goblet"
+     },
+     "type": "ranged",
+     "atk": "112.5%",
+     "dmg": "4-7",
+     "crit": "7%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 2",
+      "Courtier Goblet Debuff 5"
+     ]
+    },
+    {
+     "id": "dagger_jab",
+     "name": {
+      "zh": "暗中算计",
+      "en": "Knife in the Dark"
+     },
+     "type": "melee",
+     "atk": "82.5%",
+     "dmg": "4-7",
+     "crit": "14%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 32,
+       "data": {
+        "table": "T_COURTIER"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 3,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "skeleton_courtier_C",
+    "skillDesires": [
+     {
+      "skill": "tempting_goblet",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "dagger_jab",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stress_target",
+      "skill": "tempting_goblet"
+     }
+    ]
+   },
+   "deathClass": "corpse_C",
+   "lifeLink": "necromancer"
+  }
+ ]
+}

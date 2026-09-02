@@ -1,0 +1,68 @@
+{
+ "id": "brigand_barrel",
+ "dir": "monsters/brigand_barrel",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Barrel 'o Bombs",
+    "zh": "炸药桶",
+    "ja": "バレルボム"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "25",
+    "def": "0%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "200%",
+     "poison": "200%",
+     "bleed": "200%",
+     "debuff": "200%",
+     "move": "300%"
+    }
+   },
+   "enemyType": {
+    "id": "carpentry",
+    "zh": "木头",
+    "en": "Carpentry"
+   },
+   "skills": [],
+   "loot": [],
+   "brain": {
+    "id": "default",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "brigand_sapper"
+  }
+ ]
+}

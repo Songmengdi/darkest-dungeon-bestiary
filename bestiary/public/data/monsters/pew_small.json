@@ -1,0 +1,252 @@
+{
+ "id": "pew_small",
+ "dir": "monsters/pew_small",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Dashed Pew",
+    "zh": "碎裂的长椅",
+    "ja": "粉砕された腰掛け"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "25",
+    "def": "0%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "200%",
+     "poison": "200%",
+     "bleed": "200%",
+     "debuff": "200%",
+     "move": "300%"
+    }
+   },
+   "enemyType": {
+    "id": "carpentry",
+    "zh": "木头",
+    "en": "Carpentry"
+   },
+   "skills": [],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 1,
+       "data": {
+        "type": "gem",
+        "id": "pewrelic",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_A",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "prophet.does_spawn_loot,false"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Dashed Pew",
+    "zh": "碎裂的长椅",
+    "ja": "粉砕された腰掛け"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "38",
+    "def": "8.75%",
+    "prot": "0",
+    "spd": "1",
+    "res": {
+     "stun": "220%",
+     "poison": "220%",
+     "bleed": "220%",
+     "debuff": "220%",
+     "move": "320%"
+    }
+   },
+   "enemyType": {
+    "id": "carpentry",
+    "zh": "木头",
+    "en": "Carpentry"
+   },
+   "skills": [],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 1,
+       "data": {
+        "type": "gem",
+        "id": "pewrelic",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_B",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "prophet.does_spawn_loot,false"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Dashed Pew",
+    "zh": "碎裂的长椅",
+    "ja": "粉砕された腰掛け"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "51",
+    "def": "22.5%",
+    "prot": "0",
+    "spd": "2",
+    "res": {
+     "stun": "240%",
+     "poison": "240%",
+     "bleed": "240%",
+     "debuff": "240%",
+     "move": "340%"
+    }
+   },
+   "enemyType": {
+    "id": "carpentry",
+    "zh": "木头",
+    "en": "Carpentry"
+   },
+   "skills": [],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 1,
+       "data": {
+        "type": "gem",
+        "id": "pewrelic",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_C",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "prophet.does_spawn_loot,false"
+  }
+ ]
+}

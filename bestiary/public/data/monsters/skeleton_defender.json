@@ -1,0 +1,701 @@
+{
+ "id": "skeleton_defender",
+ "dir": "monsters/skeleton_defender",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Bone Defender",
+    "zh": "骸骨抵御者",
+    "ja": "ボーン・ディフェンダー"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "15",
+    "def": "0%",
+    "prot": "0.25",
+    "spd": "0",
+    "res": {
+     "stun": "25%",
+     "poison": "10%",
+     "bleed": "200%",
+     "debuff": "15%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "axe_strike",
+     "name": {
+      "zh": "斧刃",
+      "en": "Axeblade"
+     },
+     "type": "melee",
+     "atk": "72.5%",
+     "dmg": "3-5",
+     "crit": "6%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    },
+    {
+     "id": "shield_bash",
+     "name": {
+      "zh": "死亡之重",
+      "en": "Dead Weight"
+     },
+     "type": "melee",
+     "atk": "82.5%",
+     "dmg": "2-4",
+     "crit": "6%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Stun 1",
+      "Push 1A"
+     ]
+    },
+    {
+     "id": "axe_strike_weak",
+     "name": {
+      "zh": "笨拙斧刃",
+      "en": "Clumsy Axeblade"
+     },
+     "type": "melee",
+     "atk": "42.5%",
+     "dmg": "2-4",
+     "crit": "0%",
+     "launch": [
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "skeleton_defender_A",
+    "skillDesires": [
+     {
+      "skill": "axe_strike",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "axe_strike",
+      "type": "performing_turn_skill"
+     },
+     {
+      "skill": "shield_bash",
+      "type": "stun_skill"
+     },
+     {
+      "skill": "axe_strike_weak",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stunned_target",
+      "skill": "shield_bash"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "shield_bash"
+     },
+     {
+      "type": "marked_target",
+      "skill": "axe_strike"
+     }
+    ]
+   },
+   "deathClass": "corpse_A",
+   "lifeLink": "necromancer"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Bone Bulwark",
+    "zh": "骸骨壁垒",
+    "ja": "ボーン・ブルワーク"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "21",
+    "def": "8.75%",
+    "prot": "0.45",
+    "spd": "1",
+    "res": {
+     "stun": "45%",
+     "poison": "30%",
+     "bleed": "220%",
+     "debuff": "35%",
+     "move": "70%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "axe_strike",
+     "name": {
+      "zh": "斧刃",
+      "en": "Axeblade"
+     },
+     "type": "melee",
+     "atk": "78.75%",
+     "dmg": "4-7",
+     "crit": "12%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Defender Axeblade Debuff 3"
+     ]
+    },
+    {
+     "id": "shield_bash",
+     "name": {
+      "zh": "死亡之重",
+      "en": "Dead Weight"
+     },
+     "type": "melee",
+     "atk": "88.75%",
+     "dmg": "3-5",
+     "crit": "12%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Stun 3",
+      "Push 1C"
+     ]
+    },
+    {
+     "id": "axe_strike_weak",
+     "name": {
+      "zh": "笨拙斧刃",
+      "en": "Clumsy Axeblade"
+     },
+     "type": "melee",
+     "atk": "48.75%",
+     "dmg": "3-5",
+     "crit": "0%",
+     "launch": [
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    },
+    {
+     "id": "shield_defend",
+     "name": {
+      "zh": "亵渎守护",
+      "en": "Foul Warding"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Clear Guard Performer",
+      "Clear Guard Target",
+      "Skeleton Guard 1",
+      "Skeleton Defend 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "skeleton_defender_B",
+    "skillDesires": [
+     {
+      "skill": "axe_strike",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "axe_strike",
+      "type": "performing_turn_skill"
+     },
+     {
+      "skill": "shield_bash",
+      "type": "stun_skill"
+     },
+     {
+      "skill": "axe_strike_weak",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "shield_defend",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "random_target",
+      "skill": "shield_defend"
+     },
+     {
+      "type": "stunned_target",
+      "skill": "shield_bash"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "shield_bash"
+     },
+     {
+      "type": "marked_target",
+      "skill": "axe_strike"
+     }
+    ]
+   },
+   "deathClass": "corpse_B",
+   "lifeLink": "necromancer"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Bone Shieldwall",
+    "zh": "骸骨盾墙",
+    "ja": "ボーン・シールド"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "29",
+    "def": "21.25%",
+    "prot": "0.45",
+    "spd": "2",
+    "res": {
+     "stun": "65%",
+     "poison": "50%",
+     "bleed": "240%",
+     "debuff": "55%",
+     "move": "90%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "axe_strike",
+     "name": {
+      "zh": "斧刃",
+      "en": "Axeblade"
+     },
+     "type": "melee",
+     "atk": "92.5%",
+     "dmg": "5-10",
+     "crit": "14%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Defender Axeblade Debuff 5"
+     ]
+    },
+    {
+     "id": "shield_bash",
+     "name": {
+      "zh": "死亡之重",
+      "en": "Dead Weight"
+     },
+     "type": "melee",
+     "atk": "102.5%",
+     "dmg": "4-7",
+     "crit": "14%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Stun 5",
+      "Push 1E"
+     ]
+    },
+    {
+     "id": "axe_strike_weak",
+     "name": {
+      "zh": "笨拙斧刃",
+      "en": "Clumsy Axeblade"
+     },
+     "type": "melee",
+     "atk": "62.5%",
+     "dmg": "4-7",
+     "crit": "0%",
+     "launch": [
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": []
+    },
+    {
+     "id": "shield_defend",
+     "name": {
+      "zh": "亵渎守护",
+      "en": "Foul Warding"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Clear Guard Performer",
+      "Clear Guard Target",
+      "Skeleton Guard 1",
+      "Skeleton Defend 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "skeleton_defender_C",
+    "skillDesires": [
+     {
+      "skill": "axe_strike",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "axe_strike",
+      "type": "performing_turn_skill"
+     },
+     {
+      "skill": "shield_bash",
+      "type": "stun_skill"
+     },
+     {
+      "skill": "axe_strike_weak",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "shield_defend",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "random_target",
+      "skill": "shield_defend"
+     },
+     {
+      "type": "stunned_target",
+      "skill": "shield_bash"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "shield_bash"
+     },
+     {
+      "type": "marked_target",
+      "skill": "axe_strike"
+     }
+    ]
+   },
+   "deathClass": "corpse_C",
+   "lifeLink": "necromancer"
+  }
+ ]
+}

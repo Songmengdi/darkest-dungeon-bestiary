@@ -1,0 +1,390 @@
+{
+ "id": "countess",
+ "dir": "dlc/580100_crimson_court/features/crimson_court/monsters/countess",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Countess",
+    "zh": "伯爵夫人",
+    "ja": "カウンテス"
+   },
+   "size": 4,
+   "stats": {
+    "hp": "400",
+    "def": "25%",
+    "prot": "0.3",
+    "spd": "4",
+    "res": {
+     "stun": "140%",
+     "poison": "110%",
+     "bleed": "90%",
+     "debuff": "120%",
+     "move": "220%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "transform_to_weak",
+     "name": {
+      "zh": "两颊绯红",
+      "en": "Flushed"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "To Countess E",
+      "countess_flushed_debuff",
+      "Cure Self"
+     ]
+    },
+    {
+     "id": "claw_swipe_normal",
+     "name": {
+      "zh": "为卿宽衣",
+      "en": "Disrobe"
+     },
+     "type": "melee",
+     "atk": "115%",
+     "dmg": "8-16",
+     "crit": "10%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": []
+    },
+    {
+     "id": "pheromonal_delirium",
+     "name": {
+      "zh": "翩翩摇曳",
+      "en": "Sway With Me"
+     },
+     "type": "ranged",
+     "atk": "115%",
+     "dmg": "4-4",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "CC Shuffle DoT",
+      "Countess Blight",
+      "Countess Stress"
+     ]
+    },
+    {
+     "id": "life_feeds_on_life",
+     "name": {
+      "zh": "一封情书",
+      "en": "Love Letter"
+     },
+     "type": "melee",
+     "atk": "120%",
+     "dmg": "6-10",
+     "crit": "15%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Parasite Egg Inject",
+      "Inject Self Damage"
+     ]
+    }
+   ],
+   "loot": []
+  },
+  {
+   "tier": "E",
+   "label": {
+    "zh": "档位 E",
+    "en": "Tier E"
+   },
+   "displayName": {
+    "en": "Countess",
+    "zh": "伯爵夫人",
+    "ja": "カウンテス"
+   },
+   "size": 4,
+   "stats": {
+    "hp": "400",
+    "def": "0%",
+    "prot": "0.1",
+    "spd": "1",
+    "res": {
+     "stun": "145%",
+     "poison": "110%",
+     "bleed": "90%",
+     "debuff": "120%",
+     "move": "220%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "fan_flutter",
+     "name": {
+      "zh": "短暂的休憩",
+      "en": "Momentary Overexertion"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Flushed Recovery Buff"
+     ]
+    },
+    {
+     "id": "transform_to_berserk",
+     "name": {
+      "zh": "情感蜕变",
+      "en": "Metamorphosis"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "To Countess F",
+      "Countess Terror",
+      "Cure Self"
+     ]
+    }
+   ],
+   "loot": []
+  },
+  {
+   "tier": "F",
+   "label": {
+    "zh": "档位 F",
+    "en": "Tier F"
+   },
+   "displayName": {
+    "en": "Countess",
+    "zh": "伯爵夫人",
+    "ja": "カウンテス"
+   },
+   "size": 4,
+   "stats": {
+    "hp": "400",
+    "def": "30%",
+    "prot": "0.4",
+    "spd": "8",
+    "res": {
+     "stun": "165%",
+     "poison": "120%",
+     "bleed": "80%",
+     "debuff": "140%",
+     "move": "220%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "clear_the_court",
+     "name": {
+      "zh": "难堪求婚",
+      "en": "Indecent Proposal"
+     },
+     "type": "melee",
+     "atk": "115%",
+     "dmg": "3-13",
+     "crit": "3%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Tongue Hit",
+      "Countess Bleed"
+     ]
+    },
+    {
+     "id": "transform_to_normal",
+     "name": {
+      "zh": "再次求爱",
+      "en": "Courtship Renewed"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "To Countess D"
+     ]
+    },
+    {
+     "id": "claw_swipe_berserk",
+     "name": {
+      "zh": "为卿宽衣",
+      "en": "Disrobe"
+     },
+     "type": "melee",
+     "atk": "110%",
+     "dmg": "10-14",
+     "crit": "15%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": []
+    },
+    {
+     "id": "feed_berserk",
+     "name": {
+      "zh": "饥渴",
+      "en": "The Thirst"
+     },
+     "type": "melee",
+     "atk": "110%",
+     "dmg": "7-17",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Countess Feed Heal"
+     ]
+    },
+    {
+     "id": "be_silent",
+     "name": {
+      "zh": "迷醉之痛",
+      "en": "Throes of Ecstasy"
+     },
+     "type": "ranged",
+     "atk": "118%",
+     "dmg": "2-4",
+     "crit": "5%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      3,
+      4
+     ],
+     "effects": [
+      "Countess Stun"
+     ]
+    }
+   ],
+   "loot": []
+  }
+ ]
+}

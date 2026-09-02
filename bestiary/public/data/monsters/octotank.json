@@ -1,0 +1,558 @@
+{
+ "id": "octotank",
+ "dir": "monsters/octotank",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Pelagic Guardian",
+    "zh": "深潜守卫",
+    "ja": "深海ガーディアン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "25",
+    "def": "0%",
+    "prot": "0.33",
+    "spd": "0",
+    "res": {
+     "stun": "25%",
+     "poison": "10%",
+     "bleed": "60%",
+     "debuff": "10%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "octo_cestus",
+     "name": {
+      "zh": "巨鱿拳刃",
+      "en": "Octocestus"
+     },
+     "type": "melee",
+     "atk": "77.5%",
+     "dmg": "3-5",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Bleed 1"
+     ]
+    },
+    {
+     "id": "octo_guard",
+     "name": {
+      "zh": "珊瑚屏障",
+      "en": "Barnacle Barrier"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Clear Guard Performer",
+      "Clear Guard Target",
+      "Octo Guard 1",
+      "OctoDefend 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "octotank_A",
+    "skillDesires": [
+     {
+      "skill": "octo_cestus",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "octo_guard",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "octo_guard",
+      "type": "performing_turn_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target",
+      "skill": "octo_cestus"
+     }
+    ]
+   },
+   "deathClass": "corpse_A",
+   "lifeLink": "siren"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Pelagic Bulwark",
+    "zh": "深潜屏护",
+    "ja": "深海ブルワーク"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "35",
+    "def": "8.75%",
+    "prot": "0.5",
+    "spd": "1",
+    "res": {
+     "stun": "45%",
+     "poison": "30%",
+     "bleed": "80%",
+     "debuff": "30%",
+     "move": "70%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "octo_cestus",
+     "name": {
+      "zh": "巨鱿拳刃",
+      "en": "Octocestus"
+     },
+     "type": "melee",
+     "atk": "83.75%",
+     "dmg": "4-7",
+     "crit": "12%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Bleed 2"
+     ]
+    },
+    {
+     "id": "octo_guard",
+     "name": {
+      "zh": "珊瑚屏障",
+      "en": "Barnacle Barrier"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Clear Guard Performer",
+      "Clear Guard Target",
+      "Octo Guard 1",
+      "OctoDefend 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "octotank_B",
+    "skillDesires": [
+     {
+      "skill": "octo_cestus",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "octo_guard",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "octo_guard",
+      "type": "performing_turn_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target",
+      "skill": "octo_cestus"
+     }
+    ]
+   },
+   "deathClass": "corpse_B",
+   "lifeLink": "siren"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Pelagic Champion",
+    "zh": "深潜皇卫",
+    "ja": "深海チャンピオン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "49",
+    "def": "21.25%",
+    "prot": "0.5",
+    "spd": "2",
+    "res": {
+     "stun": "65%",
+     "poison": "50%",
+     "bleed": "100%",
+     "debuff": "50%",
+     "move": "90%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "octo_cestus",
+     "name": {
+      "zh": "巨鱿拳刃",
+      "en": "Octocestus"
+     },
+     "type": "melee",
+     "atk": "97.5%",
+     "dmg": "5-10",
+     "crit": "14%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Bleed 3"
+     ]
+    },
+    {
+     "id": "octo_guard",
+     "name": {
+      "zh": "珊瑚屏障",
+      "en": "Barnacle Barrier"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Clear Guard Performer",
+      "Clear Guard Target",
+      "Octo Guard 1",
+      "OctoDefend 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "octotank_C",
+    "skillDesires": [
+     {
+      "skill": "octo_cestus",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "octo_guard",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "octo_guard",
+      "type": "performing_turn_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target",
+      "skill": "octo_cestus"
+     }
+    ]
+   },
+   "deathClass": "corpse_C",
+   "lifeLink": "siren"
+  }
+ ]
+}

@@ -1,0 +1,181 @@
+{
+ "id": "ancestor_small",
+ "dir": "monsters/ancestor_small",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Ancestor",
+    "zh": "先祖",
+    "ja": "アンセスター"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "5",
+    "def": "23.75%",
+    "prot": "1",
+    "spd": "12",
+    "res": {
+     "stun": "122.5%",
+     "poison": "247.5%",
+     "bleed": "247.5%",
+     "debuff": "72.5%",
+     "move": "73%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "summon_perfect",
+     "name": {
+      "zh": "完美复刻",
+      "en": "Perfect Replication"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Ancestor Summon Perfect"
+     ]
+    },
+    {
+     "id": "summon_mixed",
+     "name": {
+      "zh": "零星繁育",
+      "en": "Sporadic Reproduction"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Ancestor Summon Mixed"
+     ]
+    },
+    {
+     "id": "summon_flawed",
+     "name": {
+      "zh": "偏倚繁育",
+      "en": "Imperfect Reproduction"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Ancestor Summon Flawed"
+     ]
+    },
+    {
+     "id": "ancestor_aoe_heal",
+     "name": {
+      "zh": "时间令一切复原",
+      "en": "Time Heals All"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "targetAlly": true,
+     "effects": []
+    },
+    {
+     "id": "kill_self",
+     "name": {
+      "zh": "kill_self",
+      "en": "kill_self"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "kill_self_queued",
+      "kill_performer_group_other"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "ancestor_small_D",
+    "skillDesires": [
+     {
+      "skill": "summon_perfect",
+      "type": "performing_turn_skill"
+     },
+     {
+      "skill": "summon_flawed",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "summon_mixed",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "summon_mixed",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "ancestor_aoe_heal",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "deathClass": "ancestor_big_D"
+  }
+ ]
+}

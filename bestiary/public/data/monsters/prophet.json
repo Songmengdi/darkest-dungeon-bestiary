@@ -1,0 +1,1061 @@
+{
+ "id": "prophet",
+ "dir": "monsters/prophet",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Sonorous Prophet",
+    "zh": "聒噪的先知",
+    "ja": "見習いプロフェット"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "105",
+    "def": "5%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "100%",
+     "poison": "0%",
+     "bleed": "0%",
+     "debuff": "20%",
+     "move": "300%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "prophet_mark",
+     "name": {
+      "zh": "预言",
+      "en": "Prognostication"
+     },
+     "type": "ranged",
+     "atk": "202.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Rank Target Enemy 1"
+     ]
+    },
+    {
+     "id": "prophet_attack",
+     "name": {
+      "zh": "废墟碎石",
+      "en": "Rubble of Ruin"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "11-23",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Clear Enemy Rank Target"
+     ]
+    },
+    {
+     "id": "eye_on_you",
+     "name": {
+      "zh": "空洞注视",
+      "en": "Eye on You"
+     },
+     "type": "ranged",
+     "atk": "92.5%",
+     "dmg": "1-1",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stun 1",
+      "Prophet Stress 1"
+     ]
+    },
+    {
+     "id": "fulminate",
+     "name": {
+      "zh": "怒斥",
+      "en": "Fulminate"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "1-1",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Prophet Vomit 1"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 10,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 8,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 2,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 12,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 3,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "prophet_A",
+    "skillDesires": [
+     {
+      "skill": "eye_on_you",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "fulminate",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target",
+      "skill": "eye_on_you"
+     },
+     {
+      "type": "random_target",
+      "skill": "fulminate"
+     },
+     {
+      "type": "random_target",
+      "skill": "prophet_mark"
+     },
+     {
+      "type": "rank_target",
+      "skill": "prophet_attack"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Fulminating Prophet",
+    "zh": "怒谴的先知",
+    "ja": "呪われしプロフェット"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "158",
+    "def": "13.75%",
+    "prot": "0",
+    "spd": "1",
+    "res": {
+     "stun": "120%",
+     "poison": "20%",
+     "bleed": "20%",
+     "debuff": "40%",
+     "move": "320%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "prophet_mark",
+     "name": {
+      "zh": "预言",
+      "en": "Prognostication"
+     },
+     "type": "ranged",
+     "atk": "208.75%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Rank Target Enemy 1"
+     ]
+    },
+    {
+     "id": "prophet_attack",
+     "name": {
+      "zh": "废墟碎石",
+      "en": "Rubble of Ruin"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "15-31",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Clear Enemy Rank Target"
+     ]
+    },
+    {
+     "id": "eye_on_you",
+     "name": {
+      "zh": "空洞注视",
+      "en": "Eye on You"
+     },
+     "type": "ranged",
+     "atk": "98.75%",
+     "dmg": "1-2",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stun 3",
+      "Prophet Stress 1"
+     ]
+    },
+    {
+     "id": "fulminate",
+     "name": {
+      "zh": "怒斥",
+      "en": "Fulminate"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "1-2",
+     "crit": "12%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Prophet Vomit 2"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 10,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 8,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 2,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 12,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 3,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "prophet_B",
+    "skillDesires": [
+     {
+      "skill": "eye_on_you",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "fulminate",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target",
+      "skill": "eye_on_you"
+     },
+     {
+      "type": "stress_target",
+      "skill": "eye_on_you"
+     },
+     {
+      "type": "random_target",
+      "skill": "fulminate"
+     },
+     {
+      "type": "random_target",
+      "skill": "prophet_mark"
+     },
+     {
+      "type": "rank_target",
+      "skill": "prophet_attack"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Gibbering Prophet",
+    "zh": "诳语的先知",
+    "ja": "プロフェット・ロード"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "215",
+    "def": "27.5%",
+    "prot": "0",
+    "spd": "2",
+    "res": {
+     "stun": "140%",
+     "poison": "40%",
+     "bleed": "40%",
+     "debuff": "60%",
+     "move": "340%"
+    }
+   },
+   "enemyType": {
+    "id": "unholy",
+    "zh": "邪秽",
+    "en": "Unholy"
+   },
+   "skills": [
+    {
+     "id": "prophet_mark",
+     "name": {
+      "zh": "预言",
+      "en": "Prognostication"
+     },
+     "type": "ranged",
+     "atk": "222.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Rank Target Enemy 1"
+     ]
+    },
+    {
+     "id": "prophet_attack",
+     "name": {
+      "zh": "废墟碎石",
+      "en": "Rubble of Ruin"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "21-42",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Clear Enemy Rank Target"
+     ]
+    },
+    {
+     "id": "eye_on_you",
+     "name": {
+      "zh": "空洞注视",
+      "en": "Eye on You"
+     },
+     "type": "ranged",
+     "atk": "112.5%",
+     "dmg": "1-3",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stun 5",
+      "Prophet Stress 1"
+     ]
+    },
+    {
+     "id": "fulminate",
+     "name": {
+      "zh": "怒斥",
+      "en": "Fulminate"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "1-3",
+     "crit": "14%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Prophet Vomit 3"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 10,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 8,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 2,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    },
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "trinket",
+       "chances": 45,
+       "data": {
+        "rarity": "very_common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 40,
+       "data": {
+        "rarity": "common"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 35,
+       "data": {
+        "rarity": "uncommon"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 12,
+       "data": {
+        "rarity": "rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 5,
+       "data": {
+        "rarity": "very_rare"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 3,
+       "data": {
+        "rarity": "ancestral"
+       }
+      },
+      {
+       "type": "trinket",
+       "chances": 0,
+       "data": {
+        "rarity": "ancestral_shambler"
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "prophet_C",
+    "skillDesires": [
+     {
+      "skill": "eye_on_you",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "fulminate",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target",
+      "skill": "eye_on_you"
+     },
+     {
+      "type": "stress_target",
+      "skill": "eye_on_you"
+     },
+     {
+      "type": "random_target",
+      "skill": "fulminate"
+     },
+     {
+      "type": "random_target",
+      "skill": "prophet_mark"
+     },
+     {
+      "type": "rank_target",
+      "skill": "prophet_attack"
+     }
+    ]
+   }
+  }
+ ]
+}

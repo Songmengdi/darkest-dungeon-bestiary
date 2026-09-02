@@ -1,0 +1,74 @@
+/* PROTOTYPE —— 隐藏正式版 UI + 切换条样式(与变体无关) */
+body.proto-on > #topbar,
+body.proto-on > #layout { display: none !important; }
+body.proto-on { overflow: hidden; background: #0d0a07; }
+.proto-lightbox img.noimg, img.noimg { visibility: hidden; }
+
+#protoBar {
+  position: fixed;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: #f0e6d2; /* 高反差:羊皮纸浅色胶囊,一眼知道不属于被评设计 */
+  color: #241b12;
+  border: 2px solid #1a130c;
+  border-radius: 999px;
+  padding: 4px 8px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.8);
+  font-family: "Microsoft YaHei UI", sans-serif;
+  font-size: 13px;
+  user-select: none;
+}
+#protoBar .pb-label { padding: 0 10px; white-space: nowrap; }
+#protoBar .pb-label b { color: #7a1f1d; margin-right: 6px; }
+#protoBar .pb-arrow {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #8f7a45;
+  background: #241b12;
+  color: #f0e6d2;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+#protoBar .pb-arrow:hover { background: #3a2c1a; }
+
+/* 共享:语言切换小控件(各变体内嵌,浅色描边按钮) */
+.proto-lang { display: inline-flex; gap: 0; }
+.proto-lang button {
+  background: transparent;
+  color: var(--muted, #8a7c66);
+  border: 1px solid var(--line, #453626);
+  padding: 2px 9px;
+  font-size: 11px;
+  cursor: pointer;
+}
+.proto-lang button:first-child { border-radius: 3px 0 0 3px; }
+.proto-lang button:last-child { border-radius: 0 3px 3px 0; }
+.proto-lang button.on { color: var(--gold, #c9a95c); border-color: var(--gold-dim, #8f7a45); background: rgba(201, 169, 92, 0.08); }
+
+/* 共享:大图灯箱 */
+.proto-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 99998;
+  background: rgba(4, 2, 1, 0.93);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+.proto-lightbox img {
+  max-width: 92vw;
+  max-height: 88vh;
+  object-fit: contain;
+  filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.9));
+}
+.proto-lightbox .pl-cap { color: #c9a95c; margin-top: 10px; letter-spacing: 2px; }
+.proto-lightbox .pl-hint { color: #6b5c48; font-size: 11px; margin-top: 4px; }
+.proto-lightbox .pl-inner { display: flex; flex-direction: column; align-items: center; max-height: 96vh; }

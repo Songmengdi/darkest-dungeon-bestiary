@@ -1,0 +1,387 @@
+{
+ "id": "brigand_fuseman",
+ "dir": "monsters/brigand_fuseman",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Brigand Matchman",
+    "zh": "土匪点火者",
+    "ja": "ブリガンド・マッチマン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "8",
+    "def": "12.5%",
+    "prot": "0",
+    "spd": "-20",
+    "res": {
+     "stun": "25%",
+     "poison": "10%",
+     "bleed": "10%",
+     "debuff": "15%",
+     "move": "25%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "light_fuse",
+     "name": {
+      "zh": "开火！",
+      "en": "Fire in the Hole!"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": []
+    },
+    {
+     "id": "hot_shot",
+     "name": {
+      "zh": "炙热一击",
+      "en": "Hot Shot"
+     },
+     "type": "melee",
+     "atk": "77.5%",
+     "dmg": "1-1",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "fuseman",
+    "skillDesires": [
+     {
+      "skill": "light_fuse",
+      "type": "ally_alive_skill"
+     },
+     {
+      "skill": "hot_shot",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "ally_class_target",
+      "skill": "light_fuse"
+     },
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "lifeLink": "brigand_cannon"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Brigand Fuseman",
+    "zh": "土匪燃火人",
+    "ja": "ブリガンド・ヒューズマン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "12",
+    "def": "21.25%",
+    "prot": "0",
+    "spd": "-19",
+    "res": {
+     "stun": "45%",
+     "poison": "30%",
+     "bleed": "30%",
+     "debuff": "35%",
+     "move": "45%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "light_fuse",
+     "name": {
+      "zh": "开火！",
+      "en": "Fire in the Hole!"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "12%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": []
+    },
+    {
+     "id": "hot_shot",
+     "name": {
+      "zh": "炙热一击",
+      "en": "Hot Shot"
+     },
+     "type": "melee",
+     "atk": "83.75%",
+     "dmg": "1-2",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "fuseman",
+    "skillDesires": [
+     {
+      "skill": "light_fuse",
+      "type": "ally_alive_skill"
+     },
+     {
+      "skill": "hot_shot",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "ally_class_target",
+      "skill": "light_fuse"
+     },
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "lifeLink": "brigand_cannon"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Brigand Pyro",
+    "zh": "土匪炮兵",
+    "ja": "ブリガンド・パイロマン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "16",
+    "def": "35%",
+    "prot": "0",
+    "spd": "-18",
+    "res": {
+     "stun": "65%",
+     "poison": "50%",
+     "bleed": "50%",
+     "debuff": "55%",
+     "move": "65%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "light_fuse",
+     "name": {
+      "zh": "开火！",
+      "en": "Fire in the Hole!"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "14%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": []
+    },
+    {
+     "id": "hot_shot",
+     "name": {
+      "zh": "炙热一击",
+      "en": "Hot Shot"
+     },
+     "type": "melee",
+     "atk": "97.5%",
+     "dmg": "1-3",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": []
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "fuseman",
+    "skillDesires": [
+     {
+      "skill": "light_fuse",
+      "type": "ally_alive_skill"
+     },
+     {
+      "skill": "hot_shot",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "ally_class_target",
+      "skill": "light_fuse"
+     },
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "lifeLink": "brigand_cannon"
+  }
+ ]
+}

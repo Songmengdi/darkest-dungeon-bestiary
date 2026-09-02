@@ -1,0 +1,233 @@
+{
+ "id": "baron",
+ "dir": "dlc/580100_crimson_court/features/crimson_court/monsters/baron",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Baron",
+    "zh": "男爵",
+    "ja": "バロン"
+   },
+   "size": 1,
+   "skills": [],
+   "loot": []
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Baron",
+    "zh": "男爵",
+    "ja": "バロン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "233",
+    "def": "21.75%",
+    "prot": "0.1",
+    "spd": "10",
+    "res": {
+     "stun": "87%",
+     "poison": "85%",
+     "bleed": "55%",
+     "debuff": "60%",
+     "move": "85%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "necessary_discipline",
+     "name": {
+      "zh": "必要的管教",
+      "en": "Necessary Discipline"
+     },
+     "type": "melee",
+     "atk": "103.75%",
+     "dmg": "5-11",
+     "crit": "12%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Baron Whip Stress",
+      "Baron Bleed",
+      "Baron Pull",
+      "Baron Whip Horror"
+     ]
+    },
+    {
+     "id": "forced_enthusiasm",
+     "name": {
+      "zh": "强迫演出",
+      "en": "Forced Enthusiasm"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "Baron Whipping Buff"
+     ]
+    },
+    {
+     "id": "baron_hunger",
+     "name": {
+      "zh": "饥渴",
+      "en": "The Thirst"
+     },
+     "type": "melee",
+     "atk": "103.75%",
+     "dmg": "5-9",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Baron Feed",
+      "Baron Feed Bleed Debuff",
+      "Baron Feed Stats"
+     ]
+    },
+    {
+     "id": "intro_change_to_curtain",
+     "name": {
+      "zh": "表演开始！",
+      "en": "The Show Begins"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "baron_change_to_curtain",
+      "instant_shuffle"
+     ]
+    },
+    {
+     "id": "change_to_curtain_1-3",
+     "name": {
+      "zh": "第三幕",
+      "en": "The Third Act"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Cocoon Swap 1-3 group",
+      "Cocoon Swap 1-3 baron",
+      "Baron Refill Cocoons 1-3",
+      "instant_shuffle"
+     ]
+    },
+    {
+     "id": "change_to_curtain_2-3",
+     "name": {
+      "zh": "第二幕",
+      "en": "The Second Act"
+     },
+     "type": "",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Cocoon Swap 2-3 group",
+      "Cocoon Swap 2-3 baron",
+      "Baron Refill Cocoons 2-3",
+      "instant_shuffle"
+     ]
+    },
+    {
+     "id": "crowd_pleaser",
+     "name": {
+      "zh": "哗众取宠",
+      "en": "Crowd Pleaser"
+     },
+     "type": "melee",
+     "atk": "93.75%",
+     "dmg": "5-6",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": []
+    }
+   ],
+   "loot": []
+  }
+ ]
+}

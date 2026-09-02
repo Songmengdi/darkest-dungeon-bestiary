@@ -1,0 +1,882 @@
+{
+ "id": "crow",
+ "dir": "monsters/crow",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Callous Shrieker",
+    "zh": "无情尖叫魔",
+    "ja": "キャラス・シュリーカー"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "75",
+    "def": "40%",
+    "prot": "0",
+    "spd": "7",
+    "res": {
+     "stun": "55%",
+     "poison": "200%",
+     "bleed": "55%",
+     "debuff": "30%",
+     "move": "55%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "peck",
+     "name": {
+      "zh": "啄击",
+      "en": "Peck"
+     },
+     "type": "melee",
+     "atk": "87.5%",
+     "dmg": "6-10",
+     "crit": "16%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Crow Bleed 1"
+     ]
+    },
+    {
+     "id": "caw",
+     "name": {
+      "zh": "鸹！",
+      "en": "Caw"
+     },
+     "type": "ranged",
+     "atk": "87.5%",
+     "dmg": "1-1",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Crow Caw 1"
+     ]
+    },
+    {
+     "id": "flutter",
+     "name": {
+      "zh": "呼唤帮凶",
+      "en": "Call the Murder"
+     },
+     "type": "ranged",
+     "atk": "87.5%",
+     "dmg": "1-1",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Crow Flutter 1",
+      "Self Speed 2"
+     ]
+    },
+    {
+     "id": "distract",
+     "name": {
+      "zh": "分神",
+      "en": "Regurgitate"
+     },
+     "type": "ranged",
+     "atk": "87.5%",
+     "dmg": "1-1",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Crow Distract 1",
+      "Fungal Disease"
+     ]
+    },
+    {
+     "id": "escape",
+     "name": {
+      "zh": "惊叫弃巢",
+      "en": "Shrieking Flight"
+     },
+     "type": "ranged",
+     "atk": "135.5%",
+     "dmg": "1-1",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Crow Shriek 1",
+      "kill_self_queued"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "crow_A",
+    "skillDesires": [
+     {
+      "skill": "caw",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "flutter",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "peck",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "distract",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "escape",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Cretinous Shrieker",
+    "zh": "痴妄尖叫魔",
+    "ja": "クリティナス・シュリーカー"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "113",
+    "def": "48.75%",
+    "prot": "0",
+    "spd": "8",
+    "res": {
+     "stun": "75%",
+     "poison": "220%",
+     "bleed": "75%",
+     "debuff": "50%",
+     "move": "75%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "peck",
+     "name": {
+      "zh": "啄击",
+      "en": "Peck"
+     },
+     "type": "melee",
+     "atk": "93.75%",
+     "dmg": "9-13",
+     "crit": "22%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Crow Bleed 3"
+     ]
+    },
+    {
+     "id": "caw",
+     "name": {
+      "zh": "鸹！",
+      "en": "Caw"
+     },
+     "type": "ranged",
+     "atk": "93.75%",
+     "dmg": "2-2",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Crow Caw 3"
+     ]
+    },
+    {
+     "id": "flutter",
+     "name": {
+      "zh": "呼唤帮凶",
+      "en": "Call the Murder"
+     },
+     "type": "ranged",
+     "atk": "93.75%",
+     "dmg": "2-2",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Crow Flutter 3",
+      "Self Speed 3"
+     ]
+    },
+    {
+     "id": "distract",
+     "name": {
+      "zh": "分神",
+      "en": "Regurgitate"
+     },
+     "type": "ranged",
+     "atk": "93.75%",
+     "dmg": "2-2",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Crow Distract 3",
+      "Fungal Disease"
+     ]
+    },
+    {
+     "id": "escape",
+     "name": {
+      "zh": "惊叫弃巢",
+      "en": "Shrieking Flight"
+     },
+     "type": "ranged",
+     "atk": "141.75%",
+     "dmg": "2-2",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Crow Shriek 3",
+      "kill_self_queued"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "crow_A",
+    "skillDesires": [
+     {
+      "skill": "caw",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "flutter",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "peck",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "distract",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "escape",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Horrid Shrieker",
+    "zh": "恐怖尖叫魔",
+    "ja": "ホリッド・シュリーカー"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "154",
+    "def": "62.5%",
+    "prot": "0",
+    "spd": "9",
+    "res": {
+     "stun": "95%",
+     "poison": "240%",
+     "bleed": "95%",
+     "debuff": "70%",
+     "move": "95%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "peck",
+     "name": {
+      "zh": "啄击",
+      "en": "Peck"
+     },
+     "type": "melee",
+     "atk": "107.5%",
+     "dmg": "12-18",
+     "crit": "24%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Crow Bleed 5"
+     ]
+    },
+    {
+     "id": "caw",
+     "name": {
+      "zh": "鸹！",
+      "en": "Caw"
+     },
+     "type": "ranged",
+     "atk": "107.5%",
+     "dmg": "2-2",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Crow Caw 5"
+     ]
+    },
+    {
+     "id": "flutter",
+     "name": {
+      "zh": "呼唤帮凶",
+      "en": "Call the Murder"
+     },
+     "type": "ranged",
+     "atk": "107.5%",
+     "dmg": "2-2",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Crow Flutter 5",
+      "Self Speed 4"
+     ]
+    },
+    {
+     "id": "distract",
+     "name": {
+      "zh": "分神",
+      "en": "Regurgitate"
+     },
+     "type": "ranged",
+     "atk": "107.5%",
+     "dmg": "2-2",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Crow Distract 5",
+      "Fungal Disease"
+     ]
+    },
+    {
+     "id": "escape",
+     "name": {
+      "zh": "惊叫弃巢",
+      "en": "Shrieking Flight"
+     },
+     "type": "ranged",
+     "atk": "155.5%",
+     "dmg": "2-2",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Crow Shriek 5",
+      "kill_self_queued"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "crow_A",
+    "skillDesires": [
+     {
+      "skill": "caw",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "flutter",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "peck",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "distract",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "escape",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   }
+  },
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Horrid Shrieker",
+    "zh": "恐怖尖叫魔",
+    "ja": "ホリッド・シュリーカー"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "154",
+    "def": "62.5%",
+    "prot": "0",
+    "spd": "9",
+    "res": {
+     "stun": "95%",
+     "poison": "240%",
+     "bleed": "95%",
+     "debuff": "70%",
+     "move": "95%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "peck",
+     "name": {
+      "zh": "啄击",
+      "en": "Peck"
+     },
+     "type": "melee",
+     "atk": "110%",
+     "dmg": "12-18",
+     "crit": "20%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Crow Bleed 5"
+     ]
+    },
+    {
+     "id": "caw",
+     "name": {
+      "zh": "鸹！",
+      "en": "Caw"
+     },
+     "type": "ranged",
+     "atk": "110%",
+     "dmg": "2-2",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Crow Caw 5"
+     ]
+    },
+    {
+     "id": "flutter",
+     "name": {
+      "zh": "呼唤帮凶",
+      "en": "Call the Murder"
+     },
+     "type": "ranged",
+     "atk": "110%",
+     "dmg": "2-2",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Crow Flutter 5",
+      "Self Speed 4"
+     ]
+    },
+    {
+     "id": "distract",
+     "name": {
+      "zh": "分神",
+      "en": "Regurgitate"
+     },
+     "type": "ranged",
+     "atk": "110%",
+     "dmg": "2-2",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Crow Distract 5",
+      "Fungal Disease"
+     ]
+    },
+    {
+     "id": "escape",
+     "name": {
+      "zh": "惊叫弃巢",
+      "en": "Shrieking Flight"
+     },
+     "type": "ranged",
+     "atk": "158%",
+     "dmg": "2-2",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Crow Shriek CoM",
+      "kill_self_queued"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "crow_A",
+    "skillDesires": [
+     {
+      "skill": "caw",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "flutter",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "peck",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "distract",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "escape",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   }
+  }
+ ]
+}

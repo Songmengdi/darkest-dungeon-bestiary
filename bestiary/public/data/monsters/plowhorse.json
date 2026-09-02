@@ -1,0 +1,417 @@
+{
+ "id": "plowhorse",
+ "dir": "dlc/735730_color_of_madness/monsters/plowhorse",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Plow Horse",
+    "zh": "犁马",
+    "ja": "Plow Horse"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "20",
+    "def": "5%",
+    "prot": "0.15",
+    "spd": "7",
+    "res": {
+     "stun": "50%",
+     "poison": "20%",
+     "bleed": "20%",
+     "debuff": "40%",
+     "move": "60%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "trample",
+     "name": {
+      "zh": "践踏",
+      "en": "Trample"
+     },
+     "type": "melee",
+     "atk": "92.5%",
+     "dmg": "2-4",
+     "crit": "4%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Shuffle Party 1",
+      "switch_mode_normal",
+      "Destealth Performer"
+     ]
+    },
+    {
+     "id": "rearing_stomp",
+     "name": {
+      "zh": "蹄踢",
+      "en": "Rearing Strike"
+     },
+     "type": "melee",
+     "atk": "87.5%",
+     "dmg": "3-7",
+     "crit": "4%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Minor Bleed 1",
+      "Stun 1"
+     ]
+    },
+    {
+     "id": "paw_ground",
+     "name": {
+      "zh": "利爪刨地",
+      "en": "Paw The Ground"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "switch_mode_pawing",
+      "Stealth2"
+     ]
+    },
+    {
+     "id": "scream",
+     "name": {
+      "zh": "野兽怒吼",
+      "en": "Bestial Scream"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Horse Horror A"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_large_A"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Plow Horse",
+    "zh": "犁马",
+    "ja": "Plow Horse"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "28",
+    "def": "13.75%",
+    "prot": "0.15",
+    "spd": "8",
+    "res": {
+     "stun": "70%",
+     "poison": "40%",
+     "bleed": "40%",
+     "debuff": "60%",
+     "move": "80%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "trample",
+     "name": {
+      "zh": "践踏",
+      "en": "Trample"
+     },
+     "type": "melee",
+     "atk": "98.75%",
+     "dmg": "3-5",
+     "crit": "10%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Shuffle Party 3",
+      "switch_mode_normal",
+      "Destealth Performer"
+     ]
+    },
+    {
+     "id": "rearing_stomp",
+     "name": {
+      "zh": "蹄踢",
+      "en": "Rearing Strike"
+     },
+     "type": "melee",
+     "atk": "93.75%",
+     "dmg": "5-9",
+     "crit": "8%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Minor Bleed 3",
+      "Stun 3"
+     ]
+    },
+    {
+     "id": "paw_ground",
+     "name": {
+      "zh": "利爪刨地",
+      "en": "Paw The Ground"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "switch_mode_pawing",
+      "Stealth2"
+     ]
+    },
+    {
+     "id": "scream",
+     "name": {
+      "zh": "野兽怒吼",
+      "en": "Bestial Scream"
+     },
+     "type": "ranged",
+     "atk": "108.75%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Horse Horror A"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_large_B"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Plow Horse",
+    "zh": "犁马",
+    "ja": "Plow Horse"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "36",
+    "def": "25%",
+    "prot": "0.15",
+    "spd": "9",
+    "res": {
+     "stun": "90%",
+     "poison": "60%",
+     "bleed": "60%",
+     "debuff": "80%",
+     "move": "100%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "trample",
+     "name": {
+      "zh": "践踏",
+      "en": "Trample"
+     },
+     "type": "melee",
+     "atk": "110%",
+     "dmg": "4-7",
+     "crit": "12%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Shuffle Party 5",
+      "switch_mode_normal",
+      "Destealth Performer"
+     ]
+    },
+    {
+     "id": "rearing_stomp",
+     "name": {
+      "zh": "蹄踢",
+      "en": "Rearing Strike"
+     },
+     "type": "melee",
+     "atk": "105%",
+     "dmg": "6-12",
+     "crit": "11%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "effects": [
+      "Minor Bleed 5",
+      "Stun 5"
+     ]
+    },
+    {
+     "id": "paw_ground",
+     "name": {
+      "zh": "利爪刨地",
+      "en": "Paw The Ground"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "switch_mode_pawing",
+      "Stealth2"
+     ]
+    },
+    {
+     "id": "scream",
+     "name": {
+      "zh": "野兽怒吼",
+      "en": "Bestial Scream"
+     },
+     "type": "ranged",
+     "atk": "120%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Horse Horror A"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_large_C"
+  }
+ ]
+}

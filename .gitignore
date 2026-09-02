@@ -1,0 +1,17 @@
+# 依赖与包管理缓存
+node_modules/
+.npm-cache/
+
+# 构建产物(vite build 可重建)
+dist/
+
+# 生成的大体积贴图:scripts/build.ts 会整体清空重建 public/img/(wiki 贴图管线)
+# 小体积的 public/data/(生成 JSON)保留跟踪,便于 diff 数据变化
+bestiary/public/img/
+
+# 临时与系统文件
+*.log
+.tmp*/
+Thumbs.db
+Desktop.ini
+.DS_Store

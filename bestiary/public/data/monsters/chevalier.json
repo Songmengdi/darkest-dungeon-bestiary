@@ -1,0 +1,273 @@
+{
+ "id": "chevalier",
+ "dir": "dlc/580100_crimson_court/features/crimson_court/monsters/chevalier",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Chevalier",
+    "zh": "骑士",
+    "ja": "シャヴァリア"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "21",
+    "def": "0%",
+    "prot": "0.3",
+    "spd": "0",
+    "res": {
+     "stun": "20%",
+     "poison": "50%",
+     "bleed": "20%",
+     "debuff": "30%",
+     "move": "250%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "buried_blast",
+     "name": {
+      "zh": "深埋奇袭",
+      "en": "Buried Blast"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "4-6",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Chevalier AOE Stun 1",
+      "Chev Dodge Debuff 1"
+     ]
+    },
+    {
+     "id": "buried_skewer",
+     "name": {
+      "zh": "地下叉刺",
+      "en": "Subterranean Skewer"
+     },
+     "type": "melee",
+     "atk": "82.5%",
+     "dmg": "6-8",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "CC Mob Bleed 1",
+      "CC Bleed Res Debuff 1"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_A",
+   "lifeLink": "baron"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Chevalier",
+    "zh": "骑士",
+    "ja": "シャヴァリア"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "29",
+    "def": "8.75%",
+    "prot": "0.3",
+    "spd": "1",
+    "res": {
+     "stun": "40%",
+     "poison": "70%",
+     "bleed": "40%",
+     "debuff": "50%",
+     "move": "270%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "buried_blast",
+     "name": {
+      "zh": "深埋奇袭",
+      "en": "Buried Blast"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "5-9",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Chevalier AOE Stun 2",
+      "Chev Dodge Debuff 2"
+     ]
+    },
+    {
+     "id": "buried_skewer",
+     "name": {
+      "zh": "地下叉刺",
+      "en": "Subterranean Skewer"
+     },
+     "type": "melee",
+     "atk": "88.75%",
+     "dmg": "8-11",
+     "crit": "12%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "CC Mob Bleed 3",
+      "CC Bleed Res Debuff 3"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_B",
+   "lifeLink": "baron"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Chevalier",
+    "zh": "骑士",
+    "ja": "シャヴァリア"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "41",
+    "def": "21.25%",
+    "prot": "0.3",
+    "spd": "2",
+    "res": {
+     "stun": "60%",
+     "poison": "90%",
+     "bleed": "60%",
+     "debuff": "70%",
+     "move": "290%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "buried_blast",
+     "name": {
+      "zh": "深埋奇袭",
+      "en": "Buried Blast"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "7-12",
+     "crit": "0%",
+     "launch": [
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Chevalier AOE Stun 3",
+      "Chev Dodge Debuff 3"
+     ]
+    },
+    {
+     "id": "buried_skewer",
+     "name": {
+      "zh": "地下叉刺",
+      "en": "Subterranean Skewer"
+     },
+     "type": "melee",
+     "atk": "102.5%",
+     "dmg": "10-16",
+     "crit": "14%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "CC Mob Bleed 5",
+      "CC Bleed Res Debuff 5"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_C",
+   "lifeLink": "baron"
+  }
+ ]
+}

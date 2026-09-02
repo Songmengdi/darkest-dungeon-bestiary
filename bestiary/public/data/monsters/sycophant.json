@@ -1,0 +1,531 @@
+{
+ "id": "sycophant",
+ "dir": "dlc/580100_crimson_court/features/crimson_court/monsters/sycophant",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Sycophant",
+    "zh": "谄媚者",
+    "ja": "シコファント"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "12",
+    "def": "10%",
+    "prot": "0",
+    "spd": "10",
+    "res": {
+     "stun": "15%",
+     "poison": "80%",
+     "bleed": "15%",
+     "debuff": "40%",
+     "move": "5%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "maddening_whine",
+     "name": {
+      "zh": "萦悸嗡鸣",
+      "en": "Maddening Whine"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "2-2",
+     "crit": "4%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Syco Whine Stress 1"
+     ]
+    },
+    {
+     "id": "the_hunger_human",
+     "name": {
+      "zh": "饥渴",
+      "en": "The Thirst"
+     },
+     "type": "melee",
+     "atk": "92.5%",
+     "dmg": "2-4",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Syco Stun Buff 1",
+      "Crimson Curse Weak",
+      "switch_mode_beast_self",
+      "CC Small Feed Heal 1",
+      "Feed Stress Human",
+      "CC Steal Blight"
+     ]
+    },
+    {
+     "id": "deafening_whine",
+     "name": {
+      "zh": "鼎沸嗡鸣",
+      "en": "Deafening Whine"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "1-2",
+     "crit": "4%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Syco Stun 1",
+      "Syco Weak Stress 1"
+     ]
+    },
+    {
+     "id": "bombing_run",
+     "name": {
+      "zh": "轰炸",
+      "en": "Bombing Run"
+     },
+     "type": "ranged",
+     "atk": "77.5%",
+     "dmg": "3-4",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "CC Mob Bleed 1"
+     ]
+    },
+    {
+     "id": "the_hunger_beast",
+     "name": {
+      "zh": "饥渴",
+      "en": "The Thirst"
+     },
+     "type": "melee",
+     "atk": "92.5%",
+     "dmg": "4-6",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "CC Small Feed Heal 1",
+      "CC Mob Acc Debuff 1",
+      "Crimson Curse Weak",
+      "Feed Stress Beast",
+      "CC Steal Blight"
+     ]
+    }
+   ],
+   "loot": [],
+   "lifeLink": "baron"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Sycophant",
+    "zh": "谄媚者",
+    "ja": "シコファント"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "17",
+    "def": "18.75%",
+    "prot": "0",
+    "spd": "11",
+    "res": {
+     "stun": "35%",
+     "poison": "100%",
+     "bleed": "35%",
+     "debuff": "60%",
+     "move": "25%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "maddening_whine",
+     "name": {
+      "zh": "萦悸嗡鸣",
+      "en": "Maddening Whine"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "3-3",
+     "crit": "8%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Syco Whine Stress 3"
+     ]
+    },
+    {
+     "id": "the_hunger_human",
+     "name": {
+      "zh": "饥渴",
+      "en": "The Thirst"
+     },
+     "type": "melee",
+     "atk": "98.75%",
+     "dmg": "3-5",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Syco Stun Buff 2",
+      "Crimson Curse Weak",
+      "switch_mode_beast_self",
+      "CC Small Feed Heal 1",
+      "Feed Stress Human",
+      "CC Steal Blight"
+     ]
+    },
+    {
+     "id": "deafening_whine",
+     "name": {
+      "zh": "鼎沸嗡鸣",
+      "en": "Deafening Whine"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "2-2",
+     "crit": "10%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Syco Stun 3",
+      "Syco Weak Stress 3"
+     ]
+    },
+    {
+     "id": "bombing_run",
+     "name": {
+      "zh": "轰炸",
+      "en": "Bombing Run"
+     },
+     "type": "ranged",
+     "atk": "83.75%",
+     "dmg": "4-5",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "CC Mob Bleed 3"
+     ]
+    },
+    {
+     "id": "the_hunger_beast",
+     "name": {
+      "zh": "饥渴",
+      "en": "The Thirst"
+     },
+     "type": "melee",
+     "atk": "98.75%",
+     "dmg": "6-8",
+     "crit": "12%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "CC Small Feed Heal 2",
+      "CC Mob Acc Debuff 3",
+      "Crimson Curse Weak",
+      "Feed Stress Beast",
+      "CC Steal Blight"
+     ]
+    }
+   ],
+   "loot": [],
+   "lifeLink": "baron"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Sycophant",
+    "zh": "谄媚者",
+    "ja": "シコファント"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "23",
+    "def": "31.25%",
+    "prot": "0",
+    "spd": "12",
+    "res": {
+     "stun": "55%",
+     "poison": "120%",
+     "bleed": "55%",
+     "debuff": "80%",
+     "move": "45%"
+    }
+   },
+   "enemyType": {
+    "id": "vampire",
+    "zh": "血裔",
+    "en": "Bloodsucker"
+   },
+   "skills": [
+    {
+     "id": "maddening_whine",
+     "name": {
+      "zh": "萦悸嗡鸣",
+      "en": "Maddening Whine"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "4-4",
+     "crit": "11%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Syco Whine Stress 5"
+     ]
+    },
+    {
+     "id": "the_hunger_human",
+     "name": {
+      "zh": "饥渴",
+      "en": "The Thirst"
+     },
+     "type": "melee",
+     "atk": "112.5%",
+     "dmg": "4-7",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Syco Stun Buff 3",
+      "Crimson Curse Weak",
+      "switch_mode_beast_self",
+      "CC Small Feed Heal 1",
+      "Feed Stress Human",
+      "CC Steal Blight"
+     ]
+    },
+    {
+     "id": "deafening_whine",
+     "name": {
+      "zh": "鼎沸嗡鸣",
+      "en": "Deafening Whine"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "2-4",
+     "crit": "12%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Syco Stun 5",
+      "Syco Weak Stress 5"
+     ]
+    },
+    {
+     "id": "bombing_run",
+     "name": {
+      "zh": "轰炸",
+      "en": "Bombing Run"
+     },
+     "type": "ranged",
+     "atk": "97.5%",
+     "dmg": "5-8",
+     "crit": "8%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "CC Mob Bleed 5"
+     ]
+    },
+    {
+     "id": "the_hunger_beast",
+     "name": {
+      "zh": "饥渴",
+      "en": "The Thirst"
+     },
+     "type": "melee",
+     "atk": "112.5%",
+     "dmg": "8-11",
+     "crit": "14%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "CC Small Feed Heal 3",
+      "CC Mob Acc Debuff 5",
+      "Crimson Curse Weak",
+      "Feed Stress Beast",
+      "CC Steal Blight"
+     ]
+    }
+   ],
+   "loot": [],
+   "lifeLink": "baron"
+  }
+ ]
+}

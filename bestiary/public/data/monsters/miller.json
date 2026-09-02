@@ -1,0 +1,627 @@
+{
+ "id": "miller",
+ "dir": "dlc/735730_color_of_madness/monsters/miller",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Miller",
+    "zh": "磨坊主",
+    "ja": "Miller"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "95",
+    "def": "5%",
+    "prot": "0.2",
+    "spd": "4",
+    "res": {
+     "stun": "75%",
+     "poison": "40%",
+     "bleed": "200%",
+     "debuff": "40%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "unfortunate_soul",
+    "zh": "堕落灵魂",
+    "en": "Poor Soul"
+   },
+   "skills": [
+    {
+     "id": "harvest",
+     "name": {
+      "zh": "收获",
+      "en": "The Harvest"
+     },
+     "type": "melee",
+     "atk": "97.5%",
+     "dmg": "2-4",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "harvest stress A",
+      "Miller HealSelf A",
+      "Miller HealStress 3"
+     ]
+    },
+    {
+     "id": "winters_breath",
+     "name": {
+      "zh": "冬天气息",
+      "en": "Winter's Breath"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "xform coccoon A"
+     ]
+    },
+    {
+     "id": "grind_the_grist",
+     "name": {
+      "zh": "收割",
+      "en": "The Reaping"
+     },
+     "type": "melee",
+     "atk": "97.5%",
+     "dmg": "5-8",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "grind bark"
+     ]
+    },
+    {
+     "id": "sadness",
+     "name": {
+      "zh": "不朽真情",
+      "en": "Immortal Beloved"
+     },
+     "type": "ranged",
+     "atk": "202.5%",
+     "dmg": "1-1",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "miller grief A",
+      "sadness bark",
+      "miller stress resist"
+     ]
+    },
+    {
+     "id": "summon_scarecrow",
+     "name": {
+      "zh": "主人召唤",
+      "en": "The Master Beckons"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Summon Scarecrow B"
+     ]
+    },
+    {
+     "id": "summon_farmers",
+     "name": {
+      "zh": "主人召唤",
+      "en": "The Master Beckons"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Summon Farmers B"
+     ]
+    },
+    {
+     "id": "summon_revenant",
+     "name": {
+      "zh": "主人召唤",
+      "en": "The Master Beckons"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Summon Revenant B"
+     ]
+    }
+   ],
+   "loot": []
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Miller",
+    "zh": "磨坊主",
+    "ja": "Miller"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "143",
+    "def": "13.75%",
+    "prot": "0.2",
+    "spd": "5",
+    "res": {
+     "stun": "95%",
+     "poison": "60%",
+     "bleed": "220%",
+     "debuff": "60%",
+     "move": "70%"
+    }
+   },
+   "enemyType": {
+    "id": "unfortunate_soul",
+    "zh": "堕落灵魂",
+    "en": "Poor Soul"
+   },
+   "skills": [
+    {
+     "id": "harvest",
+     "name": {
+      "zh": "收获",
+      "en": "The Harvest"
+     },
+     "type": "melee",
+     "atk": "103.75%",
+     "dmg": "3-5",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "harvest stress A",
+      "Miller HealSelf B",
+      "Miller HealStress 5"
+     ]
+    },
+    {
+     "id": "winters_breath",
+     "name": {
+      "zh": "冬天气息",
+      "en": "Winter's Breath"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "xform coccoon B"
+     ]
+    },
+    {
+     "id": "grind_the_grist",
+     "name": {
+      "zh": "收割",
+      "en": "The Reaping"
+     },
+     "type": "melee",
+     "atk": "103.75%",
+     "dmg": "6-10",
+     "crit": "8%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "grind bark"
+     ]
+    },
+    {
+     "id": "sadness",
+     "name": {
+      "zh": "不朽真情",
+      "en": "Immortal Beloved"
+     },
+     "type": "ranged",
+     "atk": "208.75%",
+     "dmg": "2-2",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "miller grief B",
+      "sadness bark",
+      "miller stress resist"
+     ]
+    },
+    {
+     "id": "summon_scarecrow",
+     "name": {
+      "zh": "主人召唤",
+      "en": "The Master Beckons"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Summon Scarecrow B"
+     ]
+    },
+    {
+     "id": "summon_farmers",
+     "name": {
+      "zh": "主人召唤",
+      "en": "The Master Beckons"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Summon Farmers B"
+     ]
+    },
+    {
+     "id": "summon_revenant",
+     "name": {
+      "zh": "主人召唤",
+      "en": "The Master Beckons"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Summon Revenant B"
+     ]
+    }
+   ],
+   "loot": []
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Miller",
+    "zh": "磨坊主",
+    "ja": "Miller"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "181",
+    "def": "26.25%",
+    "prot": "0.2",
+    "spd": "6",
+    "res": {
+     "stun": "115%",
+     "poison": "80%",
+     "bleed": "240%",
+     "debuff": "80%",
+     "move": "90%"
+    }
+   },
+   "enemyType": {
+    "id": "unfortunate_soul",
+    "zh": "堕落灵魂",
+    "en": "Poor Soul"
+   },
+   "skills": [
+    {
+     "id": "harvest",
+     "name": {
+      "zh": "收获",
+      "en": "The Harvest"
+     },
+     "type": "melee",
+     "atk": "115%",
+     "dmg": "4-7",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "harvest stress A",
+      "Miller HealSelf C",
+      "Miller HealStress 7"
+     ]
+    },
+    {
+     "id": "winters_breath",
+     "name": {
+      "zh": "冬天气息",
+      "en": "Winter's Breath"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "xform coccoon C"
+     ]
+    },
+    {
+     "id": "grind_the_grist",
+     "name": {
+      "zh": "收割",
+      "en": "The Reaping"
+     },
+     "type": "melee",
+     "atk": "115%",
+     "dmg": "8-14",
+     "crit": "10%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "grind bark"
+     ]
+    },
+    {
+     "id": "sadness",
+     "name": {
+      "zh": "不朽真情",
+      "en": "Immortal Beloved"
+     },
+     "type": "ranged",
+     "atk": "222.5%",
+     "dmg": "2-2",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "miller grief C",
+      "sadness bark",
+      "miller stress resist"
+     ]
+    },
+    {
+     "id": "summon_scarecrow",
+     "name": {
+      "zh": "主人召唤",
+      "en": "The Master Beckons"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Summon Scarecrow C"
+     ]
+    },
+    {
+     "id": "summon_farmers",
+     "name": {
+      "zh": "主人召唤",
+      "en": "The Master Beckons"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Summon Farmers C"
+     ]
+    },
+    {
+     "id": "summon_revenant",
+     "name": {
+      "zh": "主人召唤",
+      "en": "The Master Beckons"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Summon Revenant C"
+     ]
+    }
+   ],
+   "loot": []
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "id": "seed_red",
+ "dir": "dlc/735730_color_of_madness/monsters/seed_red",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Unstable Aberration",
+    "zh": "不稳定畸变",
+    "ja": "Unstable Aberration"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "30",
+    "def": "0%",
+    "prot": "0.2",
+    "spd": "5",
+    "res": {
+     "stun": "240%",
+     "poison": "100%",
+     "bleed": "140%",
+     "debuff": "70%",
+     "move": "65%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "red_seed_suicide",
+     "name": {
+      "zh": "永恒之花",
+      "en": "Eternal Blossom"
+     },
+     "type": "ranged",
+     "atk": "100%",
+     "dmg": "4-6",
+     "crit": "1%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "kill_self_queued",
+      "red seed attack heal"
+     ]
+    }
+   ],
+   "loot": [],
+   "lifeLink": "spire"
+  }
+ ]
+}

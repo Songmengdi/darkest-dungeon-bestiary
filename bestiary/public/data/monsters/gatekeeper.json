@@ -1,0 +1,186 @@
+{
+ "id": "gatekeeper",
+ "dir": "dlc/735730_color_of_madness/monsters/gatekeeper",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Sleeper's Dream",
+    "zh": "沉睡者之梦",
+    "ja": "Sleeper's Dream"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "500",
+    "def": "1000%",
+    "prot": "1.5",
+    "spd": "99",
+    "res": {
+     "stun": "200%",
+     "poison": "200%",
+     "bleed": "200%",
+     "debuff": "200%",
+     "move": "10%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "dimensional_gate",
+     "name": {
+      "zh": "超越时空",
+      "en": "Beyond Time and Space"
+     },
+     "type": "teleport",
+     "atk": "152.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": []
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_A"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Sleeper's Dream",
+    "zh": "沉睡者之梦",
+    "ja": "Sleeper's Dream"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "500",
+    "def": "1000%",
+    "prot": "1.5",
+    "spd": "99",
+    "res": {
+     "stun": "220%",
+     "poison": "220%",
+     "bleed": "220%",
+     "debuff": "220%",
+     "move": "30%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "dimensional_gate",
+     "name": {
+      "zh": "超越时空",
+      "en": "Beyond Time and Space"
+     },
+     "type": "teleport",
+     "atk": "158.75%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": []
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_B"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Sleeper's Dream",
+    "zh": "沉睡者之梦",
+    "ja": "Sleeper's Dream"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "500",
+    "def": "1000%",
+    "prot": "1.5",
+    "spd": "99",
+    "res": {
+     "stun": "240%",
+     "poison": "240%",
+     "bleed": "240%",
+     "debuff": "240%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "dimensional_gate",
+     "name": {
+      "zh": "超越时空",
+      "en": "Beyond Time and Space"
+     },
+     "type": "teleport",
+     "atk": "170%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": []
+    }
+   ],
+   "loot": [],
+   "deathClass": "corpse_C"
+  }
+ ]
+}

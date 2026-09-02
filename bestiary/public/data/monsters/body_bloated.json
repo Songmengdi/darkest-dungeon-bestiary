@@ -1,0 +1,252 @@
+{
+ "id": "body_bloated",
+ "dir": "dlc/580100_crimson_court/features/crimson_court/monsters/body_bloated",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Bloodstuffed Body",
+    "zh": "胀血的躯体",
+    "ja": "血で満たされた体"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "60",
+    "def": "0%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "45%",
+     "poison": "45%",
+     "bleed": "15%",
+     "debuff": "75%",
+     "move": "45%"
+    }
+   },
+   "enemyType": {
+    "id": "body",
+    "zh": "血袋",
+    "en": "Bloodbag"
+   },
+   "skills": [],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_A",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "viscount"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Bloodstuffed Body",
+    "zh": "胀血的躯体",
+    "ja": "血で満たされた体"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "90",
+    "def": "0%",
+    "prot": "0",
+    "spd": "1",
+    "res": {
+     "stun": "65%",
+     "poison": "65%",
+     "bleed": "35%",
+     "debuff": "95%",
+     "move": "65%"
+    }
+   },
+   "enemyType": {
+    "id": "body",
+    "zh": "血袋",
+    "en": "Bloodbag"
+   },
+   "skills": [],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_B",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "viscount"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Bloodstuffed Body",
+    "zh": "胀血的躯体",
+    "ja": "血で満たされた体"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "72",
+    "def": "0%",
+    "prot": "0",
+    "spd": "2",
+    "res": {
+     "stun": "85%",
+     "poison": "85%",
+     "bleed": "55%",
+     "debuff": "240%",
+     "move": "115%"
+    }
+   },
+   "enemyType": {
+    "id": "body",
+    "zh": "血袋",
+    "en": "Bloodbag"
+   },
+   "skills": [],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_C",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "viscount"
+  }
+ ]
+}

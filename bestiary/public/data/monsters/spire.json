@@ -1,0 +1,404 @@
+{
+ "id": "spire",
+ "dir": "dlc/735730_color_of_madness/monsters/spire",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Fracture",
+    "zh": "破裂水晶怪",
+    "ja": "Fracture"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "115",
+    "def": "0%",
+    "prot": "0.2",
+    "spd": "7",
+    "res": {
+     "stun": "140%",
+     "poison": "100%",
+     "bleed": "240%",
+     "debuff": "90%",
+     "move": "140%"
+    }
+   },
+   "enemyType": {
+    "id": "husk",
+    "zh": "瘪壳怪",
+    "en": "Husk"
+   },
+   "skills": [
+    {
+     "id": "spawn_sprout",
+     "name": {
+      "zh": "卑微集聚",
+      "en": "Vile Focusing"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "spawn sprout"
+     ]
+    },
+    {
+     "id": "initial_sprouts",
+     "name": {
+      "zh": "绝望种子",
+      "en": "Seeds Of Despair"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "spawn initial sprouts"
+     ]
+    },
+    {
+     "id": "grow_seed_yellow",
+     "name": {
+      "zh": "不断膨胀",
+      "en": "Ceaseless Expansion"
+     },
+     "type": "ranged",
+     "atk": "100%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "To Seed Yellow"
+     ]
+    },
+    {
+     "id": "grow_seed_red",
+     "name": {
+      "zh": "不断膨胀",
+      "en": "Ceaseless Expansion"
+     },
+     "type": "ranged",
+     "atk": "100%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "To Seed Red"
+     ]
+    },
+    {
+     "id": "grow_seed_black",
+     "name": {
+      "zh": "不断膨胀",
+      "en": "Ceaseless Expansion"
+     },
+     "type": "ranged",
+     "atk": "100%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "To Seed Black"
+     ]
+    },
+    {
+     "id": "grow_seed_purple",
+     "name": {
+      "zh": "不断膨胀",
+      "en": "Ceaseless Expansion"
+     },
+     "type": "ranged",
+     "atk": "100%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "To Seed Purple"
+     ]
+    },
+    {
+     "id": "grow_seed_grey",
+     "name": {
+      "zh": "不断膨胀",
+      "en": "Ceaseless Expansion"
+     },
+     "type": "ranged",
+     "atk": "100%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "To Seed Grey"
+     ]
+    },
+    {
+     "id": "slow_the_sands",
+     "name": {
+      "zh": "减慢时光",
+      "en": "Slow The Sands"
+     },
+     "type": "ranged",
+     "atk": "105%",
+     "dmg": "3-5",
+     "crit": "7%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Slow Hero Spd",
+      "Spire Stun"
+     ]
+    },
+    {
+     "id": "xform_to_galaxy",
+     "name": {
+      "zh": "嘈杂银河",
+      "en": "Blooming Chaos"
+     },
+     "type": "melee",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "Clear Marked Target",
+      "kill_performer_group_other",
+      "kill_self_queued"
+     ]
+    },
+    {
+     "id": "sprout_to_seedling_grey",
+     "name": {
+      "zh": "污染痕迹",
+      "en": "Befouling Tint"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "grow_seedling_grey"
+     ]
+    },
+    {
+     "id": "sprout_to_seedling_red",
+     "name": {
+      "zh": "污染痕迹",
+      "en": "Befouling Tint"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "grow_seedling_red"
+     ]
+    },
+    {
+     "id": "sprout_to_seedling_black",
+     "name": {
+      "zh": "污染痕迹",
+      "en": "Befouling Tint"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "grow_seedling_black"
+     ]
+    },
+    {
+     "id": "sprout_to_seedling_purple",
+     "name": {
+      "zh": "污染痕迹",
+      "en": "Befouling Tint"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "grow_seedling_purple"
+     ]
+    },
+    {
+     "id": "sprout_to_seedling_yellow",
+     "name": {
+      "zh": "污染痕迹",
+      "en": "Befouling Tint"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAlly": true,
+     "effects": [
+      "grow_seedling_yellow"
+     ]
+    }
+   ],
+   "loot": [],
+   "deathClass": "galaxy_D"
+  }
+ ]
+}

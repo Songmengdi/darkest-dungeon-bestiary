@@ -1,0 +1,147 @@
+{
+ "id": "errant_flesh_dog",
+ "dir": "monsters/errant_flesh_dog",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Flesh Hound",
+    "zh": "血肉猎犬",
+    "ja": "フレッシュ・ハウンド"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "34",
+    "def": "28.75%",
+    "prot": "0",
+    "spd": "9",
+    "res": {
+     "stun": "72.5%",
+     "poison": "77.5%",
+     "bleed": "67.5%",
+     "debuff": "67.5%",
+     "move": "73%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "errant_bite",
+     "name": {
+      "zh": "磨咬",
+      "en": "Gnash"
+     },
+     "type": "melee",
+     "atk": "103.75%",
+     "dmg": "6-13",
+     "crit": "15%",
+     "launch": [
+      1,
+      2,
+      3
+     ],
+     "target": [
+      1,
+      2,
+      3
+     ],
+     "effects": [
+      "Errant Stress",
+      "Errant Dmg Marked"
+     ]
+    },
+    {
+     "id": "errant_nip",
+     "name": {
+      "zh": "蚕食",
+      "en": "Nibble"
+     },
+     "type": "melee",
+     "atk": "83.75%",
+     "dmg": "1-3",
+     "crit": "0%",
+     "launch": [
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": []
+    },
+    {
+     "id": "errant_pull",
+     "name": {
+      "zh": "攫捉",
+      "en": "Fetch"
+     },
+     "type": "melee",
+     "atk": "113.75%",
+     "dmg": "4-9",
+     "crit": "10%",
+     "launch": [
+      1,
+      2,
+      3
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Pull 2F",
+      "Errant Stun"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "errant_flesh_dog",
+    "skillDesires": [
+     {
+      "skill": "errant_bite",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "errant_nip",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "errant_pull",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "errant_bite",
+      "type": "effect_key_status_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "stunned_target",
+      "skill": "errant_pull"
+     },
+     {
+      "type": "marked_target",
+      "skill": "errant_bite"
+     }
+    ]
+   },
+   "deathClass": "corpse_A"
+  }
+ ]
+}

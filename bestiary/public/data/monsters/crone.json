@@ -1,0 +1,625 @@
+{
+ "id": "crone",
+ "dir": "monsters/crone",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Crone",
+    "zh": "巫妪",
+    "ja": "クローン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "13",
+    "def": "20%",
+    "prot": "0",
+    "spd": "8",
+    "res": {
+     "stun": "10%",
+     "poison": "40%",
+     "bleed": "20%",
+     "debuff": "40%",
+     "move": "10%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "curse_vulnerability",
+     "name": {
+      "zh": "孱弱咒文",
+      "en": "Curse of Vulnerability"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "1-1",
+     "crit": "2%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Crone Curse 1",
+      "Mark Target"
+     ]
+    },
+    {
+     "id": "fetid_censer",
+     "name": {
+      "zh": "恶臭熏炉",
+      "en": "Fetid Censer"
+     },
+     "type": "melee",
+     "atk": "82.5%",
+     "dmg": "1-3",
+     "crit": "6%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Stress 1",
+      "Blight 1"
+     ]
+    },
+    {
+     "id": "embrace_the_dark",
+     "name": {
+      "zh": "拥抱黑暗",
+      "en": "Embrace the Dark"
+     },
+     "type": "ranged",
+     "atk": "82.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 1",
+      "Darkness 2"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "crone_A",
+    "skillDesires": [
+     {
+      "skill": "curse_vulnerability",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "fetid_censer",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "embrace_the_dark",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_A"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Tenacious Crone",
+    "zh": "老巫妪",
+    "ja": "テネシャス・クローン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "18",
+    "def": "28.75%",
+    "prot": "0",
+    "spd": "9",
+    "res": {
+     "stun": "30%",
+     "poison": "60%",
+     "bleed": "40%",
+     "debuff": "60%",
+     "move": "30%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "curse_vulnerability",
+     "name": {
+      "zh": "孱弱咒文",
+      "en": "Curse of Vulnerability"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "1-2",
+     "crit": "6%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Crone Curse 3",
+      "Mark Target"
+     ]
+    },
+    {
+     "id": "fetid_censer",
+     "name": {
+      "zh": "恶臭熏炉",
+      "en": "Fetid Censer"
+     },
+     "type": "melee",
+     "atk": "88.75%",
+     "dmg": "2-3",
+     "crit": "12%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Stress 1",
+      "Blight 3",
+      "Crone Fetid Disease 3"
+     ]
+    },
+    {
+     "id": "embrace_the_dark",
+     "name": {
+      "zh": "拥抱黑暗",
+      "en": "Embrace the Dark"
+     },
+     "type": "ranged",
+     "atk": "88.75%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 1",
+      "Darkness 2"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "crone_B",
+    "skillDesires": [
+     {
+      "skill": "curse_vulnerability",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "curse_vulnerability",
+      "type": "performing_turn_skill"
+     },
+     {
+      "skill": "fetid_censer",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "embrace_the_dark",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_B"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Blighted Crone",
+    "zh": "瘟疫巫妪",
+    "ja": "ブライト・クローン"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "25",
+    "def": "41.25%",
+    "prot": "0",
+    "spd": "10",
+    "res": {
+     "stun": "50%",
+     "poison": "80%",
+     "bleed": "60%",
+     "debuff": "80%",
+     "move": "50%"
+    }
+   },
+   "enemyType": {
+    "id": "man",
+    "zh": "人类",
+    "en": "Human"
+   },
+   "skills": [
+    {
+     "id": "curse_vulnerability",
+     "name": {
+      "zh": "孱弱咒文",
+      "en": "Curse of Vulnerability"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "1-3",
+     "crit": "9%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Crone Curse 5",
+      "Mark Target"
+     ]
+    },
+    {
+     "id": "fetid_censer",
+     "name": {
+      "zh": "恶臭熏炉",
+      "en": "Fetid Censer"
+     },
+     "type": "melee",
+     "atk": "102.5%",
+     "dmg": "2-5",
+     "crit": "14%",
+     "launch": [
+      1,
+      2
+     ],
+     "target": [
+      1,
+      2
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Stress 1",
+      "Blight 5",
+      "Crone Fetid Disease 5"
+     ]
+    },
+    {
+     "id": "embrace_the_dark",
+     "name": {
+      "zh": "拥抱黑暗",
+      "en": "Embrace the Dark"
+     },
+     "type": "ranged",
+     "atk": "102.5%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Stress 1",
+      "Darkness 2"
+     ]
+    }
+   ],
+   "loot": [
+    {
+     "file": "loot/common_overrides.loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 0,
+       "data": {}
+      },
+      {
+       "type": "table",
+       "chances": 50,
+       "data": {
+        "table": "C"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 38,
+       "data": {
+        "table": "G"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 48,
+       "data": {
+        "table": "H"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "J"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 0,
+       "data": {
+        "table": "P"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 28,
+       "data": {
+        "table": "S"
+       }
+      },
+      {
+       "type": "table",
+       "chances": 8,
+       "data": {
+        "table": "T"
+       }
+      },
+      {
+       "type": "journal_page",
+       "chances": 2,
+       "data": {
+        "min_page_index": 1,
+        "max_page_index": 21
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "crone_C",
+    "skillDesires": [
+     {
+      "skill": "curse_vulnerability",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "curse_vulnerability",
+      "type": "performing_turn_skill"
+     },
+     {
+      "skill": "fetid_censer",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "embrace_the_dark",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "deathClass": "corpse_C"
+  }
+ ]
+}

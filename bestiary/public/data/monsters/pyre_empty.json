@@ -1,0 +1,108 @@
+{
+ "id": "pyre_empty",
+ "dir": "dlc/580100_crimson_court/features/crimson_court/monsters/pyre_empty",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Pyre",
+    "zh": "木桩",
+    "ja": "火刑台"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "70",
+    "def": "0%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "200%",
+     "poison": "200%",
+     "bleed": "200%",
+     "debuff": "200%",
+     "move": "200%"
+    }
+   },
+   "enemyType": {
+    "id": "pyre",
+    "zh": "不洁的木材",
+    "en": "Unholy wood"
+   },
+   "skills": [],
+   "loot": [],
+   "lifeLink": "fanatic"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Pyre",
+    "zh": "木桩",
+    "ja": "火刑台"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "105",
+    "def": "0%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "220%",
+     "poison": "220%",
+     "bleed": "220%",
+     "debuff": "220%",
+     "move": "220%"
+    }
+   },
+   "enemyType": {
+    "id": "pyre",
+    "zh": "不洁的木材",
+    "en": "Unholy wood"
+   },
+   "skills": [],
+   "loot": [],
+   "lifeLink": "fanatic"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Pyre",
+    "zh": "木桩",
+    "ja": "火刑台"
+   },
+   "size": 2,
+   "stats": {
+    "hp": "144",
+    "def": "0%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "240%",
+     "poison": "240%",
+     "bleed": "240%",
+     "debuff": "240%",
+     "move": "240%"
+    }
+   },
+   "enemyType": {
+    "id": "pyre",
+    "zh": "不洁的木材",
+    "en": "Unholy wood"
+   },
+   "skills": [],
+   "loot": [],
+   "lifeLink": "fanatic"
+  }
+ ]
+}

@@ -1,0 +1,107 @@
+{
+ "id": "ancestor_pod",
+ "dir": "monsters/ancestor_pod",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Gestating Heart",
+    "zh": "孕育之心",
+    "ja": "懐胎する心臓"
+   },
+   "size": 4,
+   "stats": {
+    "hp": "189",
+    "def": "23.75%",
+    "prot": "0",
+    "spd": "2",
+    "res": {
+     "stun": "72.5%",
+     "poison": "87.5%",
+     "bleed": "67.5%",
+     "debuff": "67.5%",
+     "move": "73%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "pod_emit",
+     "name": {
+      "zh": "驱散",
+      "en": "Dispersion"
+     },
+     "type": "ranged",
+     "atk": "113.75%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Pod AOE Blight"
+     ]
+    },
+    {
+     "id": "pod_die",
+     "name": {
+      "zh": "飞升",
+      "en": "Ascension"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "kill_self_queued"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "ancestor_pod_D",
+    "skillDesires": [
+     {
+      "skill": "pod_die",
+      "type": "performing_turn_skill"
+     },
+     {
+      "skill": "pod_emit",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "deathClass": "ancestor_heart_D"
+  }
+ ]
+}

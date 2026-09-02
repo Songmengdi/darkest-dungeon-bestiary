@@ -1,0 +1,252 @@
+{
+ "id": "body_average",
+ "dir": "dlc/580100_crimson_court/features/crimson_court/monsters/body_average",
+ "tiers": [
+  {
+   "tier": "A",
+   "label": {
+    "zh": "学徒",
+    "en": "Apprentice"
+   },
+   "displayName": {
+    "en": "Body",
+    "zh": "躯体",
+    "ja": "ボディ"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "50",
+    "def": "0%",
+    "prot": "0",
+    "spd": "0",
+    "res": {
+     "stun": "200%",
+     "poison": "25%",
+     "bleed": "35%",
+     "debuff": "55%",
+     "move": "35%"
+    }
+   },
+   "enemyType": {
+    "id": "body",
+    "zh": "血袋",
+    "en": "Bloodbag"
+   },
+   "skills": [],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_A",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "viscount"
+  },
+  {
+   "tier": "B",
+   "label": {
+    "zh": "资深",
+    "en": "Veteran"
+   },
+   "displayName": {
+    "en": "Body",
+    "zh": "躯体",
+    "ja": "ボディ"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "75",
+    "def": "0%",
+    "prot": "0",
+    "spd": "1",
+    "res": {
+     "stun": "65%",
+     "poison": "45%",
+     "bleed": "55%",
+     "debuff": "75%",
+     "move": "55%"
+    }
+   },
+   "enemyType": {
+    "id": "body",
+    "zh": "血袋",
+    "en": "Bloodbag"
+   },
+   "skills": [],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_B",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "viscount"
+  },
+  {
+   "tier": "C",
+   "label": {
+    "zh": "冠军",
+    "en": "Champion"
+   },
+   "displayName": {
+    "en": "Body",
+    "zh": "躯体",
+    "ja": "ボディ"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "55",
+    "def": "0%",
+    "prot": "0",
+    "spd": "2",
+    "res": {
+     "stun": "85%",
+     "poison": "65%",
+     "bleed": "75%",
+     "debuff": "240%",
+     "move": "75%"
+    }
+   },
+   "enemyType": {
+    "id": "body",
+    "zh": "血袋",
+    "en": "Bloodbag"
+   },
+   "skills": [],
+   "loot": [
+    {
+     "file": "loot/loot.json",
+     "entries": [
+      {
+       "type": "nothing",
+       "chances": 1,
+       "data": {}
+      },
+      {
+       "type": "item",
+       "chances": 0,
+       "data": {
+        "type": "heirloom",
+        "id": "bust",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ],
+   "brain": {
+    "id": "default_C",
+    "skillDesires": [
+     {
+      "skill": "",
+      "type": "preferred_skill"
+     },
+     {
+      "skill": "",
+      "type": "random_skill"
+     },
+     {
+      "skill": "",
+      "type": "heal_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "marked_target"
+     },
+     {
+      "type": "health_target"
+     }
+    ]
+   },
+   "lifeLink": "viscount"
+  }
+ ]
+}

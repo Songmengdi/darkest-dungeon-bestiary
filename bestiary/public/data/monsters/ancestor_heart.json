@@ -1,0 +1,193 @@
+{
+ "id": "ancestor_heart",
+ "dir": "monsters/ancestor_heart",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Heart of Darkness",
+    "zh": "黑暗之心",
+    "ja": "暗黒の心臓"
+   },
+   "size": 4,
+   "stats": {
+    "hp": "252",
+    "def": "23.75%",
+    "prot": "0",
+    "spd": "10",
+    "res": {
+     "stun": "87.5%",
+     "poison": "47.5%",
+     "bleed": "47.5%",
+     "debuff": "67.5%",
+     "move": "88%"
+    }
+   },
+   "enemyType": {
+    "id": "cosmic",
+    "zh": "恒宇",
+    "en": "Cosmic"
+   },
+   "skills": [
+    {
+     "id": "kill_pill",
+     "name": {
+      "zh": "到汝之造物主身边来",
+      "en": "Come Unto Your Maker"
+     },
+     "type": "ranged",
+     "atk": "223.75%",
+     "dmg": "11-23",
+     "crit": "15%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "kill_target"
+     ]
+    },
+    {
+     "id": "heart_stress",
+     "name": {
+      "zh": "知晓真相",
+      "en": "Know This"
+     },
+     "type": "melee",
+     "atk": "113.75%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Heart Stress"
+     ]
+    },
+    {
+     "id": "heart_pierce",
+     "name": {
+      "zh": "贯穿身心",
+      "en": "Puncture"
+     },
+     "type": "ranged",
+     "atk": "113.75%",
+     "dmg": "13-16",
+     "crit": "15%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Heart Bleed",
+      "Heart Stress Rider"
+     ]
+    },
+    {
+     "id": "heart_stun",
+     "name": {
+      "zh": "血肉消融",
+      "en": "Dissolution"
+     },
+     "type": "ranged",
+     "atk": "113.75%",
+     "dmg": "13-16",
+     "crit": "15%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Heart Stun",
+      "Heart Blight",
+      "Heart Stress Rider"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "ancestor_heart_D",
+    "skillDesires": [
+     {
+      "skill": "heart_stress",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "heart_pierce",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "heart_stun",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     },
+     {
+      "type": "health_target",
+      "skill": "heart_pierce"
+     },
+     {
+      "type": "health_target",
+      "skill": "heart_stun"
+     },
+     {
+      "type": "stress_target",
+      "skill": "heart_stress"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "heart_stun"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "heart_stun"
+     },
+     {
+      "type": "resistance_target",
+      "skill": "heart_pierce"
+     }
+    ]
+   }
+  }
+ ]
+}

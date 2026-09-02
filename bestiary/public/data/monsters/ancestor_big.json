@@ -1,0 +1,170 @@
+{
+ "id": "ancestor_big",
+ "dir": "monsters/ancestor_big",
+ "tiers": [
+  {
+   "tier": "D",
+   "label": {
+    "zh": "档位 D",
+    "en": "Tier D"
+   },
+   "displayName": {
+    "en": "Ancestor",
+    "zh": "先祖",
+    "ja": "アンセスター"
+   },
+   "size": 1,
+   "stats": {
+    "hp": "252",
+    "def": "15.75%",
+    "prot": "0",
+    "spd": "10",
+    "res": {
+     "stun": "72.5%",
+     "poison": "67.5%",
+     "bleed": "77.5%",
+     "debuff": "67.5%",
+     "move": "0%"
+    }
+   },
+   "enemyType": {
+    "id": "eldritch",
+    "zh": "异魔",
+    "en": "Eldritch"
+   },
+   "skills": [
+    {
+     "id": "ancestor_fuse_two",
+     "name": {
+      "zh": "重塑他们",
+      "en": "Refashion Them"
+     },
+     "type": "ranged",
+     "atk": "113.75%",
+     "dmg": "5-14",
+     "crit": "15%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Ancestor Fuse Two",
+      "Shuffle Self",
+      "Ancestor Big Rider Stress"
+     ]
+    },
+    {
+     "id": "ancestor_fuse_all",
+     "name": {
+      "zh": "回炉重造",
+      "en": "Unmake Them All"
+     },
+     "type": "ranged",
+     "atk": "113.75%",
+     "dmg": "2-7",
+     "crit": "10%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "targetAoe": true,
+     "effects": [
+      "Ancestor Fuse All",
+      "Shuffle Self",
+      "Ancestor Big Rider Stress"
+     ]
+    },
+    {
+     "id": "ancestor_contemplate",
+     "name": {
+      "zh": "徒劳无益",
+      "en": "Embrace Futility"
+     },
+     "type": "ranged",
+     "atk": "113.75%",
+     "dmg": "1-3",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "effects": [
+      "Ancestor Shuffle",
+      "Ancestor Disrupt",
+      "Ancestor Big Contemplate Stress"
+     ]
+    },
+    {
+     "id": "kill_self",
+     "name": {
+      "zh": "kill_self",
+      "en": "kill_self"
+     },
+     "type": "ranged",
+     "atk": "0%",
+     "dmg": "0-0",
+     "crit": "0%",
+     "launch": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "target": [],
+     "effects": [
+      "kill_self_queued",
+      "kill_performer_group_other"
+     ]
+    }
+   ],
+   "loot": [],
+   "brain": {
+    "id": "ancestor_big_D",
+    "skillDesires": [
+     {
+      "skill": "ancestor_fuse_two",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "ancestor_fuse_all",
+      "type": "specific_skill"
+     },
+     {
+      "skill": "ancestor_contemplate",
+      "type": "specific_skill"
+     }
+    ],
+    "targetDesires": [
+     {
+      "type": "random_target"
+     }
+    ]
+   },
+   "deathClass": "ancestor_pod_D"
+  }
+ ]
+}
