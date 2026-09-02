@@ -1,0 +1,8 @@
+# 行尾归一:.gitattributes 优先于 core.autocrlf,是行尾行为的唯一事实源。
+# 仓库内所有文本文件统一 LF(存储与检出);本仓库无 .bat/.sln 等需 CRLF 的文件。
+* text=auto eol=lf
+
+# 二进制文件显式标记,杜绝任何行尾转换/文本过滤(防损坏)
+*.png binary
+*.exe binary
+*.zip binary
