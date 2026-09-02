@@ -3,6 +3,7 @@ import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js"
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
+import { fileURLToPath } from "node:url";
 
 const client = new Client({ name: "smoke", version: "0.0.1" });
 const transport = new StdioClientTransport({
@@ -45,6 +46,13 @@ const trinketSearch = await call("dd_search", { query: "crow_wingfeather", type:
 if (!trinketSearch.includes("crow_wingfeather")) throw new Error("trinket 搜索失败");
 await call("dd_get_entity", { id: "crow_wingfeather", type: "trinket" });
 
+// DLC 盲区回归断言:CoM(features 外的 dlc/<id>_<name>/monsters 布局)与血色宫廷 boss(features 布局)
+const dlcSearch = await call("dd_search", { query: "miller" });
+if (!dlcSearch.includes("怪物")) throw new Error("dd_search 看不见 CoM 怪 miller(DLC 布局失效)");
+const baronEntity = await call("dd_get_entity", { id: "baron" });
+if (!baronEntity.includes("Baron")) throw new Error("baron 实体缺英文名(DLC xml 未加载)");
+if (!baronEntity.includes("男爵")) throw new Error("baron 实体缺中文名(DLC 双包对齐/zhByEn 回退失效)");
+
 const loc = await call("dd_localization", { mode: "text", query: "骸骨", lang: "schinese" });
 if (!loc.includes("骸骨贵族")) throw new Error("中文文本搜索失败");
 
@@ -62,6 +70,35 @@ fs.writeFileSync(path.join(tmpMod, "bogus.txt"), "bad");
 const validation = await call("dd_validate_mod", { mod_path: tmpMod });
 if (!validation.includes("未知顶层目录: bogus.txt")) throw new Error("mod 校验未发现非法路径");
 if (!validation.includes("新增文件 1 个")) throw new Error("mod 校验新增文件计数错误");
+
+// —— 图鉴导出等价性:与 bestiary 入库数据比对(入库数据存在时)——
+const bestiaryData = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../bestiary/public/data");
+if (fs.existsSync(path.join(bestiaryData, "index.json"))) {
+  const tmpOut = fs.mkdtempSync(path.join(os.tmpdir(), "dd-export-"));
+  const { exportBestiary } = await import("../src/export/bestiary.js");
+  exportBestiary(tmpOut);
+  const srcMon = path.join(tmpOut, "monsters");
+  const dstMon = path.join(bestiaryData, "monsters");
+  const newFiles = fs.readdirSync(srcMon).sort();
+  const oldFiles = fs.readdirSync(dstMon).sort();
+  if (newFiles.join(",") !== oldFiles.join(",")) throw new Error("导出怪物集合与入库不一致");
+  for (const f of newFiles) {
+    if (fs.readFileSync(path.join(srcMon, f), "utf8") !== fs.readFileSync(path.join(dstMon, f), "utf8")) {
+      throw new Error(`导出与入库逐字节不一致: monsters/${f}`);
+    }
+  }
+  // index.json:机器专属 game 字段已按决策移除;image 字段是消费端(bestiary 资产管线)装饰,
+  // 两者都不属于导出契约 —— 入库侧剥掉后应逐字节一致
+  const oldMeta = JSON.parse(fs.readFileSync(path.join(bestiaryData, "index.json"), "utf8")) as Record<string, unknown>;
+  delete oldMeta.game;
+  for (const m of oldMeta.monsters as Record<string, unknown>[]) delete m.image;
+  const newIndex = fs.readFileSync(path.join(tmpOut, "index.json"), "utf8");
+  if (JSON.stringify(oldMeta, null, 1) !== newIndex) throw new Error("导出 index.json 与入库不一致(除 game/image 消费端字段外)");
+  fs.rmSync(tmpOut, { recursive: true, force: true });
+  console.log(`\n[smoke] 图鉴导出等价 ✓(${newFiles.length} 个怪物 JSON 逐字节一致;index.json 除 game/image 消费端字段外一致)`);
+} else {
+  console.log("\n[smoke] [info] 未找到 bestiary/public/data,跳过导出等价性比对");
+}
 
 await client.close();
 console.log("\n[smoke] 全部通过 ✓");
