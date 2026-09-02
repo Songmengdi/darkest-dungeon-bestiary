@@ -1,18 +1,21 @@
 /**
- * 暗黑地牢怪物图鉴 —— 数据构建脚本
+ * 暗黑地牢怪物图鉴 —— 数据构建脚本(编排层)
  * 1) 解析全怪物数据(本体 + DLC)→ public/data/*.json
  * 2) 解析 dungeons/*.mash.darkest → 副本归属
  * 3) wiki 贴图接入:enemies.json + images/ → public/img/<id>.png(无匹配则无图)
+ * payload 形状的翻译逻辑在 lib/payload.ts(纯函数,可单测);
+ * .darkest/语言包/wiki 索引的解析在 lib/*。本文件只做:装配依赖 → 跑流程 → 写盘。
  */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { buildIndex, type MonsterDef, type TierData } from "../lib/dataIndex.ts";
+import { buildIndex, type MonsterDef } from "../lib/dataIndex.ts";
 import { parseDarkest } from "../lib/darkestParser.ts";
 import { Localization } from "../lib/localization.ts";
 import { ddHash } from "../lib/hash.ts";
 import { resolveGame } from "../lib/config.ts";
 import { loadWikiIndex, resolveImage } from "../lib/wikiImages.ts";
+import { asArray, prettyId, tierPayload, type Names, type NameLookup } from "../lib/payload.ts";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const PUBLIC = path.join(ROOT, "public");
@@ -33,21 +36,11 @@ const REGION_LABELS: Record<string, { zh: string; en: string }> = {
   darkestdungeon: { zh: "黑暗地牢", en: "Darkest Dungeon" },
   _shared: { zh: "通用", en: "Shared" },
 };
-const TIER_LABELS: Record<string, { zh: string; en: string }> = {
-  A: { zh: "学徒", en: "Apprentice" },
-  B: { zh: "资深", en: "Veteran" },
-  C: { zh: "冠军", en: "Champion" },
-};
 
-/* ---------------- 本地化 ---------------- */
-interface Names {
-  zh?: string;
-  en?: string;
-  ja?: string;
-}
+/* ---------------- 本地化(名称查找 adapter:注入给 payload 层)---------------- */
 let loc: Localization;
 
-function namesByKey(key: string): Names {
+const namesByKey: NameLookup = (key: string): Names => {
   const out: Names = {};
   for (const h of loc.byKey(key, ddHash).hits) {
     if (h.lang === "schinese" && !out.zh) out.zh = h.text;
@@ -60,41 +53,7 @@ function namesByKey(key: string): Names {
     if (z) out.zh = z;
   }
   return out;
-}
-
-function rankDigits(v: unknown): number[] {
-  return [...String(v ?? "")]
-    .map(Number)
-    .filter((n) => Number.isInteger(n) && n >= 1 && n <= 4)
-    .sort((a, b) => a - b);
-}
-
-function asArray(v: unknown): string[] {
-  if (v === undefined || v === null) return [];
-  if (Array.isArray(v)) return v.map(String);
-  return [String(v)];
-}
-
-function prettyId(id: string): string {
-  return id
-    .split("_")
-    .map((w) => (w ? w[0].toUpperCase() + w.slice(1) : w))
-    .join(" ");
-}
-
-function monsterDisplayName(def: MonsterDef, tier: string): Names {
-  const out: Names = {};
-  for (const h of loc.byKey(`str_monstername_${def.id}_${tier}`, ddHash).hits) {
-    if (h.lang === "schinese" && !out.zh) out.zh = h.text;
-    else if (h.lang === "english" && !out.en) out.en = h.text;
-    else if (h.lang === "japanese" && !out.ja) out.ja = h.text;
-  }
-  if (!out.zh && out.en) {
-    const z = loc.zhForEnglish(out.en);
-    if (z) out.zh = z;
-  }
-  return out;
-}
+};
 
 /* ---------------- 副本归属 ---------------- */
 function scanRegions(idx: ReturnType<typeof buildIndex>): Map<string, string[]> {
@@ -145,117 +104,6 @@ function regionRank(r: string): number {
   return i === -1 ? REGION_ORDER.length : i;
 }
 
-/* ---------------- 怪物数据 ---------------- */
-function skillPayload(s: Record<string, unknown>) {
-  const id = String(s["id"] ?? "");
-  const n = namesByKey(`str_monster_skill_${id}`);
-  // target 原始串的标记语义:纯数字=敌方多选一;~ 前缀=全体同时命中(AOE);
-  // @ 前缀=目标是怪物友方(增益/守护/治疗);` 为个别游戏数据的噪音字符,剔除
-  const rawTarget = String(s["target"] ?? "").replace(/`/g, "");
-  return {
-    id,
-    name: { zh: n.zh ?? n.en ?? id, en: n.en ?? id },
-    type: String(s["type"] ?? ""),
-    atk: s["atk"] !== undefined ? String(s["atk"]) : undefined,
-    dmg:
-      Array.isArray(s["dmg"]) && s["dmg"].length >= 2
-        ? `${String(s["dmg"][0])}-${String(s["dmg"][1])}`
-        : s["dmg"] !== undefined
-          ? String(s["dmg"])
-          : undefined,
-    crit: s["crit"] !== undefined ? String(s["crit"]) : undefined,
-    launch: rankDigits(s["launch"]),
-    target: rankDigits(rawTarget),
-    targetAoe: rawTarget.includes("~") || undefined,
-    targetAlly: rawTarget.includes("@") || undefined,
-    effects: asArray(s["effect"]),
-  };
-}
-
-function lootPayload(idx: ReturnType<typeof buildIndex>, code: string) {
-  const tables = idx.loot.filter((t) => t.id === code);
-  const seen = new Set<string>();
-  const out: { file: string; entries: Record<string, unknown>[] }[] = [];
-  for (const t of tables) {
-    const entries = (t.raw["entries"] as Record<string, unknown>[]) ?? [];
-    const key = t.file + ":" + JSON.stringify(entries);
-    if (seen.has(key)) continue;
-    seen.add(key);
-    out.push({
-      file: t.file,
-      entries: entries.map((e) => ({
-        type: String(e["type"] ?? ""),
-        chances: e["chances"],
-        data: e["data"] as Record<string, unknown>,
-      })),
-    });
-  }
-  return out;
-}
-
-function brainPayload(idx: ReturnType<typeof buildIndex>, brainId: string) {
-  const b = idx.brains.get(brainId);
-  if (!b) return undefined;
-  const raw = b.raw as Record<string, unknown>;
-  const skillDesires = ((raw["skill_selection_desires"] as Record<string, unknown>[]) ?? []).map((d) => {
-    const data = d["data"] as Record<string, unknown> | undefined;
-    return {
-      skill: String(data?.["combat_skill_id"] ?? ""),
-      chance: d["base_chance"],
-      type: String(d["type"] ?? ""),
-    };
-  });
-  const targetDesires = ((raw["target_selection_desires"] as Record<string, unknown>[]) ?? []).map((d) => {
-    const data = d["data"] as Record<string, unknown> | undefined;
-    return {
-      type: String(d["type"] ?? ""),
-      chance: d["base_chance"],
-      skill: data?.["specific_combat_skill_id"] ? String(data["specific_combat_skill_id"]) : undefined,
-    };
-  });
-  return { id: brainId, skillDesires, targetDesires };
-}
-
-function tierPayload(idx: ReturnType<typeof buildIndex>, def: MonsterDef, td: TierData) {
-  const statsRec = td.info.find((r) => r.type === "stats")?.params;
-  const etRec = td.info.find((r) => r.type === "enemy_type")?.params;
-  const typeId = etRec ? String(etRec["id"]) : undefined;
-  const typeNames = typeId ? namesByKey(`enemy_type_name_${typeId}`) : undefined;
-  const lootRec = td.info.find((r) => r.type === "loot")?.params;
-  const brainRec = td.info.find((r) => r.type === "monster_brain")?.params;
-  const deathRec = td.info.find((r) => r.type === "death_class")?.params;
-  const lifeRec = td.info.find((r) => r.type === "life_link")?.params;
-  const sizeRec = td.info.find((r) => r.type === "display")?.params;
-  return {
-    tier: td.tier,
-    label: TIER_LABELS[td.tier] ?? { zh: `档位 ${td.tier}`, en: `Tier ${td.tier}` },
-    displayName: monsterDisplayName(def, td.tier),
-    size: sizeRec?.["size"] !== undefined ? Number(sizeRec["size"]) : 1,
-    stats: statsRec
-      ? {
-          hp: statsRec["hp"] !== undefined ? String(statsRec["hp"]) : undefined,
-          def: statsRec["def"] !== undefined ? String(statsRec["def"]) : undefined,
-          prot: statsRec["prot"] !== undefined ? String(statsRec["prot"]) : undefined,
-          spd: statsRec["spd"] !== undefined ? String(statsRec["spd"]) : undefined,
-          crit: statsRec["crit"] !== undefined ? String(statsRec["crit"]) : undefined,
-          res: {
-            stun: statsRec["stun_resist"] !== undefined ? String(statsRec["stun_resist"]) : undefined,
-            poison: statsRec["poison_resist"] !== undefined ? String(statsRec["poison_resist"]) : undefined,
-            bleed: statsRec["bleed_resist"] !== undefined ? String(statsRec["bleed_resist"]) : undefined,
-            debuff: statsRec["debuff_resist"] !== undefined ? String(statsRec["debuff_resist"]) : undefined,
-            move: statsRec["move_resist"] !== undefined ? String(statsRec["move_resist"]) : undefined,
-          },
-        }
-      : undefined,
-    enemyType: typeId ? { id: typeId, zh: typeNames?.zh ?? typeId, en: typeNames?.en ?? typeId } : undefined,
-    skills: td.info.filter((r) => r.type === "skill").map((r) => skillPayload(r.params)),
-    loot: lootRec?.["code"] !== undefined ? lootPayload(idx, String(lootRec["code"])) : [],
-    brain: brainRec?.["id"] !== undefined ? brainPayload(idx, String(brainRec["id"])) : undefined,
-    deathClass: deathRec ? String(deathRec["monster_class_id"] ?? "") : undefined,
-    lifeLink: lifeRec ? String(lifeRec["base_class"] ?? "") : undefined,
-  };
-}
-
 /* ---------------- 主流程 ---------------- */
 const game = resolveGame();
 const idx = buildIndex(game.dataDir);
@@ -278,7 +126,7 @@ for (const def of idx.monsters.values()) {
   const full = {
     id: def.id,
     dir: def.dir,
-    tiers: def.tiers.map((td) => tierPayload(idx, def, td)),
+    tiers: def.tiers.map((td) => tierPayload(idx, def, td, namesByKey)),
   };
   fs.writeFileSync(path.join(DATA_DIR, "monsters", `${def.id}.json`), JSON.stringify(full, null, 1), "utf8");
 
@@ -327,8 +175,10 @@ console.log(`wiki 贴图: 别名表命中 ${imgOverride},名称匹配 ${imgByNam
 if (unusedWiki.length) console.log(`  未使用: ${unusedWiki.join(", ")}`);
 
 indexEntries.sort((a, b) => String(a["id"]).localeCompare(String(b["id"])));
+// 盘符大小写归一:注册表可能返回 d:\ 或 D:\,tracked 的 index.json 不该因此产生噪音 diff
+const gameLabel = game.gameRoot.replace(/^[a-zA-Z]:/, (m) => m[0].toUpperCase() + ":");
 const meta = {
-  game: game.gameRoot,
+  game: gameLabel,
   count: indexEntries.length,
   regions: [...REGION_ORDER.map((id) => ({ id, ...REGION_LABELS[id] })), { id: "none", zh: "其他", en: "Other" }],
   monsters: indexEntries,
