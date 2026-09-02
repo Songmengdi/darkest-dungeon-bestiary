@@ -4,6 +4,7 @@ import type { IndexFile, IndexMonster, MonsterDetail } from "./types";
 import { LANG, setLang, t } from "./i18n";
 import { loadIndex, loadMonster } from "./repo";
 import { monsterMatchesQuery, monsterMatchesTab, regionTabs } from "./filter";
+import { MODE, MODES, LIGHT, LIGHT_BANDS, lightTip, modeTip } from "./settings";
 import MonsterCard from "./components/MonsterCard.vue";
 import MonsterModal from "./components/MonsterModal.vue";
 import Lightbox from "./components/Lightbox.vue";
@@ -105,9 +106,31 @@ onUnmounted(() => window.removeEventListener("hashchange", onHash));
         :placeholder="t('搜索怪物(中文名 / 英文名 / ID / 类型)…', 'search…')"
         autocomplete="off"
       >
-      <span class="proto-lang">
-        <button :class="{ on: LANG === 'zh' }" @click="setLang('zh')">中</button>
-        <button :class="{ on: LANG === 'en' }" @click="setLang('en')">EN</button>
+      <span class="bz-set">
+        <span class="set-lbl">{{ t("游戏难度", "Mode") }}</span>
+        <span class="proto-lang">
+          <button
+            v-for="m in MODES"
+            :key="m.id"
+            :class="{ on: MODE === m.id }"
+            :title="modeTip(m)"
+            @click="MODE = m.id"
+          >{{ LANG === "zh" ? m.zh : m.en }}</button>
+        </span>
+        <span class="set-lbl">{{ t("亮度", "Light") }}</span>
+        <span class="proto-lang">
+          <button
+            v-for="b in LIGHT_BANDS"
+            :key="b.stop"
+            :class="{ on: LIGHT === b.stop }"
+            :title="lightTip(b, MODE)"
+            @click="LIGHT = b.stop"
+          >{{ LANG === "zh" ? b.zh : b.en }}</button>
+        </span>
+        <span class="proto-lang">
+          <button :class="{ on: LANG === 'zh' }" @click="setLang('zh')">中</button>
+          <button :class="{ on: LANG === 'en' }" @click="setLang('en')">EN</button>
+        </span>
       </span>
       <span class="bz-count">{{ t("共", "Total") }} {{ index.count }} · {{ t("显示", "shown") }} {{ filtered.length }}</span>
     </header>

@@ -73,7 +73,9 @@ button { font-family: var(--font-body); }
   white-space: nowrap;
   text-shadow: 0 2px 8px #000;
 }
-.bz-top .proto-lang { margin-left: auto; }
+/* ---------- 顶栏全局设定(难度 / 亮度 / 语言) ---------- */
+.bz-top .bz-set { margin-left: auto; display: inline-flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+.set-lbl { color: var(--muted); font-size: 11px; letter-spacing: 1px; }
 .bz-count { color: var(--muted); font-size: 12px; white-space: nowrap; }
 .bz-search {
   width: 240px;

@@ -10,6 +10,7 @@ import { regionBadges } from "../filter";
 import { openLightbox } from "../lightbox";
 import { fxIconSrc, fxIconTitle } from "../fxicons";
 import { interpretEffectRef } from "../effect";
+import { MODE, addPct, lightBand, lightModOf, lightTip, modeDef, modeTip, pctMult } from "../settings";
 import RankDots from "./RankDots.vue";
 
 const props = defineProps<{
@@ -37,19 +38,37 @@ const pct = (v: unknown): string => {
 const statRows = computed(() => {
   const st = tier.value?.stats;
   if (!st) return [];
+  const md = modeDef.value;
   return [
-    { k: t("生命", "HP"), v: fmt(st.hp) },
-    { k: t("速度", "SPD"), v: fmt(st.spd) },
-    { k: t("闪避", "DODGE"), v: pct(st.def) },
-    { k: t("防御", "PROT"), v: pct(st.prot) },
+    { k: t("生命", "HP"), v: fmt(st.hp), chip: md.hpMult > 1 ? pctMult((md.hpMult - 1) * 100) : "", tip: modeTip(md) },
+    { k: t("速度", "SPD"), v: fmt(st.spd), chip: "", tip: "" },
+    { k: t("闪避", "DODGE"), v: pct(st.def), chip: "", tip: "" },
+    { k: t("防御", "PROT"), v: pct(st.prot), chip: "", tip: "" },
   ];
 });
+
+const band = lightBand;
+const mod = computed(() => lightModOf(lightBand.value.stop, MODE.value));
+const critExtra = computed(() => mod.value.mCrit + modeDef.value.critMod);
+const dmgChip = computed(() => (mod.value.mDmg ? pctMult(mod.value.mDmg) : ""));
+const critChip = computed(() => (critExtra.value ? `+${critExtra.value}` : ""));
+const critTip = computed(() =>
+  modeDef.value.critMod
+    ? t(
+        `${modeDef.value.zh}模式暴击 +${modeDef.value.critMod} · 亮度暴击 +${mod.value.mCrit}`,
+        `${modeDef.value.en} mode +${modeDef.value.critMod} CRIT · light +${mod.value.mCrit} CRIT`,
+      )
+    : lightTip(band.value, MODE.value),
+);
 
 const skills = computed(() => (tier.value?.skills ?? []).map((s) => ({
   ...s,
   ty: skillTypeZh(s.type),
   fx: s.effects.map((f) => interpretEffectRef(f)),
   ai: aiWeightOf(tier.value, s.id),
+  /* 亮度/模式修正:命中/暴击加百分点,伤害乘算(伤害本体展示原始骰,乘数另示) */
+  atkDisp: addPct(s.atk, mod.value.mAcc),
+  critDisp: addPct(s.crit, critExtra.value),
 })));
 
 onMounted(() => window.addEventListener("keydown", onKey));
@@ -79,6 +98,9 @@ function onKey(e: KeyboardEvent): void {
             <span class="pm-no">{{ t("图鉴", "Plate") }} No.{{ no }}</span>
             <span v-for="r in regions" :key="r" class="pm-region">{{ r }}</span>
             <span v-if="!regions.length" class="pm-region dim">{{ t("其他 / 未收录(召唤物 · 部件)", "other") }}</span>
+            <span class="pm-region" :class="{ dim: !mod.mAcc && !mod.mDmg && !mod.mCrit && !modeDef.critMod }" :title="lightTip(band, MODE)">
+              {{ t("亮度", "Light") }} · {{ t(band.zh, band.en) }}
+            </span>
           </div>
           <h2 class="pm-name">{{ t(names.zh, names.en) }}</h2>
           <div class="pm-taxo">
@@ -108,7 +130,7 @@ function onKey(e: KeyboardEvent): void {
             <div v-for="r in statRows" :key="r.k" class="pm-statrow">
               <span class="k">{{ r.k }}</span>
               <span class="dots"></span>
-              <span class="v">{{ r.v }}</span>
+              <span class="v">{{ r.v }}<i v-if="r.chip" class="lmod" :title="r.tip"> {{ r.chip }}</i></span>
             </div>
             <div class="pm-colhead" style="margin-top: 18px">{{ t("抗性", "Resistances") }}</div>
             <div v-for="r in RES_ITEMS" :key="r.key" class="pm-statrow">
@@ -134,22 +156,22 @@ function onKey(e: KeyboardEvent): void {
               </div>
               <div class="meta">
                 <span v-if="s.ty" class="ty">{{ s.ty }}</span>
-                <span v-if="s.atk" class="m"><i>{{ t("命中", "ACC") }}</i><b>{{ s.atk }}</b></span>
-                <span v-if="s.dmg && s.dmg !== '—'" class="m"><i>{{ t("伤害", "DMG") }}</i><b>{{ s.dmg }}</b></span>
-                <span v-if="s.crit && s.crit !== '0%'" class="m"><i>{{ t("暴击", "CRIT") }}</i><b>{{ s.crit }}</b></span>
+                <span v-if="s.atk" class="m"><i>{{ t("命中", "ACC") }}</i><b>{{ s.atkDisp }}</b><i v-if="mod.mAcc" class="lmod" :title="lightTip(band, MODE)">+{{ mod.mAcc }}</i></span>
+                <span v-if="s.dmg && s.dmg !== '—'" class="m"><i>{{ t("伤害", "DMG") }}</i><b>{{ s.dmg }}</b><i v-if="dmgChip" class="lmod" :title="lightTip(band, MODE)">{{ dmgChip }}</i></span>
+                <span v-if="s.crit && s.critDisp !== '0%'" class="m"><i>{{ t("暴击", "CRIT") }}</i><b>{{ s.critDisp }}</b><i v-if="critChip" class="lmod" :title="critTip">{{ critChip }}</i></span>
                 <span v-for="(f, fi) in s.fx" :key="fi" class="fx">
                   <img v-for="ic in f.icons" :key="ic" class="fxicon" :src="fxIconSrc(ic)" :title="fxIconTitle(ic)" alt="">
                   {{ f.text }}
                 </span>
               </div>
               <div v-if="s.launch.length || s.target.length" class="dotrow">
-                <span v-if="s.launch.length" class="grp">
-                  <i class="lbl">{{ t("站位", "Pos") }}</i>
-                  <RankDots :digits="s.launch" kind="launch" />
-                </span>
                 <span v-if="s.target.length" class="grp">
                   <i class="lbl">{{ s.targetAlly ? t("友方", "Allies") : t("打击", "Hits") }}</i>
                   <RankDots :digits="s.target" kind="target" :aoe="s.targetAoe" :ally="s.targetAlly" />
+                </span>
+                <span v-if="s.launch.length" class="grp">
+                  <i class="lbl">{{ t("站位", "Pos") }}</i>
+                  <RankDots :digits="s.launch" kind="launch" />
                 </span>
               </div>
             </div>
@@ -240,6 +262,7 @@ function onKey(e: KeyboardEvent): void {
 .pm-skill .m { display: inline-flex; align-items: baseline; gap: 4px; }
 .pm-skill .m i { font-style: normal; font-size: 11px; color: var(--muted); }
 .pm-skill .m b { color: var(--ink); font-weight: 700; font-size: 12px; }
+.pm-card .lmod { font-style: normal; font-size: 10px; color: var(--gold); cursor: help; }
 .pm-skill .fx {
   display: inline-flex; align-items: center; gap: 4px;
   font-size: 11px; color: var(--ink);

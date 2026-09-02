@@ -1,4 +1,4 @@
-<!-- 8 点式站位/打击面指示器:站位暖白、打击红(友方蓝)、AoE 连线;参考游戏内点阵设计 -->
+<!-- 8 点式站位/打击面指示器:站位暖白、打击红(友方蓝)、AoE 连线;打击(敌方)按战场朝向镜像;参考游戏内点阵设计 -->
 <script setup lang="ts">
 import { computed } from "vue";
 import { t } from "../i18n";
@@ -15,8 +15,10 @@ const props = defineProps<{
 const DOT = 9;
 const GAP = 7;
 
-const cells = computed(() => [1, 2, 3, 4].map((i) => ({ i, on: props.digits.includes(i) })));
-const onIdx = computed(() => [1, 2, 3, 4].map((_, n) => (props.digits.includes(n + 1) ? n : -1)).filter((n) => n >= 0));
+// 怪物占战场右侧:站位 1→4 从左到右;打击命中左侧英雄,按英雄半场朝向镜像(1 号位贴近中场,两边大中间小)
+const colRank = (col: number) => (props.kind === "target" && !props.ally ? 4 - col : col + 1);
+const cells = computed(() => [0, 1, 2, 3].map((col) => ({ i: col, on: props.digits.includes(colRank(col)) })));
+const onIdx = computed(() => [0, 1, 2, 3].map((col) => (props.digits.includes(colRank(col)) ? col : -1)).filter((n) => n >= 0));
 const link = computed(() => !!props.aoe && onIdx.value.length > 1 && props.kind === "target");
 
 const lineStyle = computed(() => {
