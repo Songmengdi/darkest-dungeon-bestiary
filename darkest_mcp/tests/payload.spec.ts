@@ -2,12 +2,13 @@
  * 前端 bestiary/src/types.ts 是这些形状的手工镜像 —— 这里红了,先改 payload,再对齐 types。 */
 import { describe, expect, it } from "vitest";
 import {
-  asArray, brainPayload, lootPayload, prettyId, rankDigits, skillPayload, tierPayload, type NameLookup,
+  asArray, brainPayload, effectPayload, lootPayload, prettyId, rankDigits, skillPayload, tierPayload, type NameLookup,
 } from "../src/export/payload.js";
 import type { TierData } from "../src/data/dataIndex.js";
 
 const NO_NAMES: NameLookup = () => ({});
 const rec = (type: string, params: Record<string, string | string[]>) => ({ type, params, line: 1 });
+const noEffects = { effects: new Map() };
 
 describe("rankDigits —— 站位串 → 有序数字", () => {
   it("提取 1..4 之外丢弃并升序", () => {
@@ -21,7 +22,7 @@ describe("rankDigits —— 站位串 → 有序数字", () => {
 
 describe("skillPayload —— target 串语义(导出期判定,UI 只消费布尔)", () => {
   it("纯数字 = 敌方多选一:无 aoe/ally 标记(JSON.stringify 时键整个省略)", () => {
-    const s = skillPayload({ id: "s1", target: "1234" }, NO_NAMES);
+    const s = skillPayload({ id: "s1", target: "1234" }, NO_NAMES, noEffects);
     expect(s.target).toEqual([1, 2, 3, 4]);
     expect(s.targetAoe).toBeUndefined();
     expect(s.targetAlly).toBeUndefined();
@@ -29,50 +30,68 @@ describe("skillPayload —— target 串语义(导出期判定,UI 只消费布�
   });
 
   it("~ 前缀 = 范围打击(全体同时命中)", () => {
-    const s = skillPayload({ id: "s1", target: "~1234" }, NO_NAMES);
+    const s = skillPayload({ id: "s1", target: "~1234" }, NO_NAMES, noEffects);
     expect(s.targetAoe).toBe(true);
     expect(s.targetAlly).toBeUndefined();
   });
 
   it("@ 前缀 = 目标是怪物友方,数字仍升序", () => {
-    const s = skillPayload({ id: "s1", target: "@4321" }, NO_NAMES);
+    const s = skillPayload({ id: "s1", target: "@4321" }, NO_NAMES, noEffects);
     expect(s.targetAlly).toBe(true);
     expect(s.target).toEqual([1, 2, 3, 4]);
   });
 
   it("~@ 兼有 = 范围打击其友方(如侍妾午夜小步舞)", () => {
-    const s = skillPayload({ id: "s1", target: "~@4321" }, NO_NAMES);
+    const s = skillPayload({ id: "s1", target: "~@4321" }, NO_NAMES, noEffects);
     expect(s.targetAoe).toBe(true);
     expect(s.targetAlly).toBe(true);
   });
 
   it("反引号是游戏数据噪音,剔除后不影响站位", () => {
-    expect(skillPayload({ id: "s1", target: "`1234" }, NO_NAMES).target).toEqual([1, 2, 3, 4]);
+    expect(skillPayload({ id: "s1", target: "`1234" }, NO_NAMES, noEffects).target).toEqual([1, 2, 3, 4]);
   });
 
   it("名称回退链 zh → en → id;伤害区间格式化;effect 单串包装成数组", () => {
     const lookup: NameLookup = (key) => (key === "str_monster_skill_sk" ? { en: "Only EN" } : {});
-    const s = skillPayload({ id: "sk", launch: "12", dmg: ["3", "8"], atk: "85", effect: "Bleed 1" }, lookup);
+    const s = skillPayload({ id: "sk", launch: "12", dmg: ["3", "8"], atk: "85", effect: "Bleed 1" }, lookup, noEffects);
     expect(s.name).toEqual({ zh: "Only EN", en: "Only EN" });
-    const noName = skillPayload({ id: "sk2" }, NO_NAMES);
+    const noName = skillPayload({ id: "sk2" }, NO_NAMES, noEffects);
     expect(noName.name).toEqual({ zh: "sk2", en: "sk2" });
     expect(s.dmg).toBe("3-8");
-    expect(s.effects).toEqual(["Bleed 1"]);
-    expect(skillPayload({ id: "x", dmg: "5" }, NO_NAMES).dmg).toBe("5");
-    expect(skillPayload({ id: "x", effect: ["a", "b"] }, NO_NAMES).effects).toEqual(["a", "b"]);
+    expect(s.effects).toEqual([{ raw: "Bleed 1" }]);
+    expect(skillPayload({ id: "x", dmg: "5" }, NO_NAMES, noEffects).dmg).toBe("5");
+    expect(skillPayload({ id: "x", effect: ["a", "b"] }, NO_NAMES, noEffects).effects).toEqual([{ raw: "a" }, { raw: "b" }]);
   });
 
   it("JSON 形状契约:键序与省略规则稳定(前端 types.ts 的镜像来源)", () => {
-    const json = JSON.stringify(skillPayload({ id: "sk", type: "melee", target: "~12", effect: "Stun 2" }, NO_NAMES));
+    const json = JSON.stringify(skillPayload({ id: "sk", type: "melee", target: "~12", effect: "Stun 2" }, NO_NAMES, noEffects));
     expect(json).toBe(
-      '{"id":"sk","name":{"zh":"sk","en":"sk"},"type":"melee","launch":[],"target":[1,2],"targetAoe":true,"effects":["Stun 2"]}',
+      '{"id":"sk","name":{"zh":"sk","en":"sk"},"type":"melee","launch":[],"target":[1,2],"targetAoe":true,"effects":[{"raw":"Stun 2"}]}',
     );
+  });
+
+  it("effectPayload:命中效果表时提取真实语义(压力档位的真值、位移格数、属性增减)", () => {
+    const idx = {
+      effects: new Map([
+        ["Stress 2", { id: "Stress 2", file: "effects/base.effects.darkest", records: [rec("effect", { name: "Stress 2", chance: "100%", stress: "15" })] }],
+        ["Pull 2A", { id: "Pull 2A", file: "effects/base.effects.darkest", records: [rec("effect", { name: "Pull 2A", pull: "2", chance: "100%" })] }],
+        ["Crow Distract 3", { id: "Crow Distract 3", file: "e", records: [rec("effect", { name: "Crow Distract 3", duration: "3", attack_rating_add: "-15%" })] }],
+        ["Adder Blight 1", { id: "Adder Blight 1", file: "e", records: [rec("effect", { name: "Adder Blight 1", dotPoison: "3", duration: "4" })] }],
+        ["Skeleton Guard 1", { id: "Skeleton Guard 1", file: "e", records: [rec("effect", { name: "Skeleton Guard 1", guard: "1", duration: "3" })] }],
+      ]),
+    };
+    expect(effectPayload("Stress 2", idx)).toMatchObject({ stress: "15", chance: "100%" });
+    expect(effectPayload("Pull 2A", idx)).toMatchObject({ move: { kind: "pull", amount: "2" } });
+    expect(effectPayload("Crow Distract 3", idx)).toMatchObject({ duration: 3, stats: [{ key: "attack_rating_add", value: "-15%" }] });
+    expect(effectPayload("Adder Blight 1", idx)).toMatchObject({ dot: { kind: "blight", amount: "3", duration: 4 } });
+    expect(effectPayload("Skeleton Guard 1", idx)).toMatchObject({ traits: ["guard"], duration: 3 });
+    expect(effectPayload("未定义效果", idx)).toEqual({ raw: "未定义效果" });
   });
 });
 
 describe("tierPayload —— 档位形状", () => {
   const def = { id: "skeleton", dir: "monsters/skeleton", tiers: [] };
-  const emptyIdx = { loot: [], brains: new Map() };
+  const emptyIdx = { loot: [], brains: new Map(), effects: new Map() };
 
   it("stats 记录映射到 res 五抗性;TIER_LABELS 提供中英档位名", () => {
     const td: TierData = {
@@ -101,7 +120,7 @@ describe("tierPayload —— 档位形状", () => {
   it("技能/掉落/大脑分别挂载", () => {
     const idx = {
       loot: [{ id: "LT1", file: "loot/a.json", raw: { entries: [{ type: "item", data: { id: "gold", amount: "2" } }] } }],
-      brains: new Map([["brain1", { id: "brain1", raw: { skill_selection_desires: [{ type: "preferred_skill", base_chance: "1", data: { combat_skill_id: "sk" } }] } }]]),
+      brains: new Map([["brain1", { id: "brain1", raw: { skill_selection_desires: [{ type: "preferred_skill", data: { combat_skill_id: "sk", base_chance: "1" } }] } }]]),
     };
     const td: TierData = {
       tier: "B",

@@ -204,17 +204,18 @@ export function buildIndex(dataDir: string): DataIndex {
           idx.upgradeTrees.push({ id: t["id"], file: rel, raw: t });
         }
       }
-    } else if (rel.startsWith("effects/") && rel.endsWith(".effects.darkest")) {
+    } else if (rel.endsWith(".effects.darkest")) {
+      // 效果定义不止 effects/ 根目录:DLC 在 dlc/*/effects/ 与 dlc/*/features/*/effects/,
+      // 且游戏用 .name 命名(如 "Push 2A"),.id 仅少数 mode 文件使用
       for (const r of readRecords(dataDir, rel)) {
-        const id = r.params["id"];
-        if (typeof id === "string") {
-          let def = idx.effects.get(id);
-          if (!def) {
-            def = { id, file: rel, records: [] };
-            idx.effects.set(id, def);
-          }
-          def.records.push(r);
+        const id = String(r.params["name"] ?? r.params["id"] ?? "");
+        if (!id) continue;
+        let def = idx.effects.get(id);
+        if (!def) {
+          def = { id, file: rel, records: [] };
+          idx.effects.set(id, def);
         }
+        def.records.push(r);
       }
     }
   }

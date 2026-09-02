@@ -47,7 +47,121 @@ export function monsterDisplayName(def: MonsterDef, tier: string, lookupName: Na
 
 /* target 原始串的标记语义:纯数字=敌方多选一;~ 前缀=全体同时命中(AOE);
  * @ 前缀=目标是怪物友方(增益/守护/治疗);` 为个别游戏数据的噪音字符,剔除 */
-export function skillPayload(s: Record<string, unknown>, lookupName: NameLookup) {
+export interface SkillPayload {
+  id: string;
+  name: Names;
+  type: string;
+  atk?: string;
+  dmg?: string;
+  crit?: string;
+  launch: number[];
+  target: number[];
+  targetAoe?: boolean;
+  targetAlly?: boolean;
+  effects: EffectPayload[];
+}
+
+/** 技能效果的结构化视图:raw 未命中效果表时仅含 raw(UI 回退到原始串渲染)。
+ *  语义字段均取自游戏效果定义(base/DLC .effects.darkest)的真实参数。 */
+export interface EffectPayload {
+  raw: string;
+  chance?: string;
+  /** 持续回合数(duration) */
+  duration?: number;
+  /** 一次性压力值(stress) */
+  stress?: string;
+  /** 持续伤害:dotBleed/dotPoison/dotStress,amount 为每回合值 */
+  dot?: { kind: "bleed" | "blight" | "stress"; amount: string; duration?: number };
+  move?: { kind: "push" | "pull" | "shuffle"; amount?: string };
+  stun?: string;
+  heal?: string;
+  healStress?: string;
+  torch?: string;
+  dmgMultiply?: string;
+  /** 战斗属性增减:attack/defense/speed/protection/crit(值含符号与 % 号) */
+  stats?: Array<{ key: string; value: string }>;
+  traits?: Array<
+    "summon" | "guard" | "riposte" | "mark" | "disease" | "kill" | "capture" | "control" | "transform" |
+    "cleanse" | "clear_guard" | "stealth" | "unstealth" | "steal_buff" | "instant"
+  >;
+}
+
+const STAT_ADD_KEYS = [
+  "attack_rating_add",
+  "defense_rating_add",
+  "speed_rating_add",
+  "protection_rating_add",
+  "crit_chance_add",
+] as const;
+
+function firstParam(p: Record<string, string | string[]>, key: string): string | undefined {
+  const v = p[key];
+  const s = Array.isArray(v) ? v[0] : v;
+  return s === undefined || s === "" ? undefined : String(s);
+}
+
+export function effectPayload(raw: string, idx: Pick<DataIndex, "effects">): EffectPayload | undefined {
+  const out: EffectPayload = { raw };
+  const rec = idx.effects.get(raw)?.records[0];
+  if (!rec) return out;
+  const p = rec.params;
+  const dur = firstParam(p, "duration");
+  const duration = dur !== undefined ? Number(dur) || undefined : undefined;
+  out.chance = firstParam(p, "chance");
+  if (duration !== undefined) out.duration = duration;
+  const stress = firstParam(p, "stress");
+  if (stress !== undefined) out.stress = stress;
+  const dot =
+    firstParam(p, "dotBleed") !== undefined ? { kind: "bleed" as const, amount: firstParam(p, "dotBleed")! }
+      : firstParam(p, "dotPoison") !== undefined ? { kind: "blight" as const, amount: firstParam(p, "dotPoison")! }
+        : firstParam(p, "dotStress") !== undefined ? { kind: "stress" as const, amount: firstParam(p, "dotStress")! }
+          : undefined;
+  if (dot) out.dot = { ...dot, duration };
+  const push = firstParam(p, "push");
+  const pull = firstParam(p, "pull");
+  if (push !== undefined) out.move = { kind: "push", amount: push };
+  else if (pull !== undefined) out.move = { kind: "pull", amount: pull };
+  else if (p["shuffleparty"] !== undefined) out.move = { kind: "shuffle" };
+  const stun = firstParam(p, "stun");
+  if (stun !== undefined) out.stun = stun;
+  const heal = firstParam(p, "heal");
+  if (heal !== undefined) out.heal = heal;
+  const healstress = firstParam(p, "healstress");
+  if (healstress !== undefined) out.healStress = healstress;
+  const torch = firstParam(p, "torch_decrease");
+  if (torch !== undefined) out.torch = torch;
+  const dlo = firstParam(p, "damage_low_multiply");
+  const dhi = firstParam(p, "damage_high_multiply");
+  if (dlo !== undefined || dhi !== undefined) out.dmgMultiply = dlo === dhi ? dlo : `${dlo ?? "?"}~${dhi ?? "?"}`;
+  const stats = STAT_ADD_KEYS.filter((k) => p[k] !== undefined)
+    .map((k) => ({ key: k, value: firstParam(p, k)! }));
+  if (stats.length) out.stats = stats;
+  const traits: EffectPayload["traits"] = [];
+  if (p["summon_monsters"] !== undefined) traits.push("summon");
+  if (p["guard"] !== undefined) traits.push("guard");
+  if (p["riposte"] !== undefined) traits.push("riposte");
+  if (firstParam(p, "keyStatus") === "tagged" || p["tag"] !== undefined) traits.push("mark");
+  if (p["disease"] !== undefined) traits.push("disease");
+  if (p["kill"] !== undefined) traits.push("kill");
+  if (p["capture"] !== undefined) traits.push("capture");
+  if (p["control"] !== undefined) traits.push("control");
+  if (p["set_monster_class_id"] !== undefined || p["set_mode"] !== undefined) traits.push("transform");
+  if (p["cure"] !== undefined) traits.push("cleanse");
+  if (p["clearguarding"] !== undefined || p["clearguarded"] !== undefined) traits.push("clear_guard");
+  if (p["stealth"] !== undefined) traits.push("stealth");
+  if (p["destealth"] !== undefined) traits.push("unstealth");
+  if (p["steal_buff_stat_type"] !== undefined) traits.push("steal_buff");
+  if (p["skill_instant"] !== undefined) traits.push("instant");
+  if (traits.length) out.traits = traits;
+  // 纯台词效果(bark,无任何 gameplay 语义)不是玩家可读的战斗信息,不导出
+  const noSemantics =
+    !out.dot && !out.move && !out.stun && !out.stress && !out.heal && !out.healStress
+    && !out.torch && !out.dmgMultiply && !out.stats && !out.traits;
+  if (noSemantics && p["bark"] !== undefined) return undefined;
+  return out;
+}
+
+export function skillPayload(s: Record<string, unknown>, lookupName: NameLookup, idx: Pick<DataIndex, "effects">): SkillPayload {
   const id = String(s["id"] ?? "");
   const n = lookupName(`str_monster_skill_${id}`);
   const rawTarget = String(s["target"] ?? "").replace(/`/g, "");
@@ -67,7 +181,9 @@ export function skillPayload(s: Record<string, unknown>, lookupName: NameLookup)
     target: rankDigits(rawTarget),
     targetAoe: rawTarget.includes("~") || undefined,
     targetAlly: rawTarget.includes("@") || undefined,
-    effects: asArray(s["effect"]),
+    effects: asArray(s["effect"])
+      .map((e) => effectPayload(e, idx))
+      .filter((e): e is EffectPayload => e !== undefined),
   };
 }
 
@@ -100,7 +216,7 @@ export function brainPayload(idx: Pick<DataIndex, "brains">, brainId: string) {
     const data = d["data"] as Record<string, unknown> | undefined;
     return {
       skill: String(data?.["combat_skill_id"] ?? ""),
-      chance: d["base_chance"],
+      chance: data?.["base_chance"],
       type: String(d["type"] ?? ""),
     };
   });
@@ -108,7 +224,7 @@ export function brainPayload(idx: Pick<DataIndex, "brains">, brainId: string) {
     const data = d["data"] as Record<string, unknown> | undefined;
     return {
       type: String(d["type"] ?? ""),
-      chance: d["base_chance"],
+      chance: data?.["base_chance"],
       skill: data?.["specific_combat_skill_id"] ? String(data["specific_combat_skill_id"]) : undefined,
     };
   });
@@ -147,7 +263,7 @@ export function tierPayload(idx: Pick<DataIndex, "loot" | "brains">, def: Monste
         }
       : undefined,
     enemyType: typeId ? { id: typeId, zh: typeNames?.zh ?? typeId, en: typeNames?.en ?? typeId } : undefined,
-    skills: td.info.filter((r) => r.type === "skill").map((r) => skillPayload(r.params, lookupName)),
+    skills: td.info.filter((r) => r.type === "skill").map((r) => skillPayload(r.params, lookupName, idx)),
     loot: lootRec?.["code"] !== undefined ? lootPayload(idx, String(lootRec["code"])) : [],
     brain: brainRec?.["id"] !== undefined ? brainPayload(idx, String(brainRec["id"])) : undefined,
     deathClass: deathRec ? String(deathRec["monster_class_id"] ?? "") : undefined,
