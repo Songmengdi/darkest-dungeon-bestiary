@@ -1,4 +1,5 @@
-/* 图鉴数据类型 —— 对齐 scripts/build.ts 导出的 JSON 结构 */
+/* 图鉴数据类型 —— 消费端镜像:形状由 darkest_mcp src/export/payload.ts(产出方)与其契约测试锁定,
+ * image 字段由本仓库 scripts/assets.ts(资产管线)追加。改镜像必对齐产出方。 */
 
 export interface Loc {
   zh?: string;
@@ -29,7 +30,6 @@ export interface IndexMonster {
 }
 
 export interface IndexFile {
-  game?: string;
   count: number;
   regions: IndexRegion[];
   monsters: IndexMonster[];

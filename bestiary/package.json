@@ -1,11 +1,11 @@
 {
   "name": "dd1-bestiary",
   "version": "1.0.0",
-  "description": "暗黑地牢1 怪物图鉴 —— 独立 Web 应用,数据直接解析自本机游戏文件",
+  "description": "暗黑地牢1 怪物图鉴 —— 纯 JSON 消费的独立 Web 应用;数据由 darkest_mcp npm run export 产出",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.ts",
+    "build": "node scripts/assets.ts",
     "serve": "node scripts/serve.ts",
     "start": "npm run build && npm run serve",
     "dev": "vite",
@@ -20,7 +20,6 @@
   "devDependencies": {
     "@types/node": "^26.4.0",
     "@vitejs/plugin-vue": "^6.0.8",
-    "tsx": "^4.23.13",
     "typescript": "^7.0.2",
     "vite": "^7.3.6",
     "vitest": "^4.1.11"
