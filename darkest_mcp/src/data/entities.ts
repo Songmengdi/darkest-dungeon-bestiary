@@ -26,7 +26,15 @@ function namesFor(baseKey: string, loc: Localization): EntityNames[] {
 }
 
 export function monsterNames(id: string, tier: string, loc: Localization): EntityNames[] {
-  return namesFor(`str_monstername_${id}_${tier}`, loc);
+  const out = namesFor(`str_monstername_${id}_${tier}`, loc);
+  // DLC 怪名不在本体语言包:英文来自明文 XML;中文用 DLC 双包对齐的英→中映射回退
+  const hasZh = out.some((n) => n.lang === "schinese");
+  const en = out.find((n) => n.lang === "english");
+  if (!hasZh && en) {
+    const z = loc.zhForEnglish(en.text);
+    if (z) out.push({ lang: "schinese", text: z, source: "loc2" });
+  }
+  return out;
 }
 
 export function heroNames(id: string, loc: Localization): EntityNames[] {

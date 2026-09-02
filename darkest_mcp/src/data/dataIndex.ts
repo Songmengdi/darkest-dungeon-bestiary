@@ -135,16 +135,22 @@ export function buildIndex(dataDir: string): DataIndex {
   };
 
   for (const rel of files) {
-    if (!rel.startsWith("monsters/")) continue;
+    // 兼容本体 monsters/<id>/... 与 DLC 的两种布局:
+    //   dlc/<appid>_<name>/monsters/<id>/...(CoM、破盾者)
+    //   dlc/<appid>_<name>/features/<feature>/monsters/<id>/...(血色宫廷)
     const parts = rel.split("/");
-    if (parts.length < 3) continue;
-    const id = parts[1];
-    const base = parts[parts.length - 1].replace(/\.(info|art)\.darkest$/, "");
-    const tier = tierOf(base) ?? (parts.length >= 4 ? tierOf(parts[2]) : null);
+    const mi = parts.lastIndexOf("monsters");
+    if (mi === -1 || mi + 2 > parts.length - 1) continue;
+    const id = parts[mi + 1];
+    const fname = parts[parts.length - 1];
+    if (!/\.(info|art)\.darkest$/.test(fname)) continue;
+    const base = fname.replace(/\.(info|art)\.darkest$/, "");
+    // 防误扫其他 modules 下的 monsters 目录:档位字母必须能从文件名或所在子目录推出
+    const tier = tierOf(base) ?? (mi + 2 <= parts.length - 2 ? tierOf(parts[mi + 2]) : null);
     if (!tier) continue;
     let def = idx.monsters.get(id);
     if (!def) {
-      def = { id, dir: `monsters/${id}`, tiers: [] };
+      def = { id, dir: parts.slice(0, mi + 2).join("/"), tiers: [] };
       idx.monsters.set(id, def);
     }
     let td = def.tiers.find((t) => t.tier === tier);
