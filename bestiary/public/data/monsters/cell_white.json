@@ -57,7 +57,17 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Cell Bolster"
+      {
+       "raw": "Cell Bolster",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "15%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -107,8 +117,14 @@
       4
      ],
      "effects": [
-      "Cell Shuffle",
-      "Cell Weaken"
+      {
+       "raw": "Cell Shuffle",
+       "chance": "100%"
+      },
+      {
+       "raw": "Cell Weaken",
+       "chance": "150%"
+      }
      ]
     }
    ],
@@ -118,31 +134,38 @@
     "skillDesires": [
      {
       "skill": "cell_reconstruct",
+      "chance": 25,
       "type": "specific_skill"
      },
      {
       "skill": "cell_shuffle",
+      "chance": 25,
       "type": "specific_skill"
      },
      {
       "skill": "cell_teleport",
+      "chance": 4,
       "type": "specific_skill"
      },
      {
       "skill": "",
+      "chance": 25,
       "type": "heal_skill"
      },
      {
       "skill": "cell_teleport",
+      "chance": -100000000,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "health_target",
+      "chance": 10,
       "skill": "cell_reconstruct"
      }
     ]

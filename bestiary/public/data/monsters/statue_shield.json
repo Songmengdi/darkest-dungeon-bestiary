@@ -51,7 +51,13 @@
      ],
      "target": [],
      "effects": [
-      "switch_mode_offscreen_self"
+      {
+       "raw": "switch_mode_offscreen_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -75,9 +81,26 @@
       2
      ],
      "effects": [
-      "switch_mode_onscreen_self",
-      "Stun 5",
-      "Push 2A"
+      {
+       "raw": "switch_mode_onscreen_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "Stun 5",
+       "chance": "140%",
+       "stun": "1"
+      },
+      {
+       "raw": "Push 2A",
+       "chance": "100%",
+       "move": {
+        "kind": "push",
+        "amount": "2"
+       }
+      }
      ]
     }
    ],
@@ -153,7 +176,13 @@
      ],
      "target": [],
      "effects": [
-      "switch_mode_offscreen_self"
+      {
+       "raw": "switch_mode_offscreen_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -177,9 +206,26 @@
       2
      ],
      "effects": [
-      "switch_mode_onscreen_self",
-      "Stun 5",
-      "Push 3C"
+      {
+       "raw": "switch_mode_onscreen_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "Stun 5",
+       "chance": "140%",
+       "stun": "1"
+      },
+      {
+       "raw": "Push 3C",
+       "chance": "120%",
+       "move": {
+        "kind": "push",
+        "amount": "3"
+       }
+      }
      ]
     }
    ],
@@ -255,7 +301,13 @@
      ],
      "target": [],
      "effects": [
-      "switch_mode_offscreen_self"
+      {
+       "raw": "switch_mode_offscreen_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -279,9 +331,26 @@
       2
      ],
      "effects": [
-      "switch_mode_onscreen_self",
-      "Stun 5",
-      "Push 2E"
+      {
+       "raw": "switch_mode_onscreen_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "Stun 5",
+       "chance": "140%",
+       "stun": "1"
+      },
+      {
+       "raw": "Push 2E",
+       "chance": "140%",
+       "move": {
+        "kind": "push",
+        "amount": "2"
+       }
+      }
      ]
     }
    ],

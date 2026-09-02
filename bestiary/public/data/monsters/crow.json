@@ -56,7 +56,16 @@
       4
      ],
      "effects": [
-      "Crow Bleed 1"
+      {
+       "raw": "Crow Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -82,7 +91,11 @@
       4
      ],
      "effects": [
-      "Crow Caw 1"
+      {
+       "raw": "Crow Caw 1",
+       "chance": "100%",
+       "stress": "20"
+      }
      ]
     },
     {
@@ -109,8 +122,21 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Crow Flutter 1",
-      "Self Speed 2"
+      {
+       "raw": "Crow Flutter 1",
+       "chance": "70%",
+       "stress": "12"
+      },
+      {
+       "raw": "Self Speed 2",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "6"
+        }
+       ]
+      }
      ]
     },
     {
@@ -136,8 +162,24 @@
       4
      ],
      "effects": [
-      "Crow Distract 1",
-      "Fungal Disease"
+      {
+       "raw": "Crow Distract 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-15%"
+        }
+       ]
+      },
+      {
+       "raw": "Fungal Disease",
+       "chance": "15%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -164,8 +206,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Crow Shriek 1",
-      "kill_self_queued"
+      {
+       "raw": "Crow Shriek 1",
+       "chance": "120%",
+       "stress": "40"
+      },
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      }
      ]
     }
    ],
@@ -195,28 +247,34 @@
     "skillDesires": [
      {
       "skill": "caw",
+      "chance": 100,
       "type": "specific_skill"
      },
      {
       "skill": "flutter",
+      "chance": 100,
       "type": "specific_skill"
      },
      {
       "skill": "peck",
+      "chance": 1000,
       "type": "specific_skill"
      },
      {
       "skill": "distract",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "escape",
+      "chance": 100000000000,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }
@@ -275,7 +333,16 @@
       4
      ],
      "effects": [
-      "Crow Bleed 3"
+      {
+       "raw": "Crow Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -301,7 +368,11 @@
       4
      ],
      "effects": [
-      "Crow Caw 3"
+      {
+       "raw": "Crow Caw 3",
+       "chance": "100%",
+       "stress": "23"
+      }
      ]
     },
     {
@@ -328,8 +399,21 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Crow Flutter 3",
-      "Self Speed 3"
+      {
+       "raw": "Crow Flutter 3",
+       "chance": "70%",
+       "stress": "14"
+      },
+      {
+       "raw": "Self Speed 3",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "7"
+        }
+       ]
+      }
      ]
     },
     {
@@ -355,8 +439,24 @@
       4
      ],
      "effects": [
-      "Crow Distract 3",
-      "Fungal Disease"
+      {
+       "raw": "Crow Distract 3",
+       "chance": "120%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-15%"
+        }
+       ]
+      },
+      {
+       "raw": "Fungal Disease",
+       "chance": "15%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -383,8 +483,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Crow Shriek 3",
-      "kill_self_queued"
+      {
+       "raw": "Crow Shriek 3",
+       "chance": "120%",
+       "stress": "45"
+      },
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      }
      ]
     }
    ],
@@ -414,28 +524,34 @@
     "skillDesires": [
      {
       "skill": "caw",
+      "chance": 100,
       "type": "specific_skill"
      },
      {
       "skill": "flutter",
+      "chance": 100,
       "type": "specific_skill"
      },
      {
       "skill": "peck",
+      "chance": 1000,
       "type": "specific_skill"
      },
      {
       "skill": "distract",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "escape",
+      "chance": 100000000000,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }
@@ -494,7 +610,16 @@
       4
      ],
      "effects": [
-      "Crow Bleed 5"
+      {
+       "raw": "Crow Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -520,7 +645,11 @@
       4
      ],
      "effects": [
-      "Crow Caw 5"
+      {
+       "raw": "Crow Caw 5",
+       "chance": "100%",
+       "stress": "25"
+      }
      ]
     },
     {
@@ -547,8 +676,21 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Crow Flutter 5",
-      "Self Speed 4"
+      {
+       "raw": "Crow Flutter 5",
+       "chance": "70%",
+       "stress": "16"
+      },
+      {
+       "raw": "Self Speed 4",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "8"
+        }
+       ]
+      }
      ]
     },
     {
@@ -574,8 +716,24 @@
       4
      ],
      "effects": [
-      "Crow Distract 5",
-      "Fungal Disease"
+      {
+       "raw": "Crow Distract 5",
+       "chance": "140%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-15%"
+        }
+       ]
+      },
+      {
+       "raw": "Fungal Disease",
+       "chance": "15%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -602,8 +760,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Crow Shriek 5",
-      "kill_self_queued"
+      {
+       "raw": "Crow Shriek 5",
+       "chance": "120%",
+       "stress": "50"
+      },
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      }
      ]
     }
    ],
@@ -633,28 +801,34 @@
     "skillDesires": [
      {
       "skill": "caw",
+      "chance": 100,
       "type": "specific_skill"
      },
      {
       "skill": "flutter",
+      "chance": 100,
       "type": "specific_skill"
      },
      {
       "skill": "peck",
+      "chance": 1000,
       "type": "specific_skill"
      },
      {
       "skill": "distract",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "escape",
+      "chance": 100000000000,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }
@@ -713,7 +887,16 @@
       4
      ],
      "effects": [
-      "Crow Bleed 5"
+      {
+       "raw": "Crow Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -739,7 +922,11 @@
       4
      ],
      "effects": [
-      "Crow Caw 5"
+      {
+       "raw": "Crow Caw 5",
+       "chance": "100%",
+       "stress": "25"
+      }
      ]
     },
     {
@@ -766,8 +953,21 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Crow Flutter 5",
-      "Self Speed 4"
+      {
+       "raw": "Crow Flutter 5",
+       "chance": "70%",
+       "stress": "16"
+      },
+      {
+       "raw": "Self Speed 4",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "8"
+        }
+       ]
+      }
      ]
     },
     {
@@ -793,8 +993,24 @@
       4
      ],
      "effects": [
-      "Crow Distract 5",
-      "Fungal Disease"
+      {
+       "raw": "Crow Distract 5",
+       "chance": "140%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-15%"
+        }
+       ]
+      },
+      {
+       "raw": "Fungal Disease",
+       "chance": "15%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -821,8 +1037,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Crow Shriek CoM",
-      "kill_self_queued"
+      {
+       "raw": "Crow Shriek CoM",
+       "chance": "120%",
+       "stress": "15"
+      },
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      }
      ]
     }
    ],
@@ -852,28 +1078,34 @@
     "skillDesires": [
      {
       "skill": "caw",
+      "chance": 100,
       "type": "specific_skill"
      },
      {
       "skill": "flutter",
+      "chance": 100,
       "type": "specific_skill"
      },
      {
       "skill": "peck",
+      "chance": 1000,
       "type": "specific_skill"
      },
      {
       "skill": "distract",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "escape",
+      "chance": 100000000000,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }

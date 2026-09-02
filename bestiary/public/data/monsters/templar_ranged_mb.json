@@ -76,8 +76,27 @@
       4
      ],
      "effects": [
-      "Templar Snipe Blight",
-      "Templar Weaken"
+      {
+       "raw": "Templar Snipe Blight",
+       "chance": "150%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "6",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Templar Weaken",
+       "chance": "150%",
+       "dmgMultiply": "-33%",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "-10%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -102,7 +121,16 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Templar AOE Blight"
+      {
+       "raw": "Templar AOE Blight",
+       "chance": "150%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "4",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -128,7 +156,11 @@
       4
      ],
      "effects": [
-      "Darkest Eye"
+      {
+       "raw": "Darkest Eye",
+       "chance": "100%",
+       "stress": "40"
+      }
      ]
     }
    ],
@@ -138,27 +170,33 @@
     "skillDesires": [
      {
       "skill": "templar_pinch",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "templar_snipe",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "templar_aoe",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "darkest_eye",
+      "chance": 100,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 3
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "darkest_eye"
      }
     ]

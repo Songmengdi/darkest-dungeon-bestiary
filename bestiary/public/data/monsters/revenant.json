@@ -56,9 +56,28 @@
       4
      ],
      "effects": [
-      "Heal Recd Debuff A",
-      "Revenant Acc Debuff A",
-      "Revenant Random Target 1"
+      {
+       "raw": "Heal Recd Debuff A",
+       "chance": "100%",
+       "duration": 2
+      },
+      {
+       "raw": "Revenant Acc Debuff A",
+       "chance": "100%",
+       "duration": 2,
+       "stress": "8",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-10%"
+        }
+       ]
+      },
+      {
+       "raw": "Revenant Random Target 1",
+       "chance": "100%",
+       "duration": 2
+      }
      ]
     }
    ],
@@ -119,9 +138,28 @@
       4
      ],
      "effects": [
-      "Heal Recd Debuff B",
-      "Revenant Acc Debuff B",
-      "Revenant Random Target 3"
+      {
+       "raw": "Heal Recd Debuff B",
+       "chance": "120%",
+       "duration": 3
+      },
+      {
+       "raw": "Revenant Acc Debuff B",
+       "chance": "120%",
+       "duration": 2,
+       "stress": "8",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-11%"
+        }
+       ]
+      },
+      {
+       "raw": "Revenant Random Target 3",
+       "chance": "120%",
+       "duration": 2
+      }
      ]
     }
    ],
@@ -182,9 +220,28 @@
       4
      ],
      "effects": [
-      "Heal Recd Debuff C",
-      "Revenant Acc Debuff C",
-      "Revenant Random Target 5"
+      {
+       "raw": "Heal Recd Debuff C",
+       "chance": "140%",
+       "duration": 4
+      },
+      {
+       "raw": "Revenant Acc Debuff C",
+       "chance": "140%",
+       "duration": 2,
+       "stress": "8",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-12%"
+        }
+       ]
+      },
+      {
+       "raw": "Revenant Random Target 5",
+       "chance": "140%",
+       "duration": 2
+      }
      ]
     }
    ],

@@ -56,7 +56,10 @@
       4
      ],
      "effects": [
-      "Rank Target Enemy 1"
+      {
+       "raw": "Rank Target Enemy 1",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -82,7 +85,10 @@
       4
      ],
      "effects": [
-      "Clear Enemy Rank Target"
+      {
+       "raw": "Clear Enemy Rank Target",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -108,8 +114,16 @@
       4
      ],
      "effects": [
-      "Stun 1",
-      "Prophet Stress 1"
+      {
+       "raw": "Stun 1",
+       "chance": "100%",
+       "stun": "1"
+      },
+      {
+       "raw": "Prophet Stress 1",
+       "chance": "100%",
+       "stress": "11"
+      }
      ]
     },
     {
@@ -136,7 +150,16 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Prophet Vomit 1"
+      {
+       "raw": "Prophet Vomit 1",
+       "chance": "100%",
+       "duration": 2,
+       "dot": {
+        "kind": "blight",
+        "amount": "1",
+        "duration": 2
+       }
+      }
      ]
     }
    ],
@@ -324,28 +347,34 @@
     "skillDesires": [
      {
       "skill": "eye_on_you",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "fulminate",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "eye_on_you"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "fulminate"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "prophet_mark"
      },
      {
       "type": "rank_target",
+      "chance": 1,
       "skill": "prophet_attack"
      }
     ]
@@ -405,7 +434,10 @@
       4
      ],
      "effects": [
-      "Rank Target Enemy 1"
+      {
+       "raw": "Rank Target Enemy 1",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -431,7 +463,10 @@
       4
      ],
      "effects": [
-      "Clear Enemy Rank Target"
+      {
+       "raw": "Clear Enemy Rank Target",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -457,8 +492,16 @@
       4
      ],
      "effects": [
-      "Stun 3",
-      "Prophet Stress 1"
+      {
+       "raw": "Stun 3",
+       "chance": "120%",
+       "stun": "1"
+      },
+      {
+       "raw": "Prophet Stress 1",
+       "chance": "100%",
+       "stress": "11"
+      }
      ]
     },
     {
@@ -485,7 +528,16 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Prophet Vomit 2"
+      {
+       "raw": "Prophet Vomit 2",
+       "chance": "120%",
+       "duration": 2,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 2
+       }
+      }
      ]
     }
    ],
@@ -673,32 +725,39 @@
     "skillDesires": [
      {
       "skill": "eye_on_you",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "fulminate",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "eye_on_you"
      },
      {
       "type": "stress_target",
+      "chance": 2,
       "skill": "eye_on_you"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "fulminate"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "prophet_mark"
      },
      {
       "type": "rank_target",
+      "chance": 1,
       "skill": "prophet_attack"
      }
     ]
@@ -758,7 +817,10 @@
       4
      ],
      "effects": [
-      "Rank Target Enemy 1"
+      {
+       "raw": "Rank Target Enemy 1",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -784,7 +846,10 @@
       4
      ],
      "effects": [
-      "Clear Enemy Rank Target"
+      {
+       "raw": "Clear Enemy Rank Target",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -810,8 +875,16 @@
       4
      ],
      "effects": [
-      "Stun 5",
-      "Prophet Stress 1"
+      {
+       "raw": "Stun 5",
+       "chance": "140%",
+       "stun": "1"
+      },
+      {
+       "raw": "Prophet Stress 1",
+       "chance": "100%",
+       "stress": "11"
+      }
      ]
     },
     {
@@ -838,7 +911,16 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Prophet Vomit 3"
+      {
+       "raw": "Prophet Vomit 3",
+       "chance": "140%",
+       "duration": 2,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 2
+       }
+      }
      ]
     }
    ],
@@ -1026,32 +1108,39 @@
     "skillDesires": [
      {
       "skill": "eye_on_you",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "fulminate",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "eye_on_you"
      },
      {
       "type": "stress_target",
+      "chance": 3,
       "skill": "eye_on_you"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "fulminate"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "prophet_mark"
      },
      {
       "type": "rank_target",
+      "chance": 1,
       "skill": "prophet_attack"
      }
     ]

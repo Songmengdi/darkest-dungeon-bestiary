@@ -54,9 +54,28 @@
       2
      ],
      "effects": [
-      "Thing Gnaw Stress",
-      "Thing Blight 1",
-      "Thing Disease 1"
+      {
+       "raw": "Thing Gnaw Stress",
+       "chance": "100%",
+       "stress": "14"
+      },
+      {
+       "raw": "Thing Blight 1",
+       "chance": "110%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "5",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Thing Disease 1",
+       "chance": "20%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -83,10 +102,29 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Thing Consume Self 1",
-      "Cure Self",
-      "Thing Consume StressParty",
-      "Summon Kyle 1"
+      {
+       "raw": "Thing Consume Self 1",
+       "chance": "100%"
+      },
+      {
+       "raw": "Cure Self",
+       "chance": "100%",
+       "traits": [
+        "cleanse"
+       ]
+      },
+      {
+       "raw": "Thing Consume StressParty",
+       "chance": "60%",
+       "stress": "7"
+      },
+      {
+       "raw": "Summon Kyle 1",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -112,7 +150,11 @@
       4
      ],
      "effects": [
-      "Thing Vorpal Stress"
+      {
+       "raw": "Thing Vorpal Stress",
+       "chance": "100%",
+       "stress": "9"
+      }
      ]
     },
     {
@@ -138,8 +180,16 @@
       4
      ],
      "effects": [
-      "Thing Stun 1",
-      "Thing Stress"
+      {
+       "raw": "Thing Stun 1",
+       "chance": "115%",
+       "stun": "1"
+      },
+      {
+       "raw": "Thing Stress",
+       "chance": "100%",
+       "stress": "11"
+      }
      ]
     },
     {
@@ -165,8 +215,16 @@
       4
      ],
      "effects": [
-      "Thing Resist Debuffs 1",
-      "Thing Stress"
+      {
+       "raw": "Thing Resist Debuffs 1",
+       "chance": "115%",
+       "duration": 4
+      },
+      {
+       "raw": "Thing Stress",
+       "chance": "100%",
+       "stress": "11"
+      }
      ]
     },
     {
@@ -192,8 +250,16 @@
       4
      ],
      "effects": [
-      "Thing Combat Debuffs 1",
-      "Thing Stress"
+      {
+       "raw": "Thing Combat Debuffs 1",
+       "chance": "115%",
+       "duration": 4
+      },
+      {
+       "raw": "Thing Stress",
+       "chance": "100%",
+       "stress": "11"
+      }
      ]
     },
     {
@@ -220,11 +286,34 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Thing Dying Buffs 1",
-      "Thing Consume Self 1",
-      "Cure Self",
-      "Thing Consume StressParty",
-      "Summon Kyle 1"
+      {
+       "raw": "Thing Dying Buffs 1",
+       "chance": "100%",
+       "duration": -1
+      },
+      {
+       "raw": "Thing Consume Self 1",
+       "chance": "100%"
+      },
+      {
+       "raw": "Cure Self",
+       "chance": "100%",
+       "traits": [
+        "cleanse"
+       ]
+      },
+      {
+       "raw": "Thing Consume StressParty",
+       "chance": "60%",
+       "stress": "7"
+      },
+      {
+       "raw": "Summon Kyle 1",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -283,9 +372,28 @@
       2
      ],
      "effects": [
-      "Thing Gnaw Stress",
-      "Thing Blight 3",
-      "Thing Disease 3"
+      {
+       "raw": "Thing Gnaw Stress",
+       "chance": "100%",
+       "stress": "14"
+      },
+      {
+       "raw": "Thing Blight 3",
+       "chance": "130%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "6",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Thing Disease 3",
+       "chance": "22%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -312,10 +420,29 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Thing Consume Self 3",
-      "Cure Self",
-      "Thing Consume StressParty",
-      "Summon Kyle 3"
+      {
+       "raw": "Thing Consume Self 3",
+       "chance": "100%"
+      },
+      {
+       "raw": "Cure Self",
+       "chance": "100%",
+       "traits": [
+        "cleanse"
+       ]
+      },
+      {
+       "raw": "Thing Consume StressParty",
+       "chance": "60%",
+       "stress": "7"
+      },
+      {
+       "raw": "Summon Kyle 3",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -341,7 +468,11 @@
       4
      ],
      "effects": [
-      "Thing Vorpal Stress"
+      {
+       "raw": "Thing Vorpal Stress",
+       "chance": "100%",
+       "stress": "9"
+      }
      ]
     },
     {
@@ -367,8 +498,16 @@
       4
      ],
      "effects": [
-      "Thing Stun 3",
-      "Thing Stress"
+      {
+       "raw": "Thing Stun 3",
+       "chance": "135%",
+       "stun": "1"
+      },
+      {
+       "raw": "Thing Stress",
+       "chance": "100%",
+       "stress": "11"
+      }
      ]
     },
     {
@@ -394,8 +533,16 @@
       4
      ],
      "effects": [
-      "Thing Resist Debuffs 3",
-      "Thing Stress"
+      {
+       "raw": "Thing Resist Debuffs 3",
+       "chance": "135%",
+       "duration": 4
+      },
+      {
+       "raw": "Thing Stress",
+       "chance": "100%",
+       "stress": "11"
+      }
      ]
     },
     {
@@ -421,8 +568,16 @@
       4
      ],
      "effects": [
-      "Thing Combat Debuffs 3",
-      "Thing Stress"
+      {
+       "raw": "Thing Combat Debuffs 3",
+       "chance": "135%",
+       "duration": 4
+      },
+      {
+       "raw": "Thing Stress",
+       "chance": "100%",
+       "stress": "11"
+      }
      ]
     },
     {
@@ -449,11 +604,34 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Thing Dying Buffs 3",
-      "Thing Consume Self 3",
-      "Cure Self",
-      "Thing Consume StressParty",
-      "Summon Kyle 3"
+      {
+       "raw": "Thing Dying Buffs 3",
+       "chance": "100%",
+       "duration": -1
+      },
+      {
+       "raw": "Thing Consume Self 3",
+       "chance": "100%"
+      },
+      {
+       "raw": "Cure Self",
+       "chance": "100%",
+       "traits": [
+        "cleanse"
+       ]
+      },
+      {
+       "raw": "Thing Consume StressParty",
+       "chance": "60%",
+       "stress": "7"
+      },
+      {
+       "raw": "Summon Kyle 3",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -512,9 +690,28 @@
       2
      ],
      "effects": [
-      "Thing Gnaw Stress",
-      "Thing Blight 5",
-      "Thing Disease 5"
+      {
+       "raw": "Thing Gnaw Stress",
+       "chance": "100%",
+       "stress": "14"
+      },
+      {
+       "raw": "Thing Blight 5",
+       "chance": "150%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "7",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Thing Disease 5",
+       "chance": "25%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -541,10 +738,29 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Thing Consume Self 5",
-      "Cure Self",
-      "Thing Consume StressParty",
-      "Summon Kyle 5"
+      {
+       "raw": "Thing Consume Self 5",
+       "chance": "100%"
+      },
+      {
+       "raw": "Cure Self",
+       "chance": "100%",
+       "traits": [
+        "cleanse"
+       ]
+      },
+      {
+       "raw": "Thing Consume StressParty",
+       "chance": "60%",
+       "stress": "7"
+      },
+      {
+       "raw": "Summon Kyle 5",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -570,7 +786,11 @@
       4
      ],
      "effects": [
-      "Thing Vorpal Stress"
+      {
+       "raw": "Thing Vorpal Stress",
+       "chance": "100%",
+       "stress": "9"
+      }
      ]
     },
     {
@@ -596,8 +816,16 @@
       4
      ],
      "effects": [
-      "Thing Stun 5",
-      "Thing Stress"
+      {
+       "raw": "Thing Stun 5",
+       "chance": "155%",
+       "stun": "1"
+      },
+      {
+       "raw": "Thing Stress",
+       "chance": "100%",
+       "stress": "11"
+      }
      ]
     },
     {
@@ -623,8 +851,16 @@
       4
      ],
      "effects": [
-      "Thing Resist Debuffs 5",
-      "Thing Stress"
+      {
+       "raw": "Thing Resist Debuffs 5",
+       "chance": "155%",
+       "duration": 4
+      },
+      {
+       "raw": "Thing Stress",
+       "chance": "100%",
+       "stress": "11"
+      }
      ]
     },
     {
@@ -650,8 +886,16 @@
       4
      ],
      "effects": [
-      "Thing Combat Debuffs 5",
-      "Thing Stress"
+      {
+       "raw": "Thing Combat Debuffs 5",
+       "chance": "155%",
+       "duration": 4
+      },
+      {
+       "raw": "Thing Stress",
+       "chance": "100%",
+       "stress": "11"
+      }
      ]
     },
     {
@@ -678,11 +922,34 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Thing Dying Buffs 5",
-      "Thing Consume Self 5",
-      "Cure Self",
-      "Thing Consume StressParty",
-      "Summon Kyle 5"
+      {
+       "raw": "Thing Dying Buffs 5",
+       "chance": "100%",
+       "duration": -1
+      },
+      {
+       "raw": "Thing Consume Self 5",
+       "chance": "100%"
+      },
+      {
+       "raw": "Cure Self",
+       "chance": "100%",
+       "traits": [
+        "cleanse"
+       ]
+      },
+      {
+       "raw": "Thing Consume StressParty",
+       "chance": "60%",
+       "stress": "7"
+      },
+      {
+       "raw": "Summon Kyle 5",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],

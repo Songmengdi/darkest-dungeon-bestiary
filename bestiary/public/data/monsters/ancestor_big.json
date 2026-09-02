@@ -56,9 +56,25 @@
       4
      ],
      "effects": [
-      "Ancestor Fuse Two",
-      "Shuffle Self",
-      "Ancestor Big Rider Stress"
+      {
+       "raw": "Ancestor Fuse Two",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "6",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Shuffle Self",
+       "chance": "100%"
+      },
+      {
+       "raw": "Ancestor Big Rider Stress",
+       "chance": "100%",
+       "stress": "9"
+      }
      ]
     },
     {
@@ -85,9 +101,25 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Ancestor Fuse All",
-      "Shuffle Self",
-      "Ancestor Big Rider Stress"
+      {
+       "raw": "Ancestor Fuse All",
+       "chance": "135%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Shuffle Self",
+       "chance": "100%"
+      },
+      {
+       "raw": "Ancestor Big Rider Stress",
+       "chance": "100%",
+       "stress": "9"
+      }
      ]
     },
     {
@@ -113,9 +145,20 @@
       4
      ],
      "effects": [
-      "Ancestor Shuffle",
-      "Ancestor Disrupt",
-      "Ancestor Big Contemplate Stress"
+      {
+       "raw": "Ancestor Shuffle",
+       "chance": "150%"
+      },
+      {
+       "raw": "Ancestor Disrupt",
+       "chance": "150%",
+       "dmgMultiply": "-20%"
+      },
+      {
+       "raw": "Ancestor Big Contemplate Stress",
+       "chance": "100%",
+       "stress": "20"
+      }
      ]
     },
     {
@@ -136,8 +179,20 @@
      ],
      "target": [],
      "effects": [
-      "kill_self_queued",
-      "kill_performer_group_other"
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      },
+      {
+       "raw": "kill_performer_group_other",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      }
      ]
     }
    ],
@@ -147,20 +202,24 @@
     "skillDesires": [
      {
       "skill": "ancestor_fuse_two",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "ancestor_fuse_all",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "ancestor_contemplate",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },

@@ -57,11 +57,53 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Clear Guard Performer",
-      "Clear Guard Target",
-      "Snake Guard 1",
-      "Snake Defend 1",
-      "Rattler Riposte"
+      {
+       "raw": "Clear Guard Performer",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Clear Guard Target",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Snake Guard 1",
+       "duration": 3,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "Snake Defend 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "10%"
+        }
+       ]
+      },
+      {
+       "raw": "Rattler Riposte",
+       "chance": "100%",
+       "duration": 3,
+       "dmgMultiply": "-60%",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "-3%"
+        }
+       ],
+       "traits": [
+        "riposte"
+       ]
+      }
      ]
     },
     {
@@ -85,7 +127,16 @@
       3
      ],
      "effects": [
-      "Rattler Bleed 1"
+      {
+       "raw": "Rattler Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -234,11 +285,53 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Clear Guard Performer",
-      "Clear Guard Target",
-      "Snake Guard 1",
-      "Snake Defend 1",
-      "Rattler Riposte"
+      {
+       "raw": "Clear Guard Performer",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Clear Guard Target",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Snake Guard 1",
+       "duration": 3,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "Snake Defend 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "10%"
+        }
+       ]
+      },
+      {
+       "raw": "Rattler Riposte",
+       "chance": "100%",
+       "duration": 3,
+       "dmgMultiply": "-60%",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "-3%"
+        }
+       ],
+       "traits": [
+        "riposte"
+       ]
+      }
      ]
     },
     {
@@ -262,7 +355,16 @@
       3
      ],
      "effects": [
-      "Rattler Bleed 3"
+      {
+       "raw": "Rattler Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -411,11 +513,53 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Clear Guard Performer",
-      "Clear Guard Target",
-      "Snake Guard 1",
-      "Snake Defend 1",
-      "Rattler Riposte"
+      {
+       "raw": "Clear Guard Performer",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Clear Guard Target",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Snake Guard 1",
+       "duration": 3,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "Snake Defend 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "10%"
+        }
+       ]
+      },
+      {
+       "raw": "Rattler Riposte",
+       "chance": "100%",
+       "duration": 3,
+       "dmgMultiply": "-60%",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "-3%"
+        }
+       ],
+       "traits": [
+        "riposte"
+       ]
+      }
      ]
     },
     {
@@ -439,7 +583,16 @@
       3
      ],
      "effects": [
-      "Rattler Bleed 5"
+      {
+       "raw": "Rattler Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 3
+       }
+      }
      ]
     },
     {

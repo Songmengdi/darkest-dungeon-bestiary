@@ -131,15 +131,18 @@
     "skillDesires": [
      {
       "skill": "hook_where_it_hurts",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 1,
       "skill": "hook_where_it_hurts"
      }
     ]
@@ -199,7 +202,11 @@
       3
      ],
      "effects": [
-      "Slasher Hook Debuff 3"
+      {
+       "raw": "Slasher Hook Debuff 3",
+       "chance": "120%",
+       "duration": 3
+      }
      ]
     }
    ],
@@ -277,15 +284,18 @@
     "skillDesires": [
      {
       "skill": "hook_where_it_hurts",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 2,
       "skill": "hook_where_it_hurts"
      }
     ]
@@ -345,7 +355,11 @@
       3
      ],
      "effects": [
-      "Slasher Hook Debuff 5"
+      {
+       "raw": "Slasher Hook Debuff 5",
+       "chance": "140%",
+       "duration": 3
+      }
      ]
     }
    ],
@@ -423,15 +437,18 @@
     "skillDesires": [
      {
       "skill": "hook_where_it_hurts",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 3,
       "skill": "hook_where_it_hurts"
      }
     ]

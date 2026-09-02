@@ -56,8 +56,22 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Fusilier Blanket Debuff 6",
-      "Blanket Fire Stress"
+      {
+       "raw": "Fusilier Blanket Debuff 6",
+       "chance": "160%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-6%"
+        }
+       ]
+      },
+      {
+       "raw": "Blanket Fire Stress",
+       "chance": "100%",
+       "stress": "4"
+      }
      ]
     },
     {
@@ -155,16 +169,19 @@
     "skillDesires": [
      {
       "skill": "blunderbuss_shot",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "rushed_shot",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },

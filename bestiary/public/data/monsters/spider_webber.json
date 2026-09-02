@@ -56,9 +56,24 @@
       4
      ],
      "effects": [
-      "Stun 1",
-      "Mark Target",
-      "Webber Web Debuff 1"
+      {
+       "raw": "Stun 1",
+       "chance": "100%",
+       "stun": "1"
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Webber Web Debuff 1",
+       "chance": "100%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -84,8 +99,24 @@
       4
      ],
      "effects": [
-      "Weak Blight 1",
-      "Damage Marked Target"
+      {
+       "raw": "Weak Blight 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "1",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     }
    ],
@@ -163,27 +194,33 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 10,
       "type": "effect_key_status_skill"
      },
      {
       "skill": "spider_web",
+      "chance": 3,
       "type": "stun_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 10
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "spider_web"
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }
@@ -242,9 +279,24 @@
       4
      ],
      "effects": [
-      "Stun 3",
-      "Mark Target",
-      "Webber Web Debuff 3"
+      {
+       "raw": "Stun 3",
+       "chance": "120%",
+       "stun": "1"
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Webber Web Debuff 3",
+       "chance": "120%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -270,8 +322,24 @@
       4
      ],
      "effects": [
-      "Weak Blight 3",
-      "Damage Marked Target"
+      {
+       "raw": "Weak Blight 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     }
    ],
@@ -349,27 +417,33 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 10,
       "type": "effect_key_status_skill"
      },
      {
       "skill": "spider_web",
+      "chance": 3,
       "type": "stun_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 10
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "spider_web"
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }
@@ -428,9 +502,24 @@
       4
      ],
      "effects": [
-      "Stun 5",
-      "Mark Target",
-      "Webber Web Debuff 5"
+      {
+       "raw": "Stun 5",
+       "chance": "140%",
+       "stun": "1"
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Webber Web Debuff 5",
+       "chance": "140%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -456,8 +545,24 @@
       4
      ],
      "effects": [
-      "Weak Blight 5",
-      "Damage Marked Target"
+      {
+       "raw": "Weak Blight 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     }
    ],
@@ -535,27 +640,33 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 10,
       "type": "effect_key_status_skill"
      },
      {
       "skill": "spider_web",
+      "chance": 3,
       "type": "stun_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 10
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "spider_web"
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }

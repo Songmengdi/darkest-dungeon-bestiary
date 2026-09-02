@@ -77,7 +77,18 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Wicked Surge"
+      {
+       "raw": "Wicked Surge",
+       "chance": "100%",
+       "duration": 2,
+       "dmgMultiply": "20%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "10%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -98,7 +109,13 @@
      ],
      "target": [],
      "effects": [
-      "On Death Swap"
+      {
+       "raw": "On Death Swap",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -176,23 +193,28 @@
     "skillDesires": [
      {
       "skill": "unholy_rally",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "into_the_ranks",
+      "chance": 3,
       "type": "specific_skill"
      },
      {
       "skill": "wicked_surge",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },
@@ -274,7 +296,18 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Wicked Surge"
+      {
+       "raw": "Wicked Surge",
+       "chance": "100%",
+       "duration": 2,
+       "dmgMultiply": "20%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "10%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -295,7 +328,13 @@
      ],
      "target": [],
      "effects": [
-      "On Death Swap"
+      {
+       "raw": "On Death Swap",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -373,23 +412,28 @@
     "skillDesires": [
      {
       "skill": "unholy_rally",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "into_the_ranks",
+      "chance": 3,
       "type": "specific_skill"
      },
      {
       "skill": "wicked_surge",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },
@@ -471,7 +515,18 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Wicked Surge"
+      {
+       "raw": "Wicked Surge",
+       "chance": "100%",
+       "duration": 2,
+       "dmgMultiply": "20%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "10%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -492,7 +547,13 @@
      ],
      "target": [],
      "effects": [
-      "On Death Swap"
+      {
+       "raw": "On Death Swap",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -570,23 +631,28 @@
     "skillDesires": [
      {
       "skill": "unholy_rally",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "into_the_ranks",
+      "chance": 3,
       "type": "specific_skill"
      },
      {
       "skill": "wicked_surge",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },

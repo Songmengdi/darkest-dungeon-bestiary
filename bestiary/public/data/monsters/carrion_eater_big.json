@@ -55,9 +55,30 @@
       3
      ],
      "effects": [
-      "Weakening Curse 1",
-      "Mark Target",
-      "Carrion Weaken Damage Debuff 1"
+      {
+       "raw": "Weakening Curse 1",
+       "chance": "100%",
+       "dmgMultiply": "-25%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-10%"
+        }
+       ]
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Carrion Weaken Damage Debuff 1",
+       "chance": "100%",
+       "dmgMultiply": "-15%"
+      }
      ]
     },
     {
@@ -82,8 +103,24 @@
       3
      ],
      "effects": [
-      "Damage Marked Target",
-      "Carrion Devour Debuff 1"
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Carrion Devour Debuff 1",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "-5%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -161,23 +198,28 @@
     "skillDesires": [
      {
       "skill": "weaken_prey",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "weaken_prey",
+      "chance": 2,
       "type": "performing_turn_skill"
      },
      {
       "skill": "tentacle_devour",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 3,
       "skill": "tentacle_devour"
      }
     ]
@@ -237,9 +279,30 @@
       3
      ],
      "effects": [
-      "Weakening Curse 3",
-      "Mark Target",
-      "Carrion Weaken Damage Debuff 3"
+      {
+       "raw": "Weakening Curse 3",
+       "chance": "120%",
+       "dmgMultiply": "-25%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-10%"
+        }
+       ]
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Carrion Weaken Damage Debuff 3",
+       "chance": "120%",
+       "dmgMultiply": "-15%"
+      }
      ]
     },
     {
@@ -264,8 +327,24 @@
       3
      ],
      "effects": [
-      "Damage Marked Target",
-      "Carrion Devour Debuff 3"
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Carrion Devour Debuff 3",
+       "chance": "120%",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "-8%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -343,23 +422,28 @@
     "skillDesires": [
      {
       "skill": "weaken_prey",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "weaken_prey",
+      "chance": 5,
       "type": "performing_turn_skill"
      },
      {
       "skill": "tentacle_devour",
+      "chance": 2,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 4,
       "skill": "tentacle_devour"
      }
     ]
@@ -419,9 +503,30 @@
       3
      ],
      "effects": [
-      "Weakening Curse 5",
-      "Mark Target",
-      "Carrion Weaken Damage Debuff 5"
+      {
+       "raw": "Weakening Curse 5",
+       "chance": "140%",
+       "dmgMultiply": "-25%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-10%"
+        }
+       ]
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Carrion Weaken Damage Debuff 5",
+       "chance": "140%",
+       "dmgMultiply": "-15%"
+      }
      ]
     },
     {
@@ -446,8 +551,24 @@
       3
      ],
      "effects": [
-      "Damage Marked Target",
-      "Carrion Devour Debuff 5"
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Carrion Devour Debuff 5",
+       "chance": "140%",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "-10%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -525,23 +646,28 @@
     "skillDesires": [
      {
       "skill": "weaken_prey",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "weaken_prey",
+      "chance": 7,
       "type": "performing_turn_skill"
      },
      {
       "skill": "tentacle_devour",
+      "chance": 3,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 5,
       "skill": "tentacle_devour"
      }
     ]

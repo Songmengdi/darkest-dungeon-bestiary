@@ -87,11 +87,38 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Cure Self",
-      "Viscount Init Sub 1",
-      "Emaciated Feed Buff",
-      "Emaciated Feed Debuff",
-      "Viscount Absorb Effect"
+      {
+       "raw": "Cure Self",
+       "chance": "100%",
+       "traits": [
+        "cleanse"
+       ]
+      },
+      {
+       "raw": "Viscount Init Sub 1",
+       "chance": "100%"
+      },
+      {
+       "raw": "Emaciated Feed Buff",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "5%"
+        }
+       ]
+      },
+      {
+       "raw": "Emaciated Feed Debuff",
+       "chance": "100%",
+       "duration": 3,
+       "dmgMultiply": "-25%"
+      },
+      {
+       "raw": "Viscount Absorb Effect",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -118,12 +145,53 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Cure Self",
-      "Viscount Feed Average Heal",
-      "Average Feed Buff 1",
-      "Average Feed Buff 2",
-      "Average Feed Debuff",
-      "Viscount Absorb Effect"
+      {
+       "raw": "Cure Self",
+       "chance": "100%",
+       "traits": [
+        "cleanse"
+       ]
+      },
+      {
+       "raw": "Viscount Feed Average Heal",
+       "chance": "100%",
+       "heal": "35"
+      },
+      {
+       "raw": "Average Feed Buff 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "20%"
+        },
+        {
+         "key": "defense_rating_add",
+         "value": "25%"
+        }
+       ]
+      },
+      {
+       "raw": "Average Feed Buff 2",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "6"
+        }
+       ]
+      },
+      {
+       "raw": "Average Feed Debuff",
+       "chance": "100%",
+       "duration": 3
+      },
+      {
+       "raw": "Viscount Absorb Effect",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -149,10 +217,41 @@
       4
      ],
      "effects": [
-      "Hands Off",
-      "Viscount Acc Buff",
-      "Hungry Eyes Stress",
-      "Vis Shuffle Self"
+      {
+       "raw": "Hands Off",
+       "chance": "100%",
+       "duration": 3,
+       "dmgMultiply": "-15%",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "-5%"
+        }
+       ],
+       "traits": [
+        "riposte"
+       ]
+      },
+      {
+       "raw": "Viscount Acc Buff",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "20%"
+        }
+       ]
+      },
+      {
+       "raw": "Hungry Eyes Stress",
+       "chance": "95%",
+       "stress": "15"
+      },
+      {
+       "raw": "Vis Shuffle Self",
+       "chance": "400%"
+      }
      ]
     },
     {
@@ -178,8 +277,21 @@
       4
      ],
      "effects": [
-      "Viscount Bleed",
-      "Fine Pairing Stress"
+      {
+       "raw": "Viscount Bleed",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Fine Pairing Stress",
+       "chance": "90%",
+       "stress": "8"
+      }
      ]
     },
     {
@@ -206,13 +318,58 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Cure Self",
-      "Viscount Feed Bloated Heal",
-      "Viscount Init Sub 2",
-      "Bloated Feed Buff",
-      "Bloated Feed Debuff 1",
-      "Bloated Feed Debuff 2",
-      "Viscount Absorb Effect"
+      {
+       "raw": "Cure Self",
+       "chance": "100%",
+       "traits": [
+        "cleanse"
+       ]
+      },
+      {
+       "raw": "Viscount Feed Bloated Heal",
+       "chance": "100%",
+       "heal": "50"
+      },
+      {
+       "raw": "Viscount Init Sub 2",
+       "chance": "100%"
+      },
+      {
+       "raw": "Bloated Feed Buff",
+       "chance": "100%",
+       "duration": 3,
+       "dmgMultiply": "50%"
+      },
+      {
+       "raw": "Bloated Feed Debuff 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-20%"
+        },
+        {
+         "key": "defense_rating_add",
+         "value": "-25%"
+        }
+       ]
+      },
+      {
+       "raw": "Bloated Feed Debuff 2",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "-4"
+        }
+       ]
+      },
+      {
+       "raw": "Viscount Absorb Effect",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -236,8 +393,19 @@
       2
      ],
      "effects": [
-      "Viscount Push",
-      "Served Rare Stress"
+      {
+       "raw": "Viscount Push",
+       "chance": "140%",
+       "move": {
+        "kind": "push",
+        "amount": "3"
+       }
+      },
+      {
+       "raw": "Served Rare Stress",
+       "chance": "90%",
+       "stress": "10"
+      }
      ]
     }
    ],

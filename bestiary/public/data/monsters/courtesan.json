@@ -56,8 +56,26 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Courtesan AOE Horror",
-      "Careless Whispers 1"
+      {
+       "raw": "Courtesan AOE Horror",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "stress",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Careless Whispers 1",
+       "chance": "80%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-5%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -85,9 +103,36 @@
      "targetAoe": true,
      "targetAlly": true,
      "effects": [
-      "Midnight Minuet 1",
-      "Midnight Minuet Debuff 1",
-      "Midnight Minuet Buff 1"
+      {
+       "raw": "Midnight Minuet 1",
+       "chance": "100%",
+       "move": {
+        "kind": "shuffle"
+       }
+      },
+      {
+       "raw": "Midnight Minuet Debuff 1",
+       "chance": "100%",
+       "duration": 1,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-20%"
+        }
+       ]
+      },
+      {
+       "raw": "Midnight Minuet Buff 1",
+       "chance": "100%",
+       "duration": 1,
+       "dmgMultiply": "20%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "3"
+        }
+       ]
+      }
      ]
     },
     {
@@ -114,10 +159,44 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Buff Guard 1",
-      "Antiq ProtectMe ClearGuardsPerformer",
-      "Antiq ProtectMe ClearGuardsTarget",
-      "Courtesan ProtectMe Guard"
+      {
+       "raw": "Buff Guard 1",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "25%"
+        }
+       ],
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Antiq ProtectMe ClearGuardsPerformer",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Antiq ProtectMe ClearGuardsTarget",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Courtesan ProtectMe Guard",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "guard"
+       ]
+      }
      ]
     },
     {
@@ -143,8 +222,21 @@
       4
      ],
      "effects": [
-      "Courtesan Blight 1",
-      "Courtesan Stress 1"
+      {
+       "raw": "Courtesan Blight 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Courtesan Stress 1",
+       "chance": "100%",
+       "stress": "6"
+      }
      ]
     },
     {
@@ -170,9 +262,30 @@
       4
      ],
      "effects": [
-      "Mark Target",
-      "Courtesan Vein 1",
-      "Courtesan Vein Prot 1"
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Courtesan Vein 1",
+       "chance": "100%",
+       "duration": 3
+      },
+      {
+       "raw": "Courtesan Vein Prot 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "-5%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -198,12 +311,47 @@
       4
      ],
      "effects": [
-      "CC Big Feed Heal 1",
-      "Courtesan Feed 1",
-      "Crimson Curse Strong",
-      "switch_mode_beast_self",
-      "Feed Stress Human",
-      "CC Steal Blight"
+      {
+       "raw": "CC Big Feed Heal 1",
+       "chance": "100%",
+       "heal": "6"
+      },
+      {
+       "raw": "Courtesan Feed 1",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "15%"
+        }
+       ]
+      },
+      {
+       "raw": "Crimson Curse Strong",
+       "chance": "45%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "switch_mode_beast_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "Feed Stress Human",
+       "chance": "85%",
+       "stress": "8"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     },
     {
@@ -229,11 +377,45 @@
       4
      ],
      "effects": [
-      "CC Big Feed Heal 1",
-      "CC Mob Acc Debuff 1",
-      "Crimson Curse Strong",
-      "Feed Stress Beast",
-      "CC Steal Blight"
+      {
+       "raw": "CC Big Feed Heal 1",
+       "chance": "100%",
+       "heal": "6"
+      },
+      {
+       "raw": "CC Mob Acc Debuff 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-20%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-4"
+        }
+       ]
+      },
+      {
+       "raw": "Crimson Curse Strong",
+       "chance": "45%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Feed Stress Beast",
+       "chance": "85%",
+       "stress": "12"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     },
     {
@@ -259,7 +441,14 @@
       4
      ],
      "effects": [
-      "Mark Target"
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     }
    ],
@@ -321,8 +510,26 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Courtesan AOE Horror",
-      "Careless Whispers 3"
+      {
+       "raw": "Courtesan AOE Horror",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "stress",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Careless Whispers 3",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-5%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -350,9 +557,36 @@
      "targetAoe": true,
      "targetAlly": true,
      "effects": [
-      "Midnight Minuet 2",
-      "Midnight Minuet Debuff 2",
-      "Midnight Minuet Buff 2"
+      {
+       "raw": "Midnight Minuet 2",
+       "chance": "100%",
+       "move": {
+        "kind": "shuffle"
+       }
+      },
+      {
+       "raw": "Midnight Minuet Debuff 2",
+       "chance": "100%",
+       "duration": 1,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-16%"
+        }
+       ]
+      },
+      {
+       "raw": "Midnight Minuet Buff 2",
+       "chance": "100%",
+       "duration": 1,
+       "dmgMultiply": "25%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "4"
+        }
+       ]
+      }
      ]
     },
     {
@@ -379,10 +613,44 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Buff Guard 3",
-      "Antiq ProtectMe ClearGuardsPerformer",
-      "Antiq ProtectMe ClearGuardsTarget",
-      "Courtesan ProtectMe Guard"
+      {
+       "raw": "Buff Guard 3",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "35%"
+        }
+       ],
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Antiq ProtectMe ClearGuardsPerformer",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Antiq ProtectMe ClearGuardsTarget",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Courtesan ProtectMe Guard",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "guard"
+       ]
+      }
      ]
     },
     {
@@ -408,8 +676,21 @@
       4
      ],
      "effects": [
-      "Courtesan Blight 3",
-      "Courtesan Stress 3"
+      {
+       "raw": "Courtesan Blight 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Courtesan Stress 3",
+       "chance": "100%",
+       "stress": "8"
+      }
      ]
     },
     {
@@ -435,9 +716,30 @@
       4
      ],
      "effects": [
-      "Mark Target",
-      "Courtesan Vein 3",
-      "Courtesan Vein Prot 3"
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Courtesan Vein 3",
+       "chance": "120%",
+       "duration": 3
+      },
+      {
+       "raw": "Courtesan Vein Prot 3",
+       "chance": "120%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "-7%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -463,12 +765,47 @@
       4
      ],
      "effects": [
-      "CC Big Feed Heal 3",
-      "Courtesan Feed 2",
-      "Crimson Curse Strong",
-      "switch_mode_beast_self",
-      "Feed Stress Human",
-      "CC Steal Blight"
+      {
+       "raw": "CC Big Feed Heal 3",
+       "chance": "100%",
+       "heal": "8"
+      },
+      {
+       "raw": "Courtesan Feed 2",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "18%"
+        }
+       ]
+      },
+      {
+       "raw": "Crimson Curse Strong",
+       "chance": "45%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "switch_mode_beast_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "Feed Stress Human",
+       "chance": "85%",
+       "stress": "8"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     },
     {
@@ -494,11 +831,45 @@
       4
      ],
      "effects": [
-      "CC Big Feed Heal 3",
-      "CC Mob Acc Debuff 3",
-      "Crimson Curse Strong",
-      "Feed Stress Beast",
-      "CC Steal Blight"
+      {
+       "raw": "CC Big Feed Heal 3",
+       "chance": "100%",
+       "heal": "8"
+      },
+      {
+       "raw": "CC Mob Acc Debuff 3",
+       "chance": "120%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-18%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-3"
+        }
+       ]
+      },
+      {
+       "raw": "Crimson Curse Strong",
+       "chance": "45%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Feed Stress Beast",
+       "chance": "85%",
+       "stress": "12"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     },
     {
@@ -524,7 +895,14 @@
       4
      ],
      "effects": [
-      "Mark Target"
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     }
    ],
@@ -586,8 +964,26 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Courtesan AOE Horror",
-      "Careless Whispers 5"
+      {
+       "raw": "Courtesan AOE Horror",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "stress",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Careless Whispers 5",
+       "chance": "120%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-5%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -615,9 +1011,36 @@
      "targetAoe": true,
      "targetAlly": true,
      "effects": [
-      "Midnight Minuet 3",
-      "Midnight Minuet Debuff 3",
-      "Midnight Minuet Buff 3"
+      {
+       "raw": "Midnight Minuet 3",
+       "chance": "100%",
+       "move": {
+        "kind": "shuffle"
+       }
+      },
+      {
+       "raw": "Midnight Minuet Debuff 3",
+       "chance": "100%",
+       "duration": 1,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-12%"
+        }
+       ]
+      },
+      {
+       "raw": "Midnight Minuet Buff 3",
+       "chance": "100%",
+       "duration": 1,
+       "dmgMultiply": "30%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "5"
+        }
+       ]
+      }
      ]
     },
     {
@@ -644,10 +1067,44 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Buff Guard 5",
-      "Antiq ProtectMe ClearGuardsPerformer",
-      "Antiq ProtectMe ClearGuardsTarget",
-      "Courtesan ProtectMe Guard"
+      {
+       "raw": "Buff Guard 5",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "45%"
+        }
+       ],
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Antiq ProtectMe ClearGuardsPerformer",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Antiq ProtectMe ClearGuardsTarget",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Courtesan ProtectMe Guard",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "guard"
+       ]
+      }
      ]
     },
     {
@@ -673,8 +1130,21 @@
       4
      ],
      "effects": [
-      "Courtesan Blight 5",
-      "Courtesan Stress 5"
+      {
+       "raw": "Courtesan Blight 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "4",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Courtesan Stress 5",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     },
     {
@@ -700,9 +1170,30 @@
       4
      ],
      "effects": [
-      "Mark Target",
-      "Courtesan Vein 5",
-      "Courtesan Vein Prot 5"
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Courtesan Vein 5",
+       "chance": "140%",
+       "duration": 3
+      },
+      {
+       "raw": "Courtesan Vein Prot 5",
+       "chance": "140%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "-9%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -728,12 +1219,47 @@
       4
      ],
      "effects": [
-      "CC Big Feed Heal 5",
-      "Courtesan Feed 3",
-      "Crimson Curse Strong",
-      "switch_mode_beast_self",
-      "Feed Stress Human",
-      "CC Steal Blight"
+      {
+       "raw": "CC Big Feed Heal 5",
+       "chance": "100%",
+       "heal": "10"
+      },
+      {
+       "raw": "Courtesan Feed 3",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "20%"
+        }
+       ]
+      },
+      {
+       "raw": "Crimson Curse Strong",
+       "chance": "45%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "switch_mode_beast_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "Feed Stress Human",
+       "chance": "85%",
+       "stress": "8"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     },
     {
@@ -759,11 +1285,45 @@
       4
      ],
      "effects": [
-      "CC Big Feed Heal 5",
-      "CC Mob Acc Debuff 5",
-      "Crimson Curse Strong",
-      "Feed Stress Beast",
-      "CC Steal Blight"
+      {
+       "raw": "CC Big Feed Heal 5",
+       "chance": "100%",
+       "heal": "10"
+      },
+      {
+       "raw": "CC Mob Acc Debuff 5",
+       "chance": "140%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-15%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-2"
+        }
+       ]
+      },
+      {
+       "raw": "Crimson Curse Strong",
+       "chance": "45%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Feed Stress Beast",
+       "chance": "85%",
+       "stress": "12"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     },
     {
@@ -789,7 +1349,14 @@
       4
      ],
      "effects": [
-      "Mark Target"
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     }
    ],

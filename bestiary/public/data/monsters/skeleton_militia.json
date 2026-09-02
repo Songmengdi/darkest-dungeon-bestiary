@@ -149,19 +149,23 @@
     "skillDesires": [
      {
       "skill": "sword_strike",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "sword_strike_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      }
     ]
    },
@@ -315,19 +319,23 @@
     "skillDesires": [
      {
       "skill": "sword_strike",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "sword_strike_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 3
      }
     ]
    },
@@ -481,19 +489,23 @@
     "skillDesires": [
      {
       "skill": "sword_strike",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "sword_strike_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 4
      }
     ]
    },

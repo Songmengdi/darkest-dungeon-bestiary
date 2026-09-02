@@ -52,8 +52,24 @@
       2
      ],
      "effects": [
-      "Esq Pistol Debuff 1",
-      "Esq Push 1"
+      {
+       "raw": "Esq Pistol Debuff 1",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "-2"
+        }
+       ]
+      },
+      {
+       "raw": "Esq Push 1",
+       "chance": "90%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      }
      ]
     },
     {
@@ -78,8 +94,31 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Skewering AOE Bleed 1",
-      "Esq Riposte 3"
+      {
+       "raw": "Skewering AOE Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Esq Riposte 3",
+       "chance": "100%",
+       "duration": 3,
+       "dmgMultiply": "-85%",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "-5%"
+        }
+       ],
+       "traits": [
+        "riposte"
+       ]
+      }
      ]
     },
     {
@@ -105,13 +144,56 @@
       4
      ],
      "effects": [
-      "CC Big Feed Heal 1",
-      "CC Mob Acc Debuff 1",
-      "switch_mode_beast_self",
-      "clear_riposte_performer",
-      "Feed Stress Human",
-      "CC Steal Blight",
-      "Crimson Curse Strong"
+      {
+       "raw": "CC Big Feed Heal 1",
+       "chance": "100%",
+       "heal": "6"
+      },
+      {
+       "raw": "CC Mob Acc Debuff 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-20%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-4"
+        }
+       ]
+      },
+      {
+       "raw": "switch_mode_beast_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "clear_riposte_performer",
+       "chance": "100%"
+      },
+      {
+       "raw": "Feed Stress Human",
+       "chance": "85%",
+       "stress": "8"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      },
+      {
+       "raw": "Crimson Curse Strong",
+       "chance": "45%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -136,7 +218,10 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Esq Foreleg 1"
+      {
+       "raw": "Esq Foreleg 1",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -160,9 +245,29 @@
       3
      ],
      "effects": [
-      "Bleed 1",
-      "Mark Target",
-      "Esq Stress 1"
+      {
+       "raw": "Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Esq Stress 1",
+       "chance": "90%",
+       "stress": "8"
+      }
      ]
     },
     {
@@ -188,11 +293,45 @@
       4
      ],
      "effects": [
-      "CC Big Feed Heal 1",
-      "CC Mob Acc Debuff 1",
-      "Crimson Curse Strong",
-      "Feed Stress Beast",
-      "CC Steal Blight"
+      {
+       "raw": "CC Big Feed Heal 1",
+       "chance": "100%",
+       "heal": "6"
+      },
+      {
+       "raw": "CC Mob Acc Debuff 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-20%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-4"
+        }
+       ]
+      },
+      {
+       "raw": "Crimson Curse Strong",
+       "chance": "45%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Feed Stress Beast",
+       "chance": "85%",
+       "stress": "12"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     }
    ],
@@ -250,8 +389,24 @@
       2
      ],
      "effects": [
-      "Esq Pistol Debuff 3",
-      "Esq Push 3"
+      {
+       "raw": "Esq Pistol Debuff 3",
+       "chance": "120%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "-2"
+        }
+       ]
+      },
+      {
+       "raw": "Esq Push 3",
+       "chance": "110%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      }
      ]
     },
     {
@@ -276,8 +431,31 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Skewering AOE Bleed 3",
-      "Esq Riposte 4"
+      {
+       "raw": "Skewering AOE Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Esq Riposte 4",
+       "chance": "100%",
+       "duration": 3,
+       "dmgMultiply": "-75%",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "-3%"
+        }
+       ],
+       "traits": [
+        "riposte"
+       ]
+      }
      ]
     },
     {
@@ -303,13 +481,56 @@
       4
      ],
      "effects": [
-      "CC Big Feed Heal 3",
-      "CC Mob Acc Debuff 3",
-      "switch_mode_beast_self",
-      "clear_riposte_performer",
-      "Feed Stress Human",
-      "CC Steal Blight",
-      "Crimson Curse Strong"
+      {
+       "raw": "CC Big Feed Heal 3",
+       "chance": "100%",
+       "heal": "8"
+      },
+      {
+       "raw": "CC Mob Acc Debuff 3",
+       "chance": "120%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-18%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-3"
+        }
+       ]
+      },
+      {
+       "raw": "switch_mode_beast_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "clear_riposte_performer",
+       "chance": "100%"
+      },
+      {
+       "raw": "Feed Stress Human",
+       "chance": "85%",
+       "stress": "8"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      },
+      {
+       "raw": "Crimson Curse Strong",
+       "chance": "45%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -334,7 +555,10 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Esq Foreleg 3"
+      {
+       "raw": "Esq Foreleg 3",
+       "chance": "120%"
+      }
      ]
     },
     {
@@ -358,9 +582,29 @@
       3
      ],
      "effects": [
-      "Bleed 3",
-      "Mark Target",
-      "Esq Stress 3"
+      {
+       "raw": "Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Esq Stress 3",
+       "chance": "90%",
+       "stress": "10"
+      }
      ]
     },
     {
@@ -386,11 +630,45 @@
       4
      ],
      "effects": [
-      "CC Big Feed Heal 3",
-      "CC Mob Acc Debuff 3",
-      "Crimson Curse Strong",
-      "Feed Stress Beast",
-      "CC Steal Blight"
+      {
+       "raw": "CC Big Feed Heal 3",
+       "chance": "100%",
+       "heal": "8"
+      },
+      {
+       "raw": "CC Mob Acc Debuff 3",
+       "chance": "120%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-18%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-3"
+        }
+       ]
+      },
+      {
+       "raw": "Crimson Curse Strong",
+       "chance": "45%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Feed Stress Beast",
+       "chance": "85%",
+       "stress": "12"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     }
    ],
@@ -448,8 +726,24 @@
       2
      ],
      "effects": [
-      "Esq Pistol Debuff 5",
-      "Esq Push 5"
+      {
+       "raw": "Esq Pistol Debuff 5",
+       "chance": "140%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "-2"
+        }
+       ]
+      },
+      {
+       "raw": "Esq Push 5",
+       "chance": "130%",
+       "move": {
+        "kind": "push",
+        "amount": "2"
+       }
+      }
      ]
     },
     {
@@ -474,8 +768,31 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Skewering AOE Bleed 5",
-      "Esq Riposte 5"
+      {
+       "raw": "Skewering AOE Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Esq Riposte 5",
+       "chance": "100%",
+       "duration": 3,
+       "dmgMultiply": "-65%",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "-2%"
+        }
+       ],
+       "traits": [
+        "riposte"
+       ]
+      }
      ]
     },
     {
@@ -501,13 +818,56 @@
       4
      ],
      "effects": [
-      "CC Big Feed Heal 5",
-      "CC Mob Acc Debuff 5",
-      "switch_mode_beast_self",
-      "clear_riposte_performer",
-      "Feed Stress Human",
-      "CC Steal Blight",
-      "Crimson Curse Strong"
+      {
+       "raw": "CC Big Feed Heal 5",
+       "chance": "100%",
+       "heal": "10"
+      },
+      {
+       "raw": "CC Mob Acc Debuff 5",
+       "chance": "140%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-15%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-2"
+        }
+       ]
+      },
+      {
+       "raw": "switch_mode_beast_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "clear_riposte_performer",
+       "chance": "100%"
+      },
+      {
+       "raw": "Feed Stress Human",
+       "chance": "85%",
+       "stress": "8"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      },
+      {
+       "raw": "Crimson Curse Strong",
+       "chance": "45%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -532,7 +892,10 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Esq Foreleg 5"
+      {
+       "raw": "Esq Foreleg 5",
+       "chance": "140%"
+      }
      ]
     },
     {
@@ -556,9 +919,29 @@
       3
      ],
      "effects": [
-      "Bleed 5",
-      "Mark Target",
-      "Esq Stress 5"
+      {
+       "raw": "Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Esq Stress 5",
+       "chance": "90%",
+       "stress": "12"
+      }
      ]
     },
     {
@@ -584,11 +967,45 @@
       4
      ],
      "effects": [
-      "CC Big Feed Heal 5",
-      "CC Mob Acc Debuff 5",
-      "Crimson Curse Strong",
-      "Feed Stress Beast",
-      "CC Steal Blight"
+      {
+       "raw": "CC Big Feed Heal 5",
+       "chance": "100%",
+       "heal": "10"
+      },
+      {
+       "raw": "CC Mob Acc Debuff 5",
+       "chance": "140%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-15%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-2"
+        }
+       ]
+      },
+      {
+       "raw": "Crimson Curse Strong",
+       "chance": "45%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Feed Stress Beast",
+       "chance": "85%",
+       "stress": "12"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     }
    ],

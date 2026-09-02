@@ -54,7 +54,11 @@
       2
      ],
      "effects": [
-      "Stress 1"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     },
     {
@@ -81,8 +85,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Thrall Revenge Stress 1",
-      "kill_self_queued"
+      {
+       "raw": "Thrall Revenge Stress 1",
+       "chance": "100%",
+       "stress": "5"
+      },
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      }
      ]
     }
    ],
@@ -160,19 +174,23 @@
     "skillDesires": [
      {
       "skill": "explode",
+      "chance": 100000,
       "type": "performing_turn_skill"
      },
      {
       "skill": "bloated_swipe",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      }
     ]
    },
@@ -230,7 +248,11 @@
       2
      ],
      "effects": [
-      "Stress 1"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     },
     {
@@ -257,8 +279,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Thrall Revenge Stress 3",
-      "kill_self_queued"
+      {
+       "raw": "Thrall Revenge Stress 3",
+       "chance": "100%",
+       "stress": "8"
+      },
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      }
      ]
     }
    ],
@@ -336,19 +368,23 @@
     "skillDesires": [
      {
       "skill": "explode",
+      "chance": 100000,
       "type": "performing_turn_skill"
      },
      {
       "skill": "bloated_swipe",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      }
     ]
    },
@@ -406,7 +442,11 @@
       2
      ],
      "effects": [
-      "Stress 1"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     },
     {
@@ -433,8 +473,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Thrall Revenge Stress 5",
-      "kill_self_queued"
+      {
+       "raw": "Thrall Revenge Stress 5",
+       "chance": "100%",
+       "stress": "13"
+      },
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      }
      ]
     }
    ],
@@ -512,19 +562,23 @@
     "skillDesires": [
      {
       "skill": "explode",
+      "chance": 100000,
       "type": "performing_turn_skill"
      },
      {
       "skill": "bloated_swipe",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      }
     ]
    },

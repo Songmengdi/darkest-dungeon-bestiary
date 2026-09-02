@@ -72,8 +72,19 @@
       2
      ],
      "effects": [
-      "Stun 1",
-      "Push 1A"
+      {
+       "raw": "Stun 1",
+       "chance": "100%",
+       "stun": "1"
+      },
+      {
+       "raw": "Push 1A",
+       "chance": "100%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      }
      ]
     },
     {
@@ -171,35 +182,43 @@
     "skillDesires": [
      {
       "skill": "axe_strike",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "axe_strike",
+      "chance": 3,
       "type": "performing_turn_skill"
      },
      {
       "skill": "shield_bash",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "axe_strike_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "shield_bash"
      },
      {
       "type": "resistance_target",
+      "chance": 2,
       "skill": "shield_bash"
      },
      {
       "type": "marked_target",
+      "chance": 2,
       "skill": "axe_strike"
      }
     ]
@@ -257,7 +276,11 @@
       2
      ],
      "effects": [
-      "Defender Axeblade Debuff 3"
+      {
+       "raw": "Defender Axeblade Debuff 3",
+       "chance": "120%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -279,8 +302,19 @@
       2
      ],
      "effects": [
-      "Stun 3",
-      "Push 1C"
+      {
+       "raw": "Stun 3",
+       "chance": "120%",
+       "stun": "1"
+      },
+      {
+       "raw": "Push 1C",
+       "chance": "120%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      }
      ]
     },
     {
@@ -327,10 +361,38 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Clear Guard Performer",
-      "Clear Guard Target",
-      "Skeleton Guard 1",
-      "Skeleton Defend 1"
+      {
+       "raw": "Clear Guard Performer",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Clear Guard Target",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Skeleton Guard 1",
+       "duration": 3,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "Skeleton Defend 1",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "25%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -408,43 +470,53 @@
     "skillDesires": [
      {
       "skill": "axe_strike",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "axe_strike",
+      "chance": 3,
       "type": "performing_turn_skill"
      },
      {
       "skill": "shield_bash",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "axe_strike_weak",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "shield_defend",
+      "chance": 4,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "shield_defend"
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "shield_bash"
      },
      {
       "type": "resistance_target",
+      "chance": 3,
       "skill": "shield_bash"
      },
      {
       "type": "marked_target",
+      "chance": 3,
       "skill": "axe_strike"
      }
     ]
@@ -502,7 +574,11 @@
       2
      ],
      "effects": [
-      "Defender Axeblade Debuff 5"
+      {
+       "raw": "Defender Axeblade Debuff 5",
+       "chance": "140%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -524,8 +600,19 @@
       2
      ],
      "effects": [
-      "Stun 5",
-      "Push 1E"
+      {
+       "raw": "Stun 5",
+       "chance": "140%",
+       "stun": "1"
+      },
+      {
+       "raw": "Push 1E",
+       "chance": "140%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      }
      ]
     },
     {
@@ -572,10 +659,38 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Clear Guard Performer",
-      "Clear Guard Target",
-      "Skeleton Guard 1",
-      "Skeleton Defend 1"
+      {
+       "raw": "Clear Guard Performer",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Clear Guard Target",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Skeleton Guard 1",
+       "duration": 3,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "Skeleton Defend 1",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "25%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -653,43 +768,53 @@
     "skillDesires": [
      {
       "skill": "axe_strike",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "axe_strike",
+      "chance": 3,
       "type": "performing_turn_skill"
      },
      {
       "skill": "shield_bash",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "axe_strike_weak",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "shield_defend",
+      "chance": 2,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "shield_defend"
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "shield_bash"
      },
      {
       "type": "resistance_target",
+      "chance": 4,
       "skill": "shield_bash"
      },
      {
       "type": "marked_target",
+      "chance": 4,
       "skill": "axe_strike"
      }
     ]

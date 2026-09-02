@@ -53,7 +53,14 @@
       4
      ],
      "effects": [
-      "Pull 2A"
+      {
+       "raw": "Pull 2A",
+       "chance": "100%",
+       "move": {
+        "kind": "pull",
+        "amount": "2"
+       }
+      }
      ]
     },
     {
@@ -77,7 +84,14 @@
       2
      ],
      "effects": [
-      "Push 2A"
+      {
+       "raw": "Push 2A",
+       "chance": "100%",
+       "move": {
+        "kind": "push",
+        "amount": "2"
+       }
+      }
      ]
     },
     {
@@ -103,8 +117,16 @@
       4
      ],
      "effects": [
-      "Stress 2",
-      "Darkness 2"
+      {
+       "raw": "Stress 2",
+       "chance": "100%",
+       "stress": "15"
+      },
+      {
+       "raw": "Darkness 2",
+       "chance": "100%",
+       "torch": "10"
+      }
      ]
     }
    ],
@@ -182,27 +204,33 @@
     "skillDesires": [
      {
       "skill": "cultist_push",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "cultist_pull",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "cultist_incantation",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "cultist_incantation",
+      "chance": 5,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 1,
       "skill": "cultist_incantation"
      }
     ]
@@ -260,8 +288,19 @@
       4
      ],
      "effects": [
-      "Pull 2C",
-      "Witch Eldritch Stress 3"
+      {
+       "raw": "Pull 2C",
+       "chance": "120%",
+       "move": {
+        "kind": "pull",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Witch Eldritch Stress 3",
+       "chance": "100%",
+       "stress": "5"
+      }
      ]
     },
     {
@@ -285,8 +324,19 @@
       2
      ],
      "effects": [
-      "Push 2C",
-      "Witch Eldritch Stress 3"
+      {
+       "raw": "Push 2C",
+       "chance": "120%",
+       "move": {
+        "kind": "push",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Witch Eldritch Stress 3",
+       "chance": "100%",
+       "stress": "5"
+      }
      ]
     },
     {
@@ -312,9 +362,24 @@
       4
      ],
      "effects": [
-      "Witch Incantation Stress 3",
-      "Darkness 2",
-      "Witch Incantation Mark"
+      {
+       "raw": "Witch Incantation Stress 3",
+       "chance": "100%",
+       "stress": "17"
+      },
+      {
+       "raw": "Darkness 2",
+       "chance": "100%",
+       "torch": "10"
+      },
+      {
+       "raw": "Witch Incantation Mark",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     }
    ],
@@ -392,27 +457,33 @@
     "skillDesires": [
      {
       "skill": "cultist_push",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "cultist_pull",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "cultist_incantation",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "cultist_incantation",
+      "chance": 5,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 2,
       "skill": "cultist_incantation"
      }
     ]
@@ -470,8 +541,19 @@
       4
      ],
      "effects": [
-      "Pull 2E",
-      "Witch Eldritch Stress 5"
+      {
+       "raw": "Pull 2E",
+       "chance": "140%",
+       "move": {
+        "kind": "pull",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Witch Eldritch Stress 5",
+       "chance": "100%",
+       "stress": "8"
+      }
      ]
     },
     {
@@ -495,8 +577,19 @@
       2
      ],
      "effects": [
-      "Push 2E",
-      "Witch Eldritch Stress 5"
+      {
+       "raw": "Push 2E",
+       "chance": "140%",
+       "move": {
+        "kind": "push",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Witch Eldritch Stress 5",
+       "chance": "100%",
+       "stress": "8"
+      }
      ]
     },
     {
@@ -522,9 +615,24 @@
       4
      ],
      "effects": [
-      "Witch Incantation Stress 5",
-      "Darkness 2",
-      "Witch Incantation Mark"
+      {
+       "raw": "Witch Incantation Stress 5",
+       "chance": "100%",
+       "stress": "20"
+      },
+      {
+       "raw": "Darkness 2",
+       "chance": "100%",
+       "torch": "10"
+      },
+      {
+       "raw": "Witch Incantation Mark",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     }
    ],
@@ -602,27 +710,33 @@
     "skillDesires": [
      {
       "skill": "cultist_push",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "cultist_pull",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "cultist_incantation",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "cultist_incantation",
+      "chance": 5,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 3,
       "skill": "cultist_incantation"
      }
     ]

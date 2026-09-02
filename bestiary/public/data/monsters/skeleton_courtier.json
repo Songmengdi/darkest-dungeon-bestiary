@@ -55,7 +55,11 @@
       4
      ],
      "effects": [
-      "Stress 2"
+      {
+       "raw": "Stress 2",
+       "chance": "100%",
+       "stress": "15"
+      }
      ]
     },
     {
@@ -153,19 +157,23 @@
     "skillDesires": [
      {
       "skill": "tempting_goblet",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "dagger_jab",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 1,
       "skill": "tempting_goblet"
      }
     ]
@@ -226,8 +234,22 @@
       4
      ],
      "effects": [
-      "Stress 2",
-      "Courtier Goblet Debuff 3"
+      {
+       "raw": "Stress 2",
+       "chance": "100%",
+       "stress": "15"
+      },
+      {
+       "raw": "Courtier Goblet Debuff 3",
+       "chance": "120%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "-5%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -325,19 +347,23 @@
     "skillDesires": [
      {
       "skill": "tempting_goblet",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "dagger_jab",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 2,
       "skill": "tempting_goblet"
      }
     ]
@@ -398,8 +424,22 @@
       4
      ],
      "effects": [
-      "Stress 2",
-      "Courtier Goblet Debuff 5"
+      {
+       "raw": "Stress 2",
+       "chance": "100%",
+       "stress": "15"
+      },
+      {
+       "raw": "Courtier Goblet Debuff 5",
+       "chance": "140%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "-10%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -497,19 +537,23 @@
     "skillDesires": [
      {
       "skill": "tempting_goblet",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "dagger_jab",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 3,
       "skill": "tempting_goblet"
      }
     ]

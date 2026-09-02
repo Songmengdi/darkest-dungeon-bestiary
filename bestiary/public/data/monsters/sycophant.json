@@ -56,7 +56,11 @@
       4
      ],
      "effects": [
-      "Syco Whine Stress 1"
+      {
+       "raw": "Syco Whine Stress 1",
+       "chance": "100%",
+       "stress": "9"
+      }
      ]
     },
     {
@@ -82,12 +86,41 @@
       4
      ],
      "effects": [
-      "Syco Stun Buff 1",
-      "Crimson Curse Weak",
-      "switch_mode_beast_self",
-      "CC Small Feed Heal 1",
-      "Feed Stress Human",
-      "CC Steal Blight"
+      {
+       "raw": "Syco Stun Buff 1",
+       "duration": 6
+      },
+      {
+       "raw": "Crimson Curse Weak",
+       "chance": "31%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "switch_mode_beast_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "CC Small Feed Heal 1",
+       "chance": "100%",
+       "heal": "4"
+      },
+      {
+       "raw": "Feed Stress Human",
+       "chance": "85%",
+       "stress": "8"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     },
     {
@@ -113,8 +146,16 @@
       4
      ],
      "effects": [
-      "Syco Stun 1",
-      "Syco Weak Stress 1"
+      {
+       "raw": "Syco Stun 1",
+       "chance": "90%",
+       "stun": "1"
+      },
+      {
+       "raw": "Syco Weak Stress 1",
+       "chance": "100%",
+       "stress": "4"
+      }
      ]
     },
     {
@@ -140,7 +181,16 @@
       4
      ],
      "effects": [
-      "CC Mob Bleed 1"
+      {
+       "raw": "CC Mob Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -166,11 +216,45 @@
       4
      ],
      "effects": [
-      "CC Small Feed Heal 1",
-      "CC Mob Acc Debuff 1",
-      "Crimson Curse Weak",
-      "Feed Stress Beast",
-      "CC Steal Blight"
+      {
+       "raw": "CC Small Feed Heal 1",
+       "chance": "100%",
+       "heal": "4"
+      },
+      {
+       "raw": "CC Mob Acc Debuff 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-20%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-4"
+        }
+       ]
+      },
+      {
+       "raw": "Crimson Curse Weak",
+       "chance": "31%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Feed Stress Beast",
+       "chance": "85%",
+       "stress": "12"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     }
    ],
@@ -231,7 +315,11 @@
       4
      ],
      "effects": [
-      "Syco Whine Stress 3"
+      {
+       "raw": "Syco Whine Stress 3",
+       "chance": "100%",
+       "stress": "11"
+      }
      ]
     },
     {
@@ -257,12 +345,41 @@
       4
      ],
      "effects": [
-      "Syco Stun Buff 2",
-      "Crimson Curse Weak",
-      "switch_mode_beast_self",
-      "CC Small Feed Heal 1",
-      "Feed Stress Human",
-      "CC Steal Blight"
+      {
+       "raw": "Syco Stun Buff 2",
+       "duration": 6
+      },
+      {
+       "raw": "Crimson Curse Weak",
+       "chance": "31%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "switch_mode_beast_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "CC Small Feed Heal 1",
+       "chance": "100%",
+       "heal": "4"
+      },
+      {
+       "raw": "Feed Stress Human",
+       "chance": "85%",
+       "stress": "8"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     },
     {
@@ -288,8 +405,16 @@
       4
      ],
      "effects": [
-      "Syco Stun 3",
-      "Syco Weak Stress 3"
+      {
+       "raw": "Syco Stun 3",
+       "chance": "100%",
+       "stun": "1"
+      },
+      {
+       "raw": "Syco Weak Stress 3",
+       "chance": "100%",
+       "stress": "5"
+      }
      ]
     },
     {
@@ -315,7 +440,16 @@
       4
      ],
      "effects": [
-      "CC Mob Bleed 3"
+      {
+       "raw": "CC Mob Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -341,11 +475,45 @@
       4
      ],
      "effects": [
-      "CC Small Feed Heal 2",
-      "CC Mob Acc Debuff 3",
-      "Crimson Curse Weak",
-      "Feed Stress Beast",
-      "CC Steal Blight"
+      {
+       "raw": "CC Small Feed Heal 2",
+       "chance": "100%",
+       "heal": "6"
+      },
+      {
+       "raw": "CC Mob Acc Debuff 3",
+       "chance": "120%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-18%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-3"
+        }
+       ]
+      },
+      {
+       "raw": "Crimson Curse Weak",
+       "chance": "31%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Feed Stress Beast",
+       "chance": "85%",
+       "stress": "12"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     }
    ],
@@ -406,7 +574,11 @@
       4
      ],
      "effects": [
-      "Syco Whine Stress 5"
+      {
+       "raw": "Syco Whine Stress 5",
+       "chance": "100%",
+       "stress": "13"
+      }
      ]
     },
     {
@@ -432,12 +604,41 @@
       4
      ],
      "effects": [
-      "Syco Stun Buff 3",
-      "Crimson Curse Weak",
-      "switch_mode_beast_self",
-      "CC Small Feed Heal 1",
-      "Feed Stress Human",
-      "CC Steal Blight"
+      {
+       "raw": "Syco Stun Buff 3",
+       "duration": 4
+      },
+      {
+       "raw": "Crimson Curse Weak",
+       "chance": "31%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "switch_mode_beast_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "CC Small Feed Heal 1",
+       "chance": "100%",
+       "heal": "4"
+      },
+      {
+       "raw": "Feed Stress Human",
+       "chance": "85%",
+       "stress": "8"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     },
     {
@@ -463,8 +664,16 @@
       4
      ],
      "effects": [
-      "Syco Stun 5",
-      "Syco Weak Stress 5"
+      {
+       "raw": "Syco Stun 5",
+       "chance": "110%",
+       "stun": "1"
+      },
+      {
+       "raw": "Syco Weak Stress 5",
+       "chance": "100%",
+       "stress": "6"
+      }
      ]
     },
     {
@@ -490,7 +699,16 @@
       4
      ],
      "effects": [
-      "CC Mob Bleed 5"
+      {
+       "raw": "CC Mob Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -516,11 +734,45 @@
       4
      ],
      "effects": [
-      "CC Small Feed Heal 3",
-      "CC Mob Acc Debuff 5",
-      "Crimson Curse Weak",
-      "Feed Stress Beast",
-      "CC Steal Blight"
+      {
+       "raw": "CC Small Feed Heal 3",
+       "chance": "100%",
+       "heal": "9"
+      },
+      {
+       "raw": "CC Mob Acc Debuff 5",
+       "chance": "140%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-15%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-2"
+        }
+       ]
+      },
+      {
+       "raw": "Crimson Curse Weak",
+       "chance": "31%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Feed Stress Beast",
+       "chance": "85%",
+       "stress": "12"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     }
    ],

@@ -54,7 +54,16 @@
       2
      ],
      "effects": [
-      "Bleed 1"
+      {
+       "raw": "Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -81,10 +90,38 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Clear Guard Performer",
-      "Clear Guard Target",
-      "Octo Guard 1",
-      "OctoDefend 1"
+      {
+       "raw": "Clear Guard Performer",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Clear Guard Target",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Octo Guard 1",
+       "duration": 3,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "OctoDefend 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "25%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -162,23 +199,28 @@
     "skillDesires": [
      {
       "skill": "octo_cestus",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "octo_guard",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "octo_guard",
+      "chance": 3,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 2,
       "skill": "octo_cestus"
      }
     ]
@@ -238,7 +280,16 @@
       2
      ],
      "effects": [
-      "Bleed 2"
+      {
+       "raw": "Bleed 2",
+       "chance": "110%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -265,10 +316,38 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Clear Guard Performer",
-      "Clear Guard Target",
-      "Octo Guard 1",
-      "OctoDefend 1"
+      {
+       "raw": "Clear Guard Performer",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Clear Guard Target",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Octo Guard 1",
+       "duration": 3,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "OctoDefend 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "25%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -346,23 +425,28 @@
     "skillDesires": [
      {
       "skill": "octo_cestus",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "octo_guard",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "octo_guard",
+      "chance": 3,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 3,
       "skill": "octo_cestus"
      }
     ]
@@ -422,7 +506,16 @@
       2
      ],
      "effects": [
-      "Bleed 3"
+      {
+       "raw": "Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -449,10 +542,38 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Clear Guard Performer",
-      "Clear Guard Target",
-      "Octo Guard 1",
-      "OctoDefend 1"
+      {
+       "raw": "Clear Guard Performer",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Clear Guard Target",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Octo Guard 1",
+       "duration": 3,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "OctoDefend 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "25%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -530,23 +651,28 @@
     "skillDesires": [
      {
       "skill": "octo_cestus",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "octo_guard",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "octo_guard",
+      "chance": 3,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 4,
       "skill": "octo_cestus"
      }
     ]

@@ -49,6 +49,22 @@ export interface TierStats {
   };
 }
 
+export interface EffectRef {
+  raw: string;
+  chance?: string;
+  duration?: number;
+  stress?: string;
+  dot?: { kind: "bleed" | "blight" | "stress"; amount: string; duration?: number };
+  move?: { kind: "push" | "pull" | "shuffle"; amount?: string };
+  stun?: string;
+  heal?: string;
+  healStress?: string;
+  torch?: string;
+  dmgMultiply?: string;
+  stats?: Array<{ key: string; value: string }>;
+  traits?: string[];
+}
+
 export interface Skill {
   id: string;
   name: { zh?: string; en?: string };
@@ -62,7 +78,7 @@ export interface Skill {
   targetAoe?: boolean;
   /** 原始 target 带 @ 前缀:目标是怪物友方(增益 / 守护 / 治疗) */
   targetAlly?: boolean;
-  effects: string[];
+  effects: EffectRef[];
 }
 
 export interface LootEntry {

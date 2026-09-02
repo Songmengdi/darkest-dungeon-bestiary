@@ -53,8 +53,19 @@
       4
      ],
      "effects": [
-      "Pull 2F",
-      "Witch Eldritch Stress 5"
+      {
+       "raw": "Pull 2F",
+       "chance": "150%",
+       "move": {
+        "kind": "pull",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Witch Eldritch Stress 5",
+       "chance": "100%",
+       "stress": "8"
+      }
      ]
     },
     {
@@ -78,8 +89,19 @@
       2
      ],
      "effects": [
-      "Push 2F",
-      "Witch Eldritch Stress 5"
+      {
+       "raw": "Push 2F",
+       "chance": "150%",
+       "move": {
+        "kind": "push",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Witch Eldritch Stress 5",
+       "chance": "100%",
+       "stress": "8"
+      }
      ]
     },
     {
@@ -105,9 +127,24 @@
       4
      ],
      "effects": [
-      "Witch Incantation Stress 5",
-      "Darkness 2",
-      "Turbo Mark"
+      {
+       "raw": "Witch Incantation Stress 5",
+       "chance": "100%",
+       "stress": "20"
+      },
+      {
+       "raw": "Darkness 2",
+       "chance": "100%",
+       "torch": "10"
+      },
+      {
+       "raw": "Turbo Mark",
+       "chance": "100%",
+       "duration": 1,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     }
    ],
@@ -117,35 +154,43 @@
     "skillDesires": [
      {
       "skill": "cultist_push_D",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "cultist_pull_D",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "cultist_incantation_D",
+      "chance": 3,
       "type": "specific_skill"
      },
      {
       "skill": "cultist_incantation_D",
+      "chance": 20,
       "type": "performing_turn_skill"
      },
      {
       "skill": "cultist_pull_D",
+      "chance": 10,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 10,
       "skill": "cultist_incantation_D"
      },
      {
       "type": "marked_target",
+      "chance": 10,
       "skill": "cultist_pull_D"
      }
     ]

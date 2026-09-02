@@ -79,7 +79,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stun 1"
+      {
+       "raw": "Stun 1",
+       "chance": "100%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -105,7 +109,13 @@
       4
      ],
      "effects": [
-      "Summon Ecto 1"
+      {
+       "raw": "Summon Ecto 1",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -183,27 +193,33 @@
     "skillDesires": [
      {
       "skill": "slime_lg",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "slime_stun",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "summon_little_slime",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "slime_stun"
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      }
     ]
    },
@@ -263,7 +279,17 @@
       4
      ],
      "effects": [
-      "Big Ecto Slime Debuff 3"
+      {
+       "raw": "Big Ecto Slime Debuff 3",
+       "chance": "120%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "-2"
+        }
+       ]
+      }
      ]
     },
     {
@@ -288,7 +314,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stun 2"
+      {
+       "raw": "Stun 2",
+       "chance": "110%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -314,7 +344,13 @@
       4
      ],
      "effects": [
-      "Summon Ecto 2"
+      {
+       "raw": "Summon Ecto 2",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -392,27 +428,33 @@
     "skillDesires": [
      {
       "skill": "slime_lg",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "slime_stun",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "summon_little_slime",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "slime_stun"
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      }
     ]
    },
@@ -472,7 +514,17 @@
       4
      ],
      "effects": [
-      "Big Ecto Slime Debuff 5"
+      {
+       "raw": "Big Ecto Slime Debuff 5",
+       "chance": "140%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "-3"
+        }
+       ]
+      }
      ]
     },
     {
@@ -497,7 +549,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stun 3"
+      {
+       "raw": "Stun 3",
+       "chance": "120%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -523,7 +579,13 @@
       4
      ],
      "effects": [
-      "Summon Ecto 3"
+      {
+       "raw": "Summon Ecto 3",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -601,27 +663,33 @@
     "skillDesires": [
      {
       "skill": "slime_lg",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "slime_stun",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "summon_little_slime",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "slime_stun"
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      }
     ]
    },

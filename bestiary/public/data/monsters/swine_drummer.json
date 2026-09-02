@@ -57,7 +57,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Drum Stress 1"
+      {
+       "raw": "Drum Stress 1",
+       "chance": "70%",
+       "stress": "5"
+      }
      ]
     },
     {
@@ -83,7 +87,20 @@
       4
      ],
      "effects": [
-      "Vulnerability Curse 1"
+      {
+       "raw": "Vulnerability Curse 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-10%"
+        }
+       ],
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     }
    ],
@@ -161,20 +178,24 @@
     "skillDesires": [
      {
       "skill": "drum_fear",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "drum_debuff",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "drum_debuff",
+      "chance": 3,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },
@@ -235,7 +256,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Drum Stress 1"
+      {
+       "raw": "Drum Stress 1",
+       "chance": "70%",
+       "stress": "5"
+      }
      ]
     },
     {
@@ -261,8 +286,28 @@
       4
      ],
      "effects": [
-      "Vulnerability Curse 3",
-      "Drum Debilitation Mark"
+      {
+       "raw": "Vulnerability Curse 3",
+       "chance": "120%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-15%"
+        }
+       ],
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Drum Debilitation Mark",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     }
    ],
@@ -340,20 +385,24 @@
     "skillDesires": [
      {
       "skill": "drum_fear",
+      "chance": 3,
       "type": "specific_skill"
      },
      {
       "skill": "drum_debuff",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "drum_debuff",
+      "chance": 5,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },
@@ -414,7 +463,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Drum Stress 1"
+      {
+       "raw": "Drum Stress 1",
+       "chance": "70%",
+       "stress": "5"
+      }
      ]
     },
     {
@@ -440,8 +493,28 @@
       4
      ],
      "effects": [
-      "Vulnerability Curse 5",
-      "Drum Debilitation Mark"
+      {
+       "raw": "Vulnerability Curse 5",
+       "chance": "140%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-20%"
+        }
+       ],
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Drum Debilitation Mark",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     }
    ],
@@ -519,20 +592,24 @@
     "skillDesires": [
      {
       "skill": "drum_fear",
+      "chance": 4,
       "type": "specific_skill"
      },
      {
       "skill": "drum_debuff",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "drum_debuff",
+      "chance": 8,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },

@@ -57,7 +57,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "galaxy stress"
+      {
+       "raw": "galaxy stress",
+       "chance": "100%",
+       "stress": "20"
+      }
      ]
     },
     {
@@ -84,8 +88,26 @@
      ],
      "targetAoe": true,
      "effects": [
-      "galaxy blight",
-      "galaxy horror"
+      {
+       "raw": "galaxy blight",
+       "chance": "100%",
+       "duration": 5,
+       "dot": {
+        "kind": "blight",
+        "amount": "4",
+        "duration": 5
+       }
+      },
+      {
+       "raw": "galaxy horror",
+       "chance": "100%",
+       "duration": 5,
+       "dot": {
+        "kind": "stress",
+        "amount": "3",
+        "duration": 5
+       }
+      }
      ]
     }
    ],

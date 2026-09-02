@@ -55,8 +55,16 @@
       4
      ],
      "effects": [
-      "Chevalier AOE Stun 1",
-      "Chev Dodge Debuff 1"
+      {
+       "raw": "Chevalier AOE Stun 1",
+       "chance": "85%",
+       "stun": "1"
+      },
+      {
+       "raw": "Chev Dodge Debuff 1",
+       "chance": "100%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -82,8 +90,21 @@
       4
      ],
      "effects": [
-      "CC Mob Bleed 1",
-      "CC Bleed Res Debuff 1"
+      {
+       "raw": "CC Mob Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "CC Bleed Res Debuff 1",
+       "chance": "100%",
+       "duration": 3
+      }
      ]
     }
    ],
@@ -144,8 +165,16 @@
       4
      ],
      "effects": [
-      "Chevalier AOE Stun 2",
-      "Chev Dodge Debuff 2"
+      {
+       "raw": "Chevalier AOE Stun 2",
+       "chance": "105%",
+       "stun": "1"
+      },
+      {
+       "raw": "Chev Dodge Debuff 2",
+       "chance": "120%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -171,8 +200,21 @@
       4
      ],
      "effects": [
-      "CC Mob Bleed 3",
-      "CC Bleed Res Debuff 3"
+      {
+       "raw": "CC Mob Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "CC Bleed Res Debuff 3",
+       "chance": "120%",
+       "duration": 3
+      }
      ]
     }
    ],
@@ -233,8 +275,16 @@
       4
      ],
      "effects": [
-      "Chevalier AOE Stun 3",
-      "Chev Dodge Debuff 3"
+      {
+       "raw": "Chevalier AOE Stun 3",
+       "chance": "125%",
+       "stun": "1"
+      },
+      {
+       "raw": "Chev Dodge Debuff 3",
+       "chance": "140%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -260,8 +310,21 @@
       4
      ],
      "effects": [
-      "CC Mob Bleed 5",
-      "CC Bleed Res Debuff 5"
+      {
+       "raw": "CC Mob Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "CC Bleed Res Debuff 5",
+       "chance": "140%",
+       "duration": 3
+      }
      ]
     }
    ],

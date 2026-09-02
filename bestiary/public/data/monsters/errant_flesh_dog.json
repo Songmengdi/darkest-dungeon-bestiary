@@ -54,8 +54,19 @@
       3
      ],
      "effects": [
-      "Errant Stress",
-      "Errant Dmg Marked"
+      {
+       "raw": "Errant Stress",
+       "chance": "100%",
+       "stress": "5"
+      },
+      {
+       "raw": "Errant Dmg Marked",
+       "chance": "100%",
+       "dmgMultiply": "50%",
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -101,8 +112,19 @@
       4
      ],
      "effects": [
-      "Pull 2F",
-      "Errant Stun"
+      {
+       "raw": "Pull 2F",
+       "chance": "150%",
+       "move": {
+        "kind": "pull",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Errant Stun",
+       "chance": "130%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -112,31 +134,38 @@
     "skillDesires": [
      {
       "skill": "errant_bite",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "errant_nip",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "errant_pull",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "errant_bite",
+      "chance": 10,
       "type": "effect_key_status_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "errant_pull"
      },
      {
       "type": "marked_target",
+      "chance": 5,
       "skill": "errant_bite"
      }
     ]

@@ -56,7 +56,13 @@
       4
      ],
      "effects": [
-      "siren_control 1"
+      {
+       "raw": "siren_control 1",
+       "chance": "70%",
+       "traits": [
+        "control"
+       ]
+      }
      ]
     },
     {
@@ -77,7 +83,13 @@
      ],
      "target": [],
      "effects": [
-      "Summon Aquatic 1"
+      {
+       "raw": "Summon Aquatic 1",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -104,7 +116,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stress 1"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     },
     {
@@ -131,7 +147,16 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Minor Bleed 1"
+      {
+       "raw": "Minor Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "1",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -319,52 +344,64 @@
     "skillDesires": [
      {
       "skill": "siren_song",
+      "chance": 1000,
       "type": "specific_skill"
      },
      {
       "skill": "siren_song",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "conch_summon",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "conch_summon",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "conch_horror",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "conch_celldisrupt",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "conch_summon"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "siren_song"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "conch_horror"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "conch_celldisrupt"
      },
      {
       "type": "resistance_target",
+      "chance": -1,
       "skill": "siren_song"
      },
      {
       "type": "resistance_target",
+      "chance": 3,
       "skill": "siren_song"
      }
     ]
@@ -424,7 +461,13 @@
       4
      ],
      "effects": [
-      "siren_control 2"
+      {
+       "raw": "siren_control 2",
+       "chance": "70%",
+       "traits": [
+        "control"
+       ]
+      }
      ]
     },
     {
@@ -445,7 +488,13 @@
      ],
      "target": [],
      "effects": [
-      "Summon Aquatic 2"
+      {
+       "raw": "Summon Aquatic 2",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -472,7 +521,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stress 1"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     },
     {
@@ -499,7 +552,16 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Minor Bleed 3"
+      {
+       "raw": "Minor Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -687,52 +749,64 @@
     "skillDesires": [
      {
       "skill": "siren_song",
+      "chance": 1000,
       "type": "specific_skill"
      },
      {
       "skill": "siren_song",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "conch_summon",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "conch_summon",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "conch_horror",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "conch_celldisrupt",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "conch_summon"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "siren_song"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "conch_horror"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "conch_celldisrupt"
      },
      {
       "type": "resistance_target",
+      "chance": -1,
       "skill": "siren_song"
      },
      {
       "type": "resistance_target",
+      "chance": 3,
       "skill": "siren_song"
      }
     ]
@@ -792,7 +866,13 @@
       4
      ],
      "effects": [
-      "siren_control 3"
+      {
+       "raw": "siren_control 3",
+       "chance": "70%",
+       "traits": [
+        "control"
+       ]
+      }
      ]
     },
     {
@@ -813,7 +893,13 @@
      ],
      "target": [],
      "effects": [
-      "Summon Aquatic 3"
+      {
+       "raw": "Summon Aquatic 3",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -840,7 +926,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stress 1"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     },
     {
@@ -867,7 +957,16 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Minor Bleed 5"
+      {
+       "raw": "Minor Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -1055,52 +1154,64 @@
     "skillDesires": [
      {
       "skill": "siren_song",
+      "chance": 1000,
       "type": "specific_skill"
      },
      {
       "skill": "siren_song",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "conch_summon",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "conch_summon",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "conch_horror",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "conch_celldisrupt",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "conch_summon"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "siren_song"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "conch_horror"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "conch_celldisrupt"
      },
      {
       "type": "resistance_target",
+      "chance": -1,
       "skill": "siren_song"
      },
      {
       "type": "resistance_target",
+      "chance": 3,
       "skill": "siren_song"
      }
     ]

@@ -56,7 +56,16 @@
       4
      ],
      "effects": [
-      "Adder Blight 1"
+      {
+       "raw": "Adder Blight 1",
+       "chance": "100%",
+       "duration": 4,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 4
+       }
+      }
      ]
     },
     {
@@ -80,7 +89,11 @@
       3
      ],
      "effects": [
-      "Adder Stun 1"
+      {
+       "raw": "Adder Stun 1",
+       "chance": "120%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -99,10 +112,25 @@
      ],
      "target": [],
      "effects": [
-      "Cure Self",
-      "Cure Debuffs",
-      "Molt Stacking Buff",
-      "Molt Heal 1"
+      {
+       "raw": "Cure Self",
+       "chance": "100%",
+       "traits": [
+        "cleanse"
+       ]
+      },
+      {
+       "raw": "Cure Debuffs"
+      },
+      {
+       "raw": "Molt Stacking Buff",
+       "chance": "100%"
+      },
+      {
+       "raw": "Molt Heal 1",
+       "chance": "100%",
+       "heal": "8"
+      }
      ]
     }
    ],
@@ -231,7 +259,16 @@
       4
      ],
      "effects": [
-      "Adder Blight 3"
+      {
+       "raw": "Adder Blight 3",
+       "chance": "120%",
+       "duration": 4,
+       "dot": {
+        "kind": "blight",
+        "amount": "4",
+        "duration": 4
+       }
+      }
      ]
     },
     {
@@ -255,7 +292,11 @@
       3
      ],
      "effects": [
-      "Adder Stun 3"
+      {
+       "raw": "Adder Stun 3",
+       "chance": "140%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -274,10 +315,25 @@
      ],
      "target": [],
      "effects": [
-      "Cure Self",
-      "Cure Debuffs",
-      "Molt Stacking Buff",
-      "Molt Heal 3"
+      {
+       "raw": "Cure Self",
+       "chance": "100%",
+       "traits": [
+        "cleanse"
+       ]
+      },
+      {
+       "raw": "Cure Debuffs"
+      },
+      {
+       "raw": "Molt Stacking Buff",
+       "chance": "100%"
+      },
+      {
+       "raw": "Molt Heal 3",
+       "chance": "100%",
+       "heal": "12"
+      }
      ]
     }
    ],
@@ -406,7 +462,16 @@
       4
      ],
      "effects": [
-      "Adder Blight 5"
+      {
+       "raw": "Adder Blight 5",
+       "chance": "140%",
+       "duration": 4,
+       "dot": {
+        "kind": "blight",
+        "amount": "4",
+        "duration": 4
+       }
+      }
      ]
     },
     {
@@ -430,7 +495,11 @@
       3
      ],
      "effects": [
-      "Adder Stun 5"
+      {
+       "raw": "Adder Stun 5",
+       "chance": "160%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -449,10 +518,25 @@
      ],
      "target": [],
      "effects": [
-      "Cure Self",
-      "Cure Debuffs",
-      "Molt Stacking Buff",
-      "Molt Heal 5"
+      {
+       "raw": "Cure Self",
+       "chance": "100%",
+       "traits": [
+        "cleanse"
+       ]
+      },
+      {
+       "raw": "Cure Debuffs"
+      },
+      {
+       "raw": "Molt Stacking Buff",
+       "chance": "100%"
+      },
+      {
+       "raw": "Molt Heal 5",
+       "chance": "100%",
+       "heal": "16"
+      }
      ]
     }
    ],

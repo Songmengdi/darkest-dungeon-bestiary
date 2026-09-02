@@ -56,8 +56,17 @@
       4
      ],
      "effects": [
-      "Beholder Stress",
-      "Beholder Weaken"
+      {
+       "raw": "Beholder Stress",
+       "chance": "80%",
+       "stress": "15"
+      },
+      {
+       "raw": "Beholder Weaken",
+       "chance": "150%",
+       "duration": 3,
+       "dmgMultiply": "-20%"
+      }
      ]
     },
     {
@@ -83,7 +92,16 @@
       4
      ],
      "effects": [
-      "Beholder Blight"
+      {
+       "raw": "Beholder Blight",
+       "chance": "150%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "8",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -104,7 +122,12 @@
      ],
      "target": [],
      "effects": [
-      "Beholder Selfbuff"
+      {
+       "raw": "Beholder Selfbuff",
+       "chance": "100%",
+       "duration": 4,
+       "dmgMultiply": "25%"
+      }
      ]
     },
     {
@@ -131,7 +154,13 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Summon Whitecell"
+      {
+       "raw": "Summon Whitecell",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -141,24 +170,29 @@
     "skillDesires": [
      {
       "skill": "beholder_summon",
+      "chance": 100,
       "type": "specific_skill"
      },
      {
       "skill": "beholder_gaze",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "beholder_burn",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "beholder_healself",
+      "chance": 20,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }

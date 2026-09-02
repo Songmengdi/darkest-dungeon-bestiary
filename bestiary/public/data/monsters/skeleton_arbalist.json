@@ -53,7 +53,14 @@
       4
      ],
      "effects": [
-      "Arbalist Dmg Marked Target"
+      {
+       "raw": "Arbalist Dmg Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "25%",
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -151,19 +158,23 @@
     "skillDesires": [
      {
       "skill": "crossbow_shot",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "bayonet_jab",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 2,
       "skill": "crossbow_shot"
      }
     ]
@@ -222,7 +233,14 @@
       4
      ],
      "effects": [
-      "Arbalist Dmg Marked Target"
+      {
+       "raw": "Arbalist Dmg Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "25%",
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -320,19 +338,23 @@
     "skillDesires": [
      {
       "skill": "crossbow_shot",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "bayonet_jab",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 3,
       "skill": "crossbow_shot"
      }
     ]
@@ -391,7 +413,14 @@
       4
      ],
      "effects": [
-      "Arbalist Dmg Marked Target"
+      {
+       "raw": "Arbalist Dmg Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "25%",
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -489,19 +518,23 @@
     "skillDesires": [
      {
       "skill": "crossbow_shot",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "bayonet_jab",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 4,
       "skill": "crossbow_shot"
      }
     ]

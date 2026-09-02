@@ -76,7 +76,16 @@
       3
      ],
      "effects": [
-      "Templar Sting Blight"
+      {
+       "raw": "Templar Sting Blight",
+       "chance": "150%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "10",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -100,8 +109,19 @@
       3
      ],
      "effects": [
-      "Push 2F",
-      "Stun 6"
+      {
+       "raw": "Push 2F",
+       "chance": "150%",
+       "move": {
+        "kind": "push",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Stun 6",
+       "chance": "150%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -127,7 +147,11 @@
       4
      ],
      "effects": [
-      "Darkest Eye"
+      {
+       "raw": "Darkest Eye",
+       "chance": "100%",
+       "stress": "40"
+      }
      ]
     }
    ],
@@ -137,31 +161,38 @@
     "skillDesires": [
      {
       "skill": "templar_pinch",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "templar_sting",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "templar_slam",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "darkest_eye",
+      "chance": 100,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 3
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "templar_slam"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "darkest_eye"
      }
     ]

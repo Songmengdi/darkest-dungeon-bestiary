@@ -56,7 +56,16 @@
       4
      ],
      "effects": [
-      "Bleed 1"
+      {
+       "raw": "Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -86,15 +95,18 @@
     "skillDesires": [
      {
       "skill": "head_chomp",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 3,
       "skill": "head_chomp"
      }
     ]
@@ -155,7 +167,16 @@
       4
      ],
      "effects": [
-      "Bleed 2"
+      {
+       "raw": "Bleed 2",
+       "chance": "110%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -185,15 +206,18 @@
     "skillDesires": [
      {
       "skill": "head_chomp",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 3,
       "skill": "head_chomp"
      }
     ]
@@ -254,7 +278,16 @@
       4
      ],
      "effects": [
-      "Bleed 3"
+      {
+       "raw": "Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -284,15 +317,18 @@
     "skillDesires": [
      {
       "skill": "head_chomp",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 3,
       "skill": "head_chomp"
      }
     ]

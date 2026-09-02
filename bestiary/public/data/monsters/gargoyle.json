@@ -78,7 +78,11 @@
       4
      ],
      "effects": [
-      "Stun 1"
+      {
+       "raw": "Stun 1",
+       "chance": "100%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -381,23 +385,28 @@
     "skillDesires": [
      {
       "skill": "claw_flurry",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "tail_whip",
+      "chance": 1,
       "type": "stun_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "tail_whip"
      },
      {
       "type": "marked_target",
+      "chance": 1,
       "skill": "tail_whip"
      }
     ]
@@ -456,7 +465,10 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Gargoyle Flurry Shuffle 3"
+      {
+       "raw": "Gargoyle Flurry Shuffle 3",
+       "chance": "50%"
+      }
      ]
     },
     {
@@ -482,8 +494,19 @@
       4
      ],
      "effects": [
-      "Stun 3",
-      "Gargoyle Lash Push 1B"
+      {
+       "raw": "Stun 3",
+       "chance": "120%",
+       "stun": "1"
+      },
+      {
+       "raw": "Gargoyle Lash Push 1B",
+       "chance": "85%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      }
      ]
     }
    ],
@@ -786,23 +809,28 @@
     "skillDesires": [
      {
       "skill": "claw_flurry",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "tail_whip",
+      "chance": 1,
       "type": "stun_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "tail_whip"
      },
      {
       "type": "marked_target",
+      "chance": 2,
       "skill": "tail_whip"
      }
     ]
@@ -861,7 +889,10 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Gargoyle Flurry Shuffle 5"
+      {
+       "raw": "Gargoyle Flurry Shuffle 5",
+       "chance": "65%"
+      }
      ]
     },
     {
@@ -887,8 +918,19 @@
       4
      ],
      "effects": [
-      "Stun 5",
-      "Gargoyle Lash Push 1C"
+      {
+       "raw": "Stun 5",
+       "chance": "140%",
+       "stun": "1"
+      },
+      {
+       "raw": "Gargoyle Lash Push 1C",
+       "chance": "100%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      }
      ]
     }
    ],
@@ -1191,27 +1233,33 @@
     "skillDesires": [
      {
       "skill": "claw_flurry",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "tail_whip",
+      "chance": 1,
       "type": "stun_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "tail_whip"
      },
      {
       "type": "resistance_target",
+      "chance": 2,
       "skill": "tail_whip"
      },
      {
       "type": "marked_target",
+      "chance": 3,
       "skill": "tail_whip"
      }
     ]

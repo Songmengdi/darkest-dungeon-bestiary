@@ -56,8 +56,16 @@
       4
      ],
      "effects": [
-      "Madman Snipe Stress 1",
-      "MadMan Stress Debuff 1"
+      {
+       "raw": "Madman Snipe Stress 1",
+       "chance": "100%",
+       "stress": "8"
+      },
+      {
+       "raw": "MadMan Stress Debuff 1",
+       "chance": "100%",
+       "duration": -1
+      }
      ]
     },
     {
@@ -82,8 +90,21 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Madman AOE Stress 1",
-      "Stress AOE DoT 1"
+      {
+       "raw": "Madman AOE Stress 1",
+       "chance": "80%",
+       "stress": "7"
+      },
+      {
+       "raw": "Stress AOE DoT 1",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "stress",
+        "amount": "4",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -161,19 +182,23 @@
     "skillDesires": [
      {
       "skill": "maddening_shanty",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "offkilter_jig",
+      "chance": 1000000000,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "ally_class_target",
+      "chance": 10000,
       "skill": "maddening_shanty"
      }
     ]
@@ -233,8 +258,16 @@
       4
      ],
      "effects": [
-      "Madman Snipe Stress 1",
-      "MadMan Stress Debuff 1"
+      {
+       "raw": "Madman Snipe Stress 1",
+       "chance": "100%",
+       "stress": "8"
+      },
+      {
+       "raw": "MadMan Stress Debuff 1",
+       "chance": "100%",
+       "duration": -1
+      }
      ]
     },
     {
@@ -259,8 +292,21 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Madman AOE Stress 2",
-      "Stress AOE DoT 2"
+      {
+       "raw": "Madman AOE Stress 2",
+       "chance": "80%",
+       "stress": "9"
+      },
+      {
+       "raw": "Stress AOE DoT 2",
+       "chance": "160%",
+       "duration": 4,
+       "dot": {
+        "kind": "stress",
+        "amount": "5",
+        "duration": 4
+       }
+      }
      ]
     }
    ],
@@ -338,19 +384,23 @@
     "skillDesires": [
      {
       "skill": "maddening_shanty",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "offkilter_jig",
+      "chance": 1000000000,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "ally_class_target",
+      "chance": 10000,
       "skill": "maddening_shanty"
      }
     ]
@@ -410,8 +460,16 @@
       4
      ],
      "effects": [
-      "Madman Snipe Stress 1",
-      "MadMan Stress Debuff 1"
+      {
+       "raw": "Madman Snipe Stress 1",
+       "chance": "100%",
+       "stress": "8"
+      },
+      {
+       "raw": "MadMan Stress Debuff 1",
+       "chance": "100%",
+       "duration": -1
+      }
      ]
     },
     {
@@ -436,8 +494,21 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Madman AOE Stress 2",
-      "Stress AOE DoT 2"
+      {
+       "raw": "Madman AOE Stress 2",
+       "chance": "80%",
+       "stress": "9"
+      },
+      {
+       "raw": "Stress AOE DoT 2",
+       "chance": "160%",
+       "duration": 4,
+       "dot": {
+        "kind": "stress",
+        "amount": "5",
+        "duration": 4
+       }
+      }
      ]
     }
    ],
@@ -515,19 +586,23 @@
     "skillDesires": [
      {
       "skill": "maddening_shanty",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "offkilter_jig",
+      "chance": 1000000000,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "ally_class_target",
+      "chance": 10000,
       "skill": "maddening_shanty"
      }
     ]

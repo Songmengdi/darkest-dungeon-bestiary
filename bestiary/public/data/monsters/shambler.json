@@ -57,8 +57,23 @@
      ],
      "targetAoe": true,
      "effects": [
-      "ShamblerBleed 1",
-      "SummonTentacle A"
+      {
+       "raw": "ShamblerBleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "SummonTentacle A",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -85,8 +100,23 @@
      ],
      "targetAoe": true,
      "effects": [
-      "ShamblerBlight 1",
-      "SummonTentacle A"
+      {
+       "raw": "ShamblerBlight 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "SummonTentacle A",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -113,8 +143,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stress 1",
-      "Shuffle Party 1"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "Shuffle Party 1",
+       "chance": "80%",
+       "move": {
+        "kind": "shuffle"
+       }
+      }
      ]
     }
    ],
@@ -142,20 +182,24 @@
     "skillDesires": [
      {
       "skill": "shamble_fwd",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "shamble_back",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "shambler_howl",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },
@@ -216,8 +260,23 @@
      ],
      "targetAoe": true,
      "effects": [
-      "ShamblerBleed 2",
-      "SummonTentacle B"
+      {
+       "raw": "ShamblerBleed 2",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "SummonTentacle B",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -244,8 +303,23 @@
      ],
      "targetAoe": true,
      "effects": [
-      "ShamblerBlight 2",
-      "SummonTentacle B"
+      {
+       "raw": "ShamblerBlight 2",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "SummonTentacle B",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -272,8 +346,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stress 1",
-      "Shuffle Party 2"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "Shuffle Party 2",
+       "chance": "90%",
+       "move": {
+        "kind": "shuffle"
+       }
+      }
      ]
     }
    ],
@@ -301,20 +385,24 @@
     "skillDesires": [
      {
       "skill": "shamble_fwd",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "shamble_back",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "shambler_howl",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },
@@ -375,8 +463,23 @@
      ],
      "targetAoe": true,
      "effects": [
-      "ShamblerBleed 3",
-      "SummonTentacle C"
+      {
+       "raw": "ShamblerBleed 3",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "SummonTentacle C",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -403,8 +506,23 @@
      ],
      "targetAoe": true,
      "effects": [
-      "ShamblerBlight 3",
-      "SummonTentacle C"
+      {
+       "raw": "ShamblerBlight 3",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "4",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "SummonTentacle C",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -431,8 +549,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stress 1",
-      "Shuffle Party 3"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "Shuffle Party 3",
+       "chance": "100%",
+       "move": {
+        "kind": "shuffle"
+       }
+      }
      ]
     }
    ],
@@ -460,20 +588,24 @@
     "skillDesires": [
      {
       "skill": "shamble_fwd",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "shamble_back",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "shambler_howl",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },
@@ -534,8 +666,23 @@
      ],
      "targetAoe": true,
      "effects": [
-      "ShamblerBleed 4",
-      "SummonTentacle E"
+      {
+       "raw": "ShamblerBleed 4",
+       "chance": "150%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "5",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "SummonTentacle E",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -562,8 +709,23 @@
      ],
      "targetAoe": true,
      "effects": [
-      "ShamblerBlight 4",
-      "SummonTentacle E"
+      {
+       "raw": "ShamblerBlight 4",
+       "chance": "150%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "5",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "SummonTentacle E",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -590,8 +752,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stress 1",
-      "Shuffle Party 4"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "Shuffle Party 4",
+       "chance": "110%",
+       "move": {
+        "kind": "shuffle"
+       }
+      }
      ]
     }
    ],
@@ -619,20 +791,24 @@
     "skillDesires": [
      {
       "skill": "shamble_fwd",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "shamble_back",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "shambler_howl",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },

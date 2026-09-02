@@ -56,7 +56,13 @@
       4
      ],
      "effects": [
-      "Burn Hero 1"
+      {
+       "raw": "Burn Hero 1",
+       "chance": "100%",
+       "traits": [
+        "capture"
+       ]
+      }
      ]
     },
     {
@@ -83,8 +89,22 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Righteous Buff 1",
-      "Fanatic Stress AOE"
+      {
+       "raw": "Righteous Buff 1",
+       "chance": "100%",
+       "duration": 5,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "25%"
+        }
+       ]
+      },
+      {
+       "raw": "Fanatic Stress AOE",
+       "chance": "70%",
+       "stress": "5"
+      }
      ]
     },
     {
@@ -110,10 +130,41 @@
       4
      ],
      "effects": [
-      "Stake Bleed 1",
-      "Stake Slow 1",
-      "Stake Kill Vamp",
-      "Fanatic Damage Marked Target"
+      {
+       "raw": "Stake Bleed 1",
+       "chance": "100%",
+       "duration": 2,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 2
+       }
+      },
+      {
+       "raw": "Stake Slow 1",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "-3"
+        }
+       ]
+      },
+      {
+       "raw": "Stake Kill Vamp",
+       "chance": "100%",
+       "traits": [
+        "instant"
+       ]
+      },
+      {
+       "raw": "Fanatic Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "33%",
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -139,8 +190,24 @@
       4
      ],
      "effects": [
-      "Holy Mark 1",
-      "Fanatic Stress DOT"
+      {
+       "raw": "Holy Mark 1",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Fanatic Stress DOT",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "stress",
+        "amount": "4",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -166,9 +233,24 @@
       4
      ],
      "effects": [
-      "Fanatic Stun 1",
-      "Push 2A",
-      "Fanatic Stress Big"
+      {
+       "raw": "Fanatic Stun 1",
+       "chance": "100%",
+       "stun": "1"
+      },
+      {
+       "raw": "Push 2A",
+       "chance": "100%",
+       "move": {
+        "kind": "push",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Fanatic Stress Big",
+       "chance": "100%",
+       "stress": "15"
+      }
      ]
     },
     {
@@ -195,7 +277,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Fanatic Stress Crush"
+      {
+       "raw": "Fanatic Stress Crush",
+       "chance": "70%",
+       "stress": "7"
+      }
      ]
     }
    ],
@@ -255,7 +341,13 @@
       4
      ],
      "effects": [
-      "Burn Hero 1"
+      {
+       "raw": "Burn Hero 1",
+       "chance": "100%",
+       "traits": [
+        "capture"
+       ]
+      }
      ]
     },
     {
@@ -282,8 +374,22 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Righteous Buff 1",
-      "Fanatic Stress AOE"
+      {
+       "raw": "Righteous Buff 1",
+       "chance": "100%",
+       "duration": 5,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "25%"
+        }
+       ]
+      },
+      {
+       "raw": "Fanatic Stress AOE",
+       "chance": "70%",
+       "stress": "5"
+      }
      ]
     },
     {
@@ -309,10 +415,41 @@
       4
      ],
      "effects": [
-      "Stake Bleed 1",
-      "Stake Slow 1",
-      "Stake Kill Vamp",
-      "Fanatic Damage Marked Target"
+      {
+       "raw": "Stake Bleed 1",
+       "chance": "100%",
+       "duration": 2,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 2
+       }
+      },
+      {
+       "raw": "Stake Slow 1",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "-3"
+        }
+       ]
+      },
+      {
+       "raw": "Stake Kill Vamp",
+       "chance": "100%",
+       "traits": [
+        "instant"
+       ]
+      },
+      {
+       "raw": "Fanatic Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "33%",
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -338,8 +475,24 @@
       4
      ],
      "effects": [
-      "Holy Mark 1",
-      "Fanatic Stress DOT"
+      {
+       "raw": "Holy Mark 1",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Fanatic Stress DOT",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "stress",
+        "amount": "4",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -365,9 +518,24 @@
       4
      ],
      "effects": [
-      "Fanatic Stun 1",
-      "Push 2C",
-      "Fanatic Stress Big"
+      {
+       "raw": "Fanatic Stun 1",
+       "chance": "100%",
+       "stun": "1"
+      },
+      {
+       "raw": "Push 2C",
+       "chance": "120%",
+       "move": {
+        "kind": "push",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Fanatic Stress Big",
+       "chance": "100%",
+       "stress": "15"
+      }
      ]
     },
     {
@@ -394,7 +562,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Fanatic Stress Crush"
+      {
+       "raw": "Fanatic Stress Crush",
+       "chance": "70%",
+       "stress": "7"
+      }
      ]
     }
    ],
@@ -454,7 +626,13 @@
       4
      ],
      "effects": [
-      "Burn Hero 1"
+      {
+       "raw": "Burn Hero 1",
+       "chance": "100%",
+       "traits": [
+        "capture"
+       ]
+      }
      ]
     },
     {
@@ -481,8 +659,22 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Righteous Buff 1",
-      "Fanatic Stress AOE"
+      {
+       "raw": "Righteous Buff 1",
+       "chance": "100%",
+       "duration": 5,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "25%"
+        }
+       ]
+      },
+      {
+       "raw": "Fanatic Stress AOE",
+       "chance": "70%",
+       "stress": "5"
+      }
      ]
     },
     {
@@ -508,10 +700,41 @@
       4
      ],
      "effects": [
-      "Stake Bleed 1",
-      "Stake Slow 1",
-      "Stake Kill Vamp",
-      "Fanatic Damage Marked Target"
+      {
+       "raw": "Stake Bleed 1",
+       "chance": "100%",
+       "duration": 2,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 2
+       }
+      },
+      {
+       "raw": "Stake Slow 1",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "-3"
+        }
+       ]
+      },
+      {
+       "raw": "Stake Kill Vamp",
+       "chance": "100%",
+       "traits": [
+        "instant"
+       ]
+      },
+      {
+       "raw": "Fanatic Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "33%",
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -537,8 +760,24 @@
       4
      ],
      "effects": [
-      "Holy Mark 1",
-      "Fanatic Stress DOT"
+      {
+       "raw": "Holy Mark 1",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Fanatic Stress DOT",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "stress",
+        "amount": "4",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -564,9 +803,24 @@
       4
      ],
      "effects": [
-      "Fanatic Stun 1",
-      "Push 2E",
-      "Fanatic Stress Big"
+      {
+       "raw": "Fanatic Stun 1",
+       "chance": "100%",
+       "stun": "1"
+      },
+      {
+       "raw": "Push 2E",
+       "chance": "140%",
+       "move": {
+        "kind": "push",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Fanatic Stress Big",
+       "chance": "100%",
+       "stress": "15"
+      }
      ]
     },
     {
@@ -593,7 +847,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Fanatic Stress Crush"
+      {
+       "raw": "Fanatic Stress Crush",
+       "chance": "70%",
+       "stress": "7"
+      }
      ]
     }
    ],

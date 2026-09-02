@@ -57,7 +57,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stress 2"
+      {
+       "raw": "Stress 2",
+       "chance": "100%",
+       "stress": "15"
+      }
      ]
     },
     {
@@ -84,7 +88,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Cannon Misfire"
+      {
+       "raw": "Cannon Misfire",
+       "chance": "100%",
+       "healStress": "10"
+      }
      ]
     },
     {
@@ -105,8 +113,20 @@
      ],
      "target": [],
      "effects": [
-      "Summon Fuseman 1",
-      "Summon Brigand 1"
+      {
+       "raw": "Summon Fuseman 1",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Summon Brigand 1",
+       "chance": "55%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -294,16 +314,19 @@
     "skillDesires": [
      {
       "skill": "cannon_boom",
+      "chance": 0.65,
       "type": "specific_skill"
      },
      {
       "skill": "cannon_misfire",
+      "chance": 0.35,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }
@@ -363,7 +386,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stress 2"
+      {
+       "raw": "Stress 2",
+       "chance": "100%",
+       "stress": "15"
+      }
      ]
     },
     {
@@ -390,7 +417,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Cannon Misfire"
+      {
+       "raw": "Cannon Misfire",
+       "chance": "100%",
+       "healStress": "10"
+      }
      ]
     },
     {
@@ -411,8 +442,20 @@
      ],
      "target": [],
      "effects": [
-      "Summon Fuseman 3",
-      "Summon Brigand 3"
+      {
+       "raw": "Summon Fuseman 3",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Summon Brigand 3",
+       "chance": "60%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -600,16 +643,19 @@
     "skillDesires": [
      {
       "skill": "cannon_boom",
+      "chance": 0.7,
       "type": "specific_skill"
      },
      {
       "skill": "cannon_misfire",
+      "chance": 0.3,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }
@@ -669,7 +715,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stress 2"
+      {
+       "raw": "Stress 2",
+       "chance": "100%",
+       "stress": "15"
+      }
      ]
     },
     {
@@ -696,7 +746,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Cannon Misfire"
+      {
+       "raw": "Cannon Misfire",
+       "chance": "100%",
+       "healStress": "10"
+      }
      ]
     },
     {
@@ -717,8 +771,20 @@
      ],
      "target": [],
      "effects": [
-      "Summon Fuseman 5",
-      "Summon Brigand 5"
+      {
+       "raw": "Summon Fuseman 5",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Summon Brigand 5",
+       "chance": "67%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -906,16 +972,19 @@
     "skillDesires": [
      {
       "skill": "cannon_boom",
+      "chance": 0.75,
       "type": "specific_skill"
      },
      {
       "skill": "cannon_misfire",
+      "chance": 0.25,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }

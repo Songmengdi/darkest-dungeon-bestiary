@@ -56,9 +56,27 @@
       4
      ],
      "effects": [
-      "Castellan Pull 1",
-      "Castellan Stress 1",
-      "Mark Target"
+      {
+       "raw": "Castellan Pull 1",
+       "chance": "100%",
+       "move": {
+        "kind": "pull",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Castellan Stress 1",
+       "chance": "90%",
+       "stress": "10"
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -85,9 +103,30 @@
      ],
      "targetAoe": true,
      "effects": [
-      "C Stress AOE DoT",
-      "Syco Swap A",
-      "Castellan Exit A"
+      {
+       "raw": "C Stress AOE DoT",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "stress",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Syco Swap A",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "Castellan Exit A",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -149,9 +188,27 @@
       4
      ],
      "effects": [
-      "Castellan Pull 3",
-      "Castellan Stress 3",
-      "Mark Target"
+      {
+       "raw": "Castellan Pull 3",
+       "chance": "120%",
+       "move": {
+        "kind": "pull",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Castellan Stress 3",
+       "chance": "90%",
+       "stress": "12"
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -178,9 +235,30 @@
      ],
      "targetAoe": true,
      "effects": [
-      "C Stress AOE DoT",
-      "Syco Swap B",
-      "Castellan Exit B"
+      {
+       "raw": "C Stress AOE DoT",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "stress",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Syco Swap B",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "Castellan Exit B",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -242,9 +320,27 @@
       4
      ],
      "effects": [
-      "Castellan Pull 5",
-      "Castellan Stress 5",
-      "Mark Target"
+      {
+       "raw": "Castellan Pull 5",
+       "chance": "140%",
+       "move": {
+        "kind": "pull",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Castellan Stress 5",
+       "chance": "90%",
+       "stress": "14"
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -271,9 +367,30 @@
      ],
      "targetAoe": true,
      "effects": [
-      "C Stress AOE DoT",
-      "Syco Swap C",
-      "Castellan Exit C"
+      {
+       "raw": "C Stress AOE DoT",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "stress",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Syco Swap C",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "Castellan Exit C",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],

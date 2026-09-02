@@ -55,7 +55,11 @@
       3
      ],
      "effects": [
-      "Battle Cell Stun"
+      {
+       "raw": "Battle Cell Stun",
+       "chance": "150%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -65,15 +69,18 @@
     "skillDesires": [
      {
       "skill": "battlecell_bam",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 2,
       "skill": "battlecell_bam"
      }
     ]

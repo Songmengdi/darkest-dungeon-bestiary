@@ -82,7 +82,21 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Head Buff 1"
+      {
+       "raw": "Head Buff 1",
+       "chance": "100%",
+       "dmgMultiply": "50%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "10%"
+        },
+        {
+         "key": "crit_chance_add",
+         "value": "10%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -108,7 +122,11 @@
       4
      ],
      "effects": [
-      "Stress 1"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     }
    ],
@@ -138,42 +156,52 @@
     "skillDesires": [
      {
       "skill": "head_heal",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "head_buff",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "head_stress",
+      "chance": 2,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
       "type": "ally_class_target",
+      "chance": 5,
       "skill": "head_heal"
      },
      {
       "type": "ally_class_target",
+      "chance": 2,
       "skill": "head_buff"
      },
      {
       "type": "ally_class_target",
+      "chance": 4,
       "skill": "head_buff"
      },
      {
       "type": "health_target",
+      "chance": 2,
       "skill": "head_heal"
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 1,
       "skill": "head_stress"
      }
     ]
@@ -260,7 +288,21 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Head Buff 1"
+      {
+       "raw": "Head Buff 1",
+       "chance": "100%",
+       "dmgMultiply": "50%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "10%"
+        },
+        {
+         "key": "crit_chance_add",
+         "value": "10%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -286,7 +328,11 @@
       4
      ],
      "effects": [
-      "Stress 1"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     }
    ],
@@ -316,42 +362,52 @@
     "skillDesires": [
      {
       "skill": "head_heal",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "head_buff",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "head_stress",
+      "chance": 2,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
       "type": "ally_class_target",
+      "chance": 5,
       "skill": "head_heal"
      },
      {
       "type": "ally_class_target",
+      "chance": 2,
       "skill": "head_buff"
      },
      {
       "type": "ally_class_target",
+      "chance": 4,
       "skill": "head_buff"
      },
      {
       "type": "health_target",
+      "chance": 2,
       "skill": "head_heal"
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 1,
       "skill": "head_stress"
      }
     ]
@@ -438,7 +494,21 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Head Buff 1"
+      {
+       "raw": "Head Buff 1",
+       "chance": "100%",
+       "dmgMultiply": "50%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "10%"
+        },
+        {
+         "key": "crit_chance_add",
+         "value": "10%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -464,7 +534,11 @@
       4
      ],
      "effects": [
-      "Stress 1"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     }
    ],
@@ -494,42 +568,52 @@
     "skillDesires": [
      {
       "skill": "head_heal",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "head_buff",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "head_stress",
+      "chance": 2,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
       "type": "ally_class_target",
+      "chance": 5,
       "skill": "head_heal"
      },
      {
       "type": "ally_class_target",
+      "chance": 2,
       "skill": "head_buff"
      },
      {
       "type": "ally_class_target",
+      "chance": 4,
       "skill": "head_buff"
      },
      {
       "type": "health_target",
+      "chance": 2,
       "skill": "head_heal"
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 1,
       "skill": "head_stress"
      }
     ]

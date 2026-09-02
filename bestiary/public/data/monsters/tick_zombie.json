@@ -54,7 +54,13 @@
       4
      ],
      "effects": [
-      "Crimson Curse Weak"
+      {
+       "raw": "Crimson Curse Weak",
+       "chance": "31%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -80,8 +86,21 @@
       4
      ],
      "effects": [
-      "Blight 1",
-      "CC Bleed Res Debuff 1"
+      {
+       "raw": "Blight 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "CC Bleed Res Debuff 1",
+       "chance": "100%",
+       "duration": 3
+      }
      ]
     }
    ],
@@ -141,7 +160,13 @@
       4
      ],
      "effects": [
-      "Crimson Curse Weak"
+      {
+       "raw": "Crimson Curse Weak",
+       "chance": "31%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -167,8 +192,21 @@
       4
      ],
      "effects": [
-      "Blight 3",
-      "CC Bleed Res Debuff 3"
+      {
+       "raw": "Blight 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "CC Bleed Res Debuff 3",
+       "chance": "120%",
+       "duration": 3
+      }
      ]
     }
    ],
@@ -228,7 +266,13 @@
       4
      ],
      "effects": [
-      "Crimson Curse Weak"
+      {
+       "raw": "Crimson Curse Weak",
+       "chance": "31%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -254,8 +298,21 @@
       4
      ],
      "effects": [
-      "Blight 5",
-      "CC Bleed Res Debuff 5"
+      {
+       "raw": "Blight 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "4",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "CC Bleed Res Debuff 5",
+       "chance": "140%",
+       "duration": 3
+      }
      ]
     }
    ],

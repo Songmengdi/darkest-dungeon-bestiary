@@ -56,7 +56,16 @@
       4
      ],
      "effects": [
-      "Shuffler Bleed"
+      {
+       "raw": "Shuffler Bleed",
+       "chance": "150%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -83,9 +92,23 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stress 2",
-      "Summon Shrouded",
-      "Darkness 3"
+      {
+       "raw": "Stress 2",
+       "chance": "100%",
+       "stress": "15"
+      },
+      {
+       "raw": "Summon Shrouded",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Darkness 3",
+       "chance": "100%",
+       "torch": "25"
+      }
      ]
     },
     {
@@ -112,7 +135,13 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Shuffler Shuffle Party"
+      {
+       "raw": "Shuffler Shuffle Party",
+       "chance": "140%",
+       "move": {
+        "kind": "shuffle"
+       }
+      }
      ]
     }
    ],
@@ -140,23 +169,28 @@
     "skillDesires": [
      {
       "skill": "shuffler_eat",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "shuffler_shuffle",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "shuffler_howl",
+      "chance": 100,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "resistance_target",
+      "chance": 10,
       "skill": "shuffler_eat"
      }
     ]

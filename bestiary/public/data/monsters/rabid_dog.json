@@ -56,8 +56,23 @@
       4
      ],
      "effects": [
-      "Rabies",
-      "Minor Bleed 1"
+      {
+       "raw": "Rabies",
+       "chance": "10%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Minor Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "1",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -287,12 +302,14 @@
     "skillDesires": [
      {
       "skill": "rabid_rush",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }
@@ -351,8 +368,23 @@
       4
      ],
      "effects": [
-      "Rabies",
-      "Minor Bleed 3"
+      {
+       "raw": "Rabies",
+       "chance": "10%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Minor Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -582,15 +614,18 @@
     "skillDesires": [
      {
       "skill": "rabid_rush",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      }
     ]
    }
@@ -649,8 +684,23 @@
       4
      ],
      "effects": [
-      "Rabies",
-      "Minor Bleed 5"
+      {
+       "raw": "Rabies",
+       "chance": "10%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Minor Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -880,15 +930,18 @@
     "skillDesires": [
      {
       "skill": "rabid_rush",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      }
     ]
    }

@@ -56,9 +56,27 @@
       4
      ],
      "effects": [
-      "harvest stress A",
-      "Miller HealSelf A",
-      "Miller HealStress 3"
+      {
+       "raw": "harvest stress A",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "15%"
+        }
+       ]
+      },
+      {
+       "raw": "Miller HealSelf A",
+       "chance": "100%",
+       "heal": "10"
+      },
+      {
+       "raw": "Miller HealStress 3",
+       "chance": "100%",
+       "healStress": "3"
+      }
      ]
     },
     {
@@ -85,7 +103,13 @@
      ],
      "targetAlly": true,
      "effects": [
-      "xform coccoon A"
+      {
+       "raw": "xform coccoon A",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -111,9 +135,7 @@
       4
      ],
      "targetAoe": true,
-     "effects": [
-      "grind bark"
-     ]
+     "effects": []
     },
     {
      "id": "sadness",
@@ -138,9 +160,21 @@
       4
      ],
      "effects": [
-      "miller grief A",
-      "sadness bark",
-      "miller stress resist"
+      {
+       "raw": "miller grief A",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "-20%"
+        }
+       ]
+      },
+      {
+       "raw": "miller stress resist",
+       "chance": "400%"
+      }
      ]
     },
     {
@@ -161,7 +195,13 @@
      ],
      "target": [],
      "effects": [
-      "Summon Scarecrow B"
+      {
+       "raw": "Summon Scarecrow B",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -182,7 +222,13 @@
      ],
      "target": [],
      "effects": [
-      "Summon Farmers B"
+      {
+       "raw": "Summon Farmers B",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -203,7 +249,13 @@
      ],
      "target": [],
      "effects": [
-      "Summon Revenant B"
+      {
+       "raw": "Summon Revenant B",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -263,9 +315,27 @@
       4
      ],
      "effects": [
-      "harvest stress A",
-      "Miller HealSelf B",
-      "Miller HealStress 5"
+      {
+       "raw": "harvest stress A",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "15%"
+        }
+       ]
+      },
+      {
+       "raw": "Miller HealSelf B",
+       "chance": "100%",
+       "heal": "15"
+      },
+      {
+       "raw": "Miller HealStress 5",
+       "chance": "100%",
+       "healStress": "5"
+      }
      ]
     },
     {
@@ -292,7 +362,13 @@
      ],
      "targetAlly": true,
      "effects": [
-      "xform coccoon B"
+      {
+       "raw": "xform coccoon B",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -318,9 +394,7 @@
       4
      ],
      "targetAoe": true,
-     "effects": [
-      "grind bark"
-     ]
+     "effects": []
     },
     {
      "id": "sadness",
@@ -345,9 +419,21 @@
       4
      ],
      "effects": [
-      "miller grief B",
-      "sadness bark",
-      "miller stress resist"
+      {
+       "raw": "miller grief B",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "-20%"
+        }
+       ]
+      },
+      {
+       "raw": "miller stress resist",
+       "chance": "400%"
+      }
      ]
     },
     {
@@ -368,7 +454,13 @@
      ],
      "target": [],
      "effects": [
-      "Summon Scarecrow B"
+      {
+       "raw": "Summon Scarecrow B",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -389,7 +481,13 @@
      ],
      "target": [],
      "effects": [
-      "Summon Farmers B"
+      {
+       "raw": "Summon Farmers B",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -410,7 +508,13 @@
      ],
      "target": [],
      "effects": [
-      "Summon Revenant B"
+      {
+       "raw": "Summon Revenant B",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -470,9 +574,27 @@
       4
      ],
      "effects": [
-      "harvest stress A",
-      "Miller HealSelf C",
-      "Miller HealStress 7"
+      {
+       "raw": "harvest stress A",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "15%"
+        }
+       ]
+      },
+      {
+       "raw": "Miller HealSelf C",
+       "chance": "100%",
+       "heal": "20"
+      },
+      {
+       "raw": "Miller HealStress 7",
+       "chance": "100%",
+       "healStress": "7"
+      }
      ]
     },
     {
@@ -499,7 +621,13 @@
      ],
      "targetAlly": true,
      "effects": [
-      "xform coccoon C"
+      {
+       "raw": "xform coccoon C",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -525,9 +653,7 @@
       4
      ],
      "targetAoe": true,
-     "effects": [
-      "grind bark"
-     ]
+     "effects": []
     },
     {
      "id": "sadness",
@@ -552,9 +678,21 @@
       4
      ],
      "effects": [
-      "miller grief C",
-      "sadness bark",
-      "miller stress resist"
+      {
+       "raw": "miller grief C",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "-20%"
+        }
+       ]
+      },
+      {
+       "raw": "miller stress resist",
+       "chance": "400%"
+      }
      ]
     },
     {
@@ -575,7 +713,13 @@
      ],
      "target": [],
      "effects": [
-      "Summon Scarecrow C"
+      {
+       "raw": "Summon Scarecrow C",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -596,7 +740,13 @@
      ],
      "target": [],
      "effects": [
-      "Summon Farmers C"
+      {
+       "raw": "Summon Farmers C",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -617,7 +767,13 @@
      ],
      "target": [],
      "effects": [
-      "Summon Revenant C"
+      {
+       "raw": "Summon Revenant C",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],

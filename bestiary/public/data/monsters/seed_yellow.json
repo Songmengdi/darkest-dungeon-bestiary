@@ -57,8 +57,23 @@
      ],
      "targetAoe": true,
      "effects": [
-      "kill_self_queued",
-      "yellow seed blight"
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      },
+      {
+       "raw": "yellow seed blight",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "5",
+        "duration": 3
+       }
+      }
      ]
     }
    ],

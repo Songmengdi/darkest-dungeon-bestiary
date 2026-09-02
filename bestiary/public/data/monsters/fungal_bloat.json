@@ -72,7 +72,14 @@
       2
      ],
      "effects": [
-      "Damage Marked Target Lesser"
+      {
+       "raw": "Damage Marked Target Lesser",
+       "chance": "100%",
+       "dmgMultiply": "50%",
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -170,28 +177,34 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 100,
       "type": "effect_key_status_skill"
      },
      {
       "skill": "groping_swipe",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "groping_swipe_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
       "type": "marked_target",
+      "chance": 100,
       "skill": "fierce_swipe"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "groping_swipe"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "groping_swipe_weak"
      }
     ]
@@ -248,7 +261,16 @@
       2
      ],
      "effects": [
-      "Weak Blight 3"
+      {
+       "raw": "Weak Blight 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -270,7 +292,14 @@
       2
      ],
      "effects": [
-      "Damage Marked Target Lesser"
+      {
+       "raw": "Damage Marked Target Lesser",
+       "chance": "100%",
+       "dmgMultiply": "50%",
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -368,28 +397,34 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 100,
       "type": "effect_key_status_skill"
      },
      {
       "skill": "groping_swipe",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "groping_swipe_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
       "type": "marked_target",
+      "chance": 100,
       "skill": "fierce_swipe"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "groping_swipe"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "groping_swipe_weak"
      }
     ]
@@ -446,7 +481,16 @@
       2
      ],
      "effects": [
-      "Weak Blight 5"
+      {
+       "raw": "Weak Blight 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -468,7 +512,14 @@
       2
      ],
      "effects": [
-      "Damage Marked Target Lesser"
+      {
+       "raw": "Damage Marked Target Lesser",
+       "chance": "100%",
+       "dmgMultiply": "50%",
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -566,28 +617,34 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 100,
       "type": "effect_key_status_skill"
      },
      {
       "skill": "groping_swipe",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "groping_swipe_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
       "type": "marked_target",
+      "chance": 100,
       "skill": "fierce_swipe"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "groping_swipe"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "groping_swipe_weak"
      }
     ]

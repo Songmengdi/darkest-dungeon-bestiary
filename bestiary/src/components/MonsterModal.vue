@@ -1,16 +1,16 @@
+<!-- 怪物档案:标本图版式单层布局(图版编号 + 圆形徽章立绘 + 档位徽章点 + 属性尺/技能网格) -->
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref, watch } from "vue";
 import type { IndexFile, IndexMonster, MonsterDetail, Skill, Tier } from "../types";
 import { LANG, t } from "../i18n";
 import {
-  RES_ITEMS, abilityOf, brainDesireLabel, displayNameOf, fmt,
-  liveTiers, lootEntryText, skillTypeZh,
+  RES_ITEMS, abilityOf, aiGenericOf, aiWeightOf, displayNameOf, fmt, liveTiers, skillTypeZh,
 } from "../display";
 import { regionBadges } from "../filter";
 import { openLightbox } from "../lightbox";
 import { fxIconSrc, fxIconTitle } from "../fxicons";
-import { interpretEffect } from "../effect";
-import RankCells from "./RankCells.vue";
+import { interpretEffectRef } from "../effect";
+import RankDots from "./RankDots.vue";
 
 const props = defineProps<{
   entry: IndexMonster;
@@ -22,44 +22,35 @@ const emit = defineEmits<{ close: [] }>();
 
 const tiers = computed(() => liveTiers(props.detail));
 const tierIdx = ref(0);
-const tab = ref<"base" | "skills" | "drops">("base");
-
-watch(() => props.detail, () => { tierIdx.value = 0; tab.value = "base"; });
-if (tierIdx.value >= tiers.value.length) tierIdx.value = 0;
+watch(() => props.detail, () => { tierIdx.value = 0; });
 const tier = computed<Tier | null>(() => tiers.value[tierIdx.value] ?? null);
 
 const names = computed(() => displayNameOf(props.entry, props.detail.tiers[0], props.detail.id));
 const ability = computed(() => abilityOf(props.detail.tiers[0]));
+const no = computed(() => String(props.index.monsters.findIndex((m) => m.id === props.entry.id) + 1).padStart(3, "0"));
+const regions = computed(() => regionBadges(props.index, props.entry));
 
-function skillChips(s: Skill): Array<{ text: string; fx?: boolean; b?: string; icons?: string[] }> {
-  const chips: Array<{ text: string; fx?: boolean; b?: string; icons?: string[] }> = [];
-  const ty = skillTypeZh(s.type);
-  if (ty) chips.push({ text: ty });
-  if (s.atk) chips.push({ text: `${t("命中", "ACC")} `, b: fmt(s.atk) });
-  if (s.dmg && s.dmg !== "—") chips.push({ text: `${t("伤害", "DMG")} `, b: String(s.dmg) });
-  if (s.crit && s.crit !== "0%") chips.push({ text: `${t("暴击", "CRIT")} `, b: String(s.crit) });
-  for (const f of s.effects) {
-    const v = interpretEffect(f);
-    chips.push({ text: v.text, fx: true, icons: v.icons });
-  }
-  return chips;
-}
-
-const hasStats = computed(() => !!tier.value?.stats);
-
-const lootTables = computed(() => tier.value?.loot ?? []);
-const hasLoot = computed(() => lootTables.value.some((tb) => tb.entries.length > 0));
-
-const brainRows = computed(() => {
-  const tr = tier.value;
-  if (!tr?.brain?.skillDesires?.length) return [];
-  const max = Math.max(...tr.brain.skillDesires.map((d) => Number(d.chance) || 0), 1);
-  return tr.brain.skillDesires.map((d) => ({
-    label: brainDesireLabel(d, tr),
-    chance: Number(d.chance) || 0,
-    pct: ((Number(d.chance) || 0) / max) * 100,
-  }));
+const pct = (v: unknown): string => {
+  const s = String(v ?? "").replace(/%+$/, "");
+  return s === "" ? "—" : `${s}%`;
+};
+const statRows = computed(() => {
+  const st = tier.value?.stats;
+  if (!st) return [];
+  return [
+    { k: t("生命", "HP"), v: fmt(st.hp) },
+    { k: t("速度", "SPD"), v: fmt(st.spd) },
+    { k: t("闪避", "DODGE"), v: pct(st.def) },
+    { k: t("防御", "PROT"), v: pct(st.prot) },
+  ];
 });
+
+const skills = computed(() => (tier.value?.skills ?? []).map((s) => ({
+  ...s,
+  ty: skillTypeZh(s.type),
+  fx: s.effects.map((f) => interpretEffectRef(f)),
+  ai: aiWeightOf(tier.value, s.id),
+})));
 
 onMounted(() => window.addEventListener("keydown", onKey));
 onUnmounted(() => window.removeEventListener("keydown", onKey));
@@ -69,169 +60,196 @@ function onKey(e: KeyboardEvent): void {
 </script>
 
 <template>
-  <div class="bz-modal" @click.self="emit('close')">
-    <div class="bz-sheet">
-      <span class="bz-corner tl">❦</span><span class="bz-corner tr">❦</span>
-      <span class="bz-corner bl">❦</span><span class="bz-corner br">❦</span>
-      <button class="bz-close" :title="t('关闭 (Esc)', 'close')" @click="emit('close')">✕</button>
+  <div class="pm-modal" @click.self="emit('close')">
+    <div class="pm-card">
+      <button class="pm-close" :title="t('关闭 (Esc)', 'close')" @click="emit('close')">✕</button>
 
-      <!-- 头部:纹章立绘 + 信息行 -->
-      <div class="bz-head">
+      <!-- 头部:图版题头 -->
+      <header class="pm-head">
         <div
-          class="bz-crest"
+          class="pm-medal"
           :title="entry.image ? t('点击查看原画', 'view art') : ''"
           @click="entry.image && openLightbox(entry.image, t(names.zh, names.en))"
         >
-          <img v-if="entry.image" :src="entry.image" alt="" @error="($event.target as HTMLImageElement).classList.add('noimg')">
-          <span v-else class="img-ph">☠</span>
+          <img v-if="entry.image" :src="entry.image" alt="">
+          <span v-else class="pm-ph">☠</span>
         </div>
-        <div class="bz-headline">
-          <h2>{{ t(names.zh, names.en) }}</h2>
-          <div class="sub">
-            <template v-if="LANG === 'zh'">{{ names.en }}</template>
-            <template v-else>{{ names.zh }}</template>
-            · {{ entry.id }}
+        <div class="pm-idblock">
+          <div class="pm-kicker">
+            <span class="pm-no">{{ t("图鉴", "Plate") }} No.{{ no }}</span>
+            <span v-for="r in regions" :key="r" class="pm-region">{{ r }}</span>
+            <span v-if="!regions.length" class="pm-region dim">{{ t("其他 / 未收录(召唤物 · 部件)", "other") }}</span>
           </div>
-          <div class="bz-info">
-            <div class="row">
-              <span class="k">{{ t("出现副本", "Found in") }}</span>
-              <span class="v">
-                <template v-if="regionBadges(index, entry).length">
-                  <span v-for="r in regionBadges(index, entry)" :key="r" class="rbadge">{{ r }}</span>
-                </template>
-                <template v-else>{{ t("其他 / 未收录(召唤物 · 部件)", "Other / summons") }}</template>
-              </span>
-            </div>
-            <div class="row">
-              <span class="k">{{ t("种属", "Type") }}</span>
-              <span class="v">
-                {{ entry.type ? t(entry.type.zh, entry.type.en) : "—" }} · {{ t("体型", "Size") }} {{ entry.size }} · {{ t("档位", "Tiers") }} {{ entry.tiers.join("/") }}
-              </span>
-            </div>
-            <div class="row">
-              <span class="k">{{ t("特殊能力", "Ability") }}</span>
-              <span class="v">{{ ability ?? t("无", "None") }}</span>
-            </div>
+          <h2 class="pm-name">{{ t(names.zh, names.en) }}</h2>
+          <div class="pm-taxo">
+            <span class="latin">{{ names.en }} · {{ entry.id }}</span>
+            <span class="tax">
+              {{ entry.type ? t(entry.type.zh, entry.type.en) : "—" }} · {{ t("体型", "Size") }} {{ entry.size }}<template v-if="ability"> · {{ ability }}</template>
+            </span>
           </div>
         </div>
-      </div>
+        <!-- 档位:圆形徽章(隐藏空档) -->
+        <div v-if="tiers.length > 1" class="pm-coins">
+          <button
+            v-for="(tr, i) in tiers"
+            :key="tr.tier"
+            class="pm-coin"
+            :class="{ on: i === tierIdx }"
+            @click="tierIdx = i"
+          ><b>{{ tr.tier }}</b><i>{{ LANG === "zh" ? tr.label?.zh : tr.label?.en }}</i></button>
+        </div>
+      </header>
 
-      <!-- 档位书页签(隐藏空档) -->
-      <div v-if="tiers.length > 1" class="bz-tiers">
-        <button
-          v-for="(tr, i) in tiers"
-          :key="tr.tier + i"
-          :class="{ on: i === tierIdx }"
-          @click="tierIdx = i"
-        >{{ tr.tier }}<template v-if="tr.label?.zh"> · {{ t(tr.label.zh ?? "", tr.label.en) }}</template></button>
-      </div>
-
-      <!-- 内容页签:压缩信息,免滚动 -->
-      <div class="bz-tabbar">
-        <button :class="{ on: tab === 'base' }" @click="tab = 'base'">{{ t("基础", "Stats") }}</button>
-        <button :class="{ on: tab === 'skills' }" @click="tab = 'skills'">{{ t("技能", "Skills") }} {{ tier?.skills.length ?? 0 }}</button>
-        <button :class="{ on: tab === 'drops' }" @click="tab = 'drops'">{{ t("掉落 / 行为", "Loot") }}</button>
-      </div>
-
-      <div class="bz-body">
-        <!-- 基础 -->
-        <template v-if="tab === 'base'">
-          <template v-if="hasStats && tier?.stats">
-            <div class="bz-stats">
-              <div class="bz-stat"><span class="k">HP</span><span class="v">{{ fmt(tier.stats.hp) }}</span></div>
-              <div class="bz-stat"><span class="k">SPD</span><span class="v g">{{ fmt(tier.stats.spd) }}</span></div>
-              <div class="bz-stat"><span class="k">DODGE</span><span class="v b">{{ fmt(tier.stats.def) }}%</span></div>
-              <div class="bz-stat"><span class="k">PROT</span><span class="v">{{ fmt(tier.stats.prot) }}%</span></div>
+      <!-- 主体:左属性尺 + 右技能网格 -->
+      <div v-if="tier" class="pm-body">
+        <aside class="pm-stats">
+          <div class="pm-colhead">{{ t("属性", "Stats") }}</div>
+          <template v-if="statRows.length">
+            <div v-for="r in statRows" :key="r.k" class="pm-statrow">
+              <span class="k">{{ r.k }}</span>
+              <span class="dots"></span>
+              <span class="v">{{ r.v }}</span>
             </div>
-            <div class="bz-res">
-              <div v-for="r in RES_ITEMS" :key="r.key" class="bz-rescell">
-                <img class="fxicon res" :src="fxIconSrc(r.icon)" :title="fxIconTitle(r.icon)" alt="">
-                {{ t(r.zh, r.en) }}
-                <span class="val">{{ fmt(tier.stats.res[r.key]) }}</span>
-              </div>
+            <div class="pm-colhead" style="margin-top: 18px">{{ t("抗性", "Resistances") }}</div>
+            <div v-for="r in RES_ITEMS" :key="r.key" class="pm-statrow">
+              <span class="k"><img class="fxicon" :src="fxIconSrc(r.icon)" :title="fxIconTitle(r.icon)" alt=""> {{ t(r.zh, r.en) }}</span>
+              <span class="dots"></span>
+              <span class="v">{{ fmt(tier.stats!.res[r.key]) }}</span>
             </div>
-            <div v-if="tier.deathClass || tier.lifeLink" class="bz-special">
-              <div v-if="tier.deathClass" class="row">
-                <span class="k">{{ t("死亡后", "On death") }}</span>
-                <span class="v">{{ t("变为尸体", "leaves corpse") }} {{ tier.deathClass }}</span>
-              </div>
-              <div v-if="tier.lifeLink" class="row">
-                <span class="k">{{ t("生命链接", "Life link") }}</span>
-                <span class="v">{{ t("与", "with") }} {{ tier.lifeLink }} {{ t("联动(召唤机制)", "(summon mechanism)") }}</span>
-              </div>
+            <div v-if="tier.deathClass || tier.lifeLink" class="pm-note">
+              {{ tier.deathClass ? t("死亡后化为尸体", "Leaves a corpse") : "" }}
+              {{ tier.lifeLink ? `${t("生命链接", "Life link")} ${tier.lifeLink}` : "" }}
             </div>
           </template>
-          <div v-else class="bz-nonestate">{{ t("该档位无战斗数据(尸体 / 装饰物)", "No combat data (corpse / prop)") }}</div>
-        </template>
+          <div v-else class="pm-note">{{ t("该档位无战斗数据(尸体 / 装饰物)", "No combat data (corpse / prop)") }}</div>
+        </aside>
 
-        <!-- 技能 -->
-        <template v-else-if="tab === 'skills'">
-          <div class="bz-legend">
-            <span><span class="sw" style="background: var(--green)"></span>{{ t("站位(可使用该技能的位置)", "its positions") }}</span>
-            <span><span class="sw" style="background: var(--red)"></span>{{ t("打击(命中其中一个位置)", "hits one position") }}</span>
-            <span><span class="sw linksw"></span>{{ t("连线 = 范围打击(全体同时命中)", "linked = AoE (all at once)") }}</span>
-            <span><span class="sw" style="background: #46698c"></span>{{ t("蓝格 = 作用其友方", "blue = monster allies") }}</span>
-            <span><img class="fxicon lg" :src="fxIconSrc('special-note')" alt="">{{ t("悬停状态图标可看说明", "hover status icons") }}</span>
-          </div>
-          <div v-if="tier?.skills.length" class="bz-skills">
-            <div v-for="s in tier.skills" :key="s.id" class="bz-skill">
-              <div class="top">
+        <main class="pm-main">
+          <div class="pm-colhead">{{ t("技能", "Skills") }} · {{ tier.skills.length }}</div>
+          <div v-if="tier.skills.length" class="pm-grid">
+            <div v-for="s in skills" :key="s.id" class="pm-skill">
+              <div class="head">
                 <span class="sn">{{ t(s.name.zh ?? s.id, s.name.en) }}</span>
-                <span class="st">{{ skillTypeZh(s.type) }}</span>
+                <span class="aiw" v-if="s.ai" :title="t('AI 使用权重(倾向)', 'AI desire weight')">AI ×{{ s.ai }}</span>
               </div>
-              <div class="sc">
-                <span v-for="(c, ci) in skillChips(s)" :key="ci" class="chip" :class="{ fx: c.fx }">
-                  <img
-                    v-for="ic in c.icons" :key="ic" class="fxicon"
-                    :src="fxIconSrc(ic)" :title="fxIconTitle(ic)" alt=""
-                  >{{ c.text }}<b v-if="c.b">{{ c.b }}</b>
+              <div class="meta">
+                <span v-if="s.ty" class="ty">{{ s.ty }}</span>
+                <span v-if="s.atk" class="m"><i>{{ t("命中", "ACC") }}</i><b>{{ s.atk }}</b></span>
+                <span v-if="s.dmg && s.dmg !== '—'" class="m"><i>{{ t("伤害", "DMG") }}</i><b>{{ s.dmg }}</b></span>
+                <span v-if="s.crit && s.crit !== '0%'" class="m"><i>{{ t("暴击", "CRIT") }}</i><b>{{ s.crit }}</b></span>
+                <span v-for="(f, fi) in s.fx" :key="fi" class="fx">
+                  <img v-for="ic in f.icons" :key="ic" class="fxicon" :src="fxIconSrc(ic)" :title="fxIconTitle(ic)" alt="">
+                  {{ f.text }}
                 </span>
               </div>
-              <div class="ranks">
-                <span v-if="s.launch.length" class="rank">
-                  <span class="lbl">{{ t("站位", "Pos") }}</span>
-                  <RankCells :digits="s.launch" kind="launch" />
+              <div v-if="s.launch.length || s.target.length" class="dotrow">
+                <span v-if="s.launch.length" class="grp">
+                  <i class="lbl">{{ t("站位", "Pos") }}</i>
+                  <RankDots :digits="s.launch" kind="launch" />
                 </span>
-                <span v-if="s.target.length" class="rank">
-                  <span class="lbl">{{ s.targetAlly ? t("友方", "Allies") : t("打击", "Hits") }}</span>
-                  <RankCells :digits="s.target" kind="target" :aoe="s.targetAoe" :ally="s.targetAlly" />
+                <span v-if="s.target.length" class="grp">
+                  <i class="lbl">{{ s.targetAlly ? t("友方", "Allies") : t("打击", "Hits") }}</i>
+                  <RankDots :digits="s.target" kind="target" :aoe="s.targetAoe" :ally="s.targetAlly" />
                 </span>
               </div>
             </div>
           </div>
-          <div v-else class="bz-nonestate">{{ t("无技能数据", "no skills") }}</div>
-        </template>
-
-        <!-- 掉落 / 行为 -->
-        <template v-else>
-          <div class="bz-drops">
-            <div>
-              <div class="bz-sec"><span class="dia">❖</span>{{ t("掉落", "Loot") }}<span class="dia">❖</span></div>
-              <div v-if="hasLoot" class="bz-loot">
-                <div v-for="(tb, ti) in lootTables" :key="ti" class="tbl">
-                  <div v-if="lootTables.length > 1" class="tbl-name">{{ t("掉落表", "Table") }} {{ tb.file }}</div>
-                  <div v-for="(e, ei) in tb.entries" :key="ei" class="bz-loot-entry">
-                    <span class="pct">{{ fmt(e.chances) }}%</span>
-                    <span class="tx">{{ lootEntryText(e) }}</span>
-                  </div>
-                </div>
-              </div>
-              <div v-else class="bz-nonestate">{{ t("无掉落", "no loot") }}</div>
-            </div>
-            <div>
-              <div class="bz-sec"><span class="dia">❖</span>{{ t("AI 倾向", "AI") }}<span class="dia">❖</span></div>
-              <template v-if="brainRows.length">
-                <div v-for="(r, ri) in brainRows" :key="ri" class="bz-brain-row">
-                  <span class="nm">{{ r.label }}</span>
-                  <span class="bar"><i :style="{ width: r.pct + '%' }"></i></span>
-                  <span class="w">×{{ r.chance }}</span>
-                </div>
-              </template>
-              <div v-else class="bz-nonestate">{{ t("无 AI 数据", "no AI data") }}</div>
-            </div>
+          <div v-else class="pm-note">{{ t("无技能数据", "no skills") }}</div>
+          <div v-if="aiGenericOf(tier).length" class="pm-gen">
+            {{ t("AI 通用倾向", "AI generic") }}:
+            <span v-for="(g, gi) in aiGenericOf(tier)" :key="gi">{{ g[0] }} ×{{ g[1] }}<template v-if="gi < aiGenericOf(tier).length - 1"> · </template></span>
           </div>
-        </template>
+        </main>
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.pm-modal { position: fixed; inset: 0; z-index: 9999; background: rgba(4, 2, 1, 0.9); display: grid; place-items: center; }
+.pm-card {
+  position: relative; width: min(1040px, 94vw); max-height: 92vh; display: flex; flex-direction: column;
+  background: linear-gradient(180deg, #201709 0%, #1a1209 100%);
+  border: 1px solid var(--line);
+  box-shadow: inset 0 0 0 1px #0a0704, inset 0 0 0 4px rgba(201, 169, 92, 0.06), 0 30px 80px rgba(0, 0, 0, 0.7);
+}
+.pm-close { position: absolute; top: 12px; right: 14px; z-index: 3; background: none; border: none; color: var(--muted); font-size: 16px; cursor: pointer; }
+.pm-close:hover { color: var(--gold); }
+
+.pm-head { display: flex; align-items: center; gap: 22px; padding: 22px 26px 18px; border-bottom: 1px solid var(--line2); }
+.pm-medal {
+  flex: none; width: 118px; height: 118px; border-radius: 50%; overflow: hidden; cursor: zoom-in;
+  border: 3px solid var(--gold-dim); box-shadow: 0 0 0 1px #0a0704, 0 6px 18px rgba(0, 0, 0, 0.6);
+  background: radial-gradient(circle at 50% 35%, #2a2013, #0e0a06);
+}
+.pm-medal img { width: 100%; height: 100%; object-fit: cover; }
+.pm-ph { font-size: 44px; color: #3a2e1c; display: grid; place-items: center; }
+.pm-idblock { flex: 1; min-width: 0; }
+.pm-kicker { display: flex; align-items: center; gap: 8px; font-size: 10px; letter-spacing: 2px; color: var(--gold-dim); margin-bottom: 6px; flex-wrap: wrap; }
+.pm-no { color: var(--gold); }
+.pm-region { border: 1px solid var(--line2); padding: 0 6px; border-radius: 2px; color: var(--ink); letter-spacing: 1px; }
+.pm-region.dim { color: var(--muted); }
+.pm-name { font-family: var(--font-title); font-size: 34px; color: var(--ink); margin: 0 0 4px; letter-spacing: 5px; line-height: 1.1; }
+.pm-taxo { display: flex; flex-direction: column; gap: 2px; font-size: 12px; }
+.pm-taxo .latin { color: var(--muted); font-style: italic; }
+.pm-taxo .tax { color: var(--gold-dim); }
+
+.pm-coins { flex: none; display: flex; gap: 10px; }
+.pm-coin {
+  width: 58px; height: 58px; border-radius: 50%; cursor: pointer;
+  background: radial-gradient(circle at 35% 30%, #2a2013, #120d07);
+  border: 2px solid var(--line2); color: var(--muted);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px;
+  transition: all 0.15s;
+}
+.pm-coin b { font-family: var(--font-title); font-size: 19px; line-height: 1; }
+.pm-coin i { font-style: normal; font-size: 9px; letter-spacing: 1px; }
+.pm-coin.on { border-color: var(--gold); color: var(--gold); box-shadow: 0 0 14px rgba(201, 169, 92, 0.25), inset 0 0 8px rgba(201, 169, 92, 0.12); }
+.pm-coin:not(.on):hover { color: var(--ink); border-color: var(--gold-dim); }
+
+.pm-body { display: grid; grid-template-columns: 250px 1fr; min-height: 0; overflow-y: auto; }
+.pm-stats { padding: 20px 22px; border-right: 1px solid var(--line2); }
+.pm-main { padding: 20px 24px; }
+.pm-colhead { font-size: 11px; letter-spacing: 3px; color: var(--gold-dim); margin-bottom: 12px; }
+.pm-statrow { display: flex; align-items: baseline; gap: 8px; padding: 5px 0; font-size: 13px; }
+.pm-statrow .k { color: var(--muted); font-size: 12px; display: inline-flex; align-items: center; gap: 5px; }
+.pm-statrow .dots { flex: 1; border-bottom: 1px dotted #3a2e1c; }
+.pm-statrow .v { color: var(--ink); font-weight: 700; }
+.pm-note { margin-top: 12px; font-size: 11px; color: var(--gold-dim); }
+
+.pm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.pm-skill {
+  border: 1px solid var(--line2);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.1));
+  padding: 12px 16px 13px;
+  display: flex; flex-direction: column; gap: 9px;
+  transition: border-color 0.15s;
+}
+.pm-skill:hover { border-color: var(--gold-dim); }
+.pm-skill .head { display: flex; align-items: baseline; gap: 8px; }
+.pm-skill .sn { font-family: var(--font-title); font-size: 16px; color: var(--ink); letter-spacing: 1px; }
+.pm-skill .aiw {
+  margin-left: auto; flex: none; font-size: 10px; color: var(--gold);
+  border: 1px solid rgba(201, 169, 92, 0.35); border-radius: 999px; padding: 0 7px; line-height: 16px;
+}
+.pm-skill .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 5px 13px; }
+.pm-skill .ty {
+  font-size: 10px; letter-spacing: 2px; color: var(--gold);
+  border: 1px solid rgba(201, 169, 92, 0.4); padding: 1px 6px; border-radius: 2px;
+}
+.pm-skill .m { display: inline-flex; align-items: baseline; gap: 4px; }
+.pm-skill .m i { font-style: normal; font-size: 11px; color: var(--muted); }
+.pm-skill .m b { color: var(--ink); font-weight: 700; font-size: 12px; }
+.pm-skill .fx {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 11px; color: var(--ink);
+  background: rgba(201, 169, 92, 0.07); border: 1px solid rgba(201, 169, 92, 0.16);
+  padding: 1px 8px; border-radius: 999px;
+}
+.pm-skill .dotrow { display: flex; align-items: center; gap: 28px; margin-top: 2px; padding-top: 8px; border-top: 1px solid rgba(74, 59, 34, 0.35); }
+.pm-skill .grp { display: inline-flex; align-items: center; gap: 8px; }
+.pm-skill .lbl { font-style: normal; font-size: 10px; letter-spacing: 2px; color: var(--muted); }
+.fxicon { width: 14px; height: 14px; vertical-align: -2px; }
+.pm-gen { color: var(--muted); font-size: 11px; margin-top: 14px; }
+.pm-gen span { color: var(--gold-dim); }
+</style>

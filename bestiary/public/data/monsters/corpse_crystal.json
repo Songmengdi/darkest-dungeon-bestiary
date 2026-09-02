@@ -56,9 +56,28 @@
       4
      ],
      "effects": [
-      "kill_self_queued",
-      "Blight 1",
-      "Horse Horror A"
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      },
+      {
+       "raw": "Blight 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Horse Horror A",
+       "chance": "100%",
+       "stress": "8"
+      }
      ]
     },
     {
@@ -85,8 +104,23 @@
      ],
      "targetAoe": true,
      "effects": [
-      "kill_self_queued",
-      "Crystal Horror"
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      },
+      {
+       "raw": "Crystal Horror",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "stress",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -96,26 +130,32 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 1,
       "type": "preferred_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      },
      {
       "skill": "",
+      "chance": 100,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 3
      },
      {
-      "type": "health_target"
+      "type": "health_target",
+      "chance": 100
      }
     ]
    },
@@ -175,9 +215,28 @@
       4
      ],
      "effects": [
-      "kill_self_queued",
-      "Blight 2",
-      "Horse Horror A"
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      },
+      {
+       "raw": "Blight 2",
+       "chance": "110%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Horse Horror A",
+       "chance": "100%",
+       "stress": "8"
+      }
      ]
     },
     {
@@ -204,8 +263,23 @@
      ],
      "targetAoe": true,
      "effects": [
-      "kill_self_queued",
-      "Crystal Horror"
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      },
+      {
+       "raw": "Crystal Horror",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "stress",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -215,26 +289,32 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 1,
       "type": "preferred_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      },
      {
       "skill": "",
+      "chance": 100,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 4
      },
      {
-      "type": "health_target"
+      "type": "health_target",
+      "chance": 100
      }
     ]
    },
@@ -294,9 +374,28 @@
       4
      ],
      "effects": [
-      "kill_self_queued",
-      "Blight 3",
-      "Horse Horror A"
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      },
+      {
+       "raw": "Blight 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Horse Horror A",
+       "chance": "100%",
+       "stress": "8"
+      }
      ]
     },
     {
@@ -323,8 +422,23 @@
      ],
      "targetAoe": true,
      "effects": [
-      "kill_self_queued",
-      "Crystal Horror"
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      },
+      {
+       "raw": "Crystal Horror",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "stress",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -334,26 +448,32 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 1,
       "type": "preferred_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      },
      {
       "skill": "",
+      "chance": 100,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 5
      },
      {
-      "type": "health_target"
+      "type": "health_target",
+      "chance": 100
      }
     ]
    },
@@ -413,9 +533,28 @@
       4
      ],
      "effects": [
-      "Blight 1",
-      "Stress 1",
-      "kill_self"
+      {
+       "raw": "Blight 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "kill_self",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      }
      ]
     },
     {
@@ -441,7 +580,13 @@
       4
      ],
      "effects": [
-      "kill_self"
+      {
+       "raw": "kill_self",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      }
      ]
     }
    ],
@@ -451,26 +596,32 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 1,
       "type": "preferred_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      },
      {
       "skill": "",
+      "chance": 100,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 5
      },
      {
-      "type": "health_target"
+      "type": "health_target",
+      "chance": 100
      }
     ]
    }

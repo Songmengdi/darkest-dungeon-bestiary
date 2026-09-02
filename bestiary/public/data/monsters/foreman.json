@@ -57,10 +57,40 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Blight Buff A",
-      "Foreman Blt Duration Inc",
-      "Farmer Riposte On",
-      "Buff Speed C"
+      {
+       "raw": "Blight Buff A",
+       "duration": 2
+      },
+      {
+       "raw": "Foreman Blt Duration Inc",
+       "duration": 2
+      },
+      {
+       "raw": "Farmer Riposte On",
+       "chance": "100%",
+       "duration": 2,
+       "dmgMultiply": "-40%",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "0%"
+        }
+       ],
+       "traits": [
+        "riposte"
+       ]
+      },
+      {
+       "raw": "Buff Speed C",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "3"
+        }
+       ]
+      }
      ]
     },
     {
@@ -86,9 +116,28 @@
       4
      ],
      "effects": [
-      "Debuff Stress Res A",
-      "Bleed 1",
-      "Mark Target"
+      {
+       "raw": "Debuff Stress Res A",
+       "duration": 3
+      },
+      {
+       "raw": "Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -115,8 +164,28 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Buff Speed A",
-      "Many Hands Prot Buff A"
+      {
+       "raw": "Buff Speed A",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "1"
+        }
+       ]
+      },
+      {
+       "raw": "Many Hands Prot Buff A",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "20%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -178,10 +247,40 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Blight Buff B",
-      "Foreman Blt Duration Inc",
-      "Farmer Riposte On",
-      "Buff Speed C"
+      {
+       "raw": "Blight Buff B",
+       "duration": 2
+      },
+      {
+       "raw": "Foreman Blt Duration Inc",
+       "duration": 2
+      },
+      {
+       "raw": "Farmer Riposte On",
+       "chance": "100%",
+       "duration": 2,
+       "dmgMultiply": "-40%",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "0%"
+        }
+       ],
+       "traits": [
+        "riposte"
+       ]
+      },
+      {
+       "raw": "Buff Speed C",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "3"
+        }
+       ]
+      }
      ]
     },
     {
@@ -207,9 +306,29 @@
       4
      ],
      "effects": [
-      "Debuff Stress Res B",
-      "Bleed 3",
-      "Mark Target"
+      {
+       "raw": "Debuff Stress Res B",
+       "chance": "120%",
+       "duration": 3
+      },
+      {
+       "raw": "Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -236,8 +355,28 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Buff Speed B",
-      "Many Hands Prot Buff B"
+      {
+       "raw": "Buff Speed B",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "2"
+        }
+       ]
+      },
+      {
+       "raw": "Many Hands Prot Buff B",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "22%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -299,10 +438,40 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Blight Buff C",
-      "Foreman Blt Duration Inc",
-      "Farmer Riposte On",
-      "Buff Speed C"
+      {
+       "raw": "Blight Buff C",
+       "duration": 2
+      },
+      {
+       "raw": "Foreman Blt Duration Inc",
+       "duration": 2
+      },
+      {
+       "raw": "Farmer Riposte On",
+       "chance": "100%",
+       "duration": 2,
+       "dmgMultiply": "-40%",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "0%"
+        }
+       ],
+       "traits": [
+        "riposte"
+       ]
+      },
+      {
+       "raw": "Buff Speed C",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "3"
+        }
+       ]
+      }
      ]
     },
     {
@@ -328,9 +497,29 @@
       4
      ],
      "effects": [
-      "Debuff Stress Res C",
-      "Bleed 5",
-      "Mark Target"
+      {
+       "raw": "Debuff Stress Res C",
+       "chance": "140%",
+       "duration": 3
+      },
+      {
+       "raw": "Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -357,8 +546,28 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Buff Speed B",
-      "Many Hands Prot Buff B"
+      {
+       "raw": "Buff Speed B",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "2"
+        }
+       ]
+      },
+      {
+       "raw": "Many Hands Prot Buff B",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "22%"
+        }
+       ]
+      }
      ]
     }
    ],

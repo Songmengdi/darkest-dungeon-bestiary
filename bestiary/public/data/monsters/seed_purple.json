@@ -57,8 +57,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "kill_self_queued",
-      "purple seed stun"
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      },
+      {
+       "raw": "purple seed stun",
+       "chance": "140%",
+       "stun": "1"
+      }
      ]
     }
    ],

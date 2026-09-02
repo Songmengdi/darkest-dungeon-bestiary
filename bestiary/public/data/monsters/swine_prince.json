@@ -56,8 +56,18 @@
       4
      ],
      "effects": [
-      "Damage Marked Target",
-      "Clear Marked Target"
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Clear Marked Target",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -82,8 +92,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Damage Marked Target",
-      "Clear Marked Target"
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Clear Marked Target",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -110,7 +130,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stun 1"
+      {
+       "raw": "Stun 1",
+       "chance": "100%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -212,23 +236,28 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 10,
       "type": "effect_key_status_skill"
      },
      {
       "skill": "obliterate_blind",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "obliterate_enraged",
+      "chance": 1000,
       "type": "ally_dead_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 10
      }
     ]
    }
@@ -287,8 +316,18 @@
       4
      ],
      "effects": [
-      "Damage Marked Target",
-      "Clear Marked Target"
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Clear Marked Target",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -313,8 +352,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Damage Marked Target",
-      "Clear Marked Target"
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Clear Marked Target",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -341,7 +390,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stun 3"
+      {
+       "raw": "Stun 3",
+       "chance": "120%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -443,23 +496,28 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 10,
       "type": "effect_key_status_skill"
      },
      {
       "skill": "obliterate_blind",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "obliterate_enraged",
+      "chance": 1000,
       "type": "ally_dead_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 10
      }
     ]
    }
@@ -518,8 +576,18 @@
       4
      ],
      "effects": [
-      "Damage Marked Target",
-      "Clear Marked Target"
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Clear Marked Target",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -544,8 +612,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Damage Marked Target",
-      "Clear Marked Target"
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Clear Marked Target",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -572,7 +650,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stun 5"
+      {
+       "raw": "Stun 5",
+       "chance": "140%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -674,23 +756,28 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 10,
       "type": "effect_key_status_skill"
      },
      {
       "skill": "obliterate_blind",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "obliterate_enraged",
+      "chance": 1000,
       "type": "ally_dead_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 10
      }
     ]
    }

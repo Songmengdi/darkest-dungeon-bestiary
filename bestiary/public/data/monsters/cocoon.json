@@ -51,7 +51,13 @@
      ],
      "target": [],
      "effects": [
-      "xform to farmhand_A"
+      {
+       "raw": "xform to farmhand_A",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -77,7 +83,11 @@
       4
      ],
      "effects": [
-      "Horse Horror A"
+      {
+       "raw": "Horse Horror A",
+       "chance": "100%",
+       "stress": "8"
+      }
      ]
     }
    ],
@@ -202,7 +212,13 @@
      ],
      "target": [],
      "effects": [
-      "xform to farmhand_B"
+      {
+       "raw": "xform to farmhand_B",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -228,7 +244,17 @@
       4
      ],
      "effects": [
-      "Horse Horror B"
+      {
+       "raw": "Horse Horror B",
+       "chance": "100%",
+       "duration": 3,
+       "stress": "5",
+       "dot": {
+        "kind": "stress",
+        "amount": "5",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -353,7 +379,13 @@
      ],
      "target": [],
      "effects": [
-      "xform to farmhand_C"
+      {
+       "raw": "xform to farmhand_C",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -379,7 +411,17 @@
       4
      ],
      "effects": [
-      "Horse Horror C"
+      {
+       "raw": "Horse Horror C",
+       "chance": "100%",
+       "duration": 3,
+       "stress": "8",
+       "dot": {
+        "kind": "stress",
+        "amount": "6",
+        "duration": 3
+       }
+      }
      ]
     }
    ],

@@ -56,8 +56,18 @@
       4
      ],
      "effects": [
-      "Vomit Disease",
-      "Stress 1"
+      {
+       "raw": "Vomit Disease",
+       "chance": "33%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     }
    ],
@@ -135,15 +145,18 @@
     "skillDesires": [
      {
       "skill": "vomit",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 2,
       "skill": "vomit"
      }
     ]
@@ -204,9 +217,29 @@
       4
      ],
      "effects": [
-      "Vomit Disease",
-      "Stress 1",
-      "Wretch Vomit Debuff 3"
+      {
+       "raw": "Vomit Disease",
+       "chance": "33%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "Wretch Vomit Debuff 3",
+       "chance": "120%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-7%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -284,19 +317,23 @@
     "skillDesires": [
      {
       "skill": "vomit",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 3,
       "skill": "vomit"
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "vomit"
      }
     ]
@@ -357,9 +394,29 @@
       4
      ],
      "effects": [
-      "Vomit Disease",
-      "Stress 1",
-      "Wretch Vomit Debuff 5"
+      {
+       "raw": "Vomit Disease",
+       "chance": "33%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "Wretch Vomit Debuff 5",
+       "chance": "140%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-10%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -437,19 +494,23 @@
     "skillDesires": [
      {
       "skill": "vomit",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 4,
       "skill": "vomit"
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "vomit"
      }
     ]

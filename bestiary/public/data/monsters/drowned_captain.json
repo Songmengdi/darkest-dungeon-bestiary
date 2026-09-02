@@ -55,8 +55,21 @@
       4
      ],
      "effects": [
-      "Summon Anchor 1",
-      "Pull 3A"
+      {
+       "raw": "Summon Anchor 1",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Pull 3A",
+       "chance": "100%",
+       "move": {
+        "kind": "pull",
+        "amount": "3"
+       }
+      }
      ]
     },
     {
@@ -82,7 +95,16 @@
       4
      ],
      "effects": [
-      "Bleed 1"
+      {
+       "raw": "Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -107,7 +129,11 @@
       4
      ],
      "effects": [
-      "Stress 1"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     },
     {
@@ -132,7 +158,17 @@
       4
      ],
      "effects": [
-      "Captain Curse 1"
+      {
+       "raw": "Captain Curse 1",
+       "chance": "100%",
+       "dmgMultiply": "-33%~-33%.on_hit",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "-10%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -320,23 +356,28 @@
     "skillDesires": [
      {
       "skill": "gaffer_hook",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "captain_shout",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "captain_shout_debuff",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 1,
       "skill": "all_hands"
      }
     ]
@@ -395,8 +436,21 @@
       4
      ],
      "effects": [
-      "Summon Anchor 2",
-      "Pull 3C"
+      {
+       "raw": "Summon Anchor 2",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Pull 3C",
+       "chance": "120%",
+       "move": {
+        "kind": "pull",
+        "amount": "3"
+       }
+      }
      ]
     },
     {
@@ -422,7 +476,16 @@
       4
      ],
      "effects": [
-      "Bleed 3"
+      {
+       "raw": "Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -447,7 +510,11 @@
       4
      ],
      "effects": [
-      "Stress 1"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     },
     {
@@ -472,7 +539,17 @@
       4
      ],
      "effects": [
-      "Captain Curse 3"
+      {
+       "raw": "Captain Curse 3",
+       "chance": "120%",
+       "dmgMultiply": "-33%~-33%.on_hit",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "-10%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -660,23 +737,28 @@
     "skillDesires": [
      {
       "skill": "gaffer_hook",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "captain_shout",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "captain_shout_debuff",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 1,
       "skill": "all_hands"
      }
     ]
@@ -735,8 +817,21 @@
       4
      ],
      "effects": [
-      "Summon Anchor 3",
-      "Pull 3E"
+      {
+       "raw": "Summon Anchor 3",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Pull 3E",
+       "chance": "140%",
+       "move": {
+        "kind": "pull",
+        "amount": "3"
+       }
+      }
      ]
     },
     {
@@ -762,7 +857,16 @@
       4
      ],
      "effects": [
-      "Bleed 5"
+      {
+       "raw": "Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -787,7 +891,11 @@
       4
      ],
      "effects": [
-      "Stress 1"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     },
     {
@@ -812,7 +920,17 @@
       4
      ],
      "effects": [
-      "Captain Curse 5"
+      {
+       "raw": "Captain Curse 5",
+       "chance": "140%",
+       "dmgMultiply": "-33%~-33%.on_hit",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "-10%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -1000,23 +1118,28 @@
     "skillDesires": [
      {
       "skill": "gaffer_hook",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "captain_shout",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "captain_shout_debuff",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 1,
       "skill": "all_hands"
      }
     ]

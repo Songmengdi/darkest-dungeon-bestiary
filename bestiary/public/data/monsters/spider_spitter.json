@@ -54,9 +54,34 @@
       4
      ],
      "effects": [
-      "Damage Marked Target",
-      "Weak Blight 1",
-      "Spitter Spit Debuff 1"
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Weak Blight 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "1",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Spitter Spit Debuff 1",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-5%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -80,8 +105,24 @@
       4
      ],
      "effects": [
-      "Weak Blight 1",
-      "Damage Marked Target"
+      {
+       "raw": "Weak Blight 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "1",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     }
    ],
@@ -159,19 +200,23 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 100,
       "type": "effect_key_status_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 100
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }
@@ -228,9 +273,34 @@
       4
      ],
      "effects": [
-      "Damage Marked Target",
-      "Weak Blight 3",
-      "Spitter Spit Debuff 3"
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Weak Blight 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Spitter Spit Debuff 3",
+       "chance": "120%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-7%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -254,8 +324,24 @@
       4
      ],
      "effects": [
-      "Weak Blight 3",
-      "Damage Marked Target"
+      {
+       "raw": "Weak Blight 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     }
    ],
@@ -333,19 +419,23 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 100,
       "type": "effect_key_status_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 100
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }
@@ -402,9 +492,34 @@
       4
      ],
      "effects": [
-      "Damage Marked Target",
-      "Weak Blight 5",
-      "Spitter Spit Debuff 5"
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Weak Blight 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Spitter Spit Debuff 5",
+       "chance": "140%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-10%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -428,8 +543,24 @@
       4
      ],
      "effects": [
-      "Weak Blight 5",
-      "Damage Marked Target"
+      {
+       "raw": "Weak Blight 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     }
    ],
@@ -507,19 +638,23 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 100,
       "type": "effect_key_status_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 100
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }

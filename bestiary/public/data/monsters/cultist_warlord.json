@@ -52,9 +52,29 @@
       2
      ],
      "effects": [
-      "Turbo Cultist Bleed",
-      "SmallDmg Marked Target",
-      "Turbo Cultist Rend Debuff"
+      {
+       "raw": "Turbo Cultist Bleed",
+       "chance": "150%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "6",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "SmallDmg Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "50%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Turbo Cultist Rend Debuff",
+       "chance": "150%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -84,19 +104,23 @@
     "skillDesires": [
      {
       "skill": "brawler_claw_D",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "brawler_claw_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 5,
       "skill": "brawler_claw_D"
      }
     ]

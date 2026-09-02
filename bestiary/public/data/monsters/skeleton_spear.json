@@ -56,7 +56,14 @@
       4
      ],
      "effects": [
-      "Spearman Thrust Push 1A"
+      {
+       "raw": "Spearman Thrust Push 1A",
+       "chance": "100%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      }
      ]
     },
     {
@@ -157,19 +164,23 @@
     "skillDesires": [
      {
       "skill": "spear_thrust",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "impale",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 2,
       "skill": "spear_thrust"
      }
     ]
@@ -231,7 +242,14 @@
       4
      ],
      "effects": [
-      "Spearman Thrust Push 1B"
+      {
+       "raw": "Spearman Thrust Push 1B",
+       "chance": "120%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      }
      ]
     },
     {
@@ -332,19 +350,23 @@
     "skillDesires": [
      {
       "skill": "spear_thrust",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "impale",
+      "chance": 2,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 3,
       "skill": "spear_thrust"
      }
     ]
@@ -406,7 +428,14 @@
       4
      ],
      "effects": [
-      "Spearman Thrust Push 1C"
+      {
+       "raw": "Spearman Thrust Push 1C",
+       "chance": "140%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      }
      ]
     },
     {
@@ -507,19 +536,23 @@
     "skillDesires": [
      {
       "skill": "spear_thrust",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "impale",
+      "chance": 2,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 4,
       "skill": "spear_thrust"
      }
     ]

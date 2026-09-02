@@ -56,8 +56,21 @@
       4
      ],
      "effects": [
-      "Statue Stab Bleed",
-      "Stress 1"
+      {
+       "raw": "Statue Stab Bleed",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     }
    ],
@@ -87,26 +100,32 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 1,
       "type": "preferred_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      },
      {
       "skill": "",
+      "chance": 100,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 3
      },
      {
-      "type": "health_target"
+      "type": "health_target",
+      "chance": 100
      }
     ]
    },
@@ -166,8 +185,21 @@
       4
      ],
      "effects": [
-      "Statue Stab Bleed",
-      "Stress 1"
+      {
+       "raw": "Statue Stab Bleed",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     }
    ],
@@ -197,26 +229,32 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 1,
       "type": "preferred_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      },
      {
       "skill": "",
+      "chance": 100,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 3
      },
      {
-      "type": "health_target"
+      "type": "health_target",
+      "chance": 100
      }
     ]
    },
@@ -276,8 +314,21 @@
       4
      ],
      "effects": [
-      "Statue Stab Bleed",
-      "Stress 1"
+      {
+       "raw": "Statue Stab Bleed",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     }
    ],
@@ -307,26 +358,32 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 1,
       "type": "preferred_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      },
      {
       "skill": "",
+      "chance": 100,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 3
      },
      {
-      "type": "health_target"
+      "type": "health_target",
+      "chance": 100
      }
     ]
    },

@@ -56,9 +56,27 @@
       4
      ],
      "effects": [
-      "Castellan Pull 1",
-      "Castellan Stress 1",
-      "Mark Target"
+      {
+       "raw": "Castellan Pull 1",
+       "chance": "100%",
+       "move": {
+        "kind": "pull",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Castellan Stress 1",
+       "chance": "90%",
+       "stress": "10"
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -84,12 +102,42 @@
       4
      ],
      "effects": [
-      "CC Small Feed Heal 1",
-      "switch_mode_beast_self",
-      "Crimson Curse Weak",
-      "Steward Stress Buff 1",
-      "Feed Stress Human",
-      "CC Steal Blight"
+      {
+       "raw": "CC Small Feed Heal 1",
+       "chance": "100%",
+       "heal": "4"
+      },
+      {
+       "raw": "switch_mode_beast_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "Crimson Curse Weak",
+       "chance": "31%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Steward Stress Buff 1",
+       "chance": "100%",
+       "duration": 5
+      },
+      {
+       "raw": "Feed Stress Human",
+       "chance": "85%",
+       "stress": "8"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     },
     {
@@ -116,10 +164,40 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Antiq ProtectMe ClearGuardsPerformer",
-      "Antiq ProtectMe ClearGuardsTarget",
-      "Steward Human Guard",
-      "Steward Prot Buff"
+      {
+       "raw": "Antiq ProtectMe ClearGuardsPerformer",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Antiq ProtectMe ClearGuardsTarget",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Steward Human Guard",
+       "duration": 3,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "Steward Prot Buff",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "33%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -145,8 +223,16 @@
       4
      ],
      "effects": [
-      "Stress 1",
-      "Stun 1"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "Stun 1",
+       "chance": "100%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -170,7 +256,16 @@
       4
      ],
      "effects": [
-      "CC Mob Bleed 1"
+      {
+       "raw": "CC Mob Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -197,10 +292,43 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Antiq ProtectMe ClearGuardsPerformer",
-      "Antiq ProtectMe ClearGuardsTarget",
-      "Castellan Guard",
-      "Gibbering Buff 1"
+      {
+       "raw": "Antiq ProtectMe ClearGuardsPerformer",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Antiq ProtectMe ClearGuardsTarget",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Castellan Guard",
+       "duration": 3,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "Gibbering Buff 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "40%"
+        }
+       ],
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -226,11 +354,45 @@
       4
      ],
      "effects": [
-      "CC Small Feed Heal 1",
-      "CC Mob Acc Debuff 1",
-      "Crimson Curse Weak",
-      "Feed Stress Beast",
-      "CC Steal Blight"
+      {
+       "raw": "CC Small Feed Heal 1",
+       "chance": "100%",
+       "heal": "4"
+      },
+      {
+       "raw": "CC Mob Acc Debuff 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-20%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-4"
+        }
+       ]
+      },
+      {
+       "raw": "Crimson Curse Weak",
+       "chance": "31%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Feed Stress Beast",
+       "chance": "85%",
+       "stress": "12"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     }
    ],
@@ -292,9 +454,27 @@
       4
      ],
      "effects": [
-      "Castellan Pull 3",
-      "Castellan Stress 3",
-      "Mark Target"
+      {
+       "raw": "Castellan Pull 3",
+       "chance": "120%",
+       "move": {
+        "kind": "pull",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Castellan Stress 3",
+       "chance": "90%",
+       "stress": "12"
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -320,12 +500,42 @@
       4
      ],
      "effects": [
-      "CC Small Feed Heal 2",
-      "switch_mode_beast_self",
-      "Crimson Curse Weak",
-      "Steward Stress Buff 2",
-      "Feed Stress Human",
-      "CC Steal Blight"
+      {
+       "raw": "CC Small Feed Heal 2",
+       "chance": "100%",
+       "heal": "6"
+      },
+      {
+       "raw": "switch_mode_beast_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "Crimson Curse Weak",
+       "chance": "31%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Steward Stress Buff 2",
+       "chance": "120%",
+       "duration": 5
+      },
+      {
+       "raw": "Feed Stress Human",
+       "chance": "85%",
+       "stress": "8"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     },
     {
@@ -352,10 +562,40 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Antiq ProtectMe ClearGuardsPerformer",
-      "Antiq ProtectMe ClearGuardsTarget",
-      "Steward Human Guard",
-      "Steward Prot Buff"
+      {
+       "raw": "Antiq ProtectMe ClearGuardsPerformer",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Antiq ProtectMe ClearGuardsTarget",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Steward Human Guard",
+       "duration": 3,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "Steward Prot Buff",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "33%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -381,8 +621,16 @@
       4
      ],
      "effects": [
-      "Stress 1",
-      "Stun 2"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "Stun 2",
+       "chance": "110%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -406,7 +654,16 @@
       4
      ],
      "effects": [
-      "CC Mob Bleed 3"
+      {
+       "raw": "CC Mob Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -433,10 +690,43 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Antiq ProtectMe ClearGuardsPerformer",
-      "Antiq ProtectMe ClearGuardsTarget",
-      "Castellan Guard",
-      "Gibbering Buff 2"
+      {
+       "raw": "Antiq ProtectMe ClearGuardsPerformer",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Antiq ProtectMe ClearGuardsTarget",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Castellan Guard",
+       "duration": 3,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "Gibbering Buff 2",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "50%"
+        }
+       ],
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -462,11 +752,45 @@
       4
      ],
      "effects": [
-      "CC Small Feed Heal 2",
-      "CC Mob Acc Debuff 3",
-      "Crimson Curse Weak",
-      "Feed Stress Beast",
-      "CC Steal Blight"
+      {
+       "raw": "CC Small Feed Heal 2",
+       "chance": "100%",
+       "heal": "6"
+      },
+      {
+       "raw": "CC Mob Acc Debuff 3",
+       "chance": "120%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-18%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-3"
+        }
+       ]
+      },
+      {
+       "raw": "Crimson Curse Weak",
+       "chance": "31%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Feed Stress Beast",
+       "chance": "85%",
+       "stress": "12"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     }
    ],
@@ -528,9 +852,27 @@
       4
      ],
      "effects": [
-      "Castellan Pull 5",
-      "Castellan Stress 5",
-      "Mark Target"
+      {
+       "raw": "Castellan Pull 5",
+       "chance": "140%",
+       "move": {
+        "kind": "pull",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Castellan Stress 5",
+       "chance": "90%",
+       "stress": "14"
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -556,12 +898,42 @@
       4
      ],
      "effects": [
-      "CC Small Feed Heal 3",
-      "switch_mode_beast_self",
-      "Crimson Curse Weak",
-      "Steward Stress Buff 3",
-      "Feed Stress Human",
-      "CC Steal Blight"
+      {
+       "raw": "CC Small Feed Heal 3",
+       "chance": "100%",
+       "heal": "9"
+      },
+      {
+       "raw": "switch_mode_beast_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "Crimson Curse Weak",
+       "chance": "31%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Steward Stress Buff 3",
+       "chance": "140%",
+       "duration": 5
+      },
+      {
+       "raw": "Feed Stress Human",
+       "chance": "85%",
+       "stress": "8"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     },
     {
@@ -588,10 +960,40 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Antiq ProtectMe ClearGuardsPerformer",
-      "Antiq ProtectMe ClearGuardsTarget",
-      "Steward Human Guard",
-      "Steward Prot Buff"
+      {
+       "raw": "Antiq ProtectMe ClearGuardsPerformer",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Antiq ProtectMe ClearGuardsTarget",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Steward Human Guard",
+       "duration": 3,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "Steward Prot Buff",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "33%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -617,8 +1019,16 @@
       4
      ],
      "effects": [
-      "Stress 1",
-      "Stun 3"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "Stun 3",
+       "chance": "120%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -642,7 +1052,16 @@
       4
      ],
      "effects": [
-      "CC Mob Bleed 5"
+      {
+       "raw": "CC Mob Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -669,10 +1088,43 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Antiq ProtectMe ClearGuardsPerformer",
-      "Antiq ProtectMe ClearGuardsTarget",
-      "Castellan Guard",
-      "Gibbering Buff 3"
+      {
+       "raw": "Antiq ProtectMe ClearGuardsPerformer",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Antiq ProtectMe ClearGuardsTarget",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Castellan Guard",
+       "duration": 3,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "Gibbering Buff 3",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "60%"
+        }
+       ],
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -698,11 +1150,45 @@
       4
      ],
      "effects": [
-      "CC Small Feed Heal 3",
-      "CC Mob Acc Debuff 5",
-      "Crimson Curse Weak",
-      "Feed Stress Beast",
-      "CC Steal Blight"
+      {
+       "raw": "CC Small Feed Heal 3",
+       "chance": "100%",
+       "heal": "9"
+      },
+      {
+       "raw": "CC Mob Acc Debuff 5",
+       "chance": "140%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-15%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-2"
+        }
+       ]
+      },
+      {
+       "raw": "Crimson Curse Weak",
+       "chance": "31%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Feed Stress Beast",
+       "chance": "85%",
+       "stress": "12"
+      },
+      {
+       "raw": "CC Steal Blight",
+       "chance": "100%",
+       "traits": [
+        "steal_buff"
+       ]
+      }
      ]
     }
    ],

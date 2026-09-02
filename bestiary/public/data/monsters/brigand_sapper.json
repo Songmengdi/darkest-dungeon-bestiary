@@ -56,7 +56,10 @@
       4
      ],
      "effects": [
-      "Rank Target Enemy 1"
+      {
+       "raw": "Rank Target Enemy 1",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -82,7 +85,10 @@
       4
      ],
      "effects": [
-      "Clear Enemy Rank Target With Result"
+      {
+       "raw": "Clear Enemy Rank Target With Result",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -107,10 +113,32 @@
       4
      ],
      "effects": [
-      "Stun 5",
-      "Sapper Summon Barrel",
-      "Sapper Summon Brigand Guaranteed",
-      "Sapper Summon Brigand Low Chance"
+      {
+       "raw": "Stun 5",
+       "chance": "140%",
+       "stun": "1"
+      },
+      {
+       "raw": "Sapper Summon Barrel",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Sapper Summon Brigand Guaranteed",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Sapper Summon Brigand Low Chance",
+       "chance": "33%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -136,10 +164,34 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Clear Guard Performer",
-      "Clear Guard Target",
-      "Sapper Guard",
-      "Sapper Summon Brigand High Chance"
+      {
+       "raw": "Clear Guard Performer",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Clear Guard Target",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Sapper Guard",
+       "duration": 3,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "Sapper Summon Brigand High Chance",
+       "chance": "75%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -164,7 +216,11 @@
       4
      ],
      "effects": [
-      "Sapper Stress"
+      {
+       "raw": "Sapper Stress",
+       "chance": "100%",
+       "stress": "8"
+      }
      ]
     }
    ],
@@ -352,52 +408,64 @@
     "skillDesires": [
      {
       "skill": "sapper_summon",
+      "chance": 10000,
       "type": "ally_dead_skill"
      },
      {
       "skill": "sapper_summon",
+      "chance": 10,
       "type": "specific_skill"
      },
      {
       "skill": "sapper_guard",
+      "chance": 30,
       "type": "specific_skill"
      },
      {
       "skill": "sapper_stress",
+      "chance": 0.001,
       "type": "specific_skill"
      },
      {
       "skill": "sapper_stress",
+      "chance": 1,
       "type": "ally_dead_skill"
      }
     ],
     "targetDesires": [
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "sapper_summon"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "sapper_stress"
      },
      {
       "type": "ally_class_target",
+      "chance": -10000,
       "skill": "sapper_guard"
      },
      {
       "type": "rank_target",
+      "chance": 1,
       "skill": "sapper_detonate"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "sapper_throw"
      },
      {
       "type": "random_target",
+      "chance": 1,
       "skill": "sapper_guard"
      },
      {
       "type": "health_target",
+      "chance": 100,
       "skill": "sapper_guard"
      }
     ]

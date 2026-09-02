@@ -54,7 +54,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Cutthroat Slice Debuff 1"
+      {
+       "raw": "Cutthroat Slice Debuff 1",
+       "chance": "100%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -77,7 +81,14 @@
       3
      ],
      "effects": [
-      "Push 1A"
+      {
+       "raw": "Push 1A",
+       "chance": "100%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      }
      ]
     },
     {
@@ -102,7 +113,16 @@
       4
      ],
      "effects": [
-      "Minor Bleed 1"
+      {
+       "raw": "Minor Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "1",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -125,7 +145,16 @@
       4
      ],
      "effects": [
-      "Cutthroat Poke Buff"
+      {
+       "raw": "Cutthroat Poke Buff",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "2"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -355,31 +384,38 @@
     "skillDesires": [
      {
       "skill": "double_slice",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "uppercut_slice",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "bandit_stabby",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "bandit_stabby_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "bandit_stabby"
      },
      {
       "type": "marked_target",
+      "chance": 2,
       "skill": "bandit_stabby"
      }
     ]
@@ -439,7 +475,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Cutthroat Slice Debuff 3"
+      {
+       "raw": "Cutthroat Slice Debuff 3",
+       "chance": "120%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -462,7 +502,14 @@
       3
      ],
      "effects": [
-      "Push 1C"
+      {
+       "raw": "Push 1C",
+       "chance": "120%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      }
      ]
     },
     {
@@ -487,7 +534,16 @@
       4
      ],
      "effects": [
-      "Minor Bleed 3"
+      {
+       "raw": "Minor Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -510,7 +566,16 @@
       4
      ],
      "effects": [
-      "Cutthroat Poke Buff"
+      {
+       "raw": "Cutthroat Poke Buff",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "2"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -740,39 +805,48 @@
     "skillDesires": [
      {
       "skill": "double_slice",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "double_slice",
+      "chance": 5,
       "type": "performing_turn_skill"
      },
      {
       "skill": "uppercut_slice",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "bandit_stabby",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "bandit_stabby",
+      "chance": 4,
       "type": "performing_turn_skill"
      },
      {
       "skill": "bandit_stabby_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "bandit_stabby"
      },
      {
       "type": "marked_target",
+      "chance": 3,
       "skill": "bandit_stabby"
      }
     ]
@@ -832,7 +906,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Cutthroat Slice Debuff 5"
+      {
+       "raw": "Cutthroat Slice Debuff 5",
+       "chance": "140%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -855,7 +933,14 @@
       3
      ],
      "effects": [
-      "Push 1E"
+      {
+       "raw": "Push 1E",
+       "chance": "140%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      }
      ]
     },
     {
@@ -880,7 +965,16 @@
       4
      ],
      "effects": [
-      "Minor Bleed 5"
+      {
+       "raw": "Minor Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -903,7 +997,16 @@
       4
      ],
      "effects": [
-      "Cutthroat Poke Buff"
+      {
+       "raw": "Cutthroat Poke Buff",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "2"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -1133,39 +1236,48 @@
     "skillDesires": [
      {
       "skill": "double_slice",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "double_slice",
+      "chance": 5,
       "type": "performing_turn_skill"
      },
      {
       "skill": "uppercut_slice",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "bandit_stabby",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "bandit_stabby",
+      "chance": 4,
       "type": "performing_turn_skill"
      },
      {
       "skill": "bandit_stabby_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "bandit_stabby"
      },
      {
       "type": "marked_target",
+      "chance": 4,
       "skill": "bandit_stabby"
      }
     ]

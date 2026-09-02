@@ -56,8 +56,21 @@
       4
      ],
      "effects": [
-      "Farmer Blight 1",
-      "Stress 1"
+      {
+       "raw": "Farmer Blight 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     },
     {
@@ -78,8 +91,22 @@
      ],
      "target": [],
      "effects": [
-      "FarmerHeal 1",
-      "Farmer Speed 1"
+      {
+       "raw": "FarmerHeal 1",
+       "chance": "100%",
+       "heal": "4"
+      },
+      {
+       "raw": "Farmer Speed 1",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "3"
+        }
+       ]
+      }
      ]
     },
     {
@@ -163,8 +190,21 @@
       4
      ],
      "effects": [
-      "Farmer Blight 2",
-      "Stress 1"
+      {
+       "raw": "Farmer Blight 2",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     },
     {
@@ -185,8 +225,22 @@
      ],
      "target": [],
      "effects": [
-      "FarmerHeal 2",
-      "Farmer Speed 2"
+      {
+       "raw": "FarmerHeal 2",
+       "chance": "100%",
+       "heal": "5"
+      },
+      {
+       "raw": "Farmer Speed 2",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "4"
+        }
+       ]
+      }
      ]
     },
     {
@@ -270,8 +324,21 @@
       4
      ],
      "effects": [
-      "Farmer Blight 3",
-      "Stress 2"
+      {
+       "raw": "Farmer Blight 3",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "4",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Stress 2",
+       "chance": "100%",
+       "stress": "15"
+      }
      ]
     },
     {
@@ -292,8 +359,22 @@
      ],
      "target": [],
      "effects": [
-      "FarmerHeal 3",
-      "Farmer Speed 3"
+      {
+       "raw": "FarmerHeal 3",
+       "chance": "100%",
+       "heal": "7"
+      },
+      {
+       "raw": "Farmer Speed 3",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "5"
+        }
+       ]
+      }
      ]
     },
     {

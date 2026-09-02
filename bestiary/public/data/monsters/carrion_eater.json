@@ -55,8 +55,24 @@
       3
      ],
      "effects": [
-      "Weak Blight 1",
-      "Damage Marked Target"
+      {
+       "raw": "Weak Blight 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "1",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     }
    ],
@@ -134,15 +150,18 @@
     "skillDesires": [
      {
       "skill": "munch",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 2,
       "skill": "munch"
      }
     ]
@@ -202,9 +221,31 @@
       3
      ],
      "effects": [
-      "Weak Blight 3",
-      "Damage Marked Target",
-      "Carrion Munch Disease 3"
+      {
+       "raw": "Weak Blight 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Carrion Munch Disease 3",
+       "chance": "7%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     }
    ],
@@ -282,15 +323,18 @@
     "skillDesires": [
      {
       "skill": "munch",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 3,
       "skill": "munch"
      }
     ]
@@ -350,9 +394,31 @@
       3
      ],
      "effects": [
-      "Weak Blight 5",
-      "Damage Marked Target",
-      "Carrion Munch Disease 5"
+      {
+       "raw": "Weak Blight 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Damage Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "100%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Carrion Munch Disease 5",
+       "chance": "9%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     }
    ],
@@ -430,15 +496,18 @@
     "skillDesires": [
      {
       "skill": "munch",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 4,
       "skill": "munch"
      }
     ]

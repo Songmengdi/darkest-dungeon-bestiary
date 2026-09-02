@@ -54,8 +54,24 @@
       4
      ],
      "effects": [
-      "Errant Blight",
-      "Errant Mark"
+      {
+       "raw": "Errant Blight",
+       "chance": "150%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "6",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Errant Mark",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -99,7 +115,14 @@
       2
      ],
      "effects": [
-      "Push 2F"
+      {
+       "raw": "Push 2F",
+       "chance": "150%",
+       "move": {
+        "kind": "push",
+        "amount": "2"
+       }
+      }
      ]
     }
    ],
@@ -109,24 +132,29 @@
     "skillDesires": [
      {
       "skill": "errant_spit",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "errant_cough",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "errant_push",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "errant_spit",
+      "chance": 10,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },

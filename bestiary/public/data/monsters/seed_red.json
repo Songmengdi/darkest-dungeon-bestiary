@@ -57,8 +57,17 @@
      ],
      "targetAoe": true,
      "effects": [
-      "kill_self_queued",
-      "red seed attack heal"
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      },
+      {
+       "raw": "red seed attack heal",
+       "chance": "100%"
+      }
      ]
     }
    ],

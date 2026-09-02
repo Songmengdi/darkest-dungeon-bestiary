@@ -51,7 +51,21 @@
      ],
      "target": [],
      "effects": [
-      "Statue head prep buff"
+      {
+       "raw": "Statue head prep buff",
+       "duration": -1,
+       "dmgMultiply": "0.10",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "5%"
+        },
+        {
+         "key": "crit_chance_add",
+         "value": "5%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -78,7 +92,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Syco Weak Stress 3"
+      {
+       "raw": "Syco Weak Stress 3",
+       "chance": "100%",
+       "stress": "5"
+      }
      ]
     }
    ],
@@ -133,7 +151,21 @@
      ],
      "target": [],
      "effects": [
-      "Statue head prep buff"
+      {
+       "raw": "Statue head prep buff",
+       "duration": -1,
+       "dmgMultiply": "0.10",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "5%"
+        },
+        {
+         "key": "crit_chance_add",
+         "value": "5%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -160,7 +192,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Syco Weak Stress 3"
+      {
+       "raw": "Syco Weak Stress 3",
+       "chance": "100%",
+       "stress": "5"
+      }
      ]
     }
    ],
@@ -215,7 +251,21 @@
      ],
      "target": [],
      "effects": [
-      "Statue head prep buff"
+      {
+       "raw": "Statue head prep buff",
+       "duration": -1,
+       "dmgMultiply": "0.10",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "5%"
+        },
+        {
+         "key": "crit_chance_add",
+         "value": "5%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -242,7 +292,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Syco Weak Stress 3"
+      {
+       "raw": "Syco Weak Stress 3",
+       "chance": "100%",
+       "stress": "5"
+      }
      ]
     }
    ],

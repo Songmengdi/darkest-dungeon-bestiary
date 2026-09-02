@@ -56,8 +56,29 @@
       4
      ],
      "effects": [
-      "Crone Curse 1",
-      "Mark Target"
+      {
+       "raw": "Crone Curse 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-5%"
+        },
+        {
+         "key": "defense_rating_add",
+         "value": "-10%"
+        }
+       ]
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -80,8 +101,21 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stress 1",
-      "Blight 1"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "Blight 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -107,8 +141,16 @@
       4
      ],
      "effects": [
-      "Stress 1",
-      "Darkness 2"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "Darkness 2",
+       "chance": "100%",
+       "torch": "10"
+      }
      ]
     }
    ],
@@ -186,20 +228,24 @@
     "skillDesires": [
      {
       "skill": "curse_vulnerability",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "fetid_censer",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "embrace_the_dark",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },
@@ -259,8 +305,29 @@
       4
      ],
      "effects": [
-      "Crone Curse 3",
-      "Mark Target"
+      {
+       "raw": "Crone Curse 3",
+       "chance": "120%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-7%"
+        },
+        {
+         "key": "defense_rating_add",
+         "value": "-15%"
+        }
+       ]
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -283,9 +350,28 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stress 1",
-      "Blight 3",
-      "Crone Fetid Disease 3"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "Blight 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Crone Fetid Disease 3",
+       "chance": "7%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -311,8 +397,16 @@
       4
      ],
      "effects": [
-      "Stress 1",
-      "Darkness 2"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "Darkness 2",
+       "chance": "100%",
+       "torch": "10"
+      }
      ]
     }
    ],
@@ -390,24 +484,29 @@
     "skillDesires": [
      {
       "skill": "curse_vulnerability",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "curse_vulnerability",
+      "chance": 5,
       "type": "performing_turn_skill"
      },
      {
       "skill": "fetid_censer",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "embrace_the_dark",
+      "chance": 2,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },
@@ -467,8 +566,29 @@
       4
      ],
      "effects": [
-      "Crone Curse 5",
-      "Mark Target"
+      {
+       "raw": "Crone Curse 5",
+       "chance": "140%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-10%"
+        },
+        {
+         "key": "defense_rating_add",
+         "value": "-20%"
+        }
+       ]
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -491,9 +611,28 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Stress 1",
-      "Blight 5",
-      "Crone Fetid Disease 5"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "Blight 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "4",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Crone Fetid Disease 5",
+       "chance": "9%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -519,8 +658,16 @@
       4
      ],
      "effects": [
-      "Stress 1",
-      "Darkness 2"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "Darkness 2",
+       "chance": "100%",
+       "torch": "10"
+      }
      ]
     }
    ],
@@ -598,24 +745,29 @@
     "skillDesires": [
      {
       "skill": "curse_vulnerability",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "curse_vulnerability",
+      "chance": 6,
       "type": "performing_turn_skill"
      },
      {
       "skill": "fetid_censer",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "embrace_the_dark",
+      "chance": 3,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },

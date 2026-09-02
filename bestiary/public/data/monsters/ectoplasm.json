@@ -80,7 +80,13 @@
       4
      ],
      "effects": [
-      "Summon Ecto 1"
+      {
+       "raw": "Summon Ecto 1",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -107,8 +113,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Summon Big Ecto 1",
-      "Stress 1"
+      {
+       "raw": "Summon Big Ecto 1",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     }
    ],
@@ -138,23 +154,28 @@
     "skillDesires": [
      {
       "skill": "slime",
+      "chance": 4,
       "type": "specific_skill"
      },
      {
       "skill": "summon_slime",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "summon_big_slime",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 1
      }
     ]
    },
@@ -214,7 +235,17 @@
       4
      ],
      "effects": [
-      "Small Ecto Slime Debuff 3"
+      {
+       "raw": "Small Ecto Slime Debuff 3",
+       "chance": "120%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "-1"
+        }
+       ]
+      }
      ]
     },
     {
@@ -240,7 +271,13 @@
       4
      ],
      "effects": [
-      "Summon Ecto 2"
+      {
+       "raw": "Summon Ecto 2",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -267,8 +304,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Summon Big Ecto 2",
-      "Stress 1"
+      {
+       "raw": "Summon Big Ecto 2",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     }
    ],
@@ -298,23 +345,28 @@
     "skillDesires": [
      {
       "skill": "slime",
+      "chance": 4,
       "type": "specific_skill"
      },
      {
       "skill": "summon_slime",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "summon_big_slime",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 1
      }
     ]
    },
@@ -374,7 +426,17 @@
       4
      ],
      "effects": [
-      "Small Ecto Slime Debuff 5"
+      {
+       "raw": "Small Ecto Slime Debuff 5",
+       "chance": "140%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "-2"
+        }
+       ]
+      }
      ]
     },
     {
@@ -400,7 +462,13 @@
       4
      ],
      "effects": [
-      "Summon Ecto 3"
+      {
+       "raw": "Summon Ecto 3",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -427,8 +495,18 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Summon Big Ecto 3",
-      "Stress 1"
+      {
+       "raw": "Summon Big Ecto 3",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      }
      ]
     }
    ],
@@ -458,23 +536,28 @@
     "skillDesires": [
      {
       "skill": "slime",
+      "chance": 4,
       "type": "specific_skill"
      },
      {
       "skill": "summon_slime",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "summon_big_slime",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 1
      }
     ]
    },

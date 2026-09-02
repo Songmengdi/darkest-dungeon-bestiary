@@ -54,7 +54,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Cutthroat Slice Debuff 6"
+      {
+       "raw": "Cutthroat Slice Debuff 6",
+       "chance": "160%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -77,7 +81,14 @@
       3
      ],
      "effects": [
-      "Push 1E"
+      {
+       "raw": "Push 1E",
+       "chance": "140%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      }
      ]
     },
     {
@@ -102,8 +113,24 @@
       4
      ],
      "effects": [
-      "Minor Bleed 5",
-      "Mark Target"
+      {
+       "raw": "Minor Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -126,7 +153,16 @@
       4
      ],
      "effects": [
-      "Cutthroat Poke Buff"
+      {
+       "raw": "Cutthroat Poke Buff",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "2"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -204,31 +240,38 @@
     "skillDesires": [
      {
       "skill": "double_slice",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "uppercut_slice",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "bandit_stabby",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "bandit_stabby",
+      "chance": 4,
       "type": "performing_turn_skill"
      },
      {
       "skill": "bandit_stabby_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "resistance_target",
+      "chance": 2,
       "skill": "bandit_stabby"
      }
     ]

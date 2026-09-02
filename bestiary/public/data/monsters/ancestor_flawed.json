@@ -56,8 +56,19 @@
       4
      ],
      "effects": [
-      "Ancestor Mark",
-      "Flawed Stun"
+      {
+       "raw": "Ancestor Mark",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Flawed Stun",
+       "chance": "150%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -83,7 +94,11 @@
       4
      ],
      "effects": [
-      "Ancestor Flawed Stress"
+      {
+       "raw": "Ancestor Flawed Stress",
+       "chance": "100%",
+       "stress": "12"
+      }
      ]
     }
    ],
@@ -93,23 +108,28 @@
     "skillDesires": [
      {
       "skill": "flawed_reveal",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "flawed_mark",
+      "chance": 5,
       "type": "specific_skill"
      },
      {
       "skill": "flawed_mark",
+      "chance": 5,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 3,
       "skill": "flawed_reveal"
      }
     ]

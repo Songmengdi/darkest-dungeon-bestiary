@@ -70,10 +70,39 @@
       4
      ],
      "effects": [
-      "Baron Whip Stress",
-      "Baron Bleed",
-      "Baron Pull",
-      "Baron Whip Horror"
+      {
+       "raw": "Baron Whip Stress",
+       "chance": "95%",
+       "stress": "20"
+      },
+      {
+       "raw": "Baron Bleed",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Baron Pull",
+       "chance": "120%",
+       "move": {
+        "kind": "pull",
+        "amount": "1"
+       }
+      },
+      {
+       "raw": "Baron Whip Horror",
+       "chance": "100%",
+       "duration": 2,
+       "dot": {
+        "kind": "stress",
+        "amount": "4",
+        "duration": 2
+       }
+      }
      ]
     },
     {
@@ -100,7 +129,25 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Baron Whipping Buff"
+      {
+       "raw": "Baron Whipping Buff",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "10%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "4"
+        },
+        {
+         "key": "crit_chance_add",
+         "value": "5%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -126,9 +173,29 @@
       4
      ],
      "effects": [
-      "Baron Feed",
-      "Baron Feed Bleed Debuff",
-      "Baron Feed Stats"
+      {
+       "raw": "Baron Feed",
+       "chance": "100%",
+       "heal": "18"
+      },
+      {
+       "raw": "Baron Feed Bleed Debuff",
+       "chance": "100%"
+      },
+      {
+       "raw": "Baron Feed Stats",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-15%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "3"
+        }
+       ]
+      }
      ]
     },
     {
@@ -149,8 +216,17 @@
      ],
      "target": [],
      "effects": [
-      "baron_change_to_curtain",
-      "instant_shuffle"
+      {
+       "raw": "baron_change_to_curtain",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "instant_shuffle",
+       "chance": "75%"
+      }
      ]
     },
     {
@@ -171,10 +247,31 @@
      ],
      "target": [],
      "effects": [
-      "Cocoon Swap 1-3 group",
-      "Cocoon Swap 1-3 baron",
-      "Baron Refill Cocoons 1-3",
-      "instant_shuffle"
+      {
+       "raw": "Cocoon Swap 1-3 group",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "Cocoon Swap 1-3 baron",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "Baron Refill Cocoons 1-3",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "instant_shuffle",
+       "chance": "75%"
+      }
      ]
     },
     {
@@ -195,10 +292,31 @@
      ],
      "target": [],
      "effects": [
-      "Cocoon Swap 2-3 group",
-      "Cocoon Swap 2-3 baron",
-      "Baron Refill Cocoons 2-3",
-      "instant_shuffle"
+      {
+       "raw": "Cocoon Swap 2-3 group",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "Cocoon Swap 2-3 baron",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "Baron Refill Cocoons 2-3",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "instant_shuffle",
+       "chance": "75%"
+      }
      ]
     },
     {

@@ -54,8 +54,19 @@
       3
      ],
      "effects": [
-      "Stun 2",
-      "Push 3C"
+      {
+       "raw": "Stun 2",
+       "chance": "110%",
+       "stun": "1"
+      },
+      {
+       "raw": "Push 3C",
+       "chance": "120%",
+       "move": {
+        "kind": "push",
+        "amount": "3"
+       }
+      }
      ]
     },
     {
@@ -80,8 +91,31 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Disrupt 4",
-      "Blight 1"
+      {
+       "raw": "Disrupt 4",
+       "chance": "130%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-8%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-6"
+        }
+       ]
+      },
+      {
+       "raw": "Blight 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -179,31 +213,38 @@
     "skillDesires": [
      {
       "skill": "spit_to_roast",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "cripple_them",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "goring_flight",
+      "chance": 7,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "random_target",
+      "chance": 2,
       "skill": "spit_to_roast"
      },
      {
       "type": "marked_target",
+      "chance": 6,
       "skill": "spit_to_roast"
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "spit_to_roast"
      }
     ]
@@ -262,8 +303,19 @@
       3
      ],
      "effects": [
-      "Stun 3",
-      "Push 3C"
+      {
+       "raw": "Stun 3",
+       "chance": "120%",
+       "stun": "1"
+      },
+      {
+       "raw": "Push 3C",
+       "chance": "120%",
+       "move": {
+        "kind": "push",
+        "amount": "3"
+       }
+      }
      ]
     },
     {
@@ -288,8 +340,31 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Disrupt 4",
-      "Blight 3"
+      {
+       "raw": "Disrupt 4",
+       "chance": "130%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-8%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-6"
+        }
+       ]
+      },
+      {
+       "raw": "Blight 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -387,31 +462,38 @@
     "skillDesires": [
      {
       "skill": "spit_to_roast",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "cripple_them",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "goring_flight",
+      "chance": 7,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "random_target",
+      "chance": 2,
       "skill": "spit_to_roast"
      },
      {
       "type": "marked_target",
+      "chance": 6,
       "skill": "spit_to_roast"
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "spit_to_roast"
      }
     ]
@@ -470,8 +552,19 @@
       3
      ],
      "effects": [
-      "Stun 4",
-      "Push 3C"
+      {
+       "raw": "Stun 4",
+       "chance": "130%",
+       "stun": "1"
+      },
+      {
+       "raw": "Push 3C",
+       "chance": "120%",
+       "move": {
+        "kind": "push",
+        "amount": "3"
+       }
+      }
      ]
     },
     {
@@ -496,8 +589,31 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Disrupt 4",
-      "Blight 3"
+      {
+       "raw": "Disrupt 4",
+       "chance": "130%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-8%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-6"
+        }
+       ]
+      },
+      {
+       "raw": "Blight 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -595,31 +711,38 @@
     "skillDesires": [
      {
       "skill": "spit_to_roast",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "cripple_them",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "goring_flight",
+      "chance": 7,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "random_target",
+      "chance": 2,
       "skill": "spit_to_roast"
      },
      {
       "type": "marked_target",
+      "chance": 6,
       "skill": "spit_to_roast"
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "spit_to_roast"
      }
     ]

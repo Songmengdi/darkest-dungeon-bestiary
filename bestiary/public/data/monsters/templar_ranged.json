@@ -76,8 +76,27 @@
       4
      ],
      "effects": [
-      "Templar Snipe Blight",
-      "Templar Weaken"
+      {
+       "raw": "Templar Snipe Blight",
+       "chance": "150%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "6",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Templar Weaken",
+       "chance": "150%",
+       "dmgMultiply": "-33%",
+       "stats": [
+        {
+         "key": "crit_chance_add",
+         "value": "-10%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -102,7 +121,16 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Templar AOE Blight"
+      {
+       "raw": "Templar AOE Blight",
+       "chance": "150%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "4",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -112,20 +140,24 @@
     "skillDesires": [
      {
       "skill": "templar_pinch",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "templar_snipe",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "templar_aoe",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },

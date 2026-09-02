@@ -53,7 +53,16 @@
       3
      ],
      "effects": [
-      "Bleed 1"
+      {
+       "raw": "Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -77,8 +86,19 @@
       4
      ],
      "effects": [
-      "Stun 1",
-      "Reaver Ball Push 1A"
+      {
+       "raw": "Stun 1",
+       "chance": "100%",
+       "stun": "1"
+      },
+      {
+       "raw": "Reaver Ball Push 1A",
+       "chance": "100%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      }
      ]
     }
    ],
@@ -156,35 +176,43 @@
     "skillDesires": [
      {
       "skill": "butcher_cut",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "butcher_cut",
+      "chance": 1,
       "type": "performing_turn_skill"
      },
      {
       "skill": "ball_and_chain",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "ball_and_chain"
      },
      {
       "type": "resistance_target",
+      "chance": 2,
       "skill": "butcher_cut"
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "ball_and_chain"
      },
      {
       "type": "marked_target",
+      "chance": 2,
       "skill": "butcher_cut"
      }
     ]
@@ -242,8 +270,21 @@
       3
      ],
      "effects": [
-      "Bleed 3",
-      "Reaver Cut Debuff 3"
+      {
+       "raw": "Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Reaver Cut Debuff 3",
+       "chance": "120%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -267,8 +308,19 @@
       4
      ],
      "effects": [
-      "Stun 3",
-      "Reaver Ball Push 1B"
+      {
+       "raw": "Stun 3",
+       "chance": "120%",
+       "stun": "1"
+      },
+      {
+       "raw": "Reaver Ball Push 1B",
+       "chance": "120%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      }
      ]
     }
    ],
@@ -346,39 +398,48 @@
     "skillDesires": [
      {
       "skill": "butcher_cut",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "butcher_cut",
+      "chance": 1,
       "type": "performing_turn_skill"
      },
      {
       "skill": "ball_and_chain",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "ball_and_chain",
+      "chance": 3,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "ball_and_chain"
      },
      {
       "type": "resistance_target",
+      "chance": 2,
       "skill": "butcher_cut"
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "ball_and_chain"
      },
      {
       "type": "marked_target",
+      "chance": 3,
       "skill": "butcher_cut"
      }
     ]
@@ -436,8 +497,21 @@
       3
      ],
      "effects": [
-      "Bleed 5",
-      "Reaver Cut Debuff 5"
+      {
+       "raw": "Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Reaver Cut Debuff 5",
+       "chance": "140%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -461,8 +535,19 @@
       4
      ],
      "effects": [
-      "Stun 5",
-      "Reaver Ball Push 1C"
+      {
+       "raw": "Stun 5",
+       "chance": "140%",
+       "stun": "1"
+      },
+      {
+       "raw": "Reaver Ball Push 1C",
+       "chance": "140%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      }
      ]
     }
    ],
@@ -540,39 +625,48 @@
     "skillDesires": [
      {
       "skill": "butcher_cut",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "butcher_cut",
+      "chance": 1,
       "type": "performing_turn_skill"
      },
      {
       "skill": "ball_and_chain",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "ball_and_chain",
+      "chance": 3,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "ball_and_chain"
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "butcher_cut"
      },
      {
       "type": "resistance_target",
+      "chance": 2,
       "skill": "ball_and_chain"
      },
      {
       "type": "marked_target",
+      "chance": 4,
       "skill": "butcher_cut"
      }
     ]

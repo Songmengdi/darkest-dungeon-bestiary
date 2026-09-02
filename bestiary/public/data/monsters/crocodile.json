@@ -56,8 +56,22 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Hive Stress 1",
-      "Hive ACC Debuff 1"
+      {
+       "raw": "Hive Stress 1",
+       "chance": "90%",
+       "stress": "8"
+      },
+      {
+       "raw": "Hive ACC Debuff 1",
+       "chance": "100%",
+       "duration": 1,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-10%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -81,9 +95,29 @@
       4
      ],
      "effects": [
-      "CrocBleed 1",
-      "Croc Pull 1",
-      "Croc Stress 1"
+      {
+       "raw": "CrocBleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Croc Pull 1",
+       "chance": "115%",
+       "move": {
+        "kind": "pull",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Croc Stress 1",
+       "chance": "80%",
+       "stress": "9"
+      }
      ]
     },
     {
@@ -102,9 +136,29 @@
      ],
      "target": [],
      "effects": [
-      "switch_mode_submerged_self",
-      "CrocHeal 1",
-      "Croc Submerge Dodge 1"
+      {
+       "raw": "switch_mode_submerged_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "CrocHeal 1",
+       "chance": "100%",
+       "heal": "12"
+      },
+      {
+       "raw": "Croc Submerge Dodge 1",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "35%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -130,7 +184,13 @@
       4
      ],
      "effects": [
-      "switch_mode_land_self"
+      {
+       "raw": "switch_mode_land_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -148,7 +208,18 @@
      ],
      "target": [],
      "effects": [
-      "Croc Hide Buff 1"
+      {
+       "raw": "Croc Hide Buff 1",
+       "chance": "100%",
+       "duration": 4,
+       "dmgMultiply": "20%",
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "10%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -166,7 +237,18 @@
      ],
      "target": [],
      "effects": [
-      "Croc Hide Buff 1"
+      {
+       "raw": "Croc Hide Buff 1",
+       "chance": "100%",
+       "duration": 4,
+       "dmgMultiply": "20%",
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "10%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -294,8 +376,22 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Hive Stress 2",
-      "Hive ACC Debuff 2"
+      {
+       "raw": "Hive Stress 2",
+       "chance": "90%",
+       "stress": "10"
+      },
+      {
+       "raw": "Hive ACC Debuff 2",
+       "chance": "120%",
+       "duration": 1,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-12%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -319,9 +415,29 @@
       4
      ],
      "effects": [
-      "CrocBleed 2",
-      "Croc Pull 2",
-      "Croc Stress 2"
+      {
+       "raw": "CrocBleed 2",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Croc Pull 2",
+       "chance": "135%",
+       "move": {
+        "kind": "pull",
+        "amount": "2"
+       }
+      },
+      {
+       "raw": "Croc Stress 2",
+       "chance": "80%",
+       "stress": "10"
+      }
      ]
     },
     {
@@ -340,9 +456,29 @@
      ],
      "target": [],
      "effects": [
-      "switch_mode_submerged_self",
-      "CrocHeal 2",
-      "Croc Submerge Dodge 3"
+      {
+       "raw": "switch_mode_submerged_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "CrocHeal 2",
+       "chance": "100%",
+       "heal": "15"
+      },
+      {
+       "raw": "Croc Submerge Dodge 3",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "45%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -368,7 +504,13 @@
       4
      ],
      "effects": [
-      "switch_mode_land_self"
+      {
+       "raw": "switch_mode_land_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -386,7 +528,18 @@
      ],
      "target": [],
      "effects": [
-      "Croc Hide Buff 2"
+      {
+       "raw": "Croc Hide Buff 2",
+       "chance": "100%",
+       "duration": 4,
+       "dmgMultiply": "22%",
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "15%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -404,7 +557,18 @@
      ],
      "target": [],
      "effects": [
-      "Croc Hide Buff 2"
+      {
+       "raw": "Croc Hide Buff 2",
+       "chance": "100%",
+       "duration": 4,
+       "dmgMultiply": "22%",
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "15%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -464,8 +628,22 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Hive Stress 3",
-      "Hive ACC Debuff 3"
+      {
+       "raw": "Hive Stress 3",
+       "chance": "90%",
+       "stress": "12"
+      },
+      {
+       "raw": "Hive ACC Debuff 3",
+       "chance": "140%",
+       "duration": 1,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-15%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -489,9 +667,29 @@
       4
      ],
      "effects": [
-      "CrocBleed 3",
-      "Croc Pull 3",
-      "Croc Stress 3"
+      {
+       "raw": "CrocBleed 3",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Croc Pull 3",
+       "chance": "155%",
+       "move": {
+        "kind": "pull",
+        "amount": "3"
+       }
+      },
+      {
+       "raw": "Croc Stress 3",
+       "chance": "80%",
+       "stress": "12"
+      }
      ]
     },
     {
@@ -510,10 +708,36 @@
      ],
      "target": [],
      "effects": [
-      "switch_mode_submerged_self",
-      "CrocHeal 3",
-      "Croc Submerge Dodge 5",
-      "Cure Self"
+      {
+       "raw": "switch_mode_submerged_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "CrocHeal 3",
+       "chance": "100%",
+       "heal": "18"
+      },
+      {
+       "raw": "Croc Submerge Dodge 5",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "55%"
+        }
+       ]
+      },
+      {
+       "raw": "Cure Self",
+       "chance": "100%",
+       "traits": [
+        "cleanse"
+       ]
+      }
      ]
     },
     {
@@ -539,7 +763,13 @@
       4
      ],
      "effects": [
-      "switch_mode_land_self"
+      {
+       "raw": "switch_mode_land_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -557,7 +787,18 @@
      ],
      "target": [],
      "effects": [
-      "Croc Hide Buff 3"
+      {
+       "raw": "Croc Hide Buff 3",
+       "chance": "100%",
+       "duration": 4,
+       "dmgMultiply": "25%",
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "15%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -575,7 +816,18 @@
      ],
      "target": [],
      "effects": [
-      "Croc Hide Buff 3"
+      {
+       "raw": "Croc Hide Buff 3",
+       "chance": "100%",
+       "duration": 4,
+       "dmgMultiply": "25%",
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "15%"
+        }
+       ]
+      }
      ]
     }
    ],

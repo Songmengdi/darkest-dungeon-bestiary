@@ -54,7 +54,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Squeal Stun 1"
+      {
+       "raw": "Squeal Stun 1",
+       "chance": "100%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -79,7 +83,14 @@
       4
      ],
      "effects": [
-      "Piggie Mark"
+      {
+       "raw": "Piggie Mark",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -103,7 +114,14 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Piggie Mark"
+      {
+       "raw": "Piggie Mark",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -129,7 +147,11 @@
       4
      ],
      "effects": [
-      "Squeal Stun 1"
+      {
+       "raw": "Squeal Stun 1",
+       "chance": "100%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -317,20 +339,24 @@
     "skillDesires": [
      {
       "skill": "squeal",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "wilbur_mark_1",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "wilbur_mark_2",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }
@@ -387,7 +413,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Squeal Stun 3"
+      {
+       "raw": "Squeal Stun 3",
+       "chance": "120%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -412,7 +442,14 @@
       4
      ],
      "effects": [
-      "Piggie Mark"
+      {
+       "raw": "Piggie Mark",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -436,7 +473,14 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Piggie Mark"
+      {
+       "raw": "Piggie Mark",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -462,7 +506,11 @@
       4
      ],
      "effects": [
-      "Squeal Stun 3"
+      {
+       "raw": "Squeal Stun 3",
+       "chance": "120%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -650,24 +698,29 @@
     "skillDesires": [
      {
       "skill": "squeal_single",
+      "chance": 10000,
       "type": "specific_skill"
      },
      {
       "skill": "squeal",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "wilbur_mark_1",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "wilbur_mark_2",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }
@@ -724,7 +777,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Squeal Stun 5"
+      {
+       "raw": "Squeal Stun 5",
+       "chance": "140%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -749,7 +806,14 @@
       4
      ],
      "effects": [
-      "Piggie Mark"
+      {
+       "raw": "Piggie Mark",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -773,7 +837,14 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Piggie Mark"
+      {
+       "raw": "Piggie Mark",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -799,7 +870,11 @@
       4
      ],
      "effects": [
-      "Squeal Stun 5"
+      {
+       "raw": "Squeal Stun 5",
+       "chance": "140%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -987,24 +1062,29 @@
     "skillDesires": [
      {
       "skill": "squeal_single",
+      "chance": 10000,
       "type": "specific_skill"
      },
      {
       "skill": "squeal",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "wilbur_mark_1",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "wilbur_mark_2",
+      "chance": 3,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    }

@@ -50,7 +50,13 @@
       1
      ],
      "effects": [
-      "CaptureBosun"
+      {
+       "raw": "CaptureBosun",
+       "chance": "100%",
+       "traits": [
+        "capture"
+       ]
+      }
      ]
     }
    ],
@@ -80,12 +86,14 @@
     "skillDesires": [
      {
       "skill": "anchor_grapple",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },
@@ -139,7 +147,13 @@
       1
      ],
      "effects": [
-      "CaptureBosun"
+      {
+       "raw": "CaptureBosun",
+       "chance": "100%",
+       "traits": [
+        "capture"
+       ]
+      }
      ]
     }
    ],
@@ -169,12 +183,14 @@
     "skillDesires": [
      {
       "skill": "anchor_grapple",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },
@@ -228,7 +244,13 @@
       1
      ],
      "effects": [
-      "CaptureBosun"
+      {
+       "raw": "CaptureBosun",
+       "chance": "100%",
+       "traits": [
+        "capture"
+       ]
+      }
      ]
     }
    ],
@@ -258,12 +280,14 @@
     "skillDesires": [
      {
       "skill": "anchor_grapple",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },

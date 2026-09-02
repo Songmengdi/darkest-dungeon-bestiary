@@ -56,8 +56,21 @@
       4
      ],
      "effects": [
-      "Madman Horror 1",
-      "MadMan Stress Debuff 1"
+      {
+       "raw": "Madman Horror 1",
+       "chance": "100%",
+       "duration": 4,
+       "dot": {
+        "kind": "stress",
+        "amount": "3",
+        "duration": 4
+       }
+      },
+      {
+       "raw": "MadMan Stress Debuff 1",
+       "chance": "100%",
+       "duration": -1
+      }
      ]
     },
     {
@@ -84,7 +97,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Madman AOE Stress 1"
+      {
+       "raw": "Madman AOE Stress 1",
+       "chance": "80%",
+       "stress": "7"
+      }
      ]
     }
    ],
@@ -119,19 +136,23 @@
     "skillDesires": [
      {
       "skill": "accusation",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "doomsay",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 1,
       "skill": "accusation"
      }
     ]
@@ -192,8 +213,21 @@
       4
      ],
      "effects": [
-      "Madman Horror 2",
-      "MadMan Stress Debuff 3"
+      {
+       "raw": "Madman Horror 2",
+       "chance": "100%",
+       "duration": 4,
+       "dot": {
+        "kind": "stress",
+        "amount": "4",
+        "duration": 4
+       }
+      },
+      {
+       "raw": "MadMan Stress Debuff 3",
+       "chance": "120%",
+       "duration": -1
+      }
      ]
     },
     {
@@ -220,7 +254,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Madman AOE Stress 2"
+      {
+       "raw": "Madman AOE Stress 2",
+       "chance": "80%",
+       "stress": "9"
+      }
      ]
     }
    ],
@@ -255,19 +293,23 @@
     "skillDesires": [
      {
       "skill": "accusation",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "doomsay",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 2,
       "skill": "accusation"
      }
     ]
@@ -328,8 +370,21 @@
       4
      ],
      "effects": [
-      "Madman Horror 2",
-      "MadMan Stress Debuff 5"
+      {
+       "raw": "Madman Horror 2",
+       "chance": "100%",
+       "duration": 4,
+       "dot": {
+        "kind": "stress",
+        "amount": "4",
+        "duration": 4
+       }
+      },
+      {
+       "raw": "MadMan Stress Debuff 5",
+       "chance": "140%",
+       "duration": -1
+      }
      ]
     },
     {
@@ -356,7 +411,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Madman AOE Stress 2"
+      {
+       "raw": "Madman AOE Stress 2",
+       "chance": "80%",
+       "stress": "9"
+      }
      ]
     }
    ],
@@ -391,19 +450,23 @@
     "skillDesires": [
      {
       "skill": "accusation",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "doomsay",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 3,
       "skill": "accusation"
      }
     ]

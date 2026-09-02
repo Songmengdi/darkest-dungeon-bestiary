@@ -56,9 +56,23 @@
       4
      ],
      "effects": [
-      "Stun 1",
-      "Jellyfish Disease",
-      "Jellyfish Shock Debuff 1"
+      {
+       "raw": "Stun 1",
+       "chance": "100%",
+       "stun": "1"
+      },
+      {
+       "raw": "Jellyfish Disease",
+       "chance": "6%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Jellyfish Shock Debuff 1",
+       "chance": "100%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -84,9 +98,34 @@
       4
      ],
      "effects": [
-      "Bleed 1",
-      "Jellyfish Disease",
-      "Jellyfish Gouge Debuff 1"
+      {
+       "raw": "Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Jellyfish Disease",
+       "chance": "6%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Jellyfish Gouge Debuff 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-5%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -164,35 +203,43 @@
     "skillDesires": [
      {
       "skill": "jellyfish_sting",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "jellyfish_sting",
+      "chance": 5,
       "type": "performing_turn_skill"
      },
      {
       "skill": "jellyfish_sting",
+      "chance": 5,
       "type": "ally_alive_skill"
      },
      {
       "skill": "jellyfish_rend",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "jellyfish_sting"
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "jellyfish_rend"
      },
      {
       "type": "resistance_target",
+      "chance": 2,
       "skill": "jellyfish_sting"
      }
     ]
@@ -254,9 +301,23 @@
       4
      ],
      "effects": [
-      "Stun 3",
-      "Jellyfish Disease",
-      "Jellyfish Shock Debuff 3"
+      {
+       "raw": "Stun 3",
+       "chance": "120%",
+       "stun": "1"
+      },
+      {
+       "raw": "Jellyfish Disease",
+       "chance": "6%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Jellyfish Shock Debuff 3",
+       "chance": "120%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -282,9 +343,34 @@
       4
      ],
      "effects": [
-      "Bleed 3",
-      "Jellyfish Disease",
-      "Jellyfish Gouge Debuff 3"
+      {
+       "raw": "Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Jellyfish Disease",
+       "chance": "6%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Jellyfish Gouge Debuff 3",
+       "chance": "120%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-7%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -362,35 +448,43 @@
     "skillDesires": [
      {
       "skill": "jellyfish_sting",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "jellyfish_sting",
+      "chance": 5,
       "type": "performing_turn_skill"
      },
      {
       "skill": "jellyfish_sting",
+      "chance": 5,
       "type": "ally_alive_skill"
      },
      {
       "skill": "jellyfish_rend",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "jellyfish_sting"
      },
      {
       "type": "resistance_target",
+      "chance": 2,
       "skill": "jellyfish_rend"
      },
      {
       "type": "resistance_target",
+      "chance": 3,
       "skill": "jellyfish_sting"
      }
     ]
@@ -452,9 +546,23 @@
       4
      ],
      "effects": [
-      "Stun 5",
-      "Jellyfish Disease",
-      "Jellyfish Shock Debuff 5"
+      {
+       "raw": "Stun 5",
+       "chance": "140%",
+       "stun": "1"
+      },
+      {
+       "raw": "Jellyfish Disease",
+       "chance": "6%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Jellyfish Shock Debuff 5",
+       "chance": "140%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -480,9 +588,34 @@
       4
      ],
      "effects": [
-      "Bleed 5",
-      "Jellyfish Disease",
-      "Jellyfish Gouge Debuff 5"
+      {
+       "raw": "Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Jellyfish Disease",
+       "chance": "6%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Jellyfish Gouge Debuff 5",
+       "chance": "140%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-10%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -560,35 +693,43 @@
     "skillDesires": [
      {
       "skill": "jellyfish_sting",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "jellyfish_sting",
+      "chance": 5,
       "type": "performing_turn_skill"
      },
      {
       "skill": "jellyfish_sting",
+      "chance": 5,
       "type": "ally_alive_skill"
      },
      {
       "skill": "jellyfish_rend",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "jellyfish_sting"
      },
      {
       "type": "resistance_target",
+      "chance": 3,
       "skill": "jellyfish_rend"
      },
      {
       "type": "resistance_target",
+      "chance": 4,
       "skill": "jellyfish_sting"
      }
     ]

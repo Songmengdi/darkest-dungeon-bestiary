@@ -56,9 +56,29 @@
       4
      ],
      "effects": [
-      "Ancestor Perfect Bleed",
-      "Ancestor Damage Marked",
-      "Ancestor Small Stress"
+      {
+       "raw": "Ancestor Perfect Bleed",
+       "chance": "150%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Ancestor Damage Marked",
+       "chance": "100%",
+       "dmgMultiply": "50%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Ancestor Small Stress",
+       "chance": "100%",
+       "stress": "12"
+      }
      ]
     },
     {
@@ -84,7 +104,11 @@
       4
      ],
      "effects": [
-      "Ancestor Perfect Stress"
+      {
+       "raw": "Ancestor Perfect Stress",
+       "chance": "100%",
+       "stress": "22"
+      }
      ]
     }
    ],
@@ -94,27 +118,33 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 4,
       "type": "effect_key_status_skill"
      },
      {
       "skill": "perfect_bloodsteal",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "perfect_reveal",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 4,
       "skill": "perfect_bloodsteal"
      },
      {
       "type": "stress_target",
+      "chance": 1,
       "skill": "perfect_reveal"
      }
     ]

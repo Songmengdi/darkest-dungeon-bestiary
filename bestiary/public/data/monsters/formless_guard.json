@@ -56,7 +56,11 @@
       4
      ],
      "effects": [
-      "Stun 1"
+      {
+       "raw": "Stun 1",
+       "chance": "100%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -134,26 +138,32 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 1,
       "type": "preferred_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      },
      {
       "skill": "",
+      "chance": 100,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 3
      },
      {
-      "type": "health_target"
+      "type": "health_target",
+      "chance": 100
      }
     ]
    }
@@ -212,7 +222,11 @@
       4
      ],
      "effects": [
-      "Stun 2"
+      {
+       "raw": "Stun 2",
+       "chance": "110%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -290,26 +304,32 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 1,
       "type": "preferred_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      },
      {
       "skill": "",
+      "chance": 100,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 4
      },
      {
-      "type": "health_target"
+      "type": "health_target",
+      "chance": 100
      }
     ]
    }
@@ -368,7 +388,11 @@
       4
      ],
      "effects": [
-      "Stun 3"
+      {
+       "raw": "Stun 3",
+       "chance": "120%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -446,26 +470,32 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 1,
       "type": "preferred_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      },
      {
       "skill": "",
+      "chance": 100,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 5
      },
      {
-      "type": "health_target"
+      "type": "health_target",
+      "chance": 100
      }
     ]
    }

@@ -110,20 +110,24 @@
     "skillDesires": [
      {
       "skill": "light_fuse",
+      "chance": 1000,
       "type": "ally_alive_skill"
      },
      {
       "skill": "hot_shot",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
       "type": "ally_class_target",
+      "chance": 1,
       "skill": "light_fuse"
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },
@@ -237,20 +241,24 @@
     "skillDesires": [
      {
       "skill": "light_fuse",
+      "chance": 1000,
       "type": "ally_alive_skill"
      },
      {
       "skill": "hot_shot",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
       "type": "ally_class_target",
+      "chance": 1,
       "skill": "light_fuse"
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },
@@ -364,20 +372,24 @@
     "skillDesires": [
      {
       "skill": "light_fuse",
+      "chance": 1000,
       "type": "ally_alive_skill"
      },
      {
       "skill": "hot_shot",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
       "type": "ally_class_target",
+      "chance": 1,
       "skill": "light_fuse"
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },

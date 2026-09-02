@@ -56,8 +56,27 @@
       4
      ],
      "effects": [
-      "Snail Disease",
-      "Snail Debuff 1"
+      {
+       "raw": "Snail Disease",
+       "chance": "8%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Snail Debuff 1",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-20%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-3"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -135,15 +154,18 @@
     "skillDesires": [
      {
       "skill": "snail_slime",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "snail_slime"
      }
     ]
@@ -204,8 +226,27 @@
       4
      ],
      "effects": [
-      "Snail Disease",
-      "Snail Debuff 3"
+      {
+       "raw": "Snail Disease",
+       "chance": "8%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Snail Debuff 3",
+       "chance": "120%",
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-20%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-3"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -283,15 +324,18 @@
     "skillDesires": [
      {
       "skill": "snail_slime",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "resistance_target",
+      "chance": 2,
       "skill": "snail_slime"
      }
     ]
@@ -352,8 +396,27 @@
       4
      ],
      "effects": [
-      "Snail Disease",
-      "Snail Debuff 5"
+      {
+       "raw": "Snail Disease",
+       "chance": "8%",
+       "traits": [
+        "disease"
+       ]
+      },
+      {
+       "raw": "Snail Debuff 5",
+       "chance": "140%",
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-20%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "-3"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -431,15 +494,18 @@
     "skillDesires": [
      {
       "skill": "snail_slime",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "resistance_target",
+      "chance": 2,
       "skill": "snail_slime"
      }
     ]

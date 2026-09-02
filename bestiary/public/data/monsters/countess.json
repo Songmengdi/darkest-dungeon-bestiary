@@ -51,9 +51,25 @@
      ],
      "target": [],
      "effects": [
-      "To Countess E",
-      "countess_flushed_debuff",
-      "Cure Self"
+      {
+       "raw": "To Countess E",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "countess_flushed_debuff",
+       "chance": "100%",
+       "duration": 2
+      },
+      {
+       "raw": "Cure Self",
+       "chance": "100%",
+       "traits": [
+        "cleanse"
+       ]
+      }
      ]
     },
     {
@@ -104,9 +120,26 @@
      ],
      "targetAoe": true,
      "effects": [
-      "CC Shuffle DoT",
-      "Countess Blight",
-      "Countess Stress"
+      {
+       "raw": "CC Shuffle DoT",
+       "chance": "155%",
+       "duration": 2
+      },
+      {
+       "raw": "Countess Blight",
+       "chance": "140%",
+       "duration": 2,
+       "dot": {
+        "kind": "blight",
+        "amount": "6",
+        "duration": 2
+       }
+      },
+      {
+       "raw": "Countess Stress",
+       "chance": "100%",
+       "stress": "25"
+      }
      ]
     },
     {
@@ -132,8 +165,14 @@
       4
      ],
      "effects": [
-      "Parasite Egg Inject",
-      "Inject Self Damage"
+      {
+       "raw": "Parasite Egg Inject",
+       "chance": "100%"
+      },
+      {
+       "raw": "Inject Self Damage",
+       "chance": "100%"
+      }
      ]
     }
    ],
@@ -194,7 +233,11 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Flushed Recovery Buff"
+      {
+       "raw": "Flushed Recovery Buff",
+       "chance": "100%",
+       "duration": 2
+      }
      ]
     },
     {
@@ -221,9 +264,30 @@
      ],
      "targetAoe": true,
      "effects": [
-      "To Countess F",
-      "Countess Terror",
-      "Cure Self"
+      {
+       "raw": "To Countess F",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "Countess Terror",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "stress",
+        "amount": "5",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Cure Self",
+       "chance": "100%",
+       "traits": [
+        "cleanse"
+       ]
+      }
      ]
     }
    ],
@@ -284,8 +348,20 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Tongue Hit",
-      "Countess Bleed"
+      {
+       "raw": "Tongue Hit",
+       "chance": "100%"
+      },
+      {
+       "raw": "Countess Bleed",
+       "chance": "140%",
+       "duration": 4,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 4
+       }
+      }
      ]
     },
     {
@@ -306,7 +382,13 @@
      ],
      "target": [],
      "effects": [
-      "To Countess D"
+      {
+       "raw": "To Countess D",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -356,7 +438,11 @@
       4
      ],
      "effects": [
-      "Countess Feed Heal"
+      {
+       "raw": "Countess Feed Heal",
+       "chance": "100%",
+       "heal": "20"
+      }
      ]
     },
     {
@@ -380,7 +466,11 @@
       4
      ],
      "effects": [
-      "Countess Stun"
+      {
+       "raw": "Countess Stun",
+       "chance": "140%",
+       "stun": "1"
+      }
      ]
     }
    ],

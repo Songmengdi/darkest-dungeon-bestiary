@@ -56,8 +56,34 @@
       4
      ],
      "effects": [
-      "Stress 1",
-      "TentacleBuffSelf"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "TentacleBuffSelf",
+       "chance": "100%",
+       "dmgMultiply": "50%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "20%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "3"
+        },
+        {
+         "key": "protection_rating_add",
+         "value": "25%"
+        },
+        {
+         "key": "crit_chance_add",
+         "value": "5%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -87,26 +113,32 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 1,
       "type": "preferred_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      },
      {
       "skill": "",
+      "chance": 100,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 3
      },
      {
-      "type": "health_target"
+      "type": "health_target",
+      "chance": 100
      }
     ]
    }
@@ -165,8 +197,34 @@
       4
      ],
      "effects": [
-      "Stress 1",
-      "TentacleBuffSelf"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "TentacleBuffSelf",
+       "chance": "100%",
+       "dmgMultiply": "50%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "20%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "3"
+        },
+        {
+         "key": "protection_rating_add",
+         "value": "25%"
+        },
+        {
+         "key": "crit_chance_add",
+         "value": "5%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -196,26 +254,32 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 1,
       "type": "preferred_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      },
      {
       "skill": "",
+      "chance": 100,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 4
      },
      {
-      "type": "health_target"
+      "type": "health_target",
+      "chance": 100
      }
     ]
    }
@@ -274,8 +338,34 @@
       4
      ],
      "effects": [
-      "Stress 1",
-      "TentacleBuffSelf"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "TentacleBuffSelf",
+       "chance": "100%",
+       "dmgMultiply": "50%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "20%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "3"
+        },
+        {
+         "key": "protection_rating_add",
+         "value": "25%"
+        },
+        {
+         "key": "crit_chance_add",
+         "value": "5%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -305,26 +395,32 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 1,
       "type": "preferred_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      },
      {
       "skill": "",
+      "chance": 100,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 5
      },
      {
-      "type": "health_target"
+      "type": "health_target",
+      "chance": 100
      }
     ]
    }
@@ -383,8 +479,34 @@
       4
      ],
      "effects": [
-      "Stress 1",
-      "TentacleBuffSelf"
+      {
+       "raw": "Stress 1",
+       "chance": "100%",
+       "stress": "10"
+      },
+      {
+       "raw": "TentacleBuffSelf",
+       "chance": "100%",
+       "dmgMultiply": "50%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "20%"
+        },
+        {
+         "key": "speed_rating_add",
+         "value": "3"
+        },
+        {
+         "key": "protection_rating_add",
+         "value": "25%"
+        },
+        {
+         "key": "crit_chance_add",
+         "value": "5%"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -414,26 +536,32 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 1,
       "type": "preferred_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      },
      {
       "skill": "",
+      "chance": 100,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 5
      },
      {
-      "type": "health_target"
+      "type": "health_target",
+      "chance": 100
      }
     ]
    }

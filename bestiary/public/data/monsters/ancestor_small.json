@@ -51,7 +51,13 @@
      ],
      "target": [],
      "effects": [
-      "Ancestor Summon Perfect"
+      {
+       "raw": "Ancestor Summon Perfect",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -72,7 +78,13 @@
      ],
      "target": [],
      "effects": [
-      "Ancestor Summon Mixed"
+      {
+       "raw": "Ancestor Summon Mixed",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -93,7 +105,13 @@
      ],
      "target": [],
      "effects": [
-      "Ancestor Summon Flawed"
+      {
+       "raw": "Ancestor Summon Flawed",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -139,8 +157,20 @@
      ],
      "target": [],
      "effects": [
-      "kill_self_queued",
-      "kill_performer_group_other"
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      },
+      {
+       "raw": "kill_performer_group_other",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      }
      ]
     }
    ],
@@ -150,28 +180,34 @@
     "skillDesires": [
      {
       "skill": "summon_perfect",
+      "chance": 100000,
       "type": "performing_turn_skill"
      },
      {
       "skill": "summon_flawed",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "summon_mixed",
+      "chance": 50,
       "type": "specific_skill"
      },
      {
       "skill": "summon_mixed",
+      "chance": 50,
       "type": "specific_skill"
      },
      {
       "skill": "ancestor_aoe_heal",
+      "chance": 5,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },

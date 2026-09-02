@@ -55,7 +55,11 @@
       4
      ],
      "effects": [
-      "Stress 2"
+      {
+       "raw": "Stress 2",
+       "chance": "100%",
+       "stress": "15"
+      }
      ]
     },
     {
@@ -81,7 +85,22 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Call of the Deep 1"
+      {
+       "raw": "Call of the Deep 1",
+       "chance": "100%",
+       "duration": 3,
+       "dmgMultiply": "25%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "5%"
+        },
+        {
+         "key": "crit_chance_add",
+         "value": "5%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -202,27 +221,33 @@
     "skillDesires": [
      {
       "skill": "fish_stresscast",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "call_of_the_deep",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 1,
       "skill": "fish_stresscast"
      },
      {
       "type": "health_target",
+      "chance": 5,
       "skill": "shaman_heal"
      }
     ]
@@ -283,7 +308,11 @@
       4
      ],
      "effects": [
-      "Stress 2"
+      {
+       "raw": "Stress 2",
+       "chance": "100%",
+       "stress": "15"
+      }
      ]
     },
     {
@@ -309,7 +338,22 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Call of the Deep 3"
+      {
+       "raw": "Call of the Deep 3",
+       "chance": "100%",
+       "duration": 3,
+       "dmgMultiply": "25%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "7%"
+        },
+        {
+         "key": "crit_chance_add",
+         "value": "8%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -430,27 +474,33 @@
     "skillDesires": [
      {
       "skill": "fish_stresscast",
+      "chance": 3,
       "type": "specific_skill"
      },
      {
       "skill": "call_of_the_deep",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 2,
       "skill": "fish_stresscast"
      },
      {
       "type": "health_target",
+      "chance": 5,
       "skill": "shaman_heal"
      }
     ]
@@ -511,7 +561,11 @@
       4
      ],
      "effects": [
-      "Stress 2"
+      {
+       "raw": "Stress 2",
+       "chance": "100%",
+       "stress": "15"
+      }
      ]
     },
     {
@@ -537,7 +591,22 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Call of the Deep 5"
+      {
+       "raw": "Call of the Deep 5",
+       "chance": "100%",
+       "duration": 3,
+       "dmgMultiply": "25%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "10%"
+        },
+        {
+         "key": "crit_chance_add",
+         "value": "10%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -658,27 +727,33 @@
     "skillDesires": [
      {
       "skill": "fish_stresscast",
+      "chance": 3,
       "type": "specific_skill"
      },
      {
       "skill": "call_of_the_deep",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 3,
       "skill": "fish_stresscast"
      },
      {
       "type": "health_target",
+      "chance": 5,
       "skill": "shaman_heal"
      }
     ]

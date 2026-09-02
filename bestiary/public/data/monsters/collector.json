@@ -55,7 +55,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Collector Show Stress"
+      {
+       "raw": "Collector Show Stress",
+       "chance": "80%",
+       "stress": "10"
+      }
      ]
     },
     {
@@ -76,9 +80,27 @@
      ],
      "target": [],
      "effects": [
-      "Summon Battle Head A",
-      "Summon Heads A2",
-      "Summon Heads A3"
+      {
+       "raw": "Summon Battle Head A",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Summon Heads A2",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Summon Heads A3",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -102,9 +124,29 @@
       4
      ],
      "effects": [
-      "Bleed 1",
-      "Collector HealSelf 1",
-      "Lifesteal Mark"
+      {
+       "raw": "Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Collector HealSelf 1",
+       "chance": "100%",
+       "heal": "10"
+      },
+      {
+       "raw": "Lifesteal Mark",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -125,9 +167,27 @@
      ],
      "target": [],
      "effects": [
-      "Summon Battle Head A",
-      "Summon Heads A2",
-      "Summon Heads A3"
+      {
+       "raw": "Summon Battle Head A",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Summon Heads A2",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Summon Heads A3",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -164,35 +224,43 @@
     "skillDesires": [
      {
       "skill": "collect_call",
+      "chance": 10000,
       "type": "specific_skill"
      },
      {
       "skill": "collect_call",
+      "chance": 9,
       "type": "specific_skill"
      },
      {
       "skill": "collect_call",
+      "chance": 3,
       "type": "specific_skill"
      },
      {
       "skill": "collect_call_battle",
+      "chance": 100,
       "type": "ally_dead_skill"
      },
      {
       "skill": "show_collection",
+      "chance": 3,
       "type": "specific_skill"
      },
      {
       "skill": "life_steal",
+      "chance": 2,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 2,
       "skill": "show_collection"
      }
     ]
@@ -252,7 +320,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Collector Show Stress"
+      {
+       "raw": "Collector Show Stress",
+       "chance": "80%",
+       "stress": "10"
+      }
      ]
     },
     {
@@ -273,9 +345,27 @@
      ],
      "target": [],
      "effects": [
-      "Summon Battle Head B",
-      "Summon Heads B2",
-      "Summon Heads B3"
+      {
+       "raw": "Summon Battle Head B",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Summon Heads B2",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Summon Heads B3",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -299,9 +389,29 @@
       4
      ],
      "effects": [
-      "Bleed 2",
-      "Collector HealSelf 3",
-      "Lifesteal Mark"
+      {
+       "raw": "Bleed 2",
+       "chance": "110%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Collector HealSelf 3",
+       "chance": "100%",
+       "heal": "14"
+      },
+      {
+       "raw": "Lifesteal Mark",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -322,9 +432,27 @@
      ],
      "target": [],
      "effects": [
-      "Summon Battle Head B",
-      "Summon Heads B2",
-      "Summon Heads B3"
+      {
+       "raw": "Summon Battle Head B",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Summon Heads B2",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Summon Heads B3",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -361,35 +489,43 @@
     "skillDesires": [
      {
       "skill": "collect_call",
+      "chance": 10000,
       "type": "specific_skill"
      },
      {
       "skill": "collect_call",
+      "chance": 9,
       "type": "specific_skill"
      },
      {
       "skill": "collect_call",
+      "chance": 3,
       "type": "specific_skill"
      },
      {
       "skill": "collect_call_battle",
+      "chance": 100,
       "type": "ally_dead_skill"
      },
      {
       "skill": "show_collection",
+      "chance": 3,
       "type": "specific_skill"
      },
      {
       "skill": "life_steal",
+      "chance": 2,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 2,
       "skill": "show_collection"
      }
     ]
@@ -449,7 +585,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Collector Show Stress"
+      {
+       "raw": "Collector Show Stress",
+       "chance": "80%",
+       "stress": "10"
+      }
      ]
     },
     {
@@ -470,9 +610,27 @@
      ],
      "target": [],
      "effects": [
-      "Summon Battle Head C",
-      "Summon Heads C2",
-      "Summon Heads C3"
+      {
+       "raw": "Summon Battle Head C",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Summon Heads C2",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Summon Heads C3",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -496,9 +654,29 @@
       4
      ],
      "effects": [
-      "Bleed 3",
-      "Collector HealSelf 5",
-      "Lifesteal Mark"
+      {
+       "raw": "Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Collector HealSelf 5",
+       "chance": "100%",
+       "heal": "18"
+      },
+      {
+       "raw": "Lifesteal Mark",
+       "chance": "100%",
+       "duration": 2,
+       "traits": [
+        "mark"
+       ]
+      }
      ]
     },
     {
@@ -519,9 +697,27 @@
      ],
      "target": [],
      "effects": [
-      "Summon Battle Head C",
-      "Summon Heads C2",
-      "Summon Heads C3"
+      {
+       "raw": "Summon Battle Head C",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Summon Heads C2",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      },
+      {
+       "raw": "Summon Heads C3",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     }
    ],
@@ -558,35 +754,43 @@
     "skillDesires": [
      {
       "skill": "collect_call",
+      "chance": 10000,
       "type": "specific_skill"
      },
      {
       "skill": "collect_call",
+      "chance": 9,
       "type": "specific_skill"
      },
      {
       "skill": "collect_call",
+      "chance": 3,
       "type": "specific_skill"
      },
      {
       "skill": "collect_call_battle",
+      "chance": 100,
       "type": "ally_dead_skill"
      },
      {
       "skill": "show_collection",
+      "chance": 3,
       "type": "specific_skill"
      },
      {
       "skill": "life_steal",
+      "chance": 2,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stress_target",
+      "chance": 2,
       "skill": "show_collection"
      }
     ]

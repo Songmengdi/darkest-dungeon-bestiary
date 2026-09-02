@@ -300,19 +300,23 @@
     "skillDesires": [
      {
       "skill": "cudgel",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "cudgel_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 1
      }
     ]
    },
@@ -370,7 +374,17 @@
       2
      ],
      "effects": [
-      "Rabble Bump Debuff 3"
+      {
+       "raw": "Rabble Bump Debuff 3",
+       "chance": "120%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-7%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -619,19 +633,23 @@
     "skillDesires": [
      {
       "skill": "cudgel",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "cudgel_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      }
     ]
    },
@@ -689,7 +707,17 @@
       2
      ],
      "effects": [
-      "Rabble Bump Debuff 5"
+      {
+       "raw": "Rabble Bump Debuff 5",
+       "chance": "140%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-10%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -938,19 +966,23 @@
     "skillDesires": [
      {
       "skill": "cudgel",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "cudgel_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 3
      }
     ]
    },

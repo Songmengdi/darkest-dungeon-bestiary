@@ -77,7 +77,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "MultiStun 1"
+      {
+       "raw": "MultiStun 1",
+       "chance": "60%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -155,19 +159,23 @@
     "skillDesires": [
      {
       "skill": "crushing_blow",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "ground_pound",
+      "chance": 1,
       "type": "stun_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 1
      }
     ]
    },
@@ -224,7 +232,11 @@
       2
      ],
      "effects": [
-      "Captain Crushing Debuff 3"
+      {
+       "raw": "Captain Crushing Debuff 3",
+       "chance": "120%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -251,7 +263,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "MultiStun 3"
+      {
+       "raw": "MultiStun 3",
+       "chance": "80%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -329,30 +345,37 @@
     "skillDesires": [
      {
       "skill": "crushing_blow",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "crushing_blow",
+      "chance": 5,
       "type": "performing_turn_skill"
      },
      {
       "skill": "ground_pound",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "ground_pound",
+      "chance": 4,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      },
      {
       "type": "resistance_target",
+      "chance": 2,
       "skill": "ground_pound"
      }
     ]
@@ -410,7 +433,11 @@
       2
      ],
      "effects": [
-      "Captain Crushing Debuff 5"
+      {
+       "raw": "Captain Crushing Debuff 5",
+       "chance": "140%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -437,7 +464,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "MultiStun 5"
+      {
+       "raw": "MultiStun 5",
+       "chance": "100%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -515,30 +546,37 @@
     "skillDesires": [
      {
       "skill": "crushing_blow",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "crushing_blow",
+      "chance": 5,
       "type": "performing_turn_skill"
      },
      {
       "skill": "ground_pound",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "ground_pound",
+      "chance": 4,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 3
      },
      {
       "type": "resistance_target",
+      "chance": 3,
       "skill": "ground_pound"
      }
     ]

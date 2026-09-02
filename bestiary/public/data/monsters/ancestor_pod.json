@@ -57,7 +57,16 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Pod AOE Blight"
+      {
+       "raw": "Pod AOE Blight",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -78,7 +87,13 @@
      ],
      "target": [],
      "effects": [
-      "kill_self_queued"
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      }
      ]
     }
    ],
@@ -88,16 +103,19 @@
     "skillDesires": [
      {
       "skill": "pod_die",
+      "chance": 100000,
       "type": "performing_turn_skill"
      },
      {
       "skill": "pod_emit",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      }
     ]
    },

@@ -51,7 +51,13 @@
      ],
      "target": [],
      "effects": [
-      "spawn sprout"
+      {
+       "raw": "spawn sprout",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -72,7 +78,13 @@
      ],
      "target": [],
      "effects": [
-      "spawn initial sprouts"
+      {
+       "raw": "spawn initial sprouts",
+       "chance": "100%",
+       "traits": [
+        "summon"
+       ]
+      }
      ]
     },
     {
@@ -99,7 +111,13 @@
      ],
      "targetAlly": true,
      "effects": [
-      "To Seed Yellow"
+      {
+       "raw": "To Seed Yellow",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -126,7 +144,13 @@
      ],
      "targetAlly": true,
      "effects": [
-      "To Seed Red"
+      {
+       "raw": "To Seed Red",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -153,7 +177,13 @@
      ],
      "targetAlly": true,
      "effects": [
-      "To Seed Black"
+      {
+       "raw": "To Seed Black",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -180,7 +210,13 @@
      ],
      "targetAlly": true,
      "effects": [
-      "To Seed Purple"
+      {
+       "raw": "To Seed Purple",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -207,7 +243,13 @@
      ],
      "targetAlly": true,
      "effects": [
-      "To Seed Grey"
+      {
+       "raw": "To Seed Grey",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -234,8 +276,22 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Slow Hero Spd",
-      "Spire Stun"
+      {
+       "raw": "Slow Hero Spd",
+       "chance": "130%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "-2"
+        }
+       ]
+      },
+      {
+       "raw": "Spire Stun",
+       "chance": "100%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -256,9 +312,24 @@
      ],
      "target": [],
      "effects": [
-      "Clear Marked Target",
-      "kill_performer_group_other",
-      "kill_self_queued"
+      {
+       "raw": "Clear Marked Target",
+       "chance": "100%"
+      },
+      {
+       "raw": "kill_performer_group_other",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      },
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      }
      ]
     },
     {
@@ -285,7 +356,10 @@
      ],
      "targetAlly": true,
      "effects": [
-      "grow_seedling_grey"
+      {
+       "raw": "grow_seedling_grey",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -312,7 +386,10 @@
      ],
      "targetAlly": true,
      "effects": [
-      "grow_seedling_red"
+      {
+       "raw": "grow_seedling_red",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -339,7 +416,10 @@
      ],
      "targetAlly": true,
      "effects": [
-      "grow_seedling_black"
+      {
+       "raw": "grow_seedling_black",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -366,7 +446,10 @@
      ],
      "targetAlly": true,
      "effects": [
-      "grow_seedling_purple"
+      {
+       "raw": "grow_seedling_purple",
+       "chance": "100%"
+      }
      ]
     },
     {
@@ -393,7 +476,10 @@
      ],
      "targetAlly": true,
      "effects": [
-      "grow_seedling_yellow"
+      {
+       "raw": "grow_seedling_yellow",
+       "chance": "100%"
+      }
      ]
     }
    ],

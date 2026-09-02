@@ -56,7 +56,17 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Fusilier Blanket Debuff 1"
+      {
+       "raw": "Fusilier Blanket Debuff 1",
+       "chance": "100%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-2%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -154,19 +164,23 @@
     "skillDesires": [
      {
       "skill": "blunderbuss_shot",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "rushed_shot",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 1
      }
     ]
    },
@@ -227,7 +241,17 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Fusilier Blanket Debuff 3"
+      {
+       "raw": "Fusilier Blanket Debuff 3",
+       "chance": "120%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-4%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -325,19 +349,23 @@
     "skillDesires": [
      {
       "skill": "blunderbuss_shot",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "rushed_shot",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      }
     ]
    },
@@ -398,7 +426,17 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Fusilier Blanket Debuff 5"
+      {
+       "raw": "Fusilier Blanket Debuff 5",
+       "chance": "140%",
+       "duration": 3,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-6%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -496,19 +534,23 @@
     "skillDesires": [
      {
       "skill": "blunderbuss_shot",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "rushed_shot",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 3
      }
     ]
    },

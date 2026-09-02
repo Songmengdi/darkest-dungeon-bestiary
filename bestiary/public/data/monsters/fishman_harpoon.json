@@ -148,23 +148,28 @@
     "skillDesires": [
      {
       "skill": "fish_cutlass",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "fish_harpoon",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 1,
       "skill": "fish_cutlass"
      },
      {
       "type": "marked_target",
+      "chance": 1,
       "skill": "fish_harpoon"
      }
     ]
@@ -242,7 +247,14 @@
       4
      ],
      "effects": [
-      "Grouper Pull 1B"
+      {
+       "raw": "Grouper Pull 1B",
+       "chance": "120%",
+       "move": {
+        "kind": "pull",
+        "amount": "1"
+       }
+      }
      ]
     }
    ],
@@ -320,23 +332,28 @@
     "skillDesires": [
      {
       "skill": "fish_cutlass",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "fish_harpoon",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
       "type": "marked_target",
+      "chance": 3,
       "skill": "fish_cutlass"
      },
      {
       "type": "marked_target",
+      "chance": 3,
       "skill": "fish_harpoon"
      }
     ]
@@ -414,7 +431,14 @@
       4
      ],
      "effects": [
-      "Grouper Pull 1C"
+      {
+       "raw": "Grouper Pull 1C",
+       "chance": "140%",
+       "move": {
+        "kind": "pull",
+        "amount": "1"
+       }
+      }
      ]
     }
    ],
@@ -492,23 +516,28 @@
     "skillDesires": [
      {
       "skill": "fish_cutlass",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "fish_harpoon",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 3
      },
      {
       "type": "marked_target",
+      "chance": 7,
       "skill": "fish_cutlass"
      },
      {
       "type": "marked_target",
+      "chance": 7,
       "skill": "fish_harpoon"
      }
     ]

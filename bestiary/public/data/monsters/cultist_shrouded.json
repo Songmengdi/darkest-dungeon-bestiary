@@ -55,8 +55,15 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Shrouded AOE Stress",
-      "Shrouded Bleed Debuff"
+      {
+       "raw": "Shrouded AOE Stress",
+       "chance": "100%",
+       "stress": "5"
+      },
+      {
+       "raw": "Shrouded Bleed Debuff",
+       "chance": "150%"
+      }
      ]
     },
     {
@@ -82,9 +89,29 @@
       4
      ],
      "effects": [
-      "Shrouded Stress",
-      "Damage Marked Target Lesser",
-      "Shrouded Pierce Bleed"
+      {
+       "raw": "Shrouded Stress",
+       "chance": "100%",
+       "stress": "15"
+      },
+      {
+       "raw": "Damage Marked Target Lesser",
+       "chance": "100%",
+       "dmgMultiply": "50%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Shrouded Pierce Bleed",
+       "chance": "150%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "6",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -94,19 +121,23 @@
     "skillDesires": [
      {
       "skill": "shrouded_melee",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "shrouded_ranged",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 3
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "shrouded_ranged"
      }
     ]

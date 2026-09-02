@@ -52,9 +52,29 @@
       2
      ],
      "effects": [
-      "Minor Bleed 1",
-      "SmallDmg Marked Target",
-      "Brawler Rend Debuff 1"
+      {
+       "raw": "Minor Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "1",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "SmallDmg Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "50%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Brawler Rend Debuff 1",
+       "chance": "100%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -152,19 +172,23 @@
     "skillDesires": [
      {
       "skill": "brawler_claw",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "brawler_claw_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 2,
       "skill": "brawler_claw"
      }
     ]
@@ -221,9 +245,29 @@
       2
      ],
      "effects": [
-      "Minor Bleed 3",
-      "SmallDmg Marked Target",
-      "Brawler Rend Debuff 3"
+      {
+       "raw": "Minor Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "SmallDmg Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "50%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Brawler Rend Debuff 3",
+       "chance": "120%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -321,19 +365,23 @@
     "skillDesires": [
      {
       "skill": "brawler_claw",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "brawler_claw_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 3,
       "skill": "brawler_claw"
      }
     ]
@@ -390,9 +438,29 @@
       2
      ],
      "effects": [
-      "Minor Bleed 5",
-      "SmallDmg Marked Target",
-      "Brawler Rend Debuff 5"
+      {
+       "raw": "Minor Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "SmallDmg Marked Target",
+       "chance": "100%",
+       "dmgMultiply": "50%",
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Brawler Rend Debuff 5",
+       "chance": "140%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -490,19 +558,23 @@
     "skillDesires": [
      {
       "skill": "brawler_claw",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "brawler_claw_weak",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "marked_target",
+      "chance": 4,
       "skill": "brawler_claw"
      }
     ]

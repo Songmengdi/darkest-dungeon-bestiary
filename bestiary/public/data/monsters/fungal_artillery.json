@@ -52,8 +52,24 @@
       2
      ],
      "effects": [
-      "Mark Target",
-      "Fungal Mark Debuff 1"
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Fungal Mark Debuff 1",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-5%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -76,8 +92,23 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Blight 1",
-      "Fungal Disease"
+      {
+       "raw": "Blight 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Fungal Disease",
+       "chance": "15%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -100,7 +131,16 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Weak Blight 1"
+      {
+       "raw": "Weak Blight 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "1",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -178,30 +218,37 @@
     "skillDesires": [
      {
       "skill": "artillery_tag",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "artillery_tag",
+      "chance": 5,
       "type": "performing_turn_skill"
      },
      {
       "skill": "artillery_blight",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "escape_cloud",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "artillery_tag"
      }
     ]
@@ -258,8 +305,24 @@
       2
      ],
      "effects": [
-      "Mark Target",
-      "Fungal Mark Debuff 3"
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Fungal Mark Debuff 3",
+       "chance": "120%",
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-7%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -282,8 +345,23 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Blight 3",
-      "Fungal Disease"
+      {
+       "raw": "Blight 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Fungal Disease",
+       "chance": "15%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -306,7 +384,16 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Weak Blight 3"
+      {
+       "raw": "Weak Blight 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -384,30 +471,37 @@
     "skillDesires": [
      {
       "skill": "artillery_tag",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "artillery_tag",
+      "chance": 5,
       "type": "performing_turn_skill"
      },
      {
       "skill": "artillery_blight",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "escape_cloud",
+      "chance": 2,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 3
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "artillery_tag"
      }
     ]
@@ -464,8 +558,24 @@
       2
      ],
      "effects": [
-      "Mark Target",
-      "Fungal Mark Debuff 5"
+      {
+       "raw": "Mark Target",
+       "chance": "100%",
+       "duration": 3,
+       "traits": [
+        "mark"
+       ]
+      },
+      {
+       "raw": "Fungal Mark Debuff 5",
+       "chance": "140%",
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "-10%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -488,8 +598,23 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Blight 5",
-      "Fungal Disease"
+      {
+       "raw": "Blight 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "4",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Fungal Disease",
+       "chance": "15%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     },
     {
@@ -512,7 +637,16 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Weak Blight 5"
+      {
+       "raw": "Weak Blight 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -590,30 +724,37 @@
     "skillDesires": [
      {
       "skill": "artillery_tag",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "artillery_tag",
+      "chance": 5,
       "type": "performing_turn_skill"
      },
      {
       "skill": "artillery_blight",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "escape_cloud",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 4
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "artillery_tag"
      }
     ]

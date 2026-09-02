@@ -57,10 +57,37 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Clear Guard Performer",
-      "Clear Guard Target",
-      "Totem Guard",
-      "Totem Defend"
+      {
+       "raw": "Clear Guard Performer",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Clear Guard Target",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Totem Guard",
+       "duration": 3,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "Totem Defend",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "33%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -87,7 +114,20 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Totem Bolster"
+      {
+       "raw": "Totem Bolster",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "10%"
+        },
+        {
+         "key": "crit_chance_add",
+         "value": "10%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -138,7 +178,11 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Totem Stress"
+      {
+       "raw": "Totem Stress",
+       "chance": "90%",
+       "stress": "7"
+      }
      ]
     }
    ],
@@ -148,43 +192,53 @@
     "skillDesires": [
      {
       "skill": "totem_guard",
+      "chance": 5,
       "type": "specific_skill"
      },
      {
       "skill": "totem_bolster",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "totem_stressblast",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "totem_stressblast",
+      "chance": 20,
       "type": "ally_alive_skill"
      },
      {
       "skill": "",
+      "chance": 3,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "health_target",
+      "chance": 3,
       "skill": "totem_heal"
      },
      {
       "type": "ally_class_target",
+      "chance": -1,
       "skill": "totem_bolster"
      },
      {
       "type": "ally_class_target",
+      "chance": 100,
       "skill": "totem_guard"
      },
      {
       "type": "ally_class_target",
+      "chance": 100,
       "skill": "totem_bolster"
      }
     ]

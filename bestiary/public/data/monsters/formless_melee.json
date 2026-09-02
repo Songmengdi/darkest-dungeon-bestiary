@@ -52,7 +52,16 @@
       2
      ],
      "effects": [
-      "Bleed 1"
+      {
+       "raw": "Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -130,26 +139,32 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 1,
       "type": "preferred_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      },
      {
       "skill": "",
+      "chance": 100,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 3
      },
      {
-      "type": "health_target"
+      "type": "health_target",
+      "chance": 100
      }
     ]
    }
@@ -204,7 +219,16 @@
       2
      ],
      "effects": [
-      "Bleed 3"
+      {
+       "raw": "Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -282,26 +306,32 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 1,
       "type": "preferred_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      },
      {
       "skill": "",
+      "chance": 100,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 4
      },
      {
-      "type": "health_target"
+      "type": "health_target",
+      "chance": 100
      }
     ]
    }
@@ -356,7 +386,16 @@
       2
      ],
      "effects": [
-      "Bleed 5"
+      {
+       "raw": "Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -434,26 +473,32 @@
     "skillDesires": [
      {
       "skill": "",
+      "chance": 1,
       "type": "preferred_skill"
      },
      {
       "skill": "",
+      "chance": 1,
       "type": "random_skill"
      },
      {
       "skill": "",
+      "chance": 100,
       "type": "heal_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 2
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 5
      },
      {
-      "type": "health_target"
+      "type": "health_target",
+      "chance": 100
      }
     ]
    }

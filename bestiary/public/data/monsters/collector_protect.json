@@ -57,10 +57,37 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Clear Guard Performer",
-      "Clear Guard Target",
-      "Guard 1",
-      "HeadDefend 1"
+      {
+       "raw": "Clear Guard Performer",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Clear Guard Target",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Guard 1",
+       "duration": 2,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "HeadDefend 1",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "25%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -86,7 +113,11 @@
       4
      ],
      "effects": [
-      "Stun 1"
+      {
+       "raw": "Stun 1",
+       "chance": "100%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -116,27 +147,33 @@
     "skillDesires": [
      {
       "skill": "head_guard",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "head_crush",
+      "chance": 1,
       "type": "stun_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "ally_class_target",
+      "chance": 5,
       "skill": "head_guard"
      },
      {
       "type": "ally_class_target",
+      "chance": 5,
       "skill": "head_guard"
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "head_crush"
      }
     ]
@@ -198,10 +235,37 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Clear Guard Performer",
-      "Clear Guard Target",
-      "Guard 1",
-      "HeadDefend 1"
+      {
+       "raw": "Clear Guard Performer",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Clear Guard Target",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Guard 1",
+       "duration": 2,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "HeadDefend 1",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "25%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -227,7 +291,11 @@
       4
      ],
      "effects": [
-      "Stun 2"
+      {
+       "raw": "Stun 2",
+       "chance": "110%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -257,27 +325,33 @@
     "skillDesires": [
      {
       "skill": "head_guard",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "head_crush",
+      "chance": 1,
       "type": "stun_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "ally_class_target",
+      "chance": 5,
       "skill": "head_guard"
      },
      {
       "type": "ally_class_target",
+      "chance": 5,
       "skill": "head_guard"
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "head_crush"
      }
     ]
@@ -339,10 +413,37 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Clear Guard Performer",
-      "Clear Guard Target",
-      "Guard 1",
-      "HeadDefend 1"
+      {
+       "raw": "Clear Guard Performer",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Clear Guard Target",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Guard 1",
+       "duration": 2,
+       "traits": [
+        "guard"
+       ]
+      },
+      {
+       "raw": "HeadDefend 1",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "25%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -368,7 +469,11 @@
       4
      ],
      "effects": [
-      "Stun 3"
+      {
+       "raw": "Stun 3",
+       "chance": "120%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -398,27 +503,33 @@
     "skillDesires": [
      {
       "skill": "head_guard",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "head_crush",
+      "chance": 1,
       "type": "stun_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "ally_class_target",
+      "chance": 5,
       "skill": "head_guard"
      },
      {
       "type": "ally_class_target",
+      "chance": 5,
       "skill": "head_guard"
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "head_crush"
      }
     ]

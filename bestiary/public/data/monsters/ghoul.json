@@ -52,8 +52,21 @@
       2
      ],
      "effects": [
-      "Bleed 1",
-      "Ghoul Rend Debuff 1"
+      {
+       "raw": "Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Ghoul Rend Debuff 1",
+       "chance": "100%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -77,7 +90,11 @@
       4
      ],
      "effects": [
-      "Stress 2"
+      {
+       "raw": "Stress 2",
+       "chance": "100%",
+       "stress": "15"
+      }
      ]
     },
     {
@@ -104,9 +121,28 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Ghoul Stress DOT",
-      "Darkness 2",
-      "Worry"
+      {
+       "raw": "Ghoul Stress DOT",
+       "chance": "75%",
+       "duration": 3,
+       "dot": {
+        "kind": "stress",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Darkness 2",
+       "chance": "100%",
+       "torch": "10"
+      },
+      {
+       "raw": "Worry",
+       "chance": "5%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     }
    ],
@@ -184,34 +220,42 @@
     "skillDesires": [
      {
       "skill": "rend",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "rend",
+      "chance": 2,
       "type": "performing_turn_skill"
      },
      {
       "skill": "skull_toss",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "howl",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "skull_toss"
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      },
      {
       "type": "stress_target",
+      "chance": 1,
       "skill": "skull_toss"
      }
     ]
@@ -268,8 +312,21 @@
       2
      ],
      "effects": [
-      "Bleed 3",
-      "Ghoul Rend Debuff 3"
+      {
+       "raw": "Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Ghoul Rend Debuff 3",
+       "chance": "120%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -293,8 +350,16 @@
       4
      ],
      "effects": [
-      "Stress 2",
-      "Ghoul Skull Stun 3"
+      {
+       "raw": "Stress 2",
+       "chance": "100%",
+       "stress": "15"
+      },
+      {
+       "raw": "Ghoul Skull Stun 3",
+       "chance": "100%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -321,9 +386,28 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Ghoul Stress DOT",
-      "Darkness 2",
-      "Worry"
+      {
+       "raw": "Ghoul Stress DOT",
+       "chance": "75%",
+       "duration": 3,
+       "dot": {
+        "kind": "stress",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Darkness 2",
+       "chance": "100%",
+       "torch": "10"
+      },
+      {
+       "raw": "Worry",
+       "chance": "5%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     }
    ],
@@ -401,34 +485,42 @@
     "skillDesires": [
      {
       "skill": "rend",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "rend",
+      "chance": 3,
       "type": "performing_turn_skill"
      },
      {
       "skill": "skull_toss",
+      "chance": 2,
       "type": "stun_skill"
      },
      {
       "skill": "howl",
+      "chance": 2,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "skull_toss"
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 3
      },
      {
       "type": "stress_target",
+      "chance": 2,
       "skill": "skull_toss"
      }
     ]
@@ -485,8 +577,21 @@
       2
      ],
      "effects": [
-      "Bleed 5",
-      "Ghoul Rend Debuff 5"
+      {
+       "raw": "Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Ghoul Rend Debuff 5",
+       "chance": "140%",
+       "duration": 3
+      }
      ]
     },
     {
@@ -510,8 +615,16 @@
       4
      ],
      "effects": [
-      "Stress 2",
-      "Ghoul Skull Stun 5"
+      {
+       "raw": "Stress 2",
+       "chance": "100%",
+       "stress": "15"
+      },
+      {
+       "raw": "Ghoul Skull Stun 5",
+       "chance": "130%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -538,9 +651,28 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Ghoul Stress DOT",
-      "Darkness 2",
-      "Worry"
+      {
+       "raw": "Ghoul Stress DOT",
+       "chance": "75%",
+       "duration": 3,
+       "dot": {
+        "kind": "stress",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Darkness 2",
+       "chance": "100%",
+       "torch": "10"
+      },
+      {
+       "raw": "Worry",
+       "chance": "5%",
+       "traits": [
+        "disease"
+       ]
+      }
      ]
     }
    ],
@@ -618,34 +750,42 @@
     "skillDesires": [
      {
       "skill": "rend",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "rend",
+      "chance": 5,
       "type": "performing_turn_skill"
      },
      {
       "skill": "skull_toss",
+      "chance": 2,
       "type": "stun_skill"
      },
      {
       "skill": "howl",
+      "chance": 3,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "skull_toss"
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 4
      },
      {
       "type": "stress_target",
+      "chance": 4,
       "skill": "skull_toss"
      }
     ]

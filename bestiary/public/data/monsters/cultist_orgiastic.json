@@ -82,9 +82,27 @@
      ],
      "targetAlly": true,
      "effects": [
-      "Clear Guard Performer",
-      "Clear Guard Target",
-      "Orgiastic Guard"
+      {
+       "raw": "Clear Guard Performer",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Clear Guard Target",
+       "chance": "100%",
+       "traits": [
+        "clear_guard"
+       ]
+      },
+      {
+       "raw": "Orgiastic Guard",
+       "duration": 3,
+       "traits": [
+        "guard"
+       ]
+      }
      ]
     }
    ],
@@ -94,31 +112,38 @@
     "skillDesires": [
      {
       "skill": "orgiastic_guard",
+      "chance": 10,
       "type": "ally_alive_skill"
      },
      {
       "skill": "orgiastic_guard",
+      "chance": 3,
       "type": "specific_skill"
      },
      {
       "skill": "orgiastic_heal",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
       "type": "ally_class_target",
+      "chance": 10,
       "skill": "orgiastic_heal"
      },
      {
       "type": "ally_class_target",
+      "chance": 10,
       "skill": "orgiastic_guard"
      },
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "health_target",
+      "chance": 4,
       "skill": "orgiastic_heal"
      }
     ]

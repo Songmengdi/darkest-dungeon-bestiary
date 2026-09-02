@@ -75,8 +75,19 @@
       2
      ],
      "effects": [
-      "Push 3A Swinetaur",
-      "Strong Stun 1"
+      {
+       "raw": "Push 3A Swinetaur",
+       "chance": "120%",
+       "move": {
+        "kind": "push",
+        "amount": "3"
+       }
+      },
+      {
+       "raw": "Strong Stun 1",
+       "chance": "125%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -115,7 +126,11 @@
       3
      ],
      "effects": [
-      "Swinetaur Backhand Stun 1"
+      {
+       "raw": "Swinetaur Backhand Stun 1",
+       "chance": "65%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -193,34 +208,42 @@
     "skillDesires": [
      {
       "skill": "pig_spear",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "bull_rush",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "trot_retreat",
+      "chance": 3,
       "type": "ally_dead_skill"
      },
      {
       "skill": "backhand",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "bull_rush"
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "bull_rush"
      }
     ]
@@ -300,8 +323,19 @@
       2
      ],
      "effects": [
-      "Push 3C Swinetaur",
-      "Strong Stun 3"
+      {
+       "raw": "Push 3C Swinetaur",
+       "chance": "140%",
+       "move": {
+        "kind": "push",
+        "amount": "3"
+       }
+      },
+      {
+       "raw": "Strong Stun 3",
+       "chance": "145%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -340,7 +374,11 @@
       3
      ],
      "effects": [
-      "Swinetaur Backhand Stun 3"
+      {
+       "raw": "Swinetaur Backhand Stun 3",
+       "chance": "80%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -418,34 +456,42 @@
     "skillDesires": [
      {
       "skill": "pig_spear",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "bull_rush",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "trot_retreat",
+      "chance": 3,
       "type": "ally_dead_skill"
      },
      {
       "skill": "backhand",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "bull_rush"
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "bull_rush"
      }
     ]
@@ -525,8 +571,19 @@
       2
      ],
      "effects": [
-      "Push 3E Swinetaur",
-      "Strong Stun 5"
+      {
+       "raw": "Push 3E Swinetaur",
+       "chance": "150%",
+       "move": {
+        "kind": "push",
+        "amount": "3"
+       }
+      },
+      {
+       "raw": "Strong Stun 5",
+       "chance": "165%",
+       "stun": "1"
+      }
      ]
     },
     {
@@ -565,7 +622,11 @@
       3
      ],
      "effects": [
-      "Swinetaur Backhand Stun 5"
+      {
+       "raw": "Swinetaur Backhand Stun 5",
+       "chance": "95%",
+       "stun": "1"
+      }
      ]
     }
    ],
@@ -643,34 +704,42 @@
     "skillDesires": [
      {
       "skill": "pig_spear",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "bull_rush",
+      "chance": 1,
       "type": "stun_skill"
      },
      {
       "skill": "trot_retreat",
+      "chance": 3,
       "type": "ally_dead_skill"
      },
      {
       "skill": "backhand",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "bull_rush"
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "bull_rush"
      }
     ]

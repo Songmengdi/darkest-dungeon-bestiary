@@ -56,7 +56,13 @@
       4
      ],
      "effects": [
-      "kill_target"
+      {
+       "raw": "kill_target",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      }
      ]
     },
     {
@@ -82,7 +88,11 @@
       4
      ],
      "effects": [
-      "Heart Stress"
+      {
+       "raw": "Heart Stress",
+       "chance": "100%",
+       "stress": "24"
+      }
      ]
     },
     {
@@ -108,8 +118,21 @@
       4
      ],
      "effects": [
-      "Heart Bleed",
-      "Heart Stress Rider"
+      {
+       "raw": "Heart Bleed",
+       "chance": "150%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "6",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Heart Stress Rider",
+       "chance": "100%",
+       "stress": "12"
+      }
      ]
     },
     {
@@ -135,9 +158,26 @@
       4
      ],
      "effects": [
-      "Heart Stun",
-      "Heart Blight",
-      "Heart Stress Rider"
+      {
+       "raw": "Heart Stun",
+       "chance": "160%",
+       "stun": "1"
+      },
+      {
+       "raw": "Heart Blight",
+       "chance": "150%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "6",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Heart Stress Rider",
+       "chance": "100%",
+       "stress": "12"
+      }
      ]
     }
    ],
@@ -147,43 +187,53 @@
     "skillDesires": [
      {
       "skill": "heart_stress",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "heart_pierce",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "heart_stun",
+      "chance": 1,
       "type": "specific_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "health_target",
+      "chance": 100,
       "skill": "heart_pierce"
      },
      {
       "type": "health_target",
+      "chance": 100,
       "skill": "heart_stun"
      },
      {
       "type": "stress_target",
+      "chance": 100,
       "skill": "heart_stress"
      },
      {
       "type": "resistance_target",
+      "chance": 100,
       "skill": "heart_stun"
      },
      {
       "type": "resistance_target",
+      "chance": 100,
       "skill": "heart_stun"
      },
      {
       "type": "resistance_target",
+      "chance": 100,
       "skill": "heart_pierce"
      }
     ]

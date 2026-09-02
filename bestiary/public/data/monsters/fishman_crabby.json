@@ -54,7 +54,16 @@
       3
      ],
      "effects": [
-      "Crabby Bleed 1"
+      {
+       "raw": "Crabby Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "6",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -76,8 +85,19 @@
       2
      ],
      "effects": [
-      "Stun 1",
-      "Push 3A"
+      {
+       "raw": "Stun 1",
+       "chance": "100%",
+       "stun": "1"
+      },
+      {
+       "raw": "Push 3A",
+       "chance": "100%",
+       "move": {
+        "kind": "push",
+        "amount": "3"
+       }
+      }
      ]
     }
    ],
@@ -155,23 +175,28 @@
     "skillDesires": [
      {
       "skill": "the_pinch",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "pincer_smack",
+      "chance": 1,
       "type": "stun_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "pincer_smack"
      },
      {
       "type": "resistance_target",
+      "chance": 2,
       "skill": "the_pinch"
      }
     ]
@@ -231,8 +256,20 @@
       3
      ],
      "effects": [
-      "Crabby Bleed 2",
-      "Crabby Pinch Debuff 3"
+      {
+       "raw": "Crabby Bleed 2",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "8",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Crabby Pinch Debuff 3",
+       "chance": "120%"
+      }
      ]
     },
     {
@@ -254,8 +291,19 @@
       2
      ],
      "effects": [
-      "Stun 3",
-      "Push 3C"
+      {
+       "raw": "Stun 3",
+       "chance": "120%",
+       "stun": "1"
+      },
+      {
+       "raw": "Push 3C",
+       "chance": "120%",
+       "move": {
+        "kind": "push",
+        "amount": "3"
+       }
+      }
      ]
     }
    ],
@@ -333,27 +381,33 @@
     "skillDesires": [
      {
       "skill": "the_pinch",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "the_pinch",
+      "chance": 3,
       "type": "ally_alive_skill"
      },
      {
       "skill": "pincer_smack",
+      "chance": 1,
       "type": "stun_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "pincer_smack"
      },
      {
       "type": "resistance_target",
+      "chance": 3,
       "skill": "the_pinch"
      }
     ]
@@ -413,8 +467,20 @@
       3
      ],
      "effects": [
-      "Crabby Bleed 3",
-      "Crabby Pinch Debuff 5"
+      {
+       "raw": "Crabby Bleed 3",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "10",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Crabby Pinch Debuff 5",
+       "chance": "140%"
+      }
      ]
     },
     {
@@ -436,8 +502,19 @@
       2
      ],
      "effects": [
-      "Stun 5",
-      "Push 3E"
+      {
+       "raw": "Stun 5",
+       "chance": "140%",
+       "stun": "1"
+      },
+      {
+       "raw": "Push 3E",
+       "chance": "140%",
+       "move": {
+        "kind": "push",
+        "amount": "3"
+       }
+      }
      ]
     }
    ],
@@ -515,27 +592,33 @@
     "skillDesires": [
      {
       "skill": "the_pinch",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "the_pinch",
+      "chance": 4,
       "type": "ally_alive_skill"
      },
      {
       "skill": "pincer_smack",
+      "chance": 1,
       "type": "stun_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
       "type": "stunned_target",
+      "chance": -1000,
       "skill": "pincer_smack"
      },
      {
       "type": "resistance_target",
+      "chance": 4,
       "skill": "the_pinch"
      }
     ]

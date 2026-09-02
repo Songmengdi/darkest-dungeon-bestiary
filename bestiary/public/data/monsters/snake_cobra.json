@@ -54,7 +54,16 @@
       4
      ],
      "effects": [
-      "Cobra Spit Blight 1"
+      {
+       "raw": "Cobra Spit Blight 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "2",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -76,7 +85,16 @@
       2
      ],
      "effects": [
-      "Cobra Bite Blight 1"
+      {
+       "raw": "Cobra Bite Blight 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -203,7 +221,16 @@
       4
      ],
      "effects": [
-      "Cobra Spit Blight 3"
+      {
+       "raw": "Cobra Spit Blight 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "3",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -225,7 +252,16 @@
       2
      ],
      "effects": [
-      "Cobra Bite Blight 3"
+      {
+       "raw": "Cobra Bite Blight 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "4",
+        "duration": 3
+       }
+      }
      ]
     }
    ],
@@ -352,7 +388,16 @@
       4
      ],
      "effects": [
-      "Cobra Spit Blight 5"
+      {
+       "raw": "Cobra Spit Blight 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "4",
+        "duration": 3
+       }
+      }
      ]
     },
     {
@@ -374,7 +419,16 @@
       2
      ],
      "effects": [
-      "Cobra Bite Blight 5"
+      {
+       "raw": "Cobra Bite Blight 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "blight",
+        "amount": "4",
+        "duration": 3
+       }
+      }
      ]
     }
    ],

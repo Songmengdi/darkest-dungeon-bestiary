@@ -55,8 +55,21 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Minor Bleed 1",
-      "Blood Rain Stress"
+      {
+       "raw": "Minor Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "1",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Blood Rain Stress",
+       "chance": "100%",
+       "stress": "5"
+      }
      ]
     },
     {
@@ -82,8 +95,21 @@
       4
      ],
      "effects": [
-      "Bleed 1",
-      "Blood Punishment Stress"
+      {
+       "raw": "Bleed 1",
+       "chance": "100%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Blood Punishment Stress",
+       "chance": "100%",
+       "stress": "5"
+      }
      ]
     },
     {
@@ -103,8 +129,24 @@
       1
      ],
      "effects": [
-      "Push 1A",
-      "Blood Point Blank Shot Debuff"
+      {
+       "raw": "Push 1A",
+       "chance": "100%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      },
+      {
+       "raw": "Blood Point Blank Shot Debuff",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "-2"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -182,34 +224,42 @@
     "skillDesires": [
      {
       "skill": "whip_single",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "whip_party",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "whip_party",
+      "chance": 2,
       "type": "ally_alive_skill"
      },
      {
       "skill": "point_blank_shot",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "point_blank_shot",
+      "chance": 3,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "whip_single"
      }
     ]
@@ -270,8 +320,21 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Minor Bleed 3",
-      "Blood Rain Stress"
+      {
+       "raw": "Minor Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "2",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Blood Rain Stress",
+       "chance": "100%",
+       "stress": "5"
+      }
      ]
     },
     {
@@ -297,8 +360,21 @@
       4
      ],
      "effects": [
-      "Bleed 3",
-      "Blood Punishment Stress"
+      {
+       "raw": "Bleed 3",
+       "chance": "120%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Blood Punishment Stress",
+       "chance": "100%",
+       "stress": "5"
+      }
      ]
     },
     {
@@ -318,8 +394,24 @@
       1
      ],
      "effects": [
-      "Push 1C",
-      "Blood Point Blank Shot Debuff"
+      {
+       "raw": "Push 1C",
+       "chance": "120%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      },
+      {
+       "raw": "Blood Point Blank Shot Debuff",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "-2"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -397,34 +489,42 @@
     "skillDesires": [
      {
       "skill": "whip_single",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "whip_party",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "whip_party",
+      "chance": 3,
       "type": "ally_alive_skill"
      },
      {
       "skill": "point_blank_shot",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "point_blank_shot",
+      "chance": 3,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "whip_single"
      }
     ]
@@ -485,8 +585,21 @@
      ],
      "targetAoe": true,
      "effects": [
-      "Minor Bleed 5",
-      "Blood Rain Stress"
+      {
+       "raw": "Minor Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "3",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Blood Rain Stress",
+       "chance": "100%",
+       "stress": "5"
+      }
      ]
     },
     {
@@ -512,8 +625,21 @@
       4
      ],
      "effects": [
-      "Bleed 5",
-      "Blood Punishment Stress"
+      {
+       "raw": "Bleed 5",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "Blood Punishment Stress",
+       "chance": "100%",
+       "stress": "5"
+      }
      ]
     },
     {
@@ -533,8 +659,24 @@
       1
      ],
      "effects": [
-      "Push 1E",
-      "Blood Point Blank Shot Debuff"
+      {
+       "raw": "Push 1E",
+       "chance": "140%",
+       "move": {
+        "kind": "push",
+        "amount": "1"
+       }
+      },
+      {
+       "raw": "Blood Point Blank Shot Debuff",
+       "chance": "100%",
+       "stats": [
+        {
+         "key": "speed_rating_add",
+         "value": "-2"
+        }
+       ]
+      }
      ]
     }
    ],
@@ -612,34 +754,42 @@
     "skillDesires": [
      {
       "skill": "whip_single",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "whip_party",
+      "chance": 2,
       "type": "specific_skill"
      },
      {
       "skill": "whip_party",
+      "chance": 4,
       "type": "ally_alive_skill"
      },
      {
       "skill": "point_blank_shot",
+      "chance": 1,
       "type": "specific_skill"
      },
      {
       "skill": "point_blank_shot",
+      "chance": 5,
       "type": "performing_turn_skill"
      }
     ],
     "targetDesires": [
      {
-      "type": "random_target"
+      "type": "random_target",
+      "chance": 1
      },
      {
-      "type": "marked_target"
+      "type": "marked_target",
+      "chance": 2
      },
      {
       "type": "resistance_target",
+      "chance": 1,
       "skill": "whip_single"
      }
     ]

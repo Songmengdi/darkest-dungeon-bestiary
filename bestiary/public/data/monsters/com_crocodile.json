@@ -56,8 +56,22 @@
      ],
      "targetAoe": true,
      "effects": [
-      "COM Hive Stress 3",
-      "COM Hive ACC Debuff 3"
+      {
+       "raw": "COM Hive Stress 3",
+       "chance": "90%",
+       "stress": "12"
+      },
+      {
+       "raw": "COM Hive ACC Debuff 3",
+       "chance": "140%",
+       "duration": 1,
+       "stats": [
+        {
+         "key": "attack_rating_add",
+         "value": "-15%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -81,9 +95,29 @@
       4
      ],
      "effects": [
-      "COM CrocBleed 3",
-      "COM Croc Pull 3",
-      "COM Croc Stress 3"
+      {
+       "raw": "COM CrocBleed 3",
+       "chance": "140%",
+       "duration": 3,
+       "dot": {
+        "kind": "bleed",
+        "amount": "4",
+        "duration": 3
+       }
+      },
+      {
+       "raw": "COM Croc Pull 3",
+       "chance": "155%",
+       "move": {
+        "kind": "pull",
+        "amount": "3"
+       }
+      },
+      {
+       "raw": "COM Croc Stress 3",
+       "chance": "80%",
+       "stress": "12"
+      }
      ]
     },
     {
@@ -102,10 +136,36 @@
      ],
      "target": [],
      "effects": [
-      "COM switch_mode_submerged_self",
-      "COM CrocHeal 3",
-      "COM Croc Submerge Dodge 5",
-      "Cure Self"
+      {
+       "raw": "COM switch_mode_submerged_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      },
+      {
+       "raw": "COM CrocHeal 3",
+       "chance": "100%",
+       "heal": "18"
+      },
+      {
+       "raw": "COM Croc Submerge Dodge 5",
+       "chance": "100%",
+       "duration": 2,
+       "stats": [
+        {
+         "key": "defense_rating_add",
+         "value": "55%"
+        }
+       ]
+      },
+      {
+       "raw": "Cure Self",
+       "chance": "100%",
+       "traits": [
+        "cleanse"
+       ]
+      }
      ]
     },
     {
@@ -131,7 +191,13 @@
       4
      ],
      "effects": [
-      "COM switch_mode_land_self"
+      {
+       "raw": "COM switch_mode_land_self",
+       "chance": "100%",
+       "traits": [
+        "transform"
+       ]
+      }
      ]
     },
     {
@@ -149,7 +215,18 @@
      ],
      "target": [],
      "effects": [
-      "COM Croc Hide Buff 3"
+      {
+       "raw": "COM Croc Hide Buff 3",
+       "chance": "100%",
+       "duration": 4,
+       "dmgMultiply": "25%",
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "15%"
+        }
+       ]
+      }
      ]
     },
     {
@@ -167,7 +244,18 @@
      ],
      "target": [],
      "effects": [
-      "COM Croc Hide Buff 3"
+      {
+       "raw": "COM Croc Hide Buff 3",
+       "chance": "100%",
+       "duration": 4,
+       "dmgMultiply": "25%",
+       "stats": [
+        {
+         "key": "protection_rating_add",
+         "value": "15%"
+        }
+       ]
+      }
      ]
     }
    ],

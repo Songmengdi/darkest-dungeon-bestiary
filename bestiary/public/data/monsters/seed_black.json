@@ -57,9 +57,28 @@
      ],
      "targetAoe": true,
      "effects": [
-      "kill_self_queued",
-      "black seed horror",
-      "black seed heal debuff"
+      {
+       "raw": "kill_self_queued",
+       "chance": "100%",
+       "traits": [
+        "kill"
+       ]
+      },
+      {
+       "raw": "black seed horror",
+       "chance": "100%",
+       "duration": 6,
+       "dot": {
+        "kind": "stress",
+        "amount": "3",
+        "duration": 6
+       }
+      },
+      {
+       "raw": "black seed heal debuff",
+       "chance": "140%",
+       "duration": 2
+      }
      ]
     }
    ],

@@ -15,6 +15,7 @@
  * 诚实原则:首领专属机制串(Ancestor Disrupt、Crow Caw 等)不强行配图标——
  * 无图标是 interface 的显式输出,宁可无图标不可错图标。 */
 import { LANG, type Lang } from "./i18n";
+import type { EffectRef } from "./types";
 
 export interface EffectView {
   /** 命中的状态图标 id(0..3 个,对应 fxicons.FX_ICONS) */
@@ -117,4 +118,105 @@ export function interpretEffect(raw: string, lang: Lang = LANG.value): EffectVie
     }
   }
   return { icons, text };
+}
+
+/* ---------- 结构化解释(优先):导出侧已把效果串解析成游戏定义的真实语义 ---------- */
+
+const STAT_ZH: Record<string, string> = {
+  attack_rating_add: "命中",
+  defense_rating_add: "闪避",
+  speed_rating_add: "速度",
+  protection_rating_add: "防御",
+  crit_chance_add: "暴击率",
+};
+
+const TRAIT_ZH: Record<string, string> = {
+  summon: "召唤", guard: "守护", riposte: "反击", mark: "标记", disease: "疾病",
+  kill: "即死", capture: "捕获", control: "控制", transform: "变身",
+  cleanse: "净化", clear_guard: "解除守护", stealth: "潜行", unstealth: "现形",
+  steal_buff: "窃取增益", instant: "瞬发",
+};
+
+const DOT_ZH = { bleed: "流血", blight: "腐蚀", stress: "恐怖" } as const;
+
+/* 剩余 buff_ids / 引擎驱动的命名机制:按原始串精确对照(不猜语义,宁缺毋错) */
+const CURATED_ZH: Record<string, string> = {
+  "Stake Kill Vamp": "钉桩:对血裔增伤(瞬发)",
+  "MadMan Stress Debuff 1": "压力抗性降低",
+  "MadMan Stress Debuff 3": "压力抗性降低",
+  "MadMan Stress Debuff 5": "压力抗性降低",
+  "miller stress resist": "压力抗性提升",
+  "CC Bleed Res Debuff 1": "流血抗性降低",
+  "CC Bleed Res Debuff 3": "流血抗性降低",
+  "CC Bleed Res Debuff 5": "流血抗性降低",
+  "CC Steal Blight": "窃取目标的腐蚀强化",
+  "instant_shuffle": "立即打乱站位",
+  "clear_riposte_performer": "解除自身反击",
+  "Rank Target Enemy 1": "强制目标换至指定站位",
+  "Clear Enemy Rank Target": "解除强制换位",
+};
+
+function refIcons(e: EffectRef): string[] {
+  const icons: string[] = [];
+  const push = (id: string) => { if (!icons.includes(id) && icons.length < MAX_ICONS) icons.push(id); };
+  if (e.dot?.kind === "bleed") push("bleed");
+  if (e.dot?.kind === "blight") push("blight");
+  if (e.dot?.kind === "stress") push("horror");
+  if (e.stun) push("stun");
+  if (e.stress) push("stress");
+  if (e.heal) push("heal");
+  if (e.healStress) push("stress-heal");
+  if (e.move) push("move-knockback");
+  for (const t of e.traits ?? []) {
+    if (t === "guard") push("guard");
+    else if (t === "riposte") push("riposte");
+    else if (t === "mark") push("mark");
+    else if (t === "disease") push("disease");
+    else if (t === "kill") push("instant-deathblow");
+    else if (t === "summon") push("summons-enemy");
+    else if (t === "stealth") push("stealth");
+  }
+  if (e.torch) push("special-note");
+  return icons;
+}
+
+function refText(e: EffectRef): string {
+  if (CURATED_ZH[e.raw]) {
+    const dur = CURATED_ZH[e.raw];
+    return e.duration && !/\(|\d回合/.test(dur) ? `${dur}(${e.duration}回合)` : dur;
+  }
+  const parts: string[] = [];
+  if (e.move) {
+    if (e.move.kind === "shuffle") parts.push("打乱站位");
+    else parts.push(`${e.move.kind === "push" ? "击退" : "拉拽"} ${e.move.amount}格`);
+  }
+  if (e.stun) parts.push(Number(e.stun) > 1 ? `眩晕 ${e.stun}回合` : "眩晕");
+  if (e.stress) parts.push(`压力 +${e.stress}`);
+  if (e.dot) {
+    const d = e.dot.duration ?? e.duration;
+    parts.push(`${DOT_ZH[e.dot.kind]} ${e.dot.amount}${d ? `×${d}回合` : "/回合"}`);
+  }
+  if (e.heal) parts.push(`治疗 ${e.heal}`);
+  if (e.healStress) parts.push(`压力治疗 ${e.healStress}`);
+  if (e.torch) parts.push(`火把 -${e.torch}`);
+  if (e.dmgMultiply) parts.push(`伤害 ×${e.dmgMultiply}`);
+  for (const s of e.stats ?? []) {
+    parts.push(`${STAT_ZH[s.key] ?? s.key} ${s.value}${e.duration ? `(${e.duration}回合)` : ""}`);
+  }
+  for (const t of e.traits ?? []) parts.push(TRAIT_ZH[t] ?? t);
+  // 只有持续时间的标记类效果(如 .tag 1 .duration 3):把回合数带出来
+  if (e.duration && parts.length === 1 && (e.traits?.includes("mark") || e.traits?.includes("stealth"))) {
+    parts[parts.length - 1] += `(${e.duration}回合)`;
+  }
+  return parts.join(" · ");
+}
+
+/** 结构化效果解释:有语义字段就渲染真实数值,否则整体回退到原始串概念表。 */
+export function interpretEffectRef(e: EffectRef, lang: Lang = LANG.value): EffectView {
+  const fallback = interpretEffect(e.raw, lang);
+  if (lang !== "zh") return fallback;
+  const text = refText(e);
+  if (!text) return fallback;
+  const icons = refIcons(e);
+  return { icons: icons.length ? icons : fallback.icons, text };
 }
