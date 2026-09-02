@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref, watch } from "vue";
 import type { IndexFile, IndexMonster, MonsterDetail, Skill, Tier } from "../types";
+import { LANG, t } from "../i18n";
 import {
-  LANG, RES_ITEMS, abilityOf, brainDesireLabel, displayNameOf, fmt,
-  liveTiers, lootEntryText, openLightbox, regionBadges, skillTypeZh, t,
-} from "../data";
+  RES_ITEMS, abilityOf, brainDesireLabel, displayNameOf, fmt,
+  liveTiers, lootEntryText, skillTypeZh,
+} from "../display";
+import { regionBadges } from "../filter";
+import { openLightbox } from "../lightbox";
 import { fxIconSrc, fxIconTitle } from "../fxicons";
 import { interpretEffect } from "../effect";
 import RankCells from "./RankCells.vue";

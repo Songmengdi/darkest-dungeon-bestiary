@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import { t } from "../data";
+import { t } from "../i18n";
 
 const props = defineProps<{
   digits: number[];

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { IndexFile, IndexMonster } from "../types";
-import { LANG, regionBadges, t } from "../data";
+import { LANG, t } from "../i18n";
+import { regionBadges } from "../filter";
 
 const props = defineProps<{
   entry: IndexMonster;

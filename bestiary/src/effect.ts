@@ -14,7 +14,7 @@
  *     extra-damage-vs-marked)。
  * 诚实原则:首领专属机制串(Ancestor Disrupt、Crow Caw 等)不强行配图标——
  * 无图标是 interface 的显式输出,宁可无图标不可错图标。 */
-import { LANG, type Lang } from "./data";
+import { LANG, type Lang } from "./i18n";
 
 export interface EffectView {
   /** 命中的状态图标 id(0..3 个,对应 fxicons.FX_ICONS) */

@@ -6,7 +6,7 @@
 import fs from "node:fs";
 import { describe, expect, it } from "vitest";
 import { interpretEffect } from "../src/effect";
-import { setLang } from "../src/data";
+import { setLang } from "../src/i18n";
 import { FX_ICONS } from "../src/fxicons";
 
 const EFFECTS: string[] = JSON.parse(fs.readFileSync("tests/fixtures/real-effects.json", "utf8"));

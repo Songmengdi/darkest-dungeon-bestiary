@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { closeLightbox, lightbox } from "../data";
+import { closeLightbox, lightbox } from "../lightbox";
 </script>
 
 <template>

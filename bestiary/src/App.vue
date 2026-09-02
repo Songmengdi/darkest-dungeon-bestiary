@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref } from "vue";
 import type { IndexFile, IndexMonster, MonsterDetail } from "./types";
-import { LANG, loadIndex, loadMonster, monsterMatchesQuery, monsterMatchesTab, regionTabs, setLang, t } from "./data";
+import { LANG, setLang, t } from "./i18n";
+import { loadIndex, loadMonster } from "./repo";
+import { monsterMatchesQuery, monsterMatchesTab, regionTabs } from "./filter";
 import MonsterCard from "./components/MonsterCard.vue";
 import MonsterModal from "./components/MonsterModal.vue";
 import Lightbox from "./components/Lightbox.vue";

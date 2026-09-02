@@ -1,7 +1,7 @@
 /* 状态图标资产:归档.zip 提供的 wiki 状态图标(src/assets/fx/*.png)。
  * 职责:① 图标元数据(中英名 + 悬停说明);② 图标 id → URL 查找。
  * 「原始效果串 → 图标/文本」的解释逻辑在 effect.ts(单一入口 interpretEffect)。 */
-import { LANG } from "./data";
+import { LANG } from "./i18n";
 
 export interface FxIconMeta {
   en: string;
