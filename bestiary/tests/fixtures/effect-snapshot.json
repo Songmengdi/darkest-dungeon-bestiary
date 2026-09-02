@@ -1,0 +1,4305 @@
+{
+ "Adder Blight 1": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Adder 腐蚀 1"
+ },
+ "Adder Blight 3": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Adder 腐蚀 3"
+ },
+ "Adder Blight 5": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Adder 腐蚀 5"
+ },
+ "Adder Stun 1": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Adder 眩晕 1"
+ },
+ "Adder Stun 3": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Adder 眩晕 3"
+ },
+ "Adder Stun 5": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Adder 眩晕 5"
+ },
+ "Ancestor Big Contemplate Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Ancestor Big Contemplate 压力"
+ },
+ "Ancestor Big Rider Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Ancestor Big Rider 压力"
+ },
+ "Ancestor Damage Marked": {
+  "icons": [
+   "extra-damage-vs-marked"
+  ],
+  "text": "Ancestor 伤害 被标记"
+ },
+ "Ancestor Disrupt": {
+  "icons": [],
+  "text": "Ancestor Disrupt"
+ },
+ "Ancestor Flawed Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Ancestor Flawed 压力"
+ },
+ "Ancestor Fuse All": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "Ancestor Fuse 全体"
+ },
+ "Ancestor Fuse Two": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "Ancestor Fuse Two"
+ },
+ "Ancestor Mark": {
+  "icons": [
+   "mark"
+  ],
+  "text": "Ancestor 标记"
+ },
+ "Ancestor Perfect Bleed": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Ancestor Perfect 流血"
+ },
+ "Ancestor Perfect Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Ancestor Perfect 压力"
+ },
+ "Ancestor Shuffle": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Ancestor 打乱"
+ },
+ "Ancestor Small Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Ancestor Small 压力"
+ },
+ "Ancestor Summon Flawed": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "Ancestor 召唤 Flawed"
+ },
+ "Ancestor Summon Mixed": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "Ancestor 召唤 Mixed"
+ },
+ "Ancestor Summon Perfect": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "Ancestor 召唤 Perfect"
+ },
+ "Antiq ProtectMe ClearGuardsPerformer": {
+  "icons": [
+   "guard"
+  ],
+  "text": "Antiq ProtectMe Clear守护sPerformer"
+ },
+ "Antiq ProtectMe ClearGuardsTarget": {
+  "icons": [
+   "guard"
+  ],
+  "text": "Antiq ProtectMe Clear守护s目标"
+ },
+ "Arbalist Dmg Marked Target": {
+  "icons": [
+   "extra-damage-vs-marked"
+  ],
+  "text": "Arbalist Dmg 被标记 目标"
+ },
+ "Average Feed Buff 1": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Average Feed 增益 1"
+ },
+ "Average Feed Buff 2": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Average Feed 增益 2"
+ },
+ "Average Feed Debuff": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Average Feed 减益"
+ },
+ "Baron Bleed": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Baron 流血"
+ },
+ "Baron Feed": {
+  "icons": [],
+  "text": "Baron Feed"
+ },
+ "Baron Feed Bleed Debuff": {
+  "icons": [
+   "bleed",
+   "debuff"
+  ],
+  "text": "Baron Feed 流血 减益"
+ },
+ "Baron Feed Stats": {
+  "icons": [],
+  "text": "Baron Feed Stats"
+ },
+ "Baron Pull": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Baron 拉拽"
+ },
+ "Baron Refill Cocoons 1-3": {
+  "icons": [],
+  "text": "Baron Refill Cocoons 1-3"
+ },
+ "Baron Refill Cocoons 2-3": {
+  "icons": [],
+  "text": "Baron Refill Cocoons 2-3"
+ },
+ "Baron Whip Horror": {
+  "icons": [
+   "horror"
+  ],
+  "text": "Baron Whip 恐怖"
+ },
+ "Baron Whip Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Baron Whip 压力"
+ },
+ "Baron Whipping Buff": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Baron Whipping 增益"
+ },
+ "Battle Cell Stun": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Battle Cell 眩晕"
+ },
+ "Beholder Blight": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Beholder 腐蚀"
+ },
+ "Beholder Selfbuff": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Beholder 自身:buff"
+ },
+ "Beholder Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Beholder 压力"
+ },
+ "Beholder Weaken": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Beholder Weaken"
+ },
+ "Big Ecto Slime Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Big Ecto Slime 减益 3"
+ },
+ "Big Ecto Slime Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Big Ecto Slime 减益 5"
+ },
+ "Blanket Fire Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Blanket Fire 压力"
+ },
+ "Bleed 1": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "流血 1"
+ },
+ "Bleed 2": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "流血 2"
+ },
+ "Bleed 3": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "流血 3"
+ },
+ "Bleed 5": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "流血 5"
+ },
+ "Blight 1": {
+  "icons": [
+   "blight"
+  ],
+  "text": "腐蚀 1"
+ },
+ "Blight 2": {
+  "icons": [
+   "blight"
+  ],
+  "text": "腐蚀 2"
+ },
+ "Blight 3": {
+  "icons": [
+   "blight"
+  ],
+  "text": "腐蚀 3"
+ },
+ "Blight 5": {
+  "icons": [
+   "blight"
+  ],
+  "text": "腐蚀 5"
+ },
+ "Blight Buff A": {
+  "icons": [
+   "blight",
+   "buff"
+  ],
+  "text": "腐蚀 增益 A"
+ },
+ "Blight Buff B": {
+  "icons": [
+   "blight",
+   "buff"
+  ],
+  "text": "腐蚀 增益 B"
+ },
+ "Blight Buff C": {
+  "icons": [
+   "blight",
+   "buff"
+  ],
+  "text": "腐蚀 增益 C"
+ },
+ "Bloated Feed Buff": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Bloated Feed 增益"
+ },
+ "Bloated Feed Debuff 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Bloated Feed 减益 1"
+ },
+ "Bloated Feed Debuff 2": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Bloated Feed 减益 2"
+ },
+ "Blood Point Blank Shot Debuff": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Blood Point Blank Shot 减益"
+ },
+ "Blood Punishment Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Blood Punishment 压力"
+ },
+ "Blood Rain Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Blood Rain 压力"
+ },
+ "Brawler Rend Debuff 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Brawler Rend 减益 1"
+ },
+ "Brawler Rend Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Brawler Rend 减益 3"
+ },
+ "Brawler Rend Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Brawler Rend 减益 5"
+ },
+ "Buff Guard 1": {
+  "icons": [
+   "guard",
+   "buff"
+  ],
+  "text": "增益 守护 1"
+ },
+ "Buff Guard 3": {
+  "icons": [
+   "guard",
+   "buff"
+  ],
+  "text": "增益 守护 3"
+ },
+ "Buff Guard 5": {
+  "icons": [
+   "guard",
+   "buff"
+  ],
+  "text": "增益 守护 5"
+ },
+ "Buff Speed A": {
+  "icons": [
+   "buff"
+  ],
+  "text": "增益 Speed A"
+ },
+ "Buff Speed B": {
+  "icons": [
+   "buff"
+  ],
+  "text": "增益 Speed B"
+ },
+ "Buff Speed C": {
+  "icons": [
+   "buff"
+  ],
+  "text": "增益 Speed C"
+ },
+ "Burn Hero 1": {
+  "icons": [],
+  "text": "Burn Hero 1"
+ },
+ "C Stress AOE DoT": {
+  "icons": [
+   "stress"
+  ],
+  "text": "C 压力 AOE DoT"
+ },
+ "CC Big Feed Heal 1": {
+  "icons": [
+   "heal"
+  ],
+  "text": "CC Big Feed 治疗 1"
+ },
+ "CC Big Feed Heal 3": {
+  "icons": [
+   "heal"
+  ],
+  "text": "CC Big Feed 治疗 3"
+ },
+ "CC Big Feed Heal 5": {
+  "icons": [
+   "heal"
+  ],
+  "text": "CC Big Feed 治疗 5"
+ },
+ "CC Bleed Res Debuff 1": {
+  "icons": [
+   "bleed",
+   "debuff"
+  ],
+  "text": "CC 流血 Res 减益 1"
+ },
+ "CC Bleed Res Debuff 3": {
+  "icons": [
+   "bleed",
+   "debuff"
+  ],
+  "text": "CC 流血 Res 减益 3"
+ },
+ "CC Bleed Res Debuff 5": {
+  "icons": [
+   "bleed",
+   "debuff"
+  ],
+  "text": "CC 流血 Res 减益 5"
+ },
+ "CC Mob Acc Debuff 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "CC Mob Acc 减益 1"
+ },
+ "CC Mob Acc Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "CC Mob Acc 减益 3"
+ },
+ "CC Mob Acc Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "CC Mob Acc 减益 5"
+ },
+ "CC Mob Bleed 1": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "CC Mob 流血 1"
+ },
+ "CC Mob Bleed 3": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "CC Mob 流血 3"
+ },
+ "CC Mob Bleed 5": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "CC Mob 流血 5"
+ },
+ "CC Shuffle DoT": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "CC 打乱 DoT"
+ },
+ "CC Small Feed Heal 1": {
+  "icons": [
+   "heal"
+  ],
+  "text": "CC Small Feed 治疗 1"
+ },
+ "CC Small Feed Heal 2": {
+  "icons": [
+   "heal"
+  ],
+  "text": "CC Small Feed 治疗 2"
+ },
+ "CC Small Feed Heal 3": {
+  "icons": [
+   "heal"
+  ],
+  "text": "CC Small Feed 治疗 3"
+ },
+ "CC Steal Blight": {
+  "icons": [
+   "blight"
+  ],
+  "text": "CC Steal 腐蚀"
+ },
+ "COM Croc Hide Buff 3": {
+  "icons": [
+   "stealth",
+   "buff"
+  ],
+  "text": "COM Croc 潜藏 增益 3"
+ },
+ "COM Croc Pull 3": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "COM Croc 拉拽 3"
+ },
+ "COM Croc Stress 3": {
+  "icons": [
+   "stress"
+  ],
+  "text": "COM Croc 压力 3"
+ },
+ "COM Croc Submerge Dodge 5": {
+  "icons": [
+   "buff"
+  ],
+  "text": "COM Croc Submerge 闪避 5"
+ },
+ "COM CrocBleed 3": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "COM Croc流血 3"
+ },
+ "COM CrocHeal 3": {
+  "icons": [
+   "heal"
+  ],
+  "text": "COM Croc治疗 3"
+ },
+ "COM Hive ACC Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "COM Hive 命中 减益 3"
+ },
+ "COM Hive Stress 3": {
+  "icons": [
+   "stress"
+  ],
+  "text": "COM Hive 压力 3"
+ },
+ "COM switch_mode_land_self": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "COM switch_mode_land_self"
+ },
+ "COM switch_mode_submerged_self": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "COM switch_mode_submerged_self"
+ },
+ "Call of the Deep 1": {
+  "icons": [],
+  "text": "Call of the Deep 1"
+ },
+ "Call of the Deep 3": {
+  "icons": [],
+  "text": "Call of the Deep 3"
+ },
+ "Call of the Deep 5": {
+  "icons": [],
+  "text": "Call of the Deep 5"
+ },
+ "Cannon Misfire": {
+  "icons": [],
+  "text": "Cannon Misfire"
+ },
+ "Captain Crushing Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Captain Crushing 减益 3"
+ },
+ "Captain Crushing Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Captain Crushing 减益 5"
+ },
+ "Captain Curse 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Captain 诅咒 1"
+ },
+ "Captain Curse 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Captain 诅咒 3"
+ },
+ "Captain Curse 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Captain 诅咒 5"
+ },
+ "CaptureBosun": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "CaptureBosun"
+ },
+ "CaptureHag": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "CaptureHag"
+ },
+ "Careless Whispers 1": {
+  "icons": [],
+  "text": "Careless Whispers 1"
+ },
+ "Careless Whispers 3": {
+  "icons": [],
+  "text": "Careless Whispers 3"
+ },
+ "Careless Whispers 5": {
+  "icons": [],
+  "text": "Careless Whispers 5"
+ },
+ "Carrion Devour Debuff 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Carrion Devour 减益 1"
+ },
+ "Carrion Devour Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Carrion Devour 减益 3"
+ },
+ "Carrion Devour Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Carrion Devour 减益 5"
+ },
+ "Carrion Munch Disease 3": {
+  "icons": [
+   "disease"
+  ],
+  "text": "Carrion Munch 疾病 3"
+ },
+ "Carrion Munch Disease 5": {
+  "icons": [
+   "disease"
+  ],
+  "text": "Carrion Munch 疾病 5"
+ },
+ "Carrion Weaken Damage Debuff 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Carrion Weaken 伤害 减益 1"
+ },
+ "Carrion Weaken Damage Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Carrion Weaken 伤害 减益 3"
+ },
+ "Carrion Weaken Damage Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Carrion Weaken 伤害 减益 5"
+ },
+ "Castellan Exit A": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "Castellan 退场 A"
+ },
+ "Castellan Exit B": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "Castellan 退场 B"
+ },
+ "Castellan Exit C": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "Castellan 退场 C"
+ },
+ "Castellan Guard": {
+  "icons": [
+   "guard"
+  ],
+  "text": "Castellan 守护"
+ },
+ "Castellan Pull 1": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Castellan 拉拽 1"
+ },
+ "Castellan Pull 3": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Castellan 拉拽 3"
+ },
+ "Castellan Pull 5": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Castellan 拉拽 5"
+ },
+ "Castellan Stress 1": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Castellan 压力 1"
+ },
+ "Castellan Stress 3": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Castellan 压力 3"
+ },
+ "Castellan Stress 5": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Castellan 压力 5"
+ },
+ "Cell Bolster": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Cell Bolster"
+ },
+ "Cell Shuffle": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Cell 打乱"
+ },
+ "Cell Weaken": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Cell Weaken"
+ },
+ "Chev Dodge Debuff 1": {
+  "icons": [
+   "buff",
+   "debuff"
+  ],
+  "text": "Chev 闪避 减益 1"
+ },
+ "Chev Dodge Debuff 2": {
+  "icons": [
+   "buff",
+   "debuff"
+  ],
+  "text": "Chev 闪避 减益 2"
+ },
+ "Chev Dodge Debuff 3": {
+  "icons": [
+   "buff",
+   "debuff"
+  ],
+  "text": "Chev 闪避 减益 3"
+ },
+ "Chevalier AOE Stun 1": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Chevalier AOE 眩晕 1"
+ },
+ "Chevalier AOE Stun 2": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Chevalier AOE 眩晕 2"
+ },
+ "Chevalier AOE Stun 3": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Chevalier AOE 眩晕 3"
+ },
+ "Clear Enemy Rank Target": {
+  "icons": [],
+  "text": "Clear Enemy Rank 目标"
+ },
+ "Clear Enemy Rank Target With Result": {
+  "icons": [],
+  "text": "Clear Enemy Rank 目标 With Result"
+ },
+ "Clear Guard Performer": {
+  "icons": [
+   "guard"
+  ],
+  "text": "Clear 守护 Performer"
+ },
+ "Clear Guard Target": {
+  "icons": [
+   "guard"
+  ],
+  "text": "Clear 守护 目标"
+ },
+ "Clear Marked Target": {
+  "icons": [
+   "mark"
+  ],
+  "text": "Clear 被标记 目标"
+ },
+ "Cobra Bite Blight 1": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Cobra Bite 腐蚀 1"
+ },
+ "Cobra Bite Blight 3": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Cobra Bite 腐蚀 3"
+ },
+ "Cobra Bite Blight 5": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Cobra Bite 腐蚀 5"
+ },
+ "Cobra Spit Blight 1": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Cobra Spit 腐蚀 1"
+ },
+ "Cobra Spit Blight 3": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Cobra Spit 腐蚀 3"
+ },
+ "Cobra Spit Blight 5": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Cobra Spit 腐蚀 5"
+ },
+ "Cocoon Swap 1-3 baron": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Cocoon 换位 1-3 baron"
+ },
+ "Cocoon Swap 1-3 group": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Cocoon 换位 1-3 group"
+ },
+ "Cocoon Swap 2-3 baron": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Cocoon 换位 2-3 baron"
+ },
+ "Cocoon Swap 2-3 group": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Cocoon 换位 2-3 group"
+ },
+ "Collector HealSelf 1": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Collector 治疗自身: 1"
+ },
+ "Collector HealSelf 3": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Collector 治疗自身: 3"
+ },
+ "Collector HealSelf 5": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Collector 治疗自身: 5"
+ },
+ "Collector Show Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Collector Show 压力"
+ },
+ "Countess Bleed": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Countess 流血"
+ },
+ "Countess Blight": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Countess 腐蚀"
+ },
+ "Countess Feed Heal": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Countess Feed 治疗"
+ },
+ "Countess Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Countess 压力"
+ },
+ "Countess Stun": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Countess 眩晕"
+ },
+ "Countess Terror": {
+  "icons": [],
+  "text": "Countess Terror"
+ },
+ "Courtesan AOE Horror": {
+  "icons": [
+   "horror"
+  ],
+  "text": "Courtesan AOE 恐怖"
+ },
+ "Courtesan Blight 1": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Courtesan 腐蚀 1"
+ },
+ "Courtesan Blight 3": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Courtesan 腐蚀 3"
+ },
+ "Courtesan Blight 5": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Courtesan 腐蚀 5"
+ },
+ "Courtesan Feed 1": {
+  "icons": [],
+  "text": "Courtesan Feed 1"
+ },
+ "Courtesan Feed 2": {
+  "icons": [],
+  "text": "Courtesan Feed 2"
+ },
+ "Courtesan Feed 3": {
+  "icons": [],
+  "text": "Courtesan Feed 3"
+ },
+ "Courtesan ProtectMe Guard": {
+  "icons": [
+   "guard"
+  ],
+  "text": "Courtesan ProtectMe 守护"
+ },
+ "Courtesan Stress 1": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Courtesan 压力 1"
+ },
+ "Courtesan Stress 3": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Courtesan 压力 3"
+ },
+ "Courtesan Stress 5": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Courtesan 压力 5"
+ },
+ "Courtesan Vein 1": {
+  "icons": [],
+  "text": "Courtesan Vein 1"
+ },
+ "Courtesan Vein 3": {
+  "icons": [],
+  "text": "Courtesan Vein 3"
+ },
+ "Courtesan Vein 5": {
+  "icons": [],
+  "text": "Courtesan Vein 5"
+ },
+ "Courtesan Vein Prot 1": {
+  "icons": [],
+  "text": "Courtesan Vein Prot 1"
+ },
+ "Courtesan Vein Prot 3": {
+  "icons": [],
+  "text": "Courtesan Vein Prot 3"
+ },
+ "Courtesan Vein Prot 5": {
+  "icons": [],
+  "text": "Courtesan Vein Prot 5"
+ },
+ "Courtier Goblet Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Courtier Goblet 减益 3"
+ },
+ "Courtier Goblet Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Courtier Goblet 减益 5"
+ },
+ "Crabby Bleed 1": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Crabby 流血 1"
+ },
+ "Crabby Bleed 2": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Crabby 流血 2"
+ },
+ "Crabby Bleed 3": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Crabby 流血 3"
+ },
+ "Crabby Pinch Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Crabby Pinch 减益 3"
+ },
+ "Crabby Pinch Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Crabby Pinch 减益 5"
+ },
+ "Crimson Curse Strong": {
+  "icons": [
+   "crimson-curse"
+  ],
+  "text": "猩红诅咒 Strong"
+ },
+ "Crimson Curse Weak": {
+  "icons": [
+   "crimson-curse"
+  ],
+  "text": "猩红诅咒 Weak"
+ },
+ "Croc Hide Buff 1": {
+  "icons": [
+   "stealth",
+   "buff"
+  ],
+  "text": "Croc 潜藏 增益 1"
+ },
+ "Croc Hide Buff 2": {
+  "icons": [
+   "stealth",
+   "buff"
+  ],
+  "text": "Croc 潜藏 增益 2"
+ },
+ "Croc Hide Buff 3": {
+  "icons": [
+   "stealth",
+   "buff"
+  ],
+  "text": "Croc 潜藏 增益 3"
+ },
+ "Croc Pull 1": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Croc 拉拽 1"
+ },
+ "Croc Pull 2": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Croc 拉拽 2"
+ },
+ "Croc Pull 3": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Croc 拉拽 3"
+ },
+ "Croc Stress 1": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Croc 压力 1"
+ },
+ "Croc Stress 2": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Croc 压力 2"
+ },
+ "Croc Stress 3": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Croc 压力 3"
+ },
+ "Croc Submerge Dodge 1": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Croc Submerge 闪避 1"
+ },
+ "Croc Submerge Dodge 3": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Croc Submerge 闪避 3"
+ },
+ "Croc Submerge Dodge 5": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Croc Submerge 闪避 5"
+ },
+ "CrocBleed 1": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Croc流血 1"
+ },
+ "CrocBleed 2": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Croc流血 2"
+ },
+ "CrocBleed 3": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Croc流血 3"
+ },
+ "CrocHeal 1": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Croc治疗 1"
+ },
+ "CrocHeal 2": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Croc治疗 2"
+ },
+ "CrocHeal 3": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Croc治疗 3"
+ },
+ "Crone Curse 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Crone 诅咒 1"
+ },
+ "Crone Curse 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Crone 诅咒 3"
+ },
+ "Crone Curse 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Crone 诅咒 5"
+ },
+ "Crone Fetid Disease 3": {
+  "icons": [
+   "disease"
+  ],
+  "text": "Crone Fetid 疾病 3"
+ },
+ "Crone Fetid Disease 5": {
+  "icons": [
+   "disease"
+  ],
+  "text": "Crone Fetid 疾病 5"
+ },
+ "Crow Bleed 1": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Crow 流血 1"
+ },
+ "Crow Bleed 3": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Crow 流血 3"
+ },
+ "Crow Bleed 5": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Crow 流血 5"
+ },
+ "Crow Caw 1": {
+  "icons": [],
+  "text": "Crow Caw 1"
+ },
+ "Crow Caw 3": {
+  "icons": [],
+  "text": "Crow Caw 3"
+ },
+ "Crow Caw 5": {
+  "icons": [],
+  "text": "Crow Caw 5"
+ },
+ "Crow Distract 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Crow Distract 1"
+ },
+ "Crow Distract 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Crow Distract 3"
+ },
+ "Crow Distract 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Crow Distract 5"
+ },
+ "Crow Flutter 1": {
+  "icons": [],
+  "text": "Crow Flutter 1"
+ },
+ "Crow Flutter 3": {
+  "icons": [],
+  "text": "Crow Flutter 3"
+ },
+ "Crow Flutter 5": {
+  "icons": [],
+  "text": "Crow Flutter 5"
+ },
+ "Crow Shriek 1": {
+  "icons": [],
+  "text": "Crow Shriek 1"
+ },
+ "Crow Shriek 3": {
+  "icons": [],
+  "text": "Crow Shriek 3"
+ },
+ "Crow Shriek 5": {
+  "icons": [],
+  "text": "Crow Shriek 5"
+ },
+ "Crow Shriek CoM": {
+  "icons": [],
+  "text": "Crow Shriek CoM"
+ },
+ "Crystal Horror": {
+  "icons": [
+   "horror"
+  ],
+  "text": "Crystal 恐怖"
+ },
+ "Cure Debuffs": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Cure 减益s"
+ },
+ "Cure Self": {
+  "icons": [],
+  "text": "Cure 自身:"
+ },
+ "Cutthroat Poke Buff": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Cutthroat Poke 增益"
+ },
+ "Cutthroat Slice Debuff 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Cutthroat Slice 减益 1"
+ },
+ "Cutthroat Slice Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Cutthroat Slice 减益 3"
+ },
+ "Cutthroat Slice Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Cutthroat Slice 减益 5"
+ },
+ "Cutthroat Slice Debuff 6": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Cutthroat Slice 减益 6"
+ },
+ "Damage Marked Target": {
+  "icons": [
+   "extra-damage-vs-marked"
+  ],
+  "text": "伤害 被标记 目标"
+ },
+ "Damage Marked Target Lesser": {
+  "icons": [
+   "extra-damage-vs-marked"
+  ],
+  "text": "伤害 被标记 目标 Lesser"
+ },
+ "Darkest Eye": {
+  "icons": [],
+  "text": "Darkest Eye"
+ },
+ "Darkness 2": {
+  "icons": [],
+  "text": "Darkness 2"
+ },
+ "Darkness 3": {
+  "icons": [],
+  "text": "Darkness 3"
+ },
+ "Debuff Stress Res A": {
+  "icons": [
+   "stress",
+   "debuff"
+  ],
+  "text": "减益 压力 Res A"
+ },
+ "Debuff Stress Res B": {
+  "icons": [
+   "stress",
+   "debuff"
+  ],
+  "text": "减益 压力 Res B"
+ },
+ "Debuff Stress Res C": {
+  "icons": [
+   "stress",
+   "debuff"
+  ],
+  "text": "减益 压力 Res C"
+ },
+ "Defender Axeblade Debuff 3": {
+  "icons": [
+   "guard",
+   "debuff"
+  ],
+  "text": "Defender Axeblade 减益 3"
+ },
+ "Defender Axeblade Debuff 5": {
+  "icons": [
+   "guard",
+   "debuff"
+  ],
+  "text": "Defender Axeblade 减益 5"
+ },
+ "Destealth Performer": {
+  "icons": [
+   "stealth"
+  ],
+  "text": "Destealth Performer"
+ },
+ "Disrupt 4": {
+  "icons": [],
+  "text": "Disrupt 4"
+ },
+ "Drum Debilitation Mark": {
+  "icons": [
+   "mark",
+   "debuff"
+  ],
+  "text": "Drum Debilitation 标记"
+ },
+ "Drum Stress 1": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Drum 压力 1"
+ },
+ "Emaciated Feed Buff": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Emaciated Feed 增益"
+ },
+ "Emaciated Feed Debuff": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Emaciated Feed 减益"
+ },
+ "Errant Blight": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Errant 腐蚀"
+ },
+ "Errant Dmg Marked": {
+  "icons": [
+   "extra-damage-vs-marked"
+  ],
+  "text": "Errant Dmg 被标记"
+ },
+ "Errant Mark": {
+  "icons": [
+   "mark"
+  ],
+  "text": "Errant 标记"
+ },
+ "Errant Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Errant 压力"
+ },
+ "Errant Stun": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Errant 眩晕"
+ },
+ "Esq Foreleg 1": {
+  "icons": [],
+  "text": "Esq Foreleg 1"
+ },
+ "Esq Foreleg 3": {
+  "icons": [],
+  "text": "Esq Foreleg 3"
+ },
+ "Esq Foreleg 5": {
+  "icons": [],
+  "text": "Esq Foreleg 5"
+ },
+ "Esq Pistol Debuff 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Esq Pistol 减益 1"
+ },
+ "Esq Pistol Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Esq Pistol 减益 3"
+ },
+ "Esq Pistol Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Esq Pistol 减益 5"
+ },
+ "Esq Push 1": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Esq Push 1"
+ },
+ "Esq Push 3": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Esq Push 3"
+ },
+ "Esq Push 5": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Esq Push 5"
+ },
+ "Esq Riposte 3": {
+  "icons": [
+   "riposte"
+  ],
+  "text": "Esq 反击 3"
+ },
+ "Esq Riposte 4": {
+  "icons": [
+   "riposte"
+  ],
+  "text": "Esq 反击 4"
+ },
+ "Esq Riposte 5": {
+  "icons": [
+   "riposte"
+  ],
+  "text": "Esq 反击 5"
+ },
+ "Esq Stress 1": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Esq 压力 1"
+ },
+ "Esq Stress 3": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Esq 压力 3"
+ },
+ "Esq Stress 5": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Esq 压力 5"
+ },
+ "Fanatic Damage Marked Target": {
+  "icons": [
+   "extra-damage-vs-marked"
+  ],
+  "text": "Fanatic 伤害 被标记 目标"
+ },
+ "Fanatic Stress AOE": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Fanatic 压力 AOE"
+ },
+ "Fanatic Stress Big": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Fanatic 压力 Big"
+ },
+ "Fanatic Stress Crush": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Fanatic 压力 Crush"
+ },
+ "Fanatic Stress DOT": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Fanatic 压力 DOT"
+ },
+ "Fanatic Stun 1": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Fanatic 眩晕 1"
+ },
+ "Farmer Blight 1": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Farmer 腐蚀 1"
+ },
+ "Farmer Blight 2": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Farmer 腐蚀 2"
+ },
+ "Farmer Blight 3": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Farmer 腐蚀 3"
+ },
+ "Farmer Riposte On": {
+  "icons": [
+   "riposte"
+  ],
+  "text": "Farmer 反击 On"
+ },
+ "Farmer Speed 1": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Farmer Speed 1"
+ },
+ "Farmer Speed 2": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Farmer Speed 2"
+ },
+ "Farmer Speed 3": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Farmer Speed 3"
+ },
+ "FarmerHeal 1": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Farmer治疗 1"
+ },
+ "FarmerHeal 2": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Farmer治疗 2"
+ },
+ "FarmerHeal 3": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Farmer治疗 3"
+ },
+ "Feed Stress Beast": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Feed 压力 Beast"
+ },
+ "Feed Stress Human": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Feed 压力 Human"
+ },
+ "Fine Pairing Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Fine Pairing 压力"
+ },
+ "Flawed Stun": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Flawed 眩晕"
+ },
+ "Flushed Recovery Buff": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Flushed Recovery 增益"
+ },
+ "Foreman Blt Duration Inc": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Foreman Blt Duration Inc"
+ },
+ "Fungal Disease": {
+  "icons": [
+   "disease"
+  ],
+  "text": "Fungal 疾病"
+ },
+ "Fungal Mark Debuff 1": {
+  "icons": [
+   "mark",
+   "debuff"
+  ],
+  "text": "Fungal 标记 减益 1"
+ },
+ "Fungal Mark Debuff 3": {
+  "icons": [
+   "mark",
+   "debuff"
+  ],
+  "text": "Fungal 标记 减益 3"
+ },
+ "Fungal Mark Debuff 5": {
+  "icons": [
+   "mark",
+   "debuff"
+  ],
+  "text": "Fungal 标记 减益 5"
+ },
+ "Fusilier Blanket Debuff 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Fusilier Blanket 减益 1"
+ },
+ "Fusilier Blanket Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Fusilier Blanket 减益 3"
+ },
+ "Fusilier Blanket Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Fusilier Blanket 减益 5"
+ },
+ "Fusilier Blanket Debuff 6": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Fusilier Blanket 减益 6"
+ },
+ "Gargoyle Flurry Shuffle 3": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Gargoyle Flurry 打乱 3"
+ },
+ "Gargoyle Flurry Shuffle 5": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Gargoyle Flurry 打乱 5"
+ },
+ "Gargoyle Lash Push 1B": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Gargoyle Lash Push 1B"
+ },
+ "Gargoyle Lash Push 1C": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Gargoyle Lash Push 1C"
+ },
+ "Ghoul Rend Debuff 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Ghoul Rend 减益 1"
+ },
+ "Ghoul Rend Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Ghoul Rend 减益 3"
+ },
+ "Ghoul Rend Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Ghoul Rend 减益 5"
+ },
+ "Ghoul Skull Stun 3": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Ghoul Skull 眩晕 3"
+ },
+ "Ghoul Skull Stun 5": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Ghoul Skull 眩晕 5"
+ },
+ "Ghoul Stress DOT": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Ghoul 压力 DOT"
+ },
+ "Giant Spore Debuff 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Giant Spore 减益 1"
+ },
+ "Giant Spore Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Giant Spore 减益 3"
+ },
+ "Giant Spore Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Giant Spore 减益 5"
+ },
+ "Gibbering Buff 1": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Gibbering 增益 1"
+ },
+ "Gibbering Buff 2": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Gibbering 增益 2"
+ },
+ "Gibbering Buff 3": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Gibbering 增益 3"
+ },
+ "Grouper Pull 1B": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Grouper 拉拽 1B"
+ },
+ "Grouper Pull 1C": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Grouper 拉拽 1C"
+ },
+ "Guard 1": {
+  "icons": [
+   "guard"
+  ],
+  "text": "守护 1"
+ },
+ "Hag Season": {
+  "icons": [],
+  "text": "Hag Season"
+ },
+ "HagHeal 1": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Hag治疗 1"
+ },
+ "HagHeal 3": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Hag治疗 3"
+ },
+ "HagHeal 5": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Hag治疗 5"
+ },
+ "Hands Off": {
+  "icons": [],
+  "text": "Hands Off"
+ },
+ "Head Buff 1": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Head 增益 1"
+ },
+ "HeadDefend 1": {
+  "icons": [
+   "guard"
+  ],
+  "text": "HeadDefend 1"
+ },
+ "Heal Recd Debuff A": {
+  "icons": [
+   "heal",
+   "debuff"
+  ],
+  "text": "治疗 Recd 减益 A"
+ },
+ "Heal Recd Debuff B": {
+  "icons": [
+   "heal",
+   "debuff"
+  ],
+  "text": "治疗 Recd 减益 B"
+ },
+ "Heal Recd Debuff C": {
+  "icons": [
+   "heal",
+   "debuff"
+  ],
+  "text": "治疗 Recd 减益 C"
+ },
+ "Heart Bleed": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Heart 流血"
+ },
+ "Heart Blight": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Heart 腐蚀"
+ },
+ "Heart Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Heart 压力"
+ },
+ "Heart Stress Rider": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Heart 压力 Rider"
+ },
+ "Heart Stun": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Heart 眩晕"
+ },
+ "Hive ACC Debuff 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Hive 命中 减益 1"
+ },
+ "Hive ACC Debuff 2": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Hive 命中 减益 2"
+ },
+ "Hive ACC Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Hive 命中 减益 3"
+ },
+ "Hive Stress 1": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Hive 压力 1"
+ },
+ "Hive Stress 2": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Hive 压力 2"
+ },
+ "Hive Stress 3": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Hive 压力 3"
+ },
+ "Holy Mark 1": {
+  "icons": [
+   "mark"
+  ],
+  "text": "Holy 标记 1"
+ },
+ "Horse Horror A": {
+  "icons": [
+   "horror"
+  ],
+  "text": "Horse 恐怖 A"
+ },
+ "Horse Horror B": {
+  "icons": [
+   "horror"
+  ],
+  "text": "Horse 恐怖 B"
+ },
+ "Horse Horror C": {
+  "icons": [
+   "horror"
+  ],
+  "text": "Horse 恐怖 C"
+ },
+ "Hungry Eyes Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Hungry Eyes 压力"
+ },
+ "Inject Self Damage": {
+  "icons": [],
+  "text": "Inject 自身: 伤害"
+ },
+ "Jellyfish Disease": {
+  "icons": [
+   "disease"
+  ],
+  "text": "Jellyfish 疾病"
+ },
+ "Jellyfish Gouge Debuff 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Jellyfish Gouge 减益 1"
+ },
+ "Jellyfish Gouge Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Jellyfish Gouge 减益 3"
+ },
+ "Jellyfish Gouge Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Jellyfish Gouge 减益 5"
+ },
+ "Jellyfish Shock Debuff 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Jellyfish Shock 减益 1"
+ },
+ "Jellyfish Shock Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Jellyfish Shock 减益 3"
+ },
+ "Jellyfish Shock Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Jellyfish Shock 减益 5"
+ },
+ "Lifesteal Mark": {
+  "icons": [
+   "mark"
+  ],
+  "text": "Lifesteal 标记"
+ },
+ "MadMan Stress Debuff 1": {
+  "icons": [
+   "stress",
+   "debuff"
+  ],
+  "text": "MadMan 压力 减益 1"
+ },
+ "MadMan Stress Debuff 3": {
+  "icons": [
+   "stress",
+   "debuff"
+  ],
+  "text": "MadMan 压力 减益 3"
+ },
+ "MadMan Stress Debuff 5": {
+  "icons": [
+   "stress",
+   "debuff"
+  ],
+  "text": "MadMan 压力 减益 5"
+ },
+ "Madman AOE Stress 1": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Madman AOE 压力 1"
+ },
+ "Madman AOE Stress 2": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Madman AOE 压力 2"
+ },
+ "Madman Horror 1": {
+  "icons": [
+   "horror"
+  ],
+  "text": "Madman 恐怖 1"
+ },
+ "Madman Horror 2": {
+  "icons": [
+   "horror"
+  ],
+  "text": "Madman 恐怖 2"
+ },
+ "Madman Snipe Stress 1": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Madman Snipe 压力 1"
+ },
+ "Maggot Disease": {
+  "icons": [
+   "disease"
+  ],
+  "text": "Maggot 疾病"
+ },
+ "MaggotStress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Maggot压力"
+ },
+ "MaggotStun 1": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Maggot眩晕 1"
+ },
+ "MaggotStun 2": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Maggot眩晕 2"
+ },
+ "MaggotStun 3": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Maggot眩晕 3"
+ },
+ "Many Hands Prot Buff A": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Many Hands Prot 增益 A"
+ },
+ "Many Hands Prot Buff B": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Many Hands Prot 增益 B"
+ },
+ "Mark Target": {
+  "icons": [
+   "mark"
+  ],
+  "text": "标记 目标"
+ },
+ "Midnight Minuet 1": {
+  "icons": [],
+  "text": "Midnight Minuet 1"
+ },
+ "Midnight Minuet 2": {
+  "icons": [],
+  "text": "Midnight Minuet 2"
+ },
+ "Midnight Minuet 3": {
+  "icons": [],
+  "text": "Midnight Minuet 3"
+ },
+ "Midnight Minuet Buff 1": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Midnight Minuet 增益 1"
+ },
+ "Midnight Minuet Buff 2": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Midnight Minuet 增益 2"
+ },
+ "Midnight Minuet Buff 3": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Midnight Minuet 增益 3"
+ },
+ "Midnight Minuet Debuff 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Midnight Minuet 减益 1"
+ },
+ "Midnight Minuet Debuff 2": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Midnight Minuet 减益 2"
+ },
+ "Midnight Minuet Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Midnight Minuet 减益 3"
+ },
+ "Miller HealSelf A": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Miller 治疗自身: A"
+ },
+ "Miller HealSelf B": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Miller 治疗自身: B"
+ },
+ "Miller HealSelf C": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Miller 治疗自身: C"
+ },
+ "Miller HealStress 3": {
+  "icons": [
+   "stress-heal"
+  ],
+  "text": "Miller 治疗压力 3"
+ },
+ "Miller HealStress 5": {
+  "icons": [
+   "stress-heal"
+  ],
+  "text": "Miller 治疗压力 5"
+ },
+ "Miller HealStress 7": {
+  "icons": [
+   "stress-heal"
+  ],
+  "text": "Miller 治疗压力 7"
+ },
+ "Minor Bleed 1": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "轻度 流血 1"
+ },
+ "Minor Bleed 3": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "轻度 流血 3"
+ },
+ "Minor Bleed 5": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "轻度 流血 5"
+ },
+ "Molt Heal 1": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Molt 治疗 1"
+ },
+ "Molt Heal 3": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Molt 治疗 3"
+ },
+ "Molt Heal 5": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Molt 治疗 5"
+ },
+ "Molt Stacking Buff": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Molt Stacking 增益"
+ },
+ "MultiStun 1": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Multi眩晕 1"
+ },
+ "MultiStun 3": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Multi眩晕 3"
+ },
+ "MultiStun 5": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Multi眩晕 5"
+ },
+ "NecroSummon 1": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "Necro召唤 1"
+ },
+ "NecroSummon 2": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "Necro召唤 2"
+ },
+ "NecroSummon 3": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "Necro召唤 3"
+ },
+ "Octo Guard 1": {
+  "icons": [
+   "guard"
+  ],
+  "text": "Octo 守护 1"
+ },
+ "OctoDefend 1": {
+  "icons": [
+   "guard"
+  ],
+  "text": "OctoDefend 1"
+ },
+ "On Death Swap": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "On Death 换位"
+ },
+ "Orgiastic Guard": {
+  "icons": [
+   "guard"
+  ],
+  "text": "Orgiastic 守护"
+ },
+ "Parasite Egg Inject": {
+  "icons": [],
+  "text": "Parasite Egg Inject"
+ },
+ "Piggie Mark": {
+  "icons": [
+   "mark"
+  ],
+  "text": "Piggie 标记"
+ },
+ "Pod AOE Blight": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Pod AOE 腐蚀"
+ },
+ "Prophet Stress 1": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Prophet 压力 1"
+ },
+ "Prophet Vomit 1": {
+  "icons": [],
+  "text": "Prophet Vomit 1"
+ },
+ "Prophet Vomit 2": {
+  "icons": [],
+  "text": "Prophet Vomit 2"
+ },
+ "Prophet Vomit 3": {
+  "icons": [],
+  "text": "Prophet Vomit 3"
+ },
+ "Pull 2A": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "拉拽 2A"
+ },
+ "Pull 2C": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "拉拽 2C"
+ },
+ "Pull 2E": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "拉拽 2E"
+ },
+ "Pull 2F": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "拉拽 2F"
+ },
+ "Pull 3A": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "拉拽 3A"
+ },
+ "Pull 3C": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "拉拽 3C"
+ },
+ "Pull 3E": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "拉拽 3E"
+ },
+ "Push 1A": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Push 1A"
+ },
+ "Push 1C": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Push 1C"
+ },
+ "Push 1E": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Push 1E"
+ },
+ "Push 1F": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Push 1F"
+ },
+ "Push 2A": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Push 2A"
+ },
+ "Push 2C": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Push 2C"
+ },
+ "Push 2E": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Push 2E"
+ },
+ "Push 2F": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Push 2F"
+ },
+ "Push 3A": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Push 3A"
+ },
+ "Push 3A Swinetaur": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Push 3A Swinetaur"
+ },
+ "Push 3C": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Push 3C"
+ },
+ "Push 3C Swinetaur": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Push 3C Swinetaur"
+ },
+ "Push 3E": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Push 3E"
+ },
+ "Push 3E Swinetaur": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Push 3E Swinetaur"
+ },
+ "Rabble Bump Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Rabble Bump 减益 3"
+ },
+ "Rabble Bump Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Rabble Bump 减益 5"
+ },
+ "Rabies": {
+  "icons": [
+   "disease"
+  ],
+  "text": "狂犬病"
+ },
+ "Rank Target Enemy 1": {
+  "icons": [],
+  "text": "Rank 目标 Enemy 1"
+ },
+ "Rattler Bleed 1": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Rattler 流血 1"
+ },
+ "Rattler Bleed 3": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Rattler 流血 3"
+ },
+ "Rattler Bleed 5": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Rattler 流血 5"
+ },
+ "Rattler Riposte": {
+  "icons": [
+   "riposte"
+  ],
+  "text": "Rattler 反击"
+ },
+ "Reaver Ball Push 1A": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Reaver Ball Push 1A"
+ },
+ "Reaver Ball Push 1B": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Reaver Ball Push 1B"
+ },
+ "Reaver Ball Push 1C": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Reaver Ball Push 1C"
+ },
+ "Reaver Cut Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Reaver Cut 减益 3"
+ },
+ "Reaver Cut Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Reaver Cut 减益 5"
+ },
+ "Revenant Acc Debuff A": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Revenant Acc 减益 A"
+ },
+ "Revenant Acc Debuff B": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Revenant Acc 减益 B"
+ },
+ "Revenant Acc Debuff C": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Revenant Acc 减益 C"
+ },
+ "Revenant Random Target 1": {
+  "icons": [],
+  "text": "Revenant Random 目标 1"
+ },
+ "Revenant Random Target 3": {
+  "icons": [],
+  "text": "Revenant Random 目标 3"
+ },
+ "Revenant Random Target 5": {
+  "icons": [],
+  "text": "Revenant Random 目标 5"
+ },
+ "Righteous Buff 1": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Righteous 增益 1"
+ },
+ "Sapper Guard": {
+  "icons": [
+   "guard"
+  ],
+  "text": "Sapper 守护"
+ },
+ "Sapper Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Sapper 压力"
+ },
+ "Sapper Summon Barrel": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "Sapper 召唤 Barrel"
+ },
+ "Sapper Summon Brigand Guaranteed": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "Sapper 召唤 Brigand Guaranteed"
+ },
+ "Sapper Summon Brigand High Chance": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "Sapper 召唤 Brigand High Chance"
+ },
+ "Sapper Summon Brigand Low Chance": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "Sapper 召唤 Brigand Low Chance"
+ },
+ "Scare Horror AOE 1": {
+  "icons": [
+   "horror"
+  ],
+  "text": "Scare 恐怖 AOE 1"
+ },
+ "Scare Horror AOE 2": {
+  "icons": [
+   "horror"
+  ],
+  "text": "Scare 恐怖 AOE 2"
+ },
+ "Scare Horror AOE 3": {
+  "icons": [
+   "horror"
+  ],
+  "text": "Scare 恐怖 AOE 3"
+ },
+ "Scarecrow Acc Debuff C": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Scarecrow Acc 减益 C"
+ },
+ "Scarecrow Party Regen": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Scarecrow 全体 回复"
+ },
+ "Scarecrow Spd Debuff C": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Scarecrow Spd 减益 C"
+ },
+ "Self Speed 2": {
+  "icons": [
+   "buff"
+  ],
+  "text": "自身: Speed 2"
+ },
+ "Self Speed 3": {
+  "icons": [
+   "buff"
+  ],
+  "text": "自身: Speed 3"
+ },
+ "Self Speed 4": {
+  "icons": [
+   "buff"
+  ],
+  "text": "自身: Speed 4"
+ },
+ "Served Rare Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Served Rare 压力"
+ },
+ "ShamblerBleed 1": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Shambler流血 1"
+ },
+ "ShamblerBleed 2": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Shambler流血 2"
+ },
+ "ShamblerBleed 3": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Shambler流血 3"
+ },
+ "ShamblerBleed 4": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Shambler流血 4"
+ },
+ "ShamblerBlight 1": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Shambler腐蚀 1"
+ },
+ "ShamblerBlight 2": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Shambler腐蚀 2"
+ },
+ "ShamblerBlight 3": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Shambler腐蚀 3"
+ },
+ "ShamblerBlight 4": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Shambler腐蚀 4"
+ },
+ "Shroom Summon A": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "Shroom 召唤 A"
+ },
+ "Shroom Summon B": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "Shroom 召唤 B"
+ },
+ "Shroom Summon C": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "Shroom 召唤 C"
+ },
+ "Shrouded AOE Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Shrouded AOE 压力"
+ },
+ "Shrouded Bleed Debuff": {
+  "icons": [
+   "bleed",
+   "debuff"
+  ],
+  "text": "Shrouded 流血 减益"
+ },
+ "Shrouded Pierce Bleed": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Shrouded Pierce 流血"
+ },
+ "Shrouded Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Shrouded 压力"
+ },
+ "Shuffle Party 1": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "打乱 全体 1"
+ },
+ "Shuffle Party 2": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "打乱 全体 2"
+ },
+ "Shuffle Party 3": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "打乱 全体 3"
+ },
+ "Shuffle Party 4": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "打乱 全体 4"
+ },
+ "Shuffle Party 5": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "打乱 全体 5"
+ },
+ "Shuffle Self": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "打乱 自身:"
+ },
+ "Shuffler Bleed": {
+  "icons": [
+   "bleed",
+   "move-knockback"
+  ],
+  "text": "打乱r 流血"
+ },
+ "Shuffler Shuffle Party": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "打乱r 打乱 全体"
+ },
+ "Skeleton Defend 1": {
+  "icons": [
+   "guard"
+  ],
+  "text": "Skeleton Defend 1"
+ },
+ "Skeleton Guard 1": {
+  "icons": [
+   "guard"
+  ],
+  "text": "Skeleton 守护 1"
+ },
+ "Skewering AOE Bleed 1": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Skewering AOE 流血 1"
+ },
+ "Skewering AOE Bleed 3": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Skewering AOE 流血 3"
+ },
+ "Skewering AOE Bleed 5": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Skewering AOE 流血 5"
+ },
+ "Slasher Hook Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Slasher Hook 减益 3"
+ },
+ "Slasher Hook Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Slasher Hook 减益 5"
+ },
+ "Slow Hero Spd": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "减速 Hero Spd"
+ },
+ "Small Ecto Slime Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Small Ecto Slime 减益 3"
+ },
+ "Small Ecto Slime Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Small Ecto Slime 减益 5"
+ },
+ "SmallDmg Marked Target": {
+  "icons": [
+   "extra-damage-vs-marked"
+  ],
+  "text": "SmallDmg 被标记 目标"
+ },
+ "Snail Debuff 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Snail 减益 1"
+ },
+ "Snail Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Snail 减益 3"
+ },
+ "Snail Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Snail 减益 5"
+ },
+ "Snail Disease": {
+  "icons": [
+   "disease"
+  ],
+  "text": "Snail 疾病"
+ },
+ "Snake Defend 1": {
+  "icons": [
+   "guard"
+  ],
+  "text": "Snake Defend 1"
+ },
+ "Snake Guard 1": {
+  "icons": [
+   "guard"
+  ],
+  "text": "Snake 守护 1"
+ },
+ "Spearman Thrust Push 1A": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Spearman Thrust Push 1A"
+ },
+ "Spearman Thrust Push 1B": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Spearman Thrust Push 1B"
+ },
+ "Spearman Thrust Push 1C": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Spearman Thrust Push 1C"
+ },
+ "Spire Stun": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Spire 眩晕"
+ },
+ "Spitter Spit Debuff 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Spitter Spit 减益 1"
+ },
+ "Spitter Spit Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Spitter Spit 减益 3"
+ },
+ "Spitter Spit Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Spitter Spit 减益 5"
+ },
+ "Squeal Stun 1": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Squeal 眩晕 1"
+ },
+ "Squeal Stun 3": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Squeal 眩晕 3"
+ },
+ "Squeal Stun 5": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Squeal 眩晕 5"
+ },
+ "Stake Bleed 1": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Stake 流血 1"
+ },
+ "Stake Kill Vamp": {
+  "icons": [
+   "instant-deathblow"
+  ],
+  "text": "Stake 击杀 Vamp"
+ },
+ "Stake Slow 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Stake 减速 1"
+ },
+ "Statue Stab Bleed": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Statue Stab 流血"
+ },
+ "Statue head prep buff": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Statue head prep buff"
+ },
+ "Stealth2": {
+  "icons": [
+   "stealth"
+  ],
+  "text": "隐匿2"
+ },
+ "Steward Human Guard": {
+  "icons": [
+   "guard"
+  ],
+  "text": "Steward Human 守护"
+ },
+ "Steward Prot Buff": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Steward Prot 增益"
+ },
+ "Steward Stress Buff 1": {
+  "icons": [
+   "stress",
+   "buff"
+  ],
+  "text": "Steward 压力 增益 1"
+ },
+ "Steward Stress Buff 2": {
+  "icons": [
+   "stress",
+   "buff"
+  ],
+  "text": "Steward 压力 增益 2"
+ },
+ "Steward Stress Buff 3": {
+  "icons": [
+   "stress",
+   "buff"
+  ],
+  "text": "Steward 压力 增益 3"
+ },
+ "Stress 1": {
+  "icons": [
+   "stress"
+  ],
+  "text": "压力 1"
+ },
+ "Stress 2": {
+  "icons": [
+   "stress"
+  ],
+  "text": "压力 2"
+ },
+ "Stress AOE DoT 1": {
+  "icons": [
+   "stress"
+  ],
+  "text": "压力 AOE DoT 1"
+ },
+ "Stress AOE DoT 2": {
+  "icons": [
+   "stress"
+  ],
+  "text": "压力 AOE DoT 2"
+ },
+ "Strong Stun 1": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Strong 眩晕 1"
+ },
+ "Strong Stun 3": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Strong 眩晕 3"
+ },
+ "Strong Stun 5": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Strong 眩晕 5"
+ },
+ "Stun 1": {
+  "icons": [
+   "stun"
+  ],
+  "text": "眩晕 1"
+ },
+ "Stun 2": {
+  "icons": [
+   "stun"
+  ],
+  "text": "眩晕 2"
+ },
+ "Stun 3": {
+  "icons": [
+   "stun"
+  ],
+  "text": "眩晕 3"
+ },
+ "Stun 4": {
+  "icons": [
+   "stun"
+  ],
+  "text": "眩晕 4"
+ },
+ "Stun 5": {
+  "icons": [
+   "stun"
+  ],
+  "text": "眩晕 5"
+ },
+ "Stun 6": {
+  "icons": [
+   "stun"
+  ],
+  "text": "眩晕 6"
+ },
+ "Summon Anchor 1": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Anchor 1"
+ },
+ "Summon Anchor 2": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Anchor 2"
+ },
+ "Summon Anchor 3": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Anchor 3"
+ },
+ "Summon Aquatic 1": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Aquatic 1"
+ },
+ "Summon Aquatic 2": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Aquatic 2"
+ },
+ "Summon Aquatic 3": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Aquatic 3"
+ },
+ "Summon Battle Head A": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Battle Head A"
+ },
+ "Summon Battle Head B": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Battle Head B"
+ },
+ "Summon Battle Head C": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Battle Head C"
+ },
+ "Summon Big Ecto 1": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Big Ecto 1"
+ },
+ "Summon Big Ecto 2": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Big Ecto 2"
+ },
+ "Summon Big Ecto 3": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Big Ecto 3"
+ },
+ "Summon Brigand 1": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Brigand 1"
+ },
+ "Summon Brigand 3": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Brigand 3"
+ },
+ "Summon Brigand 5": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Brigand 5"
+ },
+ "Summon Ecto 1": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Ecto 1"
+ },
+ "Summon Ecto 2": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Ecto 2"
+ },
+ "Summon Ecto 3": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Ecto 3"
+ },
+ "Summon Farmers B": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Farmers B"
+ },
+ "Summon Farmers C": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Farmers C"
+ },
+ "Summon Fuseman 1": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Fuseman 1"
+ },
+ "Summon Fuseman 3": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Fuseman 3"
+ },
+ "Summon Fuseman 5": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Fuseman 5"
+ },
+ "Summon Heads A2": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Heads A2"
+ },
+ "Summon Heads A3": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Heads A3"
+ },
+ "Summon Heads B2": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Heads B2"
+ },
+ "Summon Heads B3": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Heads B3"
+ },
+ "Summon Heads C2": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Heads C2"
+ },
+ "Summon Heads C3": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Heads C3"
+ },
+ "Summon Kyle 1": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Kyle 1"
+ },
+ "Summon Kyle 3": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Kyle 3"
+ },
+ "Summon Kyle 5": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Kyle 5"
+ },
+ "Summon Revenant B": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Revenant B"
+ },
+ "Summon Revenant C": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Revenant C"
+ },
+ "Summon Scarecrow B": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Scarecrow B"
+ },
+ "Summon Scarecrow C": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Scarecrow C"
+ },
+ "Summon Shrouded": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Shrouded"
+ },
+ "Summon Whitecell": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤 Whitecell"
+ },
+ "SummonTentacle A": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤Tentacle A"
+ },
+ "SummonTentacle B": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤Tentacle B"
+ },
+ "SummonTentacle C": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤Tentacle C"
+ },
+ "SummonTentacle E": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "召唤Tentacle E"
+ },
+ "Swinetaur Backhand Stun 1": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Swinetaur Backhand 眩晕 1"
+ },
+ "Swinetaur Backhand Stun 3": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Swinetaur Backhand 眩晕 3"
+ },
+ "Swinetaur Backhand Stun 5": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Swinetaur Backhand 眩晕 5"
+ },
+ "Syco Stun 1": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Syco 眩晕 1"
+ },
+ "Syco Stun 3": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Syco 眩晕 3"
+ },
+ "Syco Stun 5": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Syco 眩晕 5"
+ },
+ "Syco Stun Buff 1": {
+  "icons": [
+   "stun",
+   "buff"
+  ],
+  "text": "Syco 眩晕 增益 1"
+ },
+ "Syco Stun Buff 2": {
+  "icons": [
+   "stun",
+   "buff"
+  ],
+  "text": "Syco 眩晕 增益 2"
+ },
+ "Syco Stun Buff 3": {
+  "icons": [
+   "stun",
+   "buff"
+  ],
+  "text": "Syco 眩晕 增益 3"
+ },
+ "Syco Swap A": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Syco 换位 A"
+ },
+ "Syco Swap B": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Syco 换位 B"
+ },
+ "Syco Swap C": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Syco 换位 C"
+ },
+ "Syco Weak Stress 1": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Syco Weak 压力 1"
+ },
+ "Syco Weak Stress 3": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Syco Weak 压力 3"
+ },
+ "Syco Weak Stress 5": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Syco Weak 压力 5"
+ },
+ "Syco Whine Stress 1": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Syco Whine 压力 1"
+ },
+ "Syco Whine Stress 3": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Syco Whine 压力 3"
+ },
+ "Syco Whine Stress 5": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Syco Whine 压力 5"
+ },
+ "Templar AOE Blight": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Templar AOE 腐蚀"
+ },
+ "Templar Snipe Blight": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Templar Snipe 腐蚀"
+ },
+ "Templar Sting Blight": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Templar Sting 腐蚀"
+ },
+ "Templar Weaken": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Templar Weaken"
+ },
+ "TentacleBuffSelf": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Tentacle增益自身:"
+ },
+ "Thing Blight 1": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Thing 腐蚀 1"
+ },
+ "Thing Blight 3": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Thing 腐蚀 3"
+ },
+ "Thing Blight 5": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Thing 腐蚀 5"
+ },
+ "Thing Combat Debuffs 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Thing Combat 减益s 1"
+ },
+ "Thing Combat Debuffs 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Thing Combat 减益s 3"
+ },
+ "Thing Combat Debuffs 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Thing Combat 减益s 5"
+ },
+ "Thing Consume Self 1": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "Thing Consume 自身: 1"
+ },
+ "Thing Consume Self 3": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "Thing Consume 自身: 3"
+ },
+ "Thing Consume Self 5": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "Thing Consume 自身: 5"
+ },
+ "Thing Consume StressParty": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Thing Consume 压力全体"
+ },
+ "Thing Disease 1": {
+  "icons": [
+   "disease"
+  ],
+  "text": "Thing 疾病 1"
+ },
+ "Thing Disease 3": {
+  "icons": [
+   "disease"
+  ],
+  "text": "Thing 疾病 3"
+ },
+ "Thing Disease 5": {
+  "icons": [
+   "disease"
+  ],
+  "text": "Thing 疾病 5"
+ },
+ "Thing Dying Buffs 1": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Thing Dying 增益s 1"
+ },
+ "Thing Dying Buffs 3": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Thing Dying 增益s 3"
+ },
+ "Thing Dying Buffs 5": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Thing Dying 增益s 5"
+ },
+ "Thing Gnaw Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Thing Gnaw 压力"
+ },
+ "Thing Resist Debuffs 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Thing Resist 减益s 1"
+ },
+ "Thing Resist Debuffs 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Thing Resist 减益s 3"
+ },
+ "Thing Resist Debuffs 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Thing Resist 减益s 5"
+ },
+ "Thing Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Thing 压力"
+ },
+ "Thing Stun 1": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Thing 眩晕 1"
+ },
+ "Thing Stun 3": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Thing 眩晕 3"
+ },
+ "Thing Stun 5": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Thing 眩晕 5"
+ },
+ "Thing Vorpal Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Thing Vorpal 压力"
+ },
+ "Thrall Revenge Stress 1": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Thrall Revenge 压力 1"
+ },
+ "Thrall Revenge Stress 3": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Thrall Revenge 压力 3"
+ },
+ "Thrall Revenge Stress 5": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Thrall Revenge 压力 5"
+ },
+ "To Countess D": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "To Countess D"
+ },
+ "To Countess E": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "To Countess E"
+ },
+ "To Countess F": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "To Countess F"
+ },
+ "To Seed Black": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "To Seed Black"
+ },
+ "To Seed Grey": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "To Seed Grey"
+ },
+ "To Seed Purple": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "To Seed Purple"
+ },
+ "To Seed Red": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "To Seed Red"
+ },
+ "To Seed Yellow": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "To Seed Yellow"
+ },
+ "Tongue Hit": {
+  "icons": [],
+  "text": "Tongue Hit"
+ },
+ "Totem Bleed": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Totem 流血"
+ },
+ "Totem Bolster": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Totem Bolster"
+ },
+ "Totem Defend": {
+  "icons": [
+   "guard"
+  ],
+  "text": "Totem Defend"
+ },
+ "Totem Guard": {
+  "icons": [
+   "guard"
+  ],
+  "text": "Totem 守护"
+ },
+ "Totem Stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Totem 压力"
+ },
+ "Totem Stun": {
+  "icons": [
+   "stun"
+  ],
+  "text": "Totem 眩晕"
+ },
+ "Turbo Cultist Bleed": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Turbo Cultist 流血"
+ },
+ "Turbo Cultist Rend Debuff": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Turbo Cultist Rend 减益"
+ },
+ "Turbo Mark": {
+  "icons": [
+   "mark"
+  ],
+  "text": "Turbo 标记"
+ },
+ "Vis Shuffle Self": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Vis 打乱 自身:"
+ },
+ "Viscount Absorb Effect": {
+  "icons": [],
+  "text": "Viscount Absorb Effect"
+ },
+ "Viscount Acc Buff": {
+  "icons": [
+   "buff"
+  ],
+  "text": "Viscount Acc 增益"
+ },
+ "Viscount Bleed": {
+  "icons": [
+   "bleed"
+  ],
+  "text": "Viscount 流血"
+ },
+ "Viscount Feed Average Heal": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Viscount Feed Average 治疗"
+ },
+ "Viscount Feed Bloated Heal": {
+  "icons": [
+   "heal"
+  ],
+  "text": "Viscount Feed Bloated 治疗"
+ },
+ "Viscount Init Sub 1": {
+  "icons": [],
+  "text": "Viscount Init Sub 1"
+ },
+ "Viscount Init Sub 2": {
+  "icons": [],
+  "text": "Viscount Init Sub 2"
+ },
+ "Viscount Push": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "Viscount Push"
+ },
+ "Vomit Disease": {
+  "icons": [
+   "disease"
+  ],
+  "text": "Vomit 疾病"
+ },
+ "Vulnerability Curse 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Vulnerability 诅咒 1"
+ },
+ "Vulnerability Curse 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Vulnerability 诅咒 3"
+ },
+ "Vulnerability Curse 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Vulnerability 诅咒 5"
+ },
+ "Weak Blight 1": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Weak 腐蚀 1"
+ },
+ "Weak Blight 3": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Weak 腐蚀 3"
+ },
+ "Weak Blight 5": {
+  "icons": [
+   "blight"
+  ],
+  "text": "Weak 腐蚀 5"
+ },
+ "Weakening Curse 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "削弱 诅咒 1"
+ },
+ "Weakening Curse 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "削弱 诅咒 3"
+ },
+ "Weakening Curse 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "削弱 诅咒 5"
+ },
+ "Webber Web Debuff 1": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Webber Web 减益 1"
+ },
+ "Webber Web Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Webber Web 减益 3"
+ },
+ "Webber Web Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Webber Web 减益 5"
+ },
+ "Wicked Surge": {
+  "icons": [],
+  "text": "Wicked Surge"
+ },
+ "Witch Eldritch Stress 3": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Witch Eldritch 压力 3"
+ },
+ "Witch Eldritch Stress 5": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Witch Eldritch 压力 5"
+ },
+ "Witch Incantation Mark": {
+  "icons": [
+   "mark"
+  ],
+  "text": "Witch Incantation 标记"
+ },
+ "Witch Incantation Stress 3": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Witch Incantation 压力 3"
+ },
+ "Witch Incantation Stress 5": {
+  "icons": [
+   "stress"
+  ],
+  "text": "Witch Incantation 压力 5"
+ },
+ "Worry": {
+  "icons": [],
+  "text": "Worry"
+ },
+ "Wretch Vomit Debuff 3": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Wretch Vomit 减益 3"
+ },
+ "Wretch Vomit Debuff 5": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "Wretch Vomit 减益 5"
+ },
+ "baron_change_to_curtain": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "baron_change_to_curtain"
+ },
+ "black seed heal debuff": {
+  "icons": [
+   "heal",
+   "debuff"
+  ],
+  "text": "black seed heal debuff"
+ },
+ "black seed horror": {
+  "icons": [
+   "horror"
+  ],
+  "text": "black seed horror"
+ },
+ "clear_riposte_performer": {
+  "icons": [
+   "riposte"
+  ],
+  "text": "clear_riposte_performer"
+ },
+ "countess_flushed_debuff": {
+  "icons": [
+   "debuff"
+  ],
+  "text": "countess_flushed_debuff"
+ },
+ "galaxy blight": {
+  "icons": [
+   "blight"
+  ],
+  "text": "galaxy blight"
+ },
+ "galaxy horror": {
+  "icons": [
+   "horror"
+  ],
+  "text": "galaxy horror"
+ },
+ "galaxy stress": {
+  "icons": [
+   "stress"
+  ],
+  "text": "galaxy stress"
+ },
+ "grind bark": {
+  "icons": [],
+  "text": "grind bark"
+ },
+ "grow_seedling_black": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "grow_seedling_black"
+ },
+ "grow_seedling_grey": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "grow_seedling_grey"
+ },
+ "grow_seedling_purple": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "grow_seedling_purple"
+ },
+ "grow_seedling_red": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "grow_seedling_red"
+ },
+ "grow_seedling_yellow": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "grow_seedling_yellow"
+ },
+ "harvest stress A": {
+  "icons": [
+   "stress"
+  ],
+  "text": "harvest stress A"
+ },
+ "instant_shuffle": {
+  "icons": [
+   "move-knockback"
+  ],
+  "text": "instant_shuffle"
+ },
+ "kill_performer_group_other": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "kill_performer_group_other"
+ },
+ "kill_self": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "kill_self"
+ },
+ "kill_self_queued": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "kill_self_queued"
+ },
+ "kill_target": {
+  "icons": [
+   "instant-deathblow"
+  ],
+  "text": "kill_target"
+ },
+ "miller grief A": {
+  "icons": [],
+  "text": "miller grief A"
+ },
+ "miller grief B": {
+  "icons": [],
+  "text": "miller grief B"
+ },
+ "miller grief C": {
+  "icons": [],
+  "text": "miller grief C"
+ },
+ "miller stress resist": {
+  "icons": [
+   "stress"
+  ],
+  "text": "miller stress resist"
+ },
+ "purple seed stun": {
+  "icons": [
+   "stun"
+  ],
+  "text": "purple seed stun"
+ },
+ "red seed attack heal": {
+  "icons": [
+   "heal"
+  ],
+  "text": "red seed attack heal"
+ },
+ "sadness bark": {
+  "icons": [],
+  "text": "sadness bark"
+ },
+ "siren_control 1": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "siren_control 1"
+ },
+ "siren_control 2": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "siren_control 2"
+ },
+ "siren_control 3": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "siren_control 3"
+ },
+ "spawn initial sprouts": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "spawn initial sprouts"
+ },
+ "spawn sprout": {
+  "icons": [
+   "summons-enemy"
+  ],
+  "text": "spawn sprout"
+ },
+ "switch_mode_beast_self": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "switch_mode_beast_self"
+ },
+ "switch_mode_land_self": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "switch_mode_land_self"
+ },
+ "switch_mode_normal": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "switch_mode_normal"
+ },
+ "switch_mode_offscreen_self": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "switch_mode_offscreen_self"
+ },
+ "switch_mode_onscreen_self": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "switch_mode_onscreen_self"
+ },
+ "switch_mode_pawing": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "switch_mode_pawing"
+ },
+ "switch_mode_submerged_self": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "switch_mode_submerged_self"
+ },
+ "xform coccoon A": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "xform coccoon A"
+ },
+ "xform coccoon B": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "xform coccoon B"
+ },
+ "xform coccoon C": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "xform coccoon C"
+ },
+ "xform to farmhand_A": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "xform to farmhand_A"
+ },
+ "xform to farmhand_B": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "xform to farmhand_B"
+ },
+ "xform to farmhand_C": {
+  "icons": [
+   "special-note"
+  ],
+  "text": "xform to farmhand_C"
+ },
+ "yellow seed blight": {
+  "icons": [
+   "blight"
+  ],
+  "text": "yellow seed blight"
+ }
+}

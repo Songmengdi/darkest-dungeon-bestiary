@@ -2,10 +2,11 @@
 import { computed, onMounted, onUnmounted, ref, watch } from "vue";
 import type { IndexFile, IndexMonster, MonsterDetail, Skill, Tier } from "../types";
 import {
-  LANG, RES_ITEMS, abilityOf, brainDesireLabel, displayNameOf, fmt, fxZh,
+  LANG, RES_ITEMS, abilityOf, brainDesireLabel, displayNameOf, fmt,
   liveTiers, lootEntryText, openLightbox, regionBadges, skillTypeZh, t,
 } from "../data";
-import { fxIconSrc, fxIconTitle, fxIconsFor } from "../fxicons";
+import { fxIconSrc, fxIconTitle } from "../fxicons";
+import { interpretEffect } from "../effect";
 import RankCells from "./RankCells.vue";
 
 const props = defineProps<{
@@ -34,7 +35,10 @@ function skillChips(s: Skill): Array<{ text: string; fx?: boolean; b?: string; i
   if (s.atk) chips.push({ text: `${t("命中", "ACC")} `, b: fmt(s.atk) });
   if (s.dmg && s.dmg !== "—") chips.push({ text: `${t("伤害", "DMG")} `, b: String(s.dmg) });
   if (s.crit && s.crit !== "0%") chips.push({ text: `${t("暴击", "CRIT")} `, b: String(s.crit) });
-  for (const f of s.effects) chips.push({ text: fxZh(f), fx: true, icons: fxIconsFor(f) });
+  for (const f of s.effects) {
+    const v = interpretEffect(f);
+    chips.push({ text: v.text, fx: true, icons: v.icons });
+  }
   return chips;
 }
 
