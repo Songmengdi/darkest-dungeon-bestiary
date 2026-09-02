@@ -7,7 +7,7 @@
 
 双击 `DD1SaveManager.exe`：
 
-- **存档根目录**：默认 `D:\software\steam\userdata\923728202\262060\remote`，可改，设置保存在 exe 旁的 `settings.json`。
+- **存档根目录**：首次运行请指向你的 Steam 存档目录，形如 `C:\Program Files (x86)\Steam\userdata\<SteamID3>\262060\remote`（`<SteamID3>` 换成你的 SteamID3），可改，设置保存在 exe 旁的 `settings.json`。
 - **备份目录**：默认 exe 旁的 `backups\`。
 - 左侧列出所有 `profile_N` 插槽（本机现有 profile_0/1/3/4，即 4 个存档位）。
 - 选中插槽后可 **备份**（可填备注）、**全部插槽备份**；右侧列表可 **恢复 / 删除 / 双击打开备份文件夹**。

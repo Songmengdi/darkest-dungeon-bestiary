@@ -9,6 +9,10 @@ dist/
 # 小体积的 public/data/(生成 JSON)保留跟踪,便于 diff 数据变化
 bestiary/public/img/
 
+# DD1SaveManager 运行时文件(用户本机设置与存档备份,含个人路径)
+DD1SaveManager/settings.json
+DD1SaveManager/backups/
+
 # 临时与系统文件
 *.log
 .tmp*/

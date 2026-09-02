@@ -22,7 +22,7 @@ namespace DD1SaveManager
         public static AppSettings Load()
         {
             var s = new AppSettings();
-            s.SaveRoot = @"D:\software\steam\userdata\923728202\262060\remote";
+            s.SaveRoot = @"C:\Program Files (x86)\Steam\userdata\<SteamID3>\262060\remote";
             s.BackupRoot = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "backups");
             s.KeepPerSlot = 20;
             s.PreBackupOnRestore = true;
