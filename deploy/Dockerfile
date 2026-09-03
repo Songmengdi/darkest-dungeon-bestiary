@@ -5,6 +5,8 @@ ARG NPM_REGISTRY=https://registry.npmjs.org
 COPY bestiary/package.json bestiary/package-lock.json ./
 RUN npm config set registry $NPM_REGISTRY && npm ci --no-audit --no-fund
 COPY bestiary/ .
+# 资产管线(images/ + enemies.json → public/img,回写 index.json 的 image 字段);public/img 不在 git,必须在镜像内生成
+RUN npm run build
 RUN npm run ui-build
 
 FROM nginx:alpine

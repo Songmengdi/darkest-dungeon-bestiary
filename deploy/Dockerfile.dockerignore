@@ -4,11 +4,9 @@
 !deploy
 bestiary/node_modules
 bestiary/dist
-bestiary/images
+bestiary/public/img
 bestiary/legacy-ui-vanilla
-bestiary/lib
 bestiary/tests
-bestiary/enemies.json
 bestiary/归档.zip
 bestiary/preview.png
 bestiary/*.md
