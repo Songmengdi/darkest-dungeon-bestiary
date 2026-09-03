@@ -51,6 +51,7 @@ npm run export     # 重新生成图鉴数据 → bestiary/public/data
 
 - [`CONTEXT.md`](CONTEXT.md) — 领域词汇表与模块地图(讨论/提交请用这里的词)
 - [`docs/adr/`](docs/adr/) — 架构决策记录 ADR-0001 ~ 0005
+- [`deploy/`](deploy/) — Docker 构建与部署(home03:8899),流程见 [deploy/README.md](deploy/README.md)
 
 ## 数据与图片来源说明
 
