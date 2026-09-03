@@ -30,6 +30,8 @@ jobs:
           context: .
           file: deploy/Dockerfile
           push: true
+          # ACR 旧版个人版不收 OCI attestation manifest(provenance 默认产物)
+          provenance: false
           tags: |
             ${{ env.IMAGE }}:latest
             ${{ env.IMAGE }}:sha-${{ env.SHORT_SHA }}
