@@ -3,6 +3,9 @@ name: docker-publish
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - '**.md'
+      - 'bestiary/preview.png'
   workflow_dispatch:
 
 env:
