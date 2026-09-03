@@ -1,0 +1,14 @@
+# 白名单:仅前端源码与部署配置进入构建上下文
+*
+!bestiary
+!deploy
+bestiary/node_modules
+bestiary/dist
+bestiary/images
+bestiary/legacy-ui-vanilla
+bestiary/lib
+bestiary/tests
+bestiary/enemies.json
+bestiary/归档.zip
+bestiary/preview.png
+bestiary/*.md

@@ -5,3 +5,6 @@ services:
     restart: unless-stopped
     ports:
       - "8899:80"
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
