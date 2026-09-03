@@ -10,6 +10,7 @@ const ROOT = path.resolve(
   process.env["BESTIARY_ROOT"] ?? "../public",
 );
 const PORT = Number(process.env["BESTIARY_PORT"] ?? 8899);
+const HOST = process.env["BESTIARY_HOST"] ?? "127.0.0.1";
 
 const MIME: Record<string, string> = {
   ".html": "text/html; charset=utf-8",
@@ -44,6 +45,6 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(PORT, "127.0.0.1", () => {
-  console.log(`怪物图鉴已启动: http://127.0.0.1:${PORT}`);
+server.listen(PORT, HOST, () => {
+  console.log(`怪物图鉴已启动: http://${HOST === "0.0.0.0" ? "127.0.0.1" : HOST}:${PORT}`);
 });
