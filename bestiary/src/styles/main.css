@@ -1,7 +1,18 @@
 /* ============================================================
- * 暗黑地牢 · 图鉴总集 —— 全局样式(明羊皮主题,定稿自原型变体 A)
- * 纸纤维纹理由内联 SVG feTurbulence 生成,无外部素材。
+ * 暗黑地牢 · 图鉴总集 —— 全局样式(明羊皮主题 · 实体素材版)
+ * 纸纹/毛边羊皮/皮革纹理来自 OpenGameArt 素材,毛笔字体为 OFL 开源:
+ *   - parchment-cover.jpg: "Old Parchment Paper" by cron (CC0),中心裁片做整页底
+ *   - paper-seamless.jpg: 同源照片经卷绕混接烘焙的无缝平铺纸纹(卡片填充)
+ *   - parchment-torn.png: 同作者的带透明毛边裁片(border-image 毛边框)
+ *   - leather.png: "Tileable Leather Texture" by p0ss (LGPL)
+ *   - Ma Shan Zheng 毛笔楷书 (SIL OFL)
  * ============================================================ */
+
+@font-face {
+  font-family: "Ma Shan Zheng";
+  src: url("../assets/fonts/MaShanZheng-Regular.ttf") format("truetype");
+  font-display: swap;
+}
 
 :root {
   --bg: #c8ad80;
@@ -13,35 +24,57 @@
   --line2: #b7956a;
   --gold: #7c4f1e;
   --gold-dim: #9a6c30;
+  --brass: #9a7434;
   --ink: #3a2a12;
   --muted: #77603c;
   --red: #8e2f26;
   --green: #5c7026;
+  --font-brush: "Ma Shan Zheng", "STKaiti", "KaiTi", "SimSun", serif;
   --font-title: "STKaiti", "KaiTi", "SimSun", serif;
   --font-body: "Microsoft YaHei UI", "Microsoft YaHei", "Segoe UI", sans-serif;
+  --tex-paper: url("../assets/tex/parchment-torn.png");
+  --tex-paper-tile: url("../assets/tex/paper-seamless.jpg");
+  --tex-sheet: url("../assets/tex/parchment-cover.jpg");
+  --tex-leather: url("../assets/tex/leather.png");
+  --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0.25 0 0 0 0 0.17 0 0 0 0 0.07 0 0 0 0.07 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 * { box-sizing: border-box; }
 
 html, body { margin: 0; padding: 0; }
 
+/* 页面底:陈年羊皮纸 —— 实拍纸纹叠底 + 固定污渍 + 细噪声 */
 body {
   background:
     radial-gradient(ellipse at 18% -5%, rgba(255, 246, 220, 0.55), transparent 55%),
-    radial-gradient(ellipse at 88% 108%, rgba(110, 74, 34, 0.3), transparent 60%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0.25 0 0 0 0 0.17 0 0 0 0 0.07 0 0 0 0.07 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E"),
-    var(--bg);
+    radial-gradient(430px 320px at 80% 16%, rgba(96, 64, 24, 0.09), transparent 70%),
+    radial-gradient(560px 420px at 8% 92%, rgba(96, 64, 24, 0.10), transparent 70%),
+    var(--tex-sheet) center / cover no-repeat,
+    var(--noise),
+    linear-gradient(180deg, #cdb287, #c3a67a);
+  background-attachment: fixed, fixed, fixed, fixed, scroll, scroll;
+  background-blend-mode: normal, normal, normal, multiply, normal, normal;
   color: var(--ink);
   font-family: var(--font-body);
   font-size: 14px;
   overflow: hidden;
 }
 
+/* 暗角:整幅固定,压住四边(低于弹层,不遮灯箱) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 4000;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 46%, transparent 55%, rgba(56, 35, 12, 0.20) 100%);
+}
+
 #app { height: 100vh; }
 
 ::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-thumb { background: #a5885c; border-radius: 5px; }
-::-webkit-scrollbar-track { background: #c0a67a; }
+::-webkit-scrollbar-thumb { background: #97794e; border-radius: 5px; border: 2px solid rgba(0, 0, 0, 0.06); }
+::-webkit-scrollbar-track { background: rgba(122, 94, 56, 0.25); }
 
 button { font-family: var(--font-body); }
 
@@ -70,10 +103,10 @@ button { font-family: var(--font-body); }
 }
 .bz-title {
   margin: 0;
-  font-family: var(--font-title);
-  font-size: 24px;
+  font-family: var(--font-brush);
+  font-size: 26px;
   letter-spacing: 6px;
-  color: #7c2a1e;
+  color: #6f251c;
   white-space: nowrap;
   text-shadow: 0 1px 0 rgba(255, 244, 214, 0.6);
 }
@@ -84,14 +117,23 @@ button { font-family: var(--font-body); }
 .bz-search {
   width: 240px;
   padding: 7px 12px;
-  background: rgba(255, 250, 232, 0.65);
-  border: 1px solid #a5854e;
+  background: #e9d6ae;
+  border: 1px solid #93743f;
   border-radius: 3px;
   color: var(--ink);
   outline: none;
+  box-shadow:
+    inset 0 2px 5px rgba(126, 92, 40, 0.28),
+    inset 0 0 0 1px rgba(255, 250, 230, 0.5);
 }
 .bz-search::placeholder { color: #967648; }
-.bz-search:focus { border-color: var(--gold); }
+.bz-search:focus {
+  border-color: var(--gold);
+  box-shadow:
+    inset 0 2px 5px rgba(126, 92, 40, 0.28),
+    inset 0 0 0 1px rgba(255, 250, 230, 0.5),
+    0 0 0 2px rgba(154, 116, 52, 0.18);
+}
 
 /* ---------- 副本页签:墨迹字 + 朱笔刷线 ---------- */
 .bz-tabs { display: flex; gap: 4px; overflow-x: auto; padding: 4px 22px 0; background: transparent; border-bottom: 1px solid var(--line2); scrollbar-width: none; }
@@ -102,7 +144,8 @@ button { font-family: var(--font-body); }
   border: none;
   border-bottom: 2px solid transparent;
   color: var(--muted);
-  font-size: 14px;
+  font-family: var(--font-title);
+  font-size: 15px;
   letter-spacing: 2px;
   padding: 9px 14px 10px;
   cursor: pointer;
@@ -118,16 +161,28 @@ button { font-family: var(--font-body); }
 
 /* ---------- 类型筛选 ---------- */
 .bz-filters { display: flex; flex-wrap: wrap; gap: 5px; padding: 9px 22px; background: rgba(120, 88, 44, 0.08); border-bottom: 1px solid var(--line2); }
+/* 筛选章:未选=淡纸签,选中=朱砂墨戳 */
 .bz-filter {
-  background: rgba(255, 248, 226, 0.5);
-  color: var(--muted);
-  border: 1px solid var(--line2);
-  border-radius: 10px;
-  padding: 2px 10px;
+  background: rgba(228, 205, 160, 0.5);
+  color: #52401f;
+  border: 1px solid #9a7a48;
+  border-radius: 999px;
+  padding: 2px 11px;
   font-size: 12px;
   cursor: pointer;
+  box-shadow: inset 0 0 0 1px rgba(255, 252, 240, 0.45);
+  transition: color 0.12s, background 0.12s, border-color 0.12s;
 }
-.bz-filter.on { color: #7c2a1e; border-color: var(--gold); }
+.bz-filter:hover { color: var(--ink); border-color: var(--gold); }
+.bz-filter.on {
+  color: #f6e9c8;
+  background: linear-gradient(180deg, #a03a2c, #7c2a1e);
+  border-color: #5d1f16;
+  text-shadow: 0 -1px 0 rgba(40, 12, 6, 0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 230, 180, 0.25),
+    0 1px 2px rgba(58, 42, 18, 0.35);
+}
 
 /* ---------- 卡片墙 ---------- */
 .bz-grid {
@@ -141,40 +196,62 @@ button { font-family: var(--font-body); }
 }
 .bz-empty { color: var(--muted); padding: 30px; grid-column: 1 / -1; text-align: center; }
 
-.bz-card {
+/* ---------- 图鉴卡:无缝纸纹 + 錾金双线框 + 铜钉角 ---------- */
+.bz-card,
+.cx-card {
   background:
-    radial-gradient(ellipse at 50% 28%, #f2e4bd 0%, #e6d3a4 75%),
-    var(--panel);
-  border: 1px solid var(--line);
+    radial-gradient(ellipse at 50% 22%, rgba(255, 249, 224, 0.5), transparent 60%),
+    var(--tex-paper-tile) 0 0 / 460px 345px repeat,
+    var(--noise),
+    linear-gradient(160deg, #eee0bd, #e2cd9d);
+  border: 1px solid #93743f;
   border-radius: 7px 11px 8px 12px / 12px 8px 11px 7px;
-  padding: 8px 8px 10px;
-  cursor: pointer;
   position: relative;
-  box-shadow: inset 0 0 0 1px rgba(255, 248, 224, 0.5), 0 3px 9px rgba(74, 52, 22, 0.35);
-  transition: transform 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease;
+  box-shadow:
+    inset 0 0 18px rgba(126, 92, 40, 0.18),
+    inset 0 0 0 1px rgba(255, 248, 224, 0.45),
+    0 3px 9px rgba(74, 52, 22, 0.35);
+  transition: transform 0.14s ease, border-color 0.14s ease, box-shadow 0.14s ease;
 }
-.bz-card::before {
+/* 内框:双錾线 + 四角铜钉 */
+.bz-card::after,
+.cx-card::after {
   content: "";
   position: absolute;
-  inset: 4px;
-  border: 1px dashed rgba(143, 111, 66, 0.55);
+  inset: 3px;
+  border: 1px solid rgba(122, 90, 42, 0.5);
   border-radius: 5px 9px 6px 10px / 10px 6px 9px 5px;
   pointer-events: none;
+  background:
+    radial-gradient(circle, var(--brass) 0 1.7px, rgba(154, 116, 52, 0) 2.3px) 6px 6px / 6px 6px no-repeat,
+    radial-gradient(circle, var(--brass) 0 1.7px, rgba(154, 116, 52, 0) 2.3px) calc(100% - 6px) 6px / 6px 6px no-repeat,
+    radial-gradient(circle, var(--brass) 0 1.7px, rgba(154, 116, 52, 0) 2.3px) 6px calc(100% - 6px) / 6px 6px no-repeat,
+    radial-gradient(circle, var(--brass) 0 1.7px, rgba(154, 116, 52, 0) 2.3px) calc(100% - 6px) calc(100% - 6px) / 6px 6px no-repeat;
 }
-.bz-card:hover {
-  transform: translateY(-3px);
+.bz-card:hover,
+.cx-card:hover,
+button.cx-card:hover {
+  transform: translateY(-3px) rotate(-0.3deg);
   border-color: var(--gold);
-  box-shadow: inset 0 0 0 1px rgba(255, 248, 224, 0.5), 0 8px 20px rgba(74, 52, 22, 0.45);
+  box-shadow:
+    inset 0 0 18px rgba(126, 92, 40, 0.18),
+    inset 0 0 0 1px rgba(255, 248, 224, 0.45),
+    0 8px 20px rgba(74, 52, 22, 0.45);
 }
+button.cx-card { cursor: pointer; font: inherit; color: inherit; }
 .bz-card.sel { border-color: var(--red); }
+
+.bz-card { padding: 8px 8px 10px; }
 
 .bz-card .art {
   height: 108px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(ellipse at 50% 42%, #f6ead0 0%, #e2cd9d 80%);
-  border-bottom: 1px solid #c3a874;
+  background: radial-gradient(ellipse at 50% 42%, rgba(255, 252, 238, 0.5) 0%, rgba(214, 188, 140, 0.25) 80%);
+  border: 1px solid rgba(146, 112, 60, 0.35);
+  border-radius: 4px;
+  box-shadow: inset 0 0 14px rgba(126, 92, 40, 0.14);
   overflow: hidden;
   margin-bottom: 8px;
 }
@@ -188,8 +265,8 @@ button { font-family: var(--font-body); }
 img.noimg { visibility: hidden; }
 
 .bz-card .nm {
-  font-family: var(--font-title);
-  font-size: 17px;
+  font-family: var(--font-brush);
+  font-size: 19px;
   color: #2e2010;
   text-align: center;
   letter-spacing: 2px;
@@ -206,6 +283,7 @@ img.noimg { visibility: hidden; }
   border-radius: 2px;
   padding: 1px 6px;
   background: rgba(255, 250, 232, 0.55);
+  box-shadow: inset 0 0 0 1px rgba(255, 252, 240, 0.5);
   white-space: nowrap;
 }
 .bz-chip.type { color: #7c4f1e; border-color: #a5854e; }

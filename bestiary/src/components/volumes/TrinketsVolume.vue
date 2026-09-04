@@ -34,6 +34,18 @@ function attrClass(s: string): "pos" | "neg" {
 }
 const attrParts = (a: string) => a.split("; ").filter(Boolean).map((p) => ({ text: p, cls: attrClass(p) }));
 
+/** 稀有度:从标签中识别(PVP 优先),驱动蜡印点与名字/章的染色 */
+const RARITY_CLS: Record<string, string> = {
+  非常稀有: "r-vrare", 稀有: "r-rare", 优良: "r-fine", 普通: "r-plain", 通用: "r-generic", PVP: "r-pvp",
+};
+const RARITY_ORDER = ["非常稀有", "稀有", "优良", "普通", "通用"];
+const rarityCls = (labels: string[]): string => {
+  if (labels.includes("PVP")) return RARITY_CLS.PVP;
+  for (const r of RARITY_ORDER) if (labels.includes(r)) return RARITY_CLS[r];
+  return "";
+};
+const isRarityLabel = (l: string) => l in RARITY_CLS;
+
 const filtered = computed(() => {
   const query = q.value.trim().toLowerCase();
   return items.value
@@ -64,14 +76,14 @@ const filtered = computed(() => {
           <div v-for="(it, i) in filtered" :key="i" class="cx-card cx-trinket">
             <span class="tpic"><img :src="it.img" :alt="it.name" loading="lazy"></span>
             <span class="tbody">
-              <span class="tname">{{ it.name }}</span>
+              <span class="tname" :class="rarityCls(it.labels)"><i class="seal" :class="rarityCls(it.labels)"></i>{{ it.name }}</span>
               <span class="tattrs">
                 <span v-for="(p, pi) in attrParts(it.attr)" :key="pi" :class="p.cls">{{ p.text }}</span>
               </span>
               <span v-if="it.note" class="tnote">{{ it.note }}</span>
               <span class="tfoot">
                 <span v-if="it.origin" class="bz-chip region">{{ it.origin }}</span>
-                <span v-for="l in it.labels" :key="l" class="bz-chip">{{ l }}</span>
+                <span v-for="l in it.labels" :key="l" class="bz-chip" :class="isRarityLabel(l) ? RARITY_CLS[l] : ''">{{ l }}</span>
               </span>
             </span>
           </div>
