@@ -1,6 +1,7 @@
 /* 展示辅助:把图鉴数据形状翻译成 UI 文本/配置。
  * 中文映射是 UI 层词典(非游戏原文);效果串的中文化在 effect.ts,不在此处。 */
 import { t } from "./i18n";
+import { metaOf } from "./monstersMeta";
 import type { BrainDesire, IndexMonster, MonsterDetail, Tier } from "./types";
 
 /* ---------- 档位(空档隐藏:原型已验证 baron 等无 info 档位不展示)---------- */
@@ -33,6 +34,8 @@ export function fmt(v: number | string | undefined | null): string {
 }
 
 export function displayNameOf(entry: IndexMonster | undefined, tier0: Tier | undefined, id: string): { zh: string; en: string } {
+  const ov = metaOf(id)?.name;
+  if (ov) return { ...ov };
   const dn = tier0?.displayName;
   return {
     zh: dn?.zh ?? entry?.name.zh ?? id,

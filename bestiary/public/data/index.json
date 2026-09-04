@@ -351,7 +351,8 @@
    ],
    "regions": [
     "weald"
-   ]
+   ],
+   "image": "img/brigand_cannon.png"
   },
   {
    "id": "brigand_cutthroat",
@@ -1210,7 +1211,8 @@
    ],
    "regions": [
     "courtyard"
-   ]
+   ],
+   "image": "img/curtain.png"
   },
   {
    "id": "cyst",
@@ -2213,7 +2215,8 @@
    "tiers": [
     "D"
    ],
-   "regions": []
+   "regions": [],
+   "image": "img/seed_black.webp"
   },
   {
    "id": "seed_grey",
@@ -2230,7 +2233,8 @@
    "tiers": [
     "D"
    ],
-   "regions": []
+   "regions": [],
+   "image": "img/seed_grey.webp"
   },
   {
    "id": "seed_purple",
@@ -2247,7 +2251,8 @@
    "tiers": [
     "D"
    ],
-   "regions": []
+   "regions": [],
+   "image": "img/seed_purple.webp"
   },
   {
    "id": "seed_red",
@@ -2264,7 +2269,8 @@
    "tiers": [
     "D"
    ],
-   "regions": []
+   "regions": [],
+   "image": "img/seed_red.webp"
   },
   {
    "id": "seed_yellow",
@@ -2281,7 +2287,8 @@
    "tiers": [
     "D"
    ],
-   "regions": []
+   "regions": [],
+   "image": "img/seed_yellow.webp"
   },
   {
    "id": "seedling_black",
@@ -2298,7 +2305,8 @@
    "tiers": [
     "D"
    ],
-   "regions": []
+   "regions": [],
+   "image": "img/seedling_black.webp"
   },
   {
    "id": "seedling_grey",
@@ -2315,7 +2323,8 @@
    "tiers": [
     "D"
    ],
-   "regions": []
+   "regions": [],
+   "image": "img/seedling_grey.webp"
   },
   {
    "id": "seedling_purple",
@@ -2332,7 +2341,8 @@
    "tiers": [
     "D"
    ],
-   "regions": []
+   "regions": [],
+   "image": "img/seedling_purple.webp"
   },
   {
    "id": "seedling_red",
@@ -2349,7 +2359,8 @@
    "tiers": [
     "D"
    ],
-   "regions": []
+   "regions": [],
+   "image": "img/seedling_red.webp"
   },
   {
    "id": "seedling_yellow",
@@ -2366,7 +2377,8 @@
    "tiers": [
     "D"
    ],
-   "regions": []
+   "regions": [],
+   "image": "img/seedling_yellow.webp"
   },
   {
    "id": "shambler",
@@ -2830,7 +2842,8 @@
    "tiers": [
     "D"
    ],
-   "regions": []
+   "regions": [],
+   "image": "img/sprout.webp"
   },
   {
    "id": "statue_hand",

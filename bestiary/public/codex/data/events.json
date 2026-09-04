@@ -1,0 +1,585 @@
+[
+ {
+  "img": "/codex/img/Fresh_Air_in_the_Tunnels.webp",
+  "name": "隧道中的新鲜空气",
+  "effect": [
+   "下一个任务到兽窟则 +33% 励练值；+15% 伤害"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Gentle_Tide.webp",
+  "name": "风平浪静",
+  "effect": [
+   "下一个任务到海湾则 +33% 励练值；+15% 伤害"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Silence_in_The_Crypts.webp",
+  "name": "陵墓的寂静",
+  "effect": [
+   "下一个任务到遗迹则 +33% 励练值；+15% 伤害"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Sunshine_in_the_Thicket.webp",
+  "name": "灌木丛中的阳光",
+  "effect": [
+   "下一个任务到荒野则 +33% 励练值；+15% 伤害"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Helping_Hand.webp",
+  "name": "援手",
+  "effect": [
+   "下一个任务取消等级限制"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Bumper_Crop.webp",
+  "name": "丰收的作物",
+  "effect": [
+   "下个任务补给免费"
+  ],
+  "note": "兽窟概率出现",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Supply_Run.webp",
+  "name": "补给运达",
+  "effect": [
+   "下个任务补给价格-50%"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Lost_Shipment.webp",
+  "name": "补给遗失",
+  "effect": [
+   "下个任务补给数量-50%"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Valiant_Spirit.webp",
+  "name": "英勇之魂",
+  "effect": [
+   "下一个任务全体 +15% 美德几率"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/The_Dark_is_Rising.webp",
+  "name": "黑暗正在涌起",
+  "effect": [
+   "下一个任务全体 -15% 美德几率"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Town_event.image_bright_light.webp",
+  "name": "光芒万丈",
+  "tag": "1",
+  "effect": [
+   "下一个任务火炬变暗速度减缓"
+  ],
+  "note": "",
+  "tagImg": "/codex/img/tag1.webp"
+ },
+ {
+  "img": "/codex/img/The_Lights.webp",
+  "name": "辉光",
+  "tag": "3",
+  "effect": [
+   "下一个任务获得碎片翻倍"
+  ],
+  "note": "",
+  "tagImg": "/codex/img/tag3.webp"
+ },
+ {
+  "img": "/codex/img/A_Ray_of_Sunlight.webp",
+  "name": "一缕阳光",
+  "effect": [
+   "所有减压效果提升"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/The_Miserable_Dark.webp",
+  "name": "悲惨的黑暗",
+  "effect": [
+   "所有减压效果降低"
+  ],
+  "note": "仅影响闲置英雄",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/A_Job_Well_Done.webp",
+  "name": "出色的成品",
+  "effect": [
+   "免费升级护甲一次"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Lost_and_Found.webp",
+  "name": "失而复得",
+  "effect": [
+   "免费升级武器一次"
+  ],
+  "note": "海湾概率出现",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Labour_Force.webp",
+  "name": "苦劳者",
+  "effect": [
+   "免费升级建筑一次"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Mardis_Gras.webp",
+  "name": "狂欢节",
+  "effect": [
+   "酒馆所有设施免费"
+  ],
+  "note": "海湾概率出现",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Caregivers_convention.webp",
+  "name": "医者大会",
+  "effect": [
+   "疗养院免费"
+  ],
+  "note": "荒野概率出现",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Medical_Breakthrough.webp",
+  "name": "医疗技术突破",
+  "effect": [
+   "病房免费"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Town_Fair.webp",
+  "name": "城镇展会",
+  "effect": [
+   "所有压力释放活动免费",
+   "疗养室免费"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/All_Saints_Day.webp",
+  "name": "诸圣日",
+  "effect": [
+   "教堂所有设施免费"
+  ],
+  "note": "遗迹概率出现",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Absent_Abbot.webp",
+  "name": "主教缺席",
+  "effect": [
+   "耳堂不可使用，教堂其他设施费用 -50%"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Cell_Cleaning.webp",
+  "name": "清洗惩房",
+  "effect": [
+   "苦修厅不可使用，教堂其他设施费用 -50%"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Noisy_Repairs.webp",
+  "name": "喧闹的翻新",
+  "effect": [
+   "回廊不可使用，教堂其他设施费用 -50%"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Daylight_Robbery.webp",
+  "name": "光天化日下的抢劫",
+  "effect": [
+   "赌场不可使用，酒馆其他设施费用 -50%"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Empty_Kegs.webp",
+  "name": "酒桶已空",
+  "effect": [
+   "吧台不可使用，酒馆其他设施费用 -50%"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Laundry_Day.webp",
+  "name": "洗濯(zhuó)日",
+  "effect": [
+   "妓院不可使用，酒馆其他设施费用 -50%"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Nomad_New_Year.webp",
+  "name": "游牧民新年",
+  "effect": [
+   "购买饰品费用 -50%"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/One_Good_Week.webp",
+  "name": "美好的一周",
+  "effect": [
+   "所有闲置英雄 +200% 压力恢复"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Labour_Force (1).webp",
+  "name": "基石",
+  "effect": [
+   "获得 1 蓝图",
+   "解锁区域建筑"
+  ],
+  "note": "此事件出现在第7~10周，仅会触发一次",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/A_Day_Long_Awaited.webp",
+  "name": "期待已久的一天",
+  "effect": [
+   "驿站马车刷新英雄数量 +6"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/A_Gibbous_Moon.webp",
+  "name": "一轮圆月",
+  "effect": [
+   "闲置的咒缚者等级 +1"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Archery_Tournament.webp",
+  "name": "箭术锦标赛",
+  "effect": [
+   "闲置的弩手/火枪手等级 +1"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Eat_the_Rich.webp",
+  "name": "劫富济贫",
+  "effect": [
+   "闲置的盗墓者等级 +1"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Idle_Busking.webp",
+  "name": "闲暇的街演",
+  "effect": [
+   "闲置的小丑等级 +1"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Laying_Low.webp",
+  "name": "藏匿",
+  "effect": [
+   "闲置的强盗等级 +1"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Militia_Training.webp",
+  "name": "军事训练",
+  "effect": [
+   "闲置的老兵等级 +1"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Rats_Among_Us.webp",
+  "name": "背叛者在我们之中",
+  "effect": [
+   "闲置的训犬师等级 +1"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Plague.webp",
+  "name": "瘟疫！",
+  "effect": [
+   "闲置的瘟疫医生等级 +1"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Antique_Roadshow.webp",
+  "name": "古董街展",
+  "effect": [
+   "额外招募古董商人 +2"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Call_of_the_Crusade.webp",
+  "name": "远征的召唤",
+  "effect": [
+   "额外招募十字军 +2"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Holy_Gathering.webp",
+  "name": "神圣召集",
+  "effect": [
+   "额外招募修女 +2"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Leper_Colony.webp",
+  "name": "麻风移民队",
+  "effect": [
+   "额外招募麻风病人 +2"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Revelry.webp",
+  "name": "野蛮狂欢",
+  "effect": [
+   "额外招募蛮族战士 +2"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Rumor_of_Riches.webp",
+  "name": "财富的谣言",
+  "effect": [
+   "额外招募赏金猎人 +2"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Wyrd_Council.webp",
+  "name": "宿命议会",
+  "effect": [
+   "额外招募神秘学者 +2"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Town_event_flagellant_two.webp",
+  "name": "血之朝圣",
+  "tag": 1,
+  "effect": [
+   "额外招募苦修者 +2"
+  ],
+  "note": "",
+  "tagImg": "/codex/img/tag1.webp"
+ },
+ {
+  "img": "/codex/img/Town_event_flagellant_one.webp",
+  "name": "血之鞭挞",
+  "tag": 1,
+  "effect": [
+   "额外招募苦修者 +1"
+  ],
+  "note": "此事件出现在第5周，仅会触发一次",
+  "tagImg": "/codex/img/tag1.webp"
+ },
+ {
+  "img": "/codex/img/Town_event_shieldbreaker_one.webp",
+  "name": "荒漠焚风",
+  "tag": 2,
+  "effect": [
+   "额外招募破盾者 +1"
+  ],
+  "note": "此事件出现在第4~5周，仅会触发一次",
+  "tagImg": "/codex/img/tag2.webp"
+ },
+ {
+  "img": "/codex/img/Town_event_shieldbreaker_two.webp",
+  "name": "蝰蛇之吻",
+  "tag": 2,
+  "effect": [
+   "额外招募破盾者 +2"
+  ],
+  "note": "",
+  "tagImg": "/codex/img/tag2.webp"
+ },
+ {
+  "img": "/codex/img/Town_event_shard_hungry.webp",
+  "name": "老兵招募",
+  "tag": 3,
+  "effect": [
+   "消耗20碎片招募一位6级英雄。必带黄癖(坚韧/镇定/暮光之梦)"
+  ],
+  "note": "哪怕已经有全员唯一黄癖暮光之梦，也可以招募",
+  "tagImg": "/codex/img/tag3.webp"
+ },
+ {
+  "img": "/codex/img/Trinket_retention.webp",
+  "name": "夜幕下的窃贼",
+  "effect": [
+   "夺回被盗的8个饰品"
+  ],
+  "note": "",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Crow_trinket_event.webp",
+  "name": "尖叫魔的财宝",
+  "effect": [
+   "获得尖叫魔饰品"
+  ],
+  "note": "荒野概率触发",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Brigand_Incursion.webp",
+  "name": "匪徒入侵",
+  "effect": [
+   ""
+  ],
+  "note": "冠军本难度；触发条件：40周后且拥有至少4个5级英雄",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/From_Beyond.webp",
+  "name": "从冥界而来",
+  "effect": [
+   "选择复活陵墓中随机三英雄中的一个，复活后仅保留等级，技能/装备均回归1级"
+  ],
+  "note": "陵墓至少有3名英雄",
+  "tagImg": ""
+ },
+ {
+  "img": "/codex/img/Town_event_infestation.webp",
+  "name": "恼人的嗡鸣",
+  "tag": 1,
+  "effect": [
+   "解锁猩红庭院"
+  ],
+  "note": "固定第3周刷新",
+  "tagImg": "/codex/img/tag1.webp"
+ },
+ {
+  "img": "/codex/img/Town_event_remove_vampire.webp",
+  "name": "散去的疫云",
+  "tag": 1,
+  "effect": [
+   "移除所有英雄的猩红诅咒并清空感染度"
+  ],
+  "note": "仅在击败男爵、子爵或伯爵夫人后发生",
+  "tagImg": "/codex/img/tag1.webp"
+ },
+ {
+  "img": "/codex/img/Town_event_fanatic.webp",
+  "name": "血中异端",
+  "tag": 1,
+  "effect": [
+   "狂信者出现在地牢"
+  ],
+  "note": "进入下一个地牢的英雄中至少有两名拥有猩红诅咒，则触发狂热者生成。2-3 个英雄有20%的几率，4个英雄有75%的几率",
+  "tagImg": "/codex/img/tag1.webp"
+ },
+ {
+  "img": "/codex/img/Town_event_infestation (1).webp",
+  "name": "人心惶惶",
+  "tag": 1,
+  "effect": [
+   "小镇减压活动效果减弱"
+  ],
+  "note": "不打庭院本，此事件一直存在，除个别事件(血之鞭挞等)",
+  "tagImg": "/codex/img/tag1.webp"
+ },
+ {
+  "img": "/codex/img/Crystaline_Focii.webp",
+  "name": "水晶球",
+  "tag": 3,
+  "effect": [
+   "30碎片购买水晶，全员压力 -50"
+  ],
+  "note": "",
+  "tagImg": "/codex/img/tag3.webp"
+ },
+ {
+  "img": "/codex/img/Shard_Harvest.webp",
+  "name": "碎片收获",
+  "tag": 3,
+  "effect": [
+   "获得碎片 +25。"
+  ],
+  "note": "",
+  "tagImg": "/codex/img/tag3.webp"
+ },
+ {
+  "img": "/codex/img/Town_event_they_made_a_tonic.webp",
+  "name": "他们制作了一种药剂",
+  "tag": 3,
+  "effect": [
+   "30碎片购买特殊药剂，自动使用，治愈全英雄的一种疾病"
+  ],
+  "note": "可治愈猩红诅咒",
+  "tagImg": "/codex/img/tag3.webp"
+ }
+]

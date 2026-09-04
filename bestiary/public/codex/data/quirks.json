@@ -1,0 +1,1239 @@
+[
+ {
+  "category": "野兽",
+  "positive": {
+   "name": "仇恨野兽",
+   "effect": "对野兽：+15%伤害，-15%所受压力伤害"
+  },
+  "negative": {
+   "name": "惧怕野兽",
+   "effect": "对野兽：+15%所受压力伤害，-10精准"
+  }
+ },
+ {
+  "category": "野兽",
+  "positive": {
+   "name": "野兽克星",
+   "effect": "对野兽：+10精准，+5%暴击"
+  },
+  "negative": {
+   "name": "动物恐惧症",
+   "effect": "对野兽：+20%所受压力伤害"
+  }
+ },
+ {
+  "category": "异魔",
+  "positive": {
+   "name": "仇恨异魔",
+   "effect": "对异魔：+15%伤害，-15%所受压力伤害"
+  },
+  "negative": {
+   "name": "惧怕异魔",
+   "effect": "对异魔：+15%所受压力伤害，-10精准"
+  }
+ },
+ {
+  "category": "异魔",
+  "positive": {
+   "name": "异魔克星",
+   "effect": "对异魔：+10精准，+5%暴击"
+  },
+  "negative": null
+ },
+ {
+  "category": "人类",
+  "positive": {
+   "name": "仇恨人类",
+   "effect": "对人类：+15%伤害，-15%所受压力伤害"
+  },
+  "negative": {
+   "name": "惧怕人类",
+   "effect": "对人类：+15%所受压力伤害，-10精准"
+  }
+ },
+ {
+  "category": "人类",
+  "positive": {
+   "name": "人类克星",
+   "effect": "对人类：+10精准，+5%暴击"
+  },
+  "negative": {
+   "name": "人像恐惧症",
+   "effect": "对人类：+20%所受压力伤害"
+  }
+ },
+ {
+  "category": "邪秽",
+  "positive": {
+   "name": "仇恨邪秽",
+   "effect": "对邪秽：+15%伤害，-15%所受压力伤害"
+  },
+  "negative": {
+   "name": "惧怕邪秽",
+   "effect": "对邪秽：+15%所受压力伤害，-10精准"
+  }
+ },
+ {
+  "category": "邪秽",
+  "positive": {
+   "name": "邪秽克星",
+   "effect": "对邪秽：+10精准，+5%暴击"
+  },
+  "negative": {
+   "name": "恶魔恐惧症",
+   "effect": "对邪秽：+20%所受压力伤害"
+  }
+ },
+ {
+  "category": "高亮度",
+  "positive": {
+   "name": "早起者",
+   "effect": "亮度高于75：+2速度"
+  },
+  "negative": {
+   "name": "夜行动物",
+   "effect": "亮度高于75：-2速度"
+  }
+ },
+ {
+  "category": "高亮度",
+  "positive": {
+   "name": "喜光",
+   "effect": "亮度高于75：-20%所受压力伤害"
+  },
+  "negative": {
+   "name": "畏光者",
+   "effect": "亮度高于75：+20%所受压力伤害"
+  }
+ },
+ {
+  "category": "高亮度",
+  "positive": {
+   "name": "光明战士",
+   "effect": "亮度高于75：+10%伤害"
+  },
+  "negative": {
+   "name": "畏光",
+   "effect": "亮度高于75：-10%伤害"
+  }
+ },
+ {
+  "category": "低亮度",
+  "positive": {
+   "name": "夜猫子",
+   "effect": "亮度低于26：+2速度"
+  },
+  "negative": {
+   "name": "日落而息",
+   "effect": "亮度低于26：-2速度"
+  }
+ },
+ {
+  "category": "低亮度",
+  "positive": {
+   "name": "潜伏者",
+   "effect": "亮度低于26：+10%伤害"
+  },
+  "negative": {
+   "name": "夜盲",
+   "effect": "亮度低于26：-10%伤害"
+  }
+ },
+ {
+  "category": "低亮度",
+  "positive": null,
+  "negative": {
+   "name": "惧暗",
+   "effect": "亮度低于26：+20%所受压力伤害"
+  }
+ },
+ {
+  "category": "战斗",
+  "positive": {
+   "name": "绝境击杀",
+   "effect": "当生命值低于50%：+5%暴击"
+  },
+  "negative": {
+   "name": "绝境失心",
+   "effect": "当生命值低于50%：-5%暴击"
+  }
+ },
+ {
+  "category": "战斗",
+  "positive": {
+   "name": "最后一搏",
+   "effect": "当生命值低于50%：+1速度"
+  },
+  "negative": {
+   "name": "疲软",
+   "effect": "当生命值低于50%：-1速度"
+  }
+ },
+ {
+  "category": "战斗",
+  "positive": {
+   "name": "重振旗鼓",
+   "effect": "当生命值低于50%：+10%伤害"
+  },
+  "negative": {
+   "name": "精疲力尽",
+   "effect": "当生命值低于50%：-10%伤害"
+  }
+ },
+ {
+  "category": "压力",
+  "positive": null,
+  "negative": {
+   "name": "死亡恐惧症",
+   "effect": "当生命值低于50%：+20%所受压力伤害"
+  }
+ },
+ {
+  "category": "遗迹",
+  "positive": {
+   "name": "遗迹冒险者",
+   "effect": "在遗迹：-20%所受压力伤害"
+  },
+  "negative": {
+   "name": "遗迹恐惧症",
+   "effect": "在遗迹：+20%所受压力伤害"
+  }
+ },
+ {
+  "category": "遗迹",
+  "positive": {
+   "name": "遗迹拾荒者",
+   "effect": "在遗迹：+5%侦察概率"
+  },
+  "negative": null
+ },
+ {
+  "category": "遗迹",
+  "positive": {
+   "name": "遗迹探险家",
+   "effect": "在遗迹：+10%侦察概率"
+  },
+  "negative": null
+ },
+ {
+  "category": "遗迹",
+  "positive": {
+   "name": "遗迹战术家",
+   "effect": "在遗迹：+15%伤害"
+  },
+  "negative": null
+ },
+ {
+  "category": "海湾",
+  "positive": {
+   "name": "海湾冒险者",
+   "effect": "在海湾：-20%所受压力伤害"
+  },
+  "negative": {
+   "name": "海湾恐惧症",
+   "effect": "在海湾：+20%所受压力伤害"
+  }
+ },
+ {
+  "category": "海湾",
+  "positive": {
+   "name": "海湾拾荒者",
+   "effect": "在海湾：+5%侦察概率"
+  },
+  "negative": null
+ },
+ {
+  "category": "海湾",
+  "positive": {
+   "name": "海湾探险家",
+   "effect": "在海湾：+10%侦察概率"
+  },
+  "negative": null
+ },
+ {
+  "category": "海湾",
+  "positive": {
+   "name": "海湾战术家",
+   "effect": "在海湾：+15%伤害"
+  },
+  "negative": null
+ },
+ {
+  "category": "兽窟",
+  "positive": {
+   "name": "兽窟冒险者",
+   "effect": "在兽窟：-20%所受压力伤害"
+  },
+  "negative": {
+   "name": "兽穴恐惧症",
+   "effect": "在兽窟：+20%所受压力伤害"
+  }
+ },
+ {
+  "category": "兽窟",
+  "positive": {
+   "name": "兽窟拾荒者",
+   "effect": "在兽窟：+5%侦察概率"
+  },
+  "negative": null
+ },
+ {
+  "category": "兽窟",
+  "positive": {
+   "name": "兽窟探险家",
+   "effect": "在兽窟：+10%侦察概率"
+  },
+  "negative": null
+ },
+ {
+  "category": "兽窟",
+  "positive": {
+   "name": "兽窟战术家",
+   "effect": "在兽窟：+15%伤害"
+  },
+  "negative": null
+ },
+ {
+  "category": "荒野",
+  "positive": {
+   "name": "荒野冒险者",
+   "effect": "在荒野：-20%所受压力伤害"
+  },
+  "negative": {
+   "name": "荒野恐惧症",
+   "effect": "在荒野：+20%所受压力伤害"
+  }
+ },
+ {
+  "category": "荒野",
+  "positive": {
+   "name": "荒野拾荒者",
+   "effect": "在荒野：+5%侦察概率"
+  },
+  "negative": null
+ },
+ {
+  "category": "荒野",
+  "positive": {
+   "name": "荒野探险家",
+   "effect": "在荒野：+10%侦察概率"
+  },
+  "negative": null
+ },
+ {
+  "category": "荒野",
+  "positive": {
+   "name": "荒野战术家",
+   "effect": "在荒野：+15%伤害"
+  },
+  "negative": null
+ },
+ {
+  "category": "抗性",
+  "positive": {
+   "name": "富血",
+   "effect": "+15%流血抗性"
+  },
+  "negative": {
+   "name": "贫血",
+   "effect": "-10%流血抗性"
+  }
+ },
+ {
+  "category": "抗性",
+  "positive": {
+   "name": "干杯不醉",
+   "effect": "+15%眩晕抗性"
+  },
+  "negative": {
+   "name": "大惊小怪",
+   "effect": "-10%眩晕抗性"
+  }
+ },
+ {
+  "category": "抗性",
+  "positive": {
+   "name": "粗健",
+   "effect": "+15%疾病抗性"
+  },
+  "negative": {
+   "name": "病弱",
+   "effect": "-10%疾病抗性"
+  }
+ },
+ {
+  "category": "抗性",
+  "positive": {
+   "name": "气血稳健",
+   "effect": "+10%腐蚀抗性"
+  },
+  "negative": {
+   "name": "气血稀薄",
+   "effect": "-10%腐蚀抗性"
+  }
+ },
+ {
+  "category": "抗性",
+  "positive": {
+   "name": "倔强不屈",
+   "effect": "+10%致死抗性"
+  },
+  "negative": {
+   "name": "求生意识弱",
+   "effect": "-10%致死抗性"
+  }
+ },
+ {
+  "category": "抗性",
+  "positive": {
+   "name": "身体平衡",
+   "effect": "+15%位移抗性"
+  },
+  "negative": null
+ },
+ {
+  "category": "抗性",
+  "positive": null,
+  "negative": {
+   "name": "苍白",
+   "effect": "-10%流血，腐蚀抗性"
+  }
+ },
+ {
+  "category": "战斗",
+  "positive": {
+   "name": "致命",
+   "effect": "+2%暴击"
+  },
+  "negative": {
+   "name": "失准",
+   "effect": "-2%暴击"
+  }
+ },
+ {
+  "category": "闪避",
+  "positive": {
+   "name": "灵活",
+   "effect": "+5闪避"
+  },
+  "negative": {
+   "name": "笨拙",
+   "effect": "-5闪避"
+  }
+ },
+ {
+  "category": "美德",
+  "positive": {
+   "name": "义气高涨",
+   "effect": "+5%美德概率"
+  },
+  "negative": {
+   "name": "喜怒无常",
+   "effect": "+5%折磨概率"
+  }
+ },
+ {
+  "category": "战斗",
+  "positive": {
+   "name": "光芒四射",
+   "effect": "+2速度，+5闪避"
+  },
+  "negative": {
+   "name": "衰退",
+   "effect": "-2速度，-5闪避"
+  }
+ },
+ {
+  "category": "精准",
+  "positive": {
+   "name": "挥舞自然",
+   "effect": "+5精准"
+  },
+  "negative": {
+   "name": "莽撞",
+   "effect": "-5精准"
+  }
+ },
+ {
+  "category": "属性",
+  "positive": {
+   "name": "坚韧",
+   "effect": "+10%最大生命"
+  },
+  "negative": {
+   "name": "脆弱",
+   "effect": "-10%最大生命"
+  }
+ },
+ {
+  "category": "属性",
+  "positive": null,
+  "negative": {
+   "name": "柔弱",
+   "effect": "-5%最大生命"
+  }
+ },
+ {
+  "category": "战斗",
+  "positive": {
+   "name": "表皮硬化",
+   "effect": "+10%防御"
+  },
+  "negative": null
+ },
+ {
+  "category": "战斗",
+  "positive": {
+   "name": "反应快速",
+   "effect": "+2速度"
+  },
+  "negative": {
+   "name": "反应迟钝",
+   "effect": "-1速度"
+  }
+ },
+ {
+  "category": "战斗",
+  "positive": {
+   "name": "警惕戒备",
+   "effect": "在第一回合：+4速度，+5闪避"
+  },
+  "negative": {
+   "name": "措手不及",
+   "effect": "在第一回合：-4速度，-5闪避"
+  }
+ },
+ {
+  "category": "战斗",
+  "positive": {
+   "name": "快速出鞘",
+   "effect": "第一回合+4速度"
+  },
+  "negative": {
+   "name": "慢速出鞘",
+   "effect": "第一回合-4速度"
+  }
+ },
+ {
+  "category": "远程",
+  "positive": {
+   "name": "锐利鹰眼",
+   "effect": "远程技能：+5%暴击"
+  },
+  "negative": {
+   "name": "击发缺陷",
+   "effect": "远程技能：-5%暴击"
+  }
+ },
+ {
+  "category": "远程",
+  "positive": {
+   "name": "自然之眼",
+   "effect": "远程技能：+5精准"
+  },
+  "negative": {
+   "name": "怠惰之眼",
+   "effect": "远程技能：-5精准"
+  }
+ },
+ {
+  "category": "远程",
+  "positive": {
+   "name": "正中靶心",
+   "effect": "远程技能：+10%伤害"
+  },
+  "negative": {
+   "name": "靶心偏差",
+   "effect": "远程技能：-5%伤害"
+  }
+ },
+ {
+  "category": "近战",
+  "positive": {
+   "name": "精准打击",
+   "effect": "近战技能：+5%暴击"
+  },
+  "negative": {
+   "name": "腕力虚弱",
+   "effect": "近战技能：-5%暴击"
+  }
+ },
+ {
+  "category": "近战",
+  "positive": {
+   "name": "重击者",
+   "effect": "近战技能：+10%伤害"
+  },
+  "negative": {
+   "name": "肩膀损伤",
+   "effect": "近战技能：-5%伤害"
+  }
+ },
+ {
+  "category": "治疗",
+  "positive": {
+   "name": "哥特",
+   "effect": "命运重构：+20%受到的生命治疗"
+  },
+  "negative": {
+   "name": "苦行",
+   "effect": "命运重构：-20%受到的生命治疗"
+  }
+ },
+ {
+  "category": "压力治疗",
+  "positive": {
+   "name": "音乐",
+   "effect": "鼓舞乐章：+25%所受压力治疗"
+  },
+  "negative": {
+   "name": "耳聋",
+   "effect": "鼓舞乐章：-20%所受压力治疗"
+  }
+ },
+ {
+  "category": "治疗",
+  "positive": {
+   "name": "精神",
+   "effect": "神圣恩惠，神圣抚慰：+25%受到的生命治疗"
+  },
+  "negative": {
+   "name": "科学",
+   "effect": "神圣恩惠，神圣抚慰：-20%受到的生命治疗"
+  }
+ },
+ {
+  "category": "治疗",
+  "positive": {
+   "name": "天才",
+   "effect": "+20%受到的生命治疗"
+  },
+  "negative": {
+   "name": "体弱多病",
+   "effect": "-20%受到的生命治疗"
+  }
+ },
+ {
+  "category": "治疗",
+  "positive": {
+   "name": "悬壶济世",
+   "effect": "+20%生命治疗"
+  },
+  "negative": {
+   "name": "医术糟糕",
+   "effect": "-20%生命治疗"
+  }
+ },
+ {
+  "category": "压力治疗",
+  "positive": {
+   "name": "强韧",
+   "effect": "+10%所受压力治疗"
+  },
+  "negative": {
+   "name": "沉思者",
+   "effect": "-10%所受压力治疗"
+  }
+ },
+ {
+  "category": "压力",
+  "positive": {
+   "name": "镇定",
+   "effect": "-10%所受压力伤害"
+  },
+  "negative": {
+   "name": "紧张",
+   "effect": "+10%所受压力伤害"
+  }
+ },
+ {
+  "category": "消耗",
+  "positive": {
+   "name": "应激性厌食癖",
+   "effect": "压力高于50时：-100%食物消耗"
+  },
+  "negative": {
+   "name": "应激性暴食癖",
+   "effect": "压力高于50时：+100%食物消耗"
+  }
+ },
+ {
+  "category": "赌博",
+  "positive": {
+   "name": "赌博老手",
+   "effect": "在赌博中获胜的概率上升"
+  },
+  "negative": {
+   "name": "赌术糟糕",
+   "effect": "在赌博中输钱的概率上升"
+  }
+ },
+ {
+  "category": "经济",
+  "positive": {
+   "name": "护甲匠",
+   "effect": "-20%护甲升级费用"
+  },
+  "negative": null
+ },
+ {
+  "category": "经济",
+  "positive": {
+   "name": "武器匠",
+   "effect": "-20%武器升级费用"
+  },
+  "negative": null
+ },
+ {
+  "category": "压力",
+  "positive": {
+   "name": "退路追随者",
+   "effect": "向后倒退时不会增加压力"
+  },
+  "negative": null
+ },
+ {
+  "category": "扎营",
+  "positive": {
+   "name": "快速治疗",
+   "effect": "扎营时：+10%生命治疗"
+  },
+  "negative": null
+ },
+ {
+  "category": "扎营",
+  "positive": {
+   "name": "强壮",
+   "effect": "扎营时：+15%生命治疗"
+  },
+  "negative": null
+ },
+ {
+  "category": "扎营",
+  "positive": {
+   "name": "医生天赋",
+   "effect": "扎营时：+20%生命治疗"
+  },
+  "negative": null
+ },
+ {
+  "category": "压力治疗",
+  "positive": {
+   "name": "冥想者",
+   "effect": "在冥想和扎营时缓解更多压力"
+  },
+  "negative": null
+ },
+ {
+  "category": "特殊能力",
+  "positive": {
+   "name": "宿命",
+   "effect": "有概率把失误变为命中(失误时有10%的概率变为命中)"
+  },
+  "negative": null
+ },
+ {
+  "category": "压力治疗",
+  "positive": {
+   "name": "好色之徒",
+   "effect": "在妓院：20%所受压力治疗"
+  },
+  "negative": null
+ },
+ {
+  "category": "特殊",
+  "positive": {
+   "name": "自然",
+   "effect": "不佩戴饰品时：+20%最大生命值，+20%受到的生命治疗，+3速度"
+  },
+  "negative": null
+ },
+ {
+  "category": "特殊",
+  "positive": {
+   "name": "暮光之梦",
+   "effect": "无视潜行(每个名册一位英雄)"
+  },
+  "negative": null
+ },
+ {
+  "category": "特殊",
+  "positive": {
+   "name": "瘪壳杀手",
+   "effect": "对瘪壳：+15%伤害(每个名册一位英雄)"
+  },
+  "negative": null
+ },
+ {
+  "category": "战斗",
+  "positive": {
+   "name": "晴天战士",
+   "effect": "生命值高于99%时：+20%伤害"
+  },
+  "negative": null
+ },
+ {
+  "category": "特殊",
+  "positive": {
+   "name": "瘪壳克星",
+   "effect": "对瘪壳：+10精准 +5%暴击(每个名册一位英雄)"
+  },
+  "negative": null
+ },
+ {
+  "category": "战斗",
+  "positive": {
+   "name": "急不可待",
+   "effect": "第一回合：+25%伤害，+20精准，+5%暴击"
+  },
+  "negative": null
+ },
+ {
+  "category": "闪避",
+  "positive": {
+   "name": "胆大妄为",
+   "effect": "当生命值低于25%：+15闪避"
+  },
+  "negative": null
+ },
+ {
+  "category": "压力",
+  "positive": null,
+  "negative": {
+   "name": "完美主义",
+   "effect": "攻击失误：+5压力"
+  }
+ },
+ {
+  "category": "战斗",
+  "positive": null,
+  "negative": {
+   "name": "冒险",
+   "effect": "+10%伤害，-10闪避"
+  }
+ },
+ {
+  "category": "特殊",
+  "positive": null,
+  "negative": {
+   "name": "负担症候群",
+   "effect": "4%概率跳过回合"
+  }
+ },
+ {
+  "category": "经济",
+  "positive": null,
+  "negative": {
+   "name": "碎片雇佣兵",
+   "effect": "收取10%获得的水晶碎片，英雄只能参加无尽农场任务(该红癖不能被移除)"
+  }
+ },
+ {
+  "category": "压力治疗",
+  "positive": null,
+  "negative": {
+   "name": "冥想启迪",
+   "effect": "在城镇只能通过冥想缓解压力"
+  }
+ },
+ {
+  "category": "压力治疗",
+  "positive": null,
+  "negative": {
+   "name": "敬神",
+   "effect": "在城镇只能通过祈祷缓解压力"
+  }
+ },
+ {
+  "category": "压力治疗",
+  "positive": null,
+  "negative": {
+   "name": "苦修",
+   "effect": "在城镇只能通过鞭笞缓解压力"
+  }
+ },
+ {
+  "category": "压力治疗",
+  "positive": null,
+  "negative": {
+   "name": "酒鬼",
+   "effect": "在城镇只能饮酒"
+  }
+ },
+ {
+  "category": "压力治疗",
+  "positive": null,
+  "negative": {
+   "name": "赌徒",
+   "effect": "在城镇只能赌博"
+  }
+ },
+ {
+  "category": "压力治疗",
+  "positive": null,
+  "negative": {
+   "name": "多情",
+   "effect": "在城镇只能通过进城缓解压力"
+  }
+ },
+ {
+  "category": "压力治疗",
+  "positive": null,
+  "negative": {
+   "name": "焦躁心灵",
+   "effect": "在城镇不能通过冥想缓解压力"
+  }
+ },
+ {
+  "category": "压力治疗",
+  "positive": null,
+  "negative": {
+   "name": "目击证人",
+   "effect": "在经历了某些创伤后就不会参与祈祷活动"
+  }
+ },
+ {
+  "category": "压力治疗",
+  "positive": null,
+  "negative": {
+   "name": "戒酒",
+   "effect": "在城镇从不饮酒"
+  }
+ },
+ {
+  "category": "压力治疗",
+  "positive": null,
+  "negative": {
+   "name": "知名老干",
+   "effect": "被禁止在城镇上赌博"
+  }
+ },
+ {
+  "category": "压力治疗",
+  "positive": null,
+  "negative": {
+   "name": "重口味",
+   "effect": "被禁止进入妓院"
+  }
+ },
+ {
+  "category": "压力治疗",
+  "positive": null,
+  "negative": {
+   "name": "失去信念",
+   "effect": "不能通过祈祷和鞭笞缓解压力"
+  }
+ },
+ {
+  "category": "压力",
+  "positive": null,
+  "negative": {
+   "name": "焦虑",
+   "effect": "闲置时每周+20压力"
+  }
+ },
+ {
+  "category": "战斗",
+  "positive": null,
+  "negative": {
+   "name": "平静",
+   "effect": "第一回合-15%伤害"
+  }
+ },
+ {
+  "category": "压力",
+  "positive": null,
+  "negative": {
+   "name": "幽闭恐惧症",
+   "effect": "在过道：+20%所受压力伤害"
+  }
+ },
+ {
+  "category": "特殊",
+  "positive": null,
+  "negative": {
+   "name": "洁癖",
+   "effect": "对腐蚀：+10精准"
+  }
+ },
+ {
+  "category": "战斗",
+  "positive": null,
+  "negative": {
+   "name": "伤口撒盐",
+   "effect": "对流血：-10精准"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "强迫症",
+   "effect": "带着不可自控的欲望去做某件事（全奇物手贱20%）"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "好奇",
+   "effect": "热衷于寻求新知（全奇物手贱20%）"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "洁癖",
+   "effect": "不能忍受脏乱（几率手贱喷泉）"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "嗜血",
+   "effect": "沉迷于创伤，伤口和折磨（几率手贱铁处女/刀架）"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "杀人狂",
+   "effect": "嗜杀成性（几率手贱铁处女/刀架）"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "痴迷黑暗",
+   "effect": "热衷于探究黑魔法（几率手贱魔像/神像/浮雕/神秘涂画等）"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "魔怔",
+   "effect": "坚信自己被恶魔附身（几率手贱魔像/神像/浮雕/神秘涂画等）"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "酗酒",
+   "effect": "嗜酒成瘾（几率手贱私酿酒桶）"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "自恋狂",
+   "effect": "极端自恋（几率手贱告解室）"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "内疚",
+   "effect": "为自己曾有的或虚构的罪行深深自责（几率手贱祭坛/石碑等）"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "宗教狂热",
+   "effect": "对宗教事务着迷（几率手贱祭坛/石碑等）"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "瞻礼狂",
+   "effect": "会产生宗教幻觉和妄想（几率手贱祭坛/石碑等）"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "贪财",
+   "effect": "对物质财富很着迷（几率手贱背包/麻袋/陈列柜等）"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "敛财狂",
+   "effect": "爱钱如命（几率手贱背包/麻袋/陈列柜等）（偷东西且不返还40%）"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "盗窃癖",
+   "effect": "有可能会偷东西（几率手贱背包/麻袋/陈列柜等）（偷东西且不返还35%）"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "恋尸癖",
+   "effect": "迷恋尸骸（几率手贱荒野尸骸）"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "热衷异象",
+   "effect": "痴迷于超自然异象（几率手贱炼金桌）"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "贪食癖",
+   "effect": "嗜好食物痴迷于超自然异象（几率手贱餐桌/兽窟餐车）"
+  }
+ },
+ {
+  "category": "战斗",
+  "positive": {
+   "name": "乌鸦之眼",
+   "effect": "+8精准，+8%侦察概率"
+  },
+  "negative": null
+ },
+ {
+  "category": "闪避",
+  "positive": {
+   "name": "鸦之优雅",
+   "effect": "+6闪避，+25%位移抗性"
+  },
+  "negative": null
+ },
+ {
+  "category": "抗性",
+  "positive": {
+   "name": "乌鸦之健",
+   "effect": "+33%疾病抗性"
+  },
+  "negative": null
+ },
+ {
+  "category": "精准",
+  "positive": null,
+  "negative": {
+   "name": "乌鸦之盲",
+   "effect": "当火炬亮度低于50: -10精准"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "乌鸦之欲",
+   "effect": "+33%与食物类奇物互动的概率"
+  }
+ },
+ {
+  "category": "奇物",
+  "positive": null,
+  "negative": {
+   "name": "鸦之好奇",
+   "effect": "+27.5%与所有奇物互动的概率"
+  }
+ },
+ {
+  "category": "抗性",
+  "positive": {
+   "name": "棱镜隔离",
+   "effect": "+25%减贫抗性"
+  },
+  "negative": null
+ },
+ {
+  "category": "抗性",
+  "positive": {
+   "name": "棱镜纯净",
+   "effect": "+25%腐蚀抗性"
+  },
+  "negative": null
+ },
+ {
+  "category": "抗性",
+  "positive": {
+   "name": "棱镜坚固",
+   "effect": "+25%感染抗性"
+  },
+  "negative": null
+ },
+ {
+  "category": "抗性",
+  "positive": {
+   "name": "棱镜稳定",
+   "effect": "+25%位移抗性"
+  },
+  "negative": null
+ },
+ {
+  "category": "抗性",
+  "positive": {
+   "name": "棱镜凝固",
+   "effect": "+25%流血抗性"
+  },
+  "negative": null
+ },
+ {
+  "category": "压力",
+  "positive": {
+   "name": "棱镜镇定",
+   "effect": "-30%所受压力伤害"
+  },
+  "negative": null
+ },
+ {
+  "category": "战斗",
+  "positive": {
+   "name": "棱镜力量",
+   "effect": "+15%伤害"
+  },
+  "negative": null
+ },
+ {
+  "category": "战斗",
+  "positive": {
+   "name": "棱镜速度",
+   "effect": "+3速度"
+  },
+  "negative": null
+ },
+ {
+  "category": "战斗",
+  "positive": {
+   "name": "棱镜准度",
+   "effect": "+4%暴击"
+  },
+  "negative": null
+ },
+ {
+  "category": "战斗",
+  "positive": {
+   "name": "棱镜之眼",
+   "effect": "+8精准"
+  },
+  "negative": null
+ }
+]

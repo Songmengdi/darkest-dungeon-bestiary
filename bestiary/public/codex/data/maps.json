@@ -1,0 +1,47 @@
+[
+ {
+  "key": "wolf",
+  "name": "匪首「头狼」",
+  "img": "/codex/img/map_wolf.jpg"
+ },
+ {
+  "key": "dd1",
+  "name": "极暗地牢 Ⅰ",
+  "img": "/codex/img/map_dd1.jpg"
+ },
+ {
+  "key": "dd2",
+  "name": "极暗地牢 Ⅱ",
+  "img": "/codex/img/map_dd2.jpg"
+ },
+ {
+  "key": "dd3",
+  "name": "极暗地牢 Ⅲ",
+  "img": "/codex/img/map_dd3.jpg"
+ },
+ {
+  "key": "dd4",
+  "name": "极暗地牢 Ⅳ",
+  "img": "/codex/img/map_dd4.jpg"
+ },
+ {
+  "key": "yard",
+  "name": "庭院 · 鳄鱼",
+  "img": "/codex/img/map_yard.jpg"
+ },
+ {
+  "key": "yard2",
+  "name": "庭院 · 男爵",
+  "img": "/codex/img/map_yard2.jpg"
+ },
+ {
+  "key": "yard3",
+  "name": "庭院 · 子爵",
+  "img": "/codex/img/map_yard3.jpg"
+ },
+ {
+  "key": "yard4",
+  "name": "庭院 · 女爵",
+  "img": "/codex/img/map_yard4.jpg"
+ }
+]

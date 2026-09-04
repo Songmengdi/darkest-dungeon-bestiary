@@ -1,0 +1,4344 @@
+[
+ {
+  "img": "/codex/img/Inv_trinket-accuracy_stone.webp",
+  "name": "精准魔石",
+  "attr": "+4 精准; -1 速度",
+  "origin": "兽窟",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-bleed_charm.webp",
+  "name": "血腥挂坠",
+  "attr": "+20% 流血抗性; -2 闪避",
+  "origin": "荒野",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通",
+   "推荐苦修者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-bleed_stone.webp",
+  "name": "流血魔石",
+  "attr": "+15% 出血几率; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-blight_charm.webp",
+  "name": "抗毒挂坠",
+  "attr": "+20% 腐蚀抗性; -2 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-blight_stone.webp",
+  "name": "中毒魔石",
+  "attr": "+15% 毒蚀几率; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-critical_stone.webp",
+  "name": "暴击魔石",
+  "attr": "+3% 暴击; -1 速度",
+  "origin": "兽窟",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-debuff_charm.webp",
+  "name": "辟邪挂坠",
+  "attr": "+20% 减益抗性; -2 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-debuff_stone.webp",
+  "name": "减益魔石",
+  "attr": "+15% 减益几率; -1 速度",
+  "origin": "遗迹",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-disease_charm.webp",
+  "name": "瘟疫护坠",
+  "attr": "+20% 疾病抗性; -2 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-dodge_stone.webp",
+  "name": "闪避魔石",
+  "attr": "+4 闪避; -1 速度",
+  "origin": "遗迹",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-health_stone.webp",
+  "name": "生命魔石",
+  "attr": "+10% 最大生命; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-move_charm.webp",
+  "name": "错位挂坠",
+  "attr": "+20% 位移抗性; -1 速度",
+  "origin": "荒野",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-move_stone.webp",
+  "name": "位移魔石",
+  "attr": "+15% 位移几率; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-protection_stone.webp",
+  "name": "防御魔石",
+  "attr": "+5% 防御; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-stun_charm.webp",
+  "name": "眩晕挂坠",
+  "attr": "+20% 眩晕抗性; -2 闪避",
+  "origin": "遗迹",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-stun_stone.webp",
+  "name": "眩晕魔石",
+  "attr": "+10% 眩晕几率; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-archers_ring.webp",
+  "name": "射手戒指",
+  "attr": "+5 精准 远程技能; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-bloodied_fetish.webp",
+  "name": "染血玩偶",
+  "attr": "+20% 腐蚀抗性; +20% 流血抗性; -20% 疾病抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-book_of_intuition.webp",
+  "name": "直觉之书",
+  "attr": "-20% 队伍惊慌概率; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-caution_cloak.webp",
+  "name": "警戒斗篷",
+  "attr": "+10% 侦察概率; -10 速度在第一回合",
+  "origin": "荒野",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-damage_stone.webp",
+  "name": "伤害魔石",
+  "attr": "+10% 伤害; -4 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-dazzling_charm.webp",
+  "name": "闪亮挂坠",
+  "attr": "+10% 眩晕几率",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-deteriorating_bracer.webp",
+  "name": "恶化护腕",
+  "attr": "+10 闪避如果生命值高于75%; -6 闪避如果生命值低于50%",
+  "origin": "荒野",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-reckless_charm.webp",
+  "name": "蛮力挂坠",
+  "attr": "+5 精准; -2 闪避",
+  "origin": "荒野",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-slippery_boots.webp",
+  "name": "光滑长靴",
+  "attr": "+4 闪避; -20% 位移抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-snake_oil.webp",
+  "name": "蛇油",
+  "attr": "-10% 所受压力伤害",
+  "origin": "遗迹",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-speed_stone.webp",
+  "name": "速度魔石",
+  "attr": "+1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-survival_guide.webp",
+  "name": "生存指南",
+  "attr": "+10% 侦察概率; +10% 陷阱解除概率; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-warriors_bracer.webp",
+  "name": "勇士护腕",
+  "attr": "+10% 伤害 近战技能; -4 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-warriors_cap.webp",
+  "name": "勇士头盔",
+  "attr": "+5 精准 近战技能",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "普通",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-bleed_amulet.webp",
+  "name": "鲜血项链",
+  "attr": "+20% 出血几率; +20% 流血抗性; -20% 腐蚀抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良",
+   "推荐苦修者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-blight_amulet.webp",
+  "name": "蚀毒项链",
+  "attr": "+20% 毒蚀几率; +20% 腐蚀抗性; -20% 流血抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-blood_charm.webp",
+  "name": "血型挂坠",
+  "attr": "+30% 流血抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良",
+   "推荐苦修者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-bloodthirst_ring.webp",
+  "name": "渴血之戒",
+  "attr": "-100% 食物消耗; +10% 最大生命; -25% 受到的生命治疗",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-book_of_constitution.webp",
+  "name": "构造之书",
+  "attr": "+30% 腐蚀抗性; +30% 疾病抗性; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-book_of_holiness.webp",
+  "name": "圣洁之书",
+  "attr": "-20% 所受压力伤害; -10% 致死抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-book_of_rage.webp",
+  "name": "愤怒之书",
+  "attr": "+20% 伤害如果生命值低于33%; +8% 暴击如果生命值低于33%; -10% 流血抗性; -10% 腐蚀抗性",
+  "origin": "荒野",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-book_of_relaxation.webp",
+  "name": "安神之书",
+  "attr": "-10% 所受压力伤害; +4 精准; -4 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-camouflage_cloak.webp",
+  "name": "伪装斗篷",
+  "attr": "+15 闪避如果亮度高于75; -20% 眩晕抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-calming_crystal.webp",
+  "name": "安定水晶",
+  "attr": "-15% 所受压力伤害; -1 速度",
+  "origin": "遗迹",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-chirurgeons_charm.webp",
+  "name": "医者挂坠",
+  "attr": "+15% 生命治疗",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-dark_bracer.webp",
+  "name": "暗黑护腕",
+  "attr": "+8% 暴击如果亮度低于26; +5 闪避如果亮度低于51; -10 伤害如果亮度高于51",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-debuff_amulet.webp",
+  "name": "衰弱项链",
+  "attr": "+30% 减益几率; +30% 减益抗性; -4 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-gamblers_charm.webp",
+  "name": "赌徒挂坠",
+  "attr": "+15% 最大生命; -10% 致死抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-heavy_boots.webp",
+  "name": "沉重长靴",
+  "attr": "+40% 位移抗性; +20% 防御; -2 速度",
+  "origin": "",
+  "note": "老兵特殊本/任务可带，要的是防御",
+  "labels": [
+   "通用",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-life_crystal.webp",
+  "name": "生命水晶",
+  "attr": "+20% 最大生命; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-move_amulet.webp",
+  "name": "错位项链",
+  "attr": "+20% 位移几率; +30% 位移抗性; -10% 减益抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-seer_stone.webp",
+  "name": "贤者之石",
+  "attr": "+15% 侦察概率; -1 速度",
+  "origin": "遗迹",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-shimmering_cloak.webp",
+  "name": "闪烁斗篷",
+  "attr": "+8 闪避; -33% 受到的生命治疗",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-solar_bracer.webp",
+  "name": "光明护腕",
+  "attr": "+4% 暴击如果亮度高于75; +5 闪避如果亮度高于75; -5 暴击如果亮度低于50; -6 闪避如果亮度低于51",
+  "origin": "兽窟",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良",
+   "推荐高光"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-steady_bracer.webp",
+  "name": "稳固护腕",
+  "attr": "+10 精准 远程技能; -2 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-stun_amulet.webp",
+  "name": "眩晕项链",
+  "attr": "+10% 眩晕几率; +20% 眩晕抗性; -4 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-surgical_glove.webp",
+  "name": "手术手套",
+  "attr": "+8% 暴击 近战技能; +5 精准 近战技能; -20% 位移抗性; -10% 减益抗性",
+  "origin": "兽窟",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-swift_cloak.webp",
+  "name": "迅捷斗篷",
+  "attr": "+2 速度; -20% 位移抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-tenacity_ring.webp",
+  "name": "坚韧戒指",
+  "attr": "+10% 致死抗性; +5 闪避; -5暴击",
+  "origin": "遗迹",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-worrystone.webp",
+  "name": "忘忧石",
+  "attr": "+10% 美德概率; -10% 所受压力伤害; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-beast_slayers_ring.webp",
+  "name": "野兽克星戒指",
+  "attr": "+25% 伤害对野兽; -8 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-berserk_charm.webp",
+  "name": "狂暴吊坠",
+  "attr": "+3 速度; +15% 伤害; +15% 所受压力伤害; -5 精准; -10 美德概率",
+  "origin": "兽窟",
+  "note": "",
+  "labels": [
+   "通用",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-brawlers_gloves.webp",
+  "name": "斗士手套",
+  "attr": "+25% 伤害如果在位置1; -5 暴击; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-dark_crown.webp",
+  "name": "暗黑王冠",
+  "attr": "-25% 所受压力伤害如果亮度低于26; +15% 美德概率如果亮度低于26",
+  "origin": "荒野",
+  "note": "",
+  "labels": [
+   "通用",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-eldritch_slayers_ring.webp",
+  "name": "异魔克星戒指",
+  "attr": "+25% 伤害对异魔; -8 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-fasting_seal.webp",
+  "name": "斋戒徽记",
+  "attr": "-100% 食物消耗; -100% 挨饿时受到的生命值伤害; +5 闪避; -100% 压力于饥饿时; -100% 压力于野营餐时",
+  "origin": "兽窟",
+  "note": "",
+  "labels": [
+   "通用",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-feather_crystal.webp",
+  "name": "轻羽水晶",
+  "attr": "+2 速度; +8 闪避; -20% 眩晕抗性; -20% 位移抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "稀有",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-man_slayers_ring.webp",
+  "name": "人类克星戒指",
+  "attr": "+25% 伤害对人类; -8 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-moon_cloak.webp",
+  "name": "月光斗篷",
+  "attr": "+15% 防御如果亮度低于26; +10 闪避如果亮度低于26; +10% 所受压力伤害压力",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "稀有",
+   "推荐无光"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-moon_ring.webp",
+  "name": "月光戒指",
+  "attr": "+15% 伤害如果亮度低于25; +10 精准如果亮度低于25; +10% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "稀有",
+   "推荐无光"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-quick_draw_charm.webp",
+  "name": "先行挂坠",
+  "attr": "+8 速度在第一回合; +12% 暴击在第一回合; -3 速度在第一回合后",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-recovery_charm.webp",
+  "name": "恢复挂坠",
+  "attr": "+40% 受到的生命治疗",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-snipers_ring.webp",
+  "name": "狙击戒指",
+  "attr": "+15 精准如果在位置4; +4% 暴击如果在位置4; -2 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Sun_crown.webp",
+  "name": "光明王冠",
+  "attr": "-20% 所受压力伤害如果亮度高于75",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-sun_cloak.webp",
+  "name": "日光斗篷",
+  "attr": "+5% 防御如果亮度高于75; +10 闪避如果亮度高于75; +10% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "稀有",
+   "推荐高光"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-sun_ring.webp",
+  "name": "日光戒指",
+  "attr": "+10% 伤害如果亮度高于75; +5 精准如果亮度高于75; +10% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "稀有",
+   "推荐高光"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-unholy_slayers_ring.webp",
+  "name": "邪秽克星戒指",
+  "attr": "+25% 伤害对邪秽; -8 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-book_of_sanity.webp",
+  "name": "理智之书",
+  "attr": "-20% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cleansing_crystal.webp",
+  "name": "净化水晶",
+  "attr": "+40% 腐蚀抗性; +40% 流血抗性; +40% 减益抗性; -15% 毒蚀抗性; -15% 出血抗性; -15% 减益抗性",
+  "origin": "兽窟",
+  "note": "",
+  "labels": [
+   "通用",
+   "非常稀有",
+   "推荐苦修者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-ethereal_crucifix.webp",
+  "name": "飘渺十字架",
+  "attr": "+25% 伤害对异魔; +30% 流血抗性; -20% 最大生命值",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-focus_ring.webp",
+  "name": "专注戒指",
+  "attr": "+10 精准; +5% 暴击; -8 闪避",
+  "origin": "",
+  "note": "毕业饰品，建议有3~4个",
+  "labels": [
+   "通用",
+   "非常稀有",
+   "毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-fortifying_garlic.webp",
+  "name": "强力大蒜",
+  "attr": "+33% 腐蚀抗性; +33% 流血抗性; +33% 疾病抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "非常稀有",
+   "推荐苦修者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-heros_ring.webp",
+  "name": "英雄戒指",
+  "attr": "+25 美德概率",
+  "origin": "",
+  "note": "可带一个，队伍人员轮流使用",
+  "labels": [
+   "通用",
+   "非常稀有",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-legendary_bracer.webp",
+  "name": "传奇护腕",
+  "attr": "+20% 伤害; -1 速度; +10% 所受压力伤害",
+  "origin": "",
+  "note": "高伤害加成，农庄适配性更高",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-martyrs_seal.webp",
+  "name": "殉道者徽记",
+  "attr": "+60% 伤害处于濒死; +14% 暴击处于濒死; +12% 致死抗性; +15% 最大生命",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "非常稀有",
+   "推荐苦修者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-tough_ring.webp",
+  "name": "强韧戒指",
+  "attr": "+10% 防御; +15% 最大生命; -15% 伤害; +10% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_padlock_patience.webp",
+  "name": "耐心枷锁",
+  "attr": "+10% 美德概率",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "咒缚者",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Padlockoftransference.webp",
+  "name": "变身枷锁",
+  "attr": "+20% 眩晕几率; +20% 毒蚀几率",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "咒缚者",
+   "优良",
+   "咒缚者毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Protectivepadlock.webp",
+  "name": "守护枷锁",
+  "attr": "+15% 防御; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "咒缚者",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Lockoffury.webp",
+  "name": "狂怒枷锁",
+  "attr": "+10% 伤害; +3 速度; -10% 最大生命",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "咒缚者",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Restrainingpadlock.webp",
+  "name": "抑制枷锁",
+  "attr": "-40% 队伍所受压力伤害; -40% 变身造成的压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "咒缚者",
+   "非常稀有",
+   "咒缚者毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Bag_of_Marbles.webp",
+  "name": "弹珠袋子",
+  "attr": "+10 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "古董商人",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Bloodcourse_Medallion.webp",
+  "name": "血课奖章",
+  "attr": "+33% 受到的生命治疗",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "古董商人",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Carapace_Idol.webp",
+  "name": "甲壳圣像",
+  "attr": "+25% 防御",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "古董商人",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Fleet_Florin.webp",
+  "name": "舰队弗罗林",
+  "attr": "+4 速度; +20% 减益几率",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "古董商人",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Candle_of_Life.webp",
+  "name": "生命之烛",
+  "attr": "+50% 生命治疗; +15% 最大生命",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "古董商人",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Sturdygreaves.webp",
+  "name": "稳固护胫",
+  "attr": "+30% 位移抗性; +30% 位移几率; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "弩手",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Vengefulgreaves.webp",
+  "name": "复仇护胫",
+  "attr": "+3% 暴击",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "弩手",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_medics_greaves.webp",
+  "name": "治疗护胫",
+  "attr": "+33% 生命治疗",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "弩手",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/One_eye_bandana.webp",
+  "name": "标靶头巾",
+  "attr": "+8 精准; +5 暴击; -4 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "弩手",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Bandana.webp",
+  "name": "愤怒头巾",
+  "attr": "+25% 伤害如果在位置4; +30% 减益几率; -50% 生命治疗",
+  "origin": "兽窟",
+  "note": "",
+  "labels": [
+   "弩手",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-agile_talon.webp",
+  "name": "敏捷之爪",
+  "attr": "+1 速度; +4 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "赏金猎人",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-unmovable_helmet.webp",
+  "name": "稳固头盔",
+  "attr": "+30% 位移抗性; +20% 位移几率",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "赏金猎人",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-campers_helmet.webp",
+  "name": "营寨头盔",
+  "attr": "+20% 获得的压力治疗 扎营时; +10% 侦察概率",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "赏金猎人",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-hunters_talon.webp",
+  "name": "猎手之爪",
+  "attr": "+6% 暴击; +10 精准; +50% 食物消耗",
+  "origin": "兽窟",
+  "note": "",
+  "labels": [
+   "赏金猎人",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-wounding_helmet.webp",
+  "name": "嗜戮头盔",
+  "attr": "+25% 伤害 近战技能; -25% 位移几率; +20% 眩晕几率",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "赏金猎人",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-defenders_seal.webp",
+  "name": "防御印记",
+  "attr": "+5% 防御; -3 暴击",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "十字军",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-knights_crest.webp",
+  "name": "骑士饰章",
+  "attr": "+10% 最大生命",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "十字军",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-swordsmans_crest.webp",
+  "name": "剑士饰章",
+  "attr": "+10% 伤害 近战技能; -50% 生命治疗",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "十字军",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-paralyzers_crest.webp",
+  "name": "制裁饰章",
+  "attr": "+20% 眩晕几率; -2 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "十字军",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-commanders_orders.webp",
+  "name": "军令状",
+  "attr": "+15% 获得的压力治疗; +33% 生命治疗; -10% 伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "十字军",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-holy_orders.webp",
+  "name": "神圣祷文",
+  "attr": "+15% 美德概率; -20% 所受压力伤害; +12% 致死抗性; -20% 腐蚀抗性; -20% 流血抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "十字军",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Flag_hood_1.webp",
+  "name": "裂心头巾",
+  "attr": "+4 速度如果生命值低于40%",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "苦修者",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Flag_collar_1.webp",
+  "name": "复生领环",
+  "attr": "+33% 生命治疗; -15% 出血几率",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "苦修者",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Flag_hood_2.webp",
+  "name": "惩罚头巾",
+  "attr": "+20% 出血几率; +15% 伤害如果生命值低于40%; -20% 生命治疗",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "苦修者",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Flag_collar_2.webp",
+  "name": "苦难领环",
+  "attr": "+20% 流血抗性如果生命值低于40%; +20% 腐蚀抗性如果生命值低于40%; +10% 最大生命",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "苦修者",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Eternitys_Collar.webp",
+  "name": "永恒领环",
+  "attr": "+10% 致死抗性; +20 闪避处于濒死; +20% 伤害如果压力高于85",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "苦修者",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-quickening_satchel.webp",
+  "name": "迅捷背包",
+  "attr": "+2 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "盗墓贼",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-stunning_satchel.webp",
+  "name": "厌物背包",
+  "attr": "+20% 伤害对腐蚀",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "盗墓贼",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-seers_satchel.webp",
+  "name": "恶毒背包",
+  "attr": "+25% 毒蚀几率; +1 速度; -4 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "盗墓贼",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-lucky_talisman.webp",
+  "name": "幸运护符",
+  "attr": "+12 闪避; +10 精准 远程技能; +10% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "盗墓贼",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-raiders_talisman.webp",
+  "name": "摸金符",
+  "attr": "+5% 暴击; +30% 陷阱解除概率; +2 速度; +15% 侦察概率; -10% 最大生命",
+  "origin": "兽窟",
+  "note": "真不好出",
+  "labels": [
+   "盗墓贼",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-bleeding_pendant.webp",
+  "name": "流血吊坠",
+  "attr": "+15% 出血几率",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "蛮族战士",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-selfish_pendant.webp",
+  "name": "自私吊坠",
+  "attr": "-15% 所受压力伤害",
+  "origin": "荒野",
+  "note": "",
+  "labels": [
+   "蛮族战士",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-double_edged_pendant.webp",
+  "name": "双刃吊坠",
+  "attr": "+15% 最大生命; -20% 眩晕抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "蛮族战士",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-heavens_hairpin.webp",
+  "name": "天堂发髻",
+  "attr": "-25% 所受压力伤害如果亮度高于75; +10 精准如果亮度高于75",
+  "origin": "海湾",
+  "note": "",
+  "labels": [
+   "蛮族战士",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-hells_hairpin.webp",
+  "name": "地狱发髻",
+  "attr": "+10% 暴击如果亮度低于25; +15 精准如果亮度低于25; -10% 减益抗性; -10% 流血抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "蛮族战士",
+   "非常稀有",
+   "毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-drifters_buckle.webp",
+  "name": "流浪汉的皮带扣",
+  "attr": "+10% 陷阱解除概率; +4 闪避; -5% 获得的压力治疗",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "强盗",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-flashfire_gunpowder.webp",
+  "name": "速燃火药",
+  "attr": "+10% 伤害 远程技能; -20% 眩晕抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "强盗",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cursed_buckle.webp",
+  "name": "坚定带扣",
+  "attr": "+5% 暴击; +5% 所受压力伤害; -3% 美德概率",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "强盗",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-dodgy_sheath.webp",
+  "name": "狡诈剑鞘",
+  "attr": "+8 闪避; +1 速度; -10 精准 远程技能",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "强盗",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-sharpening_sheath.webp",
+  "name": "锋利的剑鞘",
+  "attr": "+7% 暴击 近战技能; +40% 出血几率; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "强盗",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-poisoning_buckle.webp",
+  "name": "强盗的皮带扣",
+  "attr": "+20% 伤害 远程技能; +15 精准 远程技能; -10% 伤害 近战技能; -5% 暴击 近战技能",
+  "origin": "遗迹",
+  "note": "",
+  "labels": [
+   "强盗",
+   "非常稀有",
+   "毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-agility_whistle.webp",
+  "name": "迅捷尖哨",
+  "attr": "+4 闪避; +1 速度; -20% 减益抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "训犬师",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_scouting_whistle.webp",
+  "name": "侦察尖哨",
+  "attr": "+20% 侦察概率如果亮度低于51; +20% 陷阱解除概率",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "训犬师",
+   "普通",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Protective_Collar.webp",
+  "name": "警署闷棍",
+  "attr": "+25% 眩晕几率; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "训犬师",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Collar.webp",
+  "name": "防护项圈",
+  "attr": "+12 闪避; -15% 伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "训犬师",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Caudgel_weight.webp",
+  "name": "尖刺项圈",
+  "attr": "+20% 伤害; +30% 出血几率; -20% 受到的生命治疗; -50% 生命治疗",
+  "origin": "兽窟",
+  "note": "",
+  "labels": [
+   "训犬师",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-bloody_dice.webp",
+  "name": "血腥骰子",
+  "attr": "+30% 出血几率; -10% 流血抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "小丑",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-lucky_dice.webp",
+  "name": "幸运骰子",
+  "attr": "+4 精准; +4 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "小丑",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-critical_dice.webp",
+  "name": "暴击骰子",
+  "attr": "+7% 暴击",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "小丑",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-bright_tambourine.webp",
+  "name": "光明手鼓",
+  "attr": "-25% 所受压力伤害如果亮度高于75; +15% 所受压力伤害如果亮度低于51; +20% 减压类技能",
+  "origin": "",
+  "note": "无光高光都毕业",
+  "labels": [
+   "小丑",
+   "稀有",
+   "毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-dark_tambourine.webp",
+  "name": "黑暗手鼓",
+  "attr": "+12% 致死抗性; -25% 所受压力伤害如果亮度低于26; +10% 美德概率如果亮度低于26",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "小丑",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-healing_armlet.webp",
+  "name": "治疗臂章",
+  "attr": "+20% 受到的生命治疗",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "麻风剑客",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-selfish_armlet.webp",
+  "name": "救赎臂章",
+  "attr": "+15% 伤害如果在位置1; -3% 美德概率",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "麻风剑客",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-fortunate_armlet.webp",
+  "name": "幸运臂环",
+  "attr": "+8 精准; +3% 暴击; +10% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "麻风剑客",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-immunity_mask.webp",
+  "name": "免疫面具",
+  "attr": "+40% 眩晕抗性; +30% 腐蚀抗性; +30% 流血抗性; -10% 最大生命",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "麻风剑客",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Berserk_mask.webp",
+  "name": "狂暴面具",
+  "attr": "+8% 暴击; +3 速度; -10% 美德概率; -33% 受到的生命治疗",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "麻风剑客",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cleansing_eyepatch.webp",
+  "name": "纯净眼罩",
+  "attr": "+30% 腐蚀抗性; +20% 疾病抗性; -2 闪避",
+  "origin": "荒野",
+  "note": "",
+  "labels": [
+   "老兵",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-sly_eyepatch.webp",
+  "name": "狡诈眼罩",
+  "attr": "+4 闪避; -10% 眩晕抗性; -10% 位移抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "老兵",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_longevity_eyepatch.webp",
+  "name": "强壮眼罩",
+  "attr": "+15% 最大生命; -2 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "老兵",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-guardians_shield.webp",
+  "name": "防壁巨盾",
+  "attr": "+40% 位移几率; +30% 眩晕几率; -15% 伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "老兵",
+   "稀有",
+   "毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Man_at_arms_Shield.webp",
+  "name": "守卫盾牌",
+  "attr": "+10% 防御如果在位置4; +50% 受到的生命治疗如果在位置4; +10 闪避如果在位置4",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "老兵",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Sturdy_boots.webp",
+  "name": "坚固的靴子",
+  "attr": "+30% 位移抗性; +30% 位移几率; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "火枪手",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Vengeful_boots.webp",
+  "name": "敏捷的靴子",
+  "attr": "+3% 暴击",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "火枪手",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Medics_boots.webp",
+  "name": "激励者的靴子",
+  "attr": "+33% 生命治疗",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "火枪手",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Bullseyehat.webp",
+  "name": "耐用的帽子",
+  "attr": "+8 精准; +5% 暴击; -4 闪避",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "火枪手",
+   "稀有",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Wrathful_hat.webp",
+  "name": "暴怒帽子",
+  "attr": "+25% 伤害如果在位置4; +30% 减益几率; -50% 生命治疗",
+  "origin": "兽窟",
+  "note": "",
+  "labels": [
+   "火枪手",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-eldritch_killing_incense.webp",
+  "name": "诛魔焚香",
+  "attr": "+6% 暴击对异魔; +15% 伤害对异魔",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "神秘学者",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-evasion_incense.webp",
+  "name": "闪避熏香",
+  "attr": "+8 闪避; -1 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "神秘学者",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cursed_incense.webp",
+  "name": "诅咒焚香",
+  "attr": "+40% 减益几率; +20% 位移几率; -10% 最大生命",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "神秘学者",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-sacrificial_cauldron.webp",
+  "name": "献祭坩埚",
+  "attr": "+20% 伤害; +10% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "神秘学者",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-demons_cauldron.webp",
+  "name": "恶魔坩埚",
+  "attr": "+30% 眩晕几率; +40% 减益几率; +3% 暴击; -10% 美德概率; +15% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "神秘学者",
+   "非常稀有",
+   "毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-diseased_herb.webp",
+  "name": "抗病香草",
+  "attr": "+40% 疾病抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "瘟疫医生",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-rotgut_censer.webp",
+  "name": "弗兰香炉",
+  "attr": "+8 精准; -5% 最大生命",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "瘟疫医生",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-witchs_vial.webp",
+  "name": "巫师药瓶",
+  "attr": "+15% 眩晕几率",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "瘟疫医生",
+   "普通",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-poisoned_herb.webp",
+  "name": "剧毒香草",
+  "attr": "+40% 毒蚀几率; -15% 最大生命",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "瘟疫医生",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-bloody_herb.webp",
+  "name": "血腥毒草",
+  "attr": "+10 精准 近战技能; +30% 出血几率; +20% 伤害 近战技能",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "瘟疫医生",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-blasphemous_vial.webp",
+  "name": "亵渎魔瓶",
+  "attr": "+10 精准 远程技能; +20% 眩晕几率; +20% 毒蚀几率; +25% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "瘟疫医生",
+   "非常稀有",
+   "毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-sb_1.webp",
+  "name": "蛇毒之瓶",
+  "attr": "+30% 毒蚀几率; -10% 腐蚀抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "破盾者",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-sb_2.webp",
+  "name": "闪光蛇鳞",
+  "attr": "+10% 防御; +5% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "破盾者",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-sb_3.webp",
+  "name": "舞者的缠足布",
+  "attr": "+40% 位移抗性; +2 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "破盾者",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-sb_4.webp",
+  "name": "利牙矛尖",
+  "attr": "+35% 伤害对标记; -10% 伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "破盾者",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-sb_5.webp",
+  "name": "坚皮衣甲",
+  "attr": "+33% 最大生命; -2 速度",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "破盾者",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-recovery_chalice.webp",
+  "name": "贞洁圣杯",
+  "attr": "+10% 美德概率; -5% 最大生命",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "修女",
+   "普通"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-haste_chalice.webp",
+  "name": "迅捷圣杯",
+  "attr": "+8 速度在第一回合; +2 速度在第一回合后; -25% 眩晕几率",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "修女",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-youth_chalice.webp",
+  "name": "青春圣杯",
+  "attr": "+20% 最大生命; -10% 伤害",
+  "origin": "遗迹",
+  "note": "",
+  "labels": [
+   "修女",
+   "优良"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-profane_scroll.webp",
+  "name": "亵圣卷轴",
+  "attr": "+15% 伤害; +10% 防御如果在位置2; +33% 生命治疗如果在位置2; +15% 所受压力伤害",
+  "origin": "遗迹",
+  "note": "",
+  "labels": [
+   "修女",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-book_of_holy_healing.webp",
+  "name": "治疗圣典",
+  "attr": "+25% 生命治疗; -15% 最大生命",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "修女",
+   "稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-sacred_scroll.webp",
+  "name": "神圣卷轴",
+  "attr": "-10% 所受压力伤害; +33% 生命治疗; -10% 眩晕几率; -33% 伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "修女",
+   "非常稀有",
+   "毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_madman_1.webp",
+  "name": "咏叹乐盒",
+  "attr": "-25% 所受压力伤害",
+  "origin": "谵妄的疯子",
+  "note": "谵妄的疯子掉落(wiki描述很少掉落，概率约4%)",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_madman_3.webp",
+  "name": "渐响乐盒",
+  "attr": "+15% 伤害; +2 速度; +10% 所受压力伤害",
+  "origin": "谵妄的疯子",
+  "note": "谵妄的疯子掉落(wiki描述很少掉落，概率约4%)",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_madman_2.webp",
+  "name": "序曲乐盒",
+  "attr": "+15% 最大生命; +8 闪避; -2 精准",
+  "origin": "谵妄的疯子",
+  "note": "谵妄的疯子掉落(wiki描述很少掉落，概率约4%)",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_collector02.webp",
+  "name": "巴利斯坦的头颅",
+  "attr": "+25% 防御; +20% 所受压力伤害",
+  "origin": "收藏家/密门",
+  "note": "",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_collector01.webp",
+  "name": "迪斯马的头颅",
+  "attr": "+25% 伤害; -10% 最大生命; +20% 所受压力伤害",
+  "origin": "收藏家/密门",
+  "note": "",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_collector03.webp",
+  "name": "朱妮娅的头颅",
+  "attr": "+30% 生命治疗; +20% 所受压力伤害",
+  "origin": "收藏家/密门",
+  "note": "",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Tempting_goblet.webp",
+  "name": "诱惑酒杯",
+  "attr": "+20% 最大生命; +3 速度; +8 闪避; +25% 所受压力伤害; -10% 美德概率",
+  "origin": "遗迹",
+  "note": "冠军本骸骨贵族掉落(wiki描述很少掉落，未注明概率)",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Ancestor_Map.webp",
+  "name": "先祖的地图",
+  "attr": "+25% 陷阱解除概率; +25% 侦察概率; +10% 所受压力伤害",
+  "origin": "",
+  "note": "击杀跛行者（爬爬）掉落",
+  "labels": [
+   "通用",
+   "先祖",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Ancestor_Scroll.webp",
+  "name": "先祖的卷轴",
+  "attr": "+25% 生命治疗; +25% 减压类技能; +10% 所受压力伤害",
+  "origin": "",
+  "note": "击杀跛行者（爬爬）掉落",
+  "labels": [
+   "通用",
+   "先祖",
+   "毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Ancestor_Idol.webp",
+  "name": "先祖的触须魔偶",
+  "attr": "+20% 美德概率; +8% 致死抗性",
+  "origin": "",
+  "note": "击杀跛行者（爬爬）掉落",
+  "labels": [
+   "通用",
+   "先祖"
+  ]
+ },
+ {
+  "img": "/codex/img/Ancestor_Candle.webp",
+  "name": "先祖的蜡烛",
+  "attr": "+15% 伤害如果亮度高于50; +2 速度如果亮度高于50; +5 闪避如果亮度高于50; +10% 所受压力伤害",
+  "origin": "",
+  "note": "击杀跛行者（爬爬）掉落",
+  "labels": [
+   "通用",
+   "先祖",
+   "推荐高光"
+  ]
+ },
+ {
+  "img": "/codex/img/Ancestor_Bottle.webp",
+  "name": "先祖的药瓶",
+  "attr": "+25% 最大生命; +50% 食物消耗; +10% 所受压力伤害",
+  "origin": "",
+  "note": "击杀跛行者（爬爬）掉落,5件爬爬饰品掉落齐全后建议卖掉此饰品,重复掉落出售，值7500",
+  "labels": [
+   "通用",
+   "先祖"
+  ]
+ },
+ {
+  "img": "/codex/img/Ancestor_Coat.webp",
+  "name": "先祖的外套",
+  "attr": "+15 闪避; +10% 所受压力伤害",
+  "origin": "",
+  "note": "特殊本先祖宝箱、冠军本奖励、大型冠军本几率掉落",
+  "labels": [
+   "通用",
+   "先祖"
+  ]
+ },
+ {
+  "img": "/codex/img/Ancestor_Handkerchief.webp",
+  "name": "先祖的手帕",
+  "attr": "+50% 流血抗性; +50% 疾病抗性; +10% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "先祖",
+   "推荐苦修者"
+  ]
+ },
+ {
+  "img": "/codex/img/Ancestor_Lantern.webp",
+  "name": "先祖的灯笼",
+  "attr": "-20% 队伍惊慌概率; +20% 怪物惊慌概率; +10% 所受压力伤害",
+  "origin": "",
+  "note": "特殊本先祖宝箱、冠军本奖励、大型冠军本几率掉落",
+  "labels": [
+   "通用",
+   "先祖"
+  ]
+ },
+ {
+  "img": "/codex/img/Ancestor_Cream.webp",
+  "name": "先祖的刮胡膏",
+  "attr": "+50% 腐蚀抗性; +50% 减益抗性; +10% 所受压力伤害",
+  "origin": "",
+  "note": "特殊本先祖宝箱、冠军本奖励、大型冠军本几率掉落",
+  "labels": [
+   "通用",
+   "先祖"
+  ]
+ },
+ {
+  "img": "/codex/img/Ancestor_Ball.webp",
+  "name": "先祖的弹丸",
+  "attr": "+8% 暴击 远程技能; +10% 伤害 远程技能; +10% 所受压力伤害",
+  "origin": "荒野",
+  "note": "特殊本先祖宝箱、冠军本奖励、大型冠军本几率掉落",
+  "labels": [
+   "通用",
+   "先祖",
+   "毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Ancestor_Pen.webp",
+  "name": "先祖的蘸水笔",
+  "attr": "+8% 暴击 近战技能; +10% 伤害 近战技能; +10% 所受压力伤害",
+  "origin": "",
+  "note": "特殊本先祖宝箱、冠军本奖励、大型冠军本几率掉落",
+  "labels": [
+   "通用",
+   "先祖",
+   "毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Ancestor_Pistol.webp",
+  "name": "先祖的手枪",
+  "attr": "+15 精准 远程技能; +3 速度; +10% 所受压力伤害",
+  "origin": "",
+  "note": "特殊本先祖宝箱、冠军本奖励、大型冠军本几率掉落",
+  "labels": [
+   "通用",
+   "先祖",
+   "毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Ancestor_Potrait.webp",
+  "name": "先祖的肖像画",
+  "attr": "+50% 砺练值; +10% 所受压力伤害",
+  "origin": "",
+  "note": "特殊本先祖宝箱、冠军本奖励、大型冠军本几率掉落",
+  "labels": [
+   "通用",
+   "先祖"
+  ]
+ },
+ {
+  "img": "/codex/img/Ancestor_Ring.webp",
+  "name": "先祖的家印戒指",
+  "attr": "+10 精准; +10% 防御; +10% 所受压力伤害",
+  "origin": "",
+  "note": "特殊本先祖宝箱、冠军本奖励、大型冠军本几率掉落",
+  "labels": [
+   "通用",
+   "先祖"
+  ]
+ },
+ {
+  "img": "/codex/img/Necromancer_Trinket.webp",
+  "name": "死灵法师的尖领",
+  "attr": "+20% 伤害对邪秽; +8% 暴击对邪秽",
+  "origin": "遗迹",
+  "note": "",
+  "labels": [
+   "通用",
+   "猎获"
+  ]
+ },
+ {
+  "img": "/codex/img/Prophet_Trinket.webp",
+  "name": "先知的眼睛",
+  "attr": "+15 精准如果在位置4; +3 速度如果在位置4;  -15% 所受压力伤害如果在位置4",
+  "origin": "遗迹",
+  "note": "搭配带有‘点火人的引燃棒’4号位的训狗师",
+  "labels": [
+   "通用",
+   "猎获"
+  ]
+ },
+ {
+  "img": "/codex/img/Hag_Trinket.webp",
+  "name": "巫婆的汤勺",
+  "attr": "+30% 毒蚀几率; +40% 腐蚀抗性; +40% 疾病抗性",
+  "origin": "荒野",
+  "note": "",
+  "labels": [
+   "通用",
+   "猎获"
+  ]
+ },
+ {
+  "img": "/codex/img/Cannon_Trinket.webp",
+  "name": "点火人的引燃棒",
+  "attr": "+2 速度; +10% 伤害 远程技能; +6% 暴击 远程技能",
+  "origin": "荒野",
+  "note": "搭配个不缺精准的训狗师，极强；高速点控也很强",
+  "labels": [
+   "通用",
+   "猎获"
+  ]
+ },
+ {
+  "img": "/codex/img/Swine_Trinket.webp",
+  "name": "威利伯的旗帜",
+  "attr": "+50% 眩晕抗性; +10 闪避",
+  "origin": "兽窟",
+  "note": "",
+  "labels": [
+   "通用",
+   "猎获"
+  ]
+ },
+ {
+  "img": "/codex/img/Flesh_Trinket.webp",
+  "name": "血肉之心",
+  "attr": "+50% 流血抗性; +15% 最大生命",
+  "origin": "兽窟",
+  "note": "高度匹配苦修者",
+  "labels": [
+   "通用",
+   "猎获"
+  ]
+ },
+ {
+  "img": "/codex/img/Siren_Trinket.webp",
+  "name": "塞壬的螺号",
+  "attr": "+50% 减益抗性; -20% 所受压力伤害",
+  "origin": "海湾",
+  "note": "",
+  "labels": [
+   "通用",
+   "猎获"
+  ]
+ },
+ {
+  "img": "/codex/img/Crew_Trinket.webp",
+  "name": "船长的铃铛",
+  "attr": "+50% 位移抗性; +20% 受到的生命治疗",
+  "origin": "海湾",
+  "note": "",
+  "labels": [
+   "通用",
+   "猎获"
+  ]
+ },
+ {
+  "img": "/codex/img/Wolf_tassle.webp",
+  "name": "“头狼”挂坠",
+  "attr": "+20% 伤害对标记; +10 精准对标记; +5% 暴击对体型2",
+  "origin": "门前恶狼事件",
+  "note": "标记队中较低速度输出使用极佳",
+  "labels": [
+   "通用",
+   "猎获"
+  ]
+ },
+ {
+  "img": "/codex/img/Baron_trinket.webp",
+  "name": "男爵的鞭子",
+  "attr": "+75% 减益抗性(身患猩红诅咒时); +4 速度(身患猩红诅咒时); -10% 眩晕抗性(身患猩红诅咒时)",
+  "origin": "庭院",
+  "note": "击杀猩红庭院男爵获得",
+  "labels": [
+   "通用",
+   "猎获"
+  ]
+ },
+ {
+  "img": "/codex/img/Viscount_trinket.webp",
+  "name": "子爵的香料",
+  "attr": "+5 暴击(身患猩红诅咒时); +100% 治疗于食物(身患猩红诅咒时); +100% 食物消耗(身患猩红诅咒时)",
+  "origin": "庭院",
+  "note": "击杀猩红庭院子爵获得",
+  "labels": [
+   "通用",
+   "猎获"
+  ]
+ },
+ {
+  "img": "/codex/img/Countess_trinket.webp",
+  "name": "伯爵夫人的扇子",
+  "attr": "+50% 受到的生命治疗(身患猩红诅咒时); -25% 流血抗性(身患猩红诅咒时)",
+  "origin": "庭院",
+  "note": "击杀猩红庭院伯爵获得",
+  "labels": [
+   "通用",
+   "猎获"
+  ]
+ },
+ {
+  "img": "/codex/img/Crow_trinket_talon.webp",
+  "name": "结痂的鸦爪",
+  "attr": "+7% 暴击; +33% 疾病抗性如果亮度低于75; +33% 出血几率如果亮度低于50; +15% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "尖叫魔"
+  ]
+ },
+ {
+  "img": "/codex/img/Crow_trinket_eye.webp",
+  "name": "膨胀的鸦眼",
+  "attr": "+10 精准; +33% 疾病抗性如果亮度低于75; +15% 侦察概率如果亮度低于50; +15% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "尖叫魔"
+  ]
+ },
+ {
+  "img": "/codex/img/Crow_trinket_tailfeather.webp",
+  "name": "褪落的尾翼",
+  "attr": "+4 速度; +33% 疾病抗性如果亮度低于75; +33% 眩晕抗性如果亮度低于50; +15% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "尖叫魔"
+  ]
+ },
+ {
+  "img": "/codex/img/Crow_trinket_wingfeather.webp",
+  "name": "褪落的翼羽",
+  "attr": "+10 闪避; +33% 疾病抗性如果亮度低于75; +33% 位移抗性如果亮度低于50; +15% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "尖叫魔"
+  ]
+ },
+ {
+  "img": "/codex/img/Pic1.webp",
+  "name": "先祖的佳酿",
+  "attr": "+延长猩红诅咒渴血状态",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Pic2.webp",
+  "name": "宴会图章",
+  "attr": "-25% 所受压力伤害(身患猩红诅咒时)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Dazzling_Mirror.webp",
+  "name": "耀眼的镜子",
+  "attr": "+4 速度(包含血裔时); +20% 眩晕几率对血裔",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Mantra_of_Fasting.webp",
+  "name": "斋戒符咒",
+  "attr": "+40% 最大生命(猩红诅咒-凋零时); +7 速度(猩红诅咒-凋零时)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Mercurial_Salve.webp",
+  "name": "水银药膏",
+  "attr": "+25% 伤害对血裔",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Pagan_Talisman.webp",
+  "name": "渎神符饰",
+  "attr": "+25% 伤害对狂信者; -10% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Rat_Carcass.webp",
+  "name": "老鼠的遗骸",
+  "attr": "+免疫因猩红诅咒死亡",
+  "origin": "",
+  "note": "最多拥有两件",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Pic3.webp",
+  "name": "猩红鼻烟",
+  "attr": "+8% 暴击(猩红诅咒-血怒时); +15 闪避(猩红诅咒-血怒时)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Sculptors_Tools.webp",
+  "name": "雕塑家的工具",
+  "attr": "+40% 伤害对石雕",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "非常稀有"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_abom_shameful_shroud.webp",
+  "name": "屈辱披风",
+  "attr": "+10 闪避; -15% 所受压力伤害; +20% 伤害如果在位置1(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "咒缚者",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_abom_wrought_osmond_chains.webp",
+  "name": "神护锁链",
+  "attr": "+20% 伤害 远程技能; +8% 暴击 远程技能; +20% 伤害如果在位置1(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "咒缚者",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_anti_the_masters_essence.webp",
+  "name": "主人的精华",
+  "attr": "+50% 生命治疗; +35% 腐蚀抗性; +35% 减益抗性; +4 速度(套装效果); +10 闪避(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "古董商人",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_anti_two_of_the_three.webp",
+  "name": "三相之二",
+  "attr": "+50% 伤害对腐蚀; +8% 暴击对腐蚀; +4 速度(套装效果); +10 闪避(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "古董商人",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_arb_childhood_treasure.webp",
+  "name": "童年的宝藏",
+  "attr": "+30% 生命治疗; +20% 生命治疗 扎营时; -15% 所受压力伤害; +25% 防御(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "弩手",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_arb_sharpshooters_string_wax.webp",
+  "name": "睡前故事",
+  "attr": "+15 精准对标记; +8% 暴击对标记; +35% 减益几率; +35% 位移几率; +25% 防御(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "弩手",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_bh_crime_lords_molars.webp",
+  "name": "黑道老大的臼齿",
+  "attr": "+20% 伤害对标记; +20% 伤害对眩晕; +20% 伤害对流血; -10 闪避; +5% 暴击对标记(套装效果); +5% 暴击对眩晕(套装效果); +5% 暴击对流血(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "赏金猎人",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_bh_vow_of_revenge.webp",
+  "name": "充满仇恨的杀戮名单",
+  "attr": "+50% 位移几率; +35% 出血几率; -15 精准 远程技能; +5% 暴击对标记(套装效果); +5% 暴击对眩晕(套装效果); +5% 暴击对流血(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "赏金猎人",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_cru_glittering_spaulders.webp",
+  "name": "闪亮的肩甲",
+  "attr": "+15% 防御; +35% 位移抗性; -15% 所受压力伤害; -2 速度; +20% 最大生命值(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "十字军",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_cru_signed_conscription.webp",
+  "name": "签署的动员章",
+  "attr": "+20% 生命治疗; +20% 减压类技能; +20% 最大生命值(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "十字军",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_flag_chipped_tooth.webp",
+  "name": "断裂的牙齿",
+  "attr": "+20% 最大生命; +35% 位移抗性; +10% 致死抗性(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "苦修者",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_flag_shard_of_glass.webp",
+  "name": "玻璃碎片",
+  "attr": "+35% 出血几率; -20% 流血抗性; +10% 致死抗性(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "苦修者",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_gr_absinthe.webp",
+  "name": "苦艾酒",
+  "attr": "+35% 疾病抗性; +35% 腐蚀抗性; +35% 毒蚀几率; -10% 最大生命; +5% 暴击(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "盗墓贼",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_gr_sharpened_letter_opener.webp",
+  "name": "锋利的开信刀",
+  "attr": "+25% 伤害 近战技能; +10 精准 近战技能; +5 闪避; +5% 暴击(套装效果)",
+  "origin": "",
+  "note": "盗墓单带极品饰品",
+  "labels": [
+   "盗墓贼",
+   "庭院",
+   "毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_hel_lioness_warpaint.webp",
+  "name": "雄鹰战痕",
+  "attr": "+20% 伤害如果生命值低于75%; +20% 伤害如果生命值低于50%; +20% 伤害如果生命值低于25%; +10% 所受压力伤害; +7 精准(套装效果); +7 闪避(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "蛮族战士",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_hel_mark_of_the_outcast.webp",
+  "name": "放逐印记",
+  "attr": "+2 速度; +35% 出血几率; +15% 致死抗性; -15% 受到的生命治疗; +7 精准(套装效果); +7 闪避(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "蛮族战士",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_high_bloodied_neckerchief.webp",
+  "name": "染血围巾",
+  "attr": "+2 速度; +10 闪避; +45% 美德概率(套装效果)",
+  "origin": "",
+  "note": "套装对船员BOSS有针对性",
+  "labels": [
+   "强盗",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_high_shameful_locket.webp",
+  "name": "羞耻吊坠",
+  "attr": "+10 精准; +5% 暴击; +15% 所受压力伤害; +45% 美德概率(套装效果)",
+  "origin": "",
+  "note": "套装对船员BOSS有针对性",
+  "labels": [
+   "强盗",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_hm_damning_evidence.webp",
+  "name": "腐败之证",
+  "attr": "+25% 侦察概率; -15% 队伍惊慌概率; +10% 所受压力伤害; +25% 伤害对流血(套装效果); +5% 暴击对流血(套装效果)",
+  "origin": "",
+  "note": "套装配合高速出血队友，伤害可观。单件提供巨量侦察概率",
+  "labels": [
+   "训犬师",
+   "庭院",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_hm_lawmans_badge.webp",
+  "name": "破损警章",
+  "attr": "+15 精准 远程技能; +50% 减压类技能(扎营时); +25% 生命治疗; -20% 眩晕抗性; -20% 减益抗性; +25% 伤害对流血(套装效果); +5% 暴击对流血(套装效果)",
+  "origin": "",
+  "note": "套装配合高速出血队友，伤害可观。",
+  "labels": [
+   "训犬师",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_jest_tasting_cup.webp",
+  "name": "暴君的品酒杯",
+  "attr": "+33% 减压类技能; +25% 所受压力伤害; +33% 减压类技能 扎营时(套装效果)",
+  "origin": "",
+  "note": "单件毕业饰品",
+  "labels": [
+   "小丑",
+   "庭院",
+   "毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_jest_tyrants_fingerbone.webp",
+  "name": "暴君的指骨",
+  "attr": "+3 速度如果在位置1; +20 闪避如果在位置1; +33% 减压类技能 扎营时(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "小丑",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_lep_last_will_and_testament.webp",
+  "name": "临终遗嘱",
+  "attr": "+15% 防御; +15% 最大生命; -10% 致死抗性; +15 精准如果生命值高于60%(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "麻风剑客",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_lep_tin_flute.webp",
+  "name": "长笛",
+  "attr": " -20% 所受压力伤害; +33% 减压类技能 扎营时; +15 精准如果生命值高于60%(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "麻风剑客",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_maa_old_unit_banner.webp",
+  "name": "旧役旗标",
+  "attr": "+10% 防御; +5% 暴击; +25% 伤害反击时; +10 精准反击时(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "老兵",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_maa_toy_soldier.webp",
+  "name": "玩具士兵",
+  "attr": "+15% 眩晕几率; +20% 减益几率; +15% 致死抗性; +10% 所受压力伤害; +10 精准反击时(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "老兵",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_musk_first_place_trophy.webp",
+  "name": "次等奖杯",
+  "attr": "+30% 生命治疗; +20% 生命治疗(扎营时); -15% 所受压力伤害; +25% 防御(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "火枪手",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_musk_silver_bullet.webp",
+  "name": "银质枪弹",
+  "attr": "+15 精准对标记; +8% 暴击对标记; +35% 减益几率; +35% 位移几率; +25% 防御(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "火枪手",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_occ_blood_pact.webp",
+  "name": "血之契约",
+  "attr": "+4 速度如果亮度低于60; +25% 伤害如果亮度低于60; -25% 出血几率; -10% 最大生命; +15 闪避(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "神秘学者",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_occ_vial_of_sand.webp",
+  "name": "一瓶黄沙",
+  "attr": "+20% 眩晕几率; +20% 减益几率; +20% 位移几率; +20% 眩晕抗性; +15 闪避(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "神秘学者",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_pd_codex_of_plagues.webp",
+  "name": "第40号实验的记录",
+  "attr": "+25% 最大生命; +35% 疾病抗性; +15% 毒蚀几率(套装效果); +15% 眩晕几率(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "瘟疫医生",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_pd_dissection_kit.webp",
+  "name": "解剖工具",
+  "attr": "+35% 出血几率; +25% 伤害; +15% 毒蚀几率(套装效果); +15% 眩晕几率(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "瘟疫医生",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-sb_set_1.webp",
+  "name": "黑曜石匕首",
+  "attr": "+40% 减益几率; +40% 毒蚀几率; +15% 最大生命(套装效果); +10% 防御(套装效果); 无法被守护(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "破盾者",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-sb_set_2.webp",
+  "name": "被切断的手",
+  "attr": "+50% 腐蚀抗性; -10% 所受压力伤害; +15% 最大生命(套装效果); +10% 防御(套装效果); 无法被守护(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "破盾者",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_vest_atonement_beads.webp",
+  "name": "赎罪念珠",
+  "attr": "+15% 伤害 近战技能; +8% 暴击 近战技能; -15% 美德概率; +35% 减益几率(套装效果); +35% 眩晕几率(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "修女",
+   "庭院"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-cc_set_vest_salacious_diary.webp",
+  "name": "背德日记",
+  "attr": "+33% 减压类技能 扎营时; +25% 生命治疗; +35% 减益几率(套装效果); +35% 眩晕几率(套装效果)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "修女",
+   "庭院",
+   "毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-com_lens_of_comet.webp",
+  "name": "彗星透镜",
+  "attr": "+无视潜行; -20% 美德概率; +5% 暴击(背包有水晶碎片时)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "水晶",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Occ_elder_sign.webp",
+  "name": "石化颅骨",
+  "attr": "+40% 防御对瘪壳怪; -20% 受到的生命治疗; +30% 防御对异魔; +15% 最大生命",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "神秘学者",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Abom_broken_key.webp",
+  "name": "破损钥匙",
+  "attr": "+15 精准; +35% 眩晕几率; +10% 所受压力伤害",
+  "origin": "",
+  "note": "咒缚者单控毕业饰品",
+  "labels": [
+   "咒缚者",
+   "农庄",
+   "毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Ant_smoking_skull.webp",
+  "name": "冒烟颅骨",
+  "attr": "+35% 闪避(背包有水晶碎片时); -15 精准; -15%腐蚀抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "古董商人",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Pd_ashen_distillation.webp",
+  "name": "尖埃蒸馏",
+  "attr": "+20% 闪避; +25% 毒蚀几率; +20% 受到的生命治疗(背包有草药时)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "瘟疫医生",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Jes_dirge_for_devoured.webp",
+  "name": "吞噬者挽歌",
+  "attr": "+25% 减压类技能; +25% 伤害(背包有鸦片酊时); +10% 所受压力伤害",
+  "origin": "",
+  "note": "毕业减压饰品，带有鸦片酊进一步提高谢幕伤害",
+  "labels": [
+   "小丑",
+   "农庄",
+   "毕业"
+  ]
+ },
+ {
+  "img": "/codex/img/Flag_acidic_husk_ichor.webp",
+  "name": "酸性灵液",
+  "attr": "-25% 最大生命; +30% 伤害; +30% 出血几率对瘪壳怪; +25% 受到的生命治疗如果生命值低于20%",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "苦修者",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Sb_spectral_speartip.webp",
+  "name": "幽灵矛尖",
+  "attr": "+15% 伤害; 5% 几率攻击随机敌方目标; +20% 毒蚀几率; +15% 最大生命",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "破盾者",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Comet_seed_pendant.webp",
+  "name": "水晶吊坠",
+  "attr": "+15% 获得的水晶碎片; +15% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Ves_heretical_passages.webp",
+  "name": "异教文章",
+  "attr": "+20% 生命治疗(背包有圣水时); +25% 伤害对瘪壳怪; +25% 伤害对异魔; +10% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "修女",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Hnd_huskfang_whistle.webp",
+  "name": "瘪牙尖哨",
+  "attr": "+50% 出血几率(背包有狗粮时); +40% 减压类技能(守护时); -10 闪避; +66% 守护持续时间",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "训狗师",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Bh_mask_of_timeless.webp",
+  "name": "永恒面具",
+  "attr": "+2 速度; +15 闪避; +5% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "赏金猎人",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Maa_mirror_shield.webp",
+  "name": "镜罩",
+  "attr": "+10 闪避; +30% 伤害反弹; +20% 眩晕抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "老兵",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Grv_huskclaw_toxin.webp",
+  "name": "珍贵药剂",
+  "attr": "+15% 闪避(背包有草药时); +3 速度; -20% 腐蚀抗性; +50% 毒蚀持续时间",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "盗墓贼",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Lep_crystalized_amulet.webp",
+  "name": "石化护身符",
+  "attr": "+10 精准(背包有绷带时); +15% 最大生命; -15% 流血抗性",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "麻风剑客",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Hwy_crystalline_gunpowder.webp",
+  "name": "晶体火药",
+  "attr": "+20% 伤害; +3 速度; -15% 眩晕抗性",
+  "origin": "",
+  "note": "可用",
+  "labels": [
+   "强盗",
+   "农庄",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Comet_cluster_pendant.webp",
+  "name": "水晶簇吊坠",
+  "attr": "+25% 获得的水晶碎片; +15% 所受压力伤害",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Hel_thirsting_blade.webp",
+  "name": "嗜血之刃",
+  "attr": "+15 精准; -20% 流血抗性; +2 速度; +8 暴击对流血; 未命中: -5 生命值",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "蛮族战士",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Msk_icosahedric_balls.webp",
+  "name": "超级火枪子弹",
+  "attr": "+20% 伤害; 20% 几率攻击随机敌方目标",
+  "origin": "",
+  "note": "乐子饰品",
+  "labels": [
+   "火枪手",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Arb_keening_bolts.webp",
+  "name": "锐利箭矢",
+  "attr": "+20% 伤害; +7% 暴击 远程技能; +3 自身压力(攻击时)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "弩手",
+   "农庄",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Coat_many_colours.webp",
+  "name": "彩色外套",
+  "attr": "击杀时：-2% 所受压力伤害(100%基础概率)(可叠加); 击杀时：+2 精准(100%基础概率)(可叠加); 被击杀：+25 压力全队; 被击杀：眩晕全队(120%基础概率)",
+  "origin": "",
+  "note": "扎营后叠加属性失效,一用一个不吱声",
+  "labels": [
+   "通用",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Millers_pipe.webp",
+  "name": "磨坊主的烟斗",
+  "attr": "击杀时：-2 压力; 击杀时：全体怪物腐蚀(120%基础概率) 2伤害/回合(持续3回合); 被击杀：+45 压力全队; 被击杀：-20% 防御全队(100%基础概率); 被击杀：-2 速度全队(100%基础概率)",
+  "origin": "",
+  "note": "",
+  "labels": [
+   "通用",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Cru_non_euclidean_hilt.webp",
+  "name": "非欧刀柄",
+  "attr": "+15% 最大生命值; 5% 几率攻击随机敌方目标; +25% 眩晕几率(背包有圣水时); 命中：腐蚀(120%基础概率) 2伤害/回合(持续2回合)",
+  "origin": "",
+  "note": "不错，但性价比太低",
+  "labels": [
+   "十字军",
+   "农庄",
+   "推荐"
+  ]
+ },
+ {
+  "img": "/codex/img/Mildredslocket.webp",
+  "name": "米尔德里德的吊坠",
+  "attr": "-100% 所受压力伤害对磨坊主; +40% 伤害对磨坊主; +40% 腐蚀抗性; +3 速度",
+  "origin": "",
+  "note": "农庄无尽中遇到对话获得，专对下一个boss，建议用完就扔，下次进来还可以领取，带出去则无法卖掉",
+  "labels": [
+   "通用",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Thing_eye.webp",
+  "name": "怪物迷人的眼睛",
+  "attr": "+4% 暴击如果生命值高于41%; +8% 暴击如果生命值低于40%",
+  "origin": "星空怪",
+  "note": "",
+  "labels": [
+   "通用",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Thing_fang.webp",
+  "name": "怪物的水晶牙",
+  "attr": "+10% 眩晕几率如果生命值高于40%; +40% 暴击如果生命值低于41%",
+  "origin": "星空怪",
+  "note": "",
+  "labels": [
+   "通用",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Thing_hide.webp",
+  "name": "怪物相移皮肤",
+  "attr": "-15% 所受压力伤害如果生命值高于41%; -50% 所受压力伤害如果生命值低于40%",
+  "origin": "星空怪",
+  "note": "",
+  "labels": [
+   "通用",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Prismatic_heart_crystal.webp",
+  "name": "棱镜心型水晶",
+  "attr": "+33% 毒蚀几率对星空怪; +33% 出血几率对星空怪; +12% 暴击对星空怪",
+  "origin": "星空怪",
+  "note": "",
+  "labels": [
+   "通用",
+   "农庄"
+  ]
+ },
+ {
+  "img": "/codex/img/Talisman_of_the_Flame.webp",
+  "name": "焮炙护符",
+  "attr": "-100% 所受压力伤害(启示); -100% 所所受伤害(启示)",
+  "origin": "",
+  "note": "通关极暗地牢首关后获得3个，是通过第二关的关键饰品",
+  "labels": [
+   "通用"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-stone_of_patience.webp",
+  "name": "耐心魔石",
+  "attr": "+5% 美德概率; -10% 所受压力伤害",
+  "origin": "",
+  "note": "Playstation 4 和 VITA 版本独有",
+  "labels": [
+   "通用"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket-stone_of_endurance.webp",
+  "name": "耐力魔石",
+  "attr": "+8% 死亡抗性",
+  "origin": "",
+  "note": "Playstation 4 和 VITA 版本独有。",
+  "labels": [
+   "通用"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_ankh_of_life.webp",
+  "name": "生命之符",
+  "attr": "+8% 致死抗性; +10 闪避处于濒死",
+  "origin": "",
+  "note": "声望等级 16 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_bloodstained_gambeson.webp",
+  "name": "染血软甲",
+  "attr": "+8% 最大生命; +4% 致死抗性",
+  "origin": "",
+  "note": "声望等级 4 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_brass_bugle.webp",
+  "name": "铜管喇叭",
+  "attr": "+50% 减压类技能",
+  "origin": "",
+  "note": "声望等级 7 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_brass_knuckles.webp",
+  "name": "指虎",
+  "attr": "+10% 伤害; +20% 眩晕几率",
+  "origin": "",
+  "note": "声望等级 12 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_carnival_masque.webp",
+  "name": "狂欢面具",
+  "attr": "+4 精准; +20% 造成的压力伤害",
+  "origin": "",
+  "note": "声望等级 8 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_crimson_hook.webp",
+  "name": "猩红弯钩",
+  "attr": "+3% 暴击; +15% 出血几率; +25% 造成的压力伤害对流血",
+  "origin": "",
+  "note": "声望等级 13 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_crushed_hemlock.webp",
+  "name": "碎毒芹",
+  "attr": "+20% 毒蚀几率; 命中(近战)：腐蚀(100%基础概率) 2伤害/回合(持续2回合)",
+  "origin": "",
+  "note": "声望等级 22 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_eagle_eye_talisman.webp",
+  "name": "鹰眼护符",
+  "attr": "+10% 伤害; +10 精准",
+  "origin": "",
+  "note": "声望等级 6 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_eerie_eye.webp",
+  "name": "怪异之眼",
+  "attr": "+12 精准; +20% 减益几率; +无视潜行",
+  "origin": "",
+  "note": "声望等级 21 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_exotic_snuff.webp",
+  "name": "异域烟盒",
+  "attr": "+30% 眩晕抗性; +30% 位移抗性; +10% 伤害(率先行动时); -4 精准",
+  "origin": "",
+  "note": "声望等级 24 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_gladiator_helmet.webp",
+  "name": "角斗士头盔",
+  "attr": "+10% 防御; +5 最大生命值",
+  "origin": "",
+  "note": "声望等级 25 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_hunters_charm.webp",
+  "name": "猎人挂坠",
+  "attr": "+15% 伤害; +4 精准",
+  "origin": "",
+  "note": "声望等级 15 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_jagged_chopper.webp",
+  "name": "齿状砍斧",
+  "attr": "+15% 伤害 近战技能; +3% 暴击",
+  "origin": "",
+  "note": "声望等级 2 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_monkey_paw.webp",
+  "name": "猴爪",
+  "attr": "+15 闪避; +8 精准; +3% 被暴击几率; +10% 所受压力伤害",
+  "origin": "",
+  "note": "声望等级 23 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_nepenthe.webp",
+  "name": "忘忧草",
+  "attr": "+25% 美德概率; +15% 减益抗性; ; -15% 所受压力伤害",
+  "origin": "",
+  "note": "声望等级 3 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_numbing_incense.webp",
+  "name": "麻木熏香",
+  "attr": "-35% 所受压力伤害; +20% 眩晕抗性; -4 闪避",
+  "origin": "",
+  "note": "声望等级 5 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_pitfighter_helm.webp",
+  "name": "斗士头盔",
+  "attr": "+20% 防御; +10% 造成的压力伤害",
+  "origin": "",
+  "note": "声望等级 11 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_rancid_cure_all.webp",
+  "name": "陈腐灵药",
+  "attr": "+40% 腐蚀抗性; +40% 流血抗性; +30% 减益抗性",
+  "origin": "",
+  "note": "声望等级 1 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_retarius_net.webp",
+  "name": "戟斗士网",
+  "attr": "+20% 位移几率; +6 精准",
+  "origin": "",
+  "note": "声望等级 19 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_rotting_trophy.webp",
+  "name": "腐烂猎获",
+  "attr": "+15% 造成的压力伤害; +30% 毒蚀几率; -20% 腐蚀抗性",
+  "origin": "",
+  "note": "声望等级 17 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_sanity_bane.webp",
+  "name": "理智祸根",
+  "attr": "+15% 伤害对被折磨; +10 精准对被折磨; +25% 致命一击几率对被折磨; +25% 眩晕几率对被折磨",
+  "origin": "",
+  "note": "声望等级 20 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_silver_syringe.webp",
+  "name": "银质注射器",
+  "attr": "+35% 生命治疗",
+  "origin": "",
+  "note": "声望等级 10 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_spiked_bat.webp",
+  "name": "尖刺槌",
+  "attr": "+10% 伤害; +20% 出血几率",
+  "origin": "",
+  "note": "声望等级 9 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_the_finisher.webp",
+  "name": "终结刺刃",
+  "attr": "+25% 致死一击几率; +20 精准如果目标生命低于40%",
+  "origin": "",
+  "note": "声望等级 18 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_treated_bandage.webp",
+  "name": "包扎绷带",
+  "attr": "+30% 受到的生命治疗; +15% 腐蚀抗性; +15% 流血抗性",
+  "origin": "",
+  "note": "声望等级 14 解锁",
+  "labels": [
+   "PVP"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_shattered_padlock.webp",
+  "name": "破碎枷锁",
+  "attr": "+10% 伤害 近战技能; +15% 位移几率; +3% 暴击; 命中(近战)：流血(120%基础概率) 1伤害/回合(持续2回合)",
+  "origin": "",
+  "note": "声望等级 29 解锁",
+  "labels": [
+   "PVP",
+   "咒缚者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_spiked_chain.webp",
+  "name": "尖刺锁链",
+  "attr": "+20% 伤害 远程技能; +15% 眩晕几率; +15% 毒蚀几率",
+  "origin": "",
+  "note": "声望等级 34 解锁",
+  "labels": [
+   "PVP",
+   "咒缚者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_wretch_cloak.webp",
+  "name": "悲凄斗篷",
+  "attr": "+20% 造成的压力伤害; +10 精准; +33% 恐惧持续时间",
+  "origin": "",
+  "note": "声望等级 42 解锁",
+  "labels": [
+   "PVP",
+   "咒缚者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_taste_of_grandeur.webp",
+  "name": "辉煌壮丽",
+  "attr": "+10% 伤害; +4 精准; +25% 美德概率; 未命中：+8 自身压力",
+  "origin": "",
+  "note": "声望等级 62 解锁",
+  "labels": [
+   "PVP",
+   "咒缚者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_clasp_of_the_beast.webp",
+  "name": "野兽之钩",
+  "attr": "+10% 防御; +10% 最大生命; +5 造成的压力伤害 近战技能",
+  "origin": "",
+  "note": "声望等级 66 解锁",
+  "labels": [
+   "PVP",
+   "咒缚者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_black_diamond_mirror.webp",
+  "name": "黑钻之镜",
+  "attr": "+15% 最大生命; +15 闪避; +10% 所受压力伤害",
+  "origin": "",
+  "note": "声望等级 8 解锁",
+  "labels": [
+   "PVP",
+   "古董商人"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_tears_of_the_lost.webp",
+  "name": "失落之泪",
+  "attr": "+30% 美德概率; -15% 所受压力伤害; +20% 减益抗性; +33% 愈合持续时间",
+  "origin": "",
+  "note": "声望等级 36 解锁",
+  "labels": [
+   "PVP",
+   "古董商人"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_ghoul_claw.webp",
+  "name": "食尸鬼爪",
+  "attr": "+25% 伤害 近战技能; +6% 暴击 近战技能; +10 精准; 命中(近战)：惊恐(100%基础概率) 6压力/回合(持续3回合)",
+  "origin": "",
+  "note": "声望等级 44 解锁",
+  "labels": [
+   "PVP",
+   "古董商人"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_impossible_glyph.webp",
+  "name": "奇幻雕文",
+  "attr": "+20% 造成的压力伤害; +30% 减益几率; +6 精准",
+  "origin": "",
+  "note": "声望等级 65 解锁",
+  "labels": [
+   "PVP",
+   "古董商人"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_materia_pestis.webp",
+  "name": "疫菌药",
+  "attr": "+20% 毒蚀几率; +33% 腐蚀持续时间",
+  "origin": "",
+  "note": "声望等级 69 解锁",
+  "labels": [
+   "PVP",
+   "古董商人"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_piercing_quarrel.webp",
+  "name": "破甲箭组",
+  "attr": "+10% 伤害 远程技能; +7% 暴击 远程技能; +20% 穿甲",
+  "origin": "",
+  "note": "声望等级 26 解锁",
+  "labels": [
+   "PVP",
+   "弩手"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_medic_fullplate.webp",
+  "name": "医疗套箱",
+  "attr": "+33% 生命治疗; +15% 防御; -15% 所受压力伤害",
+  "origin": "",
+  "note": "声望等级 30 解锁",
+  "labels": [
+   "PVP",
+   "弩手"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_stabilizing_tiller.webp",
+  "name": "稳固弩拖",
+  "attr": "+15% 伤害在最后行动时; +12 精准在最后行动时; +15% 伤害对标记;  +5% 暴击对标记; +无视守护对标记",
+  "origin": "",
+  "note": "声望等级 46 解锁",
+  "labels": [
+   "PVP",
+   "弩手"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_weighted_bolas.webp",
+  "name": "加重流星锤",
+  "attr": "+20% 减益几率; +30% 位移几率; +12 精准",
+  "origin": "",
+  "note": "声望等级 54 解锁",
+  "labels": [
+   "PVP",
+   "弩手"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_bounty_notice.webp",
+  "name": "悬赏通告",
+  "attr": "+20% 伤害对标记; +10% 精准对标记; +4% 暴击对标记",
+  "origin": "",
+  "note": "声望等级 28 解锁",
+  "labels": [
+   "PVP",
+   "赏金猎人"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_grappling_mits.webp",
+  "name": "抓力手套",
+  "attr": "+20% 眩晕几率; +25% 位移几率; +8 精准",
+  "origin": "",
+  "note": "声望等级 36 解锁",
+  "labels": [
+   "PVP",
+   "赏金猎人"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_heartseeker.webp",
+  "name": "贯心刃",
+  "attr": "+25% 伤害 近战技能; +10% 致命一击几率",
+  "origin": "",
+  "note": "声望等级 43 解锁",
+  "labels": [
+   "PVP",
+   "赏金猎人"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_infamous_visage.webp",
+  "name": "恶人之面",
+  "attr": "+20% 伤害对被折磨; +10% 暴击对被折磨; +5 精准对被折磨; 命中(近战)：+15 造成的压力伤害",
+  "origin": "",
+  "note": "声望等级 61 解锁",
+  "labels": [
+   "PVP",
+   "赏金猎人"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_writ_of_execution.webp",
+  "name": "执行令",
+  "attr": "+10% 伤害; +8 精准; +15% 造成的压力伤害; +10% 致命一击几率",
+  "origin": "",
+  "note": "声望等级 18 解锁",
+  "labels": [
+   "PVP",
+   "十字军"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_glorious_standard.webp",
+  "name": "荣耀之旗",
+  "attr": "+33% 生命治疗; +30% 减益类技能; +30% 位移抗性; +30% 减益类技能; -15% 所受压力伤害",
+  "origin": "",
+  "note": "声望等级 31 解锁",
+  "labels": [
+   "PVP",
+   "十字军"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_sacred_blade.webp",
+  "name": "神圣之刃",
+  "attr": "+15% 伤害 近战技能; +20% 眩晕几率; +30% 美德概率",
+  "origin": "",
+  "note": "声望等级 50 解锁",
+  "labels": [
+   "PVP",
+   "十字军"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_battle_scarred_helm.webp",
+  "name": "战痕头盔",
+  "attr": "+5% 防御; +15% 最大生命值; +8% 致死抗性",
+  "origin": "",
+  "note": "声望等级 57 解锁",
+  "labels": [
+   "PVP",
+   "十字军"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_confessor_gauntlet.webp",
+  "name": "忏悔护手",
+  "attr": "+15% 伤害对流血; +5% 暴击对流血; +6 精准",
+  "origin": "",
+  "note": "声望等级 20 解锁",
+  "labels": [
+   "PVP",
+   "苦修者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_crown_of_thorns.webp",
+  "name": "荆棘王冠",
+  "attr": "+15 精准; +15% 伤害在出血时; +15% 所受伤害在出血时; 自身流血(50%基础概率) 2伤害/回合(持续3回合)",
+  "origin": "",
+  "note": "声望等级 40 解锁",
+  "labels": [
+   "PVP",
+   "苦修者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_madman_collar.webp",
+  "name": "疯癫领环",
+  "attr": "+10% 受到的生命治疗; +30% 出血几率(精神崩溃时); +30% 出血几率(精神崩溃时); +25% 出血几率(精神崩溃时); +20% 所受压力伤害; +100% 压力治疗(心力衰竭时)",
+  "origin": "",
+  "note": "声望等级 48 解锁",
+  "labels": [
+   "PVP",
+   "苦修者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_gauntlet_of_absolution.webp",
+  "name": "赦免护手",
+  "attr": "+33% 生命治疗; +10% 防御; -10 压力(被击中时 作用自身)",
+  "origin": "",
+  "note": "声望等级 63 解锁",
+  "labels": [
+   "PVP",
+   "苦修者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_last_breath_collar.webp",
+  "name": "垂死领环",
+  "attr": "+12% 致死抗性; +20 闪避处于濒死; +30% 受到的生命治疗如果生命值低于20%",
+  "origin": "",
+  "note": "声望等级 66 解锁",
+  "labels": [
+   "PVP",
+   "苦修者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_well_balanced_stiletto.webp",
+  "name": "均衡短剑",
+  "attr": "+10% 伤害; 命中(近战)：+20% 伤害 远程技能(增益自身); 命中(近战)：+6% 暴击 远程技能(增益自身); 命中(远程)：+15 精准 近战技能(增益自身); 命中(远程)：+20% 致命一击几率 近战技能(增益自身)",
+  "origin": "",
+  "note": "声望等级 16 解锁",
+  "labels": [
+   "PVP",
+   "盗墓贼"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_cloak_and_dagger.webp",
+  "name": "斗篷与匕首",
+  "attr": "+15% 伤害 近战技能; +10% 致命一击几率 近战技能; +20 闪避当潜行时; +无视守护当潜行时",
+  "origin": "",
+  "note": "声望等级 32 解锁",
+  "labels": [
+   "PVP",
+   "盗墓贼"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_leather_bandolier.webp",
+  "name": "皮背带",
+  "attr": "+10% 伤害 远程技能; +5% 暴击; +8 闪避",
+  "origin": "",
+  "note": "声望等级 53 解锁",
+  "labels": [
+   "PVP",
+   "盗墓贼"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_satchel_of_dirty_tricks.webp",
+  "name": "暗器背包",
+  "attr": "+20% 毒蚀几率; +10 精准; +4 闪避; +10% 造成的压力伤害",
+  "origin": "",
+  "note": "声望等级 58 解锁",
+  "labels": [
+   "PVP",
+   "盗墓贼"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_razor_pin.webp",
+  "name": "尖刺剃刀",
+  "attr": "+20% 出血几率; +10 精准",
+  "origin": "",
+  "note": "声望等级 6 解锁",
+  "labels": [
+   "PVP",
+   "蛮族战士"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_bone_vest.webp",
+  "name": "骸骨背心",
+  "attr": "+10% 防御; +8% 致死抗性; +20% 造成的压力伤害; +10% 所受压力伤害",
+  "origin": "",
+  "note": "声望等级 32 解锁",
+  "labels": [
+   "PVP",
+   "蛮族战士"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_savage_gauntlets.webp",
+  "name": "野蛮护手",
+  "attr": "+8 精准; +5% 暴击; +25% 伤害(精神崩溃时); +15% 所受压力伤害",
+  "origin": "",
+  "note": "声望等级 52 解锁",
+  "labels": [
+   "PVP",
+   "蛮族战士"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_executioner_halberd.webp",
+  "name": "斩首长戟",
+  "attr": "+15% 伤害; +3% 暴击; +10% 致命一击几率",
+  "origin": "",
+  "note": "声望等级 59 解锁",
+  "labels": [
+   "PVP",
+   "蛮族战士"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_grim_bandana.webp",
+  "name": "死神头巾",
+  "attr": "+10% 伤害; +3% 暴击; +20% 造成的压力伤害; +10% 所受压力伤害",
+  "origin": "",
+  "note": "声望等级 28 解锁",
+  "labels": [
+   "PVP",
+   "强盗"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_parrying_dagger.webp",
+  "name": "招架匕首",
+  "attr": "+10% 伤害 近战技能; +5 精准 近战技能; +30% 出血几率; +10% 伤害(反击时); +3% 暴击(反击时)",
+  "origin": "",
+  "note": "声望等级 33 解锁",
+  "labels": [
+   "PVP",
+   "强盗"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_powder_flask.webp",
+  "name": "火药桶",
+  "attr": "+20% 伤害 远程技能; +15 精准 远程技能; -20% 眩晕抗性",
+  "origin": "",
+  "note": "声望等级 42 解锁",
+  "labels": [
+   "PVP",
+   "强盗"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_sturdy_buckle.webp",
+  "name": "坚固带扣",
+  "attr": "+4 闪避; +15% 最大生命; -10% 所受压力伤害; +30% 眩晕抗性",
+  "origin": "",
+  "note": "声望等级 64 解锁",
+  "labels": [
+   "PVP",
+   "强盗"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_duelist_pistol.webp",
+  "name": "决斗手枪",
+  "attr": "+10% 伤害 远程技能; +5 暴击; +30% 位移几率; +10 精准如果在位置1",
+  "origin": "",
+  "note": "声望等级 68 解锁",
+  "labels": [
+   "PVP",
+   "强盗"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_attack_whistle.webp",
+  "name": "攻击哨",
+  "attr": "+20% 出血几率; +12 精准",
+  "origin": "",
+  "note": "声望等级 12 解锁",
+  "labels": [
+   "PVP",
+   "训犬师"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_tattered_chewtoy.webp",
+  "name": "破烂咬嚼玩具",
+  "attr": "-15% 所受压力伤害; +50% 减压类技能(守护时); +15% 受到的生命治疗; +33% 愈合持续时间",
+  "origin": "",
+  "note": "声望等级 34 解锁",
+  "labels": [
+   "PVP",
+   "训犬师"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_padded_armguard.webp",
+  "name": "软垫护臂",
+  "attr": "+15 防御(守护时); +12 闪避; +33% 守护持续时间",
+  "origin": "",
+  "note": "声望等级 49 解锁",
+  "labels": [
+   "PVP",
+   "训犬师"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_training_whistle.webp",
+  "name": "训练哨",
+  "attr": "+15% 伤害对标记; +15% 伤害 远程技能; +8 暴击 远程技能",
+  "origin": "",
+  "note": "声望等级 64 解锁",
+  "labels": [
+   "PVP",
+   "训犬师"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_reaper_shroud.webp",
+  "name": "死神裹尸布",
+  "attr": "+15% 伤害; +3% 暴击; +20 精准(目标生命低于35%时)",
+  "origin": "",
+  "note": "声望等级 14 解锁",
+  "labels": [
+   "PVP",
+   "小丑"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_well_tuned_lute.webp",
+  "name": "调优鲁特琴",
+  "attr": "+30% 减压类技能; -20% 所受压力伤害",
+  "origin": "",
+  "note": "声望等级 35 解锁",
+  "labels": [
+   "PVP",
+   "小丑"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_blood_red_coin.webp",
+  "name": "血红硬币",
+  "attr": "+20% 出血几率; +25% 伤害对流血; +10 精准对流血",
+  "origin": "",
+  "note": "声望等级 50 解锁",
+  "labels": [
+   "PVP",
+   "小丑"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_harlequin_masque.webp",
+  "name": "丑角面具",
+  "attr": "+20% 最大生命; 命中(近战)：-10 自身压力",
+  "origin": "",
+  "note": "声望等级 56 解锁",
+  "labels": [
+   "PVP",
+   "小丑"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_gladiator_mask.webp",
+  "name": "角斗士面具",
+  "attr": "+15% 伤害; +3% 暴击",
+  "origin": "",
+  "note": "声望等级 2 解锁",
+  "labels": [
+   "PVP",
+   "麻风剑客"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_durable_armlet.webp",
+  "name": "耐用臂章",
+  "attr": "+10% 最大生命; +12 精准",
+  "origin": "",
+  "note": "声望等级 37 解锁",
+  "labels": [
+   "PVP",
+   "麻风剑客"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_invigorating_balm.webp",
+  "name": "提神香液",
+  "attr": "+20% 受到的生命治疗; +20% 腐蚀抗性; +20% 流血抗性; +8% 致死抗性",
+  "origin": "",
+  "note": "声望等级 44 解锁",
+  "labels": [
+   "PVP",
+   "麻风剑客"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_sharpening_stone.webp",
+  "name": "磨刀石",
+  "attr": "+6% 暴击; 命中(近战)：流血(100%基础概率) 1伤害/回合(持续3回合)",
+  "origin": "",
+  "note": "声望等级 60 解锁",
+  "labels": [
+   "PVP",
+   "麻风剑客"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_insignia_of_rank.webp",
+  "name": "排名徽章",
+  "attr": "+12 精准; +3% 暴击; +20% 减益几率; +8 精准当暴击时(100%基础概率)(增益全队)",
+  "origin": "",
+  "note": "声望等级 10 解锁",
+  "labels": [
+   "PVP",
+   "老兵"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_protector_kite.webp",
+  "name": "风筝护盾",
+  "attr": "+5% 防御; +15% 最大生命; +33% 守护持续时间",
+  "origin": "",
+  "note": "声望等级 38 解锁",
+  "labels": [
+   "PVP",
+   "老兵"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_survivor_eyepatch.webp",
+  "name": "生还眼罩",
+  "attr": "+20% 腐蚀抗性; +12 闪避; +15% 受到的生命治疗(守护时)",
+  "origin": "",
+  "note": "声望等级 52 解锁",
+  "labels": [
+   "PVP",
+   "老兵"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_veteran_gauntlet.webp",
+  "name": "精英护手",
+  "attr": "+10% 伤害; +20% 眩晕几率; +20% 位移几率; 命中(近战)：眩晕(50%基础概率)(持续一轮)",
+  "origin": "",
+  "note": "声望等级 58 解锁",
+  "labels": [
+   "PVP",
+   "老兵"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_shield_spike.webp",
+  "name": "尖刺护盾",
+  "attr": "+25% 伤害(反击时); +10% 精准(反击时); +8% 暴击(反击时); 命中(反击)：流血(100%基础概率) 1伤害/回合(持续4回合)",
+  "origin": "",
+  "note": "声望等级 68 解锁",
+  "labels": [
+   "PVP",
+   "老兵"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_minie_ball.webp",
+  "name": "迷你弹",
+  "attr": "+10% 伤害 远程技能; +7% 暴击 远程技能; +20% 穿甲",
+  "origin": "",
+  "note": "声望等级 26 解锁",
+  "labels": [
+   "PVP",
+   "火枪手"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_tincture_of_iodine.webp",
+  "name": "碘酊",
+  "attr": "+33% 生命治疗; -15% 所受压力伤害; 治愈腐蚀(治疗时); +25% 目标腐蚀抗性(治疗时)",
+  "origin": "",
+  "note": "声望等级 30 解锁",
+  "labels": [
+   "PVP",
+   "火枪手"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_iron_sights.webp",
+  "name": "铁制准镜",
+  "attr": "+15% 伤害在最后行动时; +12 精准在最后行动时; +15% 伤害对标记;  +5% 暴击对标记; +无视守护对标记",
+  "origin": "",
+  "note": "声望等级 46 解锁",
+  "labels": [
+   "PVP",
+   "火枪手"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_buckshot_cartridge.webp",
+  "name": "弹药囊",
+  "attr": "+20% 减益几率; +30% 位移几率; +12 精准",
+  "origin": "",
+  "note": "声望等级 54 解锁",
+  "labels": [
+   "PVP",
+   "火枪手"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_fleshbound_grimoire.webp",
+  "name": "血肉魔典",
+  "attr": "+20% 位移几率; +15 精准 远程技能; +33% 恐惧持续时间",
+  "origin": "",
+  "note": "声望等级 22 解锁",
+  "labels": [
+   "PVP",
+   "神秘学者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_calling_saltes.webp",
+  "name": "召唤萨特",
+  "attr": "+15% 伤害 远程技能; +4% 暴击 远程技能; +15% 伤害对标记; +10 精准对标记",
+  "origin": "",
+  "note": "声望等级 39 解锁",
+  "labels": [
+   "PVP",
+   "神秘学者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_hand_of_glory.webp",
+  "name": "荣耀之手",
+  "attr": "+20% 造成的压力伤害; +30% 减益几率",
+  "origin": "",
+  "note": "声望等级 48 解锁",
+  "labels": [
+   "PVP",
+   "神秘学者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_bleeding_skull.webp",
+  "name": "流血颅骨",
+  "attr": "+15% 最大生命; +4 基础治疗量; -10% 致死抗性(治疗时)",
+  "origin": "",
+  "note": "声望等级 55 解锁",
+  "labels": [
+   "PVP",
+   "神秘学者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_sacrificial_kris.webp",
+  "name": "献祭波刃",
+  "attr": "+20% 伤害 近战技能; +10 精准 近战技能; +25% 造成的压力伤害对标记; +10% 致命一击几率对标记; 命中(近战)：标记目标",
+  "origin": "",
+  "note": "声望等级 67 解锁",
+  "labels": [
+   "PVP",
+   "神秘学者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_volatile_concoction.webp",
+  "name": "挥发药汁",
+  "attr": "+20% 毒蚀几率; +15 精准",
+  "origin": "",
+  "note": "声望等级 4 解锁",
+  "labels": [
+   "PVP",
+   "瘟疫医生"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_hazard_mask.webp",
+  "name": "危险面具",
+  "attr": "+8 精准; +15% 最大生命; +15% 受到的生命治疗; +20% 腐蚀抗性",
+  "origin": "",
+  "note": "声望等级 40 解锁",
+  "labels": [
+   "PVP",
+   "瘟疫医生"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_acrid_vial.webp",
+  "name": "刺鼻药瓶",
+  "attr": "+20% 造成的压力伤害; +20% 减益几率; +30% 位移几率",
+  "origin": "",
+  "note": "声望等级 51 解锁",
+  "labels": [
+   "PVP",
+   "瘟疫医生"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_amputation_saw.webp",
+  "name": "截肢锯",
+  "attr": "+30% 伤害 近战技能; +30% 出血几率; +10 精准对流血",
+  "origin": "",
+  "note": "声望等级 60 解锁",
+  "labels": [
+   "PVP",
+   "瘟疫医生"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_graceful_anklet.webp",
+  "name": "优雅脚镯",
+  "attr": "+15 闪避; +4 精准",
+  "origin": "",
+  "note": "声望等级 24 解锁",
+  "labels": [
+   "PVP",
+   "破盾者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_viper_spear_tip.webp",
+  "name": "毒蛇尖刃",
+  "attr": "+20% 毒蚀几率; +10 精准",
+  "origin": "",
+  "note": "声望等级 41 解锁",
+  "labels": [
+   "PVP",
+   "破盾者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_scaled_shoulder.webp",
+  "name": "鳞片护肩",
+  "attr": "+5% 防御; +10% 最大生命; +12% 致死抗性",
+  "origin": "",
+  "note": "声望等级 45 解锁",
+  "labels": [
+   "PVP",
+   "破盾者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_fang_talisman.webp",
+  "name": "毒牙护符",
+  "attr": "+15% 伤害; +3% 暴击; +10% 伤害对腐蚀",
+  "origin": "",
+  "note": "声望等级 62 解锁",
+  "labels": [
+   "PVP",
+   "破盾者"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_idol_of_purity.webp",
+  "name": "纯洁神像",
+  "attr": "+33% 生命治疗; -15% 所受压力伤害",
+  "origin": "",
+  "note": "声望等级 27 解锁",
+  "labels": [
+   "PVP",
+   "修女"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_gleaming_breastplate.webp",
+  "name": "闪烁胸甲",
+  "attr": "+15% 防御; +8% 致死抗性; -4% 被暴击几率",
+  "origin": "",
+  "note": "声望等级 38 解锁",
+  "labels": [
+   "PVP",
+   "修女"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_purgation_talisman.webp",
+  "name": "洗罪护符",
+  "attr": "+25% 伤害 近战技能; +7% 暴击 近战技能; +12 精准; +20% 减益几率",
+  "origin": "",
+  "note": "声望等级 47 解锁",
+  "labels": [
+   "PVP",
+   "修女"
+  ]
+ },
+ {
+  "img": "/codex/img/Inv_trinket_tome_of_fury.webp",
+  "name": "狂怒之书",
+  "attr": "+15 精准 远程技能; +40% 减益几率; +30% 眩晕几率",
+  "origin": "",
+  "note": "声望等级 56 解锁",
+  "labels": [
+   "PVP",
+   "修女"
+  ]
+ }
+]

@@ -1,0 +1,44 @@
+[
+ {
+  "key": "normal",
+  "name": "通用",
+  "img": "/codex/img/normal.jpeg",
+  "note": ""
+ },
+ {
+  "key": "collector",
+  "name": "遗迹",
+  "img": "/codex/img/collector.jpeg",
+  "note": ""
+ },
+ {
+  "key": "crawler",
+  "name": "荒野",
+  "img": "/codex/img/crawler.jpeg",
+  "note": ""
+ },
+ {
+  "key": "wolf",
+  "name": "海湾",
+  "img": "/codex/img/wolf.jpeg",
+  "note": ""
+ },
+ {
+  "key": "weald",
+  "name": "兽窟",
+  "img": "/codex/img/weald.jpeg",
+  "note": ""
+ },
+ {
+  "key": "cove",
+  "name": "农庄",
+  "img": "/codex/img/cove.jpeg",
+  "note": ""
+ },
+ {
+  "key": "courtyard",
+  "name": "庭院",
+  "img": "/codex/img/courtyard.jpeg",
+  "note": "本图截取有误:效果应为 流血(50%) / 绷带换财货(50%)"
+ }
+]

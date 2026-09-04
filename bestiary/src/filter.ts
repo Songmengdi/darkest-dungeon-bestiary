@@ -11,7 +11,10 @@ export interface RegionTab {
 
 export function regionTabs(index: IndexFile): RegionTab[] {
   const tabs: RegionTab[] = [{ id: "all", label: t("全部", "All"), en: "All" }];
-  for (const r of index.regions) tabs.push({ id: r.id, label: r.zh, en: r.en });
+  for (const r of index.regions) {
+    if (r.id === "none") continue; // 无归属的走下方统一的「其他 / 未收录」
+    tabs.push({ id: r.id, label: r.zh, en: r.en });
+  }
   tabs.push({ id: "none", label: t("其他 / 未收录", "Other"), en: "Other" });
   return tabs;
 }

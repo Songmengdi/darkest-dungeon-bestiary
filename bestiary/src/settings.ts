@@ -1,11 +1,11 @@
-/* 全局观战设定:游戏模式(默认/光芒/血月/NG+)+ 火把亮度档。localStorage 持久化,作用于全部档案页。
- * 数值取自游戏 rules.json:standard=shared/;radiant=modes/radiant/;ng+=modes/new_game_plus/;
- * bloodmoon=CC DLC features/crimson_court/modes/bloodmoon/。副本等级(学徒/资深/冠军)与模式无关,
- * 由怪物 A/B/C 变体数据直接决定,不在本设定内。 */
+/* 全局观战设定:游戏模式(光耀/血月/NG+)+ 火把亮度档。localStorage 持久化,作用于全部档案页。
+ * 数值取自游戏 rules.json:radiant=modes/radiant/(光耀即标准难度,怪物数值相同);
+ * bloodmoon=CC DLC features/crimson_court/modes/bloodmoon/;ng+=modes/new_game_plus/。
+ * 副本等级(学徒/资深/冠军)与模式无关,由怪物 A/B/C 变体数据直接决定,不在本设定内。 */
 import { computed, ref, watch } from "vue";
 import { t } from "./i18n";
 
-export type ModeId = "standard" | "radiant" | "bloodmoon" | "ngplus";
+export type ModeId = "radiant" | "bloodmoon" | "ngplus";
 
 export interface ModeDef {
   id: ModeId;
@@ -18,8 +18,7 @@ export interface ModeDef {
 }
 
 export const MODES: ModeDef[] = [
-  { id: "standard", zh: "默认", en: "Standard", hpMult: 1, critMod: 0, weekLimit: null, deathLimit: null },
-  { id: "radiant", zh: "光芒", en: "Radiant", hpMult: 1, critMod: 0, weekLimit: null, deathLimit: null },
+  { id: "radiant", zh: "光耀", en: "Radiant", hpMult: 1, critMod: 0, weekLimit: null, deathLimit: null },
   { id: "bloodmoon", zh: "血月", en: "Bloodmoon", hpMult: 1.2, critMod: 3, weekLimit: 100, deathLimit: 16 },
   { id: "ngplus", zh: "NG+", en: "NG+", hpMult: 1.2, critMod: 3, weekLimit: 86, deathLimit: 12 },
 ];
@@ -42,7 +41,6 @@ export const LIGHT_BANDS: LightBand[] = [
 
 /* darkness.range_table 各档怪物加成:命中(百分点)/伤害(%)/暴击(百分点);血月与 NG+ 同为高伤表 */
 const LIGHT_MODS: Record<ModeId, { acc: number[]; dmg: number[]; crit: number[] }> = {
-  standard: { acc: [0, 0, 5, 10, 12.5], dmg: [0, 0, 10, 15, 25], crit: [0, 1, 2, 3, 5] },
   radiant: { acc: [0, 0, 5, 10, 12.5], dmg: [0, 0, 10, 15, 25], crit: [0, 1, 2, 3, 5] },
   bloodmoon: { acc: [0, 0, 5, 10, 12.5], dmg: [0, 0, 10, 17.5, 30], crit: [0, 1, 2.5, 3.5, 6] },
   ngplus: { acc: [0, 0, 5, 10, 12.5], dmg: [0, 0, 10, 17.5, 30], crit: [0, 1, 2.5, 3.5, 6] },
@@ -53,11 +51,12 @@ const KEY = "dd-bestiary-settings";
 function load(): { mode: ModeId; light: number } {
   try {
     const raw = JSON.parse(localStorage.getItem(KEY) ?? "{}");
-    const mode = MODES.some((m) => m.id === raw?.mode) ? raw.mode : "standard";
+    // 旧存档的 "standard"(已并入光耀)与未知值一并回落到光耀
+    const mode = MODES.some((m) => m.id === raw?.mode) ? raw.mode : "radiant";
     const light = LIGHT_BANDS.some((b) => b.stop === raw?.light) ? raw.light : 100;
     return { mode, light };
   } catch {
-    return { mode: "standard", light: 100 };
+    return { mode: "radiant", light: 100 };
   }
 }
 
@@ -108,7 +107,7 @@ export function lightTip(band: LightBand, mode: ModeId): string {
 /** 游戏模式悬浮说明 */
 export function modeTip(m: ModeDef): string {
   const head = t(`${m.zh}模式(游戏难度)`, `${m.en} mode`);
-  if (m.hpMult === 1) return t(`${head}:怪物数值与默认相同`, `${head}: monster stats identical to Standard`);
+  if (m.hpMult === 1) return t(`${head}:怪物数值无修正`, `${head}: no monster modifiers`);
   return t(
     `${head}:怪物生命 +20% · 暴击 +3(周数上限 ${m.weekLimit} · 英雄死亡上限 ${m.deathLimit})`,
     `${head}: monsters +20% HP, +3 CRIT (week limit ${m.weekLimit}, death limit ${m.deathLimit})`,

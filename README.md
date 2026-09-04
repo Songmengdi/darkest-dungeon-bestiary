@@ -1,6 +1,6 @@
 # 暗黑地牢 1 工具集(Darkest Dungeon 1 Toolbox)
 
-围绕《Darkest Dungeon》本体的三个子项目 monorepo:**怪物图鉴**(纯前端)、
+围绕《Darkest Dungeon》本体的三个子项目 monorepo:**图鉴总集**(纯前端)、
 **darkest_mcp**(游戏数据 MCP 服务)、**DD1SaveManager**(本地存档管理器)。
 
 ![图鉴预览](bestiary/preview.png)
@@ -9,7 +9,7 @@
 
 | 子项目 | 是什么 | 技术栈 |
 |---|---|---|
-| [`bestiary/`](bestiary/) | **怪物图鉴**:本体 + DLC 共 153 个怪物的可检索卡片墙;中英双语、档位技能、站位/打击可视化、状态图标、原画灯箱 | Vue 3 + Vite + TS |
+| [`bestiary/`](bestiary/) | **图鉴总集**:核心是怪物卷——本体 + DLC 共 143 个怪物条目的可检索卡片墙(普通 / 首领两级分类,首领按特殊/基本/庭院/农庄/极暗分组;召唤物双向链接、档位技能、站位可视化、原画灯箱);另有英雄/阵容/饰品/怪癖/奇物/事件/魔头/秘境/建筑/补给/札记 11 卷整理内容,书脊导航切卷 | Vue 3 + Vite + TS |
 | [`darkest_mcp/`](darkest_mcp/) | **DD1 数据 MCP 服务**:7 个工具(浏览/搜索/实体/读文件/本地化/格式文档/mod 校验),是本仓库游戏格式知识的唯一所有者(ADR-0005) | TS + MCP stdio |
 | [`DD1SaveManager/`](DD1SaveManager/) | **存档管理器**:备份/恢复/克隆 Steam 本地存档的绿色单文件桌面程序(附编译产物) | C# WinForms |
 

@@ -1,0 +1,5917 @@
+[
+ {
+  "id": "crusader",
+  "name": "十字军",
+  "alias": "(大当家)",
+  "portrait": "/codex/img/Crusader_portrait_roster.webp",
+  "art": "/codex/img/Cultist-Crusader_combat.webp",
+  "overview": {
+   "name": "十字军",
+   "alias": "(大当家)",
+   "level0": {
+    "speed": 1,
+    "crit": 3,
+    "critBonus": 0,
+    "attack": "6-12",
+    "hp": 33,
+    "dodge": 5,
+    "feature": "遗迹大c、高光强、防夜袭"
+   },
+   "level6": {
+    "speed": 3,
+    "crit": 7,
+    "critBonus": "+15%减伤",
+    "attack": "10-19",
+    "hp": 61,
+    "dodge": 25
+   }
+  },
+  "hp": [
+   33,
+   44,
+   47,
+   54,
+   61
+  ],
+  "dodge": [
+   5,
+   10,
+   15,
+   20,
+   25
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   1,
+   1,
+   2,
+   2,
+   3
+  ],
+  "crt": [
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "dmg": [
+   "6-12",
+   "7-14",
+   "8-16",
+   "9-17",
+   "10-19"
+  ],
+  "religious": "有",
+  "resistances": [
+   "40/100",
+   "30/90",
+   "30/90",
+   "30/90",
+   "40/100",
+   "30",
+   "67",
+   "10/70"
+  ],
+  "abilities": [
+   {
+    "name": "惩戒",
+    "img": "/codex/img/Skill_Smite.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     0,
+     4
+    ],
+    "damage": [],
+    "effectTar": [
+     "+15/20/25/30/35% 伤害对邪秽"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "热诚控诉",
+    "img": "/codex/img/Skill_Zealous_Accusation.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2,
+     9
+    ],
+    "type": "远程",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     -4,
+     0
+    ],
+    "damage": [
+     -40
+    ],
+    "effectTar": [],
+    "effectSelf": []
+   },
+   {
+    "name": "晕眩击",
+    "img": "/codex/img/Skill_Stunning_Blow.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "近战",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     0,
+     4
+    ],
+    "damage": [
+     -50
+    ],
+    "effectTar": [
+     "眩晕(100/110/120/130/140%基础概率)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "信仰壁障",
+    "img": "/codex/img/Skill_Bulwark_of_Faith.webp",
+    "limit": 1,
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "亮度 + 24"
+    ],
+    "effectSelf": [
+     "+20/22/25/28/30% 防御",
+     "标记自身1回合"
+    ]
+   },
+   {
+    "name": "战斗治疗",
+    "img": "/codex/img/Skill_Battle_Heal.webp",
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "治疗2~3/3/3~4/4~5/5~6"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "圣矛",
+    "img": "/codex/img/Skill_Holy_Lance.webp",
+    "rank": [
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     3,
+     4
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     6.5,
+     10.5
+    ],
+    "damage": [],
+    "effectTar": [
+     "+15/20/25/30/35% 伤害对邪秽"
+    ],
+    "effectSelf": [
+     "前进1"
+    ]
+   },
+   {
+    "name": "激励呐喊",
+    "img": "/codex/img/Skill_Inspiring_Cry.webp",
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "治疗1/1/1~2/1~2/2",
+     "-5/5/6/7/8 压力",
+     "+5/6/7/8/10 亮度"
+    ],
+    "effectSelf": []
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Unshakeable_Leader.webp",
+    "name": "坚定领袖(2)",
+    "des": "仅自身：-25% 所受压力伤害(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Stand_Tall.webp",
+    "name": "巍然屹立(3)",
+    "des": "一位同伴：-15 压力；移除目标重创减益"
+   },
+   {
+    "img": "/codex/img/Skill_Zealous_Speech.webp",
+    "name": "热诚演讲(5)",
+    "des": "队伍：-15 压力；所有同伴：-15% 所受压力伤害(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Zealous_Vigil.webp",
+    "name": "热诚坚守(4)",
+    "des": "仅自身：-25 压力，如果折磨 -15 压力；防止夜袭"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴：-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴：治疗15%生命值；移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴：-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ },
+ {
+  "id": "highwayman",
+  "name": "强盗",
+  "alias": "(二当家)",
+  "portrait": "/codex/img/Highwayman_portrait_roster.webp",
+  "art": "/codex/img/Cultist-Hwm_combat.webp",
+  "overview": {
+   "name": "强盗",
+   "alias": "(二当家)",
+   "level0": {
+    "speed": 5,
+    "crit": 5,
+    "critBonus": 0,
+    "attack": "5-10",
+    "hp": 23,
+    "dodge": 10,
+    "feature": "反击、防夜袭"
+   },
+   "level6": {
+    "speed": 7,
+    "crit": 9,
+    "critBonus": "+2速度",
+    "attack": "9-16",
+    "hp": 43,
+    "dodge": 30
+   }
+  },
+  "hp": [
+   23,
+   28,
+   33,
+   38,
+   43
+  ],
+  "dodge": [
+   10,
+   15,
+   20,
+   25,
+   30
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   5,
+   5,
+   6,
+   6,
+   7
+  ],
+  "crt": [
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "dmg": [
+   "5-10",
+   "6-12",
+   "7-13",
+   "8-15",
+   "9-16"
+  ],
+  "religious": "无",
+  "resistances": [
+   "30/90",
+   "30/90",
+   "30/90",
+   "30/90",
+   "30/90",
+   "30",
+   "67",
+   "40/100"
+  ],
+  "abilities": [
+   {
+    "name": "邪恶切割",
+    "img": "/codex/img/Skill_Wicked_Slice.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [
+     "+15"
+    ],
+    "effectTar": [],
+    "effectSelf": []
+   },
+   {
+    "name": "手枪射击",
+    "img": "/codex/img/Skill_Pistol_Shot.webp",
+    "rank": [
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     7.5,
+     11.5
+    ],
+    "damage": [
+     -15
+    ],
+    "effectTar": [
+     "+25/30/35/40/50% 伤害对标记"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "抵近射击",
+    "img": "/codex/img/Skill_Point_Blank_Shot.webp",
+    "rank": [
+     1
+    ],
+    "tar": [
+     1
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [
+     "+50"
+    ],
+    "effectTar": [
+     "击退1(100/110/120/130/140%基础概率)"
+    ],
+    "effectSelf": [
+     "后退1"
+    ]
+   },
+   {
+    "name": "霰弹轰扫",
+    "img": "/codex/img/Skill_Grapeshot_Blast.webp",
+    "rank": [
+     1,
+     2,
+     3
+    ],
+    "tar": [
+     2,
+     3,
+     9,
+     10
+    ],
+    "type": "远程",
+    "accuracy": [
+     75,
+     95
+    ],
+    "crit": [
+     -9,
+     -5
+    ],
+    "damage": [
+     -50
+    ],
+    "effectTar": [
+     "+4/5/6/7/8% 被暴击概率(3回合)",
+     "(100/110/120/130/140%基础概率)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "追踪射击",
+    "img": "/codex/img/Skill_Tracking_Shot.webp",
+    "limit": 1,
+    "rank": [
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     0,
+     0,
+     0.5,
+     0.5,
+     1
+    ],
+    "damage": [
+     -80
+    ],
+    "effectTar": [
+     "无视潜行",
+     "显踪"
+    ],
+    "effectSelf": [
+     "以下buff持续整场战斗",
+     "+6/7/8/9/10 精准",
+     "+4/5/6/7/8% 暴击",
+     "+12/14/16/18/20% 伤害"
+    ]
+   },
+   {
+    "name": "决斗突刺",
+    "img": "/codex/img/Skill_Duelists_Advance.webp",
+    "rank": [
+     1,
+     2,
+     3
+    ],
+    "tar": [
+     2,
+     3,
+     4
+    ],
+    "type": "近战",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [
+     -20
+    ],
+    "effectTar": [],
+    "effectSelf": [
+     "前进1",
+     "激活反击(2回合)：-40/33/25/20/15%",
+     "伤害；+0/2/3/4/5% 暴击"
+    ]
+   },
+   {
+    "name": "切开血管",
+    "img": "/codex/img/Skill_Open_Vein.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "近战",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     0,
+     4
+    ],
+    "damage": [
+     -15
+    ],
+    "effectTar": [
+     "流血2/2/3/3/4(100/110/120/130/140%基础概率)(3回合)",
+     "-20/23/26/30/33% 流血抗性(100/110/120/130/140%基础概率)",
+     "-1/1/2/2/3 速度(100/110/120/130/140%基础概率)"
+    ],
+    "effectSelf": []
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Gallows_Humor.webp",
+    "name": "黑色幽默(4)",
+    "des": "仅自身：-25 压力；所有同伴：-20 压力(75%概率)，+10 压力(25%概率)"
+   },
+   {
+    "img": "/codex/img/Skill_Unparalleled_Finesse.webp",
+    "name": "决斗处决(4)",
+    "des": "仅自身：+10 闪避，+2 速度，+20% 伤害 近战技能，+10 精准 近战技能(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Clean_Guns.webp",
+    "name": "清洁枪械(4)",
+    "des": "仅自身：+10 精准 远程技能，+8% 暴击 远程技能，+20% 伤害 远程技能(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Bandits_Sense.webp",
+    "name": "强盗直觉(4)",
+    "des": "仅自身：防夜袭；-20% 队伍惊慌概率，+20% 怪物惊慌概率(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴：-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴：治疗15%生命值；移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴：-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ },
+ {
+  "id": "vestal",
+  "name": "修女",
+  "alias": "(奶妈)",
+  "portrait": "/codex/img/Vestal_portrait_roster.webp",
+  "art": "/codex/img/Cultist-Vestal_combat.webp",
+  "overview": {
+   "name": "修女",
+   "alias": "(奶妈)",
+   "level0": {
+    "speed": 4,
+    "crit": 1,
+    "critBonus": 0,
+    "attack": "4-8",
+    "hp": 24,
+    "dodge": 0,
+    "feature": "最稳主奶、单晕后排、防夜袭"
+   },
+   "level6": {
+    "speed": 6,
+    "crit": 5,
+    "critBonus": "+25%治疗效果",
+    "attack": "7-14",
+    "hp": 44,
+    "dodge": 20
+   }
+  },
+  "hp": [
+   24,
+   29,
+   34,
+   39,
+   44
+  ],
+  "dodge": [
+   0,
+   5,
+   10,
+   15,
+   20
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   4,
+   4,
+   5,
+   5,
+   6
+  ],
+  "crt": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "dmg": [
+   "4-8",
+   "5-10",
+   "6-11",
+   "6-13",
+   "7-14"
+  ],
+  "religious": "有",
+  "resistances": [
+   "30/90",
+   "30/90",
+   "40/100",
+   "30/90",
+   "30/90",
+   "30",
+   "67",
+   "10/70"
+  ],
+  "abilities": [
+   {
+    "name": "锤击",
+    "img": "/codex/img/Skill_Mace_Bash.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     0,
+     4
+    ],
+    "damage": [],
+    "effectTar": [
+     "+15/20/25/30/35% 伤害对邪秽"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "审判",
+    "img": "/codex/img/Skill_Judgement.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [
+     -25
+    ],
+    "effectTar": [],
+    "effectSelf": [
+     "+3/3/4/4/5 生命值"
+    ]
+   },
+   {
+    "name": "炫目圣光",
+    "img": "/codex/img/Skill_Dazzling_Light.webp",
+    "rank": [
+     1,
+     2,
+     3
+    ],
+    "tar": [
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [
+     "-75"
+    ],
+    "effectTar": [
+     "眩晕(100/110/120/130/140%基础概率)",
+     "+6 亮度"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "神圣恩惠",
+    "img": "/codex/img/Skill_Divine_Grace.webp",
+    "rank": [],
+    "tar": [
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "治疗4~5/5~6/6~7/7~8/8~9"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "神圣抚慰",
+    "img": "/codex/img/Skill_Divine_Comfort.webp",
+    "rank": [],
+    "tar": [
+     2,
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "治疗全队1~3/2~3/3/3~4/4~5"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "强光",
+    "img": "/codex/img/Skill_Illumination.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "远程",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [],
+    "damage": [
+     -75
+    ],
+    "effectTar": [
+     "无视潜行",
+     "显踪",
+     "+5/6/7/8/10 亮度",
+     "-20/23/25/27/30 闪避(100/110/120/130/140%基础概率)(4回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "圣光之手",
+    "img": "/codex/img/Skill_Hand_of_Light.webp",
+    "rank": [
+     1,
+     2,
+     3
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "远程",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     1,
+     5
+    ],
+    "damage": [
+     -50
+    ],
+    "effectTar": [
+     "+15/20/25/30/35% 伤害对邪秽"
+    ],
+    "effectSelf": [
+     "+25/27/30/33/35% 伤害(4回合)",
+     "+6/7/8/9/10 精准(4回合)"
+    ]
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Bless.webp",
+    "name": "祝福(3)",
+    "des": "一位同伴：+10 精准，+10 闪避(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Chant.webp",
+    "name": "圣歌(3)",
+    "des": "一位同伴：有/无信仰则-20/10% 所受压力伤害(持续4场战斗)；有/无信仰则-15/5 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Pray.webp",
+    "name": "祈祷(3)",
+    "des": "所有同伴：有/无信仰则+15/5% 防御(持续4场战斗)；有/无信仰则-15/5 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Sanctuary.webp",
+    "name": "圣域(4)",
+    "des": "仅自身：防夜袭；所有同伴：治疗50%生命值(如果重创减益)，-25 压力(如果重创减益)"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴：-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴：治疗15%生命值；移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴：-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ },
+ {
+  "id": "plague_doctor",
+  "name": "瘟疫医生",
+  "alias": "(瘟疫)",
+  "portrait": "/codex/img/Plague_doctor_portrait_roster.webp",
+  "art": "/codex/img/Cultist-Pd_combat.webp",
+  "overview": {
+   "name": "瘟疫医生",
+   "alias": "(瘟疫)",
+   "level0": {
+    "speed": 7,
+    "crit": 2,
+    "critBonus": 0,
+    "attack": "4-7",
+    "hp": 22,
+    "dodge": 0,
+    "feature": "双控后排、副奶且解流血腐蚀"
+   },
+   "level6": {
+    "speed": 9,
+    "crit": 6,
+    "critBonus": "+20%毒蚀几率",
+    "attack": "7-13",
+    "hp": 38,
+    "dodge": 20
+   }
+  },
+  "hp": [
+   22,
+   26,
+   30,
+   34,
+   38
+  ],
+  "dodge": [
+   0,
+   5,
+   10,
+   15,
+   20
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   7,
+   7,
+   8,
+   8,
+   9
+  ],
+  "crt": [
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "dmg": [
+   "4-7",
+   "5-8",
+   "6-10",
+   "6-11",
+   "7-13"
+  ],
+  "religious": "无",
+  "resistances": [
+   "20/80",
+   "60/120",
+   "20/80",
+   "50/110",
+   "20/80",
+   "50",
+   "67",
+   "20/80"
+  ],
+  "abilities": [
+   {
+    "name": "瘟毒炸裂",
+    "img": "/codex/img/Skill_Noxious_Blast.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [
+     -80
+    ],
+    "effectTar": [
+     "腐蚀5/5/6/6/7(100/110/120/130/140%基础概率)(3回合)",
+     "-5/5/6/6/7 精准(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "瘟疫手雷",
+    "img": "/codex/img/Skill_Plague_Grenade.webp",
+    "rank": [
+     3,
+     4
+    ],
+    "tar": [
+     3,
+     4,
+     11
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     0,
+     4
+    ],
+    "damage": [
+     -90
+    ],
+    "effectTar": [
+     "腐蚀4/4/5/5/6(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "致盲气体",
+    "img": "/codex/img/Skill_Blinding_Gas.webp",
+    "limit": 3,
+    "rank": [
+     3,
+     4
+    ],
+    "tar": [
+     3,
+     4,
+     11
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [],
+    "damage": [
+     "-100"
+    ],
+    "effectTar": [
+     "眩晕(100/110/120/130/140%基础概率)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "放血",
+    "img": "/codex/img/Skill_Incision.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [],
+    "effectTar": [
+     "流血2/2/3/3/4(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "战地医疗",
+    "img": "/codex/img/Skill_Battlefield_Medicine.webp",
+    "rank": [],
+    "tar": [
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "治愈流血/腐蚀",
+     "治疗1/1~2/2/2~3/3"
+    ],
+    "effectSelf": [
+     "治愈流血/腐蚀"
+    ]
+   },
+   {
+    "name": "壮胆药雾",
+    "img": "/codex/img/Skill_Emboldening_Vapours.webp",
+    "limit": 2,
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "+20/21/22/23/25% 伤害(整场战斗)",
+     "+3/3/4/4/5 速度(整场战斗)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "迷惑冲击",
+    "img": "/codex/img/Skill_Disorienting_Blast.webp",
+    "rank": [
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [],
+    "damage": [
+     -100
+    ],
+    "effectTar": [
+     "眩晕(100/110/120/130/140%基础概率)",
+     "乱位(100/110/120/130/140%基础概率)",
+     "清除所有尸骸"
+    ],
+    "effectSelf": []
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Experimental_Vapours.webp",
+    "name": "实验性药雾(4)",
+    "des": "一位同伴：治疗50%生命值；+33% 所受生命治疗(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Leeches.webp",
+    "name": "水蛭疗法(3)",
+    "des": "一位同伴：治疗15%生命值；移除目标腐蚀/疾病"
+   },
+   {
+    "img": "/codex/img/Skill_The_Cure.webp",
+    "name": "痊愈(1)",
+    "des": "仅自身：移除目标疾病/+20% 疾病抗性(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Self-Medicate.webp",
+    "name": "自我医疗(3)",
+    "des": "仅自身：-10 压力；治疗20%生命值；移除目标流血/腐蚀；+10 精准(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴：-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴：治疗15%生命值；移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴：-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ },
+ {
+  "id": "man_at_arms",
+  "name": "老兵",
+  "alias": "",
+  "portrait": "/codex/img/Man_at_arms_portrait_roster.webp",
+  "art": "/codex/img/Cultist-Maa_combat.webp",
+  "overview": {
+   "name": "老兵",
+   "alias": "",
+   "level0": {
+    "speed": 3,
+    "crit": 2,
+    "critBonus": 0,
+    "attack": "5-9",
+    "hp": 31,
+    "dodge": 5,
+    "feature": "保护、单晕/推"
+   },
+   "level6": {
+    "speed": 5,
+    "crit": 6,
+    "critBonus": "-33%所受压力伤害",
+    "attack": "8-14",
+    "hp": 55,
+    "dodge": 25
+   }
+  },
+  "hp": [
+   31,
+   37,
+   43,
+   49,
+   55
+  ],
+  "dodge": [
+   5,
+   10,
+   15,
+   20,
+   25
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   3,
+   3,
+   4,
+   4,
+   5
+  ],
+  "crt": [
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "dmg": [
+   "5-9",
+   "6-10",
+   "7-12",
+   "7-13",
+   "8-14"
+  ],
+  "religious": "无",
+  "resistances": [
+   "40/100",
+   "30/90",
+   "40/100",
+   "30/90",
+   "40/100",
+   "30",
+   "67",
+   "10/70"
+  ],
+  "abilities": [
+   {
+    "name": "粉碎",
+    "img": "/codex/img/Skill_Crush.webp",
+    "rank": [
+     1,
+     2,
+     3
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": []
+   },
+   {
+    "name": "盾击",
+    "img": "/codex/img/Skill_Rampart.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "近战",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [
+     -60
+    ],
+    "effectTar": [
+     "眩晕(100/110/120/130/140%基础概率)",
+     "击退1(100/110/120/130/140%基础概率)"
+    ],
+    "effectSelf": [
+     "前进1"
+    ]
+   },
+   {
+    "name": "怒吼",
+    "img": "/codex/img/Skill_Bellow.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4,
+     9,
+     10,
+     11
+    ],
+    "type": "远程",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [],
+    "damage": [
+     "-100"
+    ],
+    "effectTar": [
+     "以下buff持续3回合",
+     "-5/6/7/8/10 闪避(100/110/120/130/140%基础概率)",
+     "-5/5/6/6/7 速度(100/110/120/130/140%基础概率)",
+     "+5% 被暴击标记时(100/110/120/130/140%基础概率)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "保护",
+    "img": "/codex/img/Skill_Defender.webp",
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "保护2回合"
+    ],
+    "effectSelf": [
+     "+15/18/22/26/30% 防御(4回合)"
+    ]
+   },
+   {
+    "name": "报复",
+    "img": "/codex/img/Skill_Retribution.webp",
+    "rank": [
+     1,
+     2,
+     3
+    ],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     2.5,
+     6.5
+    ],
+    "damage": [
+     -75
+    ],
+    "effectTar": [],
+    "effectSelf": [
+     "标记自身(2回合)",
+     "激活反击(3回合)：-40/35/30/25/20%",
+     "伤害；+0/1/2/3/4% 暴击"
+    ]
+   },
+   {
+    "name": "指挥",
+    "img": "/codex/img/Skill_Command.webp",
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "全队 +5/6/7/8/10 精准(3回合)",
+     "全队 +4/5/6/7/8 暴击(3回合)",
+     "全队 +15/17/20/22/25% 伤害(被保护时)(3回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "支援",
+    "img": "/codex/img/Skill_Bolster.webp",
+    "limit": 1,
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "全队 +5/6/7/8/10 闪避(整场战斗)",
+     "全队 -10/10/15/15/20% 所受压力伤害(整场战斗)"
+    ],
+    "effectSelf": []
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Maintain_Equipment.webp",
+    "name": "维护装备(4)",
+    "des": "仅自身：+15% 防御，+15% 伤害(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Tactics.webp",
+    "name": "战术布置(4)",
+    "des": "队伍：+10 闪避，+5% 暴击(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Instruction.webp",
+    "name": "战斗指导(3)",
+    "des": "一位同伴：+10 精准，+3 速度(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Weapons_Practice.webp",
+    "name": "武器练习(4)",
+    "des": "所有同伴：+10% 伤害，75%概率+8% 暴击(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴：-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴：治疗15%生命值；移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴：-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ },
+ {
+  "id": "shieldbreaker",
+  "name": "破盾者",
+  "alias": "",
+  "portrait": "/codex/img/Shieldbreaker_portrait_roster.webp",
+  "art": "/codex/img/Cultist-Sb_combat.webp",
+  "overview": {
+   "name": "破盾者",
+   "alias": "",
+   "level0": {
+    "speed": 5,
+    "crit": 6,
+    "critBonus": 0,
+    "attack": "5-10",
+    "hp": 20,
+    "dodge": 8,
+    "feature": "破甲、破隐、破守"
+   },
+   "level6": {
+    "speed": 9,
+    "crit": 10,
+    "critBonus": "+15%减伤",
+    "attack": "9-18",
+    "hp": 36,
+    "dodge": 28
+   }
+  },
+  "hp": [
+   20,
+   24,
+   28,
+   32,
+   36
+  ],
+  "dodge": [
+   8,
+   13,
+   18,
+   23,
+   28
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   5,
+   6,
+   8,
+   8,
+   9
+  ],
+  "crt": [
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "dmg": [
+   "5-10",
+   "6-12",
+   "7-14",
+   "8-16",
+   "9-18"
+  ],
+  "religious": "无",
+  "resistances": [
+   "50/110",
+   "20/80",
+   "30/90",
+   "30/90",
+   "50/110",
+   "30",
+   "67",
+   "20/80"
+  ],
+  "abilities": [
+   {
+    "name": "扎透",
+    "img": "/codex/img/Skill_Shieldbreaker.ability.one.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "近战",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [
+     -10
+    ],
+    "effectTar": [
+     "穿甲"
+    ],
+    "effectSelf": [
+     "前进1"
+    ]
+   },
+   {
+    "name": "伏袭",
+    "img": "/codex/img/Skill_Shieldbreaker.ability.two.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [],
+    "damage": [
+     -50
+    ],
+    "effectTar": [
+     "拉前2(100/110/120/130/140%基础概率)",
+     "-1/1/2/2/3 速度(100/110/120/130/140%基础概率)(4回合)",
+     "无视/移除守护",
+     "不可被守护(2回合)"
+    ],
+    "effectSelf": [
+     "前进1"
+    ]
+   },
+   {
+    "name": "蝰蛇之吻",
+    "img": "/codex/img/Skill_Shieldbreaker.ability.three.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1
+    ],
+    "type": "近战",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [],
+    "effectTar": [
+     "腐蚀3/3/4/4/5(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": [
+     "后退1"
+    ]
+   },
+   {
+    "name": "贯穿",
+    "img": "/codex/img/Skill_Shieldbreaker.ability.four.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     9,
+     10,
+     11
+    ],
+    "type": "远程",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     -6,
+     -2
+    ],
+    "damage": [
+     -60
+    ],
+    "effectTar": [
+     "腐蚀0/0/1/1/2(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": [
+     "后退1"
+    ]
+   },
+   {
+    "name": "觅踪",
+    "img": "/codex/img/Skill_Shieldbreaker.ability.five.webp",
+    "rank": [
+     1,
+     2,
+     3
+    ],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     2.5,
+     6.5
+    ],
+    "damage": [
+     -40
+    ],
+    "effectTar": [
+     "无视潜行",
+     "显踪",
+     "+8/8/9/9/10% 被暴击几率(100/110/120/130/140%基础概率)(3回合)",
+     "-4/5/6/7/8 速度(100/110/120/130/140%基础概率)(4回合)"
+    ],
+    "effectSelf": [
+     "后退1"
+    ]
+   },
+   {
+    "name": "诱捕",
+    "img": "/codex/img/Skill_Shieldbreaker.ability.six.webp",
+    "rank": [
+     2,
+     3
+    ],
+    "tar": [
+     2,
+     3
+    ],
+    "type": "远程",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     4,
+     8
+    ],
+    "damage": [
+     -25
+    ],
+    "effectTar": [
+     "腐蚀3/3/4/4/5(100/110/120/130/140%基础概率)(3回合)",
+     "+40/45/50/55/60% 伤害对标记"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "毒蛇之舞",
+    "img": "/codex/img/Skill_Shieldbreaker.ability.seven.webp",
+    "limit": 2,
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": [
+     "前进1",
+     "+1/2/3/3/4 速度(4回合)",
+     "抵挡2次直接伤害"
+    ]
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Camp_skill_way_of_serpent.webp",
+    "name": "蛇眼之道(3)",
+    "des": "所有同伴：+15% 穿甲(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Camp_skill_way_of_scales.webp",
+    "name": "蛇鳞之道(3)",
+    "des": "仅自身：+15% 防御，+15% 最大生命值(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Camp_skill_way_of_sway.webp",
+    "name": "尘暴之护(2)",
+    "des": "一位同伴：无法被标记(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Camp_skill_way_of_adder.webp",
+    "name": "蝰蛇之拥(2)",
+    "des": "仅自身：+20% 毒蚀几率，+20% 腐蚀抗性(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴：-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴：治疗15%生命值；移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴：-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ },
+ {
+  "id": "hound_master",
+  "name": "训犬师",
+  "alias": "(狗哥)",
+  "portrait": "/codex/img/Hound_master_portrait_roster.webp",
+  "art": "/codex/img/Cultist-Houndmaster_combat.webp",
+  "overview": {
+   "name": "训犬师",
+   "alias": "(狗哥)",
+   "level0": {
+    "speed": 5,
+    "crit": 4,
+    "critBonus": 0,
+    "attack": "4-7",
+    "hp": 21,
+    "dodge": 10,
+    "feature": "输出稳、自奶、群回压、兽窟大c、防夜袭"
+   },
+   "level6": {
+    "speed": 7,
+    "crit": 8,
+    "critBonus": "+20%出血几率",
+    "attack": "7-13",
+    "hp": 37,
+    "dodge": 30
+   }
+  },
+  "hp": [
+   21,
+   25,
+   29,
+   33,
+   37
+  ],
+  "dodge": [
+   10,
+   15,
+   20,
+   25,
+   30
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   5,
+   5,
+   6,
+   6,
+   7
+  ],
+  "crt": [
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "dmg": [
+   "4-7",
+   "5-8",
+   "6-10",
+   "6-11",
+   "7-13"
+  ],
+  "religious": "无",
+  "resistances": [
+   "40/100",
+   "40/100",
+   "40/100",
+   "30/90",
+   "40/100",
+   "30",
+   "67",
+   "40/100"
+  ],
+  "abilities": [
+   {
+    "name": "猎犬冲刺",
+    "img": "/codex/img/Skill_Hounds_Rush.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [],
+    "effectTar": [
+     "流血1/1/1/2/2(110/120/130/140/150%基础概率)(3回合)",
+     "+15/20/25/30/35% 伤害对野兽",
+     "+60/70/80/90/100% 伤害对标记"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "猎犬骚扰",
+    "img": "/codex/img/Skill_Hounds_Harry.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4,
+     9,
+     10,
+     11
+    ],
+    "type": "远程",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     -5,
+     -1
+    ],
+    "damage": [
+     -75
+    ],
+    "effectTar": [
+     "流血1/1/2/2/3(110/120/130/140/150%基础概率)(3回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "标记口哨",
+    "img": "/codex/img/Skill_Whistle.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     100,
+     120
+    ],
+    "crit": [],
+    "damage": [
+     -100
+    ],
+    "effectTar": [
+     "-20/22/25/27/30% 防御(130/140/150/160/170%基础概率)(4回合)",
+     "标记3回合"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "振奋吠嚎",
+    "img": "/codex/img/Skill_Cry_Havoc.webp",
+    "rank": [],
+    "tar": [
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "全队 -2/3/4/5/6 压力(66/68/70/72/74概率)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "猎犬守护",
+    "img": "/codex/img/Skill_Guard_Dog.webp",
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "保护2回合"
+    ],
+    "effectSelf": [
+     "+10/12/14/17/20 闪避(3回合)"
+    ]
+   },
+   {
+    "name": "舔舐伤口",
+    "img": "/codex/img/Skill_Lick_Wounds.webp",
+    "rank": [],
+    "tar": [
+     2,
+     3,
+     4
+    ],
+    "type": "自身",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "治疗4/5/6/7/8"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "棍闷",
+    "img": "/codex/img/Skill_Blackjack.webp",
+    "rank": [
+     1,
+     2,
+     3
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "近战",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [
+     -65
+    ],
+    "effectTar": [
+     "眩晕(110/120/130/140/150%基础概率)"
+    ],
+    "effectSelf": []
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Hounds_Watch.webp",
+    "name": "猎犬守望(4)",
+    "des": "仅自身：防夜袭；-20% 队伍惊慌概率，+20% 怪物惊慌概率(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Therapy_Dog.webp",
+    "name": "心疗犬(3)",
+    "des": "所有同伴：-10 压力；-10% 所受压力伤害(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Mans_Best_Friend.webp",
+    "name": "人类挚友(2)",
+    "des": "仅自身：-20 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Release_the_Hound.webp",
+    "name": "释放猎犬(4)",
+    "des": "仅自身：+30% 侦察概率(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴：-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴：治疗15%生命值；移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴：-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ },
+ {
+  "id": "hellion",
+  "name": "蛮族战士",
+  "alias": "(恶女)",
+  "portrait": "/codex/img/Hellion_portrait_roster.webp",
+  "art": "/codex/img/Cultist-Hellion_combat.webp",
+  "overview": {
+   "name": "蛮族战士",
+   "alias": "(恶女)",
+   "level0": {
+    "speed": 4,
+    "crit": 5,
+    "critBonus": 0,
+    "attack": "6-12",
+    "hp": 26,
+    "dodge": 10,
+    "feature": "单挑4号位、双晕前排"
+   },
+   "level6": {
+    "speed": 6,
+    "crit": 9,
+    "critBonus": "+33%流血伤害",
+    "attack": "10-19",
+    "hp": 46,
+    "dodge": 30
+   }
+  },
+  "hp": [
+   26,
+   31,
+   36,
+   41,
+   46
+  ],
+  "dodge": [
+   10,
+   15,
+   20,
+   25,
+   30
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   4,
+   4,
+   5,
+   5,
+   6
+  ],
+  "crt": [
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "dmg": [
+   "6-12",
+   "7-14",
+   "8-16",
+   "9-17",
+   "10-19"
+  ],
+  "religious": "无",
+  "resistances": [
+   "40/100",
+   "40/100",
+   "40/100",
+   "30/90",
+   "40/100",
+   "30",
+   "67",
+   "20/80"
+  ],
+  "abilities": [
+   {
+    "name": "邪恶劈砍",
+    "img": "/codex/img/Skill_Wicked_Hack.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     4,
+     8
+    ],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": []
+   },
+   {
+    "name": "钢铁天鹅",
+    "img": "/codex/img/Skill_Iron_Swan.webp",
+    "rank": [
+     4
+    ],
+    "tar": [
+     1
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": []
+   },
+   {
+    "name": "野蛮咆哮",
+    "img": "/codex/img/Skill_Barbaric_Yawp.webp",
+    "limit": 3,
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2,
+     9
+    ],
+    "type": "近战",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [],
+    "damage": [
+     -100
+    ],
+    "effectTar": [
+     "眩晕(110/120/130/140/150%基础概率)"
+    ],
+    "effectSelf": [
+     "-20% 伤害(3回合)",
+     "-3 速度(3回合)"
+    ]
+   },
+   {
+    "name": "血如泉涌",
+    "img": "/codex/img/Skill_If_It_Bleeds.webp",
+    "rank": [
+     2,
+     3
+    ],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     0,
+     4
+    ],
+    "damage": [
+     -35
+    ],
+    "effectTar": [
+     "流血2/2/3/3/4(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "突破",
+    "img": "/codex/img/Skill_Breakthrough.webp",
+    "rank": [
+     1,
+     2,
+     3
+    ],
+    "tar": [
+     2,
+     3,
+     4,
+     9,
+     10
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     -1,
+     3
+    ],
+    "damage": [
+     -50
+    ],
+    "effectTar": [],
+    "effectSelf": [
+     "-10% 伤害(3回合)",
+     "-1 速度(3回合)",
+     "前进1"
+    ]
+   },
+   {
+    "name": "腺素飙升",
+    "img": "/codex/img/Skill_Adrenaline_Rush.webp",
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "自身",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": [
+     "治愈流血/腐蚀",
+     "治疗1/2/2/3/4",
+     "以下buff持续4回合",
+     "+5/6/7/8/10 精准",
+     "+20/22/24/26/30% 伤害"
+    ]
+   },
+   {
+    "name": "血溅三尺",
+    "img": "/codex/img/Skill_Bleed_Out.webp",
+    "rank": [
+     1
+    ],
+    "tar": [
+     1
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     6,
+     10
+    ],
+    "damage": [
+     "+20"
+    ],
+    "effectTar": [
+     "流血3/3/4/4/5(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": [
+     "-20% 伤害(3回合)",
+     "-3 速度(3回合)"
+    ]
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Battle_Trance.webp",
+    "name": "战斗专注(3)",
+    "des": "仅自身：+25% 伤害如果在1号位，-25% 伤害如果不在1号位(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Revel.webp",
+    "name": "宿醉狂欢(3)",
+    "des": "队伍：-20 压力；-5 精准，-2 速度，-10% 所受压力伤害(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Reject_the_Gods.webp",
+    "name": "诋毁诸神(2)",
+    "des": "仅自身：-30 压力；所有同伴：如果有/无信仰则+15/7 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Sharpen_Spear.webp",
+    "name": "打磨长矛(3)",
+    "des": "仅自身：+10% 暴击"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴：-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴：治疗15%生命值；移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴：-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ },
+ {
+  "id": "occultist",
+  "name": "神秘学者",
+  "alias": "(阿三)",
+  "portrait": "/codex/img/Occultist_portrait_roster.webp",
+  "art": "/codex/img/Cultist-Occ_combat.webp",
+  "overview": {
+   "name": "神秘学者",
+   "alias": "(阿三)",
+   "level0": {
+    "speed": 6,
+    "crit": 6,
+    "critBonus": 0,
+    "attack": "4-7",
+    "hp": 19,
+    "dodge": 10,
+    "feature": "单晕，不稳定主奶、海湾c"
+   },
+   "level6": {
+    "speed": 8,
+    "crit": 10,
+    "critBonus": "+25%治疗效果",
+    "attack": "7-13",
+    "hp": 35,
+    "dodge": 30
+   }
+  },
+  "hp": [
+   19,
+   23,
+   27,
+   31,
+   35
+  ],
+  "dodge": [
+   10,
+   15,
+   20,
+   25,
+   30
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   6,
+   6,
+   7,
+   7,
+   8
+  ],
+  "crt": [
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "dmg": [
+   "4-7",
+   "5-8",
+   "6-10",
+   "6-11",
+   "7-13"
+  ],
+  "religious": "无",
+  "resistances": [
+   "20/80",
+   "30/90",
+   "40/100",
+   "60/120",
+   "20/80",
+   "40",
+   "67",
+   "10/70"
+  ],
+  "abilities": [
+   {
+    "name": "献祭刺击",
+    "img": "/codex/img/Skill_Sacrificial_Stab.webp",
+    "rank": [
+     1,
+     2,
+     3
+    ],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "近战",
+    "accuracy": [
+     80,
+     100
+    ],
+    "crit": [
+     9,
+     13
+    ],
+    "damage": [],
+    "effectTar": [
+     "+15/20/25/30/35% 伤害对异魔"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "深渊炮击",
+    "img": "/codex/img/Skill_Abyssal_Artillery.webp",
+    "rank": [
+     3,
+     4
+    ],
+    "tar": [
+     3,
+     4,
+     11
+    ],
+    "type": "远程",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     0,
+     4
+    ],
+    "damage": [
+     -33
+    ],
+    "effectTar": [
+     "+15/17/20/22/25% 伤害对异魔"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "虚弱诅咒",
+    "img": "/codex/img/Skill_Weakening_Curse.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [
+     -75
+    ],
+    "effectTar": [
+     "-10/12/15/17/20% 伤害(100/110/120/130/140%基础概率)(3回合)",
+     "-10/13/15/17/20% 防御(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "命运重构",
+    "img": "/codex/img/Skill_Wyrd_Reconstruction.webp",
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "流血1/1/2/2/3(60/70/70/80/85%基础概率)(3回合)",
+     "治疗0~13/15/17/19/22"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "弱点术士",
+    "img": "/codex/img/Skill_Vulnerability_Hex.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [
+     -90
+    ],
+    "effectTar": [
+     "-15/16/17/18/20 闪避(100/110/120/130/140%基础概率)(3回合)",
+     "标记3回合"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "深渊之手",
+    "img": "/codex/img/Skill_Hands_from_the_Abyss.webp",
+    "rank": [
+     1,
+     2,
+     3
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "远程",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     9,
+     13
+    ],
+    "damage": [
+     -50
+    ],
+    "effectTar": [
+     "亮度 -5 ",
+     "眩晕(110/120/130/140/150%基础概率)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "恶魔牵引",
+    "img": "/codex/img/Skill_Daemons_Pull.webp",
+    "rank": [
+     3,
+     4
+    ],
+    "tar": [
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [
+     "-50"
+    ],
+    "effectTar": [
+     "拉前2(100/110/120/130/140%基础概率)",
+     "清除所有尸骸"
+    ],
+    "effectSelf": []
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Abandon_Hope.webp",
+    "name": "放弃希望(1)",
+    "des": "仅自身：-25 压力；所有同伴：+10/5 压力(各50%概率)"
+   },
+   {
+    "img": "/codex/img/Skill_Dark_Ritual.webp",
+    "name": "黑暗仪式(3)",
+    "des": "仅自身：-100 亮度；+15 压力；一位同伴：治疗50%生命值；移除目标重创减益"
+   },
+   {
+    "img": "/codex/img/Skill_Dark_Strength.webp",
+    "name": "黑暗之力(2)",
+    "des": "仅自身：+15 压力；一位同伴：+20% 伤害(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Unspeakable_Commune.webp",
+    "name": "神秘交谈(3)",
+    "des": "仅自身：防止夜袭；所有同伴：+7 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴：-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴：治疗15%生命值；移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴：-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ },
+ {
+  "id": "jester",
+  "name": "小丑",
+  "alias": "",
+  "portrait": "/codex/img/Jester_portrait_roster.webp",
+  "art": "/codex/img/Cultist-Jester_combat.webp",
+  "overview": {
+   "name": "小丑",
+   "alias": "",
+   "level0": {
+    "speed": 7,
+    "crit": 4,
+    "critBonus": 0,
+    "attack": "4-7",
+    "hp": 19,
+    "dodge": 15,
+    "feature": "单回压、强力群buff、最强单次单体c"
+   },
+   "level6": {
+    "speed": 9,
+    "crit": 8,
+    "critBonus": "+40%减压效率",
+    "attack": "7-13",
+    "hp": 35,
+    "dodge": 35
+   }
+  },
+  "hp": [
+   19,
+   23,
+   27,
+   31,
+   35
+  ],
+  "dodge": [
+   15,
+   20,
+   25,
+   30,
+   35
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   7,
+   7,
+   8,
+   8,
+   9
+  ],
+  "crt": [
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "dmg": [
+   "4-7",
+   "5-8",
+   "6-10",
+   "6-11",
+   "7-13"
+  ],
+  "religious": "无",
+  "resistances": [
+   "20/80",
+   "40/100",
+   "30/90",
+   "40/100",
+   "20/80",
+   "20",
+   "67",
+   "30/90"
+  ],
+  "abilities": [
+   {
+    "name": "匕首刺击",
+    "img": "/codex/img/Skill_Dirk_Stab.webp",
+    "rank": [
+     1,
+     2,
+     3
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": [
+     "无视守护",
+     "前进1",
+     "+30% 终曲伤害(8回合)"
+    ]
+   },
+   {
+    "name": "收割",
+    "img": "/codex/img/Skill_Harvest.webp",
+    "rank": [
+     2,
+     3
+    ],
+    "tar": [
+     2,
+     3,
+     10
+    ],
+    "type": "近战",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     0,
+     4
+    ],
+    "damage": [
+     -50
+    ],
+    "effectTar": [
+     "流血2/2/3/3/4(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": [
+     "+30% 终曲伤害(8回合)"
+    ]
+   },
+   {
+    "name": "谢幕",
+    "img": "/codex/img/Skill_Finale.webp",
+    "limit": 1,
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "近战",
+    "accuracy": [
+     140,
+     160
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [
+     "+50"
+    ],
+    "effectTar": [],
+    "effectSelf": [
+     "后退3",
+     "以下buff持续整场战斗",
+     "-25 闪避",
+     "-3 速度",
+     "+100% 所受压力伤害"
+    ]
+   },
+   {
+    "name": "独奏",
+    "img": "/codex/img/Skill_Solo.webp",
+    "limit": 2,
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     3,
+     4,
+     9,
+     10,
+     11
+    ],
+    "type": "远程",
+    "accuracy": [
+     125,
+     145
+    ],
+    "crit": [],
+    "damage": [
+     -100
+    ],
+    "effectTar": [],
+    "effectSelf": [
+     "前进3",
+     "标记3回合",
+     "+20/22/25/27/30 闪避(4回合)",
+     "+75% 终曲伤害(8回合)",
+     "+8% 终曲暴击(8回合)"
+    ]
+   },
+   {
+    "name": "切割",
+    "img": "/codex/img/Skill_Slice_Off.webp",
+    "rank": [
+     2,
+     3
+    ],
+    "tar": [
+     2,
+     3
+    ],
+    "type": "近战",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     8,
+     12
+    ],
+    "damage": [
+     -33
+    ],
+    "effectTar": [
+     "流血3/3/4/4/5(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": [
+     "+30% 终曲伤害(8回合)"
+    ]
+   },
+   {
+    "name": "战歌",
+    "img": "/codex/img/Skill_Battle_Ballad.webp",
+    "rank": [],
+    "tar": [
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "以下buff持续3回合",
+     "全队 +5/6/7/8/10 精准",
+     "全队 +2/3/4/5/6% 暴击",
+     "全队 +2/2/3/3/4 速度"
+    ],
+    "effectSelf": [
+     "+30% 终曲伤害(8回合)",
+     "+8% 终曲暴击(8回合)"
+    ]
+   },
+   {
+    "name": "鼓舞乐章",
+    "img": "/codex/img/Skill_Inspiring_Tune.webp",
+    "rank": [],
+    "tar": [
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "-8/9/10/11/12 压力",
+     "-10/12.5/15/17.5/20% 所受压力伤害"
+    ],
+    "effectSelf": [
+     "+30% 终曲伤害(8回合)",
+     "+8% 终曲暴击(8回合)"
+    ]
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Turn_Back_Time.webp",
+    "name": "回溯时光(3)",
+    "des": "一位同伴：-30 压力，如果折磨：-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Every_Rose_has_its_Thorn.webp",
+    "name": "带刺玫瑰(3)",
+    "des": "所有同伴：-15 压力；-15% 所受压力伤害(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Tigers_Eye.webp",
+    "name": "猛虎之眼(3)",
+    "des": "一位同伴：+10 精准，+8% 暴击(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Mockery.webp",
+    "name": "嘲弄(2)",
+    "des": "所有同伴：-20 压力；一位同伴：+20 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴：-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴：治疗15%生命值；移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴：-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ },
+ {
+  "id": "grave_robber",
+  "name": "盗墓贼",
+  "alias": "(盗墓)",
+  "portrait": "/codex/img/Grave_robber_portrait_roster.webp",
+  "art": "/codex/img/Cultist-Graverobber_combat.webp",
+  "overview": {
+   "name": "盗墓贼",
+   "alias": "(盗墓)",
+   "level0": {
+    "speed": 8,
+    "crit": 6,
+    "critBonus": 0,
+    "attack": "4-8",
+    "hp": 20,
+    "dodge": 10,
+    "feature": "高速、跳舞c、叠闪避"
+   },
+   "level6": {
+    "speed": 10,
+    "crit": 10,
+    "critBonus": "+10闪避",
+    "attack": "7-14",
+    "hp": 36,
+    "dodge": 30
+   }
+  },
+  "hp": [
+   20,
+   24,
+   28,
+   32,
+   36
+  ],
+  "dodge": [
+   10,
+   15,
+   20,
+   25,
+   30
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   8,
+   8,
+   9,
+   9,
+   10
+  ],
+  "crt": [
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "dmg": [
+   "4-8",
+   "5-10",
+   "6-11",
+   "6-13",
+   "7-14"
+  ],
+  "religious": "无",
+  "resistances": [
+   "20/80",
+   "50/110",
+   "30/90",
+   "30/90",
+   "20/80",
+   "30",
+   "67",
+   "50/110"
+  ],
+  "abilities": [
+   {
+    "name": "劈头盖脸",
+    "img": "/codex/img/Skill_Pick_to_the_Face.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "近战",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     1,
+     5
+    ],
+    "damage": [
+     -15
+    ],
+    "effectTar": [
+     "穿甲"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "突刺",
+    "img": "/codex/img/Skill_Lunge.webp",
+    "rank": [
+     1,
+     2,
+     3
+    ],
+    "tar": [
+     3,
+     4
+    ],
+    "type": "近战",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     8,
+     12
+    ],
+    "damage": [
+     "+40"
+    ],
+    "effectTar": [
+     "+20/23/26/29/33% 伤害对腐蚀"
+    ],
+    "effectSelf": [
+     "前进2"
+    ]
+   },
+   {
+    "name": "闪光匕首",
+    "img": "/codex/img/Skill_Flashing_Daggers.webp",
+    "rank": [
+     2,
+     3
+    ],
+    "tar": [
+     2,
+     3,
+     4,
+     10
+    ],
+    "type": "远程",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     -5,
+     -1
+    ],
+    "damage": [
+     -33
+    ],
+    "effectTar": [
+     "-20/23/26/30/33% 流血抗性(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "影遁",
+    "img": "/codex/img/Skill_Shadow_Fade.webp",
+    "rank": [],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "自身",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": [
+     "后退2",
+     "潜行2回合",
+     "+80/85/90/95/100% 伤害(2回合)",
+     "+4/5/6/7/8% 暴击(2回合)",
+     "+10/11/12/13/15 闪避(4回合)"
+    ]
+   },
+   {
+    "name": "投掷匕首",
+    "img": "/codex/img/Skill_Thrown_Dagger.webp",
+    "rank": [
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     8,
+     12
+    ],
+    "damage": [
+     -10
+    ],
+    "effectTar": [
+     "+25/28/32/36/40% 伤害对标记",
+     "+20/23/26/29/33% 伤害对腐蚀"
+    ],
+    "effectSelf": [
+     "+5/6/7/8/10 精准(4回合)"
+    ]
+   },
+   {
+    "name": "毒镖",
+    "img": "/codex/img/Skill_Poison_Dart.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     7.5,
+     11.5
+    ],
+    "damage": [
+     -60
+    ],
+    "effectTar": [
+     "腐蚀2/3/3/3/4(100/110/120/130/140%基础概率)(4回合)",
+     "-20/23/26/30/33 腐蚀抗性(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "敏捷药剂",
+    "img": "/codex/img/Skill_Toxin_Trickery.webp",
+    "limit": 1,
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "自身",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": [
+     "治愈流血/腐蚀",
+     "以下buff持续整场战斗",
+     "+9/10/11/12/13 闪避",
+     "+2/2/3/3/4 速度"
+    ]
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Snuff_Box.webp",
+    "name": "鼻烟盒(3)",
+    "des": "仅自身：移除目标疾病；一位同伴：移除目标疾病；"
+   },
+   {
+    "img": "/codex/img/Skill_Gallows_Humor.webp",
+    "name": "黑色幽默(4)",
+    "des": "仅自身：-25 压力；所有同伴：-20 压力(75%概率)，+10 压力(25%概率)"
+   },
+   {
+    "img": "/codex/img/Skill_Night_Moves.webp",
+    "name": "夜间行动(2)",
+    "des": "仅自身：+20% 侦察概率(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Pilfer.webp",
+    "name": "偷窃(1)",
+    "des": "仅自身：产生一件随机的补给物品"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴：-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴：治疗15%生命值；移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴：-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ },
+ {
+  "id": "abomination",
+  "name": "咒缚者",
+  "alias": "(狼人)",
+  "portrait": "/codex/img/Abomination_portrait_roster.webp",
+  "art": "/codex/img/Cultist-Abom_combat_man.webp",
+  "overview": {
+   "name": "咒缚者",
+   "alias": "(狼人)",
+   "level0": {
+    "speed": 7,
+    "crit": 2,
+    "critBonus": 0,
+    "attack": "6-11",
+    "hp": 26,
+    "dodge": 8,
+    "feature": "单控、自奶且回压"
+   },
+   "level6": {
+    "speed": 9,
+    "crit": 6,
+    "critBonus": "+20%伤害",
+    "attack": "11-20",
+    "hp": 46,
+    "dodge": 28
+   }
+  },
+  "hp": [
+   26,
+   31,
+   36,
+   41,
+   46
+  ],
+  "dodge": [
+   7.5,
+   12.5,
+   17.5,
+   22.5,
+   27.5
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   7,
+   7,
+   8,
+   8,
+   9
+  ],
+  "crt": [
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "dmg": [
+   "6-11",
+   "7-13",
+   "8-15",
+   "10-18",
+   "11-20"
+  ],
+  "religious": "无",
+  "resistances": [
+   "40/100",
+   "60/120",
+   "30/90",
+   "20/80",
+   "40/100",
+   "20",
+   "67",
+   "10/70"
+  ],
+  "abilities": [
+   {
+    "name": "变身",
+    "img": "/codex/img/Skill_Transform.webp",
+    "limit": 2,
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "自身",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "+8 队友压力"
+    ],
+    "effectSelf": [
+     "变身为野兽",
+     "+1/2/3/4/5 速度(4回合)",
+     "+20/22/25/27/30% 腐蚀抗性(4回合)",
+     "+10/14/17/21/25% 伤害(3回合)",
+     "+5/6/7/8/10 生命值"
+    ]
+   },
+   {
+    "name": "锁链",
+    "img": "/codex/img/Skill_Manacles.webp",
+    "rank": [
+     1,
+     2,
+     3
+    ],
+    "tar": [
+     2,
+     3
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     1,
+     5
+    ],
+    "damage": [
+     -60
+    ],
+    "effectTar": [
+     "眩晕(90/100/110/120/130%基础概率)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "恶兽胆汁",
+    "img": "/codex/img/Skill_Beasts_Bile.webp",
+    "rank": [
+     2,
+     3
+    ],
+    "tar": [
+     2,
+     3,
+     10
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     2,
+     6
+    ],
+    "damage": [
+     -90
+    ],
+    "effectTar": [
+     "腐蚀2/3/3/4/5(100/110/120/130/140%基础概率)(3回合)",
+     "-20/23/26/30/33% 腐蚀抗性(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "赎罪",
+    "img": "/codex/img/Skill_Absolution.webp",
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "自身",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": [
+     "治疗3/3/4/4/5",
+     "-7/8/8/9/10 压力"
+    ]
+   },
+   {
+    "name": "变身",
+    "img": "/codex/img/Skill_Transform22.webp",
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "自身",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "-2 队友压力"
+    ],
+    "effectSelf": [
+     "变身为人类",
+     "-4/3/2/1/0 速度(4回合)"
+    ]
+   },
+   {
+    "name": "撕扯",
+    "img": "/codex/img/Skill_Rake.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2,
+     9
+    ],
+    "type": "近战",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     -3,
+     1
+    ],
+    "damage": [
+     -50
+    ],
+    "effectTar": [],
+    "effectSelf": [
+     "+15/17/20/22/25% 撕扯伤害(4回合)"
+    ]
+   },
+   {
+    "name": "狂暴",
+    "img": "/codex/img/Skill_Rage.webp",
+    "rank": [
+     1,
+     2,
+     3
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     7.5,
+     11.5
+    ],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": []
+   },
+   {
+    "name": "冲撞",
+    "img": "/codex/img/Skill_Slam.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "近战",
+    "accuracy": [
+     80,
+     100
+    ],
+    "crit": [
+     1,
+     5
+    ],
+    "damage": [
+     -25
+    ],
+    "effectTar": [
+     "击退2(100/110/120/130/140%基础概率)",
+     "-10/12/15/17/20 闪避(100/110/120/130/140%基础概率)(4回合)",
+     "-2/3/4/5/6 速度(100/110/120/130/140%基础概率)(4回合)"
+    ],
+    "effectSelf": [
+     "前进1"
+    ]
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Anger_Management.webp",
+    "name": "控制怒气(3)",
+    "des": "仅自身：+20 压力；所有同伴：-10 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Psych_Up.webp",
+    "name": "集中精神(3)",
+    "des": "仅自身：+25% 伤害(持续4场战斗)；所有同伴：如果有/无信仰则+20/10 压力"
+   },
+   {
+    "img": "/codex/img/Skill_The_Quickening.webp",
+    "name": "加速(3)",
+    "des": "仅自身：+4 速度(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Eldritch_Blood.webp",
+    "name": "异怖之血(3)",
+    "des": "仅自身：+40% 流血/腐蚀/疾病抗性，+20% 所受压力伤害(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴：-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴：治疗15%生命值；移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴：-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ },
+ {
+  "id": "flagellant",
+  "name": "苦修者",
+  "alias": "(苦修)",
+  "portrait": "/codex/img/Flagellant_portrait_roster.webp",
+  "art": "/codex/img/Cultist-Flag_combat.webp",
+  "overview": {
+   "name": "苦修者",
+   "alias": "(苦修)",
+   "level0": {
+    "speed": 6,
+    "crit": 2,
+    "critBonus": 0,
+    "attack": "3-6",
+    "hp": 22,
+    "dodge": 0,
+    "feature": "最高流血伤害，慢效主奶"
+   },
+   "level6": {
+    "speed": 9,
+    "crit": 6,
+    "critBonus": "+20%出血几率",
+    "attack": "5-11",
+    "hp": 38,
+    "dodge": 20
+   }
+  },
+  "hp": [
+   22,
+   26,
+   30,
+   34,
+   38
+  ],
+  "dodge": [
+   0,
+   5,
+   10,
+   15,
+   20
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   6,
+   6,
+   8,
+   8,
+   9
+  ],
+  "crt": [
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "dmg": [
+   "3-6",
+   "4-7",
+   "4-8",
+   "5-10",
+   "5-11"
+  ],
+  "religious": "有",
+  "resistances": [
+   "50/110",
+   "30/90",
+   "65/125",
+   "30/90",
+   "50/110",
+   "40",
+   "73",
+   "0/60"
+  ],
+  "abilities": [
+   {
+    "name": "责罚",
+    "img": "/codex/img/Skill_Flagellant.ability.one.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "近战",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [],
+    "effectTar": [
+     "流血4/4/5/5/6(100/110/120/130/140%基础概率)(3回合)",
+     "-20/23/26/30/33 流血抗性(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "伤痛之雨",
+    "img": "/codex/img/Skill_Flagellant.ability.two.webp",
+    "rank": [
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     2,
+     11
+    ],
+    "type": "近战",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     2,
+     6
+    ],
+    "damage": [
+     -67
+    ],
+    "effectTar": [
+     "流血3/3/4/4/5(100/110/120/130/140%基础概率)(3回合)",
+     "-20/23/26/30/33 流血抗性(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "除血",
+    "img": "/codex/img/Skill_Flagellant.ability.three.webp",
+    "limit": 3,
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "近战",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     3,
+     7
+    ],
+    "damage": [],
+    "effectTar": [
+     "流血5/6/7/8/9(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": [
+     "生命值低于40%时可用",
+     "治疗35/39/42/46/50%最大生命值",
+     "-25% 生命治疗强度",
+     "-25% 所受生命治疗",
+     "-3 速度(3回合)"
+    ]
+   },
+   {
+    "name": "授教",
+    "img": "/codex/img/Skill_Flagellant.ability.four.webp",
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "治疗2/2/3/3/4(2/3/2/3/3回合)"
+    ],
+    "effectSelf": [
+     "流血3/3/4/4/5(120/130/140/150/160%基础概率)(3回合)"
+    ]
+   },
+   {
+    "name": "偿赎",
+    "img": "/codex/img/Skill_Flagellant.ability.five.webp",
+    "limit": 2,
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "治疗33/35/37.5/40/43%最大生命值"
+    ],
+    "effectSelf": [
+     "生命值低于40%时可用",
+     "治疗35/39/42/46/50%最大生命值",
+     "-25% 生命治疗强度",
+     "-25% 所受生命治疗",
+     "-3 速度(3回合)"
+    ]
+   },
+   {
+    "name": "忍耐",
+    "img": "/codex/img/Skill_Flagellant.ability.six.webp",
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "-10/11/12/13/14 压力"
+    ],
+    "effectSelf": [
+     "+10/9/8/7/6 压力",
+     "+1/1/2/2/3 速度(4回合)"
+    ]
+   },
+   {
+    "name": "受难",
+    "img": "/codex/img/Skill_Flagellant.ability.seven.webp",
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "清除标记",
+     "转移流血/腐蚀至自身"
+    ],
+    "effectSelf": [
+     "标记2回合",
+     "-20/25/30/35/40% 所受压力伤害(4回合)",
+     "+6/7/8/9/10 致死抗性"
+    ]
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Camp_skill_lash_anger.webp",
+    "name": "鞭之愤怒(1)",
+    "des": "仅自身：+40 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Camp_skill_lash_solace.webp",
+    "name": "鞭之慰藉(3)",
+    "des": "仅自身：-50 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Camp_skill_lash_kiss.webp",
+    "name": "鞭之亲吻(3)",
+    "des": "仅自身：治疗33%生命值；移除目标流血/腐蚀；+3 速度(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Camp_skill_lash_cure.webp",
+    "name": "鞭之治愈(2)",
+    "des": "仅自身：移除目标疾病"
+   }
+  ]
+ },
+ {
+  "id": "leper",
+  "name": "麻风剑客",
+  "alias": "(国王)",
+  "portrait": "/codex/img/Leper_portrait_roster.webp",
+  "art": "/codex/img/Cultist-Leper_combat.webp",
+  "overview": {
+   "name": "麻风剑客",
+   "alias": "(国王)",
+   "level0": {
+    "speed": 2,
+    "crit": 1,
+    "critBonus": 0,
+    "attack": "8-16",
+    "hp": 35,
+    "dodge": 0,
+    "feature": "打不中、面板最高"
+   },
+   "level6": {
+    "speed": 4,
+    "crit": 5,
+    "critBonus": "+10精准",
+    "attack": "13-26",
+    "hp": 63,
+    "dodge": 20
+   }
+  },
+  "hp": [
+   35,
+   42,
+   49,
+   56,
+   63
+  ],
+  "dodge": [
+   0,
+   5,
+   10,
+   15,
+   20
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   2,
+   2,
+   3,
+   3,
+   4
+  ],
+  "crt": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "dmg": [
+   "8-16",
+   "9-18",
+   "10-21",
+   "12-23",
+   "13-26"
+  ],
+  "religious": "有",
+  "resistances": [
+   "60/120",
+   "40/100",
+   "10/70",
+   "60/120",
+   "40/100",
+   "20",
+   "67",
+   "10/70"
+  ],
+  "abilities": [
+   {
+    "name": "挥砍",
+    "img": "/codex/img/Skill_Chop.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "近战",
+    "accuracy": [
+     75,
+     95
+    ],
+    "crit": [
+     3,
+     7
+    ],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": []
+   },
+   {
+    "name": "斩劈",
+    "img": "/codex/img/Skill_Hew.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2,
+     9
+    ],
+    "type": "近战",
+    "accuracy": [
+     75,
+     95
+    ],
+    "crit": [
+     -4,
+     0
+    ],
+    "damage": [
+     -50
+    ],
+    "effectTar": [],
+    "effectSelf": []
+   },
+   {
+    "name": "净化",
+    "img": "/codex/img/Skill_Purge.webp",
+    "rank": [
+     1
+    ],
+    "tar": [
+     1
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     0,
+     4
+    ],
+    "damage": [
+     -40
+    ],
+    "effectTar": [
+     "击退3(100/110/120/130/140%基础概率)",
+     "清除所有尸骸"
+    ],
+    "effectSelf": [
+     "+5 精准(4回合)"
+    ]
+   },
+   {
+    "name": "复仇",
+    "img": "/codex/img/Skill_Revenge.webp",
+    "limit": 1,
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "自身",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": [
+     "以下buff持续整场战斗",
+     "+10/11/12/13/15 精准",
+     "+25/27/30/32/35% 伤害",
+     "+7/8/9/10/11% 暴击",
+     "-10 闪避",
+     "+25% 所受伤害"
+    ]
+   },
+   {
+    "name": "抵挡",
+    "img": "/codex/img/Skill_Withstand.webp",
+    "limit": 1,
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "自身",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": [
+     "标记目标",
+     "+20/22/25/27/30% 防御",
+     "+30% 腐蚀/流血/减益/位移抗性(整场战斗)"
+    ]
+   },
+   {
+    "name": "肃穆",
+    "img": "/codex/img/Skill_Solemnity.webp",
+    "rank": [],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "自身",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "治疗6/7/8/9/10 生命值",
+     "-5/5/6/6/7 压力"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "威吓",
+    "img": "/codex/img/Skill_Intimidate.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     1
+    ],
+    "type": "近战",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [],
+    "damage": [
+     -85,
+     -85,
+     -85,
+     -80,
+     -80
+    ],
+    "effectTar": [
+     "无视潜行",
+     "显踪",
+     "-20/23/26/29/33% 伤害(100/110/120/130/140%基础概率)",
+     "-3/3/4/4/5 速度(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": [
+     "标记目标",
+     "+2/2/3/3/4 速度(4回合)"
+    ]
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Let_the_Mask_Down.webp",
+    "name": "摘下面具(1)",
+    "des": "仅自身：-25 压力；所有同伴：+5 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Bloody_Shroud.webp",
+    "name": "血色寿衣(2)",
+    "des": "仅自身：+25% 流血/腐蚀/减益/位移抗性(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Reflection.webp",
+    "name": "碎刃倒影(3)",
+    "des": "仅自身：-20 压力；+10 精准，+8% 暴击(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Quarantine.webp",
+    "name": "隔离(3)",
+    "des": "仅自身：承受20%生命伤害；所有同伴：-20/15 压力(各50%概率)"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴：-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴：治疗15%生命值；移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴：-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ },
+ {
+  "id": "arbalest",
+  "name": "弩手",
+  "alias": "",
+  "portrait": "/codex/img/Arbalest_portrait_roster.webp",
+  "art": "/codex/img/Cultist-Arb_combat.webp",
+  "overview": {
+   "name": "弩手",
+   "alias": "",
+   "level0": {
+    "speed": 3,
+    "crit": 6,
+    "critBonus": 0,
+    "attack": "4-8",
+    "hp": 27,
+    "dodge": 0,
+    "feature": "标记队大c"
+   },
+   "level6": {
+    "speed": 5,
+    "crit": 10,
+    "critBonus": "+33%伤害对标记",
+    "attack": "7-14",
+    "hp": 47,
+    "dodge": 20
+   }
+  },
+  "hp": [
+   27,
+   32,
+   37,
+   42,
+   47
+  ],
+  "dodge": [
+   0,
+   5,
+   10,
+   15,
+   20
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   3,
+   3,
+   4,
+   4,
+   5
+  ],
+  "crt": [
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "dmg": [
+   "4-8",
+   "5-10",
+   "6-11",
+   "6-13",
+   "7-14"
+  ],
+  "religious": "无",
+  "resistances": [
+   "40/100",
+   "30/90",
+   "30/90",
+   "30/90",
+   "40/100",
+   "30",
+   "67",
+   "10/70"
+  ],
+  "abilities": [
+   {
+    "name": "狙击",
+    "img": "/codex/img/Skill_Sniper_Shot.webp",
+    "rank": [
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [],
+    "effectTar": [
+     "+50/60/70/80/100% 伤害对标记",
+     "+9/10/11/12/13% 暴击对标记"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "压制射击",
+    "img": "/codex/img/Skill_Suppressing_Fire.webp",
+    "rank": [
+     3,
+     4
+    ],
+    "tar": [
+     3,
+     4,
+     11
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     -10,
+     -6
+    ],
+    "damage": [
+     -80
+    ],
+    "effectTar": [
+     "-15/16/17/18/20 精准(100/110/120/130/140%基础概率)(2回合)",
+     "-15/16/17/18/19% 暴击(100/110/120/130/140%基础概率)(2回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "狙击印记",
+    "img": "/codex/img/Skill_Snipers_Mark.webp",
+    "rank": [
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     100,
+     120
+    ],
+    "crit": [],
+    "damage": [
+     -100
+    ],
+    "effectTar": [
+     "-20/22/25/27/30 闪避(100/110/120/130/140%基础概率)(2回合)",
+     "标记3回合"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "拌索",
+    "img": "/codex/img/Skill_Bola.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     3,
+     4,
+     9
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     2,
+     6
+    ],
+    "damage": [
+     -50
+    ],
+    "effectTar": [
+     "击退1(75/85/95/105/105%基础概率)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "盲射",
+    "img": "/codex/img/Skill_Blindfire.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     75,
+     95
+    ],
+    "crit": [
+     0,
+     4
+    ],
+    "damage": [
+     -10
+    ],
+    "effectTar": [
+     "攻击随机目标"
+    ],
+    "effectSelf": [
+     "+3/3/4/4/5 速度(4回合)"
+    ]
+   },
+   {
+    "name": "战场包扎",
+    "img": "/codex/img/Skill_Battlefield_Bandage.webp",
+    "rank": [],
+    "tar": [
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "治疗2~3/3/3~4/4/4~5 生命值",
+     "+20/24/28/33/38% 受到的生命治疗(3回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "照明弹",
+    "img": "/codex/img/Skill_Rallying_Flare.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4,
+     9,
+     10,
+     11
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [],
+    "damage": [
+     -100
+    ],
+    "effectTar": [
+     "无视潜行",
+     "显踪",
+     "亮度 + 3/4/5/6/7",
+     "清除队友标记/眩晕",
+     "队友-1/2/2/3/3 压力(60/60/67/60/67%概率)"
+    ],
+    "effectSelf": []
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Field_Dressing.webp",
+    "name": "战地急救(2)",
+    "des": "一位同伴：移除目标流血；治疗35/50%生命值(75%/25%概率)"
+   },
+   {
+    "img": "/codex/img/Skill_Marching_Plan.webp",
+    "name": "行军计划(3)",
+    "des": "所有同伴：+2 速度(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Restring_Crossbow.webp",
+    "name": "紧固弩弦(3)",
+    "des": "仅自身：+10 精准 远程技能，+20% 伤害 远程技能，+8% 暴击 远程技能，-2 速度(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Triage.webp",
+    "name": "群体治疗(3)",
+    "des": "所有同伴：治疗20%生命值"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴：-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴：治疗15%生命值；移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴：-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ },
+ {
+  "id": "bounty_hunter",
+  "name": "赏金猎人",
+  "alias": "(赏金)",
+  "portrait": "/codex/img/Bounty_hunter_portrait_roster.webp",
+  "art": "/codex/img/Cultist-Bh_combat.webp",
+  "overview": {
+   "name": "赏金猎人",
+   "alias": "(赏金)",
+   "level0": {
+    "speed": 5,
+    "crit": 4,
+    "critBonus": 0,
+    "attack": "5-10",
+    "hp": 25,
+    "dodge": 5,
+    "feature": "啥都会"
+   },
+   "level6": {
+    "speed": 7,
+    "crit": 8,
+    "critBonus": "+33%伤害对标记",
+    "attack": "8-16",
+    "hp": 45,
+    "dodge": 25
+   }
+  },
+  "hp": [
+   25,
+   30,
+   35,
+   40,
+   45
+  ],
+  "dodge": [
+   5,
+   10,
+   15,
+   20,
+   25
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   5,
+   5,
+   6,
+   6,
+   7
+  ],
+  "crt": [
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "dmg": [
+   "5-10",
+   "6-12",
+   "7-13",
+   "7-15",
+   "8-16"
+  ],
+  "religious": "无",
+  "resistances": [
+   "40/100",
+   "30/90",
+   "30/90",
+   "30/90",
+   "40/100",
+   "20",
+   "67",
+   "40/100"
+  ],
+  "abilities": [
+   {
+    "name": "收集赏金",
+    "img": "/codex/img/Skill_Collect_Bounty.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     7,
+     11
+    ],
+    "damage": [],
+    "effectTar": [
+     "+90% 伤害对标记",
+     "+15/20/25/30/35% 伤害对人类"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "死亡标记",
+    "img": "/codex/img/Skill_Mark_for_Death.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     100,
+     120
+    ],
+    "crit": [],
+    "damage": [
+     -100
+    ],
+    "effectTar": [
+     "标记3回合",
+     "-10/12.5/15/17.5/20% 防御(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": [
+     "+3/3/4/4/5 速度(2回合)"
+    ]
+   },
+   {
+    "name": "靠近点",
+    "img": "/codex/img/Skill_Come_Hither.webp",
+    "rank": [
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     0,
+     4
+    ],
+    "damage": [
+     -80
+    ],
+    "effectTar": [
+     "拉前2(100/110/120/130/140%基础概率)",
+     "标记2回合"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "上勾拳",
+    "img": "/codex/img/Skill_Uppercut.webp",
+    "rank": [
+     1,
+     2
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "近战",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     0,
+     4
+    ],
+    "damage": [
+     -67
+    ],
+    "effectTar": [
+     "击退2(100/110/120/130/140%基础概率)",
+     "眩晕(100/110/120/130/140%基础概率)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "闪光弹",
+    "img": "/codex/img/Skill_Flashbang.webp",
+    "rank": [
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [],
+    "damage": [
+     -100
+    ],
+    "effectTar": [
+     "眩晕(110/120/130/140/150%基础概率)",
+     "乱位(100/110/120/130/140%基础概率)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "了结一击",
+    "img": "/codex/img/Skill_Finish_Him.webp",
+    "rank": [
+     1,
+     2,
+     3
+    ],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [],
+    "effectTar": [
+     "+25/33/40/50/60% 伤害对眩晕"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "绳钩切削",
+    "img": "/codex/img/Skill_Caltrops.webp",
+    "rank": [
+     3,
+     4
+    ],
+    "tar": [
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     5,
+     9
+    ],
+    "damage": [
+     -95
+    ],
+    "effectTar": [
+     "以下buff持续3回合",
+     "流血2/2/3/3/4(100/110/120/130/140%基础概率)",
+     "+10/12/15/18/20% 所受伤害(100/110/120/130/140%基础概率)",
+     "-4/5/6/7/8 速度(100/110/120/130/140%基础概率)"
+    ],
+    "effectSelf": []
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_This_Is_How_We_Do_It.webp",
+    "name": "杀戮准则(2)",
+    "des": "仅自身：+10 精准，+8% 暴击(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Tracking.webp",
+    "name": "追踪(2)",
+    "des": "仅自身：-15% 队伍惊慌概率，+10% 怪物惊慌概率(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Planned_Takedown.webp",
+    "name": "猎杀预演(4)",
+    "des": "仅自身：+25% 伤害对体型2，+15 精准对体型2(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Scout_Ahead.webp",
+    "name": "先头侦察(3)",
+    "des": "仅自身：+25% 侦察概率(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴：-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴：治疗15%生命值；移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴：-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ },
+ {
+  "id": "antiquarian",
+  "name": "古董商人",
+  "alias": "(古商)",
+  "portrait": "/codex/img/Antiquarian_portrait_roster.webp",
+  "art": "/codex/img/Cultist-Anti_combat.webp",
+  "overview": {
+   "name": "古董商人",
+   "alias": "(古商)",
+   "level0": {
+    "speed": 5,
+    "crit": 1,
+    "critBonus": 0,
+    "attack": "3-5",
+    "hp": 17,
+    "dodge": 10,
+    "feature": "赚钱的爹"
+   },
+   "level6": {
+    "speed": 7,
+    "crit": 5,
+    "critBonus": "+10闪避",
+    "attack": "5-9",
+    "hp": 29,
+    "dodge": 30
+   }
+  },
+  "hp": [
+   17,
+   20,
+   23,
+   26,
+   29
+  ],
+  "dodge": [
+   10,
+   15,
+   20,
+   25,
+   30
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   5,
+   5,
+   6,
+   6,
+   7
+  ],
+  "crt": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "dmg": [
+   "3-5",
+   "4-6",
+   "4-7",
+   "5-8",
+   "5-9"
+  ],
+  "religious": "无",
+  "resistances": [
+   "20/80",
+   "20/80",
+   "20/80",
+   "20/80",
+   "20/80",
+   "20",
+   "67",
+   "10/70"
+  ],
+  "abilities": [
+   {
+    "name": "紧张戳击",
+    "img": "/codex/img/Skill_Nervous_Stab.webp",
+    "rank": [
+     1,
+     2,
+     3
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     3,
+     7
+    ],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": []
+   },
+   {
+    "name": "溃烂蒸汽",
+    "img": "/codex/img/Skill_Festering_Vapours.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     0,
+     4
+    ],
+    "damage": [
+     -75
+    ],
+    "effectTar": [
+     "腐蚀1/2/2/3/4(100/110/120/130/140%基础概率)(3回合)",
+     "-20/24/28/32/36% 腐蚀抗性(100/110/120/130/140%基础概率)(3回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "卧倒",
+    "img": "/codex/img/Skill_Get_Down.webp",
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "自身",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": [
+     "后退2",
+     "以下buff持续4回合",
+     "+10/11/12/13/15% 毒蚀几率",
+     "+15/18/20/22/25 闪避",
+     "+1/2/3/4/5 速度"
+    ]
+   },
+   {
+    "name": "闪光粉末",
+    "img": "/codex/img/Skill_Flashpowder.webp",
+    "rank": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [],
+    "damage": [
+     -100
+    ],
+    "effectTar": [
+     "无视潜行",
+     "显踪",
+     "-10/11/12/14/15 精准(100/110/120/130/140%基础概率)(2回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "强健蒸汽",
+    "img": "/codex/img/Skill_Fortifying_Vapours.webp",
+    "rank": [],
+    "tar": [
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "治疗1/1~2/2/2~3/3 生命值",
+     "+10/11/12/14/15% 流血/腐蚀抗性(3回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "提神蒸汽",
+    "img": "/codex/img/Skill_Invigorating_Vapours.webp",
+    "rank": [],
+    "tar": [
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "全队 +3/5/7/9/10 闪避(3回合)"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "保护我",
+    "img": "/codex/img/Skill_Protect_Me.webp",
+    "limit": 3,
+    "rank": [],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [
+     "+4/5/6/7/8 闪避(4回合)",
+     "+10/13/15/18/20% 防御(4回合)",
+     "标记3回合",
+     "强制被目标保护(2回合)"
+    ],
+    "effectSelf": []
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Resupply.webp",
+    "name": "再补给(1)",
+    "des": "仅自身：产生一件随机的补给物品(可使用3次)"
+   },
+   {
+    "img": "/codex/img/Skill_Trinket_Scrounge.webp",
+    "name": "饰品搜集(2)",
+    "des": "仅自身：产生一件随机的饰品"
+   },
+   {
+    "img": "/codex/img/Skill_Strange_Powders.webp",
+    "name": "古怪粉末(2)",
+    "des": "一位同伴：+20% 流血/腐蚀/减益/位移/疾病抗性(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Curious_Incantation.webp",
+    "name": "奇异秘咒(1)",
+    "des": "仅自身：-50% 所受压力伤害(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴：-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴：治疗15%生命值；移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴：-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ },
+ {
+  "id": "duelist",
+  "name": "决斗家",
+  "alias": "",
+  "portrait": "/codex/img/Duelist_portrait_roster.webp",
+  "art": "/codex/img/Duelist_heroic.webp",
+  "overview": {
+   "name": "决斗家",
+   "level0": {
+    "speed": 6,
+    "crit": 5,
+    "critBonus": 0,
+    "attack": "5-7",
+    "hp": 20,
+    "dodge": 5,
+    "feature": "双架势切换、开局自带反击"
+   },
+   "level6": {
+    "speed": 8,
+    "crit": 9,
+    "critBonus": "暴击后+10%闪避(3回合)",
+    "attack": "8-13",
+    "hp": 36,
+    "dodge": 25
+   }
+  },
+  "hp": [
+   20,
+   24,
+   28,
+   32,
+   36
+  ],
+  "dodge": [
+   5,
+   10,
+   15,
+   20,
+   25
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   6,
+   6,
+   7,
+   7,
+   8
+  ],
+  "crt": [
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "dmg": [
+   "5-7",
+   "6-8",
+   "7-10",
+   "7-11",
+   "8-13"
+  ],
+  "religious": "无",
+  "resistances": [
+   "30/90",
+   "30/90",
+   "30/90",
+   "30/90",
+   "30/90",
+   "40",
+   "67",
+   "10/70"
+  ],
+  "abilities": [
+   {
+    "name": "料敌机先",
+    "img": "/codex/img/Skill_Anticipation.webp",
+    "rank": [
+     4,
+     3,
+     2,
+     1
+    ],
+    "tar": [],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": [
+     "免费技能(不消耗行动,每回合限1次)",
+     "发动反击(2回合)",
+     "防御架势使用:切换至攻击架势,反击期间暴击+3/3/4/4/5%(4回合)",
+     "攻击架势使用:切换至防御架势,反击期间闪避+3/4/4/5/5(4回合)"
+    ]
+   },
+   {
+    "name": "一击命中",
+    "img": "/codex/img/Skill_Touche.webp",
+    "rank": [
+     4,
+     3,
+     2,
+     1
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "近战",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     1,
+     5
+    ],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": [
+     "后移1",
+     "闪避+25/27/30/32/35,直到下次成功闪避(至多4回合)"
+    ]
+   },
+   {
+    "name": "佯攻",
+    "img": "/codex/img/Skill_Feint.webp",
+    "rank": [
+     3,
+     2,
+     1
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "近战",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     3,
+     7
+    ],
+    "damage": [
+     -50
+    ],
+    "effectTar": [
+     "-10 命中(对被标记目标)",
+     "-20/22/25/27/30% 防御(110/120/130/140/150%基础概率)"
+    ],
+    "effectSelf": [
+     "标记自身(2回合)",
+     "反击伤害+25/27/30/32/35%(4回合)"
+    ]
+   },
+   {
+    "name": "避实击虚",
+    "img": "/codex/img/Skill_Disengage.webp",
+    "rank": [
+     2,
+     1
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "近战",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     -1,
+     3
+    ],
+    "damage": [
+     -50
+    ],
+    "effectTar": [],
+    "effectSelf": [
+     "后移3",
+     "命中+10(4回合)",
+     "速度+4/4/5/5/6(4回合)",
+     "攻击技能可在任意站位使用、可选取任意位置(2回合)"
+    ]
+   },
+   {
+    "name": "迅剑突刺",
+    "img": "/codex/img/Skill_Fleche.webp",
+    "rank": [
+     4,
+     3,
+     2
+    ],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "近战",
+    "accuracy": [
+     90,
+     110
+    ],
+    "crit": [
+     9,
+     13
+    ],
+    "damage": [
+     20
+    ],
+    "effectTar": [],
+    "effectSelf": [
+     "前移2",
+     "标记自身(2回合)"
+    ]
+   },
+   {
+    "name": "赐死",
+    "img": "/codex/img/Skill_Coup_de_Grace.webp",
+    "rank": [
+     4,
+     3,
+     2,
+     1
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     7,
+     11
+    ],
+    "damage": [
+     -60
+    ],
+    "effectTar": [
+     "无视防御(破甲)",
+     "对眩晕目标暴击+100%"
+    ],
+    "effectSelf": [
+     "击杀目标时立即获得1次额外行动"
+    ]
+   },
+   {
+    "name": "靴踢",
+    "img": "/codex/img/Skill_The_Boot.webp",
+    "rank": [
+     3,
+     2,
+     1
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "近战",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     1,
+     5
+    ],
+    "damage": [
+     -40
+    ],
+    "effectTar": [
+     "眩晕(100/110/120/130/140%基础概率)",
+     "击退1(110/120/130/140/150%基础概率)"
+    ],
+    "effectSelf": [
+     "前移1"
+    ]
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Meditation.webp",
+    "name": "冥想(3)",
+    "des": "仅自身:反击期间命中+10、闪避+10(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Preparation.webp",
+    "name": "预备(3)",
+    "des": "仅自身:首回合伤害+25%、闪避+20、速度+2(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Ruthless_Instruction.webp",
+    "name": "无情喝令(2)",
+    "des": "一位同伴:暴击+7%、速度+2;目标+10压力(50%概率额外+10)"
+   },
+   {
+    "img": "/codex/img/Skill_Again.webp",
+    "name": "再来！(1)",
+    "des": "一位同伴:刷新其扎营技能使用次数;目标+15压力"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴:-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴:治疗15%生命值;移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴:-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ },
+ {
+  "id": "runaway",
+  "name": "逃离者",
+  "alias": "",
+  "portrait": "/codex/img/Runaway_portrait_roster.webp",
+  "art": "/codex/img/Runaway_heroic.webp",
+  "overview": {
+   "name": "逃离者",
+   "level0": {
+    "speed": 5,
+    "crit": 4,
+    "critBonus": 0,
+    "attack": "4-7",
+    "hp": 23,
+    "dodge": 5,
+    "feature": "灼烧叠层(不可抵抗)、可潜行游走"
+   },
+   "level6": {
+    "speed": 7,
+    "crit": 8,
+    "critBonus": "暴击后+2 速度(2回合)",
+    "attack": "7-13",
+    "hp": 43,
+    "dodge": 25
+   }
+  },
+  "hp": [
+   23,
+   28,
+   33,
+   38,
+   43
+  ],
+  "dodge": [
+   5,
+   10,
+   15,
+   20,
+   25
+  ],
+  "prot": [
+   0
+  ],
+  "spd": [
+   5,
+   5,
+   6,
+   6,
+   7
+  ],
+  "crt": [
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "dmg": [
+   "4-7",
+   "5-8",
+   "6-10",
+   "6-11",
+   "7-13"
+  ],
+  "religious": "无",
+  "resistances": [
+   "20/80",
+   "40/100",
+   "40/100",
+   "30/90",
+   "30/90",
+   "20",
+   "67",
+   "30/90"
+  ],
+  "abilities": [
+   {
+    "name": "灼热打击",
+    "img": "/codex/img/Skill_Searing_Strike.webp",
+    "rank": [
+     2,
+     1
+    ],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     3,
+     7
+    ],
+    "damage": [],
+    "effectTar": [
+     "灼烧 3/3/4/4/5 层(不可被抵抗)",
+     "对灼烧目标伤害+15/20/25/30/35%"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "萤火",
+    "img": "/codex/img/Skill_Firefly.webp",
+    "rank": [
+     4,
+     3
+    ],
+    "tar": [
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     6,
+     10
+    ],
+    "damage": [
+     -75
+    ],
+    "effectTar": [
+     "灼烧 7/7/8/8/9 层(不可被抵抗)",
+     "灼烧衰减-50%(100/110/120/130/140%基础概率,2回合)"
+    ],
+    "effectSelf": [
+     "亮度 +4/4/5/5/6"
+    ]
+   },
+   {
+    "name": "逃匿",
+    "img": "/codex/img/Skill_Run_and_Hide.webp",
+    "rank": [
+     4,
+     3,
+     2,
+     1
+    ],
+    "tar": [],
+    "type": "",
+    "accuracy": [],
+    "crit": [],
+    "damage": [],
+    "effectTar": [],
+    "effectSelf": [
+     "后移2",
+     "进入潜行(4回合);位于1、2号位时无法进入潜行",
+     "潜行期间每回合治疗2/3/3/4/5点(持续2/2/3/3/3回合)",
+     "潜行期间灼烧层数+50%(4回合)"
+    ]
+   },
+   {
+    "name": "洗劫",
+    "img": "/codex/img/Skill_Ransack.webp",
+    "rank": [
+     4,
+     3,
+     2,
+     1
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "近战",
+    "accuracy": [
+     85,
+     105
+    ],
+    "crit": [
+     3,
+     7
+    ],
+    "damage": [
+     -10
+    ],
+    "effectTar": [
+     "拉拽1(100/110/120/130/140%基础概率)",
+     "清除场上所有尸体"
+    ],
+    "effectSelf": [
+     "前移1",
+     "潜行时此技能命中+10"
+    ]
+   },
+   {
+    "name": "炉光",
+    "img": "/codex/img/Skill_Hearthlight.webp",
+    "rank": [
+     4,
+     3,
+     2,
+     1
+    ],
+    "tar": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "type": "远程",
+    "accuracy": [
+     100,
+     120
+    ],
+    "crit": [],
+    "damage": [
+     -100
+    ],
+    "effectTar": [
+     "驱散目标的潜行(可无视潜行选取)",
+     "亮度 +6/6/7/7/8"
+    ],
+    "effectSelf": [
+     "全队:命中+5/6/7/8/10(3回合)",
+     "全队:对灼烧目标暴击+8/9/10/11/12%(3回合)"
+    ]
+   },
+   {
+    "name": "烈焰缠绕",
+    "img": "/codex/img/Skill_Controlled_Burn.webp",
+    "rank": [
+     3,
+     2,
+     1
+    ],
+    "tar": [
+     1,
+     2,
+     3
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [],
+    "damage": [
+     -100
+    ],
+    "limit": 2,
+    "effectTar": [
+     "灼烧 4 层(不可被抵抗)",
+     "目标站位附着烈焰缠绕(3回合):处于该位的敌人每回合受3/3/4/4/5层灼烧",
+     "亮度 +6"
+    ],
+    "effectSelf": []
+   },
+   {
+    "name": "殃及",
+    "img": "/codex/img/Skill_Backdraft.webp",
+    "rank": [
+     3,
+     2,
+     1
+    ],
+    "tar": [
+     1,
+     2
+    ],
+    "type": "远程",
+    "accuracy": [
+     95,
+     115
+    ],
+    "crit": [
+     7,
+     11
+    ],
+    "damage": [
+     -50
+    ],
+    "effectTar": [
+     "需目标处于灼烧状态",
+     "无视守护",
+     "目标身后一位也受伤害,灼烧层数复制给该位",
+     "每层灼烧伤害+25%",
+     "命中后清除目标身上的灼烧"
+    ],
+    "effectSelf": []
+   }
+  ],
+  "camping": [
+   {
+    "img": "/codex/img/Skill_Kindle.webp",
+    "name": "生火(4)",
+    "des": "仅自身:获得三件灰烬堆(Pile of Ash)饰品;防止夜袭"
+   },
+   {
+    "img": "/codex/img/Skill_Cauterize.webp",
+    "name": "灼烧止血(3)",
+    "des": "一位同伴:移除疾病/流血/腐蚀;-20% 减益抗性(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Play_With_Fire.webp",
+    "name": "玩火(2)",
+    "des": "一位同伴:攻击命中时施加灼烧3层(持续4场战斗);+10% 所受伤害(持续4场战斗)"
+   },
+   {
+    "img": "/codex/img/Skill_Pickpocket.webp",
+    "name": "偷窃(1)",
+    "des": "仅自身:获得一把万能钥匙(每营火可用3次)"
+   },
+   {
+    "img": "/codex/img/Skill_Encourage.webp",
+    "name": "鼓舞(2)",
+    "des": "一位同伴:-15 压力"
+   },
+   {
+    "img": "/codex/img/Skill_Wound_Care.webp",
+    "name": "处理伤口(2)",
+    "des": "一位同伴:治疗15%生命值;移除目标流血/腐蚀"
+   },
+   {
+    "img": "/codex/img/Skill_Pep_Talk.webp",
+    "name": "打气谈话(2)",
+    "des": "一位同伴:-15% 所受压力伤害(持续4场战斗)"
+   }
+  ]
+ }
+]

@@ -7,6 +7,7 @@ import {
   RES_ITEMS, abilityOf, aiGenericOf, aiWeightOf, displayNameOf, fmt, liveTiers, skillTypeZh,
 } from "../display";
 import { regionBadges } from "../filter";
+import { bossCatZh, metaOf, summonedByOf } from "../monstersMeta";
 import { openLightbox } from "../lightbox";
 import { fxIconSrc, fxIconTitle } from "../fxicons";
 import { interpretEffectRef } from "../effect";
@@ -19,7 +20,7 @@ const props = defineProps<{
   index: IndexFile;
 }>();
 
-const emit = defineEmits<{ close: [] }>();
+const emit = defineEmits<{ close: []; open: [id: string] }>();
 
 const tiers = computed(() => liveTiers(props.detail));
 const tierIdx = ref(0);
@@ -30,6 +31,26 @@ const names = computed(() => displayNameOf(props.entry, props.detail.tiers[0], p
 const ability = computed(() => abilityOf(props.detail.tiers[0]));
 const no = computed(() => String(props.index.monsters.findIndex((m) => m.id === props.entry.id) + 1).padStart(3, "0"));
 const regions = computed(() => regionBadges(props.index, props.entry));
+const bossCat = computed(() => metaOf(props.entry.id)?.bossCat);
+
+function nameOf(id: string): string {
+  const hit = props.index.monsters.find((m) => m.id === id);
+  return hit ? t(hit.name.zh, hit.name.en) : id;
+}
+function linked(ids: string[]): Array<{ id: string; label: string }> {
+  return ids
+    .filter((id) => props.index.monsters.some((m) => m.id === id))
+    .map((id) => ({ id, label: nameOf(id) }));
+}
+const summons = computed(() => linked(metaOf(props.entry.id)?.summons ?? []));
+const summonedBy = computed(() => linked(summonedByOf(props.entry.id)));
+/* 死亡化形(如先祖→孕育之心):deathClass 为怪物变体 ID,剥掉档位后缀解析 */
+const transformTo = computed(() => {
+  const dc = props.detail.tiers[0]?.deathClass;
+  if (!dc) return null;
+  const id = dc.replace(/_[A-F]$/, "");
+  return props.index.monsters.some((m) => m.id === id) ? { id, label: nameOf(id) } : null;
+});
 
 const pct = (v: unknown): string => {
   const s = String(v ?? "").replace(/%+$/, "");
@@ -96,8 +117,9 @@ function onKey(e: KeyboardEvent): void {
         <div class="pm-idblock">
           <div class="pm-kicker">
             <span class="pm-no">{{ t("图鉴", "Plate") }} No.{{ no }}</span>
+            <span v-if="bossCat" class="pm-region boss">{{ t("首领", "Boss") }} · {{ bossCatZh(bossCat) }}</span>
             <span v-for="r in regions" :key="r" class="pm-region">{{ r }}</span>
-            <span v-if="!regions.length" class="pm-region dim">{{ t("其他 / 未收录(召唤物 · 部件)", "other") }}</span>
+            <span v-if="!regions.length && !bossCat" class="pm-region dim">{{ t("其他 / 未收录(召唤物 · 部件)", "other") }}</span>
             <span class="pm-region" :class="{ dim: !mod.mAcc && !mod.mDmg && !mod.mCrit && !modeDef.critMod }" :title="lightTip(band, MODE)">
               {{ t("亮度", "Light") }} · {{ t(band.zh, band.en) }}
             </span>
@@ -139,7 +161,12 @@ function onKey(e: KeyboardEvent): void {
               <span class="v">{{ fmt(tier.stats!.res[r.key]) }}</span>
             </div>
             <div v-if="tier.deathClass || tier.lifeLink" class="pm-note">
-              {{ tier.deathClass ? t("死亡后化为尸体", "Leaves a corpse") : "" }}
+              <template v-if="tier.deathClass">
+                <template v-if="transformTo">{{ t("死亡后化为", "On death becomes") }}
+                  <button class="pm-link inline" @click="emit('open', transformTo.id)">{{ transformTo.label }}</button>
+                </template>
+                <template v-else>{{ t("死亡后化为尸体", "Leaves a corpse") }}</template>
+              </template>
               {{ tier.lifeLink ? `${t("生命链接", "Life link")} ${tier.lifeLink}` : "" }}
             </div>
           </template>
@@ -181,98 +208,20 @@ function onKey(e: KeyboardEvent): void {
             {{ t("AI 通用倾向", "AI generic") }}:
             <span v-for="(g, gi) in aiGenericOf(tier)" :key="gi">{{ g[0] }} ×{{ g[1] }}<template v-if="gi < aiGenericOf(tier).length - 1"> · </template></span>
           </div>
+          <div v-if="summons.length || summonedBy.length" class="pm-rel">
+            <div class="pm-colhead">{{ t("召唤关联", "Summon ties") }}</div>
+            <div v-if="summons.length" class="pm-relrow">
+              <i class="lbl">{{ t("召唤", "Summons") }}</i>
+              <button v-for="s in summons" :key="s.id" class="pm-link" @click="emit('open', s.id)">{{ s.label }}</button>
+            </div>
+            <div v-if="summonedBy.length" class="pm-relrow">
+              <i class="lbl">{{ t("被召唤", "Summoned by") }}</i>
+              <button v-for="s in summonedBy" :key="s.id" class="pm-link" @click="emit('open', s.id)">{{ s.label }}</button>
+            </div>
+          </div>
         </main>
       </div>
     </div>
   </div>
 </template>
 
-<style scoped>
-.pm-modal { position: fixed; inset: 0; z-index: 9999; background: rgba(4, 2, 1, 0.9); display: grid; place-items: center; }
-.pm-card {
-  position: relative; width: min(1040px, 94vw); max-height: 92vh; display: flex; flex-direction: column;
-  background: linear-gradient(180deg, #201709 0%, #1a1209 100%);
-  border: 1px solid var(--line);
-  box-shadow: inset 0 0 0 1px #0a0704, inset 0 0 0 4px rgba(201, 169, 92, 0.06), 0 30px 80px rgba(0, 0, 0, 0.7);
-}
-.pm-close { position: absolute; top: 12px; right: 14px; z-index: 3; background: none; border: none; color: var(--muted); font-size: 16px; cursor: pointer; }
-.pm-close:hover { color: var(--gold); }
-
-.pm-head { display: flex; align-items: center; gap: 22px; padding: 22px 26px 18px; border-bottom: 1px solid var(--line2); }
-.pm-medal {
-  flex: none; width: 118px; height: 118px; border-radius: 50%; overflow: hidden; cursor: zoom-in;
-  border: 3px solid var(--gold-dim); box-shadow: 0 0 0 1px #0a0704, 0 6px 18px rgba(0, 0, 0, 0.6);
-  background: radial-gradient(circle at 50% 35%, #2a2013, #0e0a06);
-}
-.pm-medal img { width: 100%; height: 100%; object-fit: cover; }
-.pm-ph { font-size: 44px; color: #3a2e1c; display: grid; place-items: center; }
-.pm-idblock { flex: 1; min-width: 0; }
-.pm-kicker { display: flex; align-items: center; gap: 8px; font-size: 10px; letter-spacing: 2px; color: var(--gold-dim); margin-bottom: 6px; flex-wrap: wrap; }
-.pm-no { color: var(--gold); }
-.pm-region { border: 1px solid var(--line2); padding: 0 6px; border-radius: 2px; color: var(--ink); letter-spacing: 1px; }
-.pm-region.dim { color: var(--muted); }
-.pm-name { font-family: var(--font-title); font-size: 34px; color: var(--ink); margin: 0 0 4px; letter-spacing: 5px; line-height: 1.1; }
-.pm-taxo { display: flex; flex-direction: column; gap: 2px; font-size: 12px; }
-.pm-taxo .latin { color: var(--muted); font-style: italic; }
-.pm-taxo .tax { color: var(--gold-dim); }
-
-.pm-coins { flex: none; display: flex; gap: 10px; }
-.pm-coin {
-  width: 58px; height: 58px; border-radius: 50%; cursor: pointer;
-  background: radial-gradient(circle at 35% 30%, #2a2013, #120d07);
-  border: 2px solid var(--line2); color: var(--muted);
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px;
-  transition: all 0.15s;
-}
-.pm-coin b { font-family: var(--font-title); font-size: 19px; line-height: 1; }
-.pm-coin i { font-style: normal; font-size: 9px; letter-spacing: 1px; }
-.pm-coin.on { border-color: var(--gold); color: var(--gold); box-shadow: 0 0 14px rgba(201, 169, 92, 0.25), inset 0 0 8px rgba(201, 169, 92, 0.12); }
-.pm-coin:not(.on):hover { color: var(--ink); border-color: var(--gold-dim); }
-
-.pm-body { display: grid; grid-template-columns: 250px 1fr; min-height: 0; overflow-y: auto; }
-.pm-stats { padding: 20px 22px; border-right: 1px solid var(--line2); }
-.pm-main { padding: 20px 24px; }
-.pm-colhead { font-size: 11px; letter-spacing: 3px; color: var(--gold-dim); margin-bottom: 12px; }
-.pm-statrow { display: flex; align-items: baseline; gap: 8px; padding: 5px 0; font-size: 13px; }
-.pm-statrow .k { color: var(--muted); font-size: 12px; display: inline-flex; align-items: center; gap: 5px; }
-.pm-statrow .dots { flex: 1; border-bottom: 1px dotted #3a2e1c; }
-.pm-statrow .v { color: var(--ink); font-weight: 700; }
-.pm-note { margin-top: 12px; font-size: 11px; color: var(--gold-dim); }
-
-.pm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.pm-skill {
-  border: 1px solid var(--line2);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.1));
-  padding: 12px 16px 13px;
-  display: flex; flex-direction: column; gap: 9px;
-  transition: border-color 0.15s;
-}
-.pm-skill:hover { border-color: var(--gold-dim); }
-.pm-skill .head { display: flex; align-items: baseline; gap: 8px; }
-.pm-skill .sn { font-family: var(--font-title); font-size: 16px; color: var(--ink); letter-spacing: 1px; }
-.pm-skill .aiw {
-  margin-left: auto; flex: none; font-size: 10px; color: var(--gold);
-  border: 1px solid rgba(201, 169, 92, 0.35); border-radius: 999px; padding: 0 7px; line-height: 16px;
-}
-.pm-skill .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 5px 13px; }
-.pm-skill .ty {
-  font-size: 10px; letter-spacing: 2px; color: var(--gold);
-  border: 1px solid rgba(201, 169, 92, 0.4); padding: 1px 6px; border-radius: 2px;
-}
-.pm-skill .m { display: inline-flex; align-items: baseline; gap: 4px; }
-.pm-skill .m i { font-style: normal; font-size: 11px; color: var(--muted); }
-.pm-skill .m b { color: var(--ink); font-weight: 700; font-size: 12px; }
-.pm-card .lmod { font-style: normal; font-size: 10px; color: var(--gold); cursor: help; }
-.pm-skill .fx {
-  display: inline-flex; align-items: center; gap: 4px;
-  font-size: 11px; color: var(--ink);
-  background: rgba(201, 169, 92, 0.07); border: 1px solid rgba(201, 169, 92, 0.16);
-  padding: 1px 8px; border-radius: 999px;
-}
-.pm-skill .dotrow { display: flex; align-items: center; gap: 28px; margin-top: 2px; padding-top: 8px; border-top: 1px solid rgba(74, 59, 34, 0.35); }
-.pm-skill .grp { display: inline-flex; align-items: center; gap: 8px; }
-.pm-skill .lbl { font-style: normal; font-size: 10px; letter-spacing: 2px; color: var(--muted); }
-.fxicon { width: 14px; height: 14px; vertical-align: -2px; }
-.pm-gen { color: var(--muted); font-size: 11px; margin-top: 14px; }
-.pm-gen span { color: var(--gold-dim); }
-</style>

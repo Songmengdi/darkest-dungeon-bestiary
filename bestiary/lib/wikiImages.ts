@@ -28,6 +28,21 @@ const OVERRIDES: Record<string, string> = {
   drowned_anchored: "images/drowned-anchorman.png",
   shambler_tentacle: "images/shambler-tentacle.png", // "Shambler Sycophant"
   snake_big_adder: "images/adder.png", // "Death Adder"
+  brigand_cannon: "images/brigand-pounder.png", // 游戏名 "Brigand 8-Pounder"
+  curtain: "images/pulsating-egg.png", // 战斗档位(E/F)为"颤动的卵蛋",A-C 为未使用残留
+  // —— 农场五色畸变:wiki 无图,取自 dist 参考资料包(按技能效果配对颜色) ——
+  seed_black: "public/codex/img/Cultist-Crystal-finished-aberration-1.webp", // 恐惧 + 治疗削减
+  seed_grey: "public/codex/img/Cultist-Crystal-finished-aberration-2.webp", // 守护
+  seed_purple: "public/codex/img/Cultist-Crystal-finished-aberration-3.webp", // 眩晕
+  seed_red: "public/codex/img/Cultist-Crystal-finished-aberration-4.webp", // 攻击回血
+  seed_yellow: "public/codex/img/Cultist-Crystal-finished-aberration-5.webp", // 腐蚀
+  // 五色种苗同形异色,参考资料仅收录一图,共用
+  seedling_black: "public/codex/img/Cultist-Seedling_black.webp",
+  seedling_grey: "public/codex/img/Cultist-Seedling_black.webp",
+  seedling_purple: "public/codex/img/Cultist-Seedling_black.webp",
+  seedling_red: "public/codex/img/Cultist-Seedling_black.webp",
+  seedling_yellow: "public/codex/img/Cultist-Seedling_black.webp",
+  sprout: "public/codex/img/Cultist-Crystal-focus-point.webp",
   // —— 多部件怪共享一张完整图 ——
   formless_guard: "images/flesh.png", // 血肉怪四部件共用
   formless_melee: "images/flesh.png",

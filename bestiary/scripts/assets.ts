@@ -43,8 +43,9 @@ for (const entry of index.monsters) {
     imgNone++;
     continue;
   }
-  fs.copyFileSync(path.join(ROOT, hit.src), path.join(IMG_DIR, `${entry.id}.png`));
-  entry.image = `img/${entry.id}.png`;
+  const ext = path.extname(hit.src) || ".png";
+  fs.copyFileSync(path.join(ROOT, hit.src), path.join(IMG_DIR, `${entry.id}${ext}`));
+  entry.image = `img/${entry.id}${ext}`;
   usedWikiImages.add(hit.src);
   if (hit.how === "override") imgOverride++;
   else imgByName++;

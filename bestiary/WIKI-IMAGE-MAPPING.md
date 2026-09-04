@@ -45,3 +45,9 @@
 - countess 档位为 D/E/F、baron 为 A/B(忠实于游戏文件);UI 档位签对 D 以上显示"档位 X"。
 - baron 档 A 在游戏文件里只有 art 没有 info,详情页该档为空面板(数据忠实)。
 - DLC loc2 的未知哈希函数未逆向(不影响功能,`zhByEn` 对齐法已覆盖怪物名/技能名等主要文本;若个别中文缺失,前端回退显示英文)。
+
+## 后续更新(2026-09-04,接入 dist 参考资料贴图)
+
+- 原无图的 12 个真实怪物全部补齐:brigand_cannon → brigand-pounder.png(游戏名 "Brigand 8-Pounder" 与 wiki 名不匹配,入别名表);curtain → pulsating-egg.png(战斗档位 E/F 为"颤动的卵蛋");农场五色畸变 seed_black/grey/purple/red/yellow → dist 包五张 Crystal-finished-aberration-1..5(按技能效果配对:恐惧/守护/眩晕/回血/腐蚀);五色种苗共用 dist 的 Seedling_black(五色同形);sprout → dist 的 Crystal-focus-point。
+- 新增别名表条目指向 `public/codex/img/*.webp`(dist 资产,已入库),`scripts/assets.ts` 现按源文件扩展名落盘。
+- 尸骸 ×2(战斗尸体道具)与四色种苗、drowned_anchored、com_* 三件套(纯重复实体)从图鉴隐藏(见 `src/monstersMeta.ts`);运行时展示 143 个条目,全部有图。
