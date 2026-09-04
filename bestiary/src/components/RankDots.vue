@@ -1,4 +1,5 @@
-<!-- 8 点式站位/打击面指示器:站位暖白、打击红(友方蓝)、AoE 连线;打击(敌方)按战场朝向镜像;参考游戏内点阵设计 -->
+<!-- 8 点式站位/打击面指示器:实心=有效(站位墨、打击红、友方蓝),空心=无效;AoE 连线;打击(敌方)按战场朝向镜像;参考游戏内点阵设计 -->
+<!-- 无效位若用实心深色会在羊皮纸底上反客为主(有效位暖白又近乎隐形),故反转对比:有效实心、无效空心 -->
 <script setup lang="ts">
 import { computed } from "vue";
 import { t } from "../i18n";
@@ -53,9 +54,9 @@ const title = computed(() => {
 .rank-dots { position: relative; display: inline-flex; gap: 7px; align-items: center; }
 .rank-dots i {
   width: 9px; height: 9px; border-radius: 50%;
-  background: #191208; border: 1px solid #33291a;
+  background: transparent; border: 1px solid rgba(58, 42, 18, 0.45);
 }
-.rank-dots.launch i.on { background: #e6dcc4; border-color: #e6dcc4; box-shadow: 0 0 4px rgba(230, 220, 196, 0.35); }
+.rank-dots.launch i.on { background: var(--ink); border-color: var(--ink); }
 .rank-dots.target i.on { background: #b33a30; border-color: #b33a30; box-shadow: 0 0 4px rgba(179, 58, 48, 0.4); }
 .rank-dots.target.ally i.on { background: #5b87ad; border-color: #5b87ad; box-shadow: 0 0 4px rgba(91, 135, 173, 0.4); }
 .rank-dots .line { position: absolute; top: 50%; height: 2px; margin-top: -1px; background: #b33a30; }
