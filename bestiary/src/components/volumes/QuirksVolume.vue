@@ -3,6 +3,7 @@
 import { computed, onMounted, ref } from "vue";
 import { loadQuirks, type QuirkGroup } from "../../codex";
 import { t } from "../../i18n";
+import { hasMatch } from "../../pinyin";
 
 const groups = ref<QuirkGroup[]>([]);
 const err = ref("");
@@ -24,8 +25,8 @@ interface QuirkRow { key: string; pos: QuirkSide | null; neg: QuirkSide | null }
 
 /** 按分类分章,章内逐组保持正/负横向对应;缺侧的组保留为空槽 */
 const sections = computed(() => {
-  const query = q.value.trim().toLowerCase();
-  const hay = (s: QuirkSide | null) => (s ? `${s.name}${s.effect}`.toLowerCase().includes(query) : false);
+  const query = q.value.trim();
+  const hay = (s: QuirkSide | null) => (s ? hasMatch(`${s.name}${s.effect}`, query) : false);
   const out: Array<{ category: string; rows: QuirkRow[] }> = [];
   const index = new Map<string, number>();
   groups.value.forEach((g, gi) => {

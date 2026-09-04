@@ -3,6 +3,7 @@
 import { computed, onMounted, ref } from "vue";
 import { loadTrinkets, type Trinket } from "../../codex";
 import { t } from "../../i18n";
+import { hasMatch } from "../../pinyin";
 
 const items = ref<Trinket[]>([]);
 const err = ref("");
@@ -47,11 +48,11 @@ const rarityCls = (labels: string[]): string => {
 const isRarityLabel = (l: string) => l in RARITY_CLS;
 
 const filtered = computed(() => {
-  const query = q.value.trim().toLowerCase();
+  const query = q.value.trim();
   return items.value
     .filter((i) => !originTab.value || (i.origin || "其他") === originTab.value)
     .filter((i) => !labelTab.value || i.labels.includes(labelTab.value))
-    .filter((i) => !query || `${i.name}${i.attr}${i.labels.join()}${i.note}`.toLowerCase().includes(query));
+    .filter((i) => !query || hasMatch(`${i.name}${i.attr}${i.labels.join()}${i.note}`, query));
 });
 </script>
 

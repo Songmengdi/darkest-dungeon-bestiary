@@ -3,6 +3,7 @@
 import { computed, onMounted, ref } from "vue";
 import { loadEvents, type TownEvent } from "../../codex";
 import { t } from "../../i18n";
+import { hasMatch } from "../../pinyin";
 
 const events = ref<TownEvent[]>([]);
 const err = ref("");
@@ -17,9 +18,9 @@ onMounted(async () => {
 });
 
 const filtered = computed(() => {
-  const query = q.value.trim().toLowerCase();
+  const query = q.value.trim();
   if (!query) return events.value;
-  return events.value.filter((e) => `${e.name}${e.effect.join()}${e.note}`.toLowerCase().includes(query));
+  return events.value.filter((e) => hasMatch(`${e.name}${e.effect.join()}${e.note}`, query));
 });
 </script>
 

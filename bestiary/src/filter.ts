@@ -1,6 +1,7 @@
 /* 卡片墙过滤:副本页签、搜索词、区域徽章。纯函数,不依赖 Vue 运行时,可独立测试。
  * 「已验证的原型决策」(现状分组、空档归 other)收敛在这里。 */
 import { t } from "./i18n";
+import { hasMatch } from "./pinyin";
 import type { IndexFile, IndexMonster } from "./types";
 
 export interface RegionTab {
@@ -30,9 +31,9 @@ export function monsterMatchesTab(m: IndexMonster, tab: string): boolean {
 }
 
 export function monsterMatchesQuery(m: IndexMonster, q: string): boolean {
-  if (!q) return true;
-  const hay = `${m.id} ${m.name.zh} ${m.name.en} ${m.type ? m.type.zh + " " + m.type.en : ""}`.toLowerCase();
-  return hay.includes(q);
+  if (!q.trim()) return true;
+  const hay = `${m.id} ${m.name.zh} ${m.name.en} ${m.type ? m.type.zh + " " + m.type.en : ""}`;
+  return hasMatch(hay, q);
 }
 
 export function regionBadges(index: IndexFile, m: IndexMonster): string[] {

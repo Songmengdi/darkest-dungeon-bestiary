@@ -15,6 +15,7 @@
     "serve-dist": "set BESTIARY_ROOT=../dist&& node scripts/serve.ts"
   },
   "dependencies": {
+    "pinyin-pro": "^3.29.3",
     "vue": "^3.5.42"
   },
   "devDependencies": {
