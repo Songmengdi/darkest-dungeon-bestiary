@@ -25,12 +25,10 @@ onMounted(async () => {
   <div class="cx-vol">
     <div v-if="err" class="bz-loading">加载失败:{{ err }}</div>
     <template v-else>
-      <div class="cx-toolbar">
-        <span class="cx-switch">
-          <button :class="{ on: view === 'wall' }" @click="view = 'wall'">{{ t("英雄图鉴", "Roster") }}</button>
-          <button :class="{ on: view === 'rating' }" @click="view = 'rating'">{{ t("属性评级", "Rating") }}</button>
-        </span>
-      </div>
+      <nav class="bz-tabs">
+        <button class="bz-tab" :class="{ on: view === 'wall' }" @click="view = 'wall'">{{ t("英雄图鉴", "Roster") }}</button>
+        <button class="bz-tab" :class="{ on: view === 'rating' }" @click="view = 'rating'">{{ t("属性评级", "Rating") }}</button>
+      </nav>
 
       <!-- 英雄卡片墙 -->
       <main v-if="view === 'wall'" class="cx-scroll">

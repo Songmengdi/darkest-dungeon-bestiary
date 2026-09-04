@@ -177,29 +177,30 @@ onUnmounted(() => { /* index 缓存于 repo */ });
           :disabled="!!q.trim()"
           @click="kind = 'boss'"
         >{{ t("首领", "Boss") }}<span class="n">{{ kindCounts.boss }}</span></button>
-        <template v-if="!q.trim() && kind === 'boss'">
-          <span class="cx-tab-sep"></span>
+      </nav>
+
+      <div v-if="!q.trim()" class="cx-subfilters">
+        <template v-if="kind === 'boss'">
           <button
             v-for="c in bossCats"
             :key="c.id"
             v-show="(tabCounts[c.id] ?? 0) > 0"
-            class="bz-tab sub"
+            class="bz-filter"
             :class="{ on: bossTab === c.id }"
             @click="bossTab = c.id"
           >{{ LANG === "zh" ? c.zh : c.en }}<span class="n">{{ tabCounts[c.id] ?? 0 }}</span></button>
         </template>
-        <template v-else-if="!q.trim() && kind === 'normal'">
-          <span class="cx-tab-sep"></span>
+        <template v-else>
           <button
             v-for="tb in tabs"
             :key="tb.id"
             v-show="(tabCounts[tb.id] ?? 0) > 0"
-            class="bz-tab sub"
+            class="bz-filter"
             :class="{ on: regionTab === tb.id }"
             @click="regionTab = tb.id"
           >{{ LANG === "zh" ? tb.label : tb.en }}<span class="n">{{ tabCounts[tb.id] ?? 0 }}</span></button>
         </template>
-      </nav>
+      </div>
 
       <main class="bz-grid cx-grow">
         <MonsterCard

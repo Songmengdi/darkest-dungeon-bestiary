@@ -71,13 +71,17 @@ function resetAll(): void {
   <div class="cx-vol">
     <div v-if="err" class="bz-loading">加载失败:{{ err }}</div>
     <template v-else>
-      <div class="cx-toolbar">
-        <span class="proto-lang">
-          <button v-for="tb in tabs" :key="tb" :class="{ on: tab === tb }" @click="tab = tb">{{ tb }}</button>
-        </span>
-        <span class="bz-count">{{ t("数量改动自动保存 · ", "autosaved · ") }}</span>
+      <nav class="bz-tabs">
+        <button
+          v-for="tb in tabs"
+          :key="tb"
+          class="bz-tab"
+          :class="{ on: tab === tb }"
+          @click="tab = tb"
+        >{{ tb }}</button>
+        <span class="bz-count">{{ t("数量改动自动保存", "autosaved") }}</span>
         <button class="cx-reset" @click="resetAll">{{ t("重置", "Reset") }}</button>
-      </div>
+      </nav>
 
       <main class="cx-scroll">
         <ul v-if="tabNotes.length" class="sp-tips">

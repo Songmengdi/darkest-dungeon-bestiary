@@ -126,7 +126,7 @@ function onKey(e: KeyboardEvent): void {
           </div>
           <h2 class="pm-name">{{ t(names.zh, names.en) }}</h2>
           <div class="pm-taxo">
-            <span class="latin">{{ names.en }} · {{ entry.id }}</span>
+            <span class="latin">{{ names.en }}</span>
             <span class="tax">
               {{ entry.type ? t(entry.type.zh, entry.type.en) : "—" }} · {{ t("体型", "Size") }} {{ entry.size }}<template v-if="ability"> · {{ ability }}</template>
             </span>
@@ -167,7 +167,10 @@ function onKey(e: KeyboardEvent): void {
                 </template>
                 <template v-else>{{ t("死亡后化为尸体", "Leaves a corpse") }}</template>
               </template>
-              {{ tier.lifeLink ? `${t("生命链接", "Life link")} ${tier.lifeLink}` : "" }}
+              <template v-if="tier.lifeLink">
+                {{ t("生命链接", "Life link") }}
+                <button class="pm-link inline" @click="emit('open', tier.lifeLink)">{{ nameOf(tier.lifeLink) }}</button>
+              </template>
             </div>
           </template>
           <div v-else class="pm-note">{{ t("该档位无战斗数据(尸体 / 装饰物)", "No combat data (corpse / prop)") }}</div>
